@@ -1,0 +1,6 @@
+**.npy
+/results/
+/experiments/
+/figures/
+/predictions/
+/.vscode/
