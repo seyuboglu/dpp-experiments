@@ -34,7 +34,7 @@ def disease_prediction(disease):
 
     elif(params.method == "random_walk"):
         # Compute Predictions using: Random Walk
-        rw_scores = compute_random_walk_scores(disease_nodes)
+        rw_scores = compute_random_walk_scores(ppi_networkx, disease_nodes)
         output_predictions(rw_scores, disease)
 
     else:

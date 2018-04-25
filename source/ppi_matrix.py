@@ -2,6 +2,7 @@
 Provides methods for generating matrices that describe pairwise relationships 
 between proteins in the protein-protein interaction network. 
 """
+import os
 
 from collections import defaultdict
 import numpy as np 
@@ -120,6 +121,40 @@ def pairwise_disease_protein_analysis(scores_matrices, diseases_dict, n_buckets 
 
 #Functions for building complementarity matrices
 #====================================================
+def build_ppi_comp_matrix(deg_fn = 'id', row_norm = False, col_norm = False):
+    name = 'comp'
+    # Build vector of node degrees
+    deg_vector = np.sum(ppi_adj, axis = 1, keepdims=True)
+
+    # Apply the degree function
+    name += '_' + deg_fn
+    if deg_fn == 'log':
+        # Take the natural log of the degrees. Add one to avoid division by zero
+        deg_vector = np.log(deg_vector) + 1
+    elif deg_fn == 'sqrt':
+        # Take the square root of the degrees
+        deg_vector = np.sqrt(deg_vector) 
+
+    # Take the inverse of the degree vector
+    inv_deg_vector = np.power(deg_vector, -1)
+
+    # Build the complementarity matrix
+    comp_matrix = np.dot((inv_deg_vector*ppi_adj).T, ppi_adj)
+
+    if(row_norm):
+        # Normalize by the degree of the query node. (row normalize)
+        name += '_rnorm'
+        comp_matrix = inv_deg_vector * comp_matrix
+    
+    if(col_norm):
+        # Normalize by the degree of the disease node. (column normalize)
+        name += '_cnorm'
+        comp_matrix = (comp_matrix.T * inv_deg_vector).T
+    
+    np.save(os.path.join('data', 'ppi_matrices', name + ".npy"), comp_matrix)
+    return comp_matrix 
+
+
 def build_ppi_comp():
     ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
     ppi_comp = np.dot((ppi_adj*ppi_inv_deg).T, ppi_adj)
@@ -139,8 +174,8 @@ def build_ppi_comp_sqrt_query_normalized():
     return ppi_comp 
 
 def build_ppi_comp_query_normalized():
-    ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    ppi_comp = np.dot((ppi_adj*ppi_sqrt_inv_deg).T, ppi_adj)*ppi_sqrt_inv_deg
+    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
+    ppi_comp = np.dot((ppi_adj*ppi_inv_deg).T, ppi_adj)*ppi_sqrt_inv_deg
     np.save("data/ppi_matrices/ppi_comp_qnorm.npy", ppi_comp)
     return ppi_comp 
 
@@ -183,9 +218,5 @@ if __name__ == "__main__":
     print("Sabri Eyuboglu  -- Stanford University")
     print("======================================")
 
-    build_dn_query_normalized() 
-
-
-
-
+    build_ppi_comp_matrix(deg_fn = 'log', row_norm = True, col_norm = False)
 

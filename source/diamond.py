@@ -31,10 +31,6 @@ from collections import defaultdict
 import csv
 import sys
 
-COMPLEMENTARITY = True
-PPI_COMP_PATH =  "data/ppi_matrices/ppi_comp.npy"
-ppi_comp = np.load(PPI_COMP_PATH)
-
 
 # =============================================================================
 def print_usage():
@@ -61,7 +57,13 @@ def print_usage():
 
 # =============================================================================
 
-
+def compute_diamond_scores(ppi_networkx, training_nodes, max_nodes = 100, alpha = 10):
+    n_nodes = len(ppi_networkx)
+    scores = np.zeros((n_nodes))
+    added_nodes = DIAMOnD(ppi_networkx, training_nodes, max_nodes, alpha)
+    for i, node in enumerate(added_nodes):
+        scores[node[0]] = 1.0*(n_nodes - i) / n_nodes
+    return scores
 
 def check_input_style(input_list):
     try:
@@ -334,35 +336,27 @@ def diamond_iteration_of_first_X_nodes(G,S,X,alpha):
                                                              neighbors,G,
                                                              not_in_cluster,
                                                              cluster_nodes,alpha)
-        if COMPLEMENTARITY: 
-            candidate_indices = list(reduced_not_in_cluster)
-            training_indices = list(cluster_nodes)
-            scores = np.mean(ppi_comp[candidate_indices, :][:, training_indices], axis = 1)
-            #max_score = np.max(scores)
-            next_node = candidate_indices[np.argmax(scores)]
-            added_nodes.append((next_node, 0))
-        else: 
-            for node,kbk in reduced_not_in_cluster.iteritems():
-                # Getting the p-value of this kb,k
-                # combination and save it in all_p, so computing it only once!
-                kb,k = kbk
-                try:
-                    p = all_p[(k,kb,s0)]
-                except KeyError:
-                    p = pvalue(kb, k, N, s0, gamma_ln)    
-                    all_p[(k,kb,s0)] = p
-                
-                # recording the node with smallest p-value
-                if p < pmin:
-                    pmin = p
-                    next_node = node
-        
-                info[node] = (k,kb,p)
+        for node,kbk in reduced_not_in_cluster.iteritems():
+            # Getting the p-value of this kb,k
+            # combination and save it in all_p, so computing it only once!
+            kb,k = kbk
+            try:
+                p = all_p[(k,kb,s0)]
+            except KeyError:
+                p = pvalue(kb, k, N, s0, gamma_ln)    
+                all_p[(k,kb,s0)] = p
+            
+            # recording the node with smallest p-value
+            if p < pmin:
+                pmin = p
+                next_node = node
+    
+            info[node] = (k,kb,p)
 
-            added_nodes.append((next_node,
-                                info[next_node][0],
-                                info[next_node][1],
-                                info[next_node][2]))
+        added_nodes.append((next_node,
+                            info[next_node][0],
+                            info[next_node][1],
+                            info[next_node][2]))
 
         # Updating the list of cluster nodes and s0
         cluster_nodes.add(next_node)
