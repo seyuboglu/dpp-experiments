@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 
 from disease import load_diseases, load_network
+from output import ExperimentResults
 #from ppi_matrix import compute_matrix_scores 
 
 from util import Params, set_logger
@@ -34,19 +35,18 @@ def compute_complementarity(query_node, node_to_node_to_common, disease_nodes):
     comp = np.mean(comps)
 
     # Sanity check
-    if(sanity_check):
-        training_nodes = np.delete(disease_nodes, np.argwhere(disease_nodes == query_node))
-        matrix_comp = np.load(ppi_matrix, training_nodes)[query_node]
+    training_nodes = np.delete(disease_nodes, np.argwhere(disease_nodes == query_node))
+    matrix_comp = np.load(ppi_matrix, training_nodes)[query_node]
 
-        logging.info('Comp - Matrix Comp Difference: ' + str(comp-matrix_comp))
-        logging.info('Comp - Matrix Relative Difference: ' + str(comp / (matrix_comp)))
-        logging.info('Comp:' + str(comp))
-        logging.info('Matrix Comp:' + str(matrix_comp))
-        logging.info('Elementwise-Difference:')
+    logging.info('Comp - Matrix Comp Difference: ' + str(comp-matrix_comp))
+    logging.info('Comp - Matrix Relative Difference: ' + str(comp / (matrix_comp)))
+    logging.info('Comp:' + str(comp))
+    logging.info('Matrix Comp:' + str(matrix_comp))
+    logging.info('Elementwise-Difference:')
 
     return comp
 
-def get_disease_subgraph(disease, disease_directory):
+def compute_disease_subgraph(disease, disease_directory):
     """ Get the disease subgraph of 
     Args:
         disease: (Disease) A disease object
@@ -75,11 +75,40 @@ def get_disease_subgraph(disease, disease_directory):
     # Get Induced Subgraph 
     induced_subgraph = ppi_networkx.subgraph(intermediate_nodes | set(disease_nodes))
 
-    return induced_subgraph, node_to_node_to_common
+    return induced_subgraph, intermediate_nodes, node_to_node_to_common
 
-def write_disease_subgraph(subgraph, disease, directory):
+def analyze_disease_subgraph(disease, subgraph, intermediate_nodes, node_to_node_to_common):
     """ Output the disease subgraph to a file
     Args:
+        disease: (Disease) disease object
+        subgraph: (networkx) the networkx subgraph object
+    """
+    metrics = {}
+    disease_nodes = set(disease.to_node_array(protein_to_node))
+    intermediate_nodes = set(intermediate_nodes)
+
+    # Compute the number of intermediate and disease nodes 
+    metrics["# of Intermediate Nodes"] = len(intermediate_nodes)
+    metrics["# of Disease Nodes"] = len(disease_nodes)
+
+    # Compute the density of the disease pathway and intermediate subgraph
+    metrics["Density of Disease Subgraph"] = nx.density(subgraph.subgraph(disease_nodes))
+    metrics["Density of Disease-Intermediate Subgraph"] = nx.density(subgraph)
+    metrics["Density of Intermediate Subgraph"] = nx.density(subgraph.subgraph(intermediate_nodes))
+
+    # Compute average number of connections for intermediate node
+    metrics["Avg. # of Intermediate-Disease Interactions"] = np.mean([1.0*len(set(subgraph.neighbors(intermediate_node)) & disease_nodes) / len(disease_nodes) 
+                           for  intermediate_node in intermediate_nodes])
+    
+    return metrics 
+        
+        
+        
+
+def write_disease_subgraph(disease, subgraph, directory):
+    """ Output the disease subgraph to a file
+    Args:
+        disease: (Disease) disease object
         subgraph: (networkx) the networkx subgraph object
         directory: (string) the directory to write the subgraph
     """
@@ -129,13 +158,21 @@ if __name__ == '__main__':
 
     #Run Experiment
     logging.info("Running Experiment...")
-    all_metrics = []
+    disease_to_metrics = {}
     for i, disease in enumerate(diseases_dict.values()): 
         logging.info(str(i+1) + ": " + disease.name)
         # Create directory for disease 
         disease_directory = os.path.join(args.experiment_dir, 'diseases', disease.id)
         if not os.path.exists(disease_directory):
             os.makedirs(disease_directory)
-        induced_subgraph,_ = get_disease_subgraph(disease, disease_directory)
-        with open(os.path.join(disease_directory, 'comp_subgraph.txt'), "wb") as subgraph_file: 
-            write_disease_subgraph(induced_subgraph,  disease, disease_directory)
+        induced_subgraph, intermediate_nodes, node_to_node_to_common = compute_disease_subgraph(disease, disease_directory)
+        analyze_disease_subgraph(disease, induced_subgraph, intermediate_nodes, node_to_node_to_common)
+        write_disease_subgraph(induced_subgraph, disease, disease_directory)
+        
+    output_results = ExperimentResults()
+    for disease, metrics in disease_to_metrics.items():  
+        output_results.add_disease_row(disease.id, disease.name)
+        output_results.add_data_row_multiple(disease.id, metrics)
+    output_results.add_statistics()
+    output_results.output_to_csv(os.path.join(directory, 'results.csv'))
+        
