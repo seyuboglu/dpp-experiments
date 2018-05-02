@@ -3,6 +3,7 @@
 import argparse
 import logging
 import os
+import csv
 
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -77,15 +78,45 @@ def compute_disease_subgraph(disease, disease_directory):
 
     return induced_subgraph, intermediate_nodes, node_to_node_to_common
 
+def initialize_metrics():
+    """ Initialize metrics dictionary
+    Args:
+        None
+    """
+    metric_names = ["Disease ID", "Disease Name", "# of Disease Nodes", "# of Intermediate Nodes", 
+                   "Density of Disease Subgraph", "Density of Disease-Intermediate Subgraph", "Density of Intermediate Subgraph",
+                   "Conductance of Disease Nodes", "Conductance of Disease-Intermediate Nodes", "Conductance of Intermediate Nodes",
+                   "Conductance of Intermediate Nodes deg < " + str(params.degree_cutoff), 
+                   "Mean Frac. of Intermediate-Disease Interactions"]
+    metrics = {field_name: None for field_name in metric_names}
+    return metric_names, metrics
+
+def write_metrics(path, metric_names, metrics):
+    """ Initialize metrics dictionary
+    Args:
+        metric_names: (List of String) List of the metric names used as header of csv
+        metrics: (List of Dictionaries) List of dictionaries 
+    """
+    with open(path, 'w') as file:
+        metric_writer = csv.DictWriter(file, metric_names)
+        metric_writer.writeheader()
+        for curr_metrics in metrics:
+            metric_writer.writerow(curr_metrics)
+
 def analyze_disease_subgraph(disease, subgraph, intermediate_nodes, node_to_node_to_common):
     """ Output the disease subgraph to a file
     Args:
         disease: (Disease) disease object
         subgraph: (networkx) the networkx subgraph object
     """
-    metrics = {}
+    metric_names, metrics = initialize_metrics()
     disease_nodes = set(disease.to_node_array(protein_to_node))
     intermediate_nodes = set(intermediate_nodes)
+    intermediate_nodes_k = set([node for node in intermediate_nodes if ppi_networkx.degree(node) < params.degree_cutoff])
+
+    # Fill in disease info. 
+    metrics["Disease ID"] = disease.id 
+    metrics["Disease Name"] = disease.name
 
     # Compute the number of intermediate and disease nodes 
     metrics["# of Intermediate Nodes"] = len(intermediate_nodes)
@@ -96,14 +127,19 @@ def analyze_disease_subgraph(disease, subgraph, intermediate_nodes, node_to_node
     metrics["Density of Disease-Intermediate Subgraph"] = nx.density(subgraph)
     metrics["Density of Intermediate Subgraph"] = nx.density(subgraph.subgraph(intermediate_nodes))
 
+    # Compute the conductance of the disease pathway and intermediate subgraph
+    metrics["Conductance of Disease Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, disease_nodes)
+    metrics["Conductance of Disease-Intermediate Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, 
+                                                                                          intermediate_nodes | disease_nodes)
+    metrics["Conductance of Intermediate Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, intermediate_nodes)
+    metrics["Conductance of Intermediate Nodes deg < " + str(params.degree_cutoff)] = nx.algorithms.cuts.conductance(ppi_networkx, intermediate_nodes_k | disease_nodes)
+
     # Compute average number of connections for intermediate node
-    metrics["Avg. # of Intermediate-Disease Interactions"] = np.mean([1.0*len(set(subgraph.neighbors(intermediate_node)) & disease_nodes) / len(disease_nodes) 
+    metrics["Mean Frac. of Intermediate-Disease Interactions"] = np.mean([1.0*len(set(subgraph.neighbors(intermediate_node)) & disease_nodes) / len(disease_nodes) 
                            for  intermediate_node in intermediate_nodes])
-    
+
     return metrics 
-        
-        
-        
+
 
 def write_disease_subgraph(disease, subgraph, directory):
     """ Output the disease subgraph to a file
@@ -113,23 +149,28 @@ def write_disease_subgraph(disease, subgraph, directory):
         directory: (string) the directory to write the subgraph
     """
     disease_nodes = set(disease.to_node_array(protein_to_node))
-    with open(os.path.join(directory, 'comp_subgraph.txt'), "wb") as subgraph_file:
+    with open(os.path.join(directory, disease.id + '_comp_subgraph.txt'), "wb") as subgraph_file:
         for edge in subgraph.edges():
-            for i in range(2): 
-                # Add edge terminals
-                line = str(edge[0]) + " " + str(edge[1])
-                # Add interaction type
-                interaction_type = (1 if edge[0] in disease_nodes else 0) + (1 if edge[1] in disease_nodes else 0) 
-                line += " " + str(interaction_type)
-                # Add disease indicator
-                line += " " + str(1 if edge[0] in disease_nodes else 0) 
-                line += " " + str(1 if edge[1] in disease_nodes else 0) 
-                # Add inverse degree indicator 
-                line += " " + str(1.0/np.sqrt(ppi_networkx.degree(edge[0])))
-                line += " " + str(1.0/np.sqrt(ppi_networkx.degree(edge[1])))
-                subgraph_file.write(line + '\n')
-                # Reverse Edge
-                edge = edge[::-1]
+            # Add edge terminals
+            line = str(edge[0]) + " " + str(edge[1])
+
+            # Add interaction type
+            interaction_type = (1 if edge[0] in disease_nodes else 0) + (1 if edge[1] in disease_nodes else 0) 
+            line += " " + str(interaction_type)
+
+            subgraph_file.write(line + '\n')
+
+    # Write node data into a csv file
+    with open(os.path.join(directory, disease.id + '_node_data.csv'), 'w') as node_data_file:
+        fieldnames = ['Node ID', 'Protein ID', 'Protein Name', 'Disease Node', 'Degree']
+        node_data_writer = csv.DictWriter(node_data_file, fieldnames)
+        node_data_writer.writeheader()
+        for node in subgraph.nodes():
+            node_data_writer.writerow({'Node ID': node, 
+                                       'Protein ID': node_to_protein[node],
+                                       #'Protein Name': 'IGNORE',
+                                       'Disease Node': 1 if node in disease_nodes else 0,
+                                       'Degree': ppi_networkx.degree(node)})
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
@@ -150,6 +191,7 @@ if __name__ == '__main__':
     # Load data from params file
     logging.info("Loading PPI Network...")
     ppi_network, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
+    node_to_protein = {node: protein for protein, node in protein_to_node.items()}
     ppi_networkx = nx.from_numpy_matrix(ppi_network_adj)
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
@@ -158,7 +200,8 @@ if __name__ == '__main__':
 
     #Run Experiment
     logging.info("Running Experiment...")
-    disease_to_metrics = {}
+    all_metrics = []
+    metric_names, _ = initialize_metrics()
     for i, disease in enumerate(diseases_dict.values()): 
         logging.info(str(i+1) + ": " + disease.name)
         # Create directory for disease 
@@ -166,13 +209,11 @@ if __name__ == '__main__':
         if not os.path.exists(disease_directory):
             os.makedirs(disease_directory)
         induced_subgraph, intermediate_nodes, node_to_node_to_common = compute_disease_subgraph(disease, disease_directory)
-        analyze_disease_subgraph(disease, induced_subgraph, intermediate_nodes, node_to_node_to_common)
-        write_disease_subgraph(induced_subgraph, disease, disease_directory)
-        
-    output_results = ExperimentResults()
-    for disease, metrics in disease_to_metrics.items():  
-        output_results.add_disease_row(disease.id, disease.name)
-        output_results.add_data_row_multiple(disease.id, metrics)
-    output_results.add_statistics()
-    output_results.output_to_csv(os.path.join(directory, 'results.csv'))
+        metrics = analyze_disease_subgraph(disease, induced_subgraph, intermediate_nodes, node_to_node_to_common)
+        all_metrics.append(metrics)
+        write_disease_subgraph(disease, induced_subgraph, disease_directory)
+        write_metrics(os.path.join(disease_directory, disease.id + '_metrics.csv'), metric_names, [metrics])
+    
+    write_metrics(os.path.join(args.experiment_dir, 'subgraph_metrics.csv'), metric_names, all_metrics)
+     
         
