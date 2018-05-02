@@ -218,5 +218,5 @@ if __name__ == "__main__":
     print("Sabri Eyuboglu  -- Stanford University")
     print("======================================")
 
-    build_ppi_comp_matrix(deg_fn = 'log', row_norm = True, col_norm = False)
+    build_ppi_comp_matrix(deg_fn = 'sqrt', row_norm = True, col_norm = False)
 
