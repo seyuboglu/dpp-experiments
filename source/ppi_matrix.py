@@ -19,9 +19,9 @@ OUTPUT_PATH = "results/comp_results.csv"
 
 #Loading PPI Complementarity Matrix
 #====================================================
-ppi_comp = np.load(PPI_COMP_PATH)
-ppi_network, ppi_adj, protein_to_node = load_network() 
-ppi_networkx = nx.from_numpy_matrix(ppi_adj)
+#ppi_comp = np.load(PPI_COMP_PATH)
+#ppi_network, ppi_adj, protein_to_node = load_network() 
+#ppi_networkx = nx.from_numpy_matrix(ppi_adj)
 
 #Functions for Computing DPP Scores
 #====================================================

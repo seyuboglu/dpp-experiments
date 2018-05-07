@@ -193,6 +193,8 @@ if __name__ == '__main__':
     ppi_network, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
     node_to_protein = {node: protein for protein, node in protein_to_node.items()}
     ppi_networkx = nx.from_numpy_matrix(ppi_network_adj)
+    largest_cc = max(nx.connected_components(ppi_networkx), key=len)
+    print ("Largest_CC:", len(largest_cc))
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
     logging.info("Loading PPI Matrix...")

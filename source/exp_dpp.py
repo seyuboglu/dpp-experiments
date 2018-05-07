@@ -3,6 +3,8 @@
 import argparse
 import logging
 import os
+from multiprocessing import Pool
+
 
 import numpy as np
 from sklearn.model_selection import KFold
@@ -15,6 +17,8 @@ from diamond import compute_diamond_scores
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import recall_at, recall, mean_rank, auroc, average_precision
+
+from scipy.stats import rankdata
 
 
 from util import Params, set_logger
@@ -29,11 +33,19 @@ def initialize_metrics():
     dictionary. 
     """
     metrics = {}
+
     for k in [100, 50, 25, 10]:
-        metrics["Val Recall-at-{}".format(k)] = []
-    metrics["Val Mean Rank"] = []
-    metrics["Val AUROC"] = []
-    metrics["Val Mean Average Precision"] = []
+        metrics["Fold Recall-at-{}".format(k)] = []
+    metrics["Fold Mean Rank"] = []
+    metrics["Fold AUROC"] = []
+    metrics["Fold Mean Average Precision"] = []
+
+    for k in [100, 50, 25, 10]:
+        metrics["Full Recall-at-{}".format(k)] = []
+    metrics["Full Mean Rank"] = []
+    metrics["Full AUROC"] = []
+    metrics["Full Mean Average Precision"] = []
+
     return metrics
 
 def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
@@ -45,13 +57,26 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
         train_node: (ndarray) array of train nodes
         test_nodes: (ndarray) array of test nodes
     """
-    for k in [100, 50, 25, 10]: 
-        metrics["Val Recall-at-{}".format(k)].append(recall_at(labels, scores, k, train_nodes))
-    metrics["Val Mean Rank"].append(mean_rank(labels, scores, train_nodes))
-    metrics["Val AUROC"].append(auroc(labels, scores, train_nodes))
-    metrics["Val Mean Average Precision"].append(average_precision(labels, scores, train_nodes))
 
-def synthesize_metrics(directory, disease_to_metrics):
+    for k in [100, 50, 25, 10]: 
+        metrics["Full Recall-at-{}".format(k)].append(recall_at(labels, scores, k, train_nodes))
+    metrics["Full Mean Rank"].append(mean_rank(labels, scores, train_nodes))
+    metrics["Full AUROC"].append(auroc(labels, scores, train_nodes))
+    metrics["Full Mean Average Precision"].append(average_precision(labels, scores, train_nodes))
+
+    # Sample down to one-folds-worth of negative examples 
+    out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
+    fold_scores = scores.copy()
+    fold_scores[out_of_fold] = 0.0
+    fold_scores[test_nodes] = scores[test_nodes]
+
+    for k in [100, 50, 25, 10]: 
+        metrics["Fold Recall-at-{}".format(k)].append(recall_at(labels, fold_scores, k, train_nodes))
+    metrics["Fold Mean Rank"].append(mean_rank(labels, fold_scores, train_nodes))
+    metrics["Fold AUROC"].append(auroc(labels, fold_scores, train_nodes))
+    metrics["Fold Mean Average Precision"].append(average_precision(labels, fold_scores, train_nodes))
+
+def write_metrics(directory, disease_to_metrics):
     """Synthesize the metrics for one disease. 
     Args: 
         metrics: (dictionary) 
@@ -59,6 +84,7 @@ def synthesize_metrics(directory, disease_to_metrics):
         disease: (Disease)
     """
     # Output metrics to csv
+
     output_results = ExperimentResults()
     for disease, metrics in disease_to_metrics.items():  
         output_results.add_disease_row(disease.id, disease.name)
@@ -98,7 +124,7 @@ def run_dpp(disease):
     metrics = initialize_metrics()
 
     # Perform k-fold cross validation
-    n_folds = disease_nodes.size if params.n_folds < 0 else params.n_folds
+    n_folds = disease_nodes.size if params.n_folds < 0 or params.n_folds > len(disease_nodes) else params.n_folds
     kf = KFold(n_splits = n_folds, shuffle=False)
     for train_indices, test_indices in kf.split(disease_nodes):
         train_nodes = disease_nodes[train_indices]
@@ -115,7 +141,7 @@ def run_dpp(disease):
     #if not os.path.exists(disease_directory):
     #    os.makedirs(disease_directory)
     avg_metrics = {name: np.mean(values) for name, values in metrics.iteritems()} 
-    return avg_metrics 
+    return disease, avg_metrics 
 
 
 if __name__ == '__main__':
@@ -134,6 +160,9 @@ if __name__ == '__main__':
     logging.info("Sabri Eyuboglu  -- SNAP Group")
     logging.info("======================================")
 
+    # Log Parameters
+    #TODO
+
     # Load data from params file
     logging.info("Loading PPI Network...")
     ppi_network, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
@@ -147,10 +176,16 @@ if __name__ == '__main__':
     #Run Experiment
     logging.info("Running Experiment...")
     disease_to_metrics = {}
-    for i, disease in enumerate(diseases_dict.values()): 
-        logging.info(str(i) + ": " + disease.name)
-        metrics = run_dpp(disease)
-        disease_to_metrics[disease] = metrics
-    
-    synthesize_metrics(args.experiment_dir, disease_to_metrics)
+    if params.n_processes > 1: 
+        p = Pool(params.n_processes)
+        for n_finished, (disease, metrics) in enumerate(p.imap(run_dpp, diseases_dict.values()), 1):
+            logging.info("Experiment Progress: {.1f}% -- {}/{}".format(100.0*n_finished/len(diseases_dict), 
+                                                                   n_finished, len(diseases_dict)))
+            disease_to_metrics[disease] = metrics
+    else: 
+        for i, disease in enumerate(diseases_dict.values()): 
+            logging.info("Experiment Progress: {.1f}% -- {}/{}".format(100.0*n_finished/len(diseases_dict), n_finished, len(diseases_dict)))
+            metrics = run_dpp(disease)
+            disease_to_metrics[disease] = metrics
         
+    write_metrics(args.experiment_dir, disease_to_metrics)
