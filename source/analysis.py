@@ -19,7 +19,7 @@ def sample_mask(idx, l):
 def inverse_sample_mask(idx, l):
     mask = np.ones(l)
     mask[idx] = 0
-    return np.array(mask, dtype=np.bool)
+    return np.array(mask, dtype=np.bool)    
 
 def recall(y_true, y_pred, excluded_indices=[]): 
     no_train_mask = inverse_sample_mask(excluded_indices, y_true.shape[0])
@@ -51,14 +51,14 @@ def average_precision(y_true, output_probs, excluded_indices=[]):
 def compute_ranking(scores):
     return rankdata(-scores, method='ordinal')
 
-def mean_rank(y_true, output_probs, excluded_indices): 
+def positive_rankings(y_true, output_probs, excluded_indices): 
     no_train_mask = inverse_sample_mask(excluded_indices, y_true.shape[0])
     y_true_no_train = y_true[no_train_mask]
     output_probs_no_train = output_probs[no_train_mask]
     ranked_nodes = compute_ranking(output_probs_no_train)
     y_true_no_train = y_true_no_train.reshape((y_true_no_train.shape[0],))
     true_rankings = ranked_nodes[y_true_no_train.astype(bool)]
-    return np.mean(true_rankings)
+    return true_rankings
 
 def plot_prc(y_true, method_scores, excluded_indices):
     print("Plotting AUC")
