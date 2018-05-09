@@ -25,7 +25,7 @@ OUTPUT_PATH = "results/comp_results.csv"
 
 #Functions for Computing DPP Scores
 #====================================================
-def compute_matrix_scores(ppi_matrix, training_ids):
+def compute_matrix_scores(ppi_matrix, training_ids, params):
     scores = np.mean(ppi_matrix[:, training_ids], axis = 1)
     return scores 
 
@@ -38,13 +38,6 @@ def compute_comp_scores(training_ids):
     #Compute score by taking mean of complementarity with training Set 
     scores = np.mean(ppi_comp[:, training_ids], axis = 1)
     return scores
-
-def compute_random_walk_scores(ppi_networkx, training_ids, alpha = 0.25):
-    training_ids = set(training_ids)
-    training_personalization = {node: (1.0/len(training_ids) if node in training_ids else 0) for node in ppi_networkx.nodes()}
-    page_rank = nx.pagerank(ppi_networkx, personalization=training_personalization)
-    scores = np.array([page_rank.get(node, 0) for node in ppi_networkx.nodes()])   
-    return scores 
 
 def compute_adj_scores(training_ids): 
     #Compute score by taking mean of adjacency with training Set 
