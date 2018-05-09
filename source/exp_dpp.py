@@ -14,6 +14,7 @@ import networkx as nx
 from ppi_matrix import compute_matrix_scores
 from random_walk import compute_random_walk_scores
 from diamond import compute_diamond_scores
+from gcn import compute_gcn_scores
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import recall_at, recall, mean_rank, auroc, average_precision
@@ -99,14 +100,16 @@ def compute_node_scores(training_nodes):
     """
     scores = None
     if params.method == 'ppi_matrix':
-        scores = compute_matrix_scores(ppi_matrix, training_nodes)
+        scores = compute_matrix_scores(ppi_matrix, training_nodes, params)
     
     elif params.method == 'random_walk':
-        scores = compute_random_walk_scores(ppi_networkx, training_nodes, alpha = params.rw_alpha)
+        scores = compute_random_walk_scores(ppi_networkx, training_nodes, params)
     
     elif params.method == 'diamond':
-        scores = compute_diamond_scores(ppi_networkx, training_nodes, 
-                                            max_nodes = params.max_nodes, alpha = params.dm_alpha)
+        scores = compute_diamond_scores(ppi_networkx, training_nodes, params)
+
+    elif params.method == 'gcn':
+        scores = compute_gcn_scores(ppi_networkx, training_nodes)
     else: 
         logging.error("No method" + params.method)
     
@@ -150,7 +153,7 @@ if __name__ == '__main__':
     json_path = os.path.join(args.experiment_dir, 'params.json')
     assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
     params = Params(json_path)
-    params.update(json_path)
+    params.update(json_path)  
 
     # Set the logger
     set_logger(os.path.join(args.experiment_dir, 'experiment.log'), level=logging.INFO, console=True)

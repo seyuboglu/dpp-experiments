@@ -57,7 +57,8 @@ def print_usage():
 
 # =============================================================================
 
-def compute_diamond_scores(ppi_networkx, training_nodes, max_nodes = 100, alpha = 10):
+def compute_diamond_scores(ppi_networkx, training_nodes, params):
+    max_nodes, alpha = params.max_nodes, params.dm_alpha
     n_nodes = len(ppi_networkx)
     scores = np.zeros((n_nodes))
     added_nodes = DIAMOnD(ppi_networkx, training_nodes, max_nodes, alpha)
