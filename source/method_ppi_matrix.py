@@ -12,7 +12,6 @@ import networkx as nx
 
 from disease import Disease, load_diseases, load_network
 from output import ExperimentResults
-from diamond import DIAMOnD
 
 PPI_COMP_PATH = "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy"
 OUTPUT_PATH = "results/comp_results.csv"
@@ -48,13 +47,6 @@ def compute_adj_set(training_ids):
     #Compute score by taking mean of complementarity with training Set 
     set = np.any(ppi_adj[:, training_ids], axis = 1)
     return set, np.sum(set)
-
-def compute_diamond_set(training_ids, k):
-    added_nodes = DIAMOnD(ppi_networkx, training_ids, k, 1)
-    added_ids = [node[0] for node in added_nodes] 
-    added_set = np.zeros((ppi_adj.shape[0], 1))
-    added_set[added_ids] = 1.0
-    return added_set 
 
 #Complementarity Analysis
 #====================================================
