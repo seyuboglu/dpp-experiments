@@ -1,9 +1,6 @@
 from gcn.layers import *
 from gcn.metrics import *
 
-flags = tf.app.flags
-FLAGS = flags.FLAGS
-
 
 class Model(object):
     def __init__(self, **kwargs):
@@ -111,14 +108,14 @@ class MLP(Model):
 
     def _build(self):
         self.layers.append(Dense(input_dim=self.input_dim,
-                                 output_dim=FLAGS.hidden1,
+                                 output_dim=params.hidden1,
                                  placeholders=self.placeholders,
                                  act=tf.nn.relu,
                                  dropout=True,
                                  sparse_inputs=True,
                                  logging=self.logging))
 
-        self.layers.append(Dense(input_dim=FLAGS.hidden1,
+        self.layers.append(Dense(input_dim=params.hidden1,
                                  output_dim=self.output_dim,
                                  placeholders=self.placeholders,
                                  act=lambda x: x,
