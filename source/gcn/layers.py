@@ -128,59 +128,6 @@ class Dense(Layer):
 
         return self.act(output)
 
-class SideFeatures(Layer):
-    def __init__(self, input_dim, output_dim, placeholders, dropout=0., sparse_inputs=False,
-                 act=tf.nn.relu, bias=False, **kwargs):
-        super(SideFeatures, self).__init__(**kwargs)
-
-        if dropout:
-            self.dropout = placeholders['dropout']
-        else:
-            self.dropout = 0.
-
-        self.act = act
-        self.sparse_inputs = sparse_inputs
-        self.bias = bias
-
-        # helper variable for sparse dropout
-        self.num_features_nonzero = placeholders['num_features_nonzero']
-
-
-        self.side_features = placeholders['side_features']
-        side_feature_dim = self.side_features.get_shape()[1].value
-
-        with tf.variable_scope(self.name + '_vars'):
-            self.vars['activation_weights'] = glorot([input_dim, output_dim],
-                                          name='activation_weights')
-            self.vars['feature_weights'] = glorot([side_feature_dim, output_dim],
-                                          name='feature_weights')
-            self.vars['feature_bias'] = zeros([output_dim], name='feature_bias')
-            if self.bias:
-                self.vars['activation_bias'] = zeros([output_dim], name='activation_bias')
-
-        if self.logging:
-            self._log_vars()
-
-    def _call(self, inputs):
-        x = inputs
-
-        # dropout
-        if self.sparse_inputs:
-            x = sparse_dropout(x, 1-self.dropout, self.num_features_nonzero)
-        else:
-            x = tf.nn.dropout(x, 1-self.dropout)
-
-        # transform
-        feature_term = dot(self.side_features, self.vars['feature_weights'], sparse=False) + self.vars['feature_bias']   
-        output = tf.concat([dot(x, self.vars['activation_weights'], sparse=self.sparse_inputs), self.act(feature_term)], axis=1)
-
-        # bias
-        if self.bias:
-            output += self.vars['bias']
-
-        return self.act(output)
-
-
 class GraphConvolution(Layer):
     """Graph convolution layer."""
     def __init__(self, input_dim, output_dim, placeholders, dropout=0.,

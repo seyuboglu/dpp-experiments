@@ -5,15 +5,23 @@ import scipy.sparse as sp
 from scipy.sparse.linalg.eigen.arpack import eigsh
 import sys
 
+def get_negatives(Y, n_neg):
+    """ Generate n_neg indices for negative examples
+    excluding examples already positive in Y. 
+    """
+    n = Y.shape[0]
+    n_pos = np.sum(np.sum(Y[:,1]))
+    neg_indices = np.random.choice(range(n), 
+                                   size=int(n_neg), 
+                                   replace=False, 
+                                   p=(1 - Y[:,1]) / (n-n_pos))                             
+    return neg_indices 
+
 def shuffle_negatives(Y):
-    n_negatives = np.sum(Y[:,0])
-    Y[:,0] = np.zeros(Y.shape[0])
-    new_indices = np.random.choice(range(Y.shape[0]), size=int(n_negatives), replace=False)
-    while np.sum(Y[new_indices,1]) > 0.5: 
-        new_indices = np.random.choice(range(Y.shape[0]), size=int(n_negatives), replace=False)
-    Y[new_indices,0] = 1.0
-
-
+    n_neg = np.sum(Y[:, 0])
+    neg_indices = get_negatives(Y, n_neg)
+    Y[neg_indices, 0] = 1.0
+    
 def parse_index_file(filename):
     """Parse index file."""
     index = []
@@ -33,64 +41,22 @@ def inverse_sample_mask(idx, l):
     mask[idx] = 0
     return np.array(mask, dtype=np.bool)
 
-
-def format_data(X, XS, Y, graph, idx_train, idx_validate, idx_test):
+def format_data(X, Y, adj, idx_train, idx_validate):
     X = X.astype(np.float32)
-    XS = XS.astype(np.float32)
     Y = Y.astype(np.int32)
 
     features = sp.coo_matrix(X).tolil()
-    side_features = XS #sp.coo_matrix(XS).tolil()
-    adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
 
     train_mask = sample_mask(idx_train, Y.shape[0])
     val_mask = sample_mask(idx_validate, Y.shape[0])
-    test_mask = sample_mask(idx_test, Y.shape[0])
 
     y_train = np.zeros(Y.shape)
     y_val = np.zeros(Y.shape)
-    y_test = np.zeros(Y.shape)
     y_train[train_mask, :] = Y[train_mask, :]
     y_val[val_mask, :] = Y[val_mask, :]
-    y_test[test_mask, :] = Y[test_mask, :]
 
-    save_to_excel("y_train.csv", y_train)
-    save_to_excel("y_val.csv", y_val)
-    save_to_excel("y_test.csv", y_test)
-    save_to_excel("y_train.csv", y_train)
-    save_to_excel("y_val.csv", y_val)
-    save_to_excel("y_test.csv", y_test)
+    return adj, features, y_train, y_val, train_mask, val_mask
 
-    return adj, features, side_features, y_train, y_val, y_test, train_mask, val_mask, test_mask
-
-def format_data_no_split(X, XS, Y, graph):
-    X = X.astype(np.float32)
-    XS = XS.astype(np.float32)
-    Y = Y.astype(np.int32)
-
-    features = sp.coo_matrix(X).tolil()
-    side_features = XS #sp.coo_matrix(XS).tolil()
-    adj = nx.adjacency_matrix(nx.from_dict_of_lists(graph))
-
-    train_mask = sample_mask(idx_train, Y.shape[0])
-    val_mask = sample_mask(idx_validate, Y.shape[0])
-    test_mask = sample_mask(idx_test, Y.shape[0])
-
-    y_train = np.zeros(Y.shape)
-    y_val = np.zeros(Y.shape)
-    y_test = np.zeros(Y.shape)
-    y_train[train_mask, :] = Y[train_mask, :]
-    y_val[val_mask, :] = Y[val_mask, :]
-    y_test[test_mask, :] = Y[test_mask, :]
-
-    save_to_excel("y_train.csv", y_train)
-    save_to_excel("y_val.csv", y_val)
-    save_to_excel("y_test.csv", y_test)
-    save_to_excel("y_train.csv", y_train)
-    save_to_excel("y_val.csv", y_val)
-    save_to_excel("y_test.csv", y_test)
-
-    return adj, features, side_features, y_train, y_val, y_test, train_mask, val_mask, test_mask
 
 def load_file(dataset_str):
     """Load data."""
@@ -150,17 +116,16 @@ def normalize_adj(adj):
 
 def preprocess_adj(adj):
     """Preprocessing of adjacency matrix for simple GCN model and conversion to tuple representation."""
-    adj_normalized = normalize_adj(adj + sp.eye(adj.shape[0]))
+    adj_normalized = sp.coo_matrix(adj) #normalize_adj(adj + sp.eye(adj.shape[0]))
     return sparse_to_tuple(adj_normalized)
 
 
-def construct_feed_dict(features, side_features, support, labels, labels_mask, placeholders):
+def construct_feed_dict(features, support, labels, labels_mask, placeholders):
     """Construct feed dictionary."""
     feed_dict = dict()
     feed_dict.update({placeholders['labels']: labels})
     feed_dict.update({placeholders['labels_mask']: labels_mask})
     feed_dict.update({placeholders['features']: features})
-    feed_dict.update({placeholders['side_features']: side_features})
     feed_dict.update({placeholders['support'][i]: support[i] for i in range(len(support))})
     feed_dict.update({placeholders['num_features_nonzero']: features[1].shape})
     return feed_dict
