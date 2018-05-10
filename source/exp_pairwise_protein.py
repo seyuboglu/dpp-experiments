@@ -8,7 +8,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import plotly.plotly as py
 import plotly.graph_objs as go
-import snap 
 import networkx as nx
 
 from disease import Disease, load_diseases, load_network

@@ -7,7 +7,6 @@ import os
 from collections import defaultdict
 import numpy as np 
 import matplotlib.pyplot as plt
-import snap 
 import networkx as nx
 
 from disease import Disease, load_diseases, load_network
