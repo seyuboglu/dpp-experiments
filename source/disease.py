@@ -3,11 +3,12 @@
 
 from sets import Set 
 import csv
+
 import numpy as np 
+import networkx as nx
 
 NETWORK_PATH = "data/bio-pathways-network.txt"
 ASSOCIATIONS_PATH = "data/bio-pathways-associations.csv"
-MOTIF_PATH = "data/bio-pathways-proteinmotifs.csv"
 
 class Disease: 
     def __init__(self, id, name, proteins):
