@@ -35,7 +35,7 @@ import numpy as np
 import scipy.sparse
 import tensorflow as tf 
 
-from gcn.train import perform_train, LAYER_SPEC
+from gcn.train import perform_train
 from gcn.utils import format_data, sample_mask, inverse_sample_mask, get_negatives
 
 def compute_gcn_scores(ppi_adj, train_pos, val_pos, params):
