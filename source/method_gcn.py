@@ -58,17 +58,12 @@ def compute_gcn_scores(ppi_adj, train_pos, val_pos, params):
     val_nodes = val_pos
 
     # Initialize tensorflow session 
-    sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
     scores = None
-    
     try: 
         data = format_data(X, Y, ppi_adj, train_nodes, val_nodes)
-        epoch_outputs = perform_train(*data, params = params, sess = sess, verbose=True)
+        epoch_outputs = perform_train(*data, params = params, verbose=True)
         scores = epoch_outputs[-1][:,1]
     except Exception as e:
         print "Exception on GCN Execution:", str(e)
-
-    sess.close()
-    tf.reset_default_graph()
 
     return scores

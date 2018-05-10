@@ -13,13 +13,12 @@ seed = 123
 np.random.seed(seed)
 tf.set_random_seed(seed)
 
-def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, sess = None, verbose = True):
+def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, verbose = True):
     """
     Perform training process
 
     Returns the outputs from the last training pass
     """
-
     # Some preprocessing
     features = preprocess_features(features)
     if params.model == 'gcn':
@@ -35,7 +34,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, s
         num_supports = 1
         model_func = MLP
     else:
-        raise ValueError('Invalid argument for model: ' + str(FLAGS.model))
+        raise ValueError('Invalid argument for model: ' + str(params.model))
 
     # Define placeholders
     placeholders = {
@@ -48,11 +47,11 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, s
     }
 
     # Create model
-    model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
+    with tf.device(params.device):
+        model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
 
     #Initialize Session 
-    if (not sess): 
-        sess = tf.Session() 
+    sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
     # Define model evaluation function
     def evaluate(features, support, labels, mask, placeholders):
@@ -111,6 +110,9 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, s
             break
 
     if(verbose): print("Optimization Finished!")
+
+    sess.close()
+    tf.reset_default_graph()
 
     return epoch_val_outputs, epoch_train_accs, epoch_val_accs  
 
