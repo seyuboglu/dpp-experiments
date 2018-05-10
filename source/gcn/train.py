@@ -26,13 +26,6 @@ flags.DEFINE_integer('early_stopping', 100, 'Tolerance for early stopping (# of 
 flags.DEFINE_integer('max_degree', 3, 'Maximum Chebyshev polynomial degree.')
 flags.DEFINE_bool('shuffle_negatives', False, 'Shuffle Negative Samples on each Epoch')
 
-LAYER_SPEC = [('gcl', 128), ('fcl', 16)]
-
-m = FLAGS.model
-hyper_parameters = FLAGS.__flags
-hyper_parameters['layer_spec'] = str(LAYER_SPEC)
-
-
 def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, sess = None, verbose = True):
     """
     Perform training process
