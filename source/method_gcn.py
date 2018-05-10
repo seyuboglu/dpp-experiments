@@ -57,13 +57,9 @@ def compute_gcn_scores(ppi_adj, train_pos, val_pos, params):
     train_nodes = np.concatenate((train_pos, train_neg))
     val_nodes = val_pos
 
-    # Initialize tensorflow session 
-    scores = None
-    try: 
-        data = format_data(X, Y, ppi_adj, train_nodes, val_nodes)
-        epoch_outputs = perform_train(*data, params = params, verbose=True)
-        scores = epoch_outputs[-1][:,1]
-    except Exception as e:
-        print "Exception on GCN Execution:", str(e)
+    # Run training 
+    data = format_data(X, Y, ppi_adj, train_nodes, val_nodes)
+    epoch_outputs = perform_train(*data, params = params, verbose=True)
+    scores = epoch_outputs[-1][:,1]
 
     return scores
