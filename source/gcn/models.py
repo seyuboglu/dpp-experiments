@@ -84,7 +84,7 @@ class Model(object):
 
 
 class MLP(Model):
-    def __init__(self, placeholders, input_dim, **kwargs):
+    def __init__(self, placeholders, input_dim, params, **kwargs):
         super(MLP, self).__init__(**kwargs)
 
         self.inputs = placeholders['features']
@@ -92,14 +92,14 @@ class MLP(Model):
         self.output_dim = placeholders['labels'].get_shape().as_list()[1]
         self.placeholders = placeholders
     
-        self.optimizer = tf.train.AdamOptimizer(learning_rate=FLAGS.learning_rate)
+        self.optimizer = tf.train.AdamOptimizer(learning_rate=params.learning_rate)
 
         self.build()
 
     def _loss(self):
         # Weight decay loss
         for var in self.layers[0].vars.values():
-            self.loss += FLAGS.weight_decay * tf.nn.l2_loss(var)
+            self.loss +=params.weight_decay * tf.nn.l2_loss(var)
 
         # Cross entropy error
         self.loss += masked_softmax_cross_entropy(self.outputs, self.placeholders['labels'],
@@ -131,7 +131,7 @@ class MLP(Model):
 
 
 class GCN(Model):
-    def __init__(self, placeholders, input_dim, layer_spec, **kwargs):
+    def __init__(self, placeholders, input_dim, params, **kwargs):
         super(GCN, self).__init__(**kwargs)
 
         self.inputs = placeholders['features']
@@ -139,16 +139,18 @@ class GCN(Model):
         # self.input_dim = self.inputs.get_shape().as_list()[1]  # To be supported in future Tensorflow versions
         self.output_dim = placeholders['labels'].get_shape().as_list()[1]
         self.placeholders = placeholders
-        self.layer_spec = layer_spec 
+        self.layer_spec = params.architecture
+        
+        self.weight_decay = params.weight_decay
 
-        self.optimizer = tf.train.AdamOptimizer(learning_rate=FLAGS.learning_rate)
+        self.optimizer = tf.train.AdamOptimizer(learning_rate=params.learning_rate)
 
         self.build()
 
     def _loss(self):
         # Weight decay loss
         for var in self.layers[0].vars.values():
-            self.loss += FLAGS.weight_decay * tf.nn.l2_loss(var)
+            self.loss += self.weight_decay * tf.nn.l2_loss(var)
 
         # Cross entropy error
         self.loss += masked_softmax_cross_entropy(self.outputs, self.placeholders['labels'],
@@ -173,14 +175,6 @@ class GCN(Model):
             elif (layer_type == 'fcl'):
                 self.layers.append(Dense(input_dim=prev_activation_dim,
                                          output_dim=activation_dim,
-                                         placeholders=self.placeholders,
-                                         act=tf.nn.relu,
-                                         dropout=True,
-                                         sparse_inputs=(i==0),
-                                         logging=self.logging))
-            elif (layer_type == 'sfl'):
-                self.layers.append(SideFeatures(input_dim=prev_activation_dim,
-                                         output_dim=activation_dim/2,
                                          placeholders=self.placeholders,
                                          act=tf.nn.relu,
                                          dropout=True,

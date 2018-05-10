@@ -15,7 +15,7 @@ import networkx as nx
 from method_ppi_matrix import compute_matrix_scores
 from method_random_walk import compute_random_walk_scores
 from method_diamond import compute_diamond_scores
-#from method_gcn import compute_gcn_scores
+from method_gcn import compute_gcn_scores
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
@@ -99,23 +99,24 @@ def write_ranks(directory, disease_to_ranks):
         for curr_disease, curr_ranks in disease_to_ranks.items():
             ranks_writer.writerow([curr_disease.id, curr_disease.name] + curr_ranks)
 
-def compute_node_scores(training_nodes):
+def compute_node_scores(train_nodes, val_nodes):
     """ Get score 
     Args:
         disease: (Disease) A disease object
     """
     scores = None
     if params.method == 'ppi_matrix':
-        scores = compute_matrix_scores(ppi_matrix, training_nodes, params)
+        scores = compute_matrix_scores(ppi_matrix, train_nodes, params)
     
     elif params.method == 'random_walk':
-        scores = compute_random_walk_scores(ppi_networkx, training_nodes, params)
+        scores = compute_random_walk_scores(ppi_networkx, train_nodes, params)
     
     elif params.method == 'diamond':
-        scores = compute_diamond_scores(ppi_networkx, training_nodes, params)
+        scores = compute_diamond_scores(ppi_networkx, train_nodes, params)
 
     elif params.method == 'gcn':
-        scores = compute_gcn_scores(ppi_networkx, training_nodes)
+        scores = compute_gcn_scores(ppi_network_adj, train_nodes, val_nodes, params)
+
     else: 
         logging.error("No method" + params.method)
     
@@ -137,13 +138,14 @@ def run_dpp(disease):
     kf = KFold(n_splits = n_folds, shuffle=False)
     for train_indices, test_indices in kf.split(disease_nodes):
         train_nodes = disease_nodes[train_indices]
-        test_nodes = disease_nodes[test_indices]
+        val_nodes = disease_nodes[test_indices]
 
         # Compute node scores 
-        scores = compute_node_scores(train_nodes)
-
+        scores = compute_node_scores(train_nodes, val_nodes)
+        if (not scores): continue 
+            
         # Compute the metrics of target node
-        compute_metrics(metrics, labels, scores, train_nodes, test_nodes)
+        compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
 
     # Create directory for disease 
     #disease_directory = os.path.join(args.experiment_dir, 'diseases', disease.id)
@@ -182,6 +184,21 @@ if __name__ == '__main__':
     if(params.method == "ppi_matrix"):
         logging.info("Loading PPI Matrix...")
         ppi_matrix = np.load(params.ppi_matrix)
+
+    #print("COMP: ")
+    #print(ppi_matrix.shape)
+    #print(np.count_nonzero(ppi_matrix))
+
+    #print("COMP Clipped:")
+    #ppi_matrix_clipped = np.clip(ppi_matrix - (np.mean(ppi_matrix, axis=1) + 2 * np.std(ppi_matrix, axis=1)), 
+    #                  a_min = 0,
+    #                  a_max = None)
+    #print(np.count_nonzero(ppi_matrix_clipped))
+
+
+    #print("ADJ: ")
+    #print(ppi_network_adj.shape)
+    #print(np.count_nonzero(ppi_network_adj))
 
     #Run Experiment
     logging.info("Running Experiment...")
