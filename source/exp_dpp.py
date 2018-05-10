@@ -136,7 +136,6 @@ def run_dpp(disease):
 
         # Compute node scores 
         scores = compute_node_scores(train_nodes, val_nodes)
-        if (not scores): continue 
 
         # Compute the metrics of target node
         compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
@@ -206,9 +205,12 @@ if __name__ == '__main__':
     else: 
         for n_finished, disease in enumerate(diseases_dict.values()): 
             logging.info("Experiment Progress: {:.1f}% -- {}/{}".format(100.0*n_finished/len(diseases_dict), n_finished, len(diseases_dict)))
-            disease, avg_metrics, ranks = run_dpp(disease)
-            disease_to_metrics[disease] = avg_metrics
-            disease_to_ranks[disease] = ranks 
+            try:
+                disease, avg_metrics, ranks = run_dpp(disease)
+                disease_to_metrics[disease] = avg_metrics
+                disease_to_ranks[disease] = ranks 
+            except Exception as e:
+                print "Exception on GCN Execution:", str(e)
         
     write_metrics(args.experiment_dir, disease_to_metrics)
     write_ranks(args.experiment_dir, disease_to_ranks)
