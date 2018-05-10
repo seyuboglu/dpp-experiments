@@ -36,66 +36,38 @@ import scipy.sparse
 import tensorflow as tf 
 
 from gcn.train import perform_train, LAYER_SPEC
-from gcn.utils import format_data, sample_mask, inverse_sample_mask
+from gcn.utils import format_data, sample_mask, inverse_sample_mask, get_negatives
 
-def compute_gcn_scores(ppi_adj, training_nodes, params):
-    ppi_adj_sparse = scipy.sparse.coo_matrix(ppi_adj)
+def compute_gcn_scores(ppi_adj, train_pos, val_pos, params):
+    # Adjacency: Get sparse representation of ppi_adj
+    n = ppi_adj.shape[0]
+    ppi_adj = scipy.sparse.coo_matrix(ppi_adj)
 
-def fetch_disease_data(current_disease):
-    # Find the proteins that are known to be within this disease
-    all_nodes = set(protein_to_node.values())
-    in_disease_nodes = set([protein_to_node[protein] for protein in current_disease.proteins if protein in protein_to_node])
-    out_disease_nodes = all_nodes - in_disease_nodes 
-    in_disease_nodes, out_disease_nodes = list(in_disease_nodes), list(out_disease_nodes)
+    # X: Use identity for input features 
+    X = np.identity(n)
 
-    # Determine the proportion of negative examples that we want to include
-    # within our disease data set - we do this to keep the proportion relative
-    # to the disease size since this can vary wildly
-    shuffle(out_disease_nodes)
-    quantity_negative = int(FRACTION_NEGATIVE*len(in_disease_nodes) / (1-FRACTION_NEGATIVE))
-    out_disease_nodes = out_disease_nodes[:quantity_negative]
+    # Y: Build 
+    Y = np.zeros((n, 2))
+    Y[train_pos, 1] = 1
+    Y[val_pos, 1] = 1
+    train_neg = get_negatives(Y, len(train_pos))
+    Y[train_neg, 0] = 1
 
-    n = len(graph)
-    k = 2 # binary classification of in-disease
+    # Create index arrays
+    train_nodes = np.concatenate((train_pos, train_neg))
+    val_nodes = val_pos
 
-    # Now build up the desired prediction classes
-    # [examples, classes]
-    Y = np.zeros((n, k))
-
-    # Set the values depending on in_disease vs. out_of_disease
-    # Leave the "unknown quantities blank"
-    Y[out_disease_nodes, 0] = 1
-    Y[in_disease_nodes, 1] = 1
-
-    # Full protein ids under consideration
-    # Re-map the protein to node mappings with this
-    # We use the labeled ids as our training/test set
-    labeled_ids = list(set(in_disease_nodes) | set(out_disease_nodes))
-    #shuffle(labeled_ids)
-
-    training_quantity = int(PROPORTION_TRAIN*len(labeled_ids))
-    test_quantity = int(PROPORTION_TEST*len(labeled_ids))
-
-    # Select the nodes that we'll use for our training+test sets
-    training_ids = labeled_ids[:training_quantity]
-    test_ids = labeled_ids[training_quantity:training_quantity+test_quantity]
-    return X, XS, Y, training_ids, test_ids
-
-
-def train_on_disease(disease):
-    X, XS, Y, training_ids, test_ids = fetch_disease_data(disease)
-    metrics = initialize_metrics()
-    fold_number = 1 
-    #Initialize tensorflow session 
-    sess = tf.Session()
+    # Initialize tensorflow session 
+    sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+    scores = None
+    
     try: 
-        data = format_data(X, XS, Y, graph, training_ids, validation_ids, test_ids)
-        epoch_outputs, epoch_activations = perform_train(*data, sess = sess, verbose=False)
-    except Exception as e: 
-        print "Exception on Disease Pathway: ", disease.name
-        print "Exception Message: ", str(e)
-        print "Returning Empy Scores" 
-        
+        data = format_data(X, Y, ppi_adj, train_nodes, val_nodes)
+        epoch_outputs = perform_train(*data, params = params, sess = sess, verbose=True)
+        scores = epoch_outputs[-1][:,1]
+    except Exception as e:
+        print "Exception on GCN Execution:", str(e)
+
     sess.close()
     tf.reset_default_graph()
 

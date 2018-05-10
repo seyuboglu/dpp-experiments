@@ -3,8 +3,9 @@ from __future__ import print_function
 
 import time
 import tensorflow as tf
+import numpy as np
 
-from gcn.utils import *
+from utils import *
 from gcn.models import GCN, MLP
 
 # Set random seed
@@ -18,21 +19,21 @@ FLAGS = flags.FLAGS
 flags.DEFINE_string('dataset', 'cora', 'Dataset string.')  # 'cora', 'citeseer', 'pubmed'
 flags.DEFINE_string('model', 'gcn', 'Model string.')  # 'gcn', 'gcn_cheby', 'dense'
 flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
-flags.DEFINE_integer('epochs', 100, 'Number of epochs to train.')
+flags.DEFINE_integer('epochs', 20, 'Number of epochs to train.')
 flags.DEFINE_float('dropout', 0.5, 'Dropout rate (1 - keep probability).')
 flags.DEFINE_float('weight_decay', 5e-4, 'Weight for L2 loss on embedding matrix.')
 flags.DEFINE_integer('early_stopping', 100, 'Tolerance for early stopping (# of epochs).')
 flags.DEFINE_integer('max_degree', 3, 'Maximum Chebyshev polynomial degree.')
 flags.DEFINE_bool('shuffle_negatives', False, 'Shuffle Negative Samples on each Epoch')
 
-LAYER_SPEC = [('gcl', 128), ('sfl', 32), ('fcl', 16)]
+LAYER_SPEC = [('gcl', 128), ('fcl', 16)]
 
 m = FLAGS.model
 hyper_parameters = FLAGS.__flags
 hyper_parameters['layer_spec'] = str(LAYER_SPEC)
 
 
-def perform_train(adj, features, side_features, y_train, y_val, y_test, train_mask, val_mask, test_mask, sess = None, verbose = True):
+def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, sess = None, verbose = True):
     """
     Perform training process
 
@@ -41,7 +42,6 @@ def perform_train(adj, features, side_features, y_train, y_val, y_test, train_ma
 
     # Some preprocessing
     features = preprocess_features(features)
-    #side_features = preprocess_features(side_features)
     if FLAGS.model == 'gcn':
         support = [preprocess_adj(adj)]
         num_supports = 1
@@ -60,7 +60,6 @@ def perform_train(adj, features, side_features, y_train, y_val, y_test, train_ma
     # Define placeholders
     placeholders = {
         'support': [tf.sparse_placeholder(tf.float32) for _ in range(num_supports)],
-        'side_features': tf.placeholder(tf.float32, shape=side_features.shape, name='side_features'),
         'features': tf.sparse_placeholder(tf.float32, shape=tf.constant(features[2], dtype=tf.int64, name='features_shape'), name='features'),
         'labels': tf.placeholder(tf.float32, shape=(None, y_train.shape[1])),
         'labels_mask': tf.placeholder(tf.int32),
@@ -69,7 +68,7 @@ def perform_train(adj, features, side_features, y_train, y_val, y_test, train_ma
     }
 
     # Create model
-    model = model_func(placeholders, input_dim=features[2][1], layer_spec=LAYER_SPEC, logging=True)
+    model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
 
     #Initialize Session 
     if (not sess): 
@@ -78,7 +77,7 @@ def perform_train(adj, features, side_features, y_train, y_val, y_test, train_ma
     # Define model evaluation function
     def evaluate(features, support, labels, mask, placeholders):
         t_test = time.time()
-        feed_dict_val = construct_feed_dict(features, side_features, support, labels, mask, placeholders)
+        feed_dict_val = construct_feed_dict(features, support, labels, mask, placeholders)
         outs_val = sess.run([model.loss, model.accuracy, model.outputs, model.activations], feed_dict=feed_dict_val) #Investigate THIS!
         return outs_val[0], outs_val[1], outs_val[2], outs_val[3], (time.time() - t_test)
 
@@ -97,15 +96,16 @@ def perform_train(adj, features, side_features, y_train, y_val, y_test, train_ma
     epoch_val_activations = []
 
     # Train model
-    for epoch in range(FLAGS.epochs):
+    for epoch in range(params.epochs):
 
         t = time.time()
         # Construct feed dictionary
-        if(FLAGS.shuffle_negatives):
+        if(params.shuffle_negatives):
             shuffle_negatives(y_train)
-        np.asarray(side_features)
-        feed_dict = construct_feed_dict(features, side_features, support, y_train, train_mask, placeholders)
-        feed_dict.update({placeholders['dropout']: FLAGS.dropout})
+            train_mask = np.array(np.sum(y_train, axis=1), dtype=np.bool)
+
+        feed_dict = construct_feed_dict(features, support, y_train, train_mask, placeholders)
+        feed_dict.update({placeholders['dropout']: params.dropout})
 
         # Training step
         outs = sess.run([model.opt_op, model.loss, model.accuracy, model.outputs, model.activations], feed_dict=feed_dict)
@@ -126,17 +126,11 @@ def perform_train(adj, features, side_features, y_train, y_val, y_test, train_ma
               "train_acc=", "{:.5f}".format(outs[2]), "val_loss=", "{:.5f}".format(val_cost),
               "val_acc=", "{:.5f}".format(val_acc), "time=", "{:.5f}".format(time.time() - t))
 
-        if epoch > FLAGS.early_stopping and epoch_val_costs[-1] > np.mean(epoch_val_costs[-(FLAGS.early_stopping+1):-1]):
+        if epoch > params.early_stopping and epoch_val_costs[-1] > np.mean(epoch_val_costs[-(params.early_stopping+1):-1]):
             if(verbose): print("Early stopping...")
             break
 
     if(verbose): print("Optimization Finished!")
 
+    return epoch_val_outputs, epoch_train_accs, epoch_val_accs  
 
-    return epoch_val_outputs, epoch_val_activations, epoch_train_accs, epoch_val_accs, hyper_parameters  
-
-if __file__ == "__main__":
-    # Load data
-    print("Load data...")
-    data = load_data(FLAGS.dataset)
-    perform_train(*data)
