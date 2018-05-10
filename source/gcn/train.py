@@ -114,5 +114,5 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, v
     sess.close()
     tf.reset_default_graph()
 
-    return epoch_val_outputs, epoch_train_accs, epoch_val_accs  
+    return epoch_val_outputs  
 
