@@ -4,7 +4,6 @@
 from sets import Set 
 import csv
 import numpy as np 
-import snap 
 
 NETWORK_PATH = "data/bio-pathways-network.txt"
 ASSOCIATIONS_PATH = "data/bio-pathways-associations.csv"
@@ -43,7 +42,7 @@ def build_codisease_matrix(diseases_dict, protein_to_node):
         codisease_matrix[np.ix_(disease_nodes, disease_nodes)] += 1
     return codisease_matrix
 
-def load_network(network_path = NETWORK_PATH):
+def load_snap_network(network_path = NETWORK_PATH):
     protein_ids = set()
     with open(network_path) as network_file:
         for line in network_file:
@@ -63,3 +62,21 @@ def load_network(network_path = NETWORK_PATH):
             if(not network.IsNode(n2)): network.AddNode(n2) 
             network.AddEdge(n1, n2)
     return network, adj, {protein_id:i for i, protein_id in enumerate(protein_ids)}
+
+def load_network(network_path = NETWORK_PATH):
+    protein_ids = set()
+    with open(network_path) as network_file:
+        for line in network_file:
+            p1, p2 = [int(a) for a in line.split()]
+            protein_ids.add(p1)
+            protein_ids.add(p2)
+    protein_to_node = {protein_id: i for i, protein_id in enumerate(protein_ids)}
+    adj = np.zeros((len(protein_to_node), len(protein_to_node)))
+    with open(network_path) as network_file:
+        for line in network_file:
+            p1, p2 = [int(a) for a in line.split()]
+            n1, n2 = protein_to_node[p1], protein_to_node[p2]
+            adj[n1,n2] = 1
+            adj[n2,n1] = 1
+    return nx.from_numpy_matrix(adj), adj, protein_to_node
+

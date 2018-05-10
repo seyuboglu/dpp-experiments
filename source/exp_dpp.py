@@ -6,10 +6,8 @@ import os
 import csv
 from multiprocessing import Pool
 
-
 import numpy as np
 from sklearn.model_selection import KFold
-import matplotlib.pyplot as plt 
 import networkx as nx
 
 from method_ppi_matrix import compute_matrix_scores
@@ -19,10 +17,6 @@ from method_gcn import compute_gcn_scores
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
-
-from scipy.stats import rankdata
-
-
 from util import Params, set_logger
 
 parser = argparse.ArgumentParser()
@@ -143,7 +137,7 @@ def run_dpp(disease):
         # Compute node scores 
         scores = compute_node_scores(train_nodes, val_nodes)
         if (not scores): continue 
-            
+
         # Compute the metrics of target node
         compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
 
@@ -177,8 +171,7 @@ if __name__ == '__main__':
 
     # Load data from params file
     logging.info("Loading PPI Network...")
-    ppi_network, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
-    ppi_networkx = nx.from_numpy_matrix(ppi_network_adj)
+    ppi_networkx, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
     if(params.method == "ppi_matrix"):
