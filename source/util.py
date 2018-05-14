@@ -3,6 +3,8 @@
 import json
 import logging
 
+import numpy as np
+
 class Params():
     """Class that loads hyperparameters from a json file.
 
@@ -62,3 +64,15 @@ def set_logger(log_path, level=logging.INFO, console=True):
             stream_handler = logging.StreamHandler()
             stream_handler.setFormatter(logging.Formatter('%(message)s'))
             logger.addHandler(stream_handler)
+
+def get_negatives(Y, n_neg):
+    """ Generate n_neg indices for negative examples
+    excluding examples already positive in Y. 
+    """
+    n = Y.shape[0]
+    n_pos = np.sum(np.sum(Y))
+    neg_indices = np.random.choice(range(n), 
+                                   size=int(n_neg), 
+                                   replace=False, 
+                                   p=(1 - Y) / (n-n_pos))                             
+    return neg_indices 

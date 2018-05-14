@@ -14,6 +14,7 @@ from method_ppi_matrix import compute_matrix_scores
 from method_random_walk import compute_random_walk_scores
 from method_diamond import compute_diamond_scores
 from method_gcn import compute_gcn_scores
+from method_lr import compute_lr_scores
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
@@ -111,6 +112,9 @@ def compute_node_scores(train_nodes, val_nodes):
     elif params.method == 'gcn':
         scores = compute_gcn_scores(ppi_network_adj, train_nodes, val_nodes, params)
 
+    elif params.method == 'lr':
+        scores = compute_lr_scores([ppi_matrix], train_nodes, params)
+
     else: 
         logging.error("No method" + params.method)
     
@@ -173,24 +177,11 @@ if __name__ == '__main__':
     ppi_networkx, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
-    if(params.method == "ppi_matrix"):
+    if(params.method == "ppi_matrix" or params.method == 'lr'):
         logging.info("Loading PPI Matrix...")
         ppi_matrix = np.load(params.ppi_matrix)
-
-    #print("COMP: ")
-    #print(ppi_matrix.shape)
-    #print(np.count_nonzero(ppi_matrix))
-
-    #print("COMP Clipped:")
-    #ppi_matrix_clipped = np.clip(ppi_matrix - (np.mean(ppi_matrix, axis=1) + 2 * np.std(ppi_matrix, axis=1)), 
-    #                  a_min = 0,
-    #                  a_max = None)
-    #print(np.count_nonzero(ppi_matrix_clipped))
-
-
-    #print("ADJ: ")
-    #print(ppi_network_adj.shape)
-    #print(np.count_nonzero(ppi_network_adj))
+        if(params.normalize):
+            ppi_matrix = (ppi_matrix - np.mean(ppi_matrix, axis = 0)) / np.std(ppi_matrix, axis=0)
 
     #Run Experiment
     logging.info("Running Experiment...")
@@ -205,12 +196,9 @@ if __name__ == '__main__':
     else: 
         for n_finished, disease in enumerate(diseases_dict.values()): 
             logging.info("Experiment Progress: {:.1f}% -- {}/{}".format(100.0*n_finished/len(diseases_dict), n_finished, len(diseases_dict)))
-            try:
-                disease, avg_metrics, ranks = run_dpp(disease)
-                disease_to_metrics[disease] = avg_metrics
-                disease_to_ranks[disease] = ranks 
-            except Exception as e:
-                print "Exception on GCN Execution:", str(e)
+            disease, avg_metrics, ranks = run_dpp(disease)
+            disease_to_metrics[disease] = avg_metrics
+            disease_to_ranks[disease] = ranks 
         
     write_metrics(args.experiment_dir, disease_to_metrics)
     write_ranks(args.experiment_dir, disease_to_ranks)

@@ -40,18 +40,37 @@ if __name__ == '__main__':
 
     sns.set_style("whitegrid")
     for name, method_exp_dir in params.method_exp_dirs.items():
-        ranks  = [] 
-        with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
-            rank_reader = csv.reader(ranks_file)
-            for i, row in enumerate(rank_reader):
-                if i == 0: continue
-                ranks.extend(map(float, row[2:]))
-        ranks = np.array(ranks).astype(int)
-        rank_bin_count = np.bincount(ranks)
-        recall_curve = np.cumsum(rank_bin_count) / len(ranks)
-        plt.plot(recall_curve[:250], label = name)
-    plt.title("Protein Rankings across DPP Methods")
-    plt.ylabel("Number of Proteins")
-    plt.xlabel("Protein Rank")
+        if(params.by_disease):
+            recall_curve_sum = np.zeros(params.length)
+            with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
+                rank_reader = csv.reader(ranks_file)
+                for i, row in enumerate(rank_reader):
+                    if i == 0: continue
+                    ranks = list(map(float, row[2:]))
+                    ranks = np.array(ranks).astype(int)
+                    rank_bin_count = np.bincount(ranks)
+                    recall_curve = np.cumsum(rank_bin_count) / len(ranks)
+                    if len(recall_curve) < params.length:
+                        recall_curve = np.pad(recall_curve, 
+                                              (0, params.length - len(recall_curve)), 
+                                              'edge')
+                    recall_curve_sum += recall_curve[:params.length]
+            plt.plot(recall_curve_sum/(i+1), label = name)
+        else: 
+            ranks = []
+            with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
+                rank_reader = csv.reader(ranks_file)
+                for i, row in enumerate(rank_reader):
+                    if i == 0: continue
+                    ranks.extend(map(float, row[2:]))
+            ranks = np.array(ranks).astype(int)
+            rank_bin_count = np.bincount(ranks)
+            recall_curve = np.cumsum(rank_bin_count) / len(ranks)
+            plt.plot(recall_curve[:params.length], label = name)
+    
+    #Plot 
+    plt.title("Recall-at-K across DPP Methods")
+    plt.ylabel("Average Recall-at-K")
+    plt.xlabel("K")
     plt.legend()
-    plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_250.jpg'))
+    plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_' + str(params.length) + '.jpg'))
