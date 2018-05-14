@@ -1,7 +1,6 @@
 import numpy as np
 import sklearn.metrics
 import csv
-from sets import Set
 
 def write_dict_to_csv(filename, dict): 
     with open(filename, "wb") as outfile:
@@ -9,6 +8,33 @@ def write_dict_to_csv(filename, dict):
         writer.writerow(dict.keys())
         writer.writerows(zip(*dict.values()))
 
+class ExperimentReader():
+    def __init__(self, filename):
+        """ Reads metrics csv into an array which can be
+        indexed using the header_to_col and disease_to_row 
+        dictionaries.
+        """
+        # Read metrics into dictionaries
+        with open(filename, 'r') as metrics_file:
+            metrics_reader = csv.DictReader(metrics_file)
+            disease_to_metrics = {row["Disease ID"]: row for row in metrics_reader}
+            self.header_to_col = {name: i for i, name in enumerate(metrics_reader.fieldnames[2:])}
+            self.disease_to_row = {id: i for i, id in enumerate(disease_to_metrics.keys())}
+        
+        # Build metrics array
+        self.metrics = np.zeros((len(disease_to_metrics), len(self.header_to_col)))
+        for disease, metrics in disease_to_metrics.items():
+            for header, metric in metrics.items():
+                if (header in self.header_to_col):
+                    self.metrics[self.disease_to_row[disease], self.header_to_col[header]] =  metric 
+
+    def get_col(self, header):
+        """ Get one column of the experiment metrics, output as a 
+        an ndarray.
+        """
+        return self.metrics[:, self.header_to_col[header]]
+
+        
 class ExperimentResults():
     def __init__(self):
         self.result_grid = []
@@ -54,7 +80,7 @@ class ExperimentResults():
 
     def add_data_row(self, disease_id, col_label, value):
         if(disease_id not in self.rg_row_map):
-            print "Error: disease_id does not exist"
+            print("Error: disease_id does not exist")
         row = self.rg_row_map[disease_id]
         col = None
         if (col_label in self.rg_col_map):
@@ -65,7 +91,7 @@ class ExperimentResults():
 
     def add_data_row_multiple(self, disease_id, label_value_map):
         if(disease_id not in self.rg_row_map):
-            print "Error: disease_id does not exist"
+            print("Error: disease_id does not exist")
         row = self.rg_row_map[disease_id]
         for col_label, value in label_value_map.iteritems():
             col = None
