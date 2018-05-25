@@ -55,7 +55,10 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, v
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
 
     #Initialize Session 
-    sess = tf.Session(config=tf.ConfigProto(allow_growth = True, allow_soft_placement = True))
+    config = tf.ConfigProto()
+    config.allow_soft_placement = True
+    config.gpu_options.allow_growth = True
+    sess = tf.Session(config=config)
 
     # Define model evaluation function
     def evaluate(features, support, labels, mask, placeholders):
