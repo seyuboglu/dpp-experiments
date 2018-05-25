@@ -39,6 +39,8 @@ if __name__ == '__main__':
     logging.info("======================================")
 
     sns.set_style("whitegrid")
+    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
+    recall_curves = {}
     for name, method_exp_dir in params.method_exp_dirs.items():
         if(params.by_disease):
             recall_curve_sum = np.zeros(params.length)
@@ -55,7 +57,9 @@ if __name__ == '__main__':
                                               (0, params.length - len(recall_curve)), 
                                               'edge')
                     recall_curve_sum += recall_curve[:params.length]
-            plt.plot(recall_curve_sum/(i+1), label = name)
+            recall_curve = 100*(recall_curve_sum/(i+1))
+            recall_curves[name] = recall_curve
+            plt.plot(recall_curve, label = name)
         else: 
             ranks = []
             with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
@@ -65,12 +69,26 @@ if __name__ == '__main__':
                     ranks.extend(map(float, row[2:]))
             ranks = np.array(ranks).astype(int)
             rank_bin_count = np.bincount(ranks)
-            recall_curve = np.cumsum(rank_bin_count) / len(ranks)
+            recall_curve = 100*(np.cumsum(rank_bin_count) / len(ranks))
             plt.plot(recall_curve[:params.length], label = name)
+        
+    # plot percent differences
+    for k in params.percent_increase:
+        recalls_at_k = [] 
+        for name, recall_curve in recall_curves.items():
+            recalls_at_k.append(recall_curve[k])
+        recalls_at_k.sort(reverse=True)
+        plt.plot([k, k], [recalls_at_k[0] - params.offset, recalls_at_k[1] + params.offset], color = 'green', alpha = 0.5)
+        percent_inrease = round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
+        plt.text(x = k + 2, y = recalls_at_k[1] + (recalls_at_k[0] - recalls_at_k[1]) / 2 - 0.001, 
+                 s = '+' + str(percent_inrease) + '%',
+                 fontsize = 9, weight = 'bold', alpha = .75, color='green')
     
     #Plot 
-    plt.title("Recall-at-K across DPP Methods")
-    plt.ylabel("Average Recall-at-K")
+    if(params.title):
+        plt.title("Recall-at-K (%) across DPP Methods")
+
+    plt.ylabel("Recall-at-K (%)")
     plt.xlabel("K")
     plt.legend()
     plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_' + str(params.length) + '.jpg'))
