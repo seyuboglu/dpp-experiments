@@ -1,7 +1,5 @@
 # PPI 
 # Provides classes and methods for reading in ppi network and disease_pathways 
-
-from sets import Set 
 import csv
 
 import numpy as np 
@@ -31,7 +29,7 @@ def load_diseases(disease_associations_path = ASSOCIATIONS_PATH, diseases_subset
             if(diseases_subset and disease_id not in diseases_subset):
                 continue  
             disease_name = row["Disease Name"]
-            disease_proteins = Set([int(a.strip()) for a in row["Associated Gene IDs"].split(",")])
+            disease_proteins = set([int(a.strip()) for a in row["Associated Gene IDs"].split(",")])
             diseases_dict[disease_id] = Disease(disease_id, disease_name, disease_proteins)
     return diseases_dict 
 

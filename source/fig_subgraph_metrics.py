@@ -37,7 +37,7 @@ if __name__ == '__main__':
     experiment_reader = ExperimentReader(os.path.join(params.exp_dir, 'subgraph_metrics.csv'))
     for metric in params.metrics:
         for subgraph in params.subgraphs:
-            header = metric + " of " + subgraph + " Nodes"
+            header = metric + " of " + subgraph + " Subgraph"
             col = experiment_reader.get_col(header)
             plt.hist(col, params.n_bins, range=params.range,  label = header, alpha=params.alpha)
 

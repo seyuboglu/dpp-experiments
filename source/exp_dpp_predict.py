@@ -48,7 +48,7 @@ def output_predictions(scores, disease):
     with open(scores_path, 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Protein ID', params.method +' Score'])
-        for protein, node in protein_to_node.iteritems(): 
+        for protein, node in protein_to_node.items(): 
             writer.writerow([protein, scores[node]])
 
 if __name__ == '__main__':

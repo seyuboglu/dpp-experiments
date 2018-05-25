@@ -57,7 +57,6 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
     metrics["Mean Average Precision"].append(average_precision(labels, scores, train_nodes))
     metrics["Ranks"].extend(positive_rankings(labels, scores, train_nodes))
 
-
     # Sample down to one-folds-worth of negative examples 
     out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
     fold_scores = scores.copy()
@@ -148,7 +147,7 @@ def run_dpp(disease):
     #disease_directory = os.path.join(args.experiment_dir, 'diseases', disease.id)
     #if not os.path.exists(disease_directory):
     #    os.makedirs(disease_directory)
-    avg_metrics = {name: np.mean(values) for name, values in metrics.iteritems()}
+    avg_metrics = {name: np.mean(values) for name, values in metrics.items()}
     ranks = metrics["Ranks"] 
     return disease, avg_metrics, ranks 
 
@@ -180,8 +179,12 @@ if __name__ == '__main__':
     if(params.method == "ppi_matrix" or params.method == 'lr'):
         logging.info("Loading PPI Matrix...")
         ppi_matrix = np.load(params.ppi_matrix)
+        # normalize columns of ppi_matrix
         if(params.normalize):
             ppi_matrix = (ppi_matrix - np.mean(ppi_matrix, axis = 0)) / np.std(ppi_matrix, axis=0)
+        # zero out the diagonal
+        np.fill_diagonal(ppi_matrix, 0)
+
 
     #Run Experiment
     logging.info("Running Experiment...")

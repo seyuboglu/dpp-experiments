@@ -51,7 +51,7 @@ class ExperimentResults():
         self.result_grid.append(result_row)
 
     def add_disease_row_multiple(self, diseases):
-        for disease_id, disease in diseases.iteritems():
+        for disease_id, disease in diseases.items():
             self.add_disease_row(disease_id, disease.name)
 
     def add_data_col_def(self, label, def_value = None):
@@ -64,7 +64,7 @@ class ExperimentResults():
         return col
 
     def add_data_col_def_multiple(self, label_def_value_map):
-        for label, def_value in label_def_value_map.iteritems():
+        for label, def_value in label_def_value_map.items():
             self.add_data_col(label, def_value)
     
     def add_data_col(self, col_label, disease_value_map):
@@ -74,7 +74,7 @@ class ExperimentResults():
         self.rg_col_labels.append(col_label)
         for row in self.result_grid:
             row.append("")
-        for disease_id, value in disease_value_map.iteritems():
+        for disease_id, value in disease_value_map.items():
             self.add_data_row(disease_id, col_label, value)
 
 
@@ -93,7 +93,7 @@ class ExperimentResults():
         if(disease_id not in self.rg_row_map):
             print("Error: disease_id does not exist")
         row = self.rg_row_map[disease_id]
-        for col_label, value in label_value_map.iteritems():
+        for col_label, value in label_value_map.items():
             col = None
             if (col_label in self.rg_col_map):
                 col = self.rg_col_map[col_label]
@@ -103,7 +103,7 @@ class ExperimentResults():
     
     def compute_statistic(self, fn, nd_result_grid):
         stats = {}
-        for label, index in self.rg_col_map.iteritems():
+        for label, index in self.rg_col_map.items():
             if (index - 2 < 0): continue
             stat = fn(nd_result_grid[:,index-2])
             stats[label] = stat 
@@ -123,7 +123,7 @@ class ExperimentResults():
         self.add_data_row_multiple("STD", stdevs)
 
     def output_to_csv(self, filename):
-        with open(filename, 'ab') as csvfile:
+        with open(filename, 'a') as csvfile:
             table_writer = csv.writer(csvfile, delimiter=',')
             table_writer.writerow(self.rg_col_labels)
             for row in self.result_grid:

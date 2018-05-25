@@ -3,109 +3,79 @@ Provides methods for generating matrices that describe pairwise relationships
 between proteins in the protein-protein interaction network. 
 """
 import os
+import logging
+
 
 from collections import defaultdict
 import numpy as np 
 import matplotlib.pyplot as plt
 import networkx as nx
+from sklearn.decomposition import PCA
+from scipy.sparse import csr_matrix
 
 from disease import Disease, load_diseases, load_network
 from output import ExperimentResults
+from util import set_logger
 
-PPI_COMP_PATH = "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy"
-OUTPUT_PATH = "results/comp_results.csv"
 
-#Loading PPI Complementarity Matrix
-#====================================================
-#ppi_comp = np.load(PPI_COMP_PATH)
-#ppi_network, ppi_adj, protein_to_node = load_network() 
-#ppi_networkx = nx.from_numpy_matrix(ppi_adj)
+def softmax(x):
+    """softmax for a vector x. Numerically stable implementation
+    Args:
+        x (np.array)
+    """
+    exp_x = np.exp(x - np.max(x, axis = 0))
+    return exp_x / np.sum(exp_x, axis = 0)
 
-#Functions for Computing DPP Scores
-#====================================================
 def compute_matrix_scores(ppi_matrix, training_ids, params):
-    scores = np.mean(ppi_matrix[:, training_ids], axis = 1)
+    """ Compute scores across all proteins using ppi_matrix and training_ids. 
+    Score for some protein k is given by some weighted sum of the ppi_matrix
+    entries ppi_matrix[k, training_ids[i]] for all i. Weighting technique is
+    specified in the params parameter. Default weighting is uniform. 
+    Args: 
+        ppi_matrix: (np.array) compute 
+        training_ids: (np.array)
+    Returns: 
+        scores: (np.array)
+    """
+    # building weighting vector  
+    weights = None
+    if  not hasattr(params, 'weighting') or params.weighting == "uniform":
+        weights = np.ones(len(training_ids))
+
+    elif params.weighting == "sup":
+        # compute supervised weights
+        weights = np.sum(ppi_matrix[training_ids, :][:, training_ids], axis=1)
+        
+        # normalize 
+        weights -= np.min(weights)
+        weights /= np.sum(weights)
+        weights += 1.0 / len(weights)
+        weights = weights ** (-1)
+
+    elif params.weighting == "pca":
+        logging.error("Not Implemented")
+
+    else: 
+        logging.error("Weighting scheme not recognized")
+
+    # normalize
+    weights /= np.sum(weights)
+
+    # get cns vector
+    scores = np.dot(ppi_matrix[:, training_ids], weights) 
+
+    # compute scores 
     return scores 
 
-def compute_direct_neighborhood_scores(training_ids):
-    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    scores = np.mean((ppi_adj*ppi_inv_deg)[:, training_ids], axis = 1)
-    return scores 
-
-def compute_comp_scores(training_ids): 
-    #Compute score by taking mean of complementarity with training Set 
-    scores = np.mean(ppi_comp[:, training_ids], axis = 1)
-    return scores
-
-def compute_adj_scores(training_ids): 
-    #Compute score by taking mean of adjacency with training Set 
-    scores = np.mean(ppi_adj[:, training_ids], axis = 1)
-    return scores
-
-def compute_adj_set(training_ids): 
-    #Compute score by taking mean of complementarity with training Set 
-    set = np.any(ppi_adj[:, training_ids], axis = 1)
-    return set, np.sum(set)
-
-#Complementarity Analysis
-#====================================================
-def disease_comp_analysis(disease_ids, target_id):
-    disease_comp = ppi_comp[:, disease_ids]
-    target_disease_comp = disease_comp[target_id, :]
-    print target_disease_comp
-    plt.bar(range(len(target_disease_comp)), target_disease_comp)
-    plt.show()
-
-def compute_node_set_comp(node_ids):
-    n = node_ids.size
-    non_diag_mask = (np.ones((n,n)) - np.diag(np.ones(n))).astype(bool)
-    disease_comp = ppi_comp[node_ids, :][:, node_ids][non_diag_mask]
-    return np.mean(disease_comp)
-
-def compute_average_comp():
-    n = ppi_comp.shape[0]
-    non_diag_mask = (np.ones((n,n)) - np.diag(np.ones(n))).astype(bool)
-    disease_comp = ppi_comp[non_diag_mask]
-    return np.mean(disease_comp)
-
-def build_codisease_matrix(diseases_dict):
-    n_nodes = len(protein_to_node.keys())
-    codisease_matrix = np.zeros((n_nodes, n_nodes))
-    for disease in diseases_dict.values():
-        disease_nodes = np.array([protein_to_node[protein] for protein in disease.proteins if protein in protein_to_node])
-        codisease_matrix[np.ix_(disease_nodes, disease_nodes)] += 1
-    return codisease_matrix
-
-def plot_pairwise_disease_protein_analysis(results):
-    data = []
-    for name, codisease_probs in results: 
-        line = go.Scatter(x = codisease_probs)
-        data.append(line)
-    py.iplot(data, filename = 'figures/pairwise_disease_protein_analysis')
-
-def pairwise_disease_protein_analysis(scores_matrices, diseases_dict, n_buckets = 1000, top_k=None):
-    codisease_matrix = build_codisease_matrix(diseases_dict)
-    codisease_flat = codisease_matrix.flatten()
-    for name, scores_matrix in scores_matrices: 
-        scores_flat = scores_matrix.flatten() 
-        ranked_flat = np.argsort(scores_flat)
-        if top_k: 
-            print("TOPK")
-            ranked_flat = ranked_flat[-top_k:]
-        codisease_probs = []
-        for i, bucket_indices in enumerate(np.array_split(ranked_flat, n_buckets)):
-            codisease_prob = 1.0*np.count_nonzero(codisease_flat[bucket_indices])/bucket_indices.size 
-            codisease_probs.append(codisease_prob)
-        plt.plot(codisease_probs, label = name)
-    plt.title('Co-disease Probability vs. Score')
-    plt.legend()
-    plt.ylabel('Prob. Protein Pair Share Disease')
-    plt.xlabel('Percentile for Pairwise Protein Metric')
-    plt.savefig('figures/pairwise_15b_10000t_n_qn_sq_l3')    
-
-#Functions for building complementarity matrices
-#====================================================
-def build_ppi_comp_matrix(deg_fn = 'id', row_norm = False, col_norm = False):
+def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = False):
+    """ Builds a CNS PPI matrix, using parameters specified, and saves as numpy object. 
+    Args: 
+        deg_fn (string)
+        row_norm (bool)
+        col_norm (bool)
+    Return:
+        comp_matrix (np.array)
+    """
     name = 'comp'
     # Build vector of node degrees
     deg_vector = np.sum(ppi_adj, axis = 1, keepdims=True)
@@ -122,8 +92,8 @@ def build_ppi_comp_matrix(deg_fn = 'id', row_norm = False, col_norm = False):
     # Take the inverse of the degree vector
     inv_deg_vector = np.power(deg_vector, -1)
 
-    # Build the complementarity matrix
-    comp_matrix = np.dot((inv_deg_vector*ppi_adj).T, ppi_adj)
+    # Build the complementarity matrix with sparse 
+    comp_matrix = (csr_matrix((inv_deg_vector*ppi_adj).T) * csr_matrix(ppi_adj)).toarray()
 
     if(row_norm):
         # Normalize by the degree of the query node. (row normalize)
@@ -135,40 +105,11 @@ def build_ppi_comp_matrix(deg_fn = 'id', row_norm = False, col_norm = False):
         name += '_cnorm'
         comp_matrix = (comp_matrix.T * inv_deg_vector).T
     
+    print(os.path.join('data', 'ppi_matrices', name + ".npy"))
     np.save(os.path.join('data', 'ppi_matrices', name + ".npy"), comp_matrix)
     return comp_matrix 
 
-
-def build_ppi_comp():
-    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    ppi_comp = np.dot((ppi_adj*ppi_inv_deg).T, ppi_adj)
-    np.save("data/ppi_matrices/ppi_comp.npy", ppi_comp)
-    return ppi_comp 
-
-def build_ppi_comp_sqrt():
-    ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -(0.5))
-    ppi_comp = np.dot((ppi_adj*ppi_sqrt_inv_deg).T, ppi_adj)
-    np.save("data/ppi_matrices/ppi_comp_sqrt.npy", ppi_comp)
-    return ppi_comp 
-
-def build_ppi_comp_sqrt_query_normalized():
-    ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -(0.5))
-    ppi_comp = np.dot((ppi_adj*ppi_sqrt_inv_deg).T, ppi_adj)*ppi_sqrt_inv_deg
-    np.save("data/ppi_matrices/ppi_comp_sqrt_qnorm.npy", ppi_comp)
-    return ppi_comp 
-
-def build_ppi_comp_query_normalized():
-    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    ppi_comp = np.dot((ppi_adj*ppi_inv_deg).T, ppi_adj)*ppi_sqrt_inv_deg
-    np.save("data/ppi_matrices/ppi_comp_qnorm.npy", ppi_comp)
-    return ppi_comp 
-
-def build_ppi_comp_sqrt_normalized(): 
-    ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -(0.5))
-    ppi_comp = (np.dot((ppi_adj*ppi_sqrt_inv_deg).T, ppi_adj)*ppi_sqrt_inv_deg).T * ppi_sqrt_inv_deg
-    np.save("data/ppi_matrices/ppi_comp_sqrt_norm.npy", ppi_comp)
-    return ppi_comp 
-
+# Functions for building other ppi matrices
 def build_dn_normalized():
     ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -(0.5))
     dn_norm = (ppi_adj*ppi_sqrt_inv_deg).T * ppi_sqrt_inv_deg
@@ -195,12 +136,14 @@ def build_l3_query_normalized():
     return l3_qnorm
 
 
-#Main
-#====================================================
 if __name__ == "__main__":
-    print("Complementarity of Disease Pathways in PPI Network")
+    print("Build PPI Matrices with PPI Network")
     print("Sabri Eyuboglu  -- Stanford University")
     print("======================================")
 
-    build_ppi_comp_matrix(deg_fn = 'sqrt', row_norm = True, col_norm = False)
+    print("Loading PPI Network...")
+    _, ppi_network_adj, _ = load_network("data/bio-pathways-network.txt")
+
+    print("Building PPI Matrix")
+    build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True)
 
