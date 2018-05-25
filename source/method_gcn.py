@@ -1,28 +1,4 @@
 """
-Output pickle files based on our protein-protein interaction dataset
-
-Create files that replicate the standardized train-test splits as follows
-
-There are three different types of sets here
-    Training (labeled) / Test (labeled) / Other (unlabeled)
-
-
-x, the feature vectors of the labeled training instances,
-    [examples, features]
-y, the one-hot labels of the labeled training instances,
-    [examples, hot-labels]
-allx, the feature vectors of both labeled and unlabeled training instances (a superset of x),
-    [all example, features].
-graph, a dict in the format {index: [index_of_neighbor_nodes]}.
-
-tx, the feature vectors of the test instances,
-    [examples, features]
-ty, the one-hot labels of the test instances,
-    [examples, hot-labels]
-test.index, the indices of test instances in graph, for the inductive setting,
-    separate lines of test examples
-ally, the labels for instances in allx.
-    [all examples, hot-labels]
 """
 from __future__ import division
 import csv

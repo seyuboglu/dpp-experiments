@@ -15,7 +15,7 @@ np.random.seed(seed)
 tf.set_random_seed(seed)
 
 #CHECK THIS
-os.environ['CUDA_VISIABLE_DEVICES'] = ""
+os.environ['CUDA_VISIBLE_DEVICES'] = "/device:GPU:1"
 
 def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, verbose = True):
     """
@@ -55,7 +55,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, v
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
 
     #Initialize Session 
-    sess = tf.Session(config=tf.ConfigProto(allow_soft_placement = True))
+    sess = tf.Session(config=tf.ConfigProto(allow_growth = True, allow_soft_placement = True))
 
     # Define model evaluation function
     def evaluate(features, support, labels, mask, placeholders):
