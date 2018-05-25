@@ -6,8 +6,9 @@ import os
 
 import numpy as np
 import matplotlib.pyplot as plt 
+import seaborn as sns
 
-from ppi_matrix import compute_comp_scores
+from method_ppi_matrix import compute_comp_scores
 from disease import load_diseases, load_network
 from output import write_dict_to_csv
 from analysis import compute_ranking
@@ -70,10 +71,13 @@ if __name__ == '__main__':
             metrics[name].append(std_from_mean)
     
     #Plot results 
+    sns.set_style("whitegrid")
+    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
     for name, results in metrics.items(): 
         sorted_std_from_mean = np.sort(metrics[name])
-        plt.semilogy(sorted_std_from_mean, label=name, )
-    plot_path = os.path.join(args.experiment_dir, 'all_std_from_mean_log.png')
+        plt.semilogy(sorted_std_from_mean, label=name)
+        #plt.plot(sorted_std_from_mean, label=name)
+    plot_path = os.path.join(args.experiment_dir, 'all_std_from_mean_log_new_colors.png')
     plt.ylabel('Z-score')
     plt.xlabel('Diseases Sorted by Z-score')
     plt.title('Complementarity vs. DNS Disease Z-score')

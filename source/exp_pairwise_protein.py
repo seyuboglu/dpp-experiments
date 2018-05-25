@@ -60,9 +60,9 @@ if __name__ == "__main__":
     print("Sabri Eyuboglu  -- Stanford University")
     print("======================================")
 
-    print "Loading PPI Complementarity..."  
+    print("Loading PPI Complementarity...") 
     ppi_comp = np.load(PPI_COMP_PATH)
-    print "Loading PPI Network..."
+    print("Loading PPI Network...")
     ppi_network, ppi_adj, protein_to_node = load_network() 
     ppi_networkx = nx.from_numpy_matrix(ppi_adj)
 

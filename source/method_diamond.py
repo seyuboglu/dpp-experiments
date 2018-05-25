@@ -22,7 +22,7 @@
 """
 
 import time
-import cPickle
+import pickle
 import networkx as nx
 import numpy as np
 import copy
@@ -31,31 +31,6 @@ from collections import defaultdict
 import csv
 import sys
 
-
-# =============================================================================
-def print_usage():
-   
-    print ' '
-    print '        usage: ./DIAMOnD network_file seed_file n alpha(optional) outfile_name (optional)'
-    print '        -----------------------------------------------------------------'
-    print '        network_file : The edgelist must be provided as any delimiter-separated'
-    print '                       table. Make sure the delimiter does not exit in gene IDs' 
-    print '                       and is consistent across the file.' 
-    print '                       The first two columns of the table will be'
-    print '                       interpreted as an interaction gene1 <==> gene2'
-    print '        seed_file    : table containing the seed genes (if table contains'
-    print '                       more than one column they must be tab-separated;'
-    print '                       the first column will be used only)'
-    print '        n            : desired number of DIAMOnD genes, 200 is a reasonable'
-    print '                       starting point.'
-    print '        alpha        : an integer representing weight of the seeds,default'
-    print '                       value is set to 1'
-    print '        outfile_name : results will be saved under this file name'
-    print '                       by default the outfile_name is set to "first_n_added_nodes_weight_alpha.txt"'
-    print ' '
-
-
-# =============================================================================
 
 def compute_diamond_scores(ppi_networkx, training_nodes, params):
     max_nodes, alpha = params.max_nodes, params.dm_alpha
@@ -123,7 +98,7 @@ def read_input(network_file,seed_file):
             line_delimiter = dialect.delimiter
             break
     if line_delimiter == None:
-        print 'network_file format not correct'
+        print('network_file format not correct')
         sys.exit(0)
 
 
@@ -238,12 +213,12 @@ def reduce_not_in_cluster_nodes(all_degrees,neighbors,G,not_in_cluster,cluster_n
 
     # Going to choose the node with largest kb, given k                                
     k2kb = defaultdict(dict)                                                           
-    for kb,k2node in kb2k.iteritems():                                                 
+    for kb,k2node in kb2k.items():                                                 
         min_k = min(k2node.keys())                                                     
         node = k2node[min_k]                                                           
         k2kb[min_k][kb] = node                                                         
                                                                                        
-    for k,kb2node in k2kb.iteritems():                                                 
+    for k,kb2node in k2kb.items():                                                 
         max_kb = max(kb2node.keys())                                                   
         node = kb2node[max_kb]                                                         
         reduced_not_in_cluster[node] =(max_kb,k)                                       
@@ -337,7 +312,7 @@ def diamond_iteration_of_first_X_nodes(G,S,X,alpha):
                                                              neighbors,G,
                                                              not_in_cluster,
                                                              cluster_nodes,alpha)
-        for node,kbk in reduced_not_in_cluster.iteritems():
+        for node,kbk in reduced_not_in_cluster.items():
             # Getting the p-value of this kb,k
             # combination and save it in all_p, so computing it only once!
             kb,k = kbk
@@ -406,8 +381,8 @@ def DIAMOnD(G_original,seed_genes,max_number_of_added_nodes,alpha,outfile = None
     disease_genes = seed_genes & all_genes_in_network
 
     if len(disease_genes) != len(seed_genes):
-        print "DIAMOnD(): ignoring %s of %s seed genes that are not in the network" %(
-            len(seed_genes - all_genes_in_network), len(seed_genes))
+        print("DIAMOnD(): ignoring %s of %s seed genes that are not in the network" %(
+            len(seed_genes - all_genes_in_network), len(seed_genes)))
    
 
 
@@ -468,4 +443,4 @@ if __name__ == '__main__':
                           max_number_of_added_nodes,alpha,
                           outfile=outfile_name)
     
-    print "\n results have been saved to '%s' \n" %outfile_name
+    print("\n results have been saved to '%s' \n" %outfile_name)

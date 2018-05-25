@@ -4,14 +4,18 @@ from __future__ import print_function
 import time
 import tensorflow as tf
 import numpy as np
+import os
 
-from utils import *
+from gcn.utils import *
 from gcn.models import GCN, MLP
 
 # Set random seed
 seed = 123
 np.random.seed(seed)
 tf.set_random_seed(seed)
+
+#CHECK THIS
+os.environ['CUDA_VISIABLE_DEVICES'] = ""
 
 def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, verbose = True):
     """
