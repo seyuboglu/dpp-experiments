@@ -1,6 +1,8 @@
 **.npy
+**.pyc
 /results/
 /experiments/
 /figures/
 /predictions/
 /.vscode/
+**.DS_Store
