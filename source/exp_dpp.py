@@ -14,7 +14,7 @@ from method_ppi_matrix import compute_matrix_scores
 from method_random_walk import compute_random_walk_scores
 from method_diamond import compute_diamond_scores
 from method_gcn import compute_gcn_scores
-from method_lr import compute_lr_scores
+from method_lr import compute_lr_scores, build_embedding_feature_matrix
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
@@ -112,7 +112,7 @@ def compute_node_scores(train_nodes, val_nodes):
         scores = compute_gcn_scores(ppi_network_adj, train_nodes, val_nodes, params)
 
     elif params.method == 'lr':
-        scores = compute_lr_scores([ppi_matrix], train_nodes, params)
+        scores = compute_lr_scores(feature_matrices, train_nodes, params)
 
     else: 
         logging.error("No method" + params.method)
@@ -176,15 +176,23 @@ if __name__ == '__main__':
     ppi_networkx, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
-    if(params.method == "ppi_matrix" or params.method == 'lr'):
+
+    # Load method specific data 
+    if(params.method == "ppi_matrix"):
         logging.info("Loading PPI Matrix...")
         ppi_matrix = np.load(params.ppi_matrix)
         # normalize columns of ppi_matrix
         if(params.normalize):
             ppi_matrix = (ppi_matrix - np.mean(ppi_matrix, axis = 0)) / np.std(ppi_matrix, axis=0)
         # zero out the diagonal
-        np.fill_diagonal(ppi_matrix, 0)
+        np.fill_diagonal(ppi_matrix, 0)  
 
+    elif (params.method == 'lr'):
+        logging.info("Loading Feature Matrices...")
+        feature_matrices = []
+        for features_filename in params.features:
+            feature_matrices.append(
+                build_embedding_feature_matrix(protein_to_node, features_filename))
 
     #Run Experiment
     logging.info("Running Experiment...")
