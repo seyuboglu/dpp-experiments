@@ -57,6 +57,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, v
     #Initialize Session 
     config = tf.ConfigProto()
     config.allow_soft_placement = True
+    config.log_device_placement = True
     config.gpu_options.allow_growth = True
     sess = tf.Session(config=config)
 
