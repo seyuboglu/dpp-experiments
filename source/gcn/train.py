@@ -8,6 +8,7 @@ import os
 
 from gcn.utils import *
 from gcn.models import GCN, MLP
+from analysis import recall_at
 
 # Set random seed
 seed = 123
