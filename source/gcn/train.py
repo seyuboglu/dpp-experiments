@@ -14,10 +14,12 @@ seed = 123
 np.random.seed(seed)
 tf.set_random_seed(seed)
 
+VALIDATE_INTERVAL = 1
+
 #CHECK THIS
 os.environ['CUDA_VISIBLE_DEVICES'] = "3"
 
-def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, verbose = True):
+def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos, params, verbose = True):
     """
     Perform training process
     Returns the outputs from the last training pass
@@ -65,7 +67,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, v
         t_test = time.time()
         feed_dict_val = construct_feed_dict(features, support, labels, mask, placeholders)
         outs_val = sess.run([model.loss, model.accuracy, model.outputs, model.activations], feed_dict=feed_dict_val) #Investigate THIS!
-        return outs_val[0], outs_val[1], outs_val[2], outs_val[3], (time.time() - t_test)
+        return outs_val[0], outs_val[2], outs_val[3], (time.time() - t_test)
 
 
     # Init variables
@@ -101,22 +103,22 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, v
         epoch_train_activations.append(outs[4])
 
         # Validation
-        val_cost, val_acc, val_output, val_activations, duration = evaluate(features, support, y_val, val_mask, placeholders)
-        epoch_val_costs.append(val_cost)
-        epoch_val_accs.append(val_acc)
-        epoch_val_outputs.append(val_output)
-        epoch_val_activations.append(val_activations)
+        if(verbose and (epoch % VALIDATE_INTERVAL or epoch == params.epochs-1):
+            val_cost, val_output, val_activations, duration = evaluate(features, support, y_val, val_mask, placeholders)
+            epoch_val_costs.append(val_cost)
+            epoch_val_outputs.append(val_output)
+            epoch_val_activations.append(val_activations)
 
-        # Print results
-        if(verbose): print("Epoch:", '%04d' % (epoch + 1), "train_loss=", "{:.5f}".format(outs[1]),
-              "train_acc=", "{:.5f}".format(outs[2]), "val_loss=", "{:.5f}".format(val_cost),
-              "val_acc=", "{:.5f}".format(val_acc), "time=", "{:.5f}".format(time.time() - t))
+            # Print results
+            scores = val_output[:,1]
+            labels = y_val[:, 1]
+            recall = recall_at(labels, scores, 100, train_pos)
 
-        if epoch > params.early_stopping and epoch_val_costs[-1] > np.mean(epoch_val_costs[-(params.early_stopping+1):-1]):
-            if(verbose): print("Early stopping...")
-            break
-
-    if(verbose): print("Optimization Finished!")
+            print("Epoch:", '%04d' % (epoch + 1), 
+                    "train_loss=", "{:.5f}".format(outs[1]),
+                    "train_acc=", "{:.5f}".format(outs[2]), 
+                    "val_recall-at-100=", "{:.5f}".format(recall), 
+                    "time=", "{:.5f}".format(time.time() - t))
 
     sess.close()
     tf.reset_default_graph()
