@@ -9,6 +9,7 @@ from multiprocessing import Pool
 import numpy as np
 from sklearn.model_selection import KFold
 import networkx as nx
+import scipy.sparse as sp
 
 from method_ppi_matrix import compute_matrix_scores
 from method_random_walk import compute_random_walk_scores
@@ -109,7 +110,7 @@ def compute_node_scores(train_nodes, val_nodes):
         scores = compute_diamond_scores(ppi_networkx, train_nodes, params)
 
     elif params.method == 'gcn':
-        scores = compute_gcn_scores(ppi_network_adj, train_nodes, val_nodes, params)
+        scores = compute_gcn_scores(ppi_adj_sparse, features_sparse, train_nodes, val_nodes, params)
 
     elif params.method == 'lr':
         scores = compute_lr_scores(feature_matrices, train_nodes, params)
@@ -193,6 +194,13 @@ if __name__ == '__main__':
         for features_filename in params.features:
             feature_matrices.append(
                 build_embedding_feature_matrix(protein_to_node, features_filename))
+    
+    elif (params.method == 'gcn'):
+        ppi_adj_sparse = sp.coo_matrix(ppi_network_adj)
+
+        features_sparse = np.identity(ppi_network_adj.shape[0])
+        features_sparse = features_sparse.astype(np.float32)
+        features_sparse = sp.coo_matrix(features_sparse).tolil()
 
     #Run Experiment
     logging.info("Running Experiment...")
@@ -206,8 +214,9 @@ if __name__ == '__main__':
             disease_to_ranks[disease] = ranks 
     else: 
         for n_finished, disease in enumerate(diseases_dict.values()): 
-            logging.info("Experiment Progress: {:.1f}% -- {}/{}".format(100.0*n_finished/len(diseases_dict), n_finished, len(diseases_dict)))
+            logging.info("Experiment Progress: {:.1f}% -- {}/{}".format(100 * n_finished/len(diseases_dict), n_finished, len(diseases_dict)))
             disease, avg_metrics, ranks = run_dpp(disease)
+            logging.info("{} Recall-at-100: {:.2f}%".format(disease.name, 100 * avg_metrics["Recall-at-100"]))
             disease_to_metrics[disease] = avg_metrics
             disease_to_ranks[disease] = ranks 
         
