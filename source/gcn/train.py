@@ -8,7 +8,7 @@ import os
 
 from gcn.utils import *
 from gcn.models import GCN, MLP
-from analysis import recall_at
+from analysis import recall_at, positive_rankings
 
 # Set random seed
 seed = 123
