@@ -20,7 +20,6 @@ tf.set_random_seed(seed)
 def perform_train(adj, features, y_train, y_val, train_mask, val_mask, params, verbose = True):
     """
     Perform training process
-
     Returns the outputs from the last training pass
     """
     # Some preprocessing

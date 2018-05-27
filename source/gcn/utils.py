@@ -20,7 +20,9 @@ def get_negatives(Y, n_neg):
 def shuffle_negatives(Y):
     n_neg = np.sum(Y[:, 0])
     neg_indices = get_negatives(Y, n_neg)
+    Y[:, 0] = 0
     Y[neg_indices, 0] = 1.0
+
     
 def parse_index_file(filename):
     """Parse index file."""
@@ -28,7 +30,6 @@ def parse_index_file(filename):
     for line in open(filename):
         index.append(int(line.strip()))
     return index
-
 
 def sample_mask(idx, l):
     """Create mask."""

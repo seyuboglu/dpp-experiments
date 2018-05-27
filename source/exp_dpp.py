@@ -179,6 +179,7 @@ if __name__ == '__main__':
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
 
     # Load method specific data 
+    # TODO: Build class for each method 
     if(params.method == "ppi_matrix"):
         logging.info("Loading PPI Matrix...")
         ppi_matrix = np.load(params.ppi_matrix)
