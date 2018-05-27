@@ -37,7 +37,7 @@ def compute_gcn_scores(ppi_adj_sparse, features_sparse, train_pos, val_pos, para
 
     # Run training 
     data = format_data(features_sparse, Y, ppi_adj_sparse, train_nodes, val_nodes)
-    epoch_outputs = perform_train(*data, params = params, verbose=True)
+    epoch_outputs = perform_train(*data, train_pos = train_pos, params = params, verbose=True)
     scores = epoch_outputs[-1][:,1]
 
     return scores
