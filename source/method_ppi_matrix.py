@@ -5,18 +5,17 @@ between proteins in the protein-protein interaction network.
 import os
 import logging
 
-
 from collections import defaultdict
 import numpy as np 
 import matplotlib.pyplot as plt
 import networkx as nx
 from sklearn.decomposition import PCA
+from sklearn.linear_model import LogisticRegression
 from scipy.sparse import csr_matrix
 
 from disease import Disease, load_diseases, load_network
 from output import ExperimentResults
-from util import set_logger
-
+from util import set_logger, get_negatives
 
 def softmax(x):
     """softmax for a vector x. Numerically stable implementation
@@ -51,6 +50,27 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         weights /= np.sum(weights)
         weights += 1.0 / len(weights)
         weights = weights ** (-1)
+    
+    elif params.weighting == "mle":
+        train_pos = training_ids
+        X = ppi_matrix[:, train_pos]
+        N, D = X.shape
+
+        Y = np.zeros(N)
+        Y = np.zeros(N)
+        Y[train_pos] = 1
+
+        train_neg = get_negatives(Y, params.neg_examples*len(train_pos))
+        train_nodes = np.concatenate((train_pos, train_neg))
+        Y_train = Y[train_nodes]
+        X_train = X[train_nodes, :]
+        model = LogisticRegression(C = 1.0 / params.reg_L2, 
+                                   fit_intercept = params.intercept, 
+                                   class_weight = 'balanced')
+        model.fit(X_train, Y_train)
+        return model.predict_proba(X)[:,1]
+        #weights = model.coef_.T
+        #print(weights)
 
     elif params.weighting == "pca":
         logging.error("Not Implemented")
@@ -63,7 +83,6 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
 
     # get cns vector
     scores = np.dot(ppi_matrix[:, training_ids], weights) 
-
     # compute scores 
     return scores 
 
@@ -144,6 +163,6 @@ if __name__ == "__main__":
     print("Loading PPI Network...")
     _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
 
-    print("Building PPI Matrix")
-    build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True)
+    print("Building PPI Matrix...")
+    build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = False)
 

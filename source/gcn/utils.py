@@ -42,10 +42,7 @@ def inverse_sample_mask(idx, l):
     return np.array(mask, dtype=np.bool)
 
 def format_data(X, Y, adj, idx_train, idx_validate):
-    X = X.astype(np.float32)
     Y = Y.astype(np.int32)
-
-    features = sp.coo_matrix(X).tolil()
 
     train_mask = sample_mask(idx_train, Y.shape[0])
     val_mask = sample_mask(idx_validate, Y.shape[0])
@@ -55,7 +52,7 @@ def format_data(X, Y, adj, idx_train, idx_validate):
     y_train[train_mask, :] = Y[train_mask, :]
     y_val[val_mask, :] = Y[val_mask, :]
 
-    return adj, features, y_train, y_val, train_mask, val_mask
+    return adj, X, y_train, y_val, train_mask, val_mask
 
 
 def load_file(dataset_str):
