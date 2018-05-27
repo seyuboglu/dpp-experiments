@@ -104,7 +104,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         epoch_train_activations.append(outs[4])
 
         # Validation
-        if(verbose and (epoch % VALIDATE_INTERVAL or epoch == params.epochs-1)):
+        if(verbose and (epoch % VALIDATE_INTERVAL == 0 or epoch == params.epochs-1)):
             val_cost, val_output, val_activations, duration = evaluate(features, support, y_val, val_mask, placeholders)
             epoch_val_costs.append(val_cost)
             epoch_val_outputs.append(val_output)
@@ -114,12 +114,14 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
             scores = val_output[:,1]
             labels = y_val[:, 1]
             recall = recall_at(labels, scores, 100, train_pos)
+            rankings = positive_rankings(labels, scores, train_pos)
 
             print("Epoch:", '%04d' % (epoch + 1), 
                     "train_loss=", "{:.5f}".format(outs[1]),
                     "train_acc=", "{:.5f}".format(outs[2]), 
                     "val_recall-at-100=", "{:.5f}".format(recall), 
                     "time=", "{:.5f}".format(time.time() - t))
+            print("Val Rankings:", rankings)
 
     sess.close()
     tf.reset_default_graph()
