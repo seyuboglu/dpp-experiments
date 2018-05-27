@@ -103,7 +103,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         epoch_train_activations.append(outs[4])
 
         # Validation
-        if(verbose and (epoch % VALIDATE_INTERVAL or epoch == params.epochs-1):
+        if(verbose and (epoch % VALIDATE_INTERVAL or epoch == params.epochs-1)):
             val_cost, val_output, val_activations, duration = evaluate(features, support, y_val, val_mask, placeholders)
             epoch_val_costs.append(val_cost)
             epoch_val_outputs.append(val_output)
