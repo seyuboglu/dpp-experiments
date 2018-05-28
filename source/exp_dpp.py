@@ -19,7 +19,7 @@ from method_lr import compute_lr_scores, build_embedding_feature_matrix
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
-from util import Params, set_logger
+from util import Params, set_logger, parse_id_rank_pair
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -35,6 +35,7 @@ def initialize_metrics():
     for k in [100, 25]:
         metrics["Recall-at-{}".format(k)] = []
     metrics["Ranks"] = []
+    metrics["Nodes"] = []
     metrics["AUROC"] = []
     metrics["Mean Average Precision"] = []
 
@@ -57,6 +58,7 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
     metrics["AUROC"].append(auroc(labels, scores, train_nodes))
     metrics["Mean Average Precision"].append(average_precision(labels, scores, train_nodes))
     metrics["Ranks"].extend(positive_rankings(labels, scores, train_nodes))
+    metrics["Nodes"].extend(test_nodes)
 
     # Sample down to one-folds-worth of negative examples 
     out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
@@ -90,9 +92,25 @@ def write_ranks(directory, disease_to_ranks):
     # Output metrics to csv
     with open(os.path.join(directory, 'ranks.csv'), 'w') as file:
         ranks_writer = csv.writer(file)
-        ranks_writer.writerow(['Disease ID', 'Disease Name', 'Protein Ranks'])
+        ranks_writer.writerow(['Disease ID', 'Disease Name', 'Protein Ranks', 'Protein Ids'])
         for curr_disease, curr_ranks in disease_to_ranks.items():
+            curr_ranks = [str(protein) + "=" + str(rank) for protein, rank in curr_ranks.items()]
             ranks_writer.writerow([curr_disease.id, curr_disease.name] + curr_ranks)
+
+def load_ranks(directory):
+    """Load ranks from a rankings file output for one method. 
+    """
+    disease_to_ranks = {}
+    with open(os.path.join(directory, 'ranks.csv'),'r') as file: 
+        ranks_reader = csv.reader(file)
+        for i, row in enumerate(ranks_reader):
+            if (i == 0): continue 
+            disease_id = row[0]
+            protein_to_ranks = {id: rank for id, rank in map(parse_id_rank_pair, row[2:])}
+            disease_to_ranks[disease_id] = protein_to_ranks
+    
+    return disease_to_ranks
+
 
 def compute_node_scores(train_nodes, val_nodes):
     """ Get score 
@@ -149,8 +167,10 @@ def run_dpp(disease):
     #if not os.path.exists(disease_directory):
     #    os.makedirs(disease_directory)
     avg_metrics = {name: np.mean(values) for name, values in metrics.items()}
-    ranks = metrics["Ranks"] 
-    return disease, avg_metrics, ranks 
+    proteins = [node_to_protein[node] for node in metrics["Nodes"]]
+    ranks = metrics["Ranks"]
+    proteins_to_ranks = {protein: ranks for protein, ranks in zip(proteins, ranks)}
+    return disease, avg_metrics, proteins_to_ranks 
 
 
 if __name__ == '__main__':
@@ -175,6 +195,7 @@ if __name__ == '__main__':
     # Load data from params file
     logging.info("Loading PPI Network...")
     ppi_networkx, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
+    node_to_protein = {node: protein for protein, node in protein_to_node.items()}
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
 
@@ -186,6 +207,7 @@ if __name__ == '__main__':
         # normalize columns of ppi_matrix
         if(params.normalize):
             ppi_matrix = (ppi_matrix - np.mean(ppi_matrix, axis = 0)) / np.std(ppi_matrix, axis=0)
+        
         # zero out the diagonal
         np.fill_diagonal(ppi_matrix, 0)  
 
