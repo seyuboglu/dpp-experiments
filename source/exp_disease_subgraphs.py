@@ -9,9 +9,9 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import networkx as nx
 
-from disease import load_diseases, load_network
+from disease import load_diseases, load_network, load_gene_names
 from output import ExperimentResults
-#from ppi_matrix import compute_matrix_scores 
+from exp_dpp import load_ranks
 
 from util import Params, set_logger
 
@@ -163,14 +163,21 @@ def write_disease_subgraph(disease, subgraph, directory):
     # Write node data into a csv file
     with open(os.path.join(directory, disease.id + '_node_data.csv'), 'w') as node_data_file:
         fieldnames = ['Node ID', 'Protein ID', 'Protein Name', 'Disease Node', 'Degree']
+        fieldnames.extend([method_name for method_name, _ in params.method_exp_dirs.items()]) 
         node_data_writer = csv.DictWriter(node_data_file, fieldnames)
         node_data_writer.writeheader()
         for node in subgraph.nodes():
-            node_data_writer.writerow({'Node ID': node, 
-                                       'Protein ID': node_to_protein[node],
-                                       #'Protein Name': 'IGNORE',
-                                       'Disease Node': 1 if node in disease_nodes else 0,
-                                       'Degree': ppi_networkx.degree(node)})
+            protein = node_to_protein[node]
+            row_dict = {'Node ID': node, 
+                        'Protein ID': protein,
+                        'Protein Name': protein_to_name.get(protein, ""),
+                        'Disease Node': 1 if node in disease_nodes else 0,
+                        'Degree': ppi_networkx.degree(node)}
+            for  method_name, _ in params.method_exp_dirs.items():
+                protein_to_rank = method_to_ranks[method_name][disease.id]
+                if protein in protein_to_rank:
+                    row_dict[method_name] = protein_to_rank[protein]
+            node_data_writer.writerow(row_dict)
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
@@ -193,12 +200,20 @@ if __name__ == '__main__':
     ppi_network, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
     node_to_protein = {node: protein for protein, node in protein_to_node.items()}
     ppi_networkx = nx.from_numpy_matrix(ppi_network_adj)
-    largest_cc = max(nx.connected_components(ppi_networkx), key=len)
-    print ("Largest_CC:", len(largest_cc))
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
+
+    logging.info("Loading Protein Names...")
+    protein_to_name = load_gene_names(params.protein_names_path)
+
     logging.info("Loading PPI Matrix...")
     ppi_matrix = np.load(params.ppi_matrix)
+
+    logging.info("Loading Protein Ranks")
+    method_to_ranks = {}
+    for method_name, method_dir in params.method_exp_dirs.items(): 
+        disease_to_ranks = load_ranks(method_dir)
+        method_to_ranks[method_name] = disease_to_ranks
 
     #Run Experiment
     logging.info("Running Experiment...")

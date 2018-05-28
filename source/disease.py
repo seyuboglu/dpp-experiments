@@ -64,6 +64,11 @@ def split_diseases(split_fractions, path):
                 writer.writerow(row)
     
 def load_diseases(associations_path = ASSOCIATIONS_PATH, diseases_subset = []): 
+    """ Load a set of disease-protein associations
+    Args:
+        assoications_path (string)
+        diseases_subset (set) 
+    """
     diseases_dict = {} 
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
@@ -76,15 +81,13 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH, diseases_subset = []):
             diseases_dict[disease_id] = Disease(disease_id, disease_name, disease_proteins)
     return diseases_dict 
 
-def build_codisease_matrix(diseases_dict, protein_to_node):
-    n_nodes = len(protein_to_node.keys())
-    codisease_matrix = np.zeros((n_nodes, n_nodes))
-    for disease in diseases_dict.values():
-        disease_nodes = np.array([protein_to_node[protein] for protein in disease.proteins if protein in protein_to_node])
-        codisease_matrix[np.ix_(disease_nodes, disease_nodes)] += 1
-    return codisease_matrix
-
 def load_network(network_path = NETWORK_PATH):
+    """ Load a network. Returns numpy adjacency matrix, networkx network and 
+    dictionary mapping entrez protein_id to node index in network and adjacency
+    matrix.
+    Args:
+        network_path (string)
+    """
     protein_ids = set()
     with open(network_path) as network_file:
         for line in network_file:
@@ -101,6 +104,20 @@ def load_network(network_path = NETWORK_PATH):
             adj[n2,n1] = 1
     return nx.from_numpy_matrix(adj), adj, protein_to_node
 
+def load_gene_names(file_path):
+    """ Load a mapping between entrez_id and gene_names.
+    Args:
+        file_path (string)
+    """
+    protein_to_name = {}
+    with open(file_path) as file:
+        for line in file:
+            if line[0] == '#': continue
+            line_elems = line.split()
+            if (len(line_elems) != 2): continue
+            name, protein = line.split()
+            protein_to_name[int(protein)] = name
+    return protein_to_name
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir

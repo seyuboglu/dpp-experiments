@@ -6,7 +6,6 @@ import os
 import csv
 from multiprocessing import Pool
 
-
 import numpy as np
 from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt 
@@ -16,7 +15,7 @@ import seaborn as sns
 
 from scipy.stats import rankdata
 
-from util import Params, set_logger
+from util import Params, set_logger, parse_id_rank_pair
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -48,7 +47,7 @@ if __name__ == '__main__':
                 rank_reader = csv.reader(ranks_file)
                 for i, row in enumerate(rank_reader):
                     if i == 0: continue
-                    ranks = list(map(float, row[2:]))
+                    ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
                     ranks = np.array(ranks).astype(int)
                     rank_bin_count = np.bincount(ranks)
                     recall_curve = np.cumsum(rank_bin_count) / len(ranks)

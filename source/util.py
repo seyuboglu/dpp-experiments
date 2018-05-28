@@ -76,3 +76,13 @@ def get_negatives(Y, n_neg):
                                    replace=False, 
                                    p=(1 - Y) / (n-n_pos))                             
     return neg_indices 
+
+def parse_id_rank_pair(str):
+    """ Parses a rank entry. Since protein labels are sometimes not included
+    return -1 for protein id.  
+    """
+    if "=" not in str:
+        return -1, float(str)
+    
+    id, rank = str.split("=")
+    return int(id), float(rank)
