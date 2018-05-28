@@ -40,6 +40,7 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
     weights = None
     if  not hasattr(params, 'weighting') or params.weighting == "uniform":
         weights = np.ones(len(training_ids))
+        weights /= np.sum(weights)
 
     elif params.weighting == "sup":
         # compute supervised weights
@@ -50,13 +51,14 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         weights /= np.sum(weights)
         weights += 1.0 / len(weights)
         weights = weights ** (-1)
-    
+
+        weights /= np.sum(weights)
+
     elif params.weighting == "mle":
         train_pos = training_ids
         X = ppi_matrix[:, train_pos]
         N, D = X.shape
 
-        Y = np.zeros(N)
         Y = np.zeros(N)
         Y[train_pos] = 1
 
@@ -65,12 +67,14 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         Y_train = Y[train_nodes]
         X_train = X[train_nodes, :]
         model = LogisticRegression(C = 1.0 / params.reg_L2, 
-                                   fit_intercept = params.intercept, 
+                                   fit_intercept = False, 
                                    class_weight = 'balanced')
         model.fit(X_train, Y_train)
-        return model.predict_proba(X)[:,1]
-        #weights = model.coef_.T
-        #print(weights)
+        weights = np.array(model.coef_).reshape(-1)
+        
+        #Apply ReLU to Weights
+        weights += np.ones(len(training_ids))
+        weights /= np.sum(weights)
 
     elif params.weighting == "pca":
         logging.error("Not Implemented")
@@ -78,11 +82,9 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
     else: 
         logging.error("Weighting scheme not recognized")
 
-    # normalize
-    weights /= np.sum(weights)
-
     # get cns vector
     scores = np.dot(ppi_matrix[:, training_ids], weights) 
+
     # compute scores 
     return scores 
 
