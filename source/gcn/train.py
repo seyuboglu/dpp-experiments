@@ -20,7 +20,7 @@ VALIDATE_INTERVAL = 45
 #CHECK THIS
 os.environ['CUDA_VISIBLE_DEVICES'] = "3"
 
-def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos, params, verbose = True):
+def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos, val_pos, params, verbose = True):
     """
     Perform training process
     Returns the outputs from the last training pass
@@ -56,6 +56,9 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
     with tf.device(params.device):
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
 
+    if(params.saliency_map):
+        model.build_saliency_maps(val_pos)
+
     #Initialize Session 
     config = tf.ConfigProto()
     config.allow_soft_placement = True
@@ -69,7 +72,6 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         feed_dict_val = construct_feed_dict(features, support, labels, mask, placeholders)
         outs_val = sess.run([model.loss, model.accuracy, model.outputs, model.activations], feed_dict=feed_dict_val) #Investigate THIS!
         return outs_val[0], outs_val[2], outs_val[3], (time.time() - t_test)
-
 
     # Init variables
     sess.run(tf.global_variables_initializer())
@@ -109,6 +111,11 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
             epoch_val_costs.append(val_cost)
             epoch_val_outputs.append(val_output)
             epoch_val_activations.append(val_activations)
+        
+        if(params.saliency_map):
+            saliency_maps = sess.run(model.saliency_maps, feed_dict=feed_dict)
+            for saliency_map in saliency_maps:
+                print(saliency_maps)
 
         if(verbose):
             # Print results

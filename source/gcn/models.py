@@ -186,6 +186,22 @@ class GCN(Model):
                                  act=tf.nn.softmax, # CHANGE: act=lambda x: x,
                                  dropout=True,
                                  logging=self.logging)) 
+    
+    def build_saliency_maps(self, nodes):
+        """ Build saliency map
+        Args:
+            i (int) the 
+        """
+        self.saliency_maps = []
+        support = self.placeholders["support"][0]
+        for node in nodes:
+            gradient_values = tf.gradients(self.outputs[node, 1], support.values)[0]
+            print(type(gradient_values))
+            print(type(support.indices))
+            print(type(support.dense_shape))
+            gradient = tf.SparseTensor(support.indices, gradient_values, support.dense_shape)
+            saliency_map = tf.abs(gradient)
+            self.saliency_maps.append(saliency_map)
 
     def predict(self):
         self.prediction = lambda x: x #CHANGE: tf.nn.softmax(self.outputs)
