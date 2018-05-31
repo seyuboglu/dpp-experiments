@@ -8,9 +8,20 @@ from random import shuffle
 from multiprocessing import Pool
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 from gcn.train import perform_train
 from gcn.utils import format_data, sample_mask, inverse_sample_mask, get_negatives
+
+def show_saliency_maps(epoch_saliency_maps, val_pos, train_pos):
+    """ Plot saliency maps 
+    """
+    
+    for saliency_maps in epoch_saliency_maps:
+        print(type(saliency_maps[0]))
+        vec = np.array(saliency_maps[0][val_pos[0], :])
+        plt.bar(np.arange(vec.shape[0]), vec)
+        plt.show
 
 def compute_gcn_scores(ppi_adj_sparse, features_sparse, train_pos, val_pos, params):
     """ Compute the scores predicted by GCN.
@@ -37,7 +48,9 @@ def compute_gcn_scores(ppi_adj_sparse, features_sparse, train_pos, val_pos, para
 
     # Run training 
     data = format_data(features_sparse, Y, ppi_adj_sparse, train_nodes, val_nodes)
-    epoch_outputs = perform_train(*data, train_pos = train_pos, val_pos= val_pos, params = params, verbose=params.verbose)
+    epoch_outputs, epoch_saliency_maps = perform_train(*data, train_pos = train_pos, val_pos= val_pos, params = params, verbose=params.verbose)
     scores = epoch_outputs[-1][:,1]
+
+    show_saliency_maps(epoch_saliency_maps, val_pos, train_pos)
 
     return scores

@@ -56,7 +56,9 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
     with tf.device(params.device):
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
 
+    epoch_saliency_maps = None
     if(params.saliency_map):
+        epoch_saliency_maps = []
         model.build_saliency_maps(val_pos)
 
     #Initialize Session 
@@ -114,9 +116,9 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         
         if(params.saliency_map):
             saliency_maps = sess.run(model.saliency_maps, feed_dict=feed_dict)
-            for saliency_map in saliency_maps:
-                print(saliency_maps)
-
+            saliency_maps = map(tf.sparse_tensor_to_dense, saliency_maps)
+            epoch_saliency_maps.append(saliency_maps)
+            
         if(verbose):
             # Print results
             scores = val_output[:,1]
@@ -134,5 +136,5 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
     sess.close()
     tf.reset_default_graph()
 
-    return epoch_val_outputs  
+    return epoch_val_outputs, epoch_saliency_maps
 
