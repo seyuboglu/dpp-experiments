@@ -196,9 +196,6 @@ class GCN(Model):
         support = self.placeholders["support"][0]
         for node in nodes:
             gradient_values = tf.gradients(self.outputs[node, 1], support.values)[0]
-            print(type(gradient_values))
-            print(type(support.indices))
-            print(type(support.dense_shape))
             gradient = tf.SparseTensor(support.indices, gradient_values, support.dense_shape)
             saliency_map = tf.abs(gradient)
             self.saliency_maps.append(saliency_map)
