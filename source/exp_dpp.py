@@ -10,12 +10,13 @@ import numpy as np
 from sklearn.model_selection import KFold
 import networkx as nx
 import scipy.sparse as sp
+import scipy.stats as stats
 
-from method_ppi_matrix import compute_matrix_scores
-from method_random_walk import compute_random_walk_scores
-from method_diamond import compute_diamond_scores
-from method_gcn import compute_gcn_scores
-from method_lr import compute_lr_scores, build_embedding_feature_matrix
+from method.ppi_matrix import compute_matrix_scores
+from method.random_walk import compute_random_walk_scores
+from method.diamond import compute_diamond_scores
+from method.graph_cn import GCN
+from method.lr import compute_lr_scores, build_embedding_feature_matrix
 from disease import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
@@ -24,25 +25,6 @@ from util import Params, set_logger, parse_id_rank_pair
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
                     help="Directory containing params.json")
-
-def initialize_metrics():
-    """Initialize the metrics container for the on one disease. 
-    Each iteration should append its results to the lists in the metrics
-    dictionary. 
-    """
-    metrics = {}
-
-    for k in [100, 25]:
-        metrics["Recall-at-{}".format(k)] = []
-    metrics["Ranks"] = []
-    metrics["Nodes"] = []
-    metrics["AUROC"] = []
-    metrics["Mean Average Precision"] = []
-
-    for k in [100]:
-        metrics["Fold Recall-at-{}".format(k)] = []
-
-    return metrics
 
 def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
     """Synthesize the metrics for one disease. 
@@ -54,11 +36,11 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
         test_nodes: (ndarray) array of test nodes
     """
     for k in [100, 25]: 
-        metrics["Recall-at-{}".format(k)].append(recall_at(labels, scores, k, train_nodes))
-    metrics["AUROC"].append(auroc(labels, scores, train_nodes))
-    metrics["Mean Average Precision"].append(average_precision(labels, scores, train_nodes))
-    metrics["Ranks"].extend(positive_rankings(labels, scores, train_nodes))
-    metrics["Nodes"].extend(test_nodes)
+        metrics.setdefault("Recall-at-{}".format(k), []).append(recall_at(labels, scores, k, train_nodes))
+    metrics.setdefault("AUROC", []).append(auroc(labels, scores, train_nodes))
+    metrics.setdefault("Mean Average Precision", []).append(average_precision(labels, scores, train_nodes))
+    metrics.setdefault("Ranks", []).extend(positive_rankings(labels, scores, train_nodes))
+    metrics.setdefault("Nodes", []).extend(test_nodes)
 
     # Sample down to one-folds-worth of negative examples 
     out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
@@ -66,7 +48,7 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
     fold_scores[out_of_fold] = 0.0
     fold_scores[test_nodes] = scores[test_nodes]
     for k in [100]: 
-        metrics["Fold Recall-at-{}".format(k)].append(recall_at(labels, fold_scores, k, train_nodes))
+        metrics.setdefault("Fold Recall-at-{}".format(k), []).append(recall_at(labels, fold_scores, k, train_nodes))
 
 def write_metrics(directory, disease_to_metrics):
     """Synthesize the metrics for one disease. 
@@ -128,7 +110,7 @@ def compute_node_scores(train_nodes, val_nodes):
         scores = compute_diamond_scores(ppi_networkx, train_nodes, params)
 
     elif params.method == 'gcn':
-        scores = compute_gcn_scores(ppi_adj_sparse, features_sparse, train_nodes, val_nodes, params)
+        scores = method(train_nodes, val_nodes)
 
     elif params.method == 'lr':
         scores = compute_lr_scores(feature_matrices, train_nodes, params)
@@ -143,32 +125,49 @@ def run_dpp(disease):
     Args:
         disease: (Disease) A disease object
     """
+    # create directory for disease 
+    disease_directory = os.path.join(args.experiment_dir, 'diseases', disease.id)
+    if not os.path.exists(disease_directory):
+        os.makedirs(disease_directory)
 
     disease_nodes = disease.to_node_array(protein_to_node)
     labels = np.zeros((len(protein_to_node), 1))
     labels[disease_nodes, 0] = 1 
-    metrics = initialize_metrics()
+    metrics = {}
+
+    if params.saliency_map: 
+        rank_corrs = []
+        p_values = []
 
     # Perform k-fold cross validation
     n_folds = disease_nodes.size if params.n_folds < 0 or params.n_folds > len(disease_nodes) else params.n_folds
     kf = KFold(n_splits = n_folds, shuffle=False)
+
     for train_indices, test_indices in kf.split(disease_nodes):
         train_nodes = disease_nodes[train_indices]
         val_nodes = disease_nodes[test_indices]
 
-        # Compute node scores 
+        # compute node scores 
         scores = compute_node_scores(train_nodes, val_nodes)
 
-        # Compute the metrics of target node
+        # compute the metrics of target node
         compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
 
-    # Create directory for disease 
-    #disease_directory = os.path.join(args.experiment_dir, 'diseases', disease.id)
-    #if not os.path.exists(disease_directory):
-    #    os.makedirs(disease_directory)
+        # compute saliency maps
+        if params.saliency_map: 
+            rank_corr, p_value = method.analyze_saliency_maps(disease_directory, node_to_protein)
+            rank_corrs.extend(rank_corr)
+            p_values.extend(p_value)
+
     avg_metrics = {name: np.mean(values) for name, values in metrics.items()}
     proteins = [node_to_protein[node] for node in metrics["Nodes"]]
     ranks = metrics["Ranks"]
+
+    if params.saliency_map:
+        avg_metrics["GCN-Comp Rank Correlation"] = np.mean(rank_corrs)
+        print(avg_metrics["GCN-Comp Rank Correlation"])
+        avg_metrics["GCN-Comp P-Value"] = stats.combine_pvalues(p_values)[1]
+
     proteins_to_ranks = {protein: ranks for protein, ranks in zip(proteins, ranks)}
     return disease, avg_metrics, proteins_to_ranks 
 
@@ -219,11 +218,7 @@ if __name__ == '__main__':
                 build_embedding_feature_matrix(protein_to_node, features_filename))
     
     elif (params.method == 'gcn'):
-        ppi_adj_sparse = sp.coo_matrix(ppi_network_adj)
-
-        features_sparse = np.identity(ppi_network_adj.shape[0])
-        features_sparse = features_sparse.astype(np.float32)
-        features_sparse = sp.coo_matrix(features_sparse).tolil()
+        method = GCN(params, ppi_network_adj)
 
     #Run Experiment
     logging.info("Running Experiment...")

@@ -6,8 +6,8 @@ import tensorflow as tf
 import numpy as np
 import os
 
-from gcn.utils import *
-from gcn.models import GCN, MLP
+from method.gcn.utils import *
+from method.gcn.models import GCN, MLP
 from analysis import recall_at, positive_rankings
 
 # Set random seed
@@ -15,7 +15,7 @@ seed = 123
 np.random.seed(seed)
 tf.set_random_seed(seed)
 
-VALIDATE_INTERVAL = 45
+VALIDATE_INTERVAL = 1
 
 #CHECK THIS
 os.environ['CUDA_VISIBLE_DEVICES'] = "3"
@@ -113,11 +113,6 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
             epoch_val_costs.append(val_cost)
             epoch_val_outputs.append(val_output)
             epoch_val_activations.append(val_activations)
-        
-        if(params.saliency_map):
-            saliency_maps = sess.run(model.saliency_maps, feed_dict=feed_dict)
-            saliency_maps = map(tf.sparse_tensor_to_dense, saliency_maps)
-            epoch_saliency_maps.append(saliency_maps)
             
         if(verbose):
             # Print results
@@ -133,8 +128,11 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
                     "time=", "{:.5f}".format(time.time() - t))
             print("Val Rankings:", rankings)
 
+        if(params.saliency_map):
+            saliency_maps = sess.run(model.saliency_maps, feed_dict=feed_dict)
+
     sess.close()
     tf.reset_default_graph()
 
-    return epoch_val_outputs, epoch_saliency_maps
+    return epoch_val_outputs, saliency_maps
 

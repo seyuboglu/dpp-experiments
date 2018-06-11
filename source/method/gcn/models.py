@@ -1,6 +1,5 @@
-from gcn.layers import *
-from gcn.metrics import *
-
+from method.gcn.layers import *
+from method.gcn.metrics import *
 
 class Model(object):
     def __init__(self, **kwargs):
@@ -198,7 +197,8 @@ class GCN(Model):
             gradient_values = tf.gradients(self.outputs[node, 1], support.values)[0]
             gradient = tf.SparseTensor(support.indices, gradient_values, support.dense_shape)
             saliency_map = tf.abs(gradient)
-            self.saliency_maps.append(saliency_map)
+
+            self.saliency_maps.append(tf.sparse_tensor_to_dense(saliency_map))
 
     def predict(self):
         self.prediction = lambda x: x #CHANGE: tf.nn.softmax(self.outputs)

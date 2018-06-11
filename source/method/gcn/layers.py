@@ -1,4 +1,4 @@
-from gcn.inits import *
+from method.gcn.inits import *
 import tensorflow as tf
 
 
