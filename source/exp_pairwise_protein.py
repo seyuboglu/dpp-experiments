@@ -17,7 +17,6 @@ from diamond import DIAMOnD
 PPI_COMP_PATH = "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy"
 OUTPUT_PATH = "results/comp_results.csv"
 
-
 #Complementarity Analysis
 #====================================================
 def build_codisease_matrix(diseases_dict):
