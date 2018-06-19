@@ -94,11 +94,6 @@ class GCN(DPPMethod):
             # get saliency map 
             saliency_map = self.saliency_maps[i][node, node_neighbors.astype(bool)]
 
-            plt.scatter(cn, saliency_map)
-            plt.xlabel("Comp Score")
-            plt.ylabel("GCN Saliency")
-            plt.show()
-
             # compute pearson rank correlation 
             if np.all(cn == 1) or np.all(cn == 0):
                 continue 

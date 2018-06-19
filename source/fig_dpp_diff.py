@@ -49,6 +49,8 @@ if __name__ == '__main__':
     
     ref_name = params.reference_exp
     ref_scores = method_to_scores[ref_name]
+    sns.set_style("whitegrid")
+    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
     for method_name, method_scores in method_to_scores.items():
         # Skip comparing reference to itself
         if method_name == ref_name: continue
@@ -58,13 +60,14 @@ if __name__ == '__main__':
         diffs = np.sort(np.array(list(disease_to_diffs.values())))
 
         # Split into positive and negative 
+        diffs = diffs * 100
         mid = np.where(diffs > 0.0)[0][0]
-        plt.bar(np.arange(mid, len(diffs)), diffs[mid:], 1.5, label = ref_name)
-        plt.bar(np.arange(mid), diffs[:mid], 1.5, label = method_name)
+        plt.bar(np.arange(mid, len(diffs)), diffs[mid:], 1.5, label = ref_name, alpha = 0.75)
+        plt.bar(np.arange(mid), diffs[:mid], 1.5, label = method_name,  alpha = 0.75)
         plt.title(ref_name + " " + params.metric + " Gain over " + method_name )
         plt.ylabel(params.metric + " Difference")
         plt.xlabel("Diseases Sorted by Difference")
         plt.legend()
         plt.show()
-        plt.savefig(os.path.join(args.experiment_dir, ref_name + "-" + method_name + ".jpg"))
+        plt.savefig(os.path.join(args.experiment_dir, ref_name + "-" + method_name + ".png"))
         plt.clf()
