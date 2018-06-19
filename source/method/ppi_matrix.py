@@ -13,9 +13,7 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from scipy.sparse import csr_matrix
 
-from disease import Disease, load_diseases, load_network
-from output import ExperimentResults
-from util import set_logger, get_negatives
+from utils import get_negatives
 
 def softmax(x):
     """softmax for a vector x. Numerically stable implementation
@@ -88,7 +86,7 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
     # compute scores 
     return scores 
 
-def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = False):
+def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = False, self_loops = False):
     """ Builds a CNS PPI matrix, using parameters specified, and saves as numpy object. 
     Args: 
         deg_fn (string)
@@ -98,6 +96,10 @@ def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = F
         comp_matrix (np.array)
     """
     name = 'comp'
+    if self_loops:
+        ppi_adj += np.identity(ppi_adj.shape[0])
+        name += '_sl'
+
     # Build vector of node degrees
     deg_vector = np.sum(ppi_adj, axis = 1, keepdims=True)
 
@@ -166,5 +168,5 @@ if __name__ == "__main__":
     _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
 
     print("Building PPI Matrix...")
-    build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = False)
+    build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = False, self_loops= True)
 

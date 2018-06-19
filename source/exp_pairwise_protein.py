@@ -2,79 +2,141 @@
 Provides methods for generating matrices that describe pairwise relationships 
 between proteins in the protein-protein interaction network. 
 """
-
+import argparse
+import logging
+import os
 from collections import defaultdict
+import datetime
+from util import set_logger, parse_id_rank_pair
+
 import numpy as np 
 import matplotlib.pyplot as plt
-import plotly.plotly as py
-import plotly.graph_objs as go
+import seaborn as sns
 import networkx as nx
+from scipy.signal import savgol_filter
 
+from exp import Experiment
 from disease import Disease, load_diseases, load_network
 from output import ExperimentResults
-from diamond import DIAMOnD
 
-PPI_COMP_PATH = "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy"
-OUTPUT_PATH = "results/comp_results.csv"
+parser = argparse.ArgumentParser()
+parser.add_argument('--experiment_dir', default='experiments/base_model',
+                    help="Directory containing params.json")
 
-#Complementarity Analysis
-#====================================================
-def build_codisease_matrix(diseases_dict):
-    n_nodes = len(protein_to_node.keys())
-    codisease_matrix = np.zeros((n_nodes, n_nodes))
-    for disease in diseases_dict.values():
-        disease_nodes = np.array([protein_to_node[protein] for protein in disease.proteins if protein in protein_to_node])
-        codisease_matrix[np.ix_(disease_nodes, disease_nodes)] += 1
-    return codisease_matrix
+class CodiseaseProbExp(Experiment):
+    """
+    Class for the codisease probability experiment. 
+    """
+    def __init__(self, dir):
+        super(CodiseaseProbExp, self).__init__(dir)
 
-def plot_pairwise_disease_protein_analysis(results):
-    data = []
-    for name, codisease_probs in results: 
-        line = go.Scatter(x = codisease_probs)
-        data.append(line)
-    py.iplot(data, filename = 'figures/pairwise_disease_protein_analysis')
+        # Set the logger
+        
+        set_logger(os.path.join(self.dir, 'experiment.log'), level=logging.INFO, console=True)
 
-def pairwise_disease_protein_analysis(scores_matrices, diseases_dict, n_buckets = 1000, top_k=None):
-    codisease_matrix = build_codisease_matrix(diseases_dict)
-    codisease_flat = codisease_matrix.flatten()
-    for name, scores_matrix in scores_matrices: 
-        scores_flat = scores_matrix.flatten() 
-        ranked_flat = np.argsort(scores_flat)
-        if top_k: 
-            ranked_flat = ranked_flat[-top_k:]
-        codisease_probs = []
-        for i, bucket_indices in enumerate(np.array_split(ranked_flat, n_buckets)):
-            codisease_prob = 1.0*np.count_nonzero(codisease_flat[bucket_indices])/bucket_indices.size 
-            codisease_probs.append(codisease_prob)
-        percentiles = np.linspace(100.0 - (1.0*top_k/len(codisease_flat)), 100.0, n_buckets)
-        plt.plot(percentiles, codisease_probs, label = name)
-    plt.title('Co-disease Probability vs. Score')
-    plt.legend()
-    plt.ylabel('Prob. Protein Pair Share Disease')
-    plt.xlabel('Percentile for Pairwise Protein Metric')
-    plt.savefig('figures/pairwise_16b_20000t_n_qn_sq_l3')    
+        # Log title 
+        logging.info("Co-disease probability in the PPI Network")
+        logging.info("Sabri Eyuboglu  -- SNAP Group")
+        logging.info("======================================")
+         
+        logging.info("Loading Network...")
+        self.ppi_networkx, self.ppi_adj, self.protein_to_node = load_network(self.params.ppi_network) 
 
+        logging.info("Loading Disease Associations...")
+        self.diseases = load_diseases(self.params.diseases_path, self.params.disease_subset)
+
+        # unpack params
+        self.ppi_matrices = {name: np.load(file) for name, file in self.params.ppi_matrices.items()}
+        self.top_k = self.params.top_k
+        self.n_buckets = self.params.n_buckets 
+        self.smooth = self.params.smooth
+        self.plots = self.params.plots
+
+        if hasattr(self.params, 'codisease_matrix'):
+            logging.info("Loading Codisease Matrix...")
+            #self.codisease_matrix = np.load(self.params.codisease_matrix)
+        else:
+            logging.info("Building Codisease Matrix...")
+            #self.codisease_matrix  = self.build_codisease_matrix()
+
+    def run(self):
+        """
+        Run the experiment.
+        """
+        logging.info("Running Experiment...")
+        self.results = {}
+
+        codisease_flat = self.codisease_matrix.flatten()
+        for name, matrix in self.ppi_matrices.items(): 
+            scores_flat = matrix.flatten() 
+            ranked_flat = np.argsort(scores_flat)
+            if self.top_k: 
+                ranked_flat = ranked_flat[-self.top_k:]
+            codisease_probs = []
+            for i, bucket_indices in enumerate(np.array_split(ranked_flat, self.n_buckets)):
+                codisease_prob = 1.0*np.count_nonzero(codisease_flat[bucket_indices])/bucket_indices.size 
+                codisease_probs.append(codisease_prob)
+            percentiles = np.linspace(100.0 - (1.0*self.top_k/len(codisease_flat)), 100.0, self.n_buckets)
+            self.results[name] = (percentiles, codisease_probs)
+    
+    def build_codisease_matrix(self):
+        """
+        Build an n_nodes x n_nodes 
+        Args: 
+            diseases_dict (dict) dictionary of diseases
+        Return: 
+            codisease_matrix (ndarray)
+        """
+        n_nodes = len(self.protein_to_node.keys())
+        codisease_matrix = np.zeros((n_nodes, n_nodes))
+        for disease in self.diseases.values():
+            disease_nodes = np.array([self.protein_to_node[protein] 
+                                      for protein in disease.proteins 
+                                      if protein in self.protein_to_node])
+            codisease_matrix[np.ix_(disease_nodes, disease_nodes)] += 1
+        
+        np.save(os.path.join("data","disease_data","codisease_"+str(n_nodes)+".npy"), codisease_matrix)
+        return codisease_matrix
+    
+    def output_results(self):
+        """
+        Outputs the 
+        """
+        assert(self.results != None)
+        sns.set_style("whitegrid")
+        sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
+        sns.despine()
+        for name in self.plots:
+            _, codisease_probs = self.results[name]
+            if self.smooth: 
+                codisease_probs = np.maximum(0, savgol_filter(codisease_probs, window_length=9, polyorder=3))
+            bucket_size = self.top_k / self.n_buckets
+            plt.plot(np.arange(1, len(codisease_probs) * bucket_size, bucket_size), 
+                    codisease_probs[::-1], 
+                    label = name,
+                    alpha = 0.75)
+            #plt.xticks(np.arange(1, len(codisease_probs) * bucket_size, bucket_size))
+
+        plt.legend()
+        plt.ylabel('Codisease Probability')
+        plt.xlabel('Protein-Pair Rank')
+        plt.show()
+
+        figures_dir = os.path.join(self.dir, 'figures')
+        if not os.path.exists(figures_dir):
+            os.makedirs(figures_dir)
+        time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+        plt.savefig(os.path.join(figures_dir, 'codisease_' + time_string + '.png'))
+        
 if __name__ == "__main__":
-    print("Complementarity of Disease Pathways in PPI Network")
-    print("Sabri Eyuboglu  -- Stanford University")
-    print("======================================")
-
-    print("Loading PPI Complementarity...") 
-    ppi_comp = np.load(PPI_COMP_PATH)
-    print("Loading PPI Network...")
-    ppi_network, ppi_adj, protein_to_node = load_network() 
-    ppi_networkx = nx.from_numpy_matrix(ppi_adj)
-
-    diseases = load_diseases()
-    ppi_comp_sqrt = np.load("data/ppi_matrices/ppi_comp_sqrt.npy")
-    ppi_comp_sqrt_qnorm = np.load("data/ppi_matrices/ppi_comp_sqrt_qnorm.npy")
-    ppi_comp_l3= np.load("data/ppi_matrices/ppi_l3.npy")
-    ppi_dn_norm = np.load("data/ppi_matrices/dn_norm.npy")
-
-    pairwise_disease_protein_analysis([('Comp. Sqrt Query Normalized', ppi_comp_sqrt_qnorm),
-                                       ('Length-3 Normalized', ppi_comp_l3),
-                                       ('Direct Neighbor Normalized', ppi_dn_norm)], 
-                                       diseases, n_buckets = 8, top_k = 20000)
+     # Load the parameters from the experiment params.json file in model_dir
+    args = parser.parse_args()
+    exp = CodiseaseProbExp(args.experiment_dir)
+    #exp.run()
+    exp.load_results()
+    exp.save_results()
+    exp.output_results()
+    
 
 
 

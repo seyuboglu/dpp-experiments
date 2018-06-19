@@ -90,4 +90,4 @@ if __name__ == '__main__':
     plt.ylabel("Recall-at-K (%)")
     plt.xlabel("K")
     plt.legend()
-    plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_' + str(params.length) + '.jpg'))
+    plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_' + str(params.length) + '.pdf'))

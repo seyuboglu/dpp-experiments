@@ -65,18 +65,6 @@ def set_logger(log_path, level=logging.INFO, console=True):
             stream_handler.setFormatter(logging.Formatter('%(message)s'))
             logger.addHandler(stream_handler)
 
-def get_negatives(Y, n_neg):
-    """ Generate n_neg indices for negative examples
-    excluding examples already positive in Y. 
-    """
-    n = Y.shape[0]
-    n_pos = np.sum(np.sum(Y))
-    neg_indices = np.random.choice(range(n), 
-                                   size=int(n_neg), 
-                                   replace=False, 
-                                   p=(1 - Y) / (n-n_pos))                             
-    return neg_indices 
-
 def parse_id_rank_pair(str):
     """ Parses a rank entry. Since protein labels are sometimes not included
     return -1 for protein id.  
