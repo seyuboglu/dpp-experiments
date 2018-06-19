@@ -34,10 +34,11 @@ if __name__ == '__main__':
     logging.info("======================================")
 
     sns.set_style("whitegrid")
+    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))    
     experiment_reader = ExperimentReader(os.path.join(params.exp_dir, 'subgraph_metrics.csv'))
     for metric in params.metrics:
         for subgraph in params.subgraphs:
-            header = metric + " of " + subgraph + " Subgraph"
+            header = metric + " of " + subgraph + " Nodes"  
             col = experiment_reader.get_col(header)
             plt.hist(col, params.n_bins, range=params.range,  label = header, alpha=params.alpha)
 
