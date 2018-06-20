@@ -74,3 +74,14 @@ def parse_id_rank_pair(str):
     
     id, rank = str.split("=")
     return int(id), float(rank)
+
+def prepare_sns(sns, params):
+    """ Prepares seaborn for plotting according to the plot settings specified in
+    params. 
+    Args: 
+        params (object) dictionary containing settings for each of the seaborn plots
+    """
+    sns.set(style = getattr(params, "plot_style", 
+                            ["#E03C3F", "#FF9300", "#F8BA00", "#CB297B", "#6178A8", "#56C1FF"]),
+            palette = getattr(params, "plot_palette", "whitegrid"),
+            font= getattr(params, "plot_font", "Times New Roman"))
