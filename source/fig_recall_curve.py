@@ -76,9 +76,9 @@ if __name__ == '__main__':
             recalls_at_k.append(recall_curve[k])
         recalls_at_k.sort(reverse=True)
         plt.plot([k, k], [recalls_at_k[0] - params.offset, recalls_at_k[1] + params.offset], color = 'green', alpha = 0.5)
-        percent_inrease = round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
-        plt.text(x = k + 2, y = recalls_at_k[1] + (recalls_at_k[0] - recalls_at_k[1]) / 2 - 0.001, 
-                 s = '+' + str(percent_inrease) + '%',
+        percent_increase = round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
+        plt.text(x = k + (2/100)*params.length, y = recalls_at_k[1] + (recalls_at_k[0] - recalls_at_k[1]) / 2 - 0.001, 
+                 s = '+' + str(percent_increase) + '%',
                  fontsize = 9, weight = 'bold', alpha = .75, color='green')
     
     #Plot 
