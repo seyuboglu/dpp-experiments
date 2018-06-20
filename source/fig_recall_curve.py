@@ -10,12 +10,10 @@ import numpy as np
 from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt 
 import seaborn as sns
-
-#from disease import load_diseases, load_network
-
 from scipy.stats import rankdata
 
-from util import Params, set_logger, parse_id_rank_pair
+from disease import load_diseases, load_network
+from util import Params, set_logger, parse_id_rank_pair, prepare_sns
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -37,8 +35,8 @@ if __name__ == '__main__':
     logging.info("Sabri Eyuboglu  -- SNAP Group")
     logging.info("======================================")
 
-    sns.set_style("whitegrid")
-    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
+    prepare_sns(sns, params)
+
     recall_curves = {}
     for name, method_exp_dir in params.method_exp_dirs.items():
         if(params.by_disease):
@@ -56,9 +54,9 @@ if __name__ == '__main__':
                                               (0, params.length - len(recall_curve)), 
                                               'edge')
                     recall_curve_sum += recall_curve[:params.length]
-            recall_curve = 100*(recall_curve_sum/(i+1))
+            recall_curve = (recall_curve_sum/(i+1))
             recall_curves[name] = recall_curve
-            plt.plot(recall_curve, label = name)
+            plt.plot(recall_curve, label = name, linewidth = 2.0 if name == params.primary else 1.3 )
         else: 
             ranks = []
             with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:
@@ -68,7 +66,7 @@ if __name__ == '__main__':
                     ranks.extend(map(float, row[2:]))
             ranks = np.array(ranks).astype(int)
             rank_bin_count = np.bincount(ranks)
-            recall_curve = 100*(np.cumsum(rank_bin_count) / len(ranks))
+            recall_curve = (np.cumsum(rank_bin_count) / len(ranks))
             plt.plot(recall_curve[:params.length], label = name)
         
     # plot percent differences
@@ -87,7 +85,7 @@ if __name__ == '__main__':
     if(params.title):
         plt.title("Recall-at-K (%) across DPP Methods")
 
-    plt.ylabel("Recall-at-K (%)")
-    plt.xlabel("K")
+    plt.ylabel("Recall-at-K")
+    plt.xlabel("Positive Threshold (K)")
     plt.legend()
     plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_' + str(params.length) + '.pdf'))
