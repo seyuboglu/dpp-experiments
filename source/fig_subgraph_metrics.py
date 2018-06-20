@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 from output import ExperimentReader
-from util import Params, set_logger
+from util import Params, set_logger, prepare_sns
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -33,8 +33,8 @@ if __name__ == '__main__':
     logging.info("Sabri Eyuboglu  -- SNAP Group")
     logging.info("======================================")
 
-    sns.set_style("whitegrid")
-    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))    
+    prepare_sns(sns, params)
+     
     experiment_reader = ExperimentReader(os.path.join(params.exp_dir, 'subgraph_metrics.csv'))
     for metric in params.metrics:
         for subgraph in params.subgraphs:

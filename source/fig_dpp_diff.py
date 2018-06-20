@@ -16,7 +16,7 @@ import seaborn as sns
 
 from scipy.stats import rankdata
 
-from util import Params, set_logger
+from util import Params, set_logger, prepare_sns
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -38,7 +38,8 @@ if __name__ == '__main__':
     logging.info("Sabri Eyuboglu  -- SNAP Group")
     logging.info("======================================")
 
-    sns.set_style("whitegrid")
+    prepare_sns(sns, params)
+
     method_to_scores = {}
     for method_name, method_exp_dir in params.method_exp_dirs.items():
         method_to_scores[method_name]  = {} 
@@ -49,8 +50,7 @@ if __name__ == '__main__':
     
     ref_name = params.reference_exp
     ref_scores = method_to_scores[ref_name]
-    sns.set_style("whitegrid")
-    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
+
     for method_name, method_scores in method_to_scores.items():
         # Skip comparing reference to itself
         if method_name == ref_name: continue
@@ -68,6 +68,5 @@ if __name__ == '__main__':
         plt.ylabel(params.metric + " Difference")
         plt.xlabel("Diseases Sorted by Difference")
         plt.legend()
-        plt.show()
-        plt.savefig(os.path.join(args.experiment_dir, ref_name + "-" + method_name + ".png"))
+        plt.savefig(os.path.join(args.experiment_dir, ref_name + "-" + method_name + ".pdf"))
         plt.clf()
