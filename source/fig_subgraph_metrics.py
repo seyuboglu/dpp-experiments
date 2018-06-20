@@ -29,7 +29,7 @@ if __name__ == '__main__':
     set_logger(os.path.join(args.experiment_dir, 'experiment.log'), level=logging.INFO, console=True)
 
     # Log Title 
-    logging.info("Recall-Curve Generator")
+    logging.info(" Generator")
     logging.info("Sabri Eyuboglu  -- SNAP Group")
     logging.info("======================================")
 
@@ -47,4 +47,4 @@ if __name__ == '__main__':
         plt.xlabel(metric)
         plt.legend()
         print(metric.lower())
-        plt.savefig(os.path.join(args.experiment_dir, metric.lower() + ".png"))
+        plt.savefig(os.path.join(args.experiment_dir, metric.lower() + ".pdf"))

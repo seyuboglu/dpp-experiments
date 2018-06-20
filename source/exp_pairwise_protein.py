@@ -7,7 +7,6 @@ import logging
 import os
 from collections import defaultdict
 import datetime
-from util import set_logger, parse_id_rank_pair
 
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -18,6 +17,8 @@ from scipy.signal import savgol_filter
 from exp import Experiment
 from disease import Disease, load_diseases, load_network
 from output import ExperimentResults
+from util import set_logger, parse_id_rank_pair, prepare_sns
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -100,33 +101,31 @@ class CodiseaseProbExp(Experiment):
     
     def output_results(self):
         """
-        Outputs the 
+        Outputs the results as a plot
         """
         assert(self.results != None)
-        sns.set_style("whitegrid")
-        sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
-        sns.despine()
+
+        prepare_sns(sns, self.params)
         for name in self.plots:
             _, codisease_probs = self.results[name]
             if self.smooth: 
                 codisease_probs = np.maximum(0, savgol_filter(codisease_probs, window_length=9, polyorder=3))
             bucket_size = self.top_k / self.n_buckets
             plt.plot(np.arange(1, len(codisease_probs) * bucket_size, bucket_size), 
-                    codisease_probs[::-1], 
-                    label = name,
-                    alpha = 0.75)
+                     codisease_probs[::-1], 
+                     label = name,
+                     linewidth = 2.0 if name == self.params.primary else 1.0)
             #plt.xticks(np.arange(1, len(codisease_probs) * bucket_size, bucket_size))
 
         plt.legend()
         plt.ylabel('Codisease Probability')
-        plt.xlabel('Protein-Pair Rank')
-        plt.show()
+        plt.xlabel('Protein Pair Rank')
 
         figures_dir = os.path.join(self.dir, 'figures')
         if not os.path.exists(figures_dir):
             os.makedirs(figures_dir)
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
-        plt.savefig(os.path.join(figures_dir, 'codisease_' + time_string + '.png'))
+        plt.savefig(os.path.join(figures_dir, 'codisease_' + time_string + '.pdf'))
         
 if __name__ == "__main__":
      # Load the parameters from the experiment params.json file in model_dir
@@ -136,8 +135,3 @@ if __name__ == "__main__":
     exp.load_results()
     exp.save_results()
     exp.output_results()
-    
-
-
-
-
