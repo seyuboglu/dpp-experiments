@@ -137,6 +137,46 @@ def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = F
     np.save(file_path, comp_matrix)
     return comp_matrix 
 
+def build_ppi_dn_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = False, network_name = None):
+    """Builds a direct neighbor score matrix with optional normalization.
+    """
+    name = 'dn'
+
+    # Build vector of node degrees
+    deg_vector = np.sum(ppi_adj, axis = 1, keepdims=True)
+
+    # Apply the degree function
+    name += '_' + deg_fn
+    if deg_fn == 'log':
+        # Take the natural log of the degrees. Add one to avoid division by zero
+        deg_vector = np.log(deg_vector) + 1
+    elif deg_fn == 'sqrt':
+        # Take the square root of the degrees
+        deg_vector = np.sqrt(deg_vector) 
+
+    # Take the inverse of the degree vector
+    inv_deg_vector = np.power(deg_vector, -1)
+
+    dn_matrix = ppi_adj
+
+    if(row_norm):
+        # Normalize by the degree of the query node. (row normalize)
+        name += '_rnorm'
+        dn_matrix = inv_deg_vector * dn_matrix
+    
+    if(col_norm):
+        # Normalize by the degree of the disease node. (column normalize)
+        name += '_cnorm'
+        dn_matrix = (dn_matrix.T * inv_deg_vector).T
+    
+    if network_name == None:
+        file_path = os.path.join('data', 'ppi_matrices', name + ".npy")
+    else: 
+        file_path = os.path.join('data', 'ppi_matrices', network_name, name + ".npy")
+    print(file_path)
+    np.save(file_path, ppi_adj)
+    return dn_matrix 
+
 # Functions for building other ppi matrices
 def build_dn_normalized():
     ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -(0.5))

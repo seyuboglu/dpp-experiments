@@ -17,7 +17,7 @@ from method.random_walk import compute_random_walk_scores
 from method.diamond import compute_diamond_scores
 from method.graph_cn import GCN
 from method.lr import compute_lr_scores, build_embedding_feature_matrix
-from disease import load_diseases, load_network
+from data import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
 from util import Params, set_logger, parse_id_rank_pair
