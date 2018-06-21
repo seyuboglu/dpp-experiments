@@ -51,6 +51,8 @@ if __name__ == '__main__':
     ref_name = params.reference_exp
     ref_scores = method_to_scores[ref_name]
 
+    mean_abs_diffs = {}
+
     for method_name, method_scores in method_to_scores.items():
         # Skip comparing reference to itself
         if method_name == ref_name: continue
@@ -58,6 +60,8 @@ if __name__ == '__main__':
         # Compute differences in scores
         disease_to_diffs = {key: ref_scores[key] - method_scores[key] for key in ref_scores.keys()}
         diffs = np.sort(np.array(list(disease_to_diffs.values())))
+
+        mean_abs_diffs[method_name] = np.mean(np.abs(diffs))
 
         # Split into positive and negative 
         diffs = diffs * 100
@@ -70,3 +74,10 @@ if __name__ == '__main__':
         plt.legend()
         plt.savefig(os.path.join(args.experiment_dir, ref_name + "-" + method_name + ".pdf"))
         plt.clf()
+    
+    plt.bar(np.arange(len(mean_abs_diffs.values())), mean_abs_diffs.values())
+    plt.xticks(np.arange(len(mean_abs_diffs.values())), mean_abs_diffs.keys())
+    plt.ylabel("Mean Absolute Difference in Recall-at-100")
+    plt.xlabel("Methods")
+    plt.savefig(os.path.join(args.experiment_dir, "mean_absolute_diff.pdf"))
+    plt.clf()

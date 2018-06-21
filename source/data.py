@@ -1,5 +1,6 @@
 # PPI 
 # Provides classes and methods for reading in ppi network and disease_pathways 
+import argparse
 import csv
 import random
 import os
@@ -7,8 +8,14 @@ import os
 import numpy as np 
 import networkx as nx
 
+from method.ppi_matrix import build_ppi_comp_matrix
+
 NETWORK_PATH = "data/networks/bio-pathways-network.txt"
 ASSOCIATIONS_PATH = "data/bio-pathways-associations.csv"
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--job', default='split_diseases',
+                    help="which job should be performed")
 
 class Disease: 
     def __init__(self, id, name, proteins):
@@ -108,8 +115,12 @@ def load_gene_names(file_path):
     """ Load a mapping between entrez_id and gene_names.
     Args:
         file_path (string)
+    Return:
+        protein_to_name (dict)
+        name_to_protein (dict)
     """
     protein_to_name = {}
+    name_to_protein = {}
     with open(file_path) as file:
         for line in file:
             if line[0] == '#': continue
@@ -117,18 +128,74 @@ def load_gene_names(file_path):
             if (len(line_elems) != 2): continue
             name, protein = line.split()
             protein_to_name[int(protein)] = name
-    return protein_to_name
+            name_to_protein[name] = protein 
+    return protein_to_name, name_to_protein
+
+""" Biogrid Homo-Sapiens ID """
+HOMO_SAPIENS_ID = 9606
+
+def build_biogrid_network(biogrid_path, name = 'biogrid.txt'):
+    """ Converts a biogrid PPI network into a list of entrez_ids. 
+    Args:
+        biogrid+path (string)
+    """
+    _, name_to_protein = load_gene_names('data/protein_data/protein_names.txt')
+
+    interactions = []
+
+    with open(biogrid_path, 'r') as csvfile:
+        reader = csv.DictReader(csvfile, delimiter='\t')
+        for row in reader:
+
+            # only include interactions between two human proteins
+            if int(row['ORGANISM_A_ID']) != HOMO_SAPIENS_ID or int(row['ORGANISM_B_ID']) != HOMO_SAPIENS_ID:
+                continue
+
+            # only include interactions for which we have an entrez id
+            if row['OFFICIAL_SYMBOL_A'] not in name_to_protein or row['OFFICIAL_SYMBOL_B'] not in name_to_protein:
+                continue 
+            
+            interactions.append((str(name_to_protein[row['OFFICIAL_SYMBOL_A']]), 
+                                 str(name_to_protein[row['OFFICIAL_SYMBOL_B']])))
+    
+    with open("data/networks/biogrid-network.txt", 'w') as file:
+        for interaction in interactions: 
+            file.write(' '.join(interaction) + '\n')
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
+    args = parser.parse_args()
 
     # Log Title 
-    print("Disease Set Splitting")
-    print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
-    print("====================================================")
+    if(args.job == split_diseases):
+        print("Disease Set Splitting")
+        print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
+        print("====================================================")
 
-    print("Splitting diseases...")
-    split_fractions = {'val': 0.40,
-                       'test': 0.60}
-    split_diseases(split_fractions, 'experiments/associations/bio-pathways-associations.csv')
-    print("Done.")
+        print("Splitting diseases...")
+        split_fractions = {'val': 0.40,
+                        'test': 0.60}
+        split_diseases(split_fractions, 'experiments/associations/bio-pathways-associations.csv')
+        print("Done.")
+    
+    elif(args.job == "build_biogrid"):
+        print("Building Biogrid Network")
+        print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
+        print("====================================================")
+
+        build_biogrid_network('data/networks/biogrid-raw.txt')
+    
+    elif(args.job == "build_ppi_matrix"):
+        print("Build PPI Matrices with PPI Network")
+        print("Sabri Eyuboglu  -- Stanford University")
+        print("======================================")
+
+        print("Loading PPI Network...")
+        _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt") #biogrid-network.txt")
+
+        print("Building PPI Matrix...")
+        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, 
+                              self_loops= True)
+
+    else:
+        print ("Job not recognized.")

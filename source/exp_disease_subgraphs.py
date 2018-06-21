@@ -204,7 +204,7 @@ if __name__ == '__main__':
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
 
     logging.info("Loading Protein Names...")
-    protein_to_name = load_gene_names(params.protein_names_path)
+    protein_to_name, _ = load_gene_names(params.protein_names_path)
 
     logging.info("Loading PPI Matrix...")
     ppi_matrix = np.load(params.ppi_matrix)

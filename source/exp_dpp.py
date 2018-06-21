@@ -135,7 +135,7 @@ def run_dpp(disease):
     labels[disease_nodes, 0] = 1 
     metrics = {}
 
-    if params.saliency_map: 
+    if getattr(params, 'saliency_map', False): 
         rank_corrs = []
         p_values = []
 
@@ -154,7 +154,7 @@ def run_dpp(disease):
         compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
 
         # compute saliency maps
-        if params.saliency_map: 
+        if getattr(params, 'saliency_map', False): 
             rank_corr, p_value = method.analyze_saliency_maps(disease_directory, node_to_protein)
             rank_corrs.extend(rank_corr)
             p_values.extend(p_value)
@@ -163,7 +163,7 @@ def run_dpp(disease):
     proteins = [node_to_protein[node] for node in metrics["Nodes"]]
     ranks = metrics["Ranks"]
 
-    if params.saliency_map:
+    if getattr(params, 'saliency_map', False):
         avg_metrics["GCN-Comp Rank Correlation"] = np.mean(rank_corrs)
         print(avg_metrics["GCN-Comp Rank Correlation"])
         avg_metrics["GCN-Comp P-Value"] = stats.combine_pvalues(p_values)[1]
