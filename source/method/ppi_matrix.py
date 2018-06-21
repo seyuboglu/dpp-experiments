@@ -86,7 +86,8 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
     # compute scores 
     return scores 
 
-def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = False, self_loops = False):
+def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = False, 
+                          self_loops = False, network_name = None):
     """ Builds a CNS PPI matrix, using parameters specified, and saves as numpy object. 
     Args: 
         deg_fn (string)
@@ -128,8 +129,12 @@ def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = F
         name += '_cnorm'
         comp_matrix = (comp_matrix.T * inv_deg_vector).T
     
-    print(os.path.join('data', 'ppi_matrices', name + ".npy"))
-    np.save(os.path.join('data', 'ppi_matrices', name + ".npy"), comp_matrix)
+    if network_name == None:
+        file_path = os.path.join('data', 'ppi_matrices', name + ".npy")
+    else: 
+        file_path = os.path.join('data', 'ppi_matrices', network_name, name + ".npy")
+    print(file_path)
+    np.save(file_path, comp_matrix)
     return comp_matrix 
 
 # Functions for building other ppi matrices
@@ -156,17 +161,4 @@ def build_l3_query_normalized():
     ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
     l3_qnorm = l3 *ppi_inv_deg
     np.save("data/ppi_matrices/ppi_l3_qnorm.npy", l3_qnorm)
-    return l3_qnorm
-
-
-if __name__ == "__main__":
-    print("Build PPI Matrices with PPI Network")
-    print("Sabri Eyuboglu  -- Stanford University")
-    print("======================================")
-
-    print("Loading PPI Network...")
-    _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
-
-    print("Building PPI Matrix...")
-    build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = False, self_loops= True)
-
+    return l3_qnorm    

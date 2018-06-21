@@ -6,7 +6,7 @@ from random import shuffle
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-from util import get_negatives
+from utils import get_negatives
 
 def build_embedding_feature_matrix(protein_to_node, embedding_filename): 
     """ Builds a numpy matrix for a node embedding encoded in the embeddingf ile
