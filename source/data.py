@@ -8,7 +8,7 @@ import os
 import numpy as np 
 import networkx as nx
 
-from method.ppi_matrix import build_ppi_comp_matrix
+from method.ppi_matrix import build_ppi_comp_matrix, build_ppi_dn_matrix
 
 NETWORK_PATH = "data/networks/bio-pathways-network.txt"
 ASSOCIATIONS_PATH = "data/bio-pathways-associations.csv"
@@ -19,6 +19,12 @@ parser.add_argument('--job', default='split_diseases',
 
 class Disease: 
     def __init__(self, id, name, proteins):
+        """ Initialize a disease. 
+        Args:
+            id (string) 
+            name (string)
+            proteins (list of ints)
+        """
         self.id = id
         self.name = name
         self.proteins = proteins
@@ -75,8 +81,10 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH, diseases_subset = []):
     Args:
         assoications_path (string)
         diseases_subset (set) 
+    Returns:
+        diseases (dict)
     """
-    diseases_dict = {} 
+    diseases = {} 
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
         for row in reader:
@@ -85,8 +93,28 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH, diseases_subset = []):
                 continue  
             disease_name = row["Disease Name"]
             disease_proteins = set([int(a.strip()) for a in row["Associated Gene IDs"].split(",")])
-            diseases_dict[disease_id] = Disease(disease_id, disease_name, disease_proteins)
-    return diseases_dict 
+            diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins)
+    return diseases 
+
+def write_diseases(diseases, associations_path, threshold = 10): 
+    """ Write a set of disease-protein associations to a csv
+    Args:
+        diseases
+        assoications_path (string)
+        diseases_subset (set) 
+    """
+    disease_list = [{"Disease ID": disease.id,
+                     "Disease Name": disease.name,
+                     "Associated Gene IDs": ",".join(map(str, disease.proteins))} 
+                    for _, disease in diseases.items() if len(disease.proteins) >= threshold] 
+
+    with open(associations_path, 'w') as associations_file:
+        writer = csv.DictWriter(associations_file, fieldnames = ["Disease ID", 
+                                                                 "Disease Name", 
+                                                                 "Associated Gene IDs"])
+        writer.writeheader()
+        for disease in disease_list:
+            writer.writerow(disease)
 
 def load_network(network_path = NETWORK_PATH):
     """ Load a network. Returns numpy adjacency matrix, networkx network and 
@@ -134,7 +162,7 @@ def load_gene_names(file_path):
 """ Biogrid Homo-Sapiens ID """
 HOMO_SAPIENS_ID = 9606
 
-def build_biogrid_network(biogrid_path, name = 'biogrid.txt'):
+def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
     """ Converts a biogrid PPI network into a list of entrez_ids. 
     Args:
         biogrid+path (string)
@@ -158,9 +186,31 @@ def build_biogrid_network(biogrid_path, name = 'biogrid.txt'):
             interactions.append((str(name_to_protein[row['OFFICIAL_SYMBOL_A']]), 
                                  str(name_to_protein[row['OFFICIAL_SYMBOL_B']])))
     
-    with open("data/networks/biogrid-network.txt", 'w') as file:
+    with open(os.path.join("data", "networks", name), 'w') as file:
         for interaction in interactions: 
             file.write(' '.join(interaction) + '\n')
+
+def build_disgenet_associations(disgenet_path, name = 'disgenet-associations.csv'):
+    """ Converts a disgenet file of associations into the accepted format for
+    gene-disease associations.
+    Args: 
+        disgenet_path
+    """
+    with open(disgenet_path, 'rb') as csvfile:
+        #for x in csvfile:
+        #    x.replace('\0', '')
+        reader = csv.DictReader(csvfile, dialect='excel-tab')
+        
+        diseases = {}
+        for row in reader:
+            disease_id = row["diseaseId"]
+            disease_name = row["diseaseName"]
+            gene_id = row["geneId"]
+
+            disease = diseases.setdefault(disease_id, Disease(disease_id, disease_name, []))
+            disease.proteins.append(int(gene_id))
+    
+    write_diseases(diseases, os.path.join("data", "associations", name))
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
@@ -185,17 +235,23 @@ if __name__ == '__main__':
 
         build_biogrid_network('data/networks/biogrid-raw.txt')
     
+    elif(args.job == "build_disgenet"):
+        print("Building Disgenet Associations")
+        print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
+        print("====================================================")
+
+        build_disgenet_associations("data/associations/disgenet_raw.tsv")
+    
     elif(args.job == "build_ppi_matrix"):
         print("Build PPI Matrices with PPI Network")
         print("Sabri Eyuboglu  -- Stanford University")
         print("======================================")
 
         print("Loading PPI Network...")
-        _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt") #biogrid-network.txt")
+        _, ppi_network_adj, _ = load_network("data/networks/biogrid-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, 
-                              self_loops= True)
+        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, network_name = 'biogrid')
 
     else:
         print ("Job not recognized.")

@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import rankdata
 
-from disease import load_diseases, load_network
+from data import load_diseases, load_network
 from util import Params, set_logger, parse_id_rank_pair, prepare_sns
 
 parser = argparse.ArgumentParser()
