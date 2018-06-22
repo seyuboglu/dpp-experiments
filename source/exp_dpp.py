@@ -11,6 +11,7 @@ from sklearn.model_selection import KFold
 import networkx as nx
 import scipy.sparse as sp
 import scipy.stats as stats
+from tqdm import tqdm
 
 from method.ppi_matrix import compute_matrix_scores
 from method.random_walk import compute_random_walk_scores
@@ -225,18 +226,22 @@ if __name__ == '__main__':
     disease_to_metrics, disease_to_ranks = {}, {}
     if params.n_processes > 1: 
         p = Pool(params.n_processes)
-        for n_finished, (disease, metrics, ranks) in enumerate(p.imap(run_dpp, diseases_dict.values()), 1):
-            logging.info("Experiment Progress: {:.1f}% -- {}/{}".format(100.0*n_finished/len(diseases_dict), 
-                                                                   n_finished, len(diseases_dict)))
-            disease_to_metrics[disease] = metrics
-            disease_to_ranks[disease] = ranks 
+        with tqdm(total=len(diseases_dict)) as t:
+            for n_finished, (disease, metrics, ranks) in enumerate(p.imap(run_dpp, diseases_dict.values()), 1):
+
+                disease_to_metrics[disease] = metrics
+                disease_to_ranks[disease] = ranks 
+                t.set_postfix("{} Recall-at-100: {:.2f}%".format(disease.id, 100 * avg_metrics["Recall-at-100"]))
+                t.update()
+            
     else: 
-        for n_finished, disease in enumerate(diseases_dict.values()): 
-            logging.info("Experiment Progress: {:.1f}% -- {}/{}".format(100 * n_finished/len(diseases_dict), n_finished, len(diseases_dict)))
-            disease, avg_metrics, ranks = run_dpp(disease)
-            logging.info("{} Recall-at-100: {:.2f}%".format(disease.name, 100 * avg_metrics["Recall-at-100"]))
-            disease_to_metrics[disease] = avg_metrics
-            disease_to_ranks[disease] = ranks 
+        with tqdm(total=len(diseases_dict)) as t:
+            for n_finished, disease in enumerate(diseases_dict.values()): 
+                disease, metrics, ranks = run_dpp(disease)
+                disease_to_metrics[disease] = metrics
+                disease_to_ranks[disease] = ranks 
+                t.set_postfix("{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics'["Recall-at-100"]))
+                t.update()
         
     write_metrics(args.experiment_dir, disease_to_metrics)
     write_ranks(args.experiment_dir, disease_to_ranks)
