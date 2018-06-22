@@ -240,7 +240,7 @@ if __name__ == '__main__':
                 disease, metrics, ranks = run_dpp(disease)
                 disease_to_metrics[disease] = metrics
                 disease_to_ranks[disease] = ranks 
-                t.set_postfix("{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics'["Recall-at-100"]))
+                t.set_postfix("{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics["Recall-at-100"]))
                 t.update()
         
     write_metrics(args.experiment_dir, disease_to_metrics)
