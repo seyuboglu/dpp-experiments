@@ -15,7 +15,7 @@ import networkx as nx
 from scipy.signal import savgol_filter
 
 from exp import Experiment
-from disease import Disease, load_diseases, load_network
+from data import Disease, load_diseases, load_network
 from output import ExperimentResults
 from util import set_logger, parse_id_rank_pair, prepare_sns
 
@@ -55,10 +55,10 @@ class CodiseaseProbExp(Experiment):
 
         if hasattr(self.params, 'codisease_matrix'):
             logging.info("Loading Codisease Matrix...")
-            #self.codisease_matrix = np.load(self.params.codisease_matrix)
+            self.codisease_matrix = np.load(self.params.codisease_matrix)
         else:
             logging.info("Building Codisease Matrix...")
-            #self.codisease_matrix  = self.build_codisease_matrix()
+            self.codisease_matrix  = self.build_codisease_matrix()
 
     def run(self):
         """
@@ -109,9 +109,9 @@ class CodiseaseProbExp(Experiment):
         for name in self.plots:
             _, codisease_probs = self.results[name]
             if self.smooth: 
-                codisease_probs = np.maximum(0, savgol_filter(codisease_probs, window_length=9, polyorder=3))
+                codisease_probs = np.maximum(0, savgol_filter(codisease_probs, window_length=80000-1, polyorder=3))
             bucket_size = self.top_k / self.n_buckets
-            plt.plot(np.arange(1, len(codisease_probs) * bucket_size, bucket_size), 
+            plt.plot(np.arange(1, len(codisease_probs) * bucket_size + 1, bucket_size), 
                      codisease_probs[::-1], 
                      label = name,
                      linewidth = 2.0 if name == self.params.primary else 1.0)
@@ -125,6 +125,8 @@ class CodiseaseProbExp(Experiment):
         if not os.path.exists(figures_dir):
             os.makedirs(figures_dir)
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+        sns.despine()
+        plt.tight_layout()
         plt.savefig(os.path.join(figures_dir, 'codisease_' + time_string + '.pdf'))
         
 if __name__ == "__main__":

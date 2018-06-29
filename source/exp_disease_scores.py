@@ -3,17 +3,19 @@
 import argparse
 import logging
 import os
+import datetime
 
 import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns
+from tqdm import tqdm
 
-from method_ppi_matrix import compute_comp_scores
-from disease import load_diseases, load_network
+from data import load_diseases, load_network
 from output import write_dict_to_csv
 from analysis import compute_ranking
 
-from util import Params, set_logger
+from util import Params, set_logger, prepare_sns
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -37,9 +39,11 @@ if __name__ == '__main__':
 
     # Load data from params file
     logging.info("Loading PPI Network...")
-    ppi_network, ppi_network_adj, protein_to_node = load_network(params.ppi_network)
+    _, _, protein_to_node = load_network(params.ppi_network)
+
     logging.info("Loading Disease Associations...")
     diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
+
     logging.info("Loading PPI Matrices...")
     ppi_matrices = {}
     for name, path in params.ppi_matrices.items():
@@ -61,29 +65,33 @@ if __name__ == '__main__':
         metrics[name] = []
 
     #Analyze diseases 
-    for i, disease in enumerate(diseases_dict.values()): 
-        logging.info(str(i) + ": " + disease.name)
-        for name, ppi_matrix in ppi_matrices.items():
-            disease_nodes = disease.to_node_array(protein_to_node)
-            disease_scores = ppi_matrix[disease_nodes, :][:,disease_nodes]
-            mean_disease_score = disease_scores.mean() 
-            std_from_mean = (mean_disease_score - means[name]) / stds[name] 
-            metrics[name].append(std_from_mean)
+    with tqdm(total=len(diseases_dict)) as t: 
+        for i, disease in enumerate(diseases_dict.values()): 
+            for name, ppi_matrix in ppi_matrices.items():
+                disease_nodes = disease.to_node_array(protein_to_node)
+                disease_scores = ppi_matrix[disease_nodes, :][:,disease_nodes]
+                mean_disease_score = disease_scores.mean() 
+                std_from_mean = (mean_disease_score - means[name]) / stds[name] 
+                metrics[name].append(std_from_mean)
+            t.update()
     
     #Plot results 
-    sns.set_style("whitegrid")
-    sns.set_palette([sns.xkcd_rgb["bright red"]] + sns.color_palette("GnBu_d"))
+    prepare_sns(sns, params)
+
     for name, results in metrics.items(): 
-        sorted_std_from_mean = np.sort(metrics[name])
-        plt.semilogy(sorted_std_from_mean, label=name)
+        #sorted_std_from_mean = np.sort(metrics[name])
+        #plt.semilogy(sorted_std_from_mean, label=name)
         #plt.plot(sorted_std_from_mean, label=name)
-    plot_path = os.path.join(args.experiment_dir, 'all_std_from_mean_log_new_colors.png')
-    plt.ylabel('Z-score')
-    plt.xlabel('Diseases Sorted by Z-score')
-    plt.title('Complementarity vs. DNS Disease Z-score')
+        sns.distplot(results, hist = False, kde_kws = {"shade": True}, label = name)
+
+    time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+    plot_path = os.path.join(args.experiment_dir, 'zscores_' + time_string + '.pdf')
+    plt.xlim(xmax = 10)
+    plt.ylabel('Density (estimated with KDE)')
+    plt.xlabel('Average z-score')
     plt.legend()
+    sns.despine(left = True)
+    plt.tight_layout()
     plt.savefig(plot_path)
     plt.close()
-
-    
-        
+    plt.clf()
