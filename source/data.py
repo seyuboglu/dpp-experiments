@@ -12,6 +12,7 @@ from method.ppi_matrix import build_ppi_comp_matrix, build_ppi_dn_matrix
 
 NETWORK_PATH = "data/networks/bio-pathways-network.txt"
 ASSOCIATIONS_PATH = "data/bio-pathways-associations.csv"
+GENE_NAMES_PATH = "data/protein_data/protein_names.txt"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--job', default='split_diseases',
@@ -76,7 +77,9 @@ def split_diseases(split_fractions, path):
             for row in rows:
                 writer.writerow(row)
     
-def load_diseases(associations_path = ASSOCIATIONS_PATH, diseases_subset = []): 
+def load_diseases(associations_path = ASSOCIATIONS_PATH, 
+                  diseases_subset = [], 
+                  gene_names_path = GENE_NAMES_PATH): 
     """ Load a set of disease-protein associations
     Args:
         assoications_path (string)
@@ -87,12 +90,25 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH, diseases_subset = []):
     diseases = {} 
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
+
+        has_ids = "Associated Gene Ids" in reader.fieldnames
+        assert(has_ids or gene_names_path != None)
+
+        if not has_ids:
+            _, name_to_protein = load_gene_names(gene_names_path)
+
         for row in reader:
             disease_id = row["Disease ID"]
             if(diseases_subset and disease_id not in diseases_subset):
                 continue  
             disease_name = row["Disease Name"]
-            disease_proteins = set([int(a.strip()) for a in row["Associated Gene IDs"].split(",")])
+
+            if has_ids:
+                disease_proteins = set([int(a.strip()) for a in row["Associated Gene IDs"].split(",")])
+            else:
+                disease_proteins = set([int(name_to_protein[a.strip()]) 
+                                       for a in row["Associated Gene Names"].split(",")])
+
             diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins)
     return diseases 
 
@@ -248,10 +264,10 @@ if __name__ == '__main__':
         print("======================================")
 
         print("Loading PPI Network...")
-        _, ppi_network_adj, _ = load_network("data/networks/biogrid-network.txt")
+        _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, network_name = 'biogrid')
+        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True)
 
     else:
         print ("Job not recognized.")
