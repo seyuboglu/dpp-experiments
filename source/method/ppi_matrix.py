@@ -13,7 +13,7 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from scipy.sparse import csr_matrix
 
-from utils import get_negatives
+from method.utils import get_negatives
 
 def softmax(x):
     """softmax for a vector x. Numerically stable implementation
@@ -35,7 +35,6 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         scores: (np.array)
     """
     # building weighting vector  
-    weights = None
     if  not hasattr(params, 'weighting') or params.weighting == "uniform":
         weights = np.ones(len(training_ids))
         weights /= np.sum(weights)
@@ -51,6 +50,8 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         weights = weights ** (-1)
 
         weights /= np.sum(weights)
+        scores = np.dot(ppi_matrix[:, training_ids], weights) 
+
 
     elif params.weighting == "mle":
         train_pos = training_ids
@@ -73,15 +74,16 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         #Apply ReLU to Weights
         weights += np.ones(len(training_ids))
         weights /= np.sum(weights)
+        scores = np.dot(ppi_matrix[:, training_ids], weights) 
 
     elif params.weighting == "pca":
         logging.error("Not Implemented")
+    
+    elif params.weighting == "max":
+        scores = np.max(ppi_matrix[:, training_ids], axis = 1)
 
     else: 
         logging.error("Weighting scheme not recognized")
-
-    # get cns vector
-    scores = np.dot(ppi_matrix[:, training_ids], weights) 
 
     # compute scores 
     return scores 
