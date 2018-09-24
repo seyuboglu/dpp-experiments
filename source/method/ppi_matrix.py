@@ -13,7 +13,7 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from scipy.sparse import csr_matrix
 
-from method.utils import get_negatives
+from utils import get_negatives
 
 def softmax(x):
     """softmax for a vector x. Numerically stable implementation
@@ -38,6 +38,7 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
     if  not hasattr(params, 'weighting') or params.weighting == "uniform":
         weights = np.ones(len(training_ids))
         weights /= np.sum(weights)
+        scores = np.dot(ppi_matrix[:, training_ids], weights) 
 
     elif params.weighting == "sup":
         # compute supervised weights
@@ -51,7 +52,6 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
 
         weights /= np.sum(weights)
         scores = np.dot(ppi_matrix[:, training_ids], weights) 
-
 
     elif params.weighting == "mle":
         train_pos = training_ids
