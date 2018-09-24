@@ -19,24 +19,27 @@ parser.add_argument('--job', default='split_diseases',
                     help="which job should be performed")
 
 class Disease: 
-    def __init__(self, id, name, proteins):
+    def __init__(self, id, name, proteins, validation_proteins = None):
         """ Initialize a disease. 
         Args:
             id (string) 
             name (string)
             proteins (list of ints)
+            valdiation_proteins (list of ints)
         """
         self.id = id
         self.name = name
         self.proteins = proteins
+        self.validation_proteins = validation_proteins
     
-    def to_node_array(self, protein_to_node):
+    def to_node_array(self, protein_to_node, validation=False):
         """ Translates the diseases protein list to an array of node ids using
         the protein_to_node dictionary.
         Args: 
             protein_to_node (dictionary)
         """
-        return np.array([protein_to_node[protein] for protein in self.proteins if protein in protein_to_node])
+        proteins = self.validation_proteins if validation else self.proteins
+        return np.array([protein_to_node[protein] for protein in proteins if protein in protein_to_node])
 
 def is_disease_id(str):
     """ Returns bool indicating whether or not the passed in string is 
@@ -104,12 +107,24 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH,
             disease_name = row["Disease Name"]
 
             if has_ids:
-                disease_proteins = set([int(a.strip()) for a in row["Associated Gene IDs"].split(",")])
+                disease_proteins = set([int(a.strip()) 
+                                        for a in row["Associated Gene IDs"].split(",")])
             else:
                 disease_proteins = set([int(name_to_protein[a.strip()]) 
-                                       for a in row["Associated Gene Names"].split(",")])
+                                        for a in row["Associated Genes Names"].split(",")
+                                        if a.strip() in name_to_protein])
 
-            diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins)
+            validation_proteins = None 
+            if "Validation Gene IDs" in row:
+                validation_proteins = set([int(a.strip()) 
+                                        for a in row["Validation Gene IDs"].split(",")])
+
+            elif "Validation Gene Names" in row: 
+                validation_proteins = set([int(name_to_protein[a.strip()]) 
+                                           for a in row["Validation Gene Names"].split(",")
+                                           if a.strip() in name_to_protein])
+
+            diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins, validation_proteins)
     return diseases 
 
 def write_diseases(diseases, associations_path, threshold = 10): 

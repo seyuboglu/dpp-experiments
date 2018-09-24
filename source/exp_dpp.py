@@ -44,12 +44,12 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
     metrics.setdefault("Nodes", []).extend(test_nodes)
 
     # Sample down to one-folds-worth of negative examples 
-    out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
-    fold_scores = scores.copy()
-    fold_scores[out_of_fold] = 0.0
-    fold_scores[test_nodes] = scores[test_nodes]
-    for k in [100]: 
-        metrics.setdefault("Fold Recall-at-{}".format(k), []).append(recall_at(labels, fold_scores, k, train_nodes))
+    #out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
+    #fold_scores = scores.copy()
+    #fold_scores[out_of_fold] = 0.0
+    #fold_scores[test_nodes] = scores[test_nodes]
+    #for k in [100]: 
+    #    metrics.setdefault("Fold Recall-at-{}".format(k), []).append(recall_at(labels, fold_scores, k, train_nodes))
 
 def write_metrics(directory, disease_to_metrics):
     """Synthesize the metrics for one disease. 

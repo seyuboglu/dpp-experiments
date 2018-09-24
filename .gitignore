@@ -4,5 +4,7 @@
 /experiments/
 /figures/
 /predictions/
+/env/
 /.vscode/
 **.DS_Store
+**.icloud
