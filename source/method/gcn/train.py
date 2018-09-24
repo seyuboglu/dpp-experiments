@@ -128,6 +128,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
                     "time=", "{:.5f}".format(time.time() - t))
             print("Val Rankings:", rankings)
 
+        saliency_maps = None
         if(params.saliency_map):
             saliency_maps = sess.run(model.saliency_maps, feed_dict=feed_dict)
 
