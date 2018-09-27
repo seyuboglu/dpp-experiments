@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0236736,Cocaine-Related Disorders,86,1188,0.036114911080711354,0.03822254106575796,0.04014165808605573,0.9542143600416233,0.6864950812047398,0.6916128680776878,0.8357981220657277,0.033601519066635346

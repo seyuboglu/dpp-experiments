@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019158,Hepatitis,18,101,0.11764705882352941,0.10587863463969659,0.11801980198019801,0.968421052631579,0.9527420208076177,0.9574498465053187,0.9177727419876983,0.12156215621562157

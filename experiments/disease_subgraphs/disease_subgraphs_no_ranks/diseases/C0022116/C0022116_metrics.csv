@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022116,Ischemia,27,480,0.08262108262108261,0.08578892711105342,0.09045755045233124,0.9795558688755728,0.7990497909540099,0.8015211810625363,0.8839334530969304,0.087422839506172842

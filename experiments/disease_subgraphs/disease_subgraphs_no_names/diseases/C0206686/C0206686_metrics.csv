@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206686,Adrenocortical carcinoma,17,664,0.22058823529411764,0.07864266113379292,0.07958076650493376,0.9837354296557332,0.7453752194107152,0.7465748470074217,0.8992879521503845,0.15219702338766833

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0948089,Acute Coronary Syndrome,31,798,0.12258064516129032,0.08247144417043935,0.08374763760090313,0.9734327662549522,0.6806176688938381,0.682653924524255,0.8821933531590755,0.10550569973320396

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027708,Nephroblastoma,16,154,0.06666666666666667,0.17704350335473631,0.1953993718699601,0.9894039735099338,0.911704385996474,0.9162299854439593,0.9502487562189055,0.13758116883116883

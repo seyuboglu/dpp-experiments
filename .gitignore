@@ -1,10 +1,11 @@
 **.npy
 **.pyc
 /results/
-/experiments/
 /figures/
 /predictions/
 /env/
+/env3/
 /.vscode/
 **.DS_Store
 **.icloud
+**.pdf

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0279628,Adenocarcinoma Of Esophagus,14,244,0.13186813186813187,0.1375243114373549,0.14065978546852864,0.9875195007800313,0.8689132417360623,0.8741246075827095,0.9329896907216495,0.16042154566744726

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038644,Sudden infant death syndrome,12,18,0.10606060606060606,0.16524216524216523,0.2549019607843137,0.9477611940298507,0.9670641680863146,0.9766397124887691,0.923469387755102,0.1759259259259259

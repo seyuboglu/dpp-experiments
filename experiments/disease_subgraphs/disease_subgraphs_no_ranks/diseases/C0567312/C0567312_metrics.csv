@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0567312,Menopause present (finding),17,53,0.03676470588235294,0.20082815734989648,0.2648766328011611,0.9862258953168044,0.959063093479637,0.9682180330010014,0.9557093425605536,0.12763596004439509

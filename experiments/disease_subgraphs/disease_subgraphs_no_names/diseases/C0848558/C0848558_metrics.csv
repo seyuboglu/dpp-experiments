@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0848558,Hypospadias,14,12,0.03296703296703297,0.16307692307692306,0.3787878787878788,0.9831932773109243,0.9872212176009645,0.9937011841773746,0.9757281553398058,0.14880952380952378

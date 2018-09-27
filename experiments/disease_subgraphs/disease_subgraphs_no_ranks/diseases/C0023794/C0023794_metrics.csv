@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023794,Lipoidosis,19,50,0.04678362573099415,0.1479367866549605,0.19918367346938776,0.974960876369327,0.9632236590822284,0.9726687202464296,0.8849122807017544,0.11578947368421053

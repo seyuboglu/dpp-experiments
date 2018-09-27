@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014549,Tonic-Clonic Epilepsy,10,12,0.15555555555555556,0.20476190476190476,0.2727272727272727,0.9333333333333333,0.9824453970197999,0.992358310337508,0.9028697571743929,0.20833333333333337

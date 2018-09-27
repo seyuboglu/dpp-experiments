@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0040128,Thyroid Diseases,12,38,0.10606060606060606,0.14857142857142858,0.13655761024182078,0.9624664879356568,0.960792761740629,0.9784535966782628,0.9150871872630781,0.17324561403508773

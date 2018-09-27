@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0279626,Squamous cell carcinoma of esophagus,82,2044,0.04245709123757904,0.032553529202764844,0.03324128114424415,0.9708195364238411,0.5098216561844131,0.5132460665055982,0.8097860622749418,0.040749844876139571

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024301,"Lymphoma, Follicular",21,179,0.0761904761904762,0.13037272006344172,0.13997865796246312,0.9791666666666666,0.8935531910301513,0.9018960890413972,0.9154676258992805,0.10933758978451714

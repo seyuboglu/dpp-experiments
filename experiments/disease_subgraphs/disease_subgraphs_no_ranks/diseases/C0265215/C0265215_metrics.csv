@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265215,Meckel-Gruber syndrome,14,238,0.17582417582417584,0.05751087320173971,0.04690990320178704,0.9760479041916168,0.848459470181161,0.8788239604323136,0.8597874119192643,0.18637454981992793

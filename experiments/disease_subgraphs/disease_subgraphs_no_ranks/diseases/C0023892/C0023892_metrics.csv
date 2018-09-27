@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023892,Biliary cirrhosis,32,172,0.034274193548387094,0.13176996091568957,0.1576907384740922,0.9748334566987417,0.8967341580810693,0.9058866500273939,0.9250384024577573,0.070675872093023256

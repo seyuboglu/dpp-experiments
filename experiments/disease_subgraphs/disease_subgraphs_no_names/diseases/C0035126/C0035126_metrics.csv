@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035126,Reperfusion Injury,85,1600,0.050140056022408966,0.038966230268931604,0.04013758599124453,0.9546892798379952,0.5692530036421627,0.5719906635545182,0.8094284522319566,0.039617647058823528

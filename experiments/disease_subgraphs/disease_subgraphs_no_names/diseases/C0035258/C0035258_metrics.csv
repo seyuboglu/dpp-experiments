@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035258,Restless Legs Syndrome,6,2,0.2,0.2857142857142857,1.0,0.9710144927536232,0.9879969992498124,0.9982238010657194,0.9603174603174603,0.33333333333333331

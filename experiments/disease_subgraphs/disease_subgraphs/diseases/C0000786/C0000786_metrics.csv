@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0000786,Spontaneous abortion,105,630,0.014652014652014652,0.041719052224371375,0.048386201327377795,0.95906881555385,0.8149432478326928,0.8260262040431169,0.8245077656842362,0.024867724867724868

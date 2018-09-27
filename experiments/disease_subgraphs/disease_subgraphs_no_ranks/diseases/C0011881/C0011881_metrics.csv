@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011881,Diabetic Nephropathy,37,436,0.057057057057057055,0.09203749534174845,0.09672044711589159,0.9695756605284227,0.8053256530746299,0.812527465789124,0.8878716375648891,0.064654103644929337

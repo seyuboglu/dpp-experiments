@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004096,Asthma,105,1123,0.015384615384615385,0.04657749014551637,0.05154102440782028,0.9709090909090909,0.6658025005869336,0.6725310743009858,0.8675745480159662,0.026341008353474964

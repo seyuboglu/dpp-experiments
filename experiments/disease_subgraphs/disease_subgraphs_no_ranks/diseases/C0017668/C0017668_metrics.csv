@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017668,Focal glomerulosclerosis,22,477,0.13852813852813853,0.11633296413052739,0.11910047037682998,0.9765739385065886,0.7606975419532928,0.7622911191005705,0.8963562753036437,0.11282637697732034

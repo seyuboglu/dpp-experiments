@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0344388,Platelet mean volume finding,28,121,0.026455026455026454,0.1157381871667586,0.1415977961432507,0.9798590130916415,0.9327816337426589,0.9438389467070939,0.9302501895375285,0.082644628099173542

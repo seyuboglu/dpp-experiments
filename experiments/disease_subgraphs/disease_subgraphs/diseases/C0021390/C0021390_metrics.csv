@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0021390,Inflammatory Bowel Diseases,80,782,0.01360759493670886,0.05498977709625086,0.06090951662076621,0.9805385833899072,0.746388648665962,0.7575267730854718,0.8974652182199352,0.032528772378516625

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1319853,"Asthma, Aspirin-Induced",13,12,0.08974358974358974,0.16205533596837945,0.45454545454545453,0.9278350515463918,0.9594460929772503,0.9681359532660648,0.8970840480274442,0.15384615384615383

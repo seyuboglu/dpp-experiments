@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085110,Severe Combined Immunodeficiency,11,58,0.14545454545454545,0.20186480186480185,0.21960072595281308,0.9724137931034482,0.9459762944479102,0.9536191145467322,0.9005586592178771,0.19905956112852666

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013990,Pathological accumulation of air in tissues,10,162,0.13333333333333333,0.16704506363949087,0.16923548807606778,0.9922978177150192,0.9017779485831025,0.9097009124012929,0.9406380027739251,0.22037037037037038

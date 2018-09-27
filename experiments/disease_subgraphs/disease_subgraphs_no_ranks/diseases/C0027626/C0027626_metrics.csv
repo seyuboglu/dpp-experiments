@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027626,Neoplasm Invasiveness,126,2710,0.04431746031746032,0.025329377637341173,0.02576651015679592,0.9489131230330089,0.4366093053653863,0.4390978692111989,0.7602192534729928,0.030381303813038128

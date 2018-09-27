@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162666,Mitochondrial Encephalomyopathies,11,77,0.10909090909090909,0.47516896855715546,0.5451127819548872,0.9776951672862454,0.8061383527155017,0.8071691954300912,0.556080903598634,0.24085005903187723

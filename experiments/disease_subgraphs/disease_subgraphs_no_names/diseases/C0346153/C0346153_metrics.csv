@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0346153,"Breast Cancer, Familial",12,502,0.4696969696969697,0.0743988684582744,0.07378867762483002,0.9785911602209945,0.8037008241331053,0.8064374817472568,0.8890871654083734,0.21132138114209822

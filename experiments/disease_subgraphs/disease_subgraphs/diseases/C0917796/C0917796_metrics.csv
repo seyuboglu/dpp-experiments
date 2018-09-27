@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0917796,"Optic Atrophy, Hereditary, Leber",14,74,0.1978021978021978,0.4813399941228328,0.567197334320622,0.9300970873786408,0.516028955532575,0.5345587118335106,0.5150468672915639,0.36389961389961384

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035334,Retinitis Pigmentosa,69,567,0.024296675191815855,0.11356795554526511,0.1321816516162806,0.9656108597285068,0.6668570458299246,0.6700706991358995,0.8894033371188957,0.049587199345653456

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0677776,Hereditary Breast and Ovarian Cancer Syndrome,14,513,0.4725274725274725,0.0871938961988304,0.0871938961988304,0.9708770741618693,0.7869165139236503,0.7869165139236503,0.8838136804876213,0.19479253689780004

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162820,"Dermatitis, Allergic Contact",66,313,0.016783216783216783,0.07524743725698127,0.09390104038666339,0.9682819383259912,0.8657257746589924,0.8769573443181665,0.8989169675090253,0.038629102526866105

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0751778,"Myoclonic Epilepsies, Progressive",12,29,0.10606060606060606,0.1700404858299595,0.18472906403940886,0.9731285988483686,0.9738426406477061,0.9836101398601399,0.9515989628349178,0.16954022988505751

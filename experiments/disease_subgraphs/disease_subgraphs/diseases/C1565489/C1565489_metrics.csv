@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1565489,Renal Insufficiency,10,25,0.2,0.17943548387096775,0.19666666666666666,0.9478260869565217,0.9736764270925762,0.9821698398307646,0.9043824701195219,0.21199999999999999

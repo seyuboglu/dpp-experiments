@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004943,Behcet Syndrome,24,122,0.09057971014492754,0.10122370115929584,0.1152960303481913,0.9582289055973267,0.936910416806048,0.9423109514286683,0.9121552604698672,0.090846994535519129

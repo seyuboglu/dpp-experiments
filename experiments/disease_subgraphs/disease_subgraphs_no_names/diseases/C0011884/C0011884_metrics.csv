@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011884,Diabetic Retinopathy,16,82,0.09166666666666666,0.1793859649122807,0.19632640770852153,0.9800543970988214,0.9423171849657993,0.9522763870589958,0.9470490899062327,0.1326219512195122

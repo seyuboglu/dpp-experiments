@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035228,Respiratory Hypersensitivity,18,75,0.0784313725490196,0.16079900124843946,0.1772972972972973,0.97847533632287,0.9494842530493783,0.9597216537044617,0.9255189255189256,0.11777777777777779

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0752347,Lewy Body Disease,19,322,0.14619883040935672,0.0760018927674444,0.07704959269363983,0.9845869297163995,0.8731932466901494,0.8781629593366582,0.9105914718019257,0.12487741091860084
