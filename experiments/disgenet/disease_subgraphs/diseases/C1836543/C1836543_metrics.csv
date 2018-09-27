@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836543,Thick vermilion border,25,47,0.03,0.12159789288849868,0.1822386679000925,0.9794520547945206,0.9721789785567218,0.979487713452728,0.9619377162629758,0.08765957446808513

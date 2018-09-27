@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0016522,"Foramen Ovale, Patent",10,24,0.044444444444444446,0.18538324420677363,0.1956521739130435,0.9895833333333334,0.9784455958549223,0.9883444852147637,0.9259259259259259,0.20000000000000004

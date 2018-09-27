@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1866730,Rhizomelia,26,107,0.033846153846153845,0.12178508514386377,0.14142126609063657,0.9794200187090739,0.9385281128664157,0.9509869828271099,0.9293067947838023,0.0859094176851186

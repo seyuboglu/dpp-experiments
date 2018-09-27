@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002874,Aplastic Anemia,12,46,0.12121212121212122,0.21414141414141413,0.24444444444444444,0.9653679653679653,0.9528714338643942,0.9615472300326773,0.9286384976525821,0.1829710144927536

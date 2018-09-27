@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0234958,muscle degeneration,136,2151,0.022657952069716776,0.03384840960458045,0.03548765852551004,0.961873338832371,0.47119901738568876,0.4768797274080496,0.7959673187916948,0.026471955588372027

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162671,MELAS Syndrome,11,132,0.3090909090909091,0.24635036496350365,0.250057830210502,0.952247191011236,0.6939387877575515,0.7082124299885283,0.5559514170040486,0.2651515151515152

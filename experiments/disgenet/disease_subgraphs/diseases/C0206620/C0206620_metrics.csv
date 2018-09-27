@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206620,"Lymphangioma, Cystic",21,180,0.10476190476190476,0.13919473229706392,0.15301055245189324,0.9634247714048213,0.8854185178603163,0.8894296543835647,0.8968161747617941,0.11825396825396825

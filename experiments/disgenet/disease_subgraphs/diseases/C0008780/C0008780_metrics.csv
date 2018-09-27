@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008780,Ciliary Motility Disorders,35,131,0.010084033613445379,0.07631303306898099,0.10534351145038168,0.9878048780487805,0.9252993518620235,0.9329345794392523,0.907809353322891,0.05997818974918212

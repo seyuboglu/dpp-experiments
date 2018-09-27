@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0554101,Villous atrophy,16,65,0.1,0.16036036036036036,0.18846153846153846,0.9618441971383148,0.9626975145647345,0.9667641697401331,0.9287878787878788,0.14326923076923076

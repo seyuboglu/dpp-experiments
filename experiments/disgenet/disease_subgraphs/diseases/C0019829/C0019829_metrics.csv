@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019829,Hodgkin Disease,15,147,0.09523809523809523,0.1778520818406178,0.19569471624266144,0.9848139711465452,0.9092109808383964,0.9136495404921976,0.9374120956399438,0.146485260770975

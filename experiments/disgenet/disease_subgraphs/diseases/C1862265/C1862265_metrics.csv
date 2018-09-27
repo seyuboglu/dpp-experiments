@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1862265,Elevated gonadotropins,15,188,0.08571428571428572,0.2071356783919598,0.2260780521105928,0.9886075949367089,0.8555407583934955,0.859235251403574,0.9459459459459459,0.14255319148936166

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007570,Celiac Disease,20,77,0.04736842105263158,0.18902575587905934,0.23239917976760083,0.9810126582278481,0.9406845175346125,0.9506083166878518,0.9381327334083239,0.11298701298701296

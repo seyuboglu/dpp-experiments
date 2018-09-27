@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018418,Gynecomastia,56,664,0.031818181818181815,0.08451771609666346,0.0905885987388468,0.9726333426417202,0.7110074898322583,0.7198710339062818,0.8684626573072788,0.049026462994836484

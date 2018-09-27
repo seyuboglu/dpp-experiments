@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0149630,Bicuspid aortic valve,16,317,0.125,0.15836657169990503,0.16383819829892585,0.9855699855699855,0.8198708116399145,0.8218526800251829,0.9324277255311738,0.14511041009463724

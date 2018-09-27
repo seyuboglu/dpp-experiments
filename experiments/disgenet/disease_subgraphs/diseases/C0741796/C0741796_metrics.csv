@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0741796,Recurrent bronchitis,23,289,0.10276679841897234,0.12431893687707642,0.13050269127258746,0.9680589680589681,0.8455994608497118,0.8495025909607338,0.8898252184769039,0.10305400932751617

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0700590,Increased sweating,81,988,0.029320987654320986,0.050479669355235145,0.05354630438617001,0.9632566234770837,0.7038692539333071,0.7085558960276397,0.8678734374420416,0.03698705453091418

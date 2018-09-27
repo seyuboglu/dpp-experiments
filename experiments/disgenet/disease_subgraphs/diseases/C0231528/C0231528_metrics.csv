@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0231528,Myalgia,54,611,0.025157232704402517,0.07194217485133772,0.07855973813420622,0.9786919206865937,0.774452306737772,0.7815691511186375,0.8881552885250231,0.04740255804085591

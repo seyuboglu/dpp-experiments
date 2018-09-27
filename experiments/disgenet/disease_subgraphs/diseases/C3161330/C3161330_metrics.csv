@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3161330,Profound intellectual disabilities,31,270,0.030107526881720432,0.12937981190096742,0.14115379319840288,0.9859154929577465,0.8700484725510089,0.8819138888248981,0.9379872430900071,0.07933094384707286

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021753,Abnormality of the immune system,19,47,0.06432748538011696,0.1300563236047107,0.15263644773358,0.9705093833780161,0.9630518583169685,0.9747918417233213,0.9272286234081262,0.11198208286674137

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1269683,Major Depressive Disorder,255,2988,0.013432144511347846,0.020824520520400253,0.02205855001301938,0.9406548431105047,0.4733181050508487,0.4729967208362773,0.7385391533230972,0.014511641336588183

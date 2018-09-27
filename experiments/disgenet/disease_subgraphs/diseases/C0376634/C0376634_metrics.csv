@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0376634,Craniofacial Abnormalities,147,2147,0.019849035504612804,0.029432729120347445,0.031086094687270346,0.9596972563859981,0.5135247175873148,0.5181694016645473,0.8059226213368202,0.022816206128469085

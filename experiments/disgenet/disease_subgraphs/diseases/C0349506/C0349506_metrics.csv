@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0349506,Photosensitivity of skin,51,491,0.05019607843137255,0.09339279890170736,0.09917286670268922,0.9552603984620762,0.7791726821919528,0.7840489464919267,0.8644914266688863,0.054989816700611

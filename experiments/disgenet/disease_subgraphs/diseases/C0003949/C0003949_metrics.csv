@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003949,Asbestosis,12,244,0.18181818181818182,0.1413227091633466,0.14528098225730285,0.9834710743801653,0.8645279560036664,0.867476923076923,0.8948300283286119,0.1834016393442623

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029401,Osteitis Deformans,8,67,0.21428571428571427,0.19561815336463223,0.2130257801899593,0.9835616438356164,0.9600718706328608,0.9621641161585733,0.9587426326129665,0.2667910447761194

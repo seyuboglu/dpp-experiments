@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029443,Osteomyelitis,17,271,0.13970588235294118,0.08713606731942966,0.09031023643569769,0.9869146005509641,0.8847277100154612,0.8862317717748739,0.9224839865378351,0.13067071847189057

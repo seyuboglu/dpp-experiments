@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0158646,Cleft palate with cleft lip,23,356,0.07509881422924901,0.10571074403989737,0.10636176610223137,0.9857464366091523,0.8330943765503743,0.8434081616010997,0.9156118143459916,0.10100146555935516

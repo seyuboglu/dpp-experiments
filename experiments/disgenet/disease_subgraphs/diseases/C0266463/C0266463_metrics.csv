@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266463,Lissencephaly,15,354,0.17142857142857143,0.15115420129270546,0.15531121460924122,0.9817351598173516,0.7869783985425522,0.7888162261564075,0.9147659063625451,0.15555555555555556

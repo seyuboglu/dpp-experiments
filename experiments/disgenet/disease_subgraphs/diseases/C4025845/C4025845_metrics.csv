@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025845,Abnormality of the iris,13,135,0.2564102564102564,0.12696034362201578,0.13289110005527915,0.9670510708401977,0.9214268051434223,0.925008578469601,0.8855086686293752,0.1846153846153846

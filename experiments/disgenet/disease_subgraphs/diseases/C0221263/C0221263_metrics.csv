@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221263,Cafe-au-Lait Spots,37,907,0.11861861861861862,0.05253269130906859,0.052963095472788296,0.9663829787234043,0.7085842979102289,0.7131558654689014,0.8509483022330988,0.0805745105634852

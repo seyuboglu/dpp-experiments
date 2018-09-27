@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0545053,Advanced bone age,35,362,0.05378151260504202,0.09082334285675228,0.09837621095483694,0.9758581667295361,0.8494925697716564,0.8532972738580216,0.9165363800360794,0.07063930544593529

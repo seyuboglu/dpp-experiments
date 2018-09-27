@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0920163,Idiopathic thrombocytopenia,22,259,0.09523809523809523,0.1377666451195863,0.1477657059052408,0.9719029374201787,0.8476794568276231,0.8517506456068704,0.8834399431414357,0.10845910845910844

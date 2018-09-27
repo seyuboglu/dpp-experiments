@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839326,Abnormally-shaped vertebrae,31,397,0.04086021505376344,0.09497670189794295,0.101951504974175,0.9843878389482333,0.8269521462737871,0.8325445332497519,0.9182895850973751,0.08036077029332898

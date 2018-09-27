@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020898,Overactive bladder syndrome,14,112,0.07692307692307693,0.16886578701852592,0.17503217503217502,0.988313856427379,0.9407791722171586,0.9482114382273842,0.9477068152593228,0.15433673469387751

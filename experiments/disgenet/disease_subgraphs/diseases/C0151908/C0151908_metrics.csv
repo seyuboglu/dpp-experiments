@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151908,Dry skin,75,902,0.03063063063063063,0.054745493107104984,0.058102477907031116,0.9652067130577159,0.7084764012681701,0.7148051289175037,0.8659411328221618,0.03855136733185514

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0497247,Increase in blood pressure,117,2315,0.03153551429413498,0.028572140411867782,0.029328474811038452,0.9592652517369373,0.4822080590490898,0.48460642642741153,0.7895957811256625,0.0268889258090122

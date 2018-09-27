@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1850171,Short limb dwarfism recognizable at birth,10,28,0.1111111111111111,0.16516516516516516,0.17989417989417988,0.9688473520249221,0.9473180076628352,0.9652262848376374,0.8446389496717724,0.23214285714285715

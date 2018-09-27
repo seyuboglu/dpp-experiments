@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0553723,Squamous cell carcinoma of skin,12,122,0.19696969696969696,0.1951279527559055,0.2017341823601138,0.9722518676627535,0.9034251788704522,0.9078189809942425,0.845360824742268,0.1919398907103825

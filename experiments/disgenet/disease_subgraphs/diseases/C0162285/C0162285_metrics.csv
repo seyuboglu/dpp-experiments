@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162285,Edema of eyelid,10,16,0.08888888888888889,0.21,0.2916666666666667,0.9809523809523809,0.9838129496402878,0.9906216505894962,0.9573643410852714,0.20625000000000002

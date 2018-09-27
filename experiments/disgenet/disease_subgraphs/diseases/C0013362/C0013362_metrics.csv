@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013362,Dysarthria,186,2675,0.015402499273467015,0.025985409040164085,0.027450212849244017,0.9606883251743065,0.46363345275278967,0.463388030540939,0.7731313467621108,0.01967038488594111

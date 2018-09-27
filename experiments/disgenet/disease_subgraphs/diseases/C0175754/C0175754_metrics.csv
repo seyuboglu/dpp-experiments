@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0175754,Agenesis of corpus callosum,80,1346,0.020253164556962026,0.04300193739165902,0.04534100763932235,0.9792779666504776,0.617020310492165,0.6237078193262094,0.8449846442142522,0.03486255572065379

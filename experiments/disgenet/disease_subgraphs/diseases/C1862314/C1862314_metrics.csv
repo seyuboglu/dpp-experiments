@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1862314,Basal cell nevi,23,323,0.1225296442687747,0.11866998249976973,0.12106993827279196,0.9680577022153529,0.8284831864533134,0.8314030554179442,0.8656734947237741,0.10903217122089111

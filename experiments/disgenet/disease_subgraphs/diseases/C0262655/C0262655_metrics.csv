@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0262655,Recurrent urinary tract infection,24,57,0.03985507246376811,0.1367053998632946,0.19235588972431078,0.9731379731379731,0.9623014938033081,0.9700590042424538,0.9432213209733488,0.09429824561403509

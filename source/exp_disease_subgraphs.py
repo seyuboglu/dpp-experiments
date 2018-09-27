@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import networkx as nx
 
-from disease import load_diseases, load_network, load_gene_names
+from data import load_diseases, load_network, load_gene_names
 from output import ExperimentResults
 from exp_dpp import load_ranks
 
@@ -131,9 +131,13 @@ def analyze_disease_subgraph(disease, subgraph, intermediate_nodes, node_to_node
     metrics["Conductance of Disease Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, disease_nodes)
     metrics["Conductance of Disease-Intermediate Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, 
                                                                                           intermediate_nodes | disease_nodes)
-    metrics["Conductance of Intermediate Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, intermediate_nodes)
-    metrics["Conductance of Intermediate Nodes deg < " + str(params.degree_cutoff)] = nx.algorithms.cuts.conductance(ppi_networkx, intermediate_nodes_k | disease_nodes)
-
+    if len(intermediate_nodes) != 0:
+        metrics["Conductance of Intermediate Nodes"] = nx.algorithms.cuts.conductance(ppi_networkx, intermediate_nodes)
+        metrics["Conductance of Intermediate Nodes deg < " + str(params.degree_cutoff)] = nx.algorithms.cuts.conductance(ppi_networkx, intermediate_nodes_k | disease_nodes)
+    else:
+        metrics["Conductance of Intermediate Nodes"] = 0
+        metrics["Conductance of Intermediate Nodes deg < " + str(params.degree_cutoff)] = 0
+            
     # Compute average number of connections for intermediate node
     metrics["Mean Frac. of Intermediate-Disease Interactions"] = np.mean([1.0*len(set(subgraph.neighbors(intermediate_node)) & disease_nodes) / len(disease_nodes) 
                            for  intermediate_node in intermediate_nodes])

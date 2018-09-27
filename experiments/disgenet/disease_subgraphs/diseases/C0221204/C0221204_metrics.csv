@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221204,Lytic lesion,32,317,0.05443548387096774,0.10481283422459893,0.11420356985984108,0.9762428508578971,0.8524383135807266,0.8593004378412948,0.9100499722376457,0.07659700315457413

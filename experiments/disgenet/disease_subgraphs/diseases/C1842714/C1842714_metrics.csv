@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1842714,Desquamation of skin soon after birth,11,23,0.07272727272727272,0.22916666666666666,0.31225296442687744,0.9837067209775967,0.9742553191489361,0.9823443960219019,0.9576158940397351,0.18577075098814225

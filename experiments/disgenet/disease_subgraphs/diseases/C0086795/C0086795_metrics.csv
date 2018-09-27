@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0086795,Pfaundler-Hurler Syndrome,12,36,0.3181818181818182,0.23616734143049933,0.25873015873015875,0.85,0.8563218390804598,0.8637123745819398,0.773095623987034,0.2754629629629629

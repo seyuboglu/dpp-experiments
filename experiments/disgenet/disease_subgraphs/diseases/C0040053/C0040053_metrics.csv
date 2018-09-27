@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0040053,Thrombosis,44,200,0.06659619450317125,0.06450809464508095,0.06698492462311557,0.9151515151515152,0.9168850617746163,0.9269428915926778,0.8357448542897901,0.06068181818181818

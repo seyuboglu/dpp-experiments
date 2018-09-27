@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026267,Mitral Valve Prolapse Syndrome,39,510,0.05263157894736842,0.11043418990801836,0.11622943873030549,0.9723502304147466,0.7409934407857872,0.7484933105489101,0.8867350045671369,0.06666666666666667

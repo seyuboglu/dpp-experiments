@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0581381,Recurrent upper respiratory tract infection,21,400,0.1523809523809524,0.07379431977133126,0.075,0.9690072639225181,0.8263743811349913,0.8276557145736747,0.8697602208038641,0.11107142857142857

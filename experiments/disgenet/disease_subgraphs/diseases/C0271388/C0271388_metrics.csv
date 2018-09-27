@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271388,Pendular Nystagmus,13,37,0.02564102564102564,0.0963265306122449,0.06006006006006006,0.9908045977011494,0.9715765386005059,0.9898322318251144,0.9068702290076336,0.15800415800415804

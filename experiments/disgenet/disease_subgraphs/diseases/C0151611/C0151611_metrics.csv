@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151611,Electroencephalogram abnormal,102,1114,0.021160939623374102,0.04380651796674519,0.0474448374926001,0.9595547309833025,0.6781308292352043,0.6851075674605086,0.8534837675602628,0.027704439046713835

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024003,Lordosis,54,824,0.03004891684136967,0.07760664778335694,0.08327041725158961,0.9764125068568295,0.6637027221796035,0.6690868390673254,0.8896437276357413,0.04831895001797914

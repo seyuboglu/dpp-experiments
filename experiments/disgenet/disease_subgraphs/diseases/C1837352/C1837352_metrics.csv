@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837352,Childhood onset,39,331,0.02564102564102564,0.1857773785462984,0.21761420855076444,0.9825447864033073,0.7694372961975455,0.7760969084983327,0.943382077240345,0.06359903942985513

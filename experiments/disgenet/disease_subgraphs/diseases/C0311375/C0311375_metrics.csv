@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0311375,Arsenic Poisoning,60,697,0.023163841807909605,0.0789240095258714,0.08706443048203301,0.979345088161209,0.7251065113297892,0.731707162140702,0.9005379707243838,0.04363940698230511

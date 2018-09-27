@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025821,Anterior hypopituitarism,18,13,0.0457516339869281,0.1471264367816092,0.5,0.9551282051282052,0.972348239360553,0.9822565969062784,0.9204771371769384,0.12393162393162394

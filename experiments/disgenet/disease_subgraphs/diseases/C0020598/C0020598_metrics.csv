@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020598,Hypocalcemia,32,185,0.028225806451612902,0.1089999114181947,0.12685076380728555,0.9833630421865716,0.9156657471343146,0.9244721974427594,0.933810817485799,0.07516891891891891

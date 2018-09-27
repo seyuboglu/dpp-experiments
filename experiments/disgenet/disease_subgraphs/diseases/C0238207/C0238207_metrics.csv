@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0238207,Ectopic kidney,11,70,0.14545454545454545,0.20574162679425836,0.2269151138716356,0.9788639365918098,0.9358140526708605,0.9399056914135322,0.8659217877094972,0.23246753246753252

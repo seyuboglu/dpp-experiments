@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011615,"Dermatitis, Atopic",33,117,0.056818181818181816,0.10760087582108227,0.1374889478337754,0.9382080329557158,0.9161793372319688,0.9230325028873123,0.8489583333333334,0.07277907277907276

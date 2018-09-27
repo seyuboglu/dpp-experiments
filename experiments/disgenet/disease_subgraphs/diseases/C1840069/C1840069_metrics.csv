@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1840069,Sandal gap,24,338,0.07608695652173914,0.10222443986608293,0.10538514213474268,0.982089552238806,0.8493774457488438,0.8555875028572116,0.928054298642534,0.10207100591715976

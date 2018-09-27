@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0524620,Metabolic Syndrome X,20,88,0.06842105263157895,0.1738095238095238,0.21212121212121213,0.9727748691099476,0.9376989988511406,0.9456456255438784,0.9417040358744395,0.11420454545454546

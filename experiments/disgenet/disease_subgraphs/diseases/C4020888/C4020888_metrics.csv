@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020888,Epithelial corneal erosions,10,91,0.2,0.11254295532646048,0.12112332112332112,0.9921431689218682,0.9505707008772757,0.9528920125368031,0.9491740787801779,0.20659340659340655

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857130,Hypoplastic mandible condyle,275,3584,0.012315859323158594,0.019926718303389025,0.020946196822295763,0.9502759470610298,0.5229372052159438,0.5222259652000703,0.739613632845282,0.015209009740259741

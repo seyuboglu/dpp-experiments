@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025669,Decreased circulating ACTH level,12,70,0.12121212121212122,0.16975008114248621,0.17929606625258798,0.9844961240310077,0.9501596226235288,0.9574342590317031,0.9485924112607099,0.17738095238095233

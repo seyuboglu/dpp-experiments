@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0032914,Pre-Eclampsia,21,94,0.06666666666666667,0.11985199485199485,0.13520933424845574,0.9636363636363636,0.9534767539888219,0.9623626811017354,0.9186104218362283,0.10131712259371832

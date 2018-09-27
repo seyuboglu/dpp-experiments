@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837142,Poor suck,17,66,0.09558823529411764,0.13860759493670885,0.15431235431235432,0.9755639097744361,0.9628482972136223,0.9710144927536232,0.9487967229902714,0.12121212121212122

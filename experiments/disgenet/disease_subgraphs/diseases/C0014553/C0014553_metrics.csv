@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014553,Absence Epilepsy,21,43,0.03333333333333333,0.09943502824858758,0.13953488372093023,0.9744525547445255,0.9697698385434559,0.9774335094474792,0.8820809248554913,0.09745293466223698

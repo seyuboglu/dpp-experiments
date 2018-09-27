@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151740,Intracranial Hypertension,24,249,0.11594202898550725,0.09437076333628058,0.09891177613680528,0.9619047619047619,0.8917218990937373,0.8956895962838992,0.8903693708888514,0.10341365461847389

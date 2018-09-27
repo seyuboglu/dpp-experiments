@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4048270,Decreased antibody level in blood,34,512,0.058823529411764705,0.09150410404008101,0.09639493639921722,0.9798596277082697,0.7829033889731917,0.7860173086713049,0.8953735491253882,0.0745059742647059

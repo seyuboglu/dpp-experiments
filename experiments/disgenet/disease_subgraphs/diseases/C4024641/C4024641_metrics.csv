@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024641,Enlarged polycystic ovaries,10,129,0.15555555555555556,0.1655773420479303,0.15637112403100775,0.9894815927873779,0.9211475112183228,0.9308182841219655,0.8668365721567378,0.21627906976744185

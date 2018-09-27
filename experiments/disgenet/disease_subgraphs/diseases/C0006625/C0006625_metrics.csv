@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0006625,Cachexia,50,653,0.035918367346938776,0.07978858151247516,0.08432529430002161,0.9742690058479532,0.7294755613786076,0.7360399373589289,0.7996532244532693,0.05329249617151609

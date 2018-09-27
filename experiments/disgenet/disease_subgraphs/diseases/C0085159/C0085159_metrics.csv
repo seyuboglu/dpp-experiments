@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085159,Seasonal Affective Disorder,16,102,0.19166666666666668,0.12577147623019183,0.14269073966220153,0.925686591276252,0.9325038044937786,0.9338671945294224,0.8765765765765766,0.15747549019607843

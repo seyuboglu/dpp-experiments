@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846228,Absence of pubertal development,17,121,0.0661764705882353,0.16019900497512438,0.1825068870523416,0.9860031104199067,0.913220541997305,0.9196653227028829,0.9405099150141643,0.1220223626640739

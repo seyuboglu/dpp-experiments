@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001956,alcohol use disorder,12,90,0.09090909090909091,0.18511647083075655,0.20823970037453182,0.990228013029316,0.9364022662889518,0.9402471789360559,0.9421072944808954,0.16851851851851854

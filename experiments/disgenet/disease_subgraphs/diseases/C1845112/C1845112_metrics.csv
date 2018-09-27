@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1845112,Hyperkyphosis,111,1513,0.018018018018018018,0.04407303016347961,0.04674041901404757,0.970505429682263,0.5800814751286449,0.5870307430866677,0.858601189747607,0.027306883883222284

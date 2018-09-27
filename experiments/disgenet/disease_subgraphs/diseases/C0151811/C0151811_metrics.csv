@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151811,Subcutaneous nodule,53,929,0.045718432510885344,0.05116811360307718,0.053041832151738987,0.9743119266055046,0.715480064237124,0.7222428067276913,0.8687656318964249,0.05199341958283405

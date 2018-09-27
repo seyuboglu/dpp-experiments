@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0432040,"Simple syndactyly of toes, first web space",23,176,0.06719367588932806,0.08241758241758242,0.08038961038961039,0.9756795422031473,0.9156671664167916,0.9314241400321276,0.881894873458793,0.09461462450592885

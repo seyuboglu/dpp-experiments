@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1527311,Brain Edema,32,279,0.1532258064516129,0.12043908841427037,0.12671153399860757,0.9236180904522613,0.8179818234275822,0.8211302211302212,0.6493025283347864,0.13261648745519714

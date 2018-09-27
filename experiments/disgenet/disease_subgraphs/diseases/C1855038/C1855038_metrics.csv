@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1855038,Hepatocellular necrosis,13,119,0.34615384615384615,0.3021270830510771,0.3163367041731947,0.9350961538461539,0.8205520238191035,0.8206629254309823,0.5387431360585723,0.33354880413703947

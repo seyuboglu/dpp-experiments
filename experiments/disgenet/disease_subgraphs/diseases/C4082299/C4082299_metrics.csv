@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4082299,Bulbar palsy,19,309,0.13450292397660818,0.1179984621754303,0.12167444206279157,0.9782505910165484,0.8593997768250425,0.8627409145864448,0.9241568500887526,0.12927950945324476

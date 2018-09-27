@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008519,Ectopic Tissue,14,204,0.10989010989010989,0.11013119213724716,0.10745677581377379,0.9876314162028448,0.8996421502968753,0.9092947411333061,0.915037326697476,0.16386554621848734

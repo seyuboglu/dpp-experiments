@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0398650,Immune thrombocytopenic purpura,24,263,0.07971014492753623,0.13485985405224207,0.1463733201753113,0.9721518987341772,0.8467129751751223,0.8509465470613445,0.8837291740517547,0.09996831432192647

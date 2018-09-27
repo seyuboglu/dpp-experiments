@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280653,Turridolichocephaly,73,1234,0.03462709284627093,0.05240968198213651,0.054483602603182864,0.9686369119420989,0.6111421075201388,0.6149669532422051,0.8776137761377614,0.03802091427810217

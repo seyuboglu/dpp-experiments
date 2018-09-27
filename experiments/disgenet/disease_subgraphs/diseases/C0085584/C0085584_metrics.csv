@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085584,Encephalopathies,41,334,0.0475609756097561,0.09600919019293111,0.1037025049001097,0.9660869565217391,0.833544778664484,0.8398389224467125,0.7278223987004783,0.068424127355046

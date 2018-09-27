@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021546,Abnormal mitochondria in muscle tissue,20,167,0.5105263157894737,0.19624086320918901,0.20171704783204675,0.8556547619047619,0.822128277124018,0.8234458371483598,0.5812059514487079,0.3215568862275449

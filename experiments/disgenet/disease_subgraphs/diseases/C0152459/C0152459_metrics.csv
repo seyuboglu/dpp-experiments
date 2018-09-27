@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152459,Linear atrophy,15,257,0.13333333333333333,0.0927791176053341,0.09414518482490272,0.9864143619602135,0.8875863728557186,0.8923419195606076,0.881726618705036,0.15434500648508429

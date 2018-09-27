@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151639,Decreased fertility in females,20,97,0.07894736842105263,0.1497133497133497,0.1643041237113402,0.9745331069609507,0.9423471157788501,0.9502374292590906,0.9326103795507359,0.11340206185567012

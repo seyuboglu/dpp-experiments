@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0010964,Dandy-Walker Syndrome,30,321,0.04597701149425287,0.10207336523125997,0.11096183800623052,0.9782135076252724,0.8520249608432986,0.8567694588956747,0.856403785488959,0.08961578400830737

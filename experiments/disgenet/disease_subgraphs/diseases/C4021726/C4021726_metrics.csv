@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021726,EMG: myopathic abnormalities,22,280,0.09956709956709957,0.10303916788558427,0.10765488991295442,0.9781783681214421,0.8832704270177146,0.8883386220906303,0.9212886084357357,0.11282467532467533

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0427149,"Gait, Drop Foot",24,346,0.07971014492753623,0.1545187248529867,0.16493256262042388,0.9799635701275046,0.8057978625122775,0.8075520756967048,0.9209511568123393,0.10344412331406552

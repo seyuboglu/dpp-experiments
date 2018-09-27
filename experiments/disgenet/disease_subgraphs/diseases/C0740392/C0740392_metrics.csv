@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0740392,"Infarction, Middle Cerebral Artery",33,278,0.0625,0.11054626532887403,0.1193932940290367,0.9663608562691132,0.8617959832192783,0.8698821098515405,0.8756494050611697,0.07466753869631566

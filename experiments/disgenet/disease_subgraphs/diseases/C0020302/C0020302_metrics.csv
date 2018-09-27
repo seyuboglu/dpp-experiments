@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020302,Hydrophthalmos,19,33,0.05847953216374269,0.1282051282051282,0.16477272727272727,0.9716312056737588,0.9736291010625922,0.9857236626189695,0.9391304347826087,0.11642743221690588

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024305,"Lymphoma, Non-Hodgkin",23,169,0.08300395256916997,0.12209165687426557,0.13151591997745843,0.9688195991091314,0.909928263366637,0.917715242733423,0.9069228988191711,0.10162078723951631

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3549698,Coxa valga deformity,22,153,0.04329004329004329,0.1476268189854481,0.1647746818025456,0.9855491329479769,0.907192476221011,0.9162349443679367,0.8827790582811985,0.09863339275103983

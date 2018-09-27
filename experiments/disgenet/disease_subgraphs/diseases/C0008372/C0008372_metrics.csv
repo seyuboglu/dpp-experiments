@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008372,Intrahepatic Cholestasis,12,14,0.06060606060606061,0.1956521739130435,0.38461538461538464,0.9765395894428153,0.979126401236954,0.9856996935648621,0.9440860215053763,0.18452380952380948

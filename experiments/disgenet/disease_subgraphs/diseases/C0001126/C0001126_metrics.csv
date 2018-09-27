@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001126,Renal tubular acidosis,10,20,0.1111111111111111,0.18160919540229886,0.1736842105263158,0.9766899766899767,0.9809040367416002,0.9915869980879541,0.9456706281833617,0.20500000000000002

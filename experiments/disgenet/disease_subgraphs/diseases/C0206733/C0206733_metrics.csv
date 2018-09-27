@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206733,Strawberry nevus of skin,10,454,0.37777777777777777,0.08445563247325362,0.0845951123688382,0.9859504132231405,0.8020918413649152,0.8024032345993095,0.8941608819926501,0.23105726872246699

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085207,Gestational Diabetes,12,90,0.13636363636363635,0.1805940594059406,0.18127340823970037,0.9782345828295043,0.9255905029984091,0.9387651821862348,0.9340949033391915,0.1712962962962963

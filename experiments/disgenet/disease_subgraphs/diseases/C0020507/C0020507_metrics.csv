@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020507,Hyperplasia,26,370,0.07076923076923076,0.09055977293114298,0.0938987768256061,0.9820872274143302,0.843395112464258,0.8502161467461152,0.9092979913025471,0.09677754677754677

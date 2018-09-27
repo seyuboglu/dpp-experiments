@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0392557,Nuclear cataract,19,41,0.2046783625730994,0.14122448979591837,0.17804878048780487,0.8553719008264463,0.9626026805015132,0.9676346708046997,0.8697674418604651,0.1540436456996149

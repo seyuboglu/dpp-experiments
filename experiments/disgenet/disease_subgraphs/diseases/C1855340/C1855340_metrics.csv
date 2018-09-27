@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1855340,Bowing of the long bones,31,257,0.043010752688172046,0.09176951616566972,0.09739785992217899,0.981015662078785,0.891924025800315,0.9026687121223628,0.9152025555394221,0.07355340780720471

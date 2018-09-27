@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3150281,Fetal overgrowth,15,146,0.1523809523809524,0.12936083524318817,0.138497874350496,0.9777158774373259,0.9165914128560874,0.9193219965879699,0.9151977131967604,0.15296803652968033

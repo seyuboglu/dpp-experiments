@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280619,Missing more than six teeth,22,241,0.09090909090909091,0.12308487354085604,0.12970262793914247,0.9763513513513513,0.8850418068509291,0.8921506612995975,0.9032551372976905,0.10335722368917388

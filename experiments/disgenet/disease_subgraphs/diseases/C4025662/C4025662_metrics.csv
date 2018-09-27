@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025662,Abnormality of the ulna,10,59,0.24444444444444444,0.1673076923076923,0.18059614260666276,0.9668674698795181,0.9589888633551352,0.9629162916291629,0.9150141643059491,0.23050847457627116

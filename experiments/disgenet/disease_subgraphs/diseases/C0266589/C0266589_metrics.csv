@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266589,Congenital ear anomaly NOS (disorder),29,160,0.03940886699507389,0.13453314326443336,0.15495283018867925,0.9792746113989638,0.9161235372537402,0.9252105942171966,0.9438982070561018,0.07586206896551725

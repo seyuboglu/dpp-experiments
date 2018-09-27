@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0040264,Tinnitus,18,79,0.06535947712418301,0.15282544040265386,0.18143459915611815,0.9811142587346553,0.9516817359855334,0.9589166942270239,0.9209855564995751,0.12376933895921234

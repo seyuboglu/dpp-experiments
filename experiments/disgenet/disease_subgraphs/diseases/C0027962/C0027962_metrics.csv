@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027962,Melanocytic nevus,43,749,0.06090808416389812,0.0657727188286356,0.06814076522707639,0.972306143001007,0.7359288867191472,0.7396138132362069,0.8795031055900621,0.06234669481789673

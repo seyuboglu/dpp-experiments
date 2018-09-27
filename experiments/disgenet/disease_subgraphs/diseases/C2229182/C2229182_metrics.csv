@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2229182,"Psychomotor retardation, mild",14,102,0.13186813186813187,0.16482300884955753,0.17317025820229082,0.9774223894637818,0.9320653943854621,0.940300505304019,0.9339272457312546,0.15756302521008397

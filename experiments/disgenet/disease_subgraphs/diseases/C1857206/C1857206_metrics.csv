@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857206,Laterally sparse eyebrows,11,97,0.09090909090909091,0.17133956386292834,0.16688144329896906,0.9892008639308856,0.9435672347945049,0.9545081967213115,0.9206719552029865,0.1949390815370197

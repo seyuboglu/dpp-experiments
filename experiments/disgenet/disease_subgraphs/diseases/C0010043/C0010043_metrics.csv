@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0010043,Corneal Ulcer,13,119,0.15384615384615385,0.09536307961504811,0.10141005554764279,0.9898734177215189,0.9399874154475382,0.943539114230205,0.9408590546082451,0.1596638655462184

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857108,Decreased joint mobility,52,497,0.03619909502262444,0.0629739273103399,0.06729084182514442,0.9671007539410555,0.8351324095170508,0.8430860623947632,0.876984886167974,0.049179693545890725

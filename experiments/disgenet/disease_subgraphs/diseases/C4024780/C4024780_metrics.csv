@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024780,Almond-shaped eyes,23,169,0.20553359683794467,0.10805084745762712,0.11003099464637926,0.9324675324675324,0.9213422756058234,0.9258221536269737,0.855011655011655,0.13969642397736043

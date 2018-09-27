@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4072834,Rough hair texture,31,361,0.053763440860215055,0.09678305918566461,0.10417051400430902,0.9801350814461661,0.834861309761073,0.8396845321270398,0.9061596143545796,0.08399606826914484

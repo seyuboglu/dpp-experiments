@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0241654,VALVULAR ABNORMALITY,12,41,0.19696969696969696,0.19611470860314523,0.22439024390243903,0.9581320450885669,0.9638872327740396,0.9673440411749046,0.8166804293971924,0.21951219512195122

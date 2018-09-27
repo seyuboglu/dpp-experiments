@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0268363,Osteogenesis imperfecta type IV (disorder),10,32,0.1111111111111111,0.16194331983805668,0.1975806451612903,0.9665551839464883,0.9619228938600667,0.967984318850049,0.8830022075055187,0.221875

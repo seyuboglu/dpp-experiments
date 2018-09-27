@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4072836,Nappy hair texture,13,87,0.1282051282051282,0.1252147766323024,0.12590216519647154,0.9796747967479674,0.9531312806495699,0.9610292900877048,0.9231732776617954,0.18037135278514582

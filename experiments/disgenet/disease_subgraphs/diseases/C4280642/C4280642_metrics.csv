@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280642,Deficiency of upper jaw bones,65,1231,0.03701923076923077,0.06333329592736259,0.06590715460363376,0.9741350352704065,0.5531195150598037,0.5576183953293524,0.857492703545909,0.04570393051302881

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024753,Abnormality of the retinal vasculature,56,531,0.031818181818181815,0.14309152917319568,0.1634864797640621,0.9704016913319239,0.6505859580150953,0.6532441007785239,0.9061147486405504,0.06564433683077749

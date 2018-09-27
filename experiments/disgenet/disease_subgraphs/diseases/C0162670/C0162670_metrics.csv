@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162670,Mitochondrial Myopathies,21,141,0.10952380952380952,0.2045245077503142,0.2326241134751773,0.953953953953954,0.834609390880141,0.8421776189166896,0.6010449710766934,0.15467747382640998

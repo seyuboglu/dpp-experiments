@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0349204,Nonorganic psychosis,77,843,0.020164046479835954,0.045237918675071064,0.0492528944528505,0.9748722316865417,0.7567488535920781,0.7645743685057611,0.8752989552301431,0.03315308653386946

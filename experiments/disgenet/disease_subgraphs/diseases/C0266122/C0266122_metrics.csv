@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266122,Cleft uvula,27,210,0.04843304843304843,0.11680847887744439,0.12854864433811802,0.9806818181818182,0.8995555412929416,0.9075824337826991,0.9135063206919495,0.08306878306878306

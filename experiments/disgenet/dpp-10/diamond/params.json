@@ -2,7 +2,7 @@
     "n_processes": 30, 
 
     "ppi_network": "data/bio-pathways-network.txt",
-    "diseases_path": "data/bio-pathways-associations/disgenet-associations.csv",
+    "diseases_path": "data/associations/disgenet-associations.csv",
     "disease_subset": [],
     
     "n_folds": 10,

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0040997,Trigeminal Neuralgia,12,387,0.3333333333333333,0.07217522460489212,0.07298068040326143,0.9778113968734241,0.8283905572707144,0.8295310618735634,0.8587185725871858,0.2280361757105943

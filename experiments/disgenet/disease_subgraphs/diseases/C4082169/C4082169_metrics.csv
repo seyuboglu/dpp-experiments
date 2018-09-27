@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4082169,Metatarsus Varus,24,140,0.043478260869565216,0.16459627329192547,0.18992805755395684,0.9801324503311258,0.9071295586463695,0.9172487909725954,0.9384984025559105,0.0925595238095238

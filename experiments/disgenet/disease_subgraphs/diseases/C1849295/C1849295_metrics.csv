@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849295,Hypoplastic labia minora,10,33,0.13333333333333333,0.1893687707641196,0.18371212121212122,0.9821162444113264,0.9726618705035971,0.9836134808683166,0.9465437788018434,0.20606060606060606

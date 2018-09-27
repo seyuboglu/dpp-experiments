@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0392525,Nephrolithiasis,31,211,0.043010752688172046,0.11953801044125009,0.1319341006544798,0.9743918053777209,0.8891706864256469,0.9009135748063527,0.9217205967835691,0.07460632930744533

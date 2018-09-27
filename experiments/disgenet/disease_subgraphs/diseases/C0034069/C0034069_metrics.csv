@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034069,Pulmonary Fibrosis,80,736,0.036075949367088606,0.05061700259402503,0.05399290150842946,0.9463024022609515,0.7768963734396928,0.7824892205267979,0.8420569329660239,0.033644701086956524

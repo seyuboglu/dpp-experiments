@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020813,Increased gastric cancer,21,834,0.18571428571428572,0.06477337037608684,0.06507351141895606,0.9818604651162791,0.7078020036876104,0.7083279568504993,0.8734917431948277,0.12664154390773097

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017168,Gastroesophageal reflux disease,78,949,0.024642024642024644,0.07103072745289978,0.07708091573186077,0.9701311806256306,0.638091629243114,0.6425187514498544,0.8821864496727402,0.037259193212828626

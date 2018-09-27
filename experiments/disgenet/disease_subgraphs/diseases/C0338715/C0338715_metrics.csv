@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0338715,Drug-induced depressive state,14,28,0.08791208791208792,0.22531939605110338,0.3333333333333333,0.9711191335740073,0.9708029197080292,0.9802120141342756,0.9496738117427772,0.15306122448979595

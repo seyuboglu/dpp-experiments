@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1827524,Wide spaced nipples,46,465,0.03671497584541063,0.08037459616406985,0.08797738227660364,0.9752845528455285,0.8183834332868218,0.8231056687820925,0.8849033606129201,0.05923328658251518

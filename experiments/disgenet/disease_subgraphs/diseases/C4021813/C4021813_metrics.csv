@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021813,Oral cleft,18,286,0.09803921568627451,0.10260869565217391,0.1016071647650595,0.9873577749683944,0.8683581961468598,0.8784007987196993,0.9169213670464018,0.12432012432012432

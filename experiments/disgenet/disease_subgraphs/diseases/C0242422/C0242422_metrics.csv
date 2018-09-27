@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0242422,Parkinsonian Disorders,55,1132,0.055218855218855216,0.04283060629376124,0.04373845966388917,0.9749158764148057,0.685120296449688,0.6920073040876491,0.8591780322590444,0.04792804368776101

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1840087,Radial ray hypoplasia,23,474,0.07114624505928854,0.25561315514861815,0.2701135583090249,0.9818913480885312,0.5260505250674864,0.5262309702251499,0.939622641509434,0.10869565217391301

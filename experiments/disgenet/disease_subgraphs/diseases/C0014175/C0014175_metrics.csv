@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014175,Endometriosis,149,2099,0.021948122619263558,0.029092605634698065,0.03083587399874015,0.9548507462686567,0.5159584593582774,0.5191858962329289,0.7766076902066705,0.02258665839597635

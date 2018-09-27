@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025749,Abnormality of the spleen,13,122,0.16666666666666666,0.18180717054263565,0.1971277604660615,0.9715846994535519,0.9039667306461933,0.9061290322580645,0.9030006978367062,0.18095838587641863

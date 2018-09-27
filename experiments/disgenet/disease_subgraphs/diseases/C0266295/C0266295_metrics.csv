@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266295,Congenital hypoplasia of kidney,32,176,0.016129032258064516,0.14672034098981768,0.17805194805194804,0.9897501601537476,0.898189227381774,0.907721819313803,0.9530808366308648,0.06924715909090909

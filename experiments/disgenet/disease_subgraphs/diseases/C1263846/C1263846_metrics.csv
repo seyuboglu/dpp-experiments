@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1263846,Attention deficit hyperactivity disorder,99,1234,0.02370645227788085,0.04870705263637519,0.051861228427850535,0.9625772860397006,0.6230454431566151,0.6305078713979341,0.8208215503921168,0.03062226806149011

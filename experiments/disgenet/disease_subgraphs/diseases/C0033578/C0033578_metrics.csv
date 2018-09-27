@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0033578,Prostatic Neoplasms,474,5507,0.01367516792892124,0.01165415344978752,0.012228401840513256,0.9080218395632087,0.6489723023934432,0.6488625799030396,0.6202861750677693,0.011198635568539925

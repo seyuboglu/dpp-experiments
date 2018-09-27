@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038220,Status Epilepticus,83,983,0.02850426094622392,0.04662988207292005,0.049420598235171025,0.961803504626895,0.703953195514771,0.7102422847285913,0.8387635459228993,0.03488215323144052

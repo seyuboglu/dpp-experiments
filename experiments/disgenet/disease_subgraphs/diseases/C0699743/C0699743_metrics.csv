@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0699743,Congenital muscular dystrophy (disorder),14,19,0.06593406593406594,0.11182795698924732,0.0935672514619883,0.972027972027972,0.9638135003479471,0.9883636363636363,0.936545240893067,0.14661654135338345

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0427515,Neutrophil abnormality,21,142,0.10952380952380952,0.11799105607155143,0.1200679252821896,0.9678321678321679,0.9293875450334534,0.936423981170497,0.9288135593220339,0.11267605633802814

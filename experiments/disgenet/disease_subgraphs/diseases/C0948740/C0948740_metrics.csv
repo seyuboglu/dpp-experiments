@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0948740,Pituitary hypoplasia,13,69,0.10256410256410256,0.10822784810126582,0.09462915601023018,0.9855985598559855,0.9466541881141788,0.9632784715904392,0.9357734806629834,0.16610925306577476

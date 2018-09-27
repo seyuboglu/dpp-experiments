@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0270612,Leukoencephalopathies,29,114,0.059113300492610835,0.11829111206526406,0.14857941313460643,0.9521435692921236,0.9371201962854127,0.9442600034946707,0.8791909116098642,0.09407138535995158

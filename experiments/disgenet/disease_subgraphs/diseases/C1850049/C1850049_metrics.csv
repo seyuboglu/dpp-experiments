@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1850049,Bilateral fifth finger clinodactyly,109,1936,0.0254841997961264,0.04052083841686594,0.042161573451214046,0.9674125570280252,0.4675741929450742,0.470405987204764,0.8285959916178604,0.031048601106983095

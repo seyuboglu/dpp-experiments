@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024636,Malocclusion,57,975,0.041979949874686714,0.05310301084220333,0.055039224977623334,0.9733651361558339,0.6900140581881714,0.6952587513701346,0.8538736243714015,0.051515969410706255

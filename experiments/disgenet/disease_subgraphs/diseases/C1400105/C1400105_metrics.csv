@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1400105,Hypertrophy of nose,23,460,0.08300395256916997,0.14275519397686015,0.14776925262858767,0.9842931937172775,0.7344253045238807,0.7388837279369304,0.9203196093663301,0.104820415879017

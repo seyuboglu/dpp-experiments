@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019572,Hirsutism,47,907,0.045328399629972246,0.05226400067934939,0.054326053676214674,0.9778180172023541,0.7151666385235496,0.7191019719869625,0.8602620087336245,0.05883318867437659

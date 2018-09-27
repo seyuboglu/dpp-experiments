@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008297,Choanal Atresia,28,317,0.037037037037037035,0.12210654173173695,0.1308549295212235,0.9862136878385032,0.8404995580135542,0.8491512745267277,0.8964822563148923,0.0837088778729157

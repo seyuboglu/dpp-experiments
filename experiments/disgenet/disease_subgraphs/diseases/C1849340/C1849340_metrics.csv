@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849340,Long palpebral fissure,17,292,0.13970588235294118,0.13351170568561874,0.1387515887586499,0.9782857142857143,0.8603121282105116,0.862114939302505,0.9148859759382295,0.1392022562449637

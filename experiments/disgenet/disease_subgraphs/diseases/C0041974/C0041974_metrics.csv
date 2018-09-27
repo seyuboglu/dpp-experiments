@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0041974,Urethral Stricture,15,92,0.1619047619047619,0.17462655165158847,0.1877687529861443,0.957972805933251,0.9484856007944389,0.9507827175954916,0.9188275084554679,0.15797101449275358
