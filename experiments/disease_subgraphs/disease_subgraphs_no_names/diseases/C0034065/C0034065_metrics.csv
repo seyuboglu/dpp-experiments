@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034065,Pulmonary Embolism,11,20,0.14545454545454545,0.20105820105820105,0.30526315789473685,0.9473684210526315,0.971689327621531,0.9776148205326128,0.8815426997245179,0.21363636363636357

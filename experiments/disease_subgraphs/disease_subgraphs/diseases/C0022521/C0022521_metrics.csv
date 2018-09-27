@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022521,Kartagener Syndrome,24,11,0.0036231884057971015,0.07226890756302522,0.3090909090909091,0.9922480620155039,0.9883768076767131,0.9952387620781403,0.9922480620155039,0.09469696969696971

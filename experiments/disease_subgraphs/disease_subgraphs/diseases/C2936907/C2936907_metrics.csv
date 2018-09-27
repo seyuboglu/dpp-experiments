@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2936907,NADH:Q(1) Oxidoreductase deficiency,20,144,0.5,0.24051812505824247,0.2500971250971251,0.8482428115015974,0.8163969411346257,0.8166998861047836,0.5577978403257213,0.34722222222222221

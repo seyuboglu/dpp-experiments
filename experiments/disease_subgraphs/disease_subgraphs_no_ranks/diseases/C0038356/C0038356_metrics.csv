@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038356,Stomach Neoplasms,282,4609,0.019964160419979303,0.015621649344158169,0.01611496453195439,0.9410888508229687,0.5750362656359347,0.5753393779642383,0.6712827098866232,0.017647402784253443

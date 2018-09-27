@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0431363,Alobar Holoprosencephaly,14,13,0.07692307692307693,0.17333333333333334,0.3333333333333333,0.9583333333333334,0.9772677595628415,0.9880569591180524,0.9289520426287744,0.15934065934065933

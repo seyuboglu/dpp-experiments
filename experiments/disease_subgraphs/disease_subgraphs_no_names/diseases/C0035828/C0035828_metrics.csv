@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035828,Romano-Ward Syndrome,14,192,0.1978021978021978,0.07891156462585033,0.08147905759162304,0.9675090252707581,0.9140054744525548,0.9146114937273169,0.8924254633360194,0.15662202380952378

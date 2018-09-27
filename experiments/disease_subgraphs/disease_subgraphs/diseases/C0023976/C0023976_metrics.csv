@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023976,Long QT Syndrome,16,77,0.15,0.14781075521598588,0.15311004784688995,0.9574468085106383,0.9523877135690284,0.9571373899732109,0.9178587909552377,0.15422077922077923

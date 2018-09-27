@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1261502,Finding of Mean Corpuscular Hemoglobin,15,27,0.0761904761904762,0.18205128205128204,0.2905982905982906,0.9702602230483272,0.9793063246866802,0.9846651131323761,0.956386292834891,0.1506172839506173

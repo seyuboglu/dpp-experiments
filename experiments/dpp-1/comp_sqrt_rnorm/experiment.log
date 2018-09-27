@@ -1,0 +1,570 @@
+2018-04-25 10:08:32,847:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:08:32,847:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:08:32,847:INFO: ======================================
+2018-04-25 10:08:32,847:INFO: Loading PPI Network...
+2018-04-25 10:09:15,001:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:09:15,002:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:09:15,002:INFO: ======================================
+2018-04-25 10:09:15,002:INFO: Loading PPI Network...
+2018-04-25 10:09:31,833:INFO: Loading Disease Associations...
+2018-04-25 10:09:31,840:INFO: Loading PPI Matrix...
+2018-04-25 10:09:39,437:INFO: Running Experiment...
+2018-04-25 10:09:39,438:INFO: 0: Meckel-Gruber syndrome
+2018-04-25 10:10:29,720:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:10:29,720:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:10:29,720:INFO: ======================================
+2018-04-25 10:10:29,720:INFO: Loading PPI Network...
+2018-04-25 10:10:43,151:INFO: Loading Disease Associations...
+2018-04-25 10:10:43,159:INFO: Loading PPI Matrix...
+2018-04-25 10:10:50,664:INFO: Running Experiment...
+2018-04-25 10:10:50,670:INFO: 0: Meckel-Gruber syndrome
+2018-04-25 10:11:44,137:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:11:44,137:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:11:44,138:INFO: ======================================
+2018-04-25 10:11:44,138:INFO: Loading PPI Network...
+2018-04-25 10:11:57,850:INFO: Loading Disease Associations...
+2018-04-25 10:11:57,858:INFO: Loading PPI Matrix...
+2018-04-25 10:12:05,031:INFO: Running Experiment...
+2018-04-25 10:12:05,031:INFO: 0: Meckel-Gruber syndrome
+2018-04-25 10:14:17,680:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:14:17,681:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:14:17,681:INFO: ======================================
+2018-04-25 10:14:17,681:INFO: Loading PPI Network...
+2018-04-25 10:14:32,448:INFO: Loading Disease Associations...
+2018-04-25 10:14:32,455:INFO: Loading PPI Matrix...
+2018-04-25 10:14:40,104:INFO: Running Experiment...
+2018-04-25 10:14:40,104:INFO: 0: Meckel-Gruber syndrome
+2018-04-25 10:16:22,429:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:16:22,429:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:16:22,429:INFO: ======================================
+2018-04-25 10:16:22,430:INFO: Loading PPI Network...
+2018-04-25 10:16:37,946:INFO: Loading Disease Associations...
+2018-04-25 10:16:37,954:INFO: Loading PPI Matrix...
+2018-04-25 10:16:44,652:INFO: Running Experiment...
+2018-04-25 10:16:44,652:INFO: 0: Meckel-Gruber syndrome
+2018-04-25 10:21:18,372:INFO: Disease Protein Prediction in the PPI Network
+2018-04-25 10:21:18,373:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-04-25 10:21:18,373:INFO: ======================================
+2018-04-25 10:21:18,373:INFO: Loading PPI Network...
+2018-04-25 10:21:33,161:INFO: Loading Disease Associations...
+2018-04-25 10:21:33,201:INFO: Loading PPI Matrix...
+2018-04-25 10:21:41,577:INFO: Running Experiment...
+2018-04-25 10:21:41,580:INFO: 0: Hydrops Fetalis, Non-Immune
+2018-04-25 10:21:43,967:INFO: 1: Psychoses, Substance-Induced
+2018-04-25 10:21:46,548:INFO: 2: Zellweger Syndrome
+2018-04-25 10:21:47,725:INFO: 3: Psoriasis
+2018-04-25 10:21:57,725:INFO: 4: Nephrotic Syndrome
+2018-04-25 10:21:59,018:INFO: 5: Nephrosis
+2018-04-25 10:22:00,123:INFO: 6: Mouth Diseases
+2018-04-25 10:22:00,807:INFO: 7: MITOCHONDRIAL COMPLEX I DEFICIENCY
+2018-04-25 10:22:02,869:INFO: 8: Substance-Related Disorders
+2018-04-25 10:22:19,777:INFO: 9: Anemia, Hemolytic
+2018-04-25 10:22:20,336:INFO: 10: Rheumatoid Arthritis
+2018-04-25 10:23:16,342:INFO: 11: Arthritis, Psoriatic
+2018-04-25 10:23:17,093:INFO: 12: Anemia
+2018-04-25 10:23:18,710:INFO: 13: Cholangiocarcinoma
+2018-04-25 10:23:20,165:INFO: 14: Neuroendocrine Tumors
+2018-04-25 10:23:20,610:INFO: 15: Malaria
+2018-04-25 10:23:21,692:INFO: 16: Hyperhomocysteinemia
+2018-04-25 10:23:22,186:INFO: 17: HIV Infections
+2018-04-25 10:23:37,164:INFO: 18: Ankylosing spondylitis
+2018-04-25 10:23:38,118:INFO: 19: Adenoid Cystic Carcinoma
+2018-04-25 10:23:52,994:INFO: 20: Juvenile arthritis
+2018-04-25 10:24:15,450:INFO: 21: Neoplasms, Experimental
+2018-04-25 10:24:17,934:INFO: 22: Neoplasms, Germ Cell and Embryonal
+2018-04-25 10:24:18,586:INFO: 23: Alopecia Areata
+2018-04-25 10:24:18,972:INFO: 24: Alopecia
+2018-04-25 10:24:19,726:INFO: 25: Bradycardia
+2018-04-25 10:24:21,208:INFO: 26: Common Variable Immunodeficiency
+2018-04-25 10:24:21,802:INFO: 27: Glomerulonephritis
+2018-04-25 10:24:23,666:INFO: 28: Alcoholic Intoxication, Chronic
+2018-04-25 10:24:26,739:INFO: 29: Lung Injury
+2018-04-25 10:24:27,937:INFO: 30: Hypercalcemia
+2018-04-25 10:24:28,394:INFO: 31: Cerebrovascular accident
+2018-04-25 10:24:31,366:INFO: 32: Diaphragmatic Hernia
+2018-04-25 10:24:34,938:INFO: 33: Prostatic Intraepithelial Neoplasias
+2018-04-25 10:24:35,607:INFO: 34: Migraine Disorders
+2018-04-25 10:24:37,598:INFO: 35: Restless Legs Syndrome
+2018-04-25 10:24:37,875:INFO: 36: Brugada Syndrome (disorder)
+2018-04-25 10:24:38,869:INFO: 37: Pathological accumulation of air in tissues
+2018-04-25 10:24:39,556:INFO: 38: Craniosynostosis
+2018-04-25 10:24:40,277:INFO: 39: Head and Neck Neoplasms
+2018-04-25 10:24:42,126:INFO: 40: Brain Neoplasms
+2018-04-25 10:24:43,620:INFO: 41: Hearing Loss, Partial
+2018-04-25 10:24:45,022:INFO: 42: Chromosome Aberrations
+2018-04-25 10:24:45,844:INFO: 43: Chronic Lymphocytic Leukemia
+2018-04-25 10:24:50,868:INFO: 44: Refractive Errors
+2018-04-25 10:24:51,861:INFO: 45: Hepatitis C
+2018-04-25 10:24:52,663:INFO: 46: Mesothelioma
+2018-04-25 10:24:56,131:INFO: 47: Noise-induced hearing loss
+2018-04-25 10:24:56,328:INFO: 48: Inflammatory dermatosis
+2018-04-25 10:24:59,006:INFO: 49: Kallmann Syndrome
+2018-04-25 10:25:00,173:INFO: 50: Lipoidosis
+2018-04-25 10:25:01,253:INFO: 51: Diabetes Mellitus
+2018-04-25 10:25:03,195:INFO: 52: Fibrosis
+2018-04-25 10:25:06,474:INFO: 53: Hypercholesterolemia
+2018-04-25 10:25:07,713:INFO: 54: Microcephaly
+2018-04-25 10:25:09,168:INFO: 55: Tongue Neoplasms
+2018-04-25 10:25:09,578:INFO: 56: Common Migraine
+2018-04-25 10:25:10,102:INFO: 57: Carotid Artery Diseases
+2018-04-25 10:25:10,635:INFO: 58: Growth Disorders
+2018-04-25 10:25:12,936:INFO: 59: Absence Epilepsy
+2018-04-25 10:25:13,331:INFO: 60: Epilepsy, Temporal Lobe
+2018-04-25 10:25:14,685:INFO: 61: Memory Disorders
+2018-04-25 10:25:17,469:INFO: 62: Catalepsy
+2018-04-25 10:25:18,245:INFO: 63: Hereditary Nonpolyposis Colorectal Cancer
+2018-04-25 10:25:18,904:INFO: 64: Acute Promyelocytic Leukemia
+2018-04-25 10:25:20,842:INFO: 65: Precursor B-Cell Lymphoblastic Leukemia-Lymphoma
+2018-04-25 10:25:21,354:INFO: 66: Gout
+2018-04-25 10:25:21,783:INFO: 67: Coronary Artery Disease
+2018-04-25 10:25:28,505:INFO: 68: Venous Thromboembolism
+2018-04-25 10:25:30,616:INFO: 69: Precancerous Conditions
+2018-04-25 10:25:39,317:INFO: 70: Crohn Disease
+2018-04-25 10:25:51,808:INFO: 71: Uterine Cervical Neoplasm
+2018-04-25 10:25:53,068:INFO: 72: Dyskinesia, Drug-Induced
+2018-04-25 10:25:53,932:INFO: 73: Ataxia, Spinocerebellar
+2018-04-25 10:25:54,759:INFO: 74: Optic Atrophy, Hereditary, Leber
+2018-04-25 10:25:55,718:INFO: 75: Liver Cirrhosis, Alcoholic
+2018-04-25 10:25:56,911:INFO: 76: Acute Lung Injury
+2018-04-25 10:25:57,990:INFO: 77: Liver Cirrhosis, Experimental
+2018-04-25 10:26:17,616:INFO: 78: Chloracne
+2018-04-25 10:26:20,094:INFO: 79: Liver diseases
+2018-04-25 10:26:29,012:INFO: 80: Kidney Failure, Chronic
+2018-04-25 10:26:33,910:INFO: 81: Weight decreased
+2018-04-25 10:26:34,994:INFO: 82: Leigh Disease
+2018-04-25 10:26:37,410:INFO: 83: Celiac Disease
+2018-04-25 10:26:40,822:INFO: 84: Glaucoma
+2018-04-25 10:26:42,154:INFO: 85: Tachycardia
+2018-04-25 10:26:43,169:INFO: 86: Breast Cancer, Familial
+2018-04-25 10:26:43,772:INFO: 87: Ischemia
+2018-04-25 10:26:45,721:INFO: 88: Adenomatous Polyposis Coli
+2018-04-25 10:26:46,185:INFO: 89: Thyroid Diseases
+2018-04-25 10:26:46,764:INFO: 90: Panic Disorder
+2018-04-25 10:26:47,149:INFO: 91: Colorectal Neoplasms
+2018-04-25 10:27:51,465:INFO: 92: Adrenal Gland Neoplasms
+2018-04-25 10:27:52,048:INFO: 93: Sudden infant death syndrome
+2018-04-25 10:27:52,627:INFO: 94: Neuroblastoma
+2018-04-25 10:27:56,306:INFO: 95: Prostate cancer, familial
+2018-04-25 10:27:57,134:INFO: 96: Animal Mammary Neoplasms
+2018-04-25 10:28:24,031:INFO: 97: Osteochondrodysplasias
+2018-04-25 10:28:24,824:INFO: 98: Hepatolenticular Degeneration
+2018-04-25 10:28:26,387:INFO: 99: Fanconi Anemia
+2018-04-25 10:28:27,525:INFO: 100: Eye Abnormalities
+2018-04-25 10:28:28,294:INFO: 101: Limb Deformities, Congenital
+2018-04-25 10:28:29,126:INFO: 102: Electrocardiogram: P-R interval
+2018-04-25 10:28:29,547:INFO: 103: Mammary Neoplasms, Experimental
+2018-04-25 10:29:01,954:INFO: 104: Heart valve disease
+2018-04-25 10:29:03,406:INFO: 105: Diffuse Large B-Cell Lymphoma
+2018-04-25 10:29:06,125:INFO: 106: Hepatitis
+2018-04-25 10:29:07,127:INFO: 107: Impaired glucose tolerance
+2018-04-25 10:29:07,654:INFO: 108: Mitochondrial Encephalomyopathies
+2018-04-25 10:29:08,168:INFO: 109: Colon Carcinoma
+2018-04-25 10:29:09,727:INFO: 110: Hepatic Encephalopathy
+2018-04-25 10:29:10,448:INFO: 111: Multiple Sclerosis
+2018-04-25 10:29:23,977:INFO: 112: Neurogenic Inflammation
+2018-04-25 10:29:24,601:INFO: 113: Lupus Erythematosus, Systemic
+2018-04-25 10:29:34,410:INFO: 114: Ceroid lipofuscinosis, neuronal 1, infantile
+2018-04-25 10:29:34,943:INFO: 115: Adenocarcinoma of lung (disorder)
+2018-04-25 10:29:39,489:INFO: 116: Charcot-Marie-Tooth Disease
+2018-04-25 10:29:41,836:INFO: 117: Osteogenesis imperfecta type III (disorder)
+2018-04-25 10:29:42,492:INFO: 118: Osteogenesis imperfecta type IV (disorder)
+2018-04-25 10:29:43,015:INFO: 119: Hepatitis, Autoimmune
+2018-04-25 10:29:43,941:INFO: 120: Prostatic Neoplasms
+2018-04-25 10:34:24,776:INFO: 121: NADH:Q(1) Oxidoreductase deficiency
+2018-04-25 10:34:25,912:INFO: 122: Hypospadias
+2018-04-25 10:34:26,642:INFO: 123: Multiple Myeloma
+2018-04-25 10:34:29,787:INFO: 124: Fatty Liver
+2018-04-25 10:34:34,226:INFO: 125: Leishmaniasis, Visceral
+2018-04-25 10:34:34,793:INFO: 126: Early infantile epileptic encephalopathy with suppression bursts
+2018-04-25 10:34:35,906:INFO: 127: Kartagener Syndrome
+2018-04-25 10:34:37,343:INFO: 128: Malignant lymphoma, lymphocytic, intermediate differentiation, diffuse
+2018-04-25 10:34:38,017:INFO: 129: Bipolar Disorder
+2018-04-25 10:34:45,089:INFO: 130: Erectile dysfunction
+2018-04-25 10:34:45,552:INFO: 131: Meckel-Gruber syndrome
+2018-04-25 10:34:46,386:INFO: 132: Colonic Neoplasms
+2018-04-25 10:35:10,233:INFO: 133: Autistic Disorder
+2018-04-25 10:36:21,828:INFO: 134: Liver Neoplasms, Experimental
+2018-04-25 10:36:27,136:INFO: 135: Precursor T-Cell Lymphoblastic Leukemia-Lymphoma
+2018-04-25 10:36:28,189:INFO: 136: Narcolepsy
+2018-04-25 10:36:29,148:INFO: 137: Fever
+2018-04-25 10:36:30,356:INFO: 138: Adenocarcinoma
+2018-04-25 10:36:48,808:INFO: 139: Aortic Valve Insufficiency
+2018-04-25 10:36:49,345:INFO: 140: Carcinoma, Pancreatic Ductal
+2018-04-25 10:36:50,508:INFO: 141: Infarction, Middle Cerebral Artery
+2018-04-25 10:36:52,110:INFO: 142: Hypertensive disease
+2018-04-25 10:37:41,130:INFO: 143: Juvenile Myelomonocytic Leukemia
+2018-04-25 10:37:42,232:INFO: 144: Leprosy
+2018-04-25 10:37:43,255:INFO: 145: Myocardial Infarction
+2018-04-25 10:37:54,940:INFO: 146: Urticaria
+2018-04-25 10:37:55,802:INFO: 147: Cardiac Arrhythmia
+2018-04-25 10:37:56,963:INFO: 148: Hemochromatosis
+2018-04-25 10:37:57,540:INFO: 149: Pancreatic Neoplasm
+2018-04-25 10:38:07,929:INFO: 150: Cardiomyopathy, Dilated
+2018-04-25 10:38:12,322:INFO: 151: Papilloma
+2018-04-25 10:38:12,880:INFO: 152: Pain
+2018-04-25 10:38:16,984:INFO: 153: Congenital Abnormality
+2018-04-25 10:38:17,520:INFO: 154: MYCOBACTERIUM TUBERCULOSIS, SUSCEPTIBILITY TO (finding)
+2018-04-25 10:38:17,975:INFO: 155: Kidney Diseases
+2018-04-25 10:38:29,725:INFO: 156: Lung Diseases, Interstitial
+2018-04-25 10:38:31,030:INFO: 157: Basal cell carcinoma
+2018-04-25 10:38:32,492:INFO: 158: Liver carcinoma
+2018-04-25 10:39:35,713:INFO: 159: gliosarcoma
+2018-04-25 10:39:36,547:INFO: 160: Acute Coronary Syndrome
+2018-04-25 10:39:38,806:INFO: 161: Ovarian Cysts
+2018-04-25 10:39:41,139:INFO: 162: Schizophrenia, Childhood
+2018-04-25 10:39:41,948:INFO: 163: Adrenocortical carcinoma
+2018-04-25 10:39:42,935:INFO: 164: Schizophrenia
+2018-04-25 10:41:06,308:INFO: 165: Atrophic
+2018-04-25 10:41:06,857:INFO: 166: Idiopathic Pulmonary Fibrosis
+2018-04-25 10:41:07,778:INFO: 167: Lobar Holoprosencephaly
+2018-04-25 10:41:08,509:INFO: 168: Alobar Holoprosencephaly
+2018-04-25 10:41:09,221:INFO: 169: Immunologic Deficiency Syndromes
+2018-04-25 10:41:10,134:INFO: 170: Ataxia
+2018-04-25 10:41:10,901:INFO: 171: Adenocarcinoma Of Esophagus
+2018-04-25 10:41:11,669:INFO: 172: Retinitis Pigmentosa
+2018-04-25 10:41:19,803:INFO: 173: Squamous cell carcinoma of esophagus
+2018-04-25 10:41:30,405:INFO: 174: Autoimmune Diseases
+2018-04-25 10:41:32,749:INFO: 175: Diarrhea
+2018-04-25 10:41:33,172:INFO: 176: Myocardial Ischemia
+2018-04-25 10:42:10,305:INFO: 177: Essential Hypertension
+2018-04-25 10:42:10,947:INFO: 178: Hepatomegaly
+2018-04-25 10:42:11,347:INFO: 179: Myopathy
+2018-04-25 10:42:12,927:INFO: 180: Adverse reaction to drug
+2018-04-25 10:42:17,961:INFO: 181: Myoclonic Epilepsies, Progressive
+2018-04-25 10:42:18,552:INFO: 182: Muscular Atrophy
+2018-04-25 10:42:19,228:INFO: 183: Basal Ganglia Diseases
+2018-04-25 10:42:19,783:INFO: 184: Hepatitis B
+2018-04-25 10:42:20,596:INFO: 185: Lung diseases
+2018-04-25 10:42:24,505:INFO: 186: Chronic Obstructive Airway Disease
+2018-04-25 10:42:28,632:INFO: 187: Peripheral Neuropathy
+2018-04-25 10:44:09,072:INFO: 188: Weight Gain
+2018-04-25 10:44:21,305:INFO: 189: Deafness
+2018-04-25 10:44:22,195:INFO: 190: Renal dysplasia and retinal aplasia (disorder)
+2018-04-25 10:44:22,795:INFO: 191: Attention deficit hyperactivity disorder
+2018-04-25 10:44:25,480:INFO: 192: Tetralogy of Fallot
+2018-04-25 10:44:26,232:INFO: 193: Neurodegenerative Disorders
+2018-04-25 10:44:29,467:INFO: 194: Barrett Esophagus
+2018-04-25 10:44:30,237:INFO: 195: Craniofacial Abnormalities
+2018-04-25 10:45:00,547:INFO: 196: Necrotizing Enterocolitis
+2018-04-25 10:45:01,510:INFO: 197: Hyperlipidemia
+2018-04-25 10:45:02,456:INFO: 198: MYELODYSPLASTIC SYNDROME
+2018-04-25 10:45:03,502:INFO: 199: Anoxia
+2018-04-25 10:45:05,825:INFO: 200: Small cell carcinoma of lung
+2018-04-25 10:45:09,235:INFO: 201: Epilepsy
+2018-04-25 10:45:16,217:INFO: 202: Liver Failure, Acute
+2018-04-25 10:45:17,613:INFO: 203: Micronuclei, Chromosome-Defective
+2018-04-25 10:45:18,607:INFO: 204: Cognition Disorders
+2018-04-25 10:45:20,004:INFO: 205: Tonic-Clonic Epilepsy
+2018-04-25 10:45:20,447:INFO: 206: Heart Diseases
+2018-04-25 10:45:24,133:INFO: 207: Adult T-Cell Lymphoma/Leukemia
+2018-04-25 10:45:26,399:INFO: 208: Primary biliary cirrhosis
+2018-04-25 10:45:27,514:INFO: 209: beta Thalassemia
+2018-04-25 10:45:28,065:INFO: 210: Marijuana Abuse
+2018-04-25 10:45:28,603:INFO: 211: Long QT Syndrome
+2018-04-25 10:45:29,559:INFO: 212: Burkitt Lymphoma
+2018-04-25 10:45:30,430:INFO: 213: TOBACCO ADDICTION, SUSCEPTIBILITY TO (finding)
+2018-04-25 10:45:30,904:INFO: 214: Insulin Resistance
+2018-04-25 10:45:36,291:INFO: 215: Left Ventricular Hypertrophy
+2018-04-25 10:45:37,796:INFO: 216: Bronchial Hyperreactivity
+2018-04-25 10:45:38,433:INFO: 217: AMYOTROPHIC LATERAL SCLEROSIS 1
+2018-04-25 10:45:42,765:INFO: 218: Fetal Growth Retardation
+2018-04-25 10:45:43,263:INFO: 219: Holoprosencephaly
+2018-04-25 10:45:43,617:INFO: 220: Arthritis, Experimental
+2018-04-25 10:45:46,831:INFO: 221: Congenital Heart Defects
+2018-04-25 10:45:49,601:INFO: 222: Pseudohypoaldosteronism
+2018-04-25 10:45:50,052:INFO: 223: Cataract
+2018-04-25 10:45:51,536:INFO: 224: Giant Cell Glioblastoma
+2018-04-25 10:45:52,178:INFO: 225: Seizure Adverse Event
+2018-04-25 10:45:53,301:INFO: 226: Body Weight
+2018-04-25 10:45:54,033:INFO: 227: Huntington Disease
+2018-04-25 10:45:54,823:INFO: 228: Glioblastoma
+2018-04-25 10:46:01,821:INFO: 229: Congenital diaphragmatic hernia
+2018-04-25 10:46:02,449:INFO: 230: Systemic Scleroderma
+2018-04-25 10:46:03,863:INFO: 231: Acute kidney injury
+2018-04-25 10:46:11,188:INFO: 232: Copper-Overload Cirrhosis
+2018-04-25 10:46:11,713:INFO: 233: Spontaneous abortion
+2018-04-25 10:46:28,522:INFO: 234: Glioma
+2018-04-25 10:46:36,774:INFO: 235: Gliosis
+2018-04-25 10:46:37,805:INFO: 236: LEIGH SYNDROME DUE TO MITOCHONDRIAL COMPLEX I DEFICIENCY
+2018-04-25 10:46:38,545:INFO: 237: Dementia
+2018-04-25 10:46:39,049:INFO: 238: Pancreatitis
+2018-04-25 10:46:40,182:INFO: 239: Amino Acid Metabolism, Inborn Errors
+2018-04-25 10:46:40,794:INFO: 240: Thyroid Neoplasm
+2018-04-25 10:46:43,191:INFO: 241: Neoplasm Invasiveness
+2018-04-25 10:47:06,551:INFO: 242: Neoplasm Metastasis
+2018-04-25 10:47:32,949:INFO: 243: Albuminuria
+2018-04-25 10:47:34,072:INFO: 244: Pre-Eclampsia
+2018-04-25 10:47:35,026:INFO: 245: Nerve Degeneration
+2018-04-25 10:47:43,730:INFO: 246: Thromboembolism
+2018-04-25 10:47:44,270:INFO: 247: Polycystic Ovary Syndrome
+2018-04-25 10:48:13,137:INFO: 248: Transient Ischemic Attack
+2018-04-25 10:48:13,598:INFO: 249: Brain Ischemia
+2018-04-25 10:48:19,662:INFO: 250: Cerebral Infarction
+2018-04-25 10:48:20,108:INFO: 251: Malignant neoplasm of esophagus
+2018-04-25 10:48:21,093:INFO: 252: Degenerative polyarthritis
+2018-04-25 10:48:34,337:INFO: 253: Osteitis Deformans
+2018-04-25 10:48:34,698:INFO: 254: Diabetic Cardiomyopathies
+2018-04-25 10:48:35,188:INFO: 255: Nuclear cataract
+2018-04-25 10:48:35,751:INFO: 256: Anorexia
+2018-04-25 10:48:36,513:INFO: 257: Cocaine-Related Disorders
+2018-04-25 10:48:47,790:INFO: 258: MELAS Syndrome
+2018-04-25 10:48:48,220:INFO: 259: Mitochondrial Myopathies
+2018-04-25 10:48:48,467:INFO: 260: Amphetamine-Related Disorders
+2018-04-25 10:48:57,858:INFO: 261: Birth Weight
+2018-04-25 10:48:58,302:INFO: 262: Brain Diseases
+2018-04-25 10:48:59,613:INFO: 263: Dyslipidemias
+2018-04-25 10:49:00,458:INFO: 264: Berylliosis
+2018-04-25 10:49:00,844:INFO: 265: Mental Retardation, X-Linked
+2018-04-25 10:49:01,796:INFO: 266: Sarcoidosis
+2018-04-25 10:49:02,127:INFO: 267: Liver neoplasms
+2018-04-25 10:49:18,375:INFO: 268: Myocardial Reperfusion Injury
+2018-04-25 10:49:20,940:INFO: 269: Microsatellite Instability
+2018-04-25 10:49:21,507:INFO: 270: Night blindness, congenital stationary
+2018-04-25 10:49:21,958:INFO: 271: Stevens-Johnson Syndrome
+2018-04-25 10:49:23,999:INFO: 272: Leukemia, Lymphocytic, Acute, L1
+2018-04-25 10:49:24,501:INFO: 273: Systemic arterial pressure
+2018-04-25 10:49:29,015:INFO: 274: Learning Disorders
+2018-04-25 10:49:30,748:INFO: 275: Walker-Warburg congenital muscular dystrophy
+2018-04-25 10:49:31,368:INFO: 276: Marfan Syndrome
+2018-04-25 10:49:31,813:INFO: 277: Congenital ocular coloboma (disorder)
+2018-04-25 10:49:32,399:INFO: 278: Lung Neoplasms
+2018-04-25 10:50:10,238:INFO: 279: Myoclonic Epilepsy, Juvenile
+2018-04-25 10:50:10,507:INFO: 280: Inflammatory Bowel Diseases
+2018-04-25 10:50:20,551:INFO: 281: Mammary Neoplasms
+2018-04-25 10:53:45,330:INFO: 282: Idiopathic generalized epilepsy
+2018-04-25 10:53:45,585:INFO: 283: Neuralgia
+2018-04-25 10:53:46,152:INFO: 284: Neural Tube Defects
+2018-04-25 10:53:47,925:INFO: 285: Dermatitis, Allergic Contact
+2018-04-25 10:53:56,633:INFO: 286: Inborn Errors of Metabolism
+2018-04-25 10:53:58,308:INFO: 287: Platelet mean volume finding
+2018-04-25 10:54:01,293:INFO: 288: Intestinal Neoplasms
+2018-04-25 10:54:01,831:INFO: 289: Allergic rhinitis (disorder)
+2018-04-25 10:54:02,321:INFO: 290: Blood pressure finding
+2018-04-25 10:54:06,992:INFO: 291: Age related macular degeneration
+2018-04-25 10:54:10,128:INFO: 292: Hyperplasia
+2018-04-25 10:54:12,159:INFO: 293: Pulmonary function (finding)
+2018-04-25 10:54:14,314:INFO: 294: Spina Bifida
+2018-04-25 10:54:14,886:INFO: 295: Hypertrophic Cardiomyopathy
+2018-04-25 10:54:16,206:INFO: 296: Bardet-Biedl Syndrome
+2018-04-25 10:54:17,440:INFO: 297: Keloid
+2018-04-25 10:54:19,910:INFO: 298: melanoma
+2018-04-25 10:55:09,532:INFO: 299: LEUKEMIA, ACUTE LYMPHOBLASTIC, SUSCEPTIBILITY TO, 3
+2018-04-25 10:55:10,767:INFO: 300: Pneumonia
+2018-04-25 10:55:14,871:INFO: 301: Disease Progression
+2018-04-25 10:55:36,492:INFO: 302: Nephroblastoma
+2018-04-25 10:55:37,364:INFO: 303: Severe Combined Immunodeficiency
+2018-04-25 10:55:37,952:INFO: 304: Malignant neoplasm of ovary
+2018-04-25 10:55:38,706:INFO: 305: Pheochromocytoma
+2018-04-25 10:55:39,561:INFO: 306: Testicular Germ Cell Tumor
+2018-04-25 10:55:40,784:INFO: 307: Hypogonadism
+2018-04-25 10:55:41,407:INFO: 308: Movement Disorders
+2018-04-25 10:55:42,640:INFO: 309: Sarcoma
+2018-04-25 10:55:43,296:INFO: 310: Lymphatic Metastasis
+2018-04-25 10:55:44,014:INFO: 311: Hypoglycemia
+2018-04-25 10:55:44,477:INFO: 312: Anemia, Sickle Cell
+2018-04-25 10:55:44,978:INFO: 313: Muscular Dystrophy, Facioscapulohumeral
+2018-04-25 10:55:45,637:INFO: 314: Colorectal Cancer
+2018-04-25 10:55:47,782:INFO: 315: Atherosclerosis
+2018-04-25 10:55:53,925:INFO: 316: Asthma
+2018-04-25 10:56:11,356:INFO: 317: Cardiomyopathy, Hypertrophic, Familial
+2018-04-25 10:56:12,665:INFO: 318: Skin Neoplasms
+2018-04-25 10:56:17,165:INFO: 319: Seizures
+2018-04-25 10:56:31,748:INFO: 320: Alzheimer's Disease
+2018-04-25 10:57:02,698:INFO: 321: Menopause present (finding)
+2018-04-25 10:57:03,788:INFO: 322: Neoplastic Syndromes, Hereditary
+2018-04-25 10:57:08,244:INFO: 323: Gastrointestinal Diseases
+2018-04-25 10:57:08,864:INFO: 324: Cytochrome-c Oxidase Deficiency
+2018-04-25 10:57:09,588:INFO: 325: Retinal Degeneration
+2018-04-25 10:57:10,463:INFO: 326: Retinal Diseases
+2018-04-25 10:57:11,846:INFO: 327: Methylmalonic acidemia
+2018-04-25 10:57:12,329:INFO: 328: Contact Dermatitis
+2018-04-25 10:57:20,637:INFO: 329: Dermatitis, Atopic
+2018-04-25 10:57:23,814:INFO: 330: Coronary heart disease
+2018-04-25 10:57:29,727:INFO: 331: Osteoporosis
+2018-04-25 10:57:37,011:INFO: 332: Cardiomegaly
+2018-04-25 10:57:44,191:INFO: 333: Heart failure
+2018-04-25 10:57:54,989:INFO: 334: Hereditary Breast and Ovarian Cancer Syndrome
+2018-04-25 10:57:55,732:INFO: 335: Major Depressive Disorder
+2018-04-25 10:57:58,118:INFO: 336: Dermatologic disorders
+2018-04-25 10:58:06,088:INFO: 337: Inflammation
+2018-04-25 10:58:24,356:INFO: 338: Diabetic Neuropathies
+2018-04-25 10:58:25,055:INFO: 339: Male infertility
+2018-04-25 10:58:28,683:INFO: 340: Vascular Diseases
+2018-04-25 10:58:30,120:INFO: 341: Female infertility
+2018-04-25 10:58:31,984:INFO: 342: leukemia
+2018-04-25 10:58:34,498:INFO: 343: Ulcerative Colitis
+2018-04-25 10:58:46,447:INFO: 344: Influenza
+2018-04-25 10:58:52,673:INFO: 345: Nephritis, Interstitial
+2018-04-25 10:58:53,116:INFO: 346: Sjogren's Syndrome
+2018-04-25 10:58:53,718:INFO: 347: Infant length
+2018-04-25 10:58:54,272:INFO: 348: Child Development Disorders, Pervasive
+2018-04-25 10:58:59,467:INFO: 349: Substance Withdrawal Syndrome
+2018-04-25 10:59:05,499:INFO: 350: Malformations of Cortical Development
+2018-04-25 10:59:06,243:INFO: 351: Amyotrophic Lateral Sclerosis
+2018-04-25 10:59:14,366:INFO: 352: Developmental Disabilities
+2018-04-25 10:59:15,453:INFO: 353: Febrile Convulsions
+2018-04-25 10:59:15,987:INFO: 354: Cholestasis
+2018-04-25 10:59:19,465:INFO: 355: Pulmonary Hypertension
+2018-04-25 10:59:21,783:INFO: 356: Papillary thyroid carcinoma
+2018-04-25 10:59:23,857:INFO: 357: Salivary Gland Neoplasms
+2018-04-25 10:59:28,196:INFO: 358: Non-alcoholic Fatty Liver Disease
+2018-04-25 10:59:32,027:INFO: 359: Hay fever
+2018-04-25 10:59:32,549:INFO: 360: Hypercholesterolemia, Familial
+2018-04-25 10:59:33,440:INFO: 361: Down Syndrome
+2018-04-25 10:59:48,684:INFO: 362: Arrhythmogenic Right Ventricular Dysplasia
+2018-04-25 10:59:49,163:INFO: 363: Semilobar Holoprosencephaly
+2018-04-25 10:59:49,858:INFO: 364: Hypertriglyceridemia
+2018-04-25 10:59:50,557:INFO: 365: Sensorineural Hearing Loss (disorder)
+2018-04-25 10:59:50,973:INFO: 366: Metabolic Syndrome X
+2018-04-25 10:59:54,408:INFO: 367: Malignant neoplasm of lung
+2018-04-25 10:59:55,277:INFO: 368: Leukemia, Myelocytic, Acute
+2018-04-25 11:00:14,243:INFO: 369: Malignant neoplasm of prostate
+2018-04-25 11:00:21,132:INFO: 370: Renal Insufficiency
+2018-04-25 11:00:21,570:INFO: 371: Jeune thoracic dystrophy
+2018-04-25 11:00:21,944:INFO: 372: Renal Cell Carcinoma
+2018-04-25 11:00:42,852:INFO: 373: Squamous cell carcinoma
+2018-04-25 11:00:53,625:INFO: 374: Non-Small Cell Lung Carcinoma
+2018-04-25 11:01:11,904:INFO: 375: Manganese Poisoning
+2018-04-25 11:01:12,482:INFO: 376: Ventricular Dysfunction, Left
+2018-04-25 11:01:13,458:INFO: 377: Carcinoma, Transitional Cell
+2018-04-25 11:01:15,739:INFO: 378: Mucocutaneous Lymph Node Syndrome
+2018-04-25 11:01:16,270:INFO: 379: Tobacco Use Disorder
+2018-04-25 11:01:16,843:INFO: 380: Proteinuria
+2018-04-25 11:01:20,079:INFO: 381: Diabetic Nephropathy
+2018-04-25 11:01:23,076:INFO: 382: Williams Syndrome
+2018-04-25 11:01:23,578:INFO: 383: Oral Submucous Fibrosis
+2018-04-25 11:01:24,487:INFO: 384: Adenoma
+2018-04-25 11:01:27,021:INFO: 385: Neutropenia
+2018-04-25 11:01:27,685:INFO: 386: Poor school performance
+2018-04-25 11:01:28,372:INFO: 387: Pneumoconiosis
+2018-04-25 11:01:29,139:INFO: 388: Cardiovascular Diseases
+2018-04-25 11:01:34,089:INFO: 389: Fibrinogen Adverse Event
+2018-04-25 11:01:35,195:INFO: 390: Diabetes Mellitus, Non-Insulin-Dependent
+2018-04-25 11:02:09,216:INFO: 391: Thrombocytopenia
+2018-04-25 11:02:10,508:INFO: 392: Sezary Syndrome
+2018-04-25 11:02:12,449:INFO: 393: Nuclear non-senile cataract
+2018-04-25 11:02:13,172:INFO: 394: Diabetic Retinopathy
+2018-04-25 11:02:14,081:INFO: 395: hearing impairment
+2018-04-25 11:02:16,793:INFO: 396: Psychotic Disorders
+2018-04-25 11:02:17,751:INFO: 397: Anxiety Disorders
+2018-04-25 11:02:20,310:INFO: 398: Finding of Mean Corpuscular Hemoglobin
+2018-04-25 11:02:21,121:INFO: 399: Motion Sickness
+2018-04-25 11:02:21,837:INFO: 400: Lymphoma, Non-Hodgkin
+2018-04-25 11:02:23,215:INFO: 401: Lymphoma, Follicular
+2018-04-25 11:02:24,480:INFO: 402: Thrombocythemia, Essential
+2018-04-25 11:02:25,098:INFO: 403: Arthritis
+2018-04-25 11:02:25,505:INFO: 404: Hypotension
+2018-04-25 11:02:30,638:INFO: 405: Reperfusion Injury
+2018-04-25 11:02:42,585:INFO: 406: Heat Stroke
+2018-04-25 11:02:43,222:INFO: 407: Hemangiosarcoma
+2018-04-25 11:02:44,320:INFO: 408: Drug Allergy
+2018-04-25 11:02:47,047:INFO: 409: SOLITARY MEDIAN MAXILLARY CENTRAL INCISOR
+2018-04-25 11:02:47,802:INFO: 410: Medulloblastoma
+2018-04-25 11:02:51,867:INFO: 411: Cleft Lip
+2018-04-25 11:02:53,561:INFO: 412: Cleft Palate
+2018-04-25 11:02:57,114:INFO: 413: Muscle Weakness
+2018-04-25 11:03:11,109:INFO: 414: Mental disorders
+2018-04-25 11:03:11,757:INFO: 415: Astrocytoma
+2018-04-25 11:03:13,706:INFO: 416: Anemia, Diamond-Blackfan
+2018-04-25 11:03:14,614:INFO: 417: Asthma, Aspirin-Induced
+2018-04-25 11:03:15,306:INFO: 418: Leber Congenital Amaurosis
+2018-04-25 11:03:16,652:INFO: 419: Cachexia
+2018-04-25 11:03:17,200:INFO: 420: Respiratory Insufficiency
+2018-04-25 11:03:17,766:INFO: 421: Respiratory Hypersensitivity
+2018-04-25 11:03:18,852:INFO: 422: Nasopharyngeal carcinoma
+2018-04-25 11:03:20,038:INFO: 423: Hyperalgesia
+2018-04-25 11:03:28,013:INFO: 424: Meningioma
+2018-04-25 11:03:28,714:INFO: 425: Sudden Cardiac Arrest
+2018-04-25 11:03:29,566:INFO: 426: Intellectual Disability
+2018-04-25 11:03:56,157:INFO: 427: Graves Disease
+2018-04-25 11:03:57,016:INFO: 428: Neurotoxicity Syndromes
+2018-04-25 11:03:58,935:INFO: 429: Cardiomyopathy, Familial Hypertrophic, 1 (disorder)
+2018-04-25 11:03:59,446:INFO: 430: Atrial Fibrillation
+2018-04-25 11:04:01,361:INFO: 431: Hepatitis, Chronic
+2018-04-25 11:04:02,962:INFO: 432: Behcet Syndrome
+2018-04-25 11:04:04,822:INFO: 433: Diabetes Mellitus, Insulin-Dependent
+2018-04-25 11:04:16,220:INFO: 434: Diabetes Mellitus, Experimental
+2018-04-25 11:04:32,383:INFO: 435: Parkinsonian Disorders
+2018-04-25 11:04:33,736:INFO: 436: Necrosis
+2018-04-25 11:04:38,703:INFO: 437: Gestational Diabetes
+2018-04-25 11:04:39,288:INFO: 438: Idiopathic Membranous Glomerulonephritis
+2018-04-25 11:04:40,166:INFO: 439: Hypersensitivity
+2018-04-25 11:04:46,985:INFO: 440: Myopia
+2018-04-25 11:04:49,099:INFO: 441: Hyperemia
+2018-04-25 11:04:49,730:INFO: 442: Tooth Abnormalities
+2018-04-25 11:04:50,192:INFO: 443: Hyperglycemia
+2018-04-25 11:04:51,325:INFO: 444: Noonan Syndrome
+2018-04-25 11:04:52,265:INFO: 445: Hyperinsulinism
+2018-04-25 11:04:53,159:INFO: 446: Edema
+2018-04-25 11:04:54,766:INFO: 447: Hodgkin Disease
+2018-04-25 11:04:55,608:INFO: 448: Metabolic Bone Disorder
+2018-04-25 11:04:56,123:INFO: 449: Bone Diseases, Developmental
+2018-04-25 11:04:57,763:INFO: 450: Tachycardia, Ventricular
+2018-04-25 11:04:58,291:INFO: 451: Dystonia
+2018-04-25 11:04:59,122:INFO: 452: Squamous cell carcinoma of the head and neck
+2018-04-25 11:05:00,914:INFO: 453: Pulmonary Embolism
+2018-04-25 11:05:01,497:INFO: 454: Pulmonary Fibrosis
+2018-04-25 11:05:05,875:INFO: 455: West Syndrome
+2018-04-25 11:05:06,668:INFO: 456: Cerebral Hemorrhage
+2018-04-25 11:05:08,494:INFO: 457: Romano-Ward Syndrome
+2018-04-25 11:05:09,199:INFO: 458: Mouth Neoplasms
+2018-04-25 11:05:12,735:INFO: 459: Liver Cirrhosis
+2018-04-25 11:05:17,905:INFO: 460: Neoplasm Recurrence, Local
+2018-04-25 11:05:19,435:INFO: 461: Obesity
+2018-04-25 11:06:47,780:INFO: 462: Biliary cirrhosis
+2018-04-25 11:06:50,144:INFO: 463: Precursor Cell Lymphoblastic Leukemia Lymphoma
+2018-04-25 11:06:54,027:INFO: 464: Cardiomyopathies
+2018-04-25 11:07:07,579:INFO: 465: Peroxisome biogenesis disorders
+2018-04-25 11:07:08,108:INFO: 466: Dyskeratosis Congenita
+2018-04-25 11:07:08,853:INFO: 467: Uremia
+2018-04-25 11:07:09,828:INFO: 468: Depressive disorder
+2018-04-25 11:07:12,690:INFO: 469: Thrombosis
+2018-04-25 11:07:15,995:INFO: 470: nervous system disorder
+2018-04-25 11:07:22,641:INFO: 471: Lymphoma
+2018-04-25 11:07:23,708:INFO: 472: IGA Glomerulonephritis
+2018-04-25 11:11:09,369:INFO: 473: Kidney Neoplasm
+2018-04-25 11:11:11,203:INFO: 474: Hypothermia, natural
+2018-04-25 11:11:11,792:INFO: 475: Focal glomerulosclerosis
+2018-04-25 11:11:13,174:INFO: 476: Hepatitis B, Chronic
+2018-04-25 11:11:13,978:INFO: 477: Drug Eruptions
+2018-04-25 11:11:14,957:INFO: 478: Malignant neoplasm of pancreas
+2018-04-25 11:11:15,614:INFO: 479: Stomach Neoplasms
+2018-04-25 11:13:01,198:INFO: 480: Osteosarcoma
+2018-04-25 11:13:03,794:INFO: 481: Vitiligo
+2018-04-25 11:13:06,147:INFO: 482: Gastric ulcer
+2018-04-25 11:13:07,168:INFO: 483: Malignant neoplasm of breast
+2018-04-25 11:13:14,276:INFO: 484: Drug-Induced Liver Injury
+2018-04-25 11:13:35,489:INFO: 485: Colitis
+2018-04-25 11:13:37,016:INFO: 486: Lymphoma, T-Cell, Cutaneous
+2018-04-25 11:13:38,359:INFO: 487: T-Cell Lymphoma
+2018-04-25 11:13:38,949:INFO: 488: Hyperactive behavior
+2018-04-25 11:13:41,034:INFO: 489: Skin Abnormalities
+2018-04-25 11:13:41,515:INFO: 490: Epithelial ovarian cancer
+2018-04-25 11:13:42,648:INFO: 491: Infantile Refsum Disease (disorder)
+2018-04-25 11:13:43,274:INFO: 492: Adrenoleukodystrophy, Neonatal
+2018-04-25 11:13:43,899:INFO: 493: Hirschsprung Disease
+2018-04-25 11:13:44,359:INFO: 494: Female Urogenital Diseases
+2018-04-25 11:13:45,366:INFO: 495: ovarian neoplasm
+2018-04-25 11:14:00,885:INFO: 496: Aortic Aneurysm, Abdominal
+2018-04-25 11:14:01,419:INFO: 497: Venous Thrombosis
+2018-04-25 11:14:02,582:INFO: 498: Amnesia
+2018-04-25 11:14:03,589:INFO: 499: Bladder Neoplasm
+2018-04-25 11:14:21,386:INFO: 500: Hemorrhage
+2018-04-25 11:14:22,634:INFO: 501: Status Epilepticus
+2018-04-25 11:14:31,231:INFO: 502: Chronic Kidney Diseases
+2018-04-25 11:14:32,513:INFO: 503: Myeloid Leukemia, Chronic
+2018-04-25 11:14:33,939:INFO: 504: Myeloid Leukemia
+2018-04-25 11:14:34,846:INFO: 505: Calcinosis
+2018-04-25 11:14:37,642:INFO: 506: Creutzfeldt-Jakob disease
+2018-04-25 11:14:38,271:INFO: 507: Left ventricular noncompaction
+2018-04-25 11:14:38,864:INFO: 508: Parkinson Disease
+2018-04-25 11:14:52,908:INFO: 509: Endometrial Neoplasms
+2018-04-25 11:14:57,485:INFO: 510: Sepsis
+2018-04-25 11:14:58,684:INFO: 511: Endometriosis
+2018-04-25 11:15:31,479:INFO: 512: Esophageal Neoplasms
+2018-04-25 11:15:38,657:INFO: 513: Eosinophilic esophagitis
+2018-04-25 11:15:39,519:INFO: 514: Malignant neoplasm of urinary bladder
+2018-04-25 11:15:40,396:INFO: 515: Lewy Body Disease
+2018-04-25 11:15:41,513:INFO: 516: PARKINSON DISEASE, LATE-ONSET
+2018-04-25 11:15:42,392:INFO: 517: Neoplastic Cell Transformation
+2018-04-25 11:15:52,924:INFO: 518: Arsenic Poisoning

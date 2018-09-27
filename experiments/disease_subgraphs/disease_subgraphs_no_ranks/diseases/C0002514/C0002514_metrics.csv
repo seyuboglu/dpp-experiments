@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002514,"Amino Acid Metabolism, Inborn Errors",13,13,0.0641025641025641,0.19692307692307692,0.38461538461538464,0.9682539682539683,0.9799373040752352,0.9901071723000825,0.9376498800959233,0.17159763313609463

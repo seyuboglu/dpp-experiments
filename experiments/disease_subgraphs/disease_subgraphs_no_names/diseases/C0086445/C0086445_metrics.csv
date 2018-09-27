@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0086445,Idiopathic Membranous Glomerulonephritis,16,43,0.05,0.15538847117794485,0.20155038759689922,0.9859649122807017,0.9743271221532092,0.9805274701760017,0.9656108597285068,0.13517441860465115

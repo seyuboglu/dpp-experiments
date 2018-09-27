@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1861063,"TOBACCO ADDICTION, SUSCEPTIBILITY TO (finding)",10,4,0.1111111111111111,0.1978021978021978,0.6666666666666666,0.9425287356321839,0.9614147909967846,0.9894598155467721,0.8804347826086957,0.22499999999999998

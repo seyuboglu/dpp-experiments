@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019284,Diaphragmatic Hernia,40,331,0.035897435897435895,0.09193223551711882,0.09955140529158656,0.974706413730804,0.8479865812897144,0.8633370199075006,0.9017746595130004,0.060422960725075532

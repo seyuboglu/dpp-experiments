@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0021364,Male infertility,43,899,0.05094130675526024,0.05867258186912615,0.06132029897114091,0.9786145978614598,0.6936487713886874,0.6965569660600339,0.8615714564242543,0.060713454225625366

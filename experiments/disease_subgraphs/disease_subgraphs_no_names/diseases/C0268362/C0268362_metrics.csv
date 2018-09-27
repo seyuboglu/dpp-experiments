@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0268362,Osteogenesis imperfecta type III (disorder),11,73,0.12727272727272726,0.12006172839506173,0.1080669710806697,0.9766277128547579,0.9558456299659478,0.9669171180616227,0.8993948562783661,0.19676214196762143

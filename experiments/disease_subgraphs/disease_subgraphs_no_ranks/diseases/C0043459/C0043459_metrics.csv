@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0043459,Zellweger Syndrome,15,53,0.3523809523809524,0.16182873730043543,0.16182873730043543,0.8634686346863468,0.9678303519907675,0.9678303519907675,0.8397003745318352,0.1874213836477987

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009324,Ulcerative Colitis,81,934,0.020987654320987655,0.055393163178805244,0.060547013961088886,0.9696564033913432,0.6910633013779001,0.6967823133552098,0.868611265557504,0.033243450445449012

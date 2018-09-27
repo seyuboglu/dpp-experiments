@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0752166,Bardet-Biedl Syndrome,21,84,0.19523809523809524,0.11056568489948575,0.10900745840504876,0.8774289985052317,0.9340030696246686,0.9453748292963415,0.8757875787578758,0.14455782312925167

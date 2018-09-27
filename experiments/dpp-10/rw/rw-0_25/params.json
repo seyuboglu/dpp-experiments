@@ -1,0 +1,13 @@
+{
+    "n_processes": 30, 
+
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/bio-pathways-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "random_walk",
+
+    "rw_alpha": 0.25
+}

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027794,Neural Tube Defects,26,61,0.046153846153846156,0.12162937464142283,0.18469945355191256,0.958041958041958,0.9647166514105018,0.971315822972801,0.9093893630991464,0.08007566204287514

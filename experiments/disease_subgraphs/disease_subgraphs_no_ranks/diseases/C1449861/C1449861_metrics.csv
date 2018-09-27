@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1449861,"Micronuclei, Chromosome-Defective",18,169,0.1111111111111111,0.18459975877610613,0.19737954353338968,0.9728867623604466,0.8981293351082463,0.9011274016831631,0.9201022690955577,0.13313609467455623

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023434,Chronic Lymphocytic Leukemia,49,826,0.036564625850340135,0.08148469014809,0.08634529312495415,0.9802071346375144,0.662695699924914,0.6676269558831837,0.8949593152277291,0.054158225033354754

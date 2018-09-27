@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020542,Pulmonary Hypertension,31,108,0.04516129032258064,0.12344293569745259,0.16182069920387676,0.9663461538461539,0.9374840157994941,0.9454731010351363,0.9219784047370254,0.072281959378733551

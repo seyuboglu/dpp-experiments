@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265965,Dyskeratosis Congenita,12,62,0.2727272727272727,0.18362731795567616,0.20306716023268112,0.9394957983193277,0.9471594976247804,0.9492868462757528,0.9121019108280255,0.20967741935483866

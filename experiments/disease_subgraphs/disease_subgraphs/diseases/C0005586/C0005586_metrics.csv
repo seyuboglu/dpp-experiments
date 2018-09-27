@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005586,Bipolar Disorder,63,677,0.017409114183307733,0.06428396940827179,0.07212030101474483,0.984033810753698,0.7527768343004979,0.7591892720082882,0.8911159263271939,0.037349651825279592

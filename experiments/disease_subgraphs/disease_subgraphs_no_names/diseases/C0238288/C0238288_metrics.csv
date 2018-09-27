@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0238288,"Muscular Dystrophy, Facioscapulohumeral",12,107,0.09090909090909091,0.18444666001994017,0.1881502380532534,0.9879518072289156,0.9357304151467778,0.9457038902882732,0.9280334728033472,0.17289719626168223

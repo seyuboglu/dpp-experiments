@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0015625,Fanconi Anemia,19,134,0.3216374269005848,0.1486300645297789,0.14992705644708787,0.9053356282271945,0.9221455683927632,0.9252357368700859,0.8373778758272927,0.18146111547525526

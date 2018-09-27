@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023890,Liver Cirrhosis,54,566,0.04891684136967156,0.06773905786883831,0.07117170643234623,0.9574468085106383,0.7909172462184799,0.7963292736400326,0.8624119353501865,0.050124329276272736

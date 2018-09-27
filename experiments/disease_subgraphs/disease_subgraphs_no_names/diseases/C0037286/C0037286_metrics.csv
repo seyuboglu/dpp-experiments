@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0037286,Skin Neoplasms,47,1252,0.07770582793709528,0.04405324184155423,0.04477057331770366,0.9734345351043643,0.6427486156470998,0.6449447077409163,0.8463607509817634,0.063404935082591249

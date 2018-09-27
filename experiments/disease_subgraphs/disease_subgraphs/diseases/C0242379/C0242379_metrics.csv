@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0242379,Malignant neoplasm of lung,16,94,0.1,0.17970683418998668,0.20475863646762754,0.9781221513217867,0.9391399651859971,0.9418302352788249,0.9425798625151638,0.14295212765957446

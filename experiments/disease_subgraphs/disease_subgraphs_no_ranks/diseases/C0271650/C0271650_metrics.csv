@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271650,Impaired glucose tolerance,11,103,0.2,0.12126772310258549,0.12659432705120882,0.9760869565217392,0.9488406460011963,0.9525271273557967,0.9085072231139647,0.20388349514563114
