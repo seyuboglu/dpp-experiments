@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0856975,Autistic behavior,20,96,0.05263157894736842,0.12918275418275418,0.156359649122807,0.9797160243407708,0.9459313874019459,0.9509645472989237,0.9206635412910206,0.10781250000000002

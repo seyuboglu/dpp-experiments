@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021664,Abnormality of the abdominal wall,10,118,0.13333333333333333,0.1345806451612903,0.1408083441981747,0.9885167464114832,0.9396516808424463,0.9432773109243697,0.9240344717523141,0.20677966101694914

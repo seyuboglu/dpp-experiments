@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013604,Edema,69,560,0.02216538789428815,0.06757998099461514,0.07615640173779709,0.9685705651254155,0.7926207930014986,0.8034867905864898,0.8609691269679002,0.038690476190476185

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2675111,Abnormal eyelashes,13,58,0.0641025641025641,0.14285714285714285,0.12764670296430733,0.9835796387520526,0.9618973990833287,0.9759269823160297,0.9239646978954514,0.17904509283819625

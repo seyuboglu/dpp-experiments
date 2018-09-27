@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021759,Generalized myoclonic seizures,30,100,0.029885057471264367,0.07847619047619048,0.08646464646464647,0.973973973973974,0.9547103440694734,0.9676027552796912,0.8743859649122807,0.073

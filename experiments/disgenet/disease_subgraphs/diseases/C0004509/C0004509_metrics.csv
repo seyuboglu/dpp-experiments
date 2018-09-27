@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004509,Azoospermia,31,224,0.047311827956989246,0.11140133211440512,0.12455957719410635,0.9783357951747907,0.8858137277868879,0.8936701073210745,0.9333691563675444,0.07502880184331795

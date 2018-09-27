@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036421,Systemic Scleroderma,12,101,0.07575757575757576,0.1498103666245259,0.14514851485148514,0.992603550295858,0.9399334706161888,0.9514778406646146,0.9510290986515259,0.17326732673267334

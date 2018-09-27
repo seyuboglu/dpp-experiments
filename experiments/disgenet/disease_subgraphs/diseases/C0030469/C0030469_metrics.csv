@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0030469,Paranasal Sinus Diseases,34,300,0.062388591800356503,0.09689334344926726,0.10321070234113712,0.9651220727453911,0.8626340966344929,0.8674948832815698,0.8864731154797553,0.07509803921568628

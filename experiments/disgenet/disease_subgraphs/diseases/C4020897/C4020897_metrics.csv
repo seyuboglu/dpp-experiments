@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020897,Uroureter,15,81,0.06666666666666667,0.19240448409974834,0.2132716049382716,0.9848320693391116,0.9438228516081627,0.952590051457976,0.9484240687679083,0.13662551440329218

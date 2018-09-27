@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005695,Bladder Neoplasm,109,2336,0.0326197757390418,0.02979357056192848,0.030878384324308467,0.9655419956927495,0.4655244581380784,0.4680185088675163,0.7922602649875378,0.03189801432700767

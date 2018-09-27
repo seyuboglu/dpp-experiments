@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0587246,Muscle weakness of limb,21,265,0.07142857142857142,0.13398313607178772,0.14359634076615208,0.9844559585492227,0.8651492934352413,0.868914492999465,0.937250823366268,0.112848158131177

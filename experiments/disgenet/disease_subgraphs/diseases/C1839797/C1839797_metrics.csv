@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839797,Deep philtrum,21,260,0.09523809523809523,0.12217194570135746,0.12768042768042767,0.9804496578690127,0.8736736569471134,0.8788553393544024,0.938261304855665,0.1065934065934066

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0222716,Structure of wormian bone,23,200,0.06719367588932806,0.106244616709733,0.11045226130653266,0.9774386197743862,0.9154789639577908,0.9235159022896513,0.9209699146834306,0.10239130434782608

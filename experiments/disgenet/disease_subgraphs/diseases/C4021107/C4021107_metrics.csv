@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021107,Non-obstructive azoospermia,22,36,0.03896103896103896,0.14545454545454545,0.2619047619047619,0.9732540861812778,0.9653679653679653,0.9732836787564767,0.9436893203883495,0.09469696969696968

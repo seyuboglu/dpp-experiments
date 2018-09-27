@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1333990,Hereditary Nonpolyposis Colorectal Cancer,11,121,0.4,0.15250458956202464,0.15592286501377411,0.9485981308411215,0.9165949512335054,0.9182317249349898,0.8842923794712286,0.23140495867768593

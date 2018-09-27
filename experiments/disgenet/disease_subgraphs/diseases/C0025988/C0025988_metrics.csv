@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025988,Microglossia,10,12,0.08888888888888889,0.17316017316017315,0.18181818181818182,0.9823788546255506,0.9848685454889351,0.9950341402855369,0.9711711711711711,0.20000000000000004

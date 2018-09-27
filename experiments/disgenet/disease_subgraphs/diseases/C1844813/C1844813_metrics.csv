@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1844813,Widely spaced teeth,31,357,0.04086021505376344,0.08252566538624527,0.0860479023069902,0.9839865149599663,0.8518363991115583,0.8628559962879824,0.8695269526952695,0.08240715641095146

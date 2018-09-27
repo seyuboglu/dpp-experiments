@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0263537,Onychogryposis,13,163,0.14102564102564102,0.15927021696252466,0.16208437476331136,0.983011583011583,0.9012448132780083,0.9058347267446977,0.8883479389808504,0.22274657857479943

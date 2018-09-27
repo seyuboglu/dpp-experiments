@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085583,Choreoathetosis,32,299,0.06048387096774194,0.11114882402268099,0.1189647819353101,0.969309462915601,0.8619038759689922,0.8672926447574335,0.9009109797027329,0.07357859531772576

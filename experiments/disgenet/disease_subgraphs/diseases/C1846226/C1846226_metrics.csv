@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846226,Mineralocorticoid insufficiency,12,56,0.12121212121212122,0.193006993006993,0.21493506493506492,0.9664570230607966,0.947136563876652,0.9571187977717321,0.9137577002053389,0.18005952380952378

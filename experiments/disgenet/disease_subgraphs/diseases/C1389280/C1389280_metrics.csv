@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1389280,Basal ganglia calcification,16,67,0.09166666666666666,0.16170886075949367,0.182722749886929,0.9695712309820194,0.95280317724208,0.9617496686233667,0.9251412429378532,0.13619402985074627

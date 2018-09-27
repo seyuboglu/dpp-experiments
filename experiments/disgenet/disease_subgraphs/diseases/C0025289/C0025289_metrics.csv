@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025289,Meningitis,27,131,0.07122507122507123,0.11046617086885543,0.13000587199060482,0.9587458745874587,0.9200052541704978,0.9262835453153093,0.9132893496701225,0.08255583828102914

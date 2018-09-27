@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034885,Rectal Neoplasms,18,418,0.20261437908496732,0.0738213122797627,0.07068029786696958,0.9763177998472116,0.8376635319216763,0.8460596518848946,0.9034086373433384,0.13264221158958003

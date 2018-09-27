@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1136179,Hammer Toe,23,222,0.05138339920948617,0.1680843706777317,0.1872732460967755,0.9846517119244392,0.8610388496612447,0.8670736823830674,0.9352302508423811,0.10066588327457891

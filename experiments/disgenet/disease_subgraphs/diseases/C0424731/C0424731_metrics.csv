@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0424731,Single transverse palmar crease,29,626,0.059113300492610835,0.08290493676050592,0.08564345047923323,0.9853747714808044,0.7358233724122636,0.7413248724302709,0.8819129040876302,0.08422386250963976

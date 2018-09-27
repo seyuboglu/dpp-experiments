@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002418,Amblyopia,19,46,0.05263157894736842,0.13220518244315177,0.16908212560386474,0.9776674937965261,0.9718658564033311,0.979704262104958,0.9288590604026845,0.1178489702517163

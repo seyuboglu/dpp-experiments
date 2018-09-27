@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0685409,Congenital Camptodactyly,38,531,0.04267425320056899,0.08453504758595394,0.09070816899406602,0.9819819819819819,0.7818208994884741,0.7859430813865736,0.9024964672633067,0.06457528000792942

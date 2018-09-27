@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0235896,Infiltrate of lung,18,121,0.12418300653594772,0.15513799177921314,0.17451790633608816,0.9607843137254902,0.9287985770495337,0.9312421989471971,0.910212474297464,0.13085399449035814

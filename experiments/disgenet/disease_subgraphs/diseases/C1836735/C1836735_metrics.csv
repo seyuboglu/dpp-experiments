@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836735,hypopigmented skin patch,60,637,0.05819209039548023,0.07036325500241304,0.07341804646386857,0.9416926125106142,0.7715710422645545,0.7749002928778465,0.8655632067723799,0.04958137100994243

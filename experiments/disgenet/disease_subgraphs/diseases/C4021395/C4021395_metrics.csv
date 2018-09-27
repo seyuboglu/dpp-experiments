@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021395,Abnormality of the antihelix,10,62,0.1111111111111111,0.18923395445134575,0.195134849286092,0.9865951742627346,0.9561504509691038,0.9634761951895476,0.9240698557327259,0.2032258064516128

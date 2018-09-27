@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152116,Spasmodic torticollis,17,38,0.03676470588235294,0.12525252525252525,0.14793741109530584,0.987146529562982,0.9736469254746387,0.9844054580896686,0.9573495811119573,0.11919504643962843

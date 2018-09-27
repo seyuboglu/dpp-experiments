@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027540,Necrosis,52,918,0.05279034690799397,0.051141776156155075,0.05289817368847454,0.9762752075919335,0.7222957599565687,0.7267427589592538,0.8671177163708237,0.05262275850511144

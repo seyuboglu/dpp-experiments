@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0542346,Pimples,10,44,0.044444444444444446,0.1453529000698812,0.1226215644820296,0.9967558799675588,0.9638292322406747,0.9774055317491235,0.9540126239855726,0.20454545454545447

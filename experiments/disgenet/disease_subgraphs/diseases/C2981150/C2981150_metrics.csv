@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2981150,Uranostaphyloschisis,165,2450,0.019881744271988175,0.031995341056070915,0.03363971966900276,0.9610286128214415,0.43122881925264617,0.4303962082500185,0.8179431646649603,0.02639208410636982

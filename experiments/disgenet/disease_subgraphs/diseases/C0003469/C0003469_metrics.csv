@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003469,Anxiety Disorders,36,275,0.04285714285714286,0.07168338907469342,0.07891174518911745,0.9838613269575612,0.8947402884410759,0.9015334680223893,0.9240977881257276,0.060909090909090906

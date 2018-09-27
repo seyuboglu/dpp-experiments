@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018824,Heart valve disease,36,294,0.047619047619047616,0.08692651958754756,0.09326460959810545,0.9694656488549618,0.8676552252022393,0.8772047809739247,0.869241811301057,0.06859410430839002

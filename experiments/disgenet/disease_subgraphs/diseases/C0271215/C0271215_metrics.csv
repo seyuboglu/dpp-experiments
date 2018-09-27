@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271215,"Blindness, Legal",107,1006,0.02274731087991536,0.07079467527228721,0.07902436129491706,0.9560626702997275,0.5961395399585387,0.600466062918494,0.8072034792889414,0.03465190167406774

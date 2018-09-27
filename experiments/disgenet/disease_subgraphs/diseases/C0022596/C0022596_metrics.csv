@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022596,Palmoplantar Keratosis,58,606,0.04597701149425287,0.06487601068881857,0.06906145159970542,0.9576601671309192,0.790129746079758,0.7965480667245203,0.8732085862694787,0.05530897917377944

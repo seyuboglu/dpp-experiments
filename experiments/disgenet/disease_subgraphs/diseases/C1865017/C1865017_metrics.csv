@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1865017,Thin upper lip vermilion,67,1372,0.033921302578018994,0.048770121233627846,0.050603611247562484,0.9768017321373338,0.5976896011378342,0.6033652243482899,0.855638542134016,0.04181715330055263

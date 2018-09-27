@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1864903,Hyperinsulinaemic hypoglycaemia,16,134,0.09166666666666666,0.15581026931320474,0.1692290427561441,0.9793427230046948,0.9235290082096549,0.9301253388318699,0.9137504418522446,0.14458955223880596

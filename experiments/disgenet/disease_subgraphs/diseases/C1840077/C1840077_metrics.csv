@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1840077,Anteverted nostril,187,2316,0.016042780748663103,0.03279849123901229,0.0349828594023359,0.95370831259333,0.4370878787070542,0.4409794974353166,0.8192652267518578,0.02091241583774348

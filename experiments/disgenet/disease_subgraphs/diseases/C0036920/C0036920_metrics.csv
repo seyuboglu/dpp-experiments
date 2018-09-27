@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036920,Sezary Syndrome,27,853,0.1225071225071225,0.0633509955041747,0.06428017106153923,0.9792119893642737,0.6862862027153279,0.6890906186774571,0.855202222908305,0.10312187920628718

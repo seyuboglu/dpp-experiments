@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2931456,"Prostate cancer, familial",13,138,0.14102564102564102,0.1655950051253378,0.1811065270284566,0.9817123857024106,0.9033346026219877,0.9060965910649151,0.9206847360912982,0.173355629877369

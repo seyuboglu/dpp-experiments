@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0424448,Mask-like facies,25,153,0.043333333333333335,0.12702791461412152,0.14396284829721362,0.9829954218443427,0.9257937649880096,0.9342678760749205,0.936993699369937,0.08993464052287582

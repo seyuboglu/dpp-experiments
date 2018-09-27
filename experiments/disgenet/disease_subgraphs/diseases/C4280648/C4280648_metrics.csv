@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280648,Hyperplasia of cheeks,49,401,0.030612244897959183,0.06318675524623009,0.06896508728179551,0.9741842954463965,0.8608824860986963,0.8691630789610635,0.9013651220919054,0.0508422820499771

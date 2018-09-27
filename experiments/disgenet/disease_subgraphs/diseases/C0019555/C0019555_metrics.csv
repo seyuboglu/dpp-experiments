@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019555,"Hip Dislocation, Congenital",47,526,0.028677150786308975,0.09542802601720574,0.10545717906934637,0.979004402302743,0.7548551571836841,0.7607656288507353,0.8947368421052632,0.05379823638864169

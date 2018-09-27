@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0268731,Renal glomerular disease,12,32,0.07575757575757576,0.20824524312896406,0.2439516129032258,0.9904852521408183,0.9773576231251078,0.9851987767584098,0.9750584567420109,0.18489583333333331

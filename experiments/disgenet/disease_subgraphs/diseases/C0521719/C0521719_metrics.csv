@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0521719,Clouding of corneal stroma,50,311,0.04653061224489796,0.06817860675427441,0.0747640286277357,0.9508196721311475,0.8868516320039865,0.8930452717641298,0.8340503995082975,0.04829581993569132

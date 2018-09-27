@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280637,Hypertrophy of supraorbital margins,19,300,0.11695906432748537,0.10932247625013049,0.11295429208472686,0.9811764705882353,0.8676139667770726,0.8708657804514345,0.9238311780588319,0.12385964912280703

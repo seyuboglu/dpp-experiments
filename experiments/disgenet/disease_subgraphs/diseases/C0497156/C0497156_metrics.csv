@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0497156,Lymphadenopathy,63,793,0.031746031746031744,0.06882089661750679,0.07320366336759779,0.9691925465838509,0.7052386788598725,0.7091948715678151,0.8732739304882497,0.04453651994635601

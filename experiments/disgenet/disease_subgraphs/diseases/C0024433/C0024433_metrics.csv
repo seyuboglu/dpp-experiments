@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024433,Macrostomia,71,1132,0.028169014084507043,0.0591156462585034,0.061575015699543545,0.9744944434323192,0.622598097420568,0.6314463232990963,0.864256480218281,0.04210421539839745

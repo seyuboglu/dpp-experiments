@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020876,Dull intelligence,638,6735,0.008415230090106937,0.009299839145333182,0.009738037800398603,0.9173054138356264,0.7191572123176662,0.719480445978833,0.5646598752038052,0.008620573293025485

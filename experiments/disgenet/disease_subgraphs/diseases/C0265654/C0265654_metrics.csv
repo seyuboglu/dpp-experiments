@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265654,Tarsal Coalition,12,40,0.15151515151515152,0.19982993197278912,0.2358974358974359,0.9654576856649395,0.9577679935304161,0.9658911854666791,0.9088372093023256,0.17083333333333334

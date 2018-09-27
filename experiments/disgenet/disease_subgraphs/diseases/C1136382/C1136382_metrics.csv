@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1136382,Sclerocystic Ovaries,17,104,0.08823529411764706,0.19759524844270607,0.2148991784914115,0.9798657718120806,0.9275431606905711,0.9370074430823118,0.9488734835355286,0.1346153846153846

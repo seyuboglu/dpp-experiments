@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1850573,Slender build,14,120,0.07692307692307693,0.10374739764052741,0.10406162464985995,0.9869158878504672,0.941597760270851,0.9507800337849028,0.8902147971360382,0.15119047619047615

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0687149,Pure gonadal dysgenesis,19,101,0.07602339181286549,0.16298261125847333,0.1796039603960396,0.9782062028499581,0.9348031124734733,0.9447826616339949,0.9514388489208633,0.12245961438249083

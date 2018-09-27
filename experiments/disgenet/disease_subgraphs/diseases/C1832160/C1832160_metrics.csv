@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1832160,Poor temperature regulation,10,18,0.15555555555555556,0.20307692307692307,0.26143790849673204,0.9396551724137931,0.9770753733935394,0.985734664764622,0.8904109589041096,0.2055555555555556

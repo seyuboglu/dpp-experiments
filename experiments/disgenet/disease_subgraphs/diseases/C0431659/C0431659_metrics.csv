@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0431659,Hypoplasia of scrotum,24,66,0.04710144927536232,0.1309810211173483,0.16736596736596737,0.9693757361601885,0.9592430858806404,0.9692347244836746,0.9272271016311167,0.09406565656565656

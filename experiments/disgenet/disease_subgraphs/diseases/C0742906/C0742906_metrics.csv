@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0742906,C-reactive protein increased,15,95,0.1523809523809524,0.1801717699775952,0.19417693169092945,0.9611178614823815,0.9169606746407366,0.9242331556410033,0.894076108277756,0.1691228070175438

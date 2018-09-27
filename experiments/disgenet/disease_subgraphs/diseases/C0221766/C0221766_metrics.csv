@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221766,Diastasis recti,9,18,0.1111111111111111,0.2022792022792023,0.19607843137254902,0.9830508474576272,0.9755845942228336,0.9887724550898204,0.959079283887468,0.22839506172839505

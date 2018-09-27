@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042109,Urticaria,31,318,0.05161290322580645,0.120761086389443,0.12963514076543062,0.9783295711060948,0.8297846774968759,0.8397920778727213,0.9049894588896698,0.07648610265773989

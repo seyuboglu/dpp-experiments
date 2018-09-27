@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1848673,Hypoplastic feet,66,717,0.021445221445221447,0.06753857018687527,0.07310488300881232,0.9767029627753862,0.7384060019857578,0.7491796376370891,0.8826972605947085,0.0400659312793204

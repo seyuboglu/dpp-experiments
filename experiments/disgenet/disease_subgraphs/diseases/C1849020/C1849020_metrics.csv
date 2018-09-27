@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849020,Short metatarsal,21,224,0.0761904761904762,0.1014785661099883,0.10462043561819347,0.980319803198032,0.8993547025829479,0.9067767887404342,0.9156695156695157,0.1094812925170068

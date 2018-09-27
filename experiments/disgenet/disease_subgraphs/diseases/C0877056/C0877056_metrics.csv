@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0877056,Hypoglycaemic seizure,10,33,0.08888888888888889,0.16168327796234774,0.13636363636363635,0.9895150720838795,0.9791770662483064,0.9891402714932127,0.9490909090909091,0.21212121212121213

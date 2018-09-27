@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0427068,Monoparesis - leg,26,198,0.046153846153846156,0.0979850027229693,0.10736809721581295,0.9827288428324698,0.9223271954439038,0.9295400248998957,0.9414802065404475,0.09110334110334108

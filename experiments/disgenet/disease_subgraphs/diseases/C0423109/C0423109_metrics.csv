@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0423109,Upward slant of palpebral fissure,75,764,0.025945945945945945,0.05862294682681037,0.06293015308818181,0.9660217083529967,0.7468995024744829,0.7556859428175636,0.8781720952843948,0.03537521815008727

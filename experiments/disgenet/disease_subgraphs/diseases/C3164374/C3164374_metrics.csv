@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3164374,Abnormality of pulmonary valve,23,221,0.06324110671936758,0.11975255667596367,0.13035787741670093,0.9788219722038385,0.888986492085854,0.8938180599765455,0.90220700152207,0.10426913240212472

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0087012,"Ataxia, Spinocerebellar",16,156,0.06666666666666667,0.09578837452140619,0.09404466501240695,0.9887640449438202,0.9318676965735789,0.9421947685502936,0.9124493927125507,0.1362179487179487

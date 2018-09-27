@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0040588,Tracheoesophageal Fistula,36,287,0.09841269841269841,0.09469342251950948,0.09948587997368485,0.9372787051087507,0.883393050807902,0.8870211264682688,0.8751508880841524,0.07859078590785909

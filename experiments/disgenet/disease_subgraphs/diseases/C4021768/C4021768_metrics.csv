@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021768,Abnormality of metabolism/homeostasis,130,1823,0.018843172331544426,0.03713024503746257,0.039408629699901186,0.9643542019176536,0.5263042027071172,0.5318739561614637,0.8334534834285292,0.024735220895396433

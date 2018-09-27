@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271196,"Scotoma, Centrocecal",11,83,0.2909090909090909,0.4498797113071371,0.473111960035263,0.939622641509434,0.6655737704918033,0.6758280479210712,0.5224171539961013,0.4414019715224534

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013575,Ectodermal Dysplasia,13,59,0.08974358974358974,0.20160965794768612,0.23027469316189364,0.9840909090909091,0.954381971318006,0.9627599243856333,0.9540873460246361,0.15906127770534548

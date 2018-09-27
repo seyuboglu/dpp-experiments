@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004245,Atrioventricular Block,11,28,0.10909090909090909,0.2388663967611336,0.30158730158730157,0.9807383627608347,0.9691261119832548,0.9789726090565342,0.9656084656084656,0.18506493506493502

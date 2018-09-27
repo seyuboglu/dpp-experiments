@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240063,Coloboma of iris,38,627,0.031294452347083924,0.08061894606300322,0.08459065176737952,0.9877094972067039,0.755800138022297,0.7614061815072185,0.8997483506767326,0.06480315621589858

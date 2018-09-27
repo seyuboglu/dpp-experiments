@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2267233,Neonatal Hypotonia,64,504,0.01984126984126984,0.07634383765055272,0.08418536400643757,0.9723661485319517,0.8038956415602909,0.8159426664251895,0.8694357240602109,0.040674603174603176

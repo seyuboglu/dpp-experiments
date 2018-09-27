@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0010278,Craniosynostosis,44,396,0.03276955602536998,0.07871697782836132,0.08624216852064953,0.9764168885507798,0.8482201261842965,0.8556879693617749,0.9023147165003186,0.056072084481175385

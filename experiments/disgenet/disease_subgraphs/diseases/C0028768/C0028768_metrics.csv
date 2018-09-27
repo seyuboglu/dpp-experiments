@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0028768,Obsessive-Compulsive Disorder,32,349,0.034274193548387094,0.16330496453900709,0.1820636959457234,0.9819724284199364,0.7595371617740739,0.7663320300116242,0.8866436668309512,0.08130372492836677

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0442874,Neuropathy,51,509,0.03058823529411765,0.06680108881943744,0.07083520257413796,0.9752223634053367,0.82687232726861,0.8379330177410078,0.873205380081608,0.05150429523479332

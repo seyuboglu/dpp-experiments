@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017566,Gingival Hyperplasia,34,159,0.035650623885918005,0.09927181704403232,0.11440171960831144,0.9696048632218845,0.9206782126460293,0.9329053344227851,0.8942252715837622,0.06677765445800962

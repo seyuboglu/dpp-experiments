@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023882,Little's Disease,14,98,0.10989010989010989,0.1471097265489789,0.15148327372185988,0.9845201238390093,0.9514133013232731,0.9579131959666812,0.9464086341644957,0.15014577259475212

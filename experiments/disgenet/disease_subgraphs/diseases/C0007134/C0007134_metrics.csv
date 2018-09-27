@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007134,Renal Cell Carcinoma,136,2642,0.028649237472766886,0.028480846396837175,0.029588154648598743,0.9602027691609291,0.43235607067069837,0.43239568233278625,0.7882345011963201,0.02791167564679165

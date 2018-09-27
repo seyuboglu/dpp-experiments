@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001925,Albuminuria,21,117,0.09047619047619047,0.10698588942863752,0.12407898614795167,0.9666666666666667,0.9249432002596559,0.9301679452622849,0.8939190999196357,0.10215710215710216

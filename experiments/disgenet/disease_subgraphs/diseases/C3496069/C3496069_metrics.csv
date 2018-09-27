@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3496069,cocaine use,10,27,0.044444444444444446,0.26576576576576577,0.34472934472934474,0.9932998324958124,0.9683730903243098,0.9771611929029823,0.9884892086330935,0.20000000000000004

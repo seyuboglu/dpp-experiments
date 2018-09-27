@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1386048,Intrauterine retardation,175,2731,0.01858784893267652,0.026910548417439874,0.02814651478144704,0.9579213441379824,0.45630696627134065,0.45602394122625195,0.7816226849523299,0.021670764241251243

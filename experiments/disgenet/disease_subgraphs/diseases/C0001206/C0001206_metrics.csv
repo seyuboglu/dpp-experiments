@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001206,Acromegaly,17,262,0.09558823529411764,0.12074445162680457,0.12359977771928285,0.9854341736694678,0.8685607060134283,0.8746960801755322,0.9199157007376185,0.13964975303098337

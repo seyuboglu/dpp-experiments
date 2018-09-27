@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013363,Dysautonomia,18,324,0.12418300653594772,0.13818407960199006,0.14650460574093185,0.9881509198628001,0.8167530631479736,0.8186978218196438,0.9362399193548387,0.12139917695473254

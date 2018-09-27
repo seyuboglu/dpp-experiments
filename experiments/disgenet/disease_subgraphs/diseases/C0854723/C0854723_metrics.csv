@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0854723,Retinal Dystrophies,33,154,0.032196969696969696,0.07014276846679081,0.07622442916560564,0.9768392370572208,0.937918910009889,0.9492612368279798,0.9065226422933111,0.07201889020070838

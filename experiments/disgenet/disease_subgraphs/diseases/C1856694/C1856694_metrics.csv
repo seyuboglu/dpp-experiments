@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1856694,Areflexia of lower limbs,10,91,0.2,0.1674731748369451,0.17826617826617827,0.98359161349134,0.9399856749726694,0.9442258471176987,0.9392752203721841,0.21538461538461537

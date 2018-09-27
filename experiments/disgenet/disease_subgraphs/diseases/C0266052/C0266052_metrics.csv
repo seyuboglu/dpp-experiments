@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266052,Precocious exfoliation of primary tooth,11,18,0.07272727272727272,0.19950738916256158,0.24836601307189543,0.976401179941003,0.9739507959479016,0.9870748299319728,0.9679358717434869,0.19696969696969693

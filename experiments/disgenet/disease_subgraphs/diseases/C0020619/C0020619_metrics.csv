@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020619,Hypogonadism,119,1339,0.018943170488534396,0.05830831768273237,0.06309507463236402,0.9628076062639821,0.5347322925292347,0.5398611930881485,0.8532276756350424,0.02967221242492516

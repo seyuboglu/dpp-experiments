@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034372,Quadriplegia,10,25,0.1111111111111111,0.16134453781512606,0.12666666666666668,0.98046875,0.9827725437415882,0.9928524405153767,0.9508599508599509,0.21200000000000002

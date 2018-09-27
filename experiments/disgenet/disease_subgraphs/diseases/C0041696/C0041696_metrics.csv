@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0041696,Unipolar Depression,250,2905,0.013269076305220883,0.021513563922210346,0.022852448756063213,0.9416171897087927,0.46960741597680256,0.4693038787567429,0.7431642931216823,0.014656110154905339

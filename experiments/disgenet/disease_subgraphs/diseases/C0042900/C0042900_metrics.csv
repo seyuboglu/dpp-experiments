@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042900,Vitiligo,19,64,0.07602339181286549,0.1927710843373494,0.23958333333333334,0.9700460829493087,0.9423955040393397,0.9559065181668797,0.9348370927318296,0.13157894736842105

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0728829,Congenital pes cavus,88,1317,0.019070010449320794,0.04619959040972729,0.04913649655083281,0.9783575452119775,0.6208074883427197,0.6280989209182893,0.8650028656280936,0.034125422792848754

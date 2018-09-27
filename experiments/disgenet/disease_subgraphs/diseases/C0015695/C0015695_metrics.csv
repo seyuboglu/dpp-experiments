@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0015695,Fatty Liver,59,743,0.031560490940970194,0.05803539183820874,0.060957072841579814,0.9727822580645161,0.7476930982065757,0.7567708408725736,0.857357435127156,0.04386705294614139

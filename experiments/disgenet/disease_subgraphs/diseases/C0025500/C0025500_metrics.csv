@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025500,Mesothelioma,39,844,0.05668016194331984,0.06548478820969443,0.067416077763348,0.9809610154125114,0.7041981740776921,0.7088699789995023,0.8811821210678897,0.06714060031595577

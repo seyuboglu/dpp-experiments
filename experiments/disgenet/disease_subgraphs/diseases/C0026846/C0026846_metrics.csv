@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026846,Muscular Atrophy,14,248,0.12087912087912088,0.12322289066475113,0.12828131121849287,0.987885462555066,0.870160997839696,0.8747449630196379,0.923989054423837,0.1612903225806451

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839039,Highly variable clinical phenotype,149,1854,0.0208597859604571,0.03507187639532149,0.03726485695373723,0.9517009659806804,0.5354925851535107,0.5461355474330931,0.7982310668877833,0.023171376237121986

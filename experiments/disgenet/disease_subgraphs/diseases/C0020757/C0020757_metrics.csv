@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020757,Ichthyoses,40,238,0.035897435897435895,0.0769339078032159,0.08765024997340709,0.9646464646464646,0.9063629976179459,0.9140308473456329,0.8903474903474904,0.06785714285714287

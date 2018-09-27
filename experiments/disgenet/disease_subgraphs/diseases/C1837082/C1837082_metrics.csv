@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837082,Metaphyseal cupping,11,20,0.12727272727272726,0.23891625615763548,0.30526315789473685,0.9723320158102767,0.9798399667463369,0.9873541916494059,0.9216101694915254,0.18636363636363634

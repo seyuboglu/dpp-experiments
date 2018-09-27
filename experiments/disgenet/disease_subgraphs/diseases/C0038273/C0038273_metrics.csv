@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038273,Stereotypic Movement Disorder,40,764,0.04871794871794872,0.06743464547629952,0.07058113124686928,0.9800105207785376,0.7320982434562017,0.7351631092458611,0.8832657200811359,0.06511780104712042

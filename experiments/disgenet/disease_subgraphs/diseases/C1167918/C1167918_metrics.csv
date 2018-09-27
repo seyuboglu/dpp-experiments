@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1167918,CSF lactate increased,32,257,0.2540322580645161,0.12061285288693431,0.12606395914396887,0.8802850356294537,0.8386778490379871,0.8418774903246716,0.6517241379310345,0.17838035019455253

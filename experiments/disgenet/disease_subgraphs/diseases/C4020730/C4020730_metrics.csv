@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020730,Increased intramyocellular lipid droplets,12,26,0,0.17923186344238975,0.21846153846153846,1.0,0.9699642431466031,0.9824452960810978,0.9010526315789473,0.1762820512820513

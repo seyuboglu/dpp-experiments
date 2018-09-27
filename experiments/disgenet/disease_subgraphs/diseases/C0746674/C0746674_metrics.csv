@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0746674,Generalized muscle weakness,56,1097,0.04025974025974026,0.0665390049245413,0.0697822195902561,0.9781189341803423,0.6000880987080418,0.6043889719300065,0.882852671585066,0.05352259408777184

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152427,Polydactyly,28,574,0.06349206349206349,0.04697008804382116,0.04704744878413631,0.9834082267542343,0.8169339965349578,0.8248814549075971,0.8798853728431193,0.08013937282229963

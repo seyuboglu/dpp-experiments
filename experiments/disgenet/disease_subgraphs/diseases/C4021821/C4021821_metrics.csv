@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021821,Abnormality of the urinary system,21,513,0.4,0.22018307987597815,0.22554215399610136,0.9572845156369184,0.5644535956016034,0.5649491804241819,0.9198175489136958,0.2869210062192519

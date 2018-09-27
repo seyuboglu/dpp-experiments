@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024121,Lung Neoplasms,184,3528,0.032311712995961035,0.01896243207867719,0.019426587381952118,0.9409626132725596,0.4893678732711201,0.4893854523202722,0.7168175812844392,0.023083961845607806

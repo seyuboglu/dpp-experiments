@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1861869,Underdeveloped supraorbital ridges,37,217,0.07657657657657657,0.0908624041671252,0.09643283836832224,0.9392133492252682,0.9112552173835158,0.9179047549856515,0.8961182994454714,0.06825258438161665

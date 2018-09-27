@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4072849,Scapular weakness,23,792,0.11462450592885376,0.08765007783240603,0.08992899922103462,0.9834898946769143,0.6601306408333284,0.6620517557856346,0.8971713990987568,0.11149538866930168

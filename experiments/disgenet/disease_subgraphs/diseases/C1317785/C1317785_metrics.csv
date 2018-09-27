@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1317785,Tooth size discrepancy,45,735,0.04141414141414142,0.06990384286349793,0.07366586961760181,0.9776444929116684,0.7258593734273617,0.7310440973444141,0.8848394075553336,0.056175359032501884

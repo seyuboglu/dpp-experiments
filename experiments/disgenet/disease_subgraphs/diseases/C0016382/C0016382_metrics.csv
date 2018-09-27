@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0016382,Flushing,58,664,0.036297640653357534,0.06348945336748159,0.0669556052263352,0.9670781893004116,0.7694202660535392,0.777243735074514,0.8642898217366303,0.04842646447860407

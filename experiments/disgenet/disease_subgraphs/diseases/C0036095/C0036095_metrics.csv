@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036095,Salivary Gland Neoplasms,45,307,0.01919191919191919,0.09201641953589679,0.10506482723382513,0.9823173569101907,0.8783098092220425,0.888766172294099,0.9327566508895054,0.05631559898660877

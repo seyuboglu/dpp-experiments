@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0581354,Recurrent sinusitis,22,42,0.017316017316017316,0.130568356374808,0.19396051103368175,0.9880418535127056,0.9694024478041756,0.9791406445166125,0.9493670886075949,0.0984848484848485

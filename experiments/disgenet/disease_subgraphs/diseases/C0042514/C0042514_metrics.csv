@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042514,"Tachycardia, Ventricular",24,313,0.07608695652173914,0.07315219808733042,0.0717621037109855,0.9792490118577075,0.8880410733533783,0.8992553405595008,0.8866449511400651,0.1152822151224707

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029422,Osteochondrodysplasias,72,690,0.0297339593114241,0.07010958862810715,0.07545487053280327,0.9617224880382775,0.7491488400628341,0.7555404116123756,0.8790327517600245,0.03621175523349437

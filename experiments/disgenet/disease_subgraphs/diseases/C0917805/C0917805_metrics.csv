@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0917805,Transient Cerebral Ischemia,12,100,0.15151515151515152,0.20047570506286103,0.20646464646464646,0.9859451862262825,0.9343075852470425,0.941040729202723,0.9471698113207547,0.17583333333333337

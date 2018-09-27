@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0231686,"Gait, Unsteady",29,627,0.0812807881773399,0.0823577411380709,0.08476899480766976,0.9784172661870504,0.7311121906881258,0.7365637371338084,0.8815135686074659,0.08474949128306661

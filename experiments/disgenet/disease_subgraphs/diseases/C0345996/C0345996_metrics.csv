@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0345996,Milium Cyst,16,130,0.14166666666666666,0.1266638042078145,0.1262969588550984,0.9666011787819253,0.9313334691146091,0.9374279890100151,0.9086641058472045,0.1423076923076923

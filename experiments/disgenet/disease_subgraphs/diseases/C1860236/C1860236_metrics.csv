@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1860236,Irregular hyperpigmentation,33,407,0.12121212121212122,0.0924103608189119,0.09647668268357923,0.9496062992125984,0.8208411911758257,0.8243150911375108,0.8760286416586512,0.08651626833445016

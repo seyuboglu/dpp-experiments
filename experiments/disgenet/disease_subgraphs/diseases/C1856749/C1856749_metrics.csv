@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1856749,Hypoplastic-absent toenails,12,44,0.21212121212121213,0.2146938775510204,0.26215644820295986,0.9435483870967742,0.9548381557482614,0.9566547234116928,0.9179304192685103,0.2083333333333333

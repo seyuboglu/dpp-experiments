@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025286,Meningioma,23,253,0.08695652173913043,0.1193750349376712,0.12438045046740699,0.9750849377123443,0.8798863828111817,0.8870836833786613,0.916154680159017,0.10311050008592541

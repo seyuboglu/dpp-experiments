@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837087,Macular pigmentary changes,15,9,0.09523809523809523,0.13333333333333333,0.4166666666666667,0.8675496688741722,0.9619047619047619,0.9779897285399853,0.8508771929824561,0.14814814814814814

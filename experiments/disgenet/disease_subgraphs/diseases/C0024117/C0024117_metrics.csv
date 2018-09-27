@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024117,Chronic Obstructive Airway Disease,37,548,0.06156156156156156,0.07532793573087303,0.07827699862554878,0.97376,0.7878005657708628,0.7915533997832382,0.8657400972897846,0.0657920694417045

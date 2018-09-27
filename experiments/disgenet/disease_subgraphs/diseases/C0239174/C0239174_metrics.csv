@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0239174,Late tooth eruption,58,1218,0.03871748336358137,0.055736089843705254,0.05835502251222082,0.9776262891102954,0.6043282806605372,0.6071645912241024,0.8711986764927057,0.048638242455127115

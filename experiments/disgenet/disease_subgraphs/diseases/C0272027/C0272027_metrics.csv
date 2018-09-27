@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0272027,Pyridoxine-responsive sideroblastic anemia,16,113,0.39166666666666666,0.15137401024685607,0.15218078381795197,0.8983783783783784,0.9353748260091469,0.9360366643419349,0.8200071710290426,0.2206858407079646

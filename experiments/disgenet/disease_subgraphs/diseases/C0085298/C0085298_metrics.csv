@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085298,Sudden Cardiac Death,29,184,0.06896551724137931,0.13100502512562814,0.14718460441910192,0.9607568325157674,0.9093185849942607,0.9130190599880655,0.9263769720453916,0.08395802098950525

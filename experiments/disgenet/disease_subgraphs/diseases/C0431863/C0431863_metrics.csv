@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0431863,Carpal synostosis,12,34,0.12121212121212122,0.14747474747474748,0.1443850267379679,0.9796437659033079,0.9769643420637425,0.9865134865134865,0.937125748502994,0.17156862745098042

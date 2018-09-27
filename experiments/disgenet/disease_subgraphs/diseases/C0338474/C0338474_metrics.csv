@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0338474,Central nervous system demyelination,27,230,0.11965811965811966,0.14688977315239943,0.15902790962597305,0.9479231246125233,0.8426450496402222,0.8456577419889808,0.6727362814319336,0.1359098228663446
