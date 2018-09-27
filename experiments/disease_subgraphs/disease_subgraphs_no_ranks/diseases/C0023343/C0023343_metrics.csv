@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023343,Leprosy,18,73,0.0718954248366013,0.1669278996865204,0.21993911719939116,0.9741784037558685,0.9419249295646642,0.9467281105990784,0.9340909090909091,0.11796042617960428

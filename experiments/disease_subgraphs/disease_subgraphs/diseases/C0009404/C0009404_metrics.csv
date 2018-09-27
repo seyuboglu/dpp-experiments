@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009404,Colorectal Neoplasms,213,2713,0.014660288776685269,0.021737887151238564,0.023151938606534472,0.9490965013456363,0.4685314254563598,0.47269429121549256,0.7594076098335004,0.016351456818067763

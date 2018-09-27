@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0032273,Pneumoconiosis,14,34,0.06593406593406594,0.21365248226950354,0.29233511586452765,0.9798319327731092,0.9564706944820736,0.968696316090857,0.9611273080660836,0.14915966386554622

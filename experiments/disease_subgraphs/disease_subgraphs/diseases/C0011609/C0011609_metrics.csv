@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011609,Drug Eruptions,18,46,0.058823529411764705,0.11038251366120219,0.13719806763285025,0.9777777777777777,0.9619621504566425,0.9716538576704262,0.9191548001837391,0.12198067632850239

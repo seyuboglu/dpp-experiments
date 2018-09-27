@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020473,Hyperlipidemia,17,136,0.14705882352941177,0.11957057027479563,0.11982570806100218,0.9660152931180969,0.9242126291475481,0.9302384576357179,0.9122760096282428,0.13797577854671281

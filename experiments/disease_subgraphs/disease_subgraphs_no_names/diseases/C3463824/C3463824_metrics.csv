@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3463824,MYELODYSPLASTIC SYNDROME,18,229,0.0784313725490196,0.15037441813398097,0.16149544166092086,0.9867695700110254,0.8698318149964962,0.8753381924629282,0.9415873015873016,0.12324114507520624

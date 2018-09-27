@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007959,Charcot-Marie-Tooth Disease,29,269,0.03694581280788178,0.0995733886775049,0.10702990623092715,0.9848254931714719,0.8849346461833637,0.8954613196043897,0.9161028416779432,0.08614280220484552

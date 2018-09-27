@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0037769,West Syndrome,15,71,0.06666666666666667,0.1623637406769937,0.1847082494969819,0.9812834224598931,0.953203803224473,0.9611296947114367,0.9359673024523161,0.14553990610328632

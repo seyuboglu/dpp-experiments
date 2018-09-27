@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019693,HIV Infections,99,2518,0.06988249845392702,0.03259861112402272,0.03305781211984084,0.9533186450013771,0.3933246380898665,0.3931899074122938,0.7907117530052754,0.045992089280413345

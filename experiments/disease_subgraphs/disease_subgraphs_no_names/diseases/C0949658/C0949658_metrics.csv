@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0949658,"Cardiomyopathy, Hypertrophic, Familial",22,105,0.07792207792207792,0.1383456468202231,0.1565934065934066,0.9564164648910412,0.9196060274433875,0.9272495213784301,0.8973087818696884,0.11168831168831168

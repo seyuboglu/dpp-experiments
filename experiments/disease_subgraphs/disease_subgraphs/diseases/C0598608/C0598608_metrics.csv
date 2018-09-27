@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0598608,Hyperhomocysteinemia,11,33,0.14545454545454545,0.18583042973286876,0.20643939393939395,0.9674134419551935,0.9679101484155636,0.9772585019820572,0.9158200290275762,0.19008264462809918

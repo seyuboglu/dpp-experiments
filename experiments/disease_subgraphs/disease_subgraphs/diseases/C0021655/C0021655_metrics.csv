@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0021655,Insulin Resistance,48,908,0.07180851063829788,0.04828795149350891,0.04981082039351301,0.965865992414665,0.7199770804543463,0.7223421752638027,0.857958101689923,0.058301211453744485

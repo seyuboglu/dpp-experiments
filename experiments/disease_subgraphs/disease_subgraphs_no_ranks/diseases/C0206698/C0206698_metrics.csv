@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206698,Cholangiocarcinoma,24,768,0.11594202898550725,0.05489060847297222,0.05491158735332464,0.9838383838383838,0.7476248550822832,0.7545100598811485,0.8745546514185177,0.10107421875

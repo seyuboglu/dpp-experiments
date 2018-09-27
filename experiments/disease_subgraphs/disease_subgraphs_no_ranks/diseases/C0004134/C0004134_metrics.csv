@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004134,Ataxia,15,15,0.05714285714285714,0.15172413793103448,0.26666666666666666,0.9603960396039604,0.9779816513761468,0.9901616303583978,0.8258823529411765,0.14222222222222222

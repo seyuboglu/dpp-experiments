@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005944,Metabolic Bone Disorder,10,80,0.13333333333333333,0.3077324973876698,0.32626582278481014,0.9892086330935251,0.9061915190125424,0.9143652145022634,0.9587053571428571,0.20124999999999998

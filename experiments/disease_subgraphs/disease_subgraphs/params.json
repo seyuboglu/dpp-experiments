@@ -1,0 +1,13 @@
+{
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/bio-pathways-associations.csv",
+    "protein_names_path": "data/protein_data/protein_names.txt",
+    "disease_subset": [], 
+
+    "method_exp_dirs": {"Comp_rnorm_cnorm": "experiments/dpp-10/comp/comp_sqrt_rnorm_cnorm_labeled_ranks"
+                       },
+
+    "ppi_matrix": "data/ppi_matrices/comp_sqrt_rnorm.npy", 
+
+    "degree_cutoff": 100
+}

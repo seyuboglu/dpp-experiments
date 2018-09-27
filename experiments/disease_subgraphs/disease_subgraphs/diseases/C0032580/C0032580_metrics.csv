@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0032580,Adenomatous Polyposis Coli,9,94,0.1388888888888889,0.15433896330809552,0.13978494623655913,0.9915611814345991,0.9443608496343213,0.9555733294553915,0.946236559139785,0.22813238770685579

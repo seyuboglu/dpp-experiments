@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007131,Non-Small Cell Lung Carcinoma,111,2161,0.03325143325143325,0.02846514363765629,0.029357978987780007,0.9614178466216858,0.524455072513634,0.5270233423416893,0.799212212113991,0.03060394962292232

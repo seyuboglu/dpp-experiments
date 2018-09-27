@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020672,"Hypothermia, natural",12,29,0.09090909090909091,0.17408906882591094,0.18472906403940886,0.9785330948121646,0.9687045123726347,0.9805144193296961,0.9368658399098083,0.16954022988505751

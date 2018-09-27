@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3495559,Juvenile arthritis,122,1182,0.01273540170708576,0.03721488595438175,0.04133839371549821,0.9697603345665112,0.6892270518983112,0.6993132340527528,0.8526103101791175,0.023862028792543896

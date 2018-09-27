@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024141,"Lupus Erythematosus, Systemic",74,376,0.015179563124768604,0.06056100390171887,0.07313475177304965,0.9663658736669402,0.8642011799340278,0.8758801651400441,0.8903696836249855,0.035077630822311676

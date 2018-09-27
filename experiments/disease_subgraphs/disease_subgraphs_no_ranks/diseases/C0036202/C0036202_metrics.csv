@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036202,Sarcoidosis,8,15,0.17857142857142858,0.23376623376623376,0.2571428571428571,0.9764150943396226,0.9766536964980544,0.9872310238827146,0.933570581257414,0.25

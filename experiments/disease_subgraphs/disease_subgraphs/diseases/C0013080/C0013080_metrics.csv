@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013080,Down Syndrome,96,797,0.01206140350877193,0.05297083462612473,0.06112431669010044,0.9792843691148776,0.7295766839583416,0.7403792078412469,0.8639562157935887,0.026649414470932664

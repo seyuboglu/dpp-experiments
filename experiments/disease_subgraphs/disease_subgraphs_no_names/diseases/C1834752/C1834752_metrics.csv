@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1834752,"MYCOBACTERIUM TUBERCULOSIS, SUSCEPTIBILITY TO (finding)",10,17,0.2,0.25691699604743085,0.40441176470588236,0.926530612244898,0.9617083946980854,0.9662473151273396,0.8942731277533039,0.20588235294117649

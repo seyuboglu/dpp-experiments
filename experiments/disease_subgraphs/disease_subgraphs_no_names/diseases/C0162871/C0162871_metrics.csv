@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162871,"Aortic Aneurysm, Abdominal",11,37,0.18181818181818182,0.1808080808080808,0.18768768768768768,0.9610894941634242,0.9678779721848363,0.976821806044873,0.9165085388994307,0.2039312039312039

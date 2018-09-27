@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024530,Malaria,20,88,0.06842105263157895,0.13611269750618693,0.16875653082549635,0.9693034238488784,0.946453980378941,0.9510976532929599,0.9202127659574468,0.1056818181818182

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0520459,Necrotizing Enterocolitis,17,223,0.13970588235294118,0.15530662616290108,0.16301054417646346,0.9745989304812834,0.8656902666491527,0.8671604938271605,0.8305586385497595,0.14481667106304402

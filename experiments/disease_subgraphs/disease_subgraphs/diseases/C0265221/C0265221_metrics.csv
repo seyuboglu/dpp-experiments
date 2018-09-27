@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265221,Walker-Warburg congenital muscular dystrophy,13,23,0.08974358974358974,0.11931818181818182,0.1067193675889328,0.9411764705882353,0.970325011775789,0.986822840409956,0.9215686274509803,0.1705685618729097

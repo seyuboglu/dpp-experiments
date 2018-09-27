@@ -1,0 +1,15 @@
+{
+    "n_processes": 1, 
+
+    "ppi_network": "data/bio-pathways-network.txt",
+    "diseases_path": "data/bio-pathways-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "ppi_matrix",
+
+    "ppi_matrix": "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy",
+    "normalize": true,
+    "weighting": "sup"
+}

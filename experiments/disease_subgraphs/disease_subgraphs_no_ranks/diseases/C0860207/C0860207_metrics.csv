@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0860207,Drug-Induced Liver Injury,119,1203,0.020367469021506907,0.03661195257946718,0.03966511895524638,0.9539600772698004,0.6838721794424619,0.6899927032943275,0.8333288150296853,0.025838764433454176
