@@ -5,7 +5,6 @@ from __future__ import division
 import pickle
 import numpy as np
 import csv
-import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import rankdata
 from sklearn.metrics import recall_score, precision_recall_curve, average_precision_score, roc_auc_score, roc_curve, precision_recall_curve
@@ -59,16 +58,3 @@ def positive_rankings(y_true, output_probs, excluded_indices):
     y_true_no_train = y_true_no_train.reshape((y_true_no_train.shape[0],))
     true_rankings = ranked_nodes[y_true_no_train.astype(bool)]
     return true_rankings
-
-def plot_prc(y_true, method_scores, excluded_indices):
-    print("Plotting AUC")
-    no_train_mask = inverse_sample_mask(excluded_indices, y_true.shape[0])
-    y_true_no_train = y_true[no_train_mask]
-    for scores, name in method_scores: 
-        scores_no_train = scores[no_train_mask]
-        fpr, tpr, _ = roc_curve(y_true_no_train, scores_no_train)
-        plt.plot(fpr, tpr, label=name)
-    plt.legend()
-    plt.xlabel("False Positive Rate")
-    plt.ylabel("True Positive Rate")
-    plt.show() 
