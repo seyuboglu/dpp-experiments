@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1845447,Cupped ears (finding),17,84,0.0661764705882353,0.12141826427540713,0.12908777969018934,0.9848993288590604,0.9531368102796675,0.9625826300253607,0.9205512768544791,0.126750700280112

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003028,Anhidrosis,13,194,0.1282051282051282,0.14638269100743745,0.14988515570749425,0.9923342276734382,0.8935127443919405,0.9004752784280343,0.9496621621621621,0.1665344964314036

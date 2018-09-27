@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0239981,Hypoalbuminemia,24,301,0.07608695652173914,0.09766849529780565,0.1027906976744186,0.9808306709265175,0.8664469806569147,0.8742361628615948,0.9150317954268705,0.0926079734219269

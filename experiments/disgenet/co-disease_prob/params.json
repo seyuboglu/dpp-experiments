@@ -1,0 +1,20 @@
+{
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+
+    "comp_matrix": "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy", 
+
+    "ppi_matrices": {"Comp": "data/ppi_matrices/comp_sqrt_rnorm_cnorm.npy",
+                     "Direct Neighbor": "data/ppi_matrices/dn_sqrt_rnorm_cnorm.npy"}, 
+
+    "top_k": 100000,
+    "n_buckets": 100000,
+
+    "smooth": true, 
+
+    "plots": ["Comp", "Direct Neighbor"], 
+    "primary": "Comp",   
+    "plot_palette": ["#E03C3F", "#6178A8"],
+    "plot_font": "AppleGothic"
+}

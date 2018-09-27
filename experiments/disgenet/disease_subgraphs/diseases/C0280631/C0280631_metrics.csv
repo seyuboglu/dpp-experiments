@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0280631,Leiomyosarcoma of uterus,13,647,0.3076923076923077,0.07744933033068627,0.07791138907364785,0.9864368465668268,0.7472654980893296,0.7478707919105578,0.8885167980987361,0.19438830103435975

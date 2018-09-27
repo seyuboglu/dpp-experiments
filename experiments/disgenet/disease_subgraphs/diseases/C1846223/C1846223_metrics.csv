@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846223,Adrenal hypoplasia,12,32,0.045454545454545456,0.19158361018826134,0.25806451612903225,0.9882121807465619,0.9712026633374948,0.9782386943216593,0.9527896995708155,0.17447916666666666

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0751495,"Seizures, Focal",12,77,0.07575757575757576,0.19841675178753831,0.20847573479152426,0.9871959026888605,0.9474751571689313,0.9576462419718799,0.9547445255474453,0.1753246753246753

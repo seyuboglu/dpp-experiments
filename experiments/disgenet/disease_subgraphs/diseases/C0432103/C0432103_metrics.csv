@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0432103,Submucous cleft of hard palate,11,89,0.10909090909090909,0.2385858585858586,0.2517875383043922,0.9884169884169884,0.9349400908965707,0.9440868751594885,0.9557739557739557,0.1930541368743616

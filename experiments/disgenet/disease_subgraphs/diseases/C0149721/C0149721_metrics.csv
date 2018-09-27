@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0149721,Left Ventricular Hypertrophy,47,666,0.04995374653098982,0.06654310957652076,0.06952516426200636,0.9713603818615751,0.756102856788362,0.7600336663601366,0.8038141166155195,0.05660980129065235

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008489,Chorea,29,263,0.054187192118226604,0.09336277757330388,0.10092009404115752,0.9778002018163471,0.8715416687766918,0.8801179168031444,0.868134681858917,0.08220794545692933

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0236663,Alcohol withdrawal syndrome,12,26,0.12121212121212122,0.23044096728307253,0.31076923076923074,0.9700374531835206,0.9732076407839246,0.9825244398304351,0.9477434679334917,0.16987179487179488

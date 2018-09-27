@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0079772,T-Cell Lymphoma,13,626,0.2564102564102564,0.09137926697356175,0.09143003194888179,0.9881376037959668,0.7370767649570794,0.7398437840904132,0.8956997946356339,0.19587122143032687

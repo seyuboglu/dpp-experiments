@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151878,Prolonged QT interval,17,194,0.15441176470588236,0.07895522388059702,0.08311521820415577,0.96,0.9112167832167832,0.9127191137287898,0.8909904413260118,0.1300788356579745

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3854388,Hyperferritinaemia,14,22,0.12087912087912088,0.1431451612903226,0.22077922077922077,0.9214285714285714,0.9791544333529066,0.9847076461769115,0.9030023094688222,0.14935064935064932

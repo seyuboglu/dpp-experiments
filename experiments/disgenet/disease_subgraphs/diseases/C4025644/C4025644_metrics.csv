@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025644,Hypothalamic gonadotropin-releasing hormone deficiency,14,9,0.06593406593406594,0.15584415584415584,0.5,0.9469026548672567,0.9602868174296746,0.978391356542617,0.9088729016786571,0.15873015873015872

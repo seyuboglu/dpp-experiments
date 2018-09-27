@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1859896,Progressive macrocephaly,18,228,0.39869281045751637,0.14360683367808166,0.14471752067393154,0.9326710816777042,0.8455899009452419,0.8457387650862956,0.6580839105999216,0.24512670565302147

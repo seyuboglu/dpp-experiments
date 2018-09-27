@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003811,Cardiac Arrhythmia,97,1284,0.035867697594501716,0.05919611786150959,0.0633020349987738,0.9561737304815641,0.5402755616231093,0.5437035092325194,0.8302422244517701,0.045500529916176896

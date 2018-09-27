@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1271100,Lower limb spasticity,10,67,0.1111111111111111,0.19157894736842104,0.1994572591587517,0.9884125144843569,0.9649640657084189,0.9712553773953853,0.9701492537313433,0.217910447761194

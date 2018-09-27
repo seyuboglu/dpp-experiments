@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0232744,Decreased liver function,22,57,0.025974025974025976,0.1341991341991342,0.17418546365914786,0.9827586206896551,0.964624297752809,0.9748530076888285,0.943502824858757,0.10047846889952154

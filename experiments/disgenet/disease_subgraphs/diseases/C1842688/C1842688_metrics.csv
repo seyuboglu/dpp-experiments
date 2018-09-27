@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1842688,Hypoplasia of the brainstem,22,124,0.03896103896103896,0.1035162021077514,0.11827956989247312,0.9859594383775351,0.9427497548752587,0.9498429115578169,0.9256030223772159,0.10263929618768329

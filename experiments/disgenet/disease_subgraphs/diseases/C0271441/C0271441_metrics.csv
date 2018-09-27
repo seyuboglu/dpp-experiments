@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271441,Chronic otitis media,52,756,0.04751131221719457,0.08116675789089582,0.08523424086337994,0.9671618451915559,0.6821510589436081,0.6871040563920171,0.8723404255319149,0.05418192918192917

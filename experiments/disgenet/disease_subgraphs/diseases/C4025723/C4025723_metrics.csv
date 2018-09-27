@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025723,Abnormal upper motor neuron morphology,11,151,0.10909090909090909,0.24918398216702492,0.26737306843267106,0.9882005899705014,0.8755887672158515,0.8789090618251619,0.8892365456821026,0.19927754364840458

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0238397,Pulmonary artery stenosis,20,174,0.07894736842105263,0.13750142223233588,0.15008969503687464,0.9804814573845153,0.9021279180417485,0.9068626440454348,0.9114106884930188,0.12011494252873563

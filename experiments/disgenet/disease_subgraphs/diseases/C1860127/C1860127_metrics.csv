@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1860127,Impaired T cell function,14,16,0.054945054945054944,0.1724137931034483,0.2916666666666667,0.9801587301587301,0.9853587115666179,0.9922830999889759,0.9620253164556962,0.1607142857142857

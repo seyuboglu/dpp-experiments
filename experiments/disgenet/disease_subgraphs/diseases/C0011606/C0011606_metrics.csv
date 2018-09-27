@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011606,Exfoliative dermatitis,24,131,0.043478260869565216,0.14516556291390728,0.16605989430416912,0.9771646051379639,0.9238342328986078,0.9334024114544084,0.9138418079096046,0.09764631043256995

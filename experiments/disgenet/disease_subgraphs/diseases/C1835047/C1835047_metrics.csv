@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1835047,"MELANOMA, CUTANEOUS MALIGNANT, 1",13,222,0.19230769230769232,0.10464487209212459,0.10684440096204802,0.979253112033195,0.8931797562226342,0.896037443972869,0.8991803278688525,0.18225918225918222

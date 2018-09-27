@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021815,Abnormality of the palate,18,39,0.21568627450980393,0.15961945031712474,0.18353576248313092,0.8725868725868726,0.9755406171539646,0.9777541506502003,0.8539682539682539,0.16096866096866097

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846149,Progressive mental retardation,36,267,0.04126984126984127,0.07953548998696527,0.08608600152065557,0.974987974987975,0.8864374661613427,0.8945134575569358,0.8888122499655124,0.06731169371618811

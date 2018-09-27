@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0600031,Congenital absence of spleen,9,22,0.08333333333333333,0.3311827956989247,0.4588744588744589,0.9881889763779528,0.9703703703703703,0.9785577020329725,0.9881889763779528,0.22727272727272727

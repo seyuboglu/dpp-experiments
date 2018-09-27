@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1859778,Postnatal growth retardation,57,1264,0.03571428571428571,0.05560770339724494,0.058068242180061534,0.9804928131416838,0.5874040719066476,0.5914591688334582,0.8729264858909225,0.04887019764601376

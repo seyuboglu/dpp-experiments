@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1859236,Prolonged neonatal jaundice,17,21,0.03676470588235294,0.12462462462462462,0.18095238095238095,0.9704142011834319,0.9784247465557577,0.9896879240162822,0.9259259259259259,0.12324929971988793

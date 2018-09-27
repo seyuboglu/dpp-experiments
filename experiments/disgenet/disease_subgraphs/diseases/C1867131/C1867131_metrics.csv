@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1867131,Broad hallux,27,462,0.06552706552706553,0.07920146137787057,0.08205388248772197,0.9830446000737191,0.8118082324855574,0.8167634785161575,0.8851533315958648,0.0879429212762546

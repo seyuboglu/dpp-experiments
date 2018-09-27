@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036857,Severe mental retardation (I.Q. 20-34),96,1298,0.017763157894736842,0.04901811637594798,0.05233958180131226,0.9748369058713886,0.6064977415541053,0.6141409541159057,0.8567728859362684,0.030744414483821262

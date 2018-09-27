@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0877165,Short phalanx of finger,32,162,0.036290322580645164,0.11072362685265912,0.13434552564987348,0.9785586658725431,0.9293318989501799,0.9341031331101666,0.9230769230769231,0.06828703703703703

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026827,Muscle hypotonia,565,5486,0.008968806878804995,0.0119941555908431,0.012719606815525456,0.913346673943363,0.6697269369374435,0.6695269478293562,0.6251672825327075,0.009334137740797978

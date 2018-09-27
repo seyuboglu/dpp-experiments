@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014866,Esophageal Stenosis,16,63,0.15,0.17805383022774326,0.20532514080901176,0.9492957746478873,0.9527965310939129,0.955110265308407,0.9159439626417611,0.15178571428571427

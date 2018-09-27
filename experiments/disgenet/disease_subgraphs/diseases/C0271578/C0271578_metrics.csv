@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271578,Female hypogonadism syndrome,18,51,0.06535947712418301,0.195838986883763,0.2619607843137255,0.9682539682539683,0.9508763968461058,0.9609082397003745,0.9430604982206405,0.11982570806100216

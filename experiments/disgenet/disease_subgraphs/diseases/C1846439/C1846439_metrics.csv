@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846439,ODONTOID HYPOPLASIA,16,47,0.13333333333333333,0.15538847117794485,0.1933395004625347,0.9307359307359307,0.9609048632458422,0.966216762305019,0.7917355371900826,0.1529255319148936

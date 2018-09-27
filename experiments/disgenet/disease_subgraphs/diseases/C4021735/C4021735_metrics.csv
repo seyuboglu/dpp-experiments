@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021735,Abnormality of the hip bone,16,36,0.10833333333333334,0.1400709219858156,0.17142857142857143,0.956738768718802,0.9752989916360509,0.982677039056861,0.9276381909547738,0.125

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023467,"Leukemia, Myelocytic, Acute",121,1800,0.021763085399449034,0.03982004701193979,0.041775060218639984,0.9651560260227148,0.523286593341363,0.5295124216149665,0.8403104331536492,0.027598714416896236

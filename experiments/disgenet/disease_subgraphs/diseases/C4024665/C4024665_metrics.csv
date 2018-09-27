@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024665,High-grade hypermetropia,24,129,0.036231884057971016,0.22777971418612758,0.2805232558139535,0.981203007518797,0.8969750714356094,0.9067970542074127,0.9494623655913978,0.09431524547803619

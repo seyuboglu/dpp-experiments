@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019209,Hepatomegaly,253,2285,0.010665662839575884,0.024537996344965025,0.026580493356888564,0.9398868458274399,0.528587217652003,0.5365598618252035,0.7796255491345501,0.013571928974840207

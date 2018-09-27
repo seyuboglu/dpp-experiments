@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034194,Pyloric Stenosis,38,206,0.06685633001422475,0.09689301729660474,0.10044991712053043,0.9479224376731302,0.9131106044557744,0.9222322034209031,0.9158467657525644,0.0661727133367399

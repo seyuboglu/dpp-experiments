@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0154671,Degenerative brain disorder,99,764,0.00927643784786642,0.046020947883471205,0.05166640362855359,0.9792722247812068,0.7747577261615338,0.7920788661608665,0.8737102372687937,0.02574171029668412

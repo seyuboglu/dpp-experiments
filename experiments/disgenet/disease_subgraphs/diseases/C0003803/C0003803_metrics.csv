@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003803,Arnold Chiari Malformation,11,37,0.09090909090909091,0.13333333333333333,0.13813813813813813,0.9816849816849816,0.960161662817552,0.9716486902927581,0.8788870703764321,0.22604422604422603

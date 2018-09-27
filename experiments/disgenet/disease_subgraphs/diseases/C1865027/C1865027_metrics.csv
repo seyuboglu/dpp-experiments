@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1865027,Hypoplastic iliac wing,19,426,0.13450292397660818,0.07974513467554006,0.08223142778238056,0.9798157086441421,0.7987416385191072,0.8013980043754335,0.8756263862646841,0.13170249567580922

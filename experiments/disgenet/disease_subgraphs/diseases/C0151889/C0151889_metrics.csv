@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151889,Hyperreflexia,206,2731,0.017665166942931566,0.024428426088710115,0.025581205075895664,0.9451309208590762,0.4668934857286363,0.4665748292149976,0.7585776805251642,0.01809145623957937

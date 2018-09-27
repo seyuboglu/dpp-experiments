@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1866141,Foot dorsiflexor weakness,27,324,0.06837606837606838,0.10636072096173964,0.11346175897259489,0.978523489932886,0.8641357328280228,0.8688260182720032,0.9116135662898253,0.09453589391860996

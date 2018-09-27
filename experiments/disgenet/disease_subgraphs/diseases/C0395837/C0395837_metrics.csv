@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0395837,Stenosis of external auditory canal,13,38,0.07692307692307693,0.24653061224489795,0.31721194879089615,0.984,0.9673601729262361,0.9749142246470555,0.9708383961117861,0.15789473684210534

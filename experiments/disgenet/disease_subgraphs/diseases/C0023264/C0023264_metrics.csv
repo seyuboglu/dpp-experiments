@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023264,Leigh Disease,35,235,0.21176470588235294,0.12925897136934836,0.14188034188034188,0.8697001034126164,0.822044856646007,0.8251064783680789,0.6334030146330729,0.16911854103343463

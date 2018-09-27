@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024737,Aplasia/Hypoplasia of the skin,16,82,0.15,0.18718079673135854,0.20957542908762422,0.9511533242876526,0.9457719908263668,0.9480189700885022,0.9227941176470589,0.14939024390243902

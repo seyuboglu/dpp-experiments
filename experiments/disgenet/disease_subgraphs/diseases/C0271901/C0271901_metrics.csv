@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271901,Microcytic hypochromic anemia (disorder),10,32,0.1111111111111111,0.15128205128205127,0.17338709677419356,0.9674267100977199,0.9712195121951219,0.9784380092766705,0.8990536277602523,0.215625

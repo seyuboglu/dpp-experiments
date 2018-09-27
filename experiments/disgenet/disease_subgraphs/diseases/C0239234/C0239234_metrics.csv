@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0239234,Low set ears,178,2752,0.014219513743413953,0.02621772178875457,0.02753068651568563,0.9665945865334427,0.4667673246717741,0.46561958598873116,0.7875094158734507,0.02015490266527306

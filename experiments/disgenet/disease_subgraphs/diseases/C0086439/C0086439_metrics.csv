@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0086439,Hypokinesia,19,105,0.08187134502923976,0.1758953168044077,0.20457875457875457,0.9807560137457044,0.9305676381035233,0.9375995083936203,0.9530441703143653,0.11528822055137841

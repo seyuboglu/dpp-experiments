@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836189,Radially deviated fingers,37,543,0.05855855855855856,0.07333207807694722,0.07583943242747344,0.975609756097561,0.7937183312441518,0.8007267402930174,0.8863489788606235,0.06560151311532528

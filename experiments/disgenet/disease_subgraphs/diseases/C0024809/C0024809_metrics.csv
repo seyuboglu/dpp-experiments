@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024809,Marijuana Abuse,33,976,0.06439393939393939,0.05475745874899247,0.05667087011349307,0.9860197368421053,0.68411959439481,0.6862370909090909,0.87977843123846,0.07516766020864381

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038325,Stevens-Johnson Syndrome,30,1535,0.15862068965517243,0.04757571382039564,0.048017361096365126,0.9810126582278481,0.5408683253262904,0.541368358286449,0.847158601297111,0.10091205211726383

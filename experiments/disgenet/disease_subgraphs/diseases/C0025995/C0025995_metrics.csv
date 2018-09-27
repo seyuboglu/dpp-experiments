@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025995,Micromelia,58,890,0.03145795523290986,0.07695519839649605,0.08230684647565122,0.9745222929936306,0.6321905353262075,0.6361208274197333,0.886411247148643,0.046842309182487406

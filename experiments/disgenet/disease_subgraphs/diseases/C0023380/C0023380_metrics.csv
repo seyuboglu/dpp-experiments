@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023380,Lethargy,76,509,0.047017543859649125,0.05943288917777056,0.06559875005801093,0.9149746192893401,0.8000045567428402,0.8048505487931154,0.7140204271123491,0.049607072691552054

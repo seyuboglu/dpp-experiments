@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0748140,Multiple pulmonary infections,29,331,0.05665024630541872,0.09073102823102823,0.09054289114712076,0.9800260529743813,0.8530722449407571,0.8668085220998195,0.9119412941961308,0.08157099697885196

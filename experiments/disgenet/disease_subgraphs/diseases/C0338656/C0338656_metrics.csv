@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0338656,Impaired cognition,96,1342,0.024780701754385966,0.033881232355670546,0.03574750697646506,0.9689943750857456,0.6777824032127727,0.6830108353412467,0.8534153932557976,0.027345690511674115

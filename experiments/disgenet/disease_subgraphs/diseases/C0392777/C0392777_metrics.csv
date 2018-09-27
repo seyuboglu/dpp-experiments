@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0392777,Poikiloderma,14,117,0.21978021978021978,0.18326002932160468,0.19554966106690244,0.9468085106382979,0.9026789821991011,0.9052616548868423,0.8250254323499492,0.17521367521367515

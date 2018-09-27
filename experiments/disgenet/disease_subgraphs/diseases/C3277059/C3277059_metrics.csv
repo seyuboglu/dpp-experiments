@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3277059,Congenital Bilateral Cataracts,50,448,0.03836734693877551,0.07905405405405405,0.08525087887503995,0.9675862068965517,0.8186136645962733,0.8279361815781252,0.7724313164999206,0.0571875

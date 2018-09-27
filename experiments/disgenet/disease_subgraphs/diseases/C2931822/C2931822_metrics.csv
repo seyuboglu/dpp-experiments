@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2931822,Nasopharyngeal carcinoma,17,458,0.16911764705882354,0.11612903225806452,0.11817148098955596,0.9827844311377245,0.7769821153198504,0.7797173214110774,0.9130262112787927,0.14204983303365015

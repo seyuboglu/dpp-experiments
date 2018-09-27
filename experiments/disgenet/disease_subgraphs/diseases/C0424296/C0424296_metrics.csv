@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0424296,Social disinhibition,14,316,0.1978021978021978,0.17743464716240012,0.18314245529435402,0.982274741506647,0.8123669995089212,0.8130869868350901,0.932345876701361,0.1699819168173598

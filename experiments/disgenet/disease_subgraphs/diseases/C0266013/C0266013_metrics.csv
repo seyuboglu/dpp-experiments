@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266013,Congenital hypoplasia of breast,25,243,0.05333333333333334,0.13087394421385656,0.13862531034248207,0.9825708061002179,0.8628733045435193,0.8729525442219278,0.9209294260447373,0.08839506172839505

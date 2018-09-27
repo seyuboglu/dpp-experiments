@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0037036,Sialorrhea,28,182,0.042328042328042326,0.09793985318493961,0.1057009289053488,0.9798615481434865,0.9157688939575993,0.9273948037866466,0.8995054401582592,0.0790816326530612

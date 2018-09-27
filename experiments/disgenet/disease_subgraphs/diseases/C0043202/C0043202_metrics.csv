@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0043202,Wolff-Parkinson-White Syndrome,13,109,0.20512820512820512,0.2796338672768879,0.3007135575942915,0.9536231884057971,0.8213101969194775,0.8255728011825573,0.5904821540388228,0.2406492589978828

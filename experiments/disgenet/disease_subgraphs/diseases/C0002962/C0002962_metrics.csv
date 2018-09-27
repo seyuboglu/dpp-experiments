@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002962,Angina Pectoris,14,40,0.12087912087912088,0.18901960784313726,0.2423076923076923,0.966412213740458,0.9632425836955693,0.970226843100189,0.9451840250587314,0.15535714285714283

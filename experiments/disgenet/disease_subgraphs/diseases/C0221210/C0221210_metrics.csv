@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221210,Congenital malrotation of intestine,16,142,0.075,0.21331679073614557,0.22884826690640295,0.983710407239819,0.8873356340920012,0.897608938547486,0.9234411996842936,0.13556338028169015

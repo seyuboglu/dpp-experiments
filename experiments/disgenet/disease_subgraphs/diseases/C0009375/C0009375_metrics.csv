@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009375,Colonic Neoplasms,139,2987,0.031383588781149,0.022783039273729426,0.023442284281226685,0.9593792172739541,0.44581566811849077,0.4455656191113002,0.7600023210607247,0.027074155874496922

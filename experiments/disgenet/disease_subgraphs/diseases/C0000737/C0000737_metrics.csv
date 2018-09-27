@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0000737,Abdominal Pain,99,1344,0.025767882910740055,0.04039909213215434,0.0426694411941992,0.9628142198423323,0.6395499069942181,0.6448983355618055,0.8225302616165561,0.029664201539201542

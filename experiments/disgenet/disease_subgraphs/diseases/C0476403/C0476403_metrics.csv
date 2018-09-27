@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0476403,Electromyogram abnormal,50,360,0.022857142857142857,0.0957418672308913,0.11078613432373878,0.9759862778730704,0.8293200417606843,0.8374875147552892,0.746238395048554,0.053500000000000006

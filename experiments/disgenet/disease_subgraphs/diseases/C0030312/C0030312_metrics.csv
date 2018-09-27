@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0030312,Pancytopenia,35,270,0.047058823529411764,0.11341738060411878,0.1259259259259259,0.9697297297297297,0.8693518407082013,0.8758703057776088,0.890625,0.07164021164021164

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1858452,Thickened calvaria,17,106,0.058823529411764705,0.16914600550964187,0.19011680143755616,0.9857524487978628,0.9349610719771199,0.9429588095751563,0.9463253509496284,0.1309655937846837

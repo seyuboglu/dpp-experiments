@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021792,Abnormality of the clavicle,14,24,0.054945054945054944,0.10634920634920635,0.14130434782608695,0.9591836734693877,0.9663991975927784,0.9795436664044059,0.850909090909091,0.14285714285714285

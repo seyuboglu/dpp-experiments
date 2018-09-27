@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221260,Dystrophia unguium,54,1039,0.05660377358490566,0.05837221654895887,0.05988787944536858,0.9709521247982786,0.6636021643906209,0.6660841872343946,0.8708860759493671,0.05361280433465226

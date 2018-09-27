@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085636,Photophobia,116,1057,0.015292353823088457,0.06264037972327356,0.0710433330466443,0.9654295882053889,0.6084205626960539,0.6125851918802062,0.8782323803580483,0.029173327243662936

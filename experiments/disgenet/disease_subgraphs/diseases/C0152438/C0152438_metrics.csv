@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152438,Sprengel deformity,16,104,0.1,0.15517241379310345,0.17531740104555638,0.9770554493307839,0.9404040975720188,0.9457194057459969,0.9189070074922874,0.13641826923076922

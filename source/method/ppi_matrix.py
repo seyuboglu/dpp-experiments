@@ -7,7 +7,6 @@ import logging
 
 from collections import defaultdict
 import numpy as np 
-import matplotlib.pyplot as plt
 import networkx as nx
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression

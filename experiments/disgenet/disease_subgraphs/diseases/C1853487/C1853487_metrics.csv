@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1853487,Bushy eyebrows,49,1157,0.05102040816326531,0.05503875310435445,0.05741940886375395,0.9765990639625585,0.611743965960677,0.6144988354349048,0.8480270711221222,0.060483657594412

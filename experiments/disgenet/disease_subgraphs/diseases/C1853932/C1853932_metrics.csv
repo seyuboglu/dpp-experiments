@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1853932,Rimmed vacuoles on biopsy,15,449,0.17142857142857143,0.17488195324196706,0.17984409799554565,0.9861218195836546,0.7164067606685965,0.7177894966767561,0.9175286167425183,0.16792873051224944

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007138,"Carcinoma, Transitional Cell",32,889,0.11290322580645161,0.06816756338262821,0.06991102463543408,0.9745858860903108,0.668444227297373,0.6700760994972531,0.8593913955928646,0.08879358830146232

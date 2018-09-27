@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266294,Unilateral agenesis of kidney,20,140,0.042105263157894736,0.11077965008465694,0.11490236382322713,0.9869067103109657,0.9187943262411348,0.9319496013147484,0.9051293690422152,0.10892857142857142

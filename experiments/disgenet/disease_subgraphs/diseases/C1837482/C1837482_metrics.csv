@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837482,Thoracic hypoplasia,14,27,0.06593406593406594,0.17560975609756097,0.22507122507122507,0.981651376146789,0.9789750328515112,0.9878871511806194,0.9615819209039548,0.15608465608465613

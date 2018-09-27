@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1847584,Distal sensory impairment,52,782,0.04147812971342383,0.07134071340713408,0.07537716417079553,0.9751187514137073,0.707870186581977,0.7125408996678073,0.8940940749928442,0.05520853826480424

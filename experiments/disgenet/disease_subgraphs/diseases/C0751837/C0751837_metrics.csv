@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0751837,Gait Ataxia,50,723,0.024489795918367346,0.1064596445120686,0.11503316053838461,0.9852869053457577,0.6389374303641588,0.6441093844457878,0.9132450331125828,0.054771784232365145

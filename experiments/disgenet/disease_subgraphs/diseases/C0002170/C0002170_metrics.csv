@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002170,Alopecia,89,1171,0.020429009193054137,0.060764305722288914,0.06514995584167232,0.9742018703643985,0.5947496708536455,0.5998834524956855,0.8840286215741866,0.03314174958500849

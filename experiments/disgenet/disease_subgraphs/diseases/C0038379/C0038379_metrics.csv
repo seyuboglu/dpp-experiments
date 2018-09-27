@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038379,Strabismus,270,3442,0.01564091973013906,0.019775059763099234,0.02074481746840278,0.9383513322841482,0.5252727974457037,0.524924710042482,0.726417971132344,0.015932812533626012

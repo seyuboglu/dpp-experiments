@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007102,Malignant tumor of colon,16,373,0.25833333333333336,0.1373758865248227,0.1390354290985615,0.9747659747659748,0.7954096559882547,0.7960115888087635,0.9106078665077473,0.15382037533512063

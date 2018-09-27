@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1510497,Lens Opacities,224,2675,0.012291800128122999,0.025915368013371486,0.027579949531312258,0.9533824310986257,0.4625148222539506,0.46174607744350077,0.7957290559474345,0.016154873164218958

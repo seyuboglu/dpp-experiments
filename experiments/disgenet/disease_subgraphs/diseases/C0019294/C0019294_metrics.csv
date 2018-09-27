@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019294,"Hernia, Inguinal",88,1145,0.022204806687565307,0.0495314868973745,0.05270864506672367,0.9709252608175133,0.6574334487286618,0.6665040454051443,0.8640368178829717,0.03243350535926955

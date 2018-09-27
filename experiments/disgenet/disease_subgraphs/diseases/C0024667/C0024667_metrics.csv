@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024667,Animal Mammary Neoplasms,137,3097,0.03896522112494633,0.025510703162008347,0.026112208280247868,0.9570972698262616,0.47741781312941656,0.47691460204976843,0.7674749023200165,0.031737801357093864

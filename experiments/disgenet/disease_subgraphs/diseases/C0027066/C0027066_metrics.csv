@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027066,Myoclonus,75,836,0.020900900900900903,0.04145043667294397,0.04479844139472252,0.9789702683103698,0.7713449069232379,0.7795650794769675,0.8647804802836989,0.032982456140350884

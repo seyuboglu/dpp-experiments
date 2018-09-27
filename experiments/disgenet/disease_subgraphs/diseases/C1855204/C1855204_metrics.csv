@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1855204,Cellular immunodeficiency,19,129,0.0935672514619883,0.14084507042253522,0.14946705426356588,0.9723661485319517,0.9274318064848173,0.9350423751118597,0.9326860841423948,0.12280701754385964

@@ -94,7 +94,7 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH,
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
 
-        has_ids = "Associated Gene Ids" in reader.fieldnames
+        has_ids = "Associated Gene IDs" in reader.fieldnames
         assert(has_ids or gene_names_path != None)
 
         if not has_ids:

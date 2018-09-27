@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0012236,DiGeorge Syndrome,11,16,0.01818181818181818,0.2222222222222222,0.3416666666666667,0.9955849889624724,0.9856854468709855,0.9921493537577788,0.9699248120300752,0.20454545454545453

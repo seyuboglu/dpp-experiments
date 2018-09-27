@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846821,Coagulation abnormalities,27,237,0.08547008547008547,0.11110756972111553,0.11910891797182292,0.9651162790697675,0.8866046451109232,0.8903211998485372,0.9013402829486225,0.09251445538365369

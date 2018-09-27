@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020962,Enlarged thorax,18,587,0.12418300653594772,0.08897395253673288,0.09149897378351193,0.983442265795207,0.7401631674846928,0.7408822221856322,0.9016487455197133,0.12227900813931479

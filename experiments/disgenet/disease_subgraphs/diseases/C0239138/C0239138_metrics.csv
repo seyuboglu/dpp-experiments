@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0239138,Hip joint varus deformity - observation,24,45,0.043478260869565216,0.08990384615384615,0.11313131313131314,0.9640179910044977,0.9726728043255882,0.9829164124466138,0.9172413793103448,0.0851851851851852

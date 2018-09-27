@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0268583,Methylmalonic acidemia,16,75,0.09166666666666666,0.13044640470462443,0.14342342342342343,0.9687943262411347,0.9424799622819425,0.9517458777885548,0.822884012539185,0.15

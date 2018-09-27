@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004238,Atrial Fibrillation,38,247,0.034139402560455195,0.09927541837497744,0.11645436292419604,0.9742489270386266,0.8897937568878902,0.8975220495590088,0.9200856225472708,0.06552311953974002

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0234985,Mental deterioration,32,337,0.05040322580645161,0.11330857319715258,0.12289812067260139,0.979253112033195,0.843332762752482,0.8493727472479894,0.9150537634408602,0.07353486646884273

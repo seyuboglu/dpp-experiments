@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0157733,hair abnormalities (non-specific),31,377,0.05161290322580645,0.09410223138182836,0.10109204808397765,0.9802793755135579,0.8388014165077635,0.842688241687067,0.9040876912537109,0.08239924702661076

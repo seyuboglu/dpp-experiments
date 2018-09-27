@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005741,Blepharitis,17,159,0.08823529411764706,0.13185094519243845,0.14425603057081443,0.9819819819819819,0.918776835270709,0.9229083792465272,0.8775944651410325,0.14946355900850908

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206726,gliosarcoma,15,397,0.12380952380952381,0.0933299609770198,0.09575604915655293,0.9908771929824561,0.8271354317710309,0.8310627314555045,0.915905276897259,0.15465994962216623

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0423820,Ridged nails,15,128,0.13333333333333333,0.16619062731408019,0.17261318897637795,0.9774375503626108,0.9251102371588606,0.9315910088253937,0.9437400950871633,0.14739583333333334

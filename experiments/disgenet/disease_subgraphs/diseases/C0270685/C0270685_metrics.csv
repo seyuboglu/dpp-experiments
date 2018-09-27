@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0270685,Cerebral calcification,42,505,0.03484320557491289,0.059215380399266396,0.061362564827911366,0.9856836077308518,0.8230030875217912,0.8335482633301005,0.8104330037504262,0.05950023573785951

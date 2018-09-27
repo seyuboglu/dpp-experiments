@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0343073,Wooly hair,17,112,0.08823529411764706,0.1112258064516129,0.11357786357786358,0.9780821917808219,0.9398716517857143,0.9493489256376224,0.9118727050183598,0.13760504201680673

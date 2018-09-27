@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1851971,Hypoplastic myelodysplasia,19,386,0.09941520467836257,0.22640912370416313,0.233052957405289,0.9833414992650662,0.6934270288799383,0.6996678777998422,0.9307782557684787,0.1304881374420507

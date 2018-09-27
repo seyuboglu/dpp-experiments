@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0578626,blue iris (physical finding),17,98,0.11029411764705882,0.13978315262718932,0.15106248685041027,0.9703849950641659,0.9479567755558316,0.9547074593912632,0.918958031837916,0.1362545018007203

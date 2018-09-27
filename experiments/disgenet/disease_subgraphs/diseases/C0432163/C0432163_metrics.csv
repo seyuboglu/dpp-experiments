@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0432163,Defect of vertebral segmentation,17,59,0.0661764705882353,0.09922251018141429,0.0853302162478083,0.9706362153344209,0.9675682216978277,0.98178529099869,0.9067961165048544,0.12761714855433698

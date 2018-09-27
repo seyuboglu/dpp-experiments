@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019569,Hirschsprung Disease,31,422,0.053763440860215055,0.07813381762961595,0.08298904661660907,0.9769797421731123,0.8206589576317092,0.8247099105953967,0.8834459459459459,0.07414768384039136

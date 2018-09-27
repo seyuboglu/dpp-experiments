@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017979,Glycosuria,27,94,0.045584045584045586,0.11574677676372591,0.13955616563715398,0.9689621726479146,0.9487097188342535,0.9597226807527237,0.9229571984435798,0.0831363278171789

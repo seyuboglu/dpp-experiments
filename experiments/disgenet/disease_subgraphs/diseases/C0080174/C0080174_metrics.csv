@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0080174,Spina Bifida Occulta,12,360,0.16666666666666666,0.09697592352704695,0.10006190034045187,0.9891304347826086,0.8157645361582959,0.8164424004996309,0.8970762757579027,0.18356481481481485

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020621,Hypokalemia,32,158,0.03024193548387097,0.1091069330199765,0.12875917116826574,0.9783236994219653,0.9178936198434806,0.9278322563152425,0.9198709330465179,0.07179588607594936

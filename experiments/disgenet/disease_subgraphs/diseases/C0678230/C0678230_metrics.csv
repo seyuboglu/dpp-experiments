@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0678230,Congenital Epicanthus,175,2398,0.015172413793103448,0.029827920826083716,0.031406021496846036,0.9590316573556797,0.45474844452867963,0.4614707663485605,0.7997973879473209,0.019375670201358275

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4082173,Porencephaly,17,136,0.09558823529411764,0.10538726646109196,0.10501089324618737,0.9830949284785435,0.938628921516848,0.9476129663342663,0.9223650385604113,0.13105536332179932

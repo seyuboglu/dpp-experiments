@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0342276,Maturity onset diabetes mellitus in young,11,36,0.16363636363636364,0.18583042973286876,0.2365079365079365,0.9565217391304348,0.9559410711827069,0.9581401882286839,0.9104084321475626,0.19696969696969693

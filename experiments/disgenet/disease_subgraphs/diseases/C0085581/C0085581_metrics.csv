@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085581,Restrictive lung disease,11,61,0.10909090909090909,0.158953722334004,0.16010928961748633,0.9784560143626571,0.9585149398729191,0.9685030905670519,0.8380716934487021,0.18926974664679586

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849488,Increased serum pyruvate,10,75,0.13333333333333333,0.18542462533059065,0.18414414414414415,0.9812792511700468,0.9389394232630153,0.9493557978196234,0.9168665067945644,0.21599999999999994

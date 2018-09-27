@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001973,"Alcoholic Intoxication, Chronic",275,2683,0.01048440610484406,0.02278231452543379,0.025062932491509638,0.9406817840516594,0.4533693688312852,0.45818825275415265,0.7568426730321218,0.012805204486158643

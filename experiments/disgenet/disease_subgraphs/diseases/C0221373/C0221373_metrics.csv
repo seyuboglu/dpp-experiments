@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221373,Claw hand,26,202,0.04923076923076923,0.11251161475376723,0.1253140239397074,0.9810762862211709,0.8989440836024529,0.906334566742144,0.8834786306612801,0.08929931454683927

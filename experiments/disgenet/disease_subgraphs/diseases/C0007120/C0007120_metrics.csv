@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007120,Bronchioloalveolar Adenocarcinoma,13,345,0.1794871794871795,0.0947559876384239,0.09553420963936636,0.9872958257713249,0.8402680739645372,0.8452065641809792,0.9020949123557076,0.1801560758082497

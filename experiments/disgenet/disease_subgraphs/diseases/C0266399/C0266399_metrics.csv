@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266399,Infantile uterus,23,71,0.039525691699604744,0.13760152890587674,0.1778672032193159,0.984,0.9459256477656778,0.9561137864270466,0.9453924914675768,0.0924678505817514

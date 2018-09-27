@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1850776,Rapidly progressive disorder,27,306,0.05698005698005698,0.10007316935892385,0.10440372870459659,0.98426435877262,0.8650303643724696,0.8744734299516909,0.9227692732036961,0.08835633018639553

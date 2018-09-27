@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1321884,Atresia of vagina,10,20,0.08888888888888889,0.24367816091954023,0.3157894736842105,0.9763313609467456,0.9784465229768199,0.9873657612128869,0.922920892494929,0.21000000000000005

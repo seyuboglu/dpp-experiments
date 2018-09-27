@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0595929,Serum cholesterol raised,21,108,0.06190476190476191,0.14030946761080515,0.15282104534440982,0.9768888888888889,0.9408725444146658,0.9499433106575964,0.9352678571428571,0.11375661375661375

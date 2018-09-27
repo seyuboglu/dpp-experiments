@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1866934,Decreased to absent deep tendon reflexes,43,264,0.058693244739756366,0.07773659500864838,0.08480239658946884,0.9455292908530318,0.8957173163617078,0.9013487475915222,0.8983376837477676,0.059372797744890765
