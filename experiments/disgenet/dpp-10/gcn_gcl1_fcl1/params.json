@@ -19,7 +19,7 @@
     "dropout": 0.5,
     "weight_decay": 5e-4,
 
-    "epochs": 45,
+    "epochs": 40,
     "early_stopping": 100, 
     "shuffle_negatives": true,
 
