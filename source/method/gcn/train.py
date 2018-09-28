@@ -3,7 +3,6 @@ from __future__ import print_function
 
 import time
 import tensorflow as tf
-from tensorflow.python.client import device_lib
 
 import numpy as np
 import os
@@ -20,7 +19,7 @@ tf.set_random_seed(seed)
 VALIDATE_INTERVAL = 1
 
 #CHECK THIS
-os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3"
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos, val_pos, params, verbose = True):
     """
@@ -53,7 +52,6 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         'dropout': tf.placeholder_with_default(0., shape=()),
         'num_features_nonzero': tf.placeholder(tf.int32)  # helper variable for sparse dropout
     }
-    print(device_lib.list_local_devices())
     # Create model
     with tf.device(params.device):
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
