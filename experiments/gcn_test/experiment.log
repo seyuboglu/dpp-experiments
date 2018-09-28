@@ -1,0 +1,38 @@
+2018-05-31 10:27:56,179:INFO: Disease Protein Prediction in the PPI Network
+2018-05-31 10:27:56,179:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-05-31 10:27:56,179:INFO: ======================================
+2018-05-31 10:27:56,179:INFO: Loading PPI Network...
+2018-05-31 10:28:03,647:INFO: Loading Disease Associations...
+2018-05-31 10:28:12,889:INFO: Running Experiment...
+2018-05-31 10:28:37,336:INFO: Disease Protein Prediction in the PPI Network
+2018-05-31 10:28:37,336:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-05-31 10:28:37,336:INFO: ======================================
+2018-05-31 10:28:37,336:INFO: Loading PPI Network...
+2018-05-31 10:28:44,437:INFO: Loading Disease Associations...
+2018-05-31 10:28:53,527:INFO: Running Experiment...
+2018-05-31 10:28:53,527:INFO: Experiment Progress: 0.0% -- 0/1
+2018-05-31 10:28:53,775:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-05-31 10:29:09,164:INFO: Zellweger Syndrome Recall-at-100: 45.00%
+2018-05-31 10:29:54,044:INFO: Disease Protein Prediction in the PPI Network
+2018-05-31 10:29:54,045:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-05-31 10:29:54,045:INFO: ======================================
+2018-05-31 10:29:54,045:INFO: Loading PPI Network...
+2018-05-31 10:30:01,209:INFO: Loading Disease Associations...
+2018-05-31 10:30:10,345:INFO: Running Experiment...
+2018-05-31 10:30:10,345:INFO: Experiment Progress: 0.0% -- 0/1
+2018-05-31 10:30:10,486:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-05-31 10:30:24,886:INFO: Zellweger Syndrome Recall-at-100: 80.00%
