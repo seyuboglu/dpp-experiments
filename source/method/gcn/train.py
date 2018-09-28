@@ -3,6 +3,8 @@ from __future__ import print_function
 
 import time
 import tensorflow as tf
+from tensorflow.python.client import device_lib
+
 import numpy as np
 import os
 
@@ -51,7 +53,8 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         'dropout': tf.placeholder_with_default(0., shape=()),
         'num_features_nonzero': tf.placeholder(tf.int32)  # helper variable for sparse dropout
     }
-
+    device_lib.list_local_devices()
+    print(params.device)
     # Create model
     with tf.device(params.device):
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
