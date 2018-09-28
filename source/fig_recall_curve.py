@@ -49,9 +49,9 @@ if __name__ == '__main__':
                 for i, row in enumerate(rank_reader):
                     if i == 0: 
                         continue
-                    #if  (hasattr(params, "associations_threshold") and 
-                    #    params.associations_threshold > len(row) - 2):
-                    #    continue
+                    if  (hasattr(params, "associations_threshold") and 
+                        params.associations_threshold > len(row) - 2):
+                        continue
                         
                     ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
                     ranks = np.array(ranks).astype(int)
