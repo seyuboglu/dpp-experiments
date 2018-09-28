@@ -2,7 +2,7 @@ from __future__ import division
 from __future__ import print_function
 
 import time
-import tensorflow-gpu as tf
+import tensorflow as tf
 from tensorflow.python.client import device_lib
 
 import numpy as np
