@@ -18,7 +18,7 @@ tf.set_random_seed(seed)
 VALIDATE_INTERVAL = 1
 
 #CHECK THIS
-os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+#os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos, val_pos, params, verbose = True):
     """

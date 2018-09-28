@@ -26,3 +26,73 @@ into the labels input on backprop by default.
 
 See tf.nn.softmax_cross_entropy_with_logits_v2.
 
+2018-09-28 11:29:50,908:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 11:29:50,909:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 11:29:50,909:INFO: ======================================
+2018-09-28 11:29:50,909:INFO: Loading PPI Network...
+2018-09-28 11:30:00,935:INFO: Loading Disease Associations...
+2018-09-28 11:30:12,566:INFO: Running Experiment...
+2018-09-28 11:30:12,876:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 11:34:25,842:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 11:34:25,842:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 11:34:25,842:INFO: ======================================
+2018-09-28 11:34:25,842:INFO: Loading PPI Network...
+2018-09-28 11:34:35,817:INFO: Loading Disease Associations...
+2018-09-28 11:34:47,985:INFO: Running Experiment...
+2018-09-28 11:34:48,301:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 11:38:11,271:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 11:38:11,272:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 11:38:11,272:INFO: ======================================
+2018-09-28 11:38:11,272:INFO: Loading PPI Network...
+2018-09-28 11:38:21,073:INFO: Loading Disease Associations...
+2018-09-28 11:38:33,198:INFO: Running Experiment...
+2018-09-28 11:38:33,537:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-09-28 12:33:56,797:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 12:33:56,798:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 12:33:56,798:INFO: ======================================
+2018-09-28 12:33:56,798:INFO: Loading PPI Network...
+2018-09-28 12:34:07,664:INFO: Loading Disease Associations...
+2018-09-28 12:34:27,568:INFO: Running Experiment...
+2018-09-28 12:34:28,115:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2018-09-28 12:43:09,867:INFO: Disease Protein Prediction in the PPI Network
+2018-09-28 12:43:09,868:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-09-28 12:43:09,868:INFO: ======================================
+2018-09-28 12:43:09,868:INFO: Loading PPI Network...
+2018-09-28 12:43:16,782:INFO: Loading Disease Associations...
+2018-09-28 12:43:24,552:INFO: Running Experiment...
+2018-09-28 12:43:25,145:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/method/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
