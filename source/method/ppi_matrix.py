@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from scipy.sparse import csr_matrix
 
-from utils import get_negatives
+#from utils import get_negatives
 
 def softmax(x):
     """softmax for a vector x. Numerically stable implementation
