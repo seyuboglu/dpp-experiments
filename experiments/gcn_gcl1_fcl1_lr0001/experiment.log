@@ -1,0 +1,1052 @@
+2018-05-29 13:05:46,647:INFO: Disease Protein Prediction in the PPI Network
+2018-05-29 13:05:46,647:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-05-29 13:05:46,647:INFO: ======================================
+2018-05-29 13:05:46,647:INFO: Loading PPI Network...
+2018-05-29 13:05:56,558:INFO: Loading Disease Associations...
+2018-05-29 13:06:09,526:INFO: Running Experiment...
+2018-05-29 13:06:09,526:INFO: Experiment Progress: 0.0% -- 0/519
+2018-05-29 13:06:09,739:WARNING: From /dfs/scratch0/sabri/dpp-experiments/source/gcn/metrics.py:6: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-05-29 13:06:53,161:INFO: Hydrops Fetalis, Non-Immune Recall-at-100: 30.00%
+2018-05-29 13:06:53,162:INFO: Experiment Progress: 0.0% -- 1/519
+2018-05-29 13:07:31,162:INFO: Psychoses, Substance-Induced Recall-at-100: 20.00%
+2018-05-29 13:07:31,163:INFO: Experiment Progress: 0.0% -- 2/519
+2018-05-29 13:08:08,121:INFO: Zellweger Syndrome Recall-at-100: 35.00%
+2018-05-29 13:08:08,122:INFO: Experiment Progress: 0.0% -- 3/519
+2018-05-29 13:08:47,741:INFO: Psoriasis Recall-at-100: 4.52%
+2018-05-29 13:08:47,741:INFO: Experiment Progress: 0.0% -- 4/519
+2018-05-29 13:09:29,645:INFO: Nephrotic Syndrome Recall-at-100: 20.00%
+2018-05-29 13:09:29,646:INFO: Experiment Progress: 0.0% -- 5/519
+2018-05-29 13:10:09,298:INFO: Nephrosis Recall-at-100: 0.00%
+2018-05-29 13:10:09,298:INFO: Experiment Progress: 1.0% -- 6/519
+2018-05-29 13:10:49,192:INFO: Mouth Diseases Recall-at-100: 5.00%
+2018-05-29 13:10:49,192:INFO: Experiment Progress: 1.0% -- 7/519
+2018-05-29 13:11:30,461:INFO: MITOCHONDRIAL COMPLEX I DEFICIENCY Recall-at-100: 80.00%
+2018-05-29 13:11:30,461:INFO: Experiment Progress: 1.0% -- 8/519
+2018-05-29 13:12:09,411:INFO: Substance-Related Disorders Recall-at-100: 1.91%
+2018-05-29 13:12:09,412:INFO: Experiment Progress: 1.0% -- 9/519
+2018-05-29 13:12:48,032:INFO: Anemia, Hemolytic Recall-at-100: 15.00%
+2018-05-29 13:12:48,034:INFO: Experiment Progress: 1.0% -- 10/519
+2018-05-29 13:13:28,969:INFO: Rheumatoid Arthritis Recall-at-100: 2.38%
+2018-05-29 13:13:28,970:INFO: Experiment Progress: 2.0% -- 11/519
+2018-05-29 13:14:07,821:INFO: Arthritis, Psoriatic Recall-at-100: 0.00%
+2018-05-29 13:14:07,821:INFO: Experiment Progress: 2.0% -- 12/519
+2018-05-29 13:14:49,392:INFO: Anemia Recall-at-100: 8.33%
+2018-05-29 13:14:49,393:INFO: Experiment Progress: 2.0% -- 13/519
+2018-05-29 13:15:30,036:INFO: Cholangiocarcinoma Recall-at-100: 11.67%
+2018-05-29 13:15:30,037:INFO: Experiment Progress: 2.0% -- 14/519
+2018-05-29 13:16:08,581:INFO: Neuroendocrine Tumors Recall-at-100: 0.00%
+2018-05-29 13:16:08,582:INFO: Experiment Progress: 2.0% -- 15/519
+2018-05-29 13:16:48,702:INFO: Malaria Recall-at-100: 0.00%
+2018-05-29 13:16:48,703:INFO: Experiment Progress: 3.0% -- 16/519
+2018-05-29 13:17:27,667:INFO: Hyperhomocysteinemia Recall-at-100: 0.00%
+2018-05-29 13:17:27,668:INFO: Experiment Progress: 3.0% -- 17/519
+2018-05-29 13:18:06,317:INFO: HIV Infections Recall-at-100: 7.00%
+2018-05-29 13:18:06,318:INFO: Experiment Progress: 3.0% -- 18/519
+2018-05-29 13:18:44,126:INFO: Ankylosing spondylitis Recall-at-100: 5.00%
+2018-05-29 13:18:44,127:INFO: Experiment Progress: 3.0% -- 19/519
+2018-05-29 13:19:23,030:INFO: Adenoid Cystic Carcinoma Recall-at-100: 7.11%
+2018-05-29 13:19:23,031:INFO: Experiment Progress: 3.0% -- 20/519
+2018-05-29 13:20:02,943:INFO: Juvenile arthritis Recall-at-100: 4.17%
+2018-05-29 13:20:02,944:INFO: Experiment Progress: 4.0% -- 21/519
+2018-05-29 13:20:41,706:INFO: Neoplasms, Experimental Recall-at-100: 0.00%
+2018-05-29 13:20:41,707:INFO: Experiment Progress: 4.0% -- 22/519
+2018-05-29 13:21:19,391:INFO: Neoplasms, Germ Cell and Embryonal Recall-at-100: 0.00%
+2018-05-29 13:21:19,391:INFO: Experiment Progress: 4.0% -- 23/519
+2018-05-29 13:21:53,429:INFO: Alopecia Areata Recall-at-100: 0.00%
+2018-05-29 13:21:53,430:INFO: Experiment Progress: 4.0% -- 24/519
+2018-05-29 13:22:32,011:INFO: Alopecia Recall-at-100: 20.00%
+2018-05-29 13:22:32,012:INFO: Experiment Progress: 4.0% -- 25/519
+2018-05-29 13:23:11,809:INFO: Bradycardia Recall-at-100: 3.33%
+2018-05-29 13:23:11,811:INFO: Experiment Progress: 5.0% -- 26/519
+2018-05-29 13:23:51,080:INFO: Common Variable Immunodeficiency Recall-at-100: 20.00%
+2018-05-29 13:23:51,082:INFO: Experiment Progress: 5.0% -- 27/519
+2018-05-29 13:24:29,240:INFO: Glomerulonephritis Recall-at-100: 6.67%
+2018-05-29 13:24:29,241:INFO: Experiment Progress: 5.0% -- 28/519
+2018-05-29 13:25:09,834:INFO: Alcoholic Intoxication, Chronic Recall-at-100: 0.00%
+2018-05-29 13:25:09,835:INFO: Experiment Progress: 5.0% -- 29/519
+2018-05-29 13:25:49,971:INFO: Lung Injury Recall-at-100: 5.00%
+2018-05-29 13:25:49,971:INFO: Experiment Progress: 5.0% -- 30/519
+2018-05-29 13:26:30,115:INFO: Hypercalcemia Recall-at-100: 0.00%
+2018-05-29 13:26:30,116:INFO: Experiment Progress: 5.0% -- 31/519
+2018-05-29 13:27:11,110:INFO: Cerebrovascular accident Recall-at-100: 10.83%
+2018-05-29 13:27:11,111:INFO: Experiment Progress: 6.0% -- 32/519
+2018-05-29 13:27:51,331:INFO: Diaphragmatic Hernia Recall-at-100: 5.00%
+2018-05-29 13:27:51,332:INFO: Experiment Progress: 6.0% -- 33/519
+2018-05-29 13:28:31,386:INFO: Prostatic Intraepithelial Neoplasias Recall-at-100: 20.00%
+2018-05-29 13:28:31,387:INFO: Experiment Progress: 6.0% -- 34/519
+2018-05-29 13:29:11,195:INFO: Migraine Disorders Recall-at-100: 0.00%
+2018-05-29 13:29:11,196:INFO: Experiment Progress: 6.0% -- 35/519
+2018-05-29 13:29:35,050:INFO: Restless Legs Syndrome Recall-at-100: 0.00%
+2018-05-29 13:29:35,050:INFO: Experiment Progress: 6.0% -- 36/519
+2018-05-29 13:30:13,466:INFO: Brugada Syndrome (disorder) Recall-at-100: 0.00%
+2018-05-29 13:30:13,467:INFO: Experiment Progress: 7.0% -- 37/519
+2018-05-29 13:30:53,609:INFO: Pathological accumulation of air in tissues Recall-at-100: 0.00%
+2018-05-29 13:30:53,609:INFO: Experiment Progress: 7.0% -- 38/519
+2018-05-29 13:31:34,718:INFO: Craniosynostosis Recall-at-100: 0.00%
+2018-05-29 13:31:34,719:INFO: Experiment Progress: 7.0% -- 39/519
+2018-05-29 13:32:14,775:INFO: Head and Neck Neoplasms Recall-at-100: 8.33%
+2018-05-29 13:32:14,775:INFO: Experiment Progress: 7.0% -- 40/519
+2018-05-29 13:32:52,740:INFO: Brain Neoplasms Recall-at-100: 13.33%
+2018-05-29 13:32:52,740:INFO: Experiment Progress: 7.0% -- 41/519
+2018-05-29 13:33:32,798:INFO: Hearing Loss, Partial Recall-at-100: 0.00%
+2018-05-29 13:33:32,799:INFO: Experiment Progress: 8.0% -- 42/519
+2018-05-29 13:34:13,668:INFO: Chromosome Aberrations Recall-at-100: 0.00%
+2018-05-29 13:34:13,669:INFO: Experiment Progress: 8.0% -- 43/519
+2018-05-29 13:34:52,828:INFO: Chronic Lymphocytic Leukemia Recall-at-100: 4.00%
+2018-05-29 13:34:52,829:INFO: Experiment Progress: 8.0% -- 44/519
+2018-05-29 13:35:31,143:INFO: Refractive Errors Recall-at-100: 0.00%
+2018-05-29 13:35:31,144:INFO: Experiment Progress: 8.0% -- 45/519
+2018-05-29 13:36:08,646:INFO: Hepatitis C Recall-at-100: 0.00%
+2018-05-29 13:36:08,647:INFO: Experiment Progress: 8.0% -- 46/519
+2018-05-29 13:36:47,400:INFO: Mesothelioma Recall-at-100: 5.00%
+2018-05-29 13:36:47,401:INFO: Experiment Progress: 9.0% -- 47/519
+2018-05-29 13:37:08,228:INFO: Noise-induced hearing loss Recall-at-100: 0.00%
+2018-05-29 13:37:08,229:INFO: Experiment Progress: 9.0% -- 48/519
+2018-05-29 13:37:49,484:INFO: Inflammatory dermatosis Recall-at-100: 0.00%
+2018-05-29 13:37:49,485:INFO: Experiment Progress: 9.0% -- 49/519
+2018-05-29 13:38:27,534:INFO: Kallmann Syndrome Recall-at-100: 0.00%
+2018-05-29 13:38:27,535:INFO: Experiment Progress: 9.0% -- 50/519
+2018-05-29 13:39:07,522:INFO: Lipoidosis Recall-at-100: 0.00%
+2018-05-29 13:39:07,524:INFO: Experiment Progress: 9.0% -- 51/519
+2018-05-29 13:39:48,443:INFO: Diabetes Mellitus Recall-at-100: 0.00%
+2018-05-29 13:39:48,444:INFO: Experiment Progress: 10.0% -- 52/519
+2018-05-29 13:40:26,331:INFO: Fibrosis Recall-at-100: 5.00%
+2018-05-29 13:40:26,332:INFO: Experiment Progress: 10.0% -- 53/519
+2018-05-29 13:41:06,599:INFO: Hypercholesterolemia Recall-at-100: 0.00%
+2018-05-29 13:41:06,600:INFO: Experiment Progress: 10.0% -- 54/519
+2018-05-29 13:41:47,235:INFO: Microcephaly Recall-at-100: 3.33%
+2018-05-29 13:41:47,236:INFO: Experiment Progress: 10.0% -- 55/519
+2018-05-29 13:42:23,518:INFO: Tongue Neoplasms Recall-at-100: 11.11%
+2018-05-29 13:42:23,519:INFO: Experiment Progress: 10.0% -- 56/519
+2018-05-29 13:43:03,230:INFO: Common Migraine Recall-at-100: 0.00%
+2018-05-29 13:43:03,230:INFO: Experiment Progress: 10.0% -- 57/519
+2018-05-29 13:43:42,081:INFO: Carotid Artery Diseases Recall-at-100: 0.00%
+2018-05-29 13:43:42,081:INFO: Experiment Progress: 11.0% -- 58/519
+2018-05-29 13:44:21,320:INFO: Growth Disorders Recall-at-100: 0.00%
+2018-05-29 13:44:21,322:INFO: Experiment Progress: 11.0% -- 59/519
+2018-05-29 13:44:56,185:INFO: Absence Epilepsy Recall-at-100: 0.00%
+2018-05-29 13:44:56,186:INFO: Experiment Progress: 11.0% -- 60/519
+2018-05-29 13:45:35,792:INFO: Epilepsy, Temporal Lobe Recall-at-100: 10.00%
+2018-05-29 13:45:35,793:INFO: Experiment Progress: 11.0% -- 61/519
+2018-05-29 13:46:14,594:INFO: Memory Disorders Recall-at-100: 2.50%
+2018-05-29 13:46:14,595:INFO: Experiment Progress: 11.0% -- 62/519
+2018-05-29 13:46:55,411:INFO: Catalepsy Recall-at-100: 0.00%
+2018-05-29 13:46:55,411:INFO: Experiment Progress: 12.0% -- 63/519
+2018-05-29 13:47:33,137:INFO: Hereditary Nonpolyposis Colorectal Cancer Recall-at-100: 0.00%
+2018-05-29 13:47:33,138:INFO: Experiment Progress: 12.0% -- 64/519
+2018-05-29 13:48:12,372:INFO: Acute Promyelocytic Leukemia Recall-at-100: 5.00%
+2018-05-29 13:48:12,373:INFO: Experiment Progress: 12.0% -- 65/519
+2018-05-29 13:48:53,393:INFO: Precursor B-Cell Lymphoblastic Leukemia-Lymphoma Recall-at-100: 10.00%
+2018-05-29 13:48:53,394:INFO: Experiment Progress: 12.0% -- 66/519
+2018-05-29 13:49:33,575:INFO: Gout Recall-at-100: 0.00%
+2018-05-29 13:49:33,576:INFO: Experiment Progress: 12.0% -- 67/519
+2018-05-29 13:50:13,525:INFO: Coronary Artery Disease Recall-at-100: 0.00%
+2018-05-29 13:50:13,526:INFO: Experiment Progress: 13.0% -- 68/519
+2018-05-29 13:50:54,495:INFO: Venous Thromboembolism Recall-at-100: 13.33%
+2018-05-29 13:50:54,495:INFO: Experiment Progress: 13.0% -- 69/519
+2018-05-29 13:51:34,351:INFO: Precancerous Conditions Recall-at-100: 2.86%
+2018-05-29 13:51:34,351:INFO: Experiment Progress: 13.0% -- 70/519
+2018-05-29 13:52:13,404:INFO: Crohn Disease Recall-at-100: 3.61%
+2018-05-29 13:52:13,404:INFO: Experiment Progress: 13.0% -- 71/519
+2018-05-29 13:52:53,155:INFO: Uterine Cervical Neoplasm Recall-at-100: 15.00%
+2018-05-29 13:52:53,156:INFO: Experiment Progress: 13.0% -- 72/519
+2018-05-29 13:53:33,695:INFO: Dyskinesia, Drug-Induced Recall-at-100: 0.00%
+2018-05-29 13:53:33,696:INFO: Experiment Progress: 14.0% -- 73/519
+2018-05-29 13:54:13,818:INFO: Ataxia, Spinocerebellar Recall-at-100: 0.00%
+2018-05-29 13:54:13,819:INFO: Experiment Progress: 14.0% -- 74/519
+2018-05-29 13:54:55,861:INFO: Optic Atrophy, Hereditary, Leber Recall-at-100: 70.00%
+2018-05-29 13:54:55,862:INFO: Experiment Progress: 14.0% -- 75/519
+2018-05-29 13:55:35,379:INFO: Liver Cirrhosis, Alcoholic Recall-at-100: 15.00%
+2018-05-29 13:55:35,380:INFO: Experiment Progress: 14.0% -- 76/519
+2018-05-29 13:56:14,302:INFO: Acute Lung Injury Recall-at-100: 0.00%
+2018-05-29 13:56:14,303:INFO: Experiment Progress: 14.0% -- 77/519
+2018-05-29 13:56:55,983:INFO: Liver Cirrhosis, Experimental Recall-at-100: 2.82%
+2018-05-29 13:56:55,984:INFO: Experiment Progress: 15.0% -- 78/519
+2018-05-29 13:57:35,046:INFO: Chloracne Recall-at-100: 0.00%
+2018-05-29 13:57:35,047:INFO: Experiment Progress: 15.0% -- 79/519
+2018-05-29 13:58:16,612:INFO: Liver diseases Recall-at-100: 3.10%
+2018-05-29 13:58:16,612:INFO: Experiment Progress: 15.0% -- 80/519
+2018-05-29 13:58:55,140:INFO: Kidney Failure, Chronic Recall-at-100: 7.00%
+2018-05-29 13:58:55,141:INFO: Experiment Progress: 15.0% -- 81/519
+2018-05-29 13:59:34,790:INFO: Weight decreased Recall-at-100: 0.00%
+2018-05-29 13:59:34,791:INFO: Experiment Progress: 15.0% -- 82/519
+2018-05-29 14:00:15,863:INFO: Leigh Disease Recall-at-100: 52.50%
+2018-05-29 14:00:15,864:INFO: Experiment Progress: 15.0% -- 83/519
+2018-05-29 14:00:54,712:INFO: Celiac Disease Recall-at-100: 2.50%
+2018-05-29 14:00:54,713:INFO: Experiment Progress: 16.0% -- 84/519
+2018-05-29 14:01:34,451:INFO: Glaucoma Recall-at-100: 0.00%
+2018-05-29 14:01:34,452:INFO: Experiment Progress: 16.0% -- 85/519
+2018-05-29 14:02:15,174:INFO: Tachycardia Recall-at-100: 0.00%
+2018-05-29 14:02:15,175:INFO: Experiment Progress: 16.0% -- 86/519
+2018-05-29 14:02:54,325:INFO: Breast Cancer, Familial Recall-at-100: 30.00%
+2018-05-29 14:02:54,326:INFO: Experiment Progress: 16.0% -- 87/519
+2018-05-29 14:03:33,916:INFO: Ischemia Recall-at-100: 8.33%
+2018-05-29 14:03:33,917:INFO: Experiment Progress: 16.0% -- 88/519
+2018-05-29 14:04:10,690:INFO: Adenomatous Polyposis Coli Recall-at-100: 11.11%
+2018-05-29 14:04:10,690:INFO: Experiment Progress: 17.0% -- 89/519
+2018-05-29 14:04:48,844:INFO: Thyroid Diseases Recall-at-100: 10.00%
+2018-05-29 14:04:48,845:INFO: Experiment Progress: 17.0% -- 90/519
+2018-05-29 14:05:20,983:INFO: Panic Disorder Recall-at-100: 0.00%
+2018-05-29 14:05:20,984:INFO: Experiment Progress: 17.0% -- 91/519
+2018-05-29 14:06:02,212:INFO: Colorectal Neoplasms Recall-at-100: 6.17%
+2018-05-29 14:06:02,213:INFO: Experiment Progress: 17.0% -- 92/519
+2018-05-29 14:06:41,833:INFO: Adrenal Gland Neoplasms Recall-at-100: 20.00%
+2018-05-29 14:06:41,834:INFO: Experiment Progress: 17.0% -- 93/519
+2018-05-29 14:07:21,238:INFO: Sudden infant death syndrome Recall-at-100: 10.00%
+2018-05-29 14:07:21,239:INFO: Experiment Progress: 18.0% -- 94/519
+2018-05-29 14:08:00,220:INFO: Neuroblastoma Recall-at-100: 4.50%
+2018-05-29 14:08:00,220:INFO: Experiment Progress: 18.0% -- 95/519
+2018-05-29 14:08:38,002:INFO: Prostate cancer, familial Recall-at-100: 10.00%
+2018-05-29 14:08:38,004:INFO: Experiment Progress: 18.0% -- 96/519
+2018-05-29 14:09:19,131:INFO: Animal Mammary Neoplasms Recall-at-100: 7.42%
+2018-05-29 14:09:19,132:INFO: Experiment Progress: 18.0% -- 97/519
+2018-05-29 14:09:58,508:INFO: Osteochondrodysplasias Recall-at-100: 5.00%
+2018-05-29 14:09:58,509:INFO: Experiment Progress: 18.0% -- 98/519
+2018-05-29 14:10:36,412:INFO: Hepatolenticular Degeneration Recall-at-100: 3.33%
+2018-05-29 14:10:36,412:INFO: Experiment Progress: 19.0% -- 99/519
+2018-05-29 14:11:15,231:INFO: Fanconi Anemia Recall-at-100: 45.00%
+2018-05-29 14:11:15,232:INFO: Experiment Progress: 19.0% -- 100/519
+2018-05-29 14:11:53,841:INFO: Eye Abnormalities Recall-at-100: 20.00%
+2018-05-29 14:11:53,841:INFO: Experiment Progress: 19.0% -- 101/519
+2018-05-29 14:12:34,343:INFO: Limb Deformities, Congenital Recall-at-100: 0.00%
+2018-05-29 14:12:34,344:INFO: Experiment Progress: 19.0% -- 102/519
+2018-05-29 14:13:09,094:INFO: Electrocardiogram: P-R interval Recall-at-100: 0.00%
+2018-05-29 14:13:09,094:INFO: Experiment Progress: 19.0% -- 103/519
+2018-05-29 14:13:49,896:INFO: Mammary Neoplasms, Experimental Recall-at-100: 6.62%
+2018-05-29 14:13:49,897:INFO: Experiment Progress: 20.0% -- 104/519
+2018-05-29 14:14:28,185:INFO: Heart valve disease Recall-at-100: 0.00%
+2018-05-29 14:14:28,186:INFO: Experiment Progress: 20.0% -- 105/519
+2018-05-29 14:15:06,923:INFO: Diffuse Large B-Cell Lymphoma Recall-at-100: 3.33%
+2018-05-29 14:15:06,924:INFO: Experiment Progress: 20.0% -- 106/519
+2018-05-29 14:15:48,053:INFO: Hepatitis Recall-at-100: 0.00%
+2018-05-29 14:15:48,054:INFO: Experiment Progress: 20.0% -- 107/519
+2018-05-29 14:16:25,960:INFO: Impaired glucose tolerance Recall-at-100: 15.00%
+2018-05-29 14:16:25,961:INFO: Experiment Progress: 20.0% -- 108/519
+2018-05-29 14:17:06,646:INFO: Mitochondrial Encephalomyopathies Recall-at-100: 25.00%
+2018-05-29 14:17:06,647:INFO: Experiment Progress: 21.0% -- 109/519
+2018-05-29 14:17:44,804:INFO: Colon Carcinoma Recall-at-100: 15.00%
+2018-05-29 14:17:44,804:INFO: Experiment Progress: 21.0% -- 110/519
+2018-05-29 14:18:24,668:INFO: Hepatic Encephalopathy Recall-at-100: 10.00%
+2018-05-29 14:18:24,669:INFO: Experiment Progress: 21.0% -- 111/519
+2018-05-29 14:19:04,117:INFO: Multiple Sclerosis Recall-at-100: 5.69%
+2018-05-29 14:19:04,119:INFO: Experiment Progress: 21.0% -- 112/519
+2018-05-29 14:19:44,590:INFO: Neurogenic Inflammation Recall-at-100: 0.00%
+2018-05-29 14:19:44,591:INFO: Experiment Progress: 21.0% -- 113/519
+2018-05-29 14:20:23,346:INFO: Lupus Erythematosus, Systemic Recall-at-100: 2.86%
+2018-05-29 14:20:23,346:INFO: Experiment Progress: 21.0% -- 114/519
+2018-05-29 14:21:03,197:INFO: Ceroid lipofuscinosis, neuronal 1, infantile Recall-at-100: 20.00%
+2018-05-29 14:21:03,198:INFO: Experiment Progress: 22.0% -- 115/519
+2018-05-29 14:21:41,212:INFO: Adenocarcinoma of lung (disorder) Recall-at-100: 9.00%
+2018-05-29 14:21:41,213:INFO: Experiment Progress: 22.0% -- 116/519
+2018-05-29 14:22:21,301:INFO: Charcot-Marie-Tooth Disease Recall-at-100: 8.33%
+2018-05-29 14:22:21,302:INFO: Experiment Progress: 22.0% -- 117/519
+2018-05-29 14:22:58,943:INFO: Osteogenesis imperfecta type III (disorder) Recall-at-100: 50.00%
+2018-05-29 14:22:58,944:INFO: Experiment Progress: 22.0% -- 118/519
+2018-05-29 14:23:39,170:INFO: Osteogenesis imperfecta type IV (disorder) Recall-at-100: 20.00%
+2018-05-29 14:23:39,171:INFO: Experiment Progress: 22.0% -- 119/519
+2018-05-29 14:24:18,388:INFO: Hepatitis, Autoimmune Recall-at-100: 0.00%
+2018-05-29 14:24:18,389:INFO: Experiment Progress: 23.0% -- 120/519
+2018-05-29 14:24:59,759:INFO: Prostatic Neoplasms Recall-at-100: 4.27%
+2018-05-29 14:24:59,760:INFO: Experiment Progress: 23.0% -- 121/519
+2018-05-29 14:25:37,314:INFO: NADH:Q(1) Oxidoreductase deficiency Recall-at-100: 75.00%
+2018-05-29 14:25:37,315:INFO: Experiment Progress: 23.0% -- 122/519
+2018-05-29 14:26:16,719:INFO: Hypospadias Recall-at-100: 0.00%
+2018-05-29 14:26:16,720:INFO: Experiment Progress: 23.0% -- 123/519
+2018-05-29 14:26:55,505:INFO: Multiple Myeloma Recall-at-100: 10.83%
+2018-05-29 14:26:55,505:INFO: Experiment Progress: 23.0% -- 124/519
+2018-05-29 14:27:33,720:INFO: Fatty Liver Recall-at-100: 4.50%
+2018-05-29 14:27:33,721:INFO: Experiment Progress: 24.0% -- 125/519
+2018-05-29 14:28:14,000:INFO: Leishmaniasis, Visceral Recall-at-100: 0.00%
+2018-05-29 14:28:14,001:INFO: Experiment Progress: 24.0% -- 126/519
+2018-05-29 14:28:52,533:INFO: Early infantile epileptic encephalopathy with suppression bursts Recall-at-100: 5.00%
+2018-05-29 14:28:52,534:INFO: Experiment Progress: 24.0% -- 127/519
+2018-05-29 14:29:32,192:INFO: Kartagener Syndrome Recall-at-100: 0.00%
+2018-05-29 14:29:32,192:INFO: Experiment Progress: 24.0% -- 128/519
+2018-05-29 14:30:11,366:INFO: Malignant lymphoma, lymphocytic, intermediate differentiation, diffuse Recall-at-100: 25.00%
+2018-05-29 14:30:11,367:INFO: Experiment Progress: 24.0% -- 129/519
+2018-05-29 14:30:49,420:INFO: Bipolar Disorder Recall-at-100: 3.33%
+2018-05-29 14:30:49,421:INFO: Experiment Progress: 25.0% -- 130/519
+2018-05-29 14:31:29,557:INFO: Erectile dysfunction Recall-at-100: 20.00%
+2018-05-29 14:31:29,558:INFO: Experiment Progress: 25.0% -- 131/519
+2018-05-29 14:32:08,528:INFO: Meckel-Gruber syndrome Recall-at-100: 55.00%
+2018-05-29 14:32:08,529:INFO: Experiment Progress: 25.0% -- 132/519
+2018-05-29 14:32:47,288:INFO: Colonic Neoplasms Recall-at-100: 11.22%
+2018-05-29 14:32:47,288:INFO: Experiment Progress: 25.0% -- 133/519
+2018-05-29 14:33:27,502:INFO: Autistic Disorder Recall-at-100: 1.70%
+2018-05-29 14:33:27,502:INFO: Experiment Progress: 25.0% -- 134/519
+2018-05-29 14:34:05,992:INFO: Liver Neoplasms, Experimental Recall-at-100: 9.67%
+2018-05-29 14:34:05,994:INFO: Experiment Progress: 26.0% -- 135/519
+2018-05-29 14:34:45,694:INFO: Precursor T-Cell Lymphoblastic Leukemia-Lymphoma Recall-at-100: 10.00%
+2018-05-29 14:34:45,695:INFO: Experiment Progress: 26.0% -- 136/519
+2018-05-29 14:35:24,514:INFO: Narcolepsy Recall-at-100: 0.00%
+2018-05-29 14:35:24,515:INFO: Experiment Progress: 26.0% -- 137/519
+2018-05-29 14:36:04,095:INFO: Fever Recall-at-100: 10.00%
+2018-05-29 14:36:04,097:INFO: Experiment Progress: 26.0% -- 138/519
+2018-05-29 14:36:43,756:INFO: Adenocarcinoma Recall-at-100: 9.55%
+2018-05-29 14:36:43,757:INFO: Experiment Progress: 26.0% -- 139/519
+2018-05-29 14:37:21,893:INFO: Aortic Valve Insufficiency Recall-at-100: 0.00%
+2018-05-29 14:37:21,894:INFO: Experiment Progress: 26.0% -- 140/519
+2018-05-29 14:38:01,228:INFO: Carcinoma, Pancreatic Ductal Recall-at-100: 5.00%
+2018-05-29 14:38:01,229:INFO: Experiment Progress: 27.0% -- 141/519
+2018-05-29 14:38:39,378:INFO: Infarction, Middle Cerebral Artery Recall-at-100: 8.33%
+2018-05-29 14:38:39,378:INFO: Experiment Progress: 27.0% -- 142/519
+2018-05-29 14:39:19,215:INFO: Hypertensive disease Recall-at-100: 5.82%
+2018-05-29 14:39:19,216:INFO: Experiment Progress: 27.0% -- 143/519
+2018-05-29 14:39:59,582:INFO: Juvenile Myelomonocytic Leukemia Recall-at-100: 5.00%
+2018-05-29 14:39:59,583:INFO: Experiment Progress: 27.0% -- 144/519
+2018-05-29 14:40:37,609:INFO: Leprosy Recall-at-100: 0.00%
+2018-05-29 14:40:37,609:INFO: Experiment Progress: 27.0% -- 145/519
+2018-05-29 14:41:15,976:INFO: Myocardial Infarction Recall-at-100: 3.61%
+2018-05-29 14:41:15,978:INFO: Experiment Progress: 28.0% -- 146/519
+2018-05-29 14:41:53,064:INFO: Urticaria Recall-at-100: 0.00%
+2018-05-29 14:41:53,065:INFO: Experiment Progress: 28.0% -- 147/519
+2018-05-29 14:42:31,271:INFO: Cardiac Arrhythmia Recall-at-100: 0.00%
+2018-05-29 14:42:31,272:INFO: Experiment Progress: 28.0% -- 148/519
+2018-05-29 14:43:09,921:INFO: Hemochromatosis Recall-at-100: 5.00%
+2018-05-29 14:43:09,922:INFO: Experiment Progress: 28.0% -- 149/519
+2018-05-29 14:43:49,016:INFO: Pancreatic Neoplasm Recall-at-100: 11.25%
+2018-05-29 14:43:49,017:INFO: Experiment Progress: 28.0% -- 150/519
+2018-05-29 14:44:29,857:INFO: Cardiomyopathy, Dilated Recall-at-100: 6.00%
+2018-05-29 14:44:29,858:INFO: Experiment Progress: 29.0% -- 151/519
+2018-05-29 14:45:07,849:INFO: Papilloma Recall-at-100: 30.00%
+2018-05-29 14:45:07,850:INFO: Experiment Progress: 29.0% -- 152/519
+2018-05-29 14:45:46,984:INFO: Pain Recall-at-100: 0.00%
+2018-05-29 14:45:46,985:INFO: Experiment Progress: 29.0% -- 153/519
+2018-05-29 14:46:27,064:INFO: Congenital Abnormality Recall-at-100: 0.00%
+2018-05-29 14:46:27,065:INFO: Experiment Progress: 29.0% -- 154/519
+2018-05-29 14:47:06,716:INFO: MYCOBACTERIUM TUBERCULOSIS, SUSCEPTIBILITY TO (finding) Recall-at-100: 0.00%
+2018-05-29 14:47:06,717:INFO: Experiment Progress: 29.0% -- 155/519
+2018-05-29 14:47:47,184:INFO: Kidney Diseases Recall-at-100: 0.00%
+2018-05-29 14:47:47,184:INFO: Experiment Progress: 30.0% -- 156/519
+2018-05-29 14:48:27,376:INFO: Lung Diseases, Interstitial Recall-at-100: 0.00%
+2018-05-29 14:48:27,377:INFO: Experiment Progress: 30.0% -- 157/519
+2018-05-29 14:49:06,645:INFO: Basal cell carcinoma Recall-at-100: 0.00%
+2018-05-29 14:49:06,646:INFO: Experiment Progress: 30.0% -- 158/519
+2018-05-29 14:49:45,745:INFO: Liver carcinoma Recall-at-100: 6.47%
+2018-05-29 14:49:45,746:INFO: Experiment Progress: 30.0% -- 159/519
+2018-05-29 14:50:25,240:INFO: gliosarcoma Recall-at-100: 15.00%
+2018-05-29 14:50:25,241:INFO: Experiment Progress: 30.0% -- 160/519
+2018-05-29 14:51:06,227:INFO: Acute Coronary Syndrome Recall-at-100: 15.83%
+2018-05-29 14:51:06,228:INFO: Experiment Progress: 31.0% -- 161/519
+2018-05-29 14:51:44,615:INFO: Ovarian Cysts Recall-at-100: 0.00%
+2018-05-29 14:51:44,616:INFO: Experiment Progress: 31.0% -- 162/519
+2018-05-29 14:52:22,095:INFO: Schizophrenia, Childhood Recall-at-100: 0.00%
+2018-05-29 14:52:22,095:INFO: Experiment Progress: 31.0% -- 163/519
+2018-05-29 14:53:02,789:INFO: Adrenocortical carcinoma Recall-at-100: 20.00%
+2018-05-29 14:53:02,789:INFO: Experiment Progress: 31.0% -- 164/519
+2018-05-29 14:53:41,793:INFO: Schizophrenia Recall-at-100: 1.25%
+2018-05-29 14:53:41,793:INFO: Experiment Progress: 31.0% -- 165/519
+2018-05-29 14:54:20,327:INFO: Atrophic Recall-at-100: 10.00%
+2018-05-29 14:54:20,328:INFO: Experiment Progress: 31.0% -- 166/519
+2018-05-29 14:55:00,572:INFO: Idiopathic Pulmonary Fibrosis Recall-at-100: 0.00%
+2018-05-29 14:55:00,573:INFO: Experiment Progress: 32.0% -- 167/519
+2018-05-29 14:55:39,868:INFO: Lobar Holoprosencephaly Recall-at-100: 0.00%
+2018-05-29 14:55:39,869:INFO: Experiment Progress: 32.0% -- 168/519
+2018-05-29 14:56:17,722:INFO: Alobar Holoprosencephaly Recall-at-100: 0.00%
+2018-05-29 14:56:17,723:INFO: Experiment Progress: 32.0% -- 169/519
+2018-05-29 14:56:55,531:INFO: Immunologic Deficiency Syndromes Recall-at-100: 0.00%
+2018-05-29 14:56:55,532:INFO: Experiment Progress: 32.0% -- 170/519
+2018-05-29 14:57:35,960:INFO: Ataxia Recall-at-100: 20.00%
+2018-05-29 14:57:35,961:INFO: Experiment Progress: 32.0% -- 171/519
+2018-05-29 14:58:13,902:INFO: Adenocarcinoma Of Esophagus Recall-at-100: 10.00%
+2018-05-29 14:58:13,903:INFO: Experiment Progress: 33.0% -- 172/519
+2018-05-29 14:58:53,395:INFO: Retinitis Pigmentosa Recall-at-100: 5.71%
+2018-05-29 14:58:53,396:INFO: Experiment Progress: 33.0% -- 173/519
+2018-05-29 14:59:31,343:INFO: Squamous cell carcinoma of esophagus Recall-at-100: 8.61%
+2018-05-29 14:59:31,343:INFO: Experiment Progress: 33.0% -- 174/519
+2018-05-29 15:00:12,616:INFO: Autoimmune Diseases Recall-at-100: 3.33%
+2018-05-29 15:00:12,617:INFO: Experiment Progress: 33.0% -- 175/519
+2018-05-29 15:00:50,775:INFO: Diarrhea Recall-at-100: 0.00%
+2018-05-29 15:00:50,776:INFO: Experiment Progress: 33.0% -- 176/519
+2018-05-29 15:01:28,396:INFO: Myocardial Ischemia Recall-at-100: 2.98%
+2018-05-29 15:01:28,397:INFO: Experiment Progress: 34.0% -- 177/519
+2018-05-29 15:02:10,143:INFO: Essential Hypertension Recall-at-100: 0.00%
+2018-05-29 15:02:10,144:INFO: Experiment Progress: 34.0% -- 178/519
+2018-05-29 15:02:44,255:INFO: Hepatomegaly Recall-at-100: 11.11%
+2018-05-29 15:02:44,255:INFO: Experiment Progress: 34.0% -- 179/519
+2018-05-29 15:03:22,764:INFO: Myopathy Recall-at-100: 3.33%
+2018-05-29 15:03:22,765:INFO: Experiment Progress: 34.0% -- 180/519
+2018-05-29 15:04:01,493:INFO: Adverse reaction to drug Recall-at-100: 2.00%
+2018-05-29 15:04:01,494:INFO: Experiment Progress: 34.0% -- 181/519
+2018-05-29 15:04:41,579:INFO: Myoclonic Epilepsies, Progressive Recall-at-100: 10.00%
+2018-05-29 15:04:41,580:INFO: Experiment Progress: 35.0% -- 182/519
+2018-05-29 15:05:20,827:INFO: Muscular Atrophy Recall-at-100: 15.00%
+2018-05-29 15:05:20,828:INFO: Experiment Progress: 35.0% -- 183/519
+2018-05-29 15:06:00,023:INFO: Basal Ganglia Diseases Recall-at-100: 0.00%
+2018-05-29 15:06:00,024:INFO: Experiment Progress: 35.0% -- 184/519
+2018-05-29 15:06:39,455:INFO: Hepatitis B Recall-at-100: 5.00%
+2018-05-29 15:06:39,455:INFO: Experiment Progress: 35.0% -- 185/519
+2018-05-29 15:07:17,914:INFO: Lung diseases Recall-at-100: 10.50%
+2018-05-29 15:07:17,914:INFO: Experiment Progress: 35.0% -- 186/519
+2018-05-29 15:07:57,614:INFO: Chronic Obstructive Airway Disease Recall-at-100: 0.00%
+2018-05-29 15:07:57,614:INFO: Experiment Progress: 36.0% -- 187/519
+2018-05-29 15:08:35,525:INFO: Peripheral Neuropathy Recall-at-100: 2.90%
+2018-05-29 15:08:35,526:INFO: Experiment Progress: 36.0% -- 188/519
+2018-05-29 15:09:14,532:INFO: Weight Gain Recall-at-100: 3.33%
+2018-05-29 15:09:14,532:INFO: Experiment Progress: 36.0% -- 189/519
+2018-05-29 15:09:53,437:INFO: Deafness Recall-at-100: 0.00%
+2018-05-29 15:09:53,438:INFO: Experiment Progress: 36.0% -- 190/519
+2018-05-29 15:10:32,397:INFO: Renal dysplasia and retinal aplasia (disorder) Recall-at-100: 10.00%
+2018-05-29 15:10:32,398:INFO: Experiment Progress: 36.0% -- 191/519
+2018-05-29 15:11:15,254:INFO: Attention deficit hyperactivity disorder Recall-at-100: 3.33%
+2018-05-29 15:11:15,255:INFO: Experiment Progress: 36.0% -- 192/519
+2018-05-29 15:11:55,837:INFO: Tetralogy of Fallot Recall-at-100: 20.00%
+2018-05-29 15:11:55,838:INFO: Experiment Progress: 37.0% -- 193/519
+2018-05-29 15:12:34,452:INFO: Neurodegenerative Disorders Recall-at-100: 7.50%
+2018-05-29 15:12:34,453:INFO: Experiment Progress: 37.0% -- 194/519
+2018-05-29 15:13:13,509:INFO: Barrett Esophagus Recall-at-100: 10.00%
+2018-05-29 15:13:13,510:INFO: Experiment Progress: 37.0% -- 195/519
+2018-05-29 15:13:53,626:INFO: Craniofacial Abnormalities Recall-at-100: 4.90%
+2018-05-29 15:13:53,627:INFO: Experiment Progress: 37.0% -- 196/519
+2018-05-29 15:14:33,606:INFO: Necrotizing Enterocolitis Recall-at-100: 10.00%
+2018-05-29 15:14:33,607:INFO: Experiment Progress: 37.0% -- 197/519
+2018-05-29 15:15:13,131:INFO: Hyperlipidemia Recall-at-100: 10.00%
+2018-05-29 15:15:13,132:INFO: Experiment Progress: 38.0% -- 198/519
+2018-05-29 15:15:53,618:INFO: MYELODYSPLASTIC SYNDROME Recall-at-100: 0.00%
+2018-05-29 15:15:53,618:INFO: Experiment Progress: 38.0% -- 199/519
+2018-05-29 15:16:32,442:INFO: Anoxia Recall-at-100: 8.33%
+2018-05-29 15:16:32,443:INFO: Experiment Progress: 38.0% -- 200/519
+2018-05-29 15:17:10,588:INFO: Small cell carcinoma of lung Recall-at-100: 17.50%
+2018-05-29 15:17:10,589:INFO: Experiment Progress: 38.0% -- 201/519
+2018-05-29 15:17:47,336:INFO: Epilepsy Recall-at-100: 5.00%
+2018-05-29 15:17:47,336:INFO: Experiment Progress: 38.0% -- 202/519
+2018-05-29 15:18:24,988:INFO: Liver Failure, Acute Recall-at-100: 18.33%
+2018-05-29 15:18:24,990:INFO: Experiment Progress: 39.0% -- 203/519
+2018-05-29 15:19:02,792:INFO: Micronuclei, Chromosome-Defective Recall-at-100: 0.00%
+2018-05-29 15:19:02,792:INFO: Experiment Progress: 39.0% -- 204/519
+2018-05-29 15:19:39,867:INFO: Cognition Disorders Recall-at-100: 0.00%
+2018-05-29 15:19:39,868:INFO: Experiment Progress: 39.0% -- 205/519
+2018-05-29 15:20:16,309:INFO: Tonic-Clonic Epilepsy Recall-at-100: 0.00%
+2018-05-29 15:20:16,310:INFO: Experiment Progress: 39.0% -- 206/519
+2018-05-29 15:20:51,389:INFO: Heart Diseases Recall-at-100: 4.50%
+2018-05-29 15:20:51,390:INFO: Experiment Progress: 39.0% -- 207/519
+2018-05-29 15:21:26,360:INFO: Adult T-Cell Lymphoma/Leukemia Recall-at-100: 13.33%
+2018-05-29 15:21:26,361:INFO: Experiment Progress: 40.0% -- 208/519
+2018-05-29 15:22:01,047:INFO: Primary biliary cirrhosis Recall-at-100: 0.00%
+2018-05-29 15:22:01,048:INFO: Experiment Progress: 40.0% -- 209/519
+2018-05-29 15:22:34,567:INFO: beta Thalassemia Recall-at-100: 0.00%
+2018-05-29 15:22:34,568:INFO: Experiment Progress: 40.0% -- 210/519
+2018-05-29 15:23:09,102:INFO: Marijuana Abuse Recall-at-100: 30.00%
+2018-05-29 15:23:09,103:INFO: Experiment Progress: 40.0% -- 211/519
+2018-05-29 15:23:43,338:INFO: Long QT Syndrome Recall-at-100: 25.00%
+2018-05-29 15:23:43,339:INFO: Experiment Progress: 40.0% -- 212/519
+2018-05-29 15:24:17,234:INFO: Burkitt Lymphoma Recall-at-100: 20.00%
+2018-05-29 15:24:17,235:INFO: Experiment Progress: 41.0% -- 213/519
+2018-05-29 15:24:52,519:INFO: TOBACCO ADDICTION, SUSCEPTIBILITY TO (finding) Recall-at-100: 10.00%
+2018-05-29 15:24:52,520:INFO: Experiment Progress: 41.0% -- 214/519
+2018-05-29 15:25:27,618:INFO: Insulin Resistance Recall-at-100: 16.50%
+2018-05-29 15:25:27,619:INFO: Experiment Progress: 41.0% -- 215/519
+2018-05-29 15:26:06,459:INFO: Left Ventricular Hypertrophy Recall-at-100: 3.33%
+2018-05-29 15:26:06,459:INFO: Experiment Progress: 41.0% -- 216/519
+2018-05-29 15:26:45,236:INFO: Bronchial Hyperreactivity Recall-at-100: 0.00%
+2018-05-29 15:26:45,237:INFO: Experiment Progress: 41.0% -- 217/519
+2018-05-29 15:27:24,753:INFO: AMYOTROPHIC LATERAL SCLEROSIS 1 Recall-at-100: 6.50%
+2018-05-29 15:27:24,754:INFO: Experiment Progress: 42.0% -- 218/519
+2018-05-29 15:28:03,270:INFO: Fetal Growth Retardation Recall-at-100: 0.00%
+2018-05-29 15:28:03,271:INFO: Experiment Progress: 42.0% -- 219/519
+2018-05-29 15:28:34,759:INFO: Holoprosencephaly Recall-at-100: 0.00%
+2018-05-29 15:28:34,760:INFO: Experiment Progress: 42.0% -- 220/519
+2018-05-29 15:29:12,102:INFO: Arthritis, Experimental Recall-at-100: 10.00%
+2018-05-29 15:29:12,102:INFO: Experiment Progress: 42.0% -- 221/519
+2018-05-29 15:29:53,859:INFO: Congenital Heart Defects Recall-at-100: 0.00%
+2018-05-29 15:29:53,860:INFO: Experiment Progress: 42.0% -- 222/519
+2018-05-29 15:30:29,255:INFO: Pseudohypoaldosteronism Recall-at-100: 44.44%
+2018-05-29 15:30:29,256:INFO: Experiment Progress: 42.0% -- 223/519
+2018-05-29 15:31:06,794:INFO: Cataract Recall-at-100: 0.00%
+2018-05-29 15:31:06,795:INFO: Experiment Progress: 43.0% -- 224/519
+2018-05-29 15:31:44,748:INFO: Giant Cell Glioblastoma Recall-at-100: 15.00%
+2018-05-29 15:31:44,748:INFO: Experiment Progress: 43.0% -- 225/519
+2018-05-29 15:32:26,529:INFO: Seizure Adverse Event Recall-at-100: 0.00%
+2018-05-29 15:32:26,530:INFO: Experiment Progress: 43.0% -- 226/519
+2018-05-29 15:33:04,796:INFO: Body Weight Recall-at-100: 0.00%
+2018-05-29 15:33:04,798:INFO: Experiment Progress: 43.0% -- 227/519
+2018-05-29 15:33:42,421:INFO: Huntington Disease Recall-at-100: 0.00%
+2018-05-29 15:33:42,422:INFO: Experiment Progress: 43.0% -- 228/519
+2018-05-29 15:34:23,611:INFO: Glioblastoma Recall-at-100: 11.43%
+2018-05-29 15:34:23,612:INFO: Experiment Progress: 44.0% -- 229/519
+2018-05-29 15:35:01,939:INFO: Congenital diaphragmatic hernia Recall-at-100: 20.00%
+2018-05-29 15:35:01,940:INFO: Experiment Progress: 44.0% -- 230/519
+2018-05-29 15:35:42,665:INFO: Systemic Scleroderma Recall-at-100: 0.00%
+2018-05-29 15:35:42,665:INFO: Experiment Progress: 44.0% -- 231/519
+2018-05-29 15:36:20,980:INFO: Acute kidney injury Recall-at-100: 7.86%
+2018-05-29 15:36:20,981:INFO: Experiment Progress: 44.0% -- 232/519
+2018-05-29 15:37:00,527:INFO: Copper-Overload Cirrhosis Recall-at-100: 10.00%
+2018-05-29 15:37:00,529:INFO: Experiment Progress: 44.0% -- 233/519
+2018-05-29 15:37:40,284:INFO: Spontaneous abortion Recall-at-100: 4.64%
+2018-05-29 15:37:40,285:INFO: Experiment Progress: 45.0% -- 234/519
+2018-05-29 15:38:22,116:INFO: Glioma Recall-at-100: 5.95%
+2018-05-29 15:38:22,117:INFO: Experiment Progress: 45.0% -- 235/519
+2018-05-29 15:39:02,756:INFO: Gliosis Recall-at-100: 20.00%
+2018-05-29 15:39:02,757:INFO: Experiment Progress: 45.0% -- 236/519
+2018-05-29 15:39:42,340:INFO: LEIGH SYNDROME DUE TO MITOCHONDRIAL COMPLEX I DEFICIENCY Recall-at-100: 70.00%
+2018-05-29 15:39:42,341:INFO: Experiment Progress: 45.0% -- 237/519
+2018-05-29 15:40:22,506:INFO: Dementia Recall-at-100: 0.00%
+2018-05-29 15:40:22,507:INFO: Experiment Progress: 45.0% -- 238/519
+2018-05-29 15:41:01,709:INFO: Pancreatitis Recall-at-100: 0.00%
+2018-05-29 15:41:01,710:INFO: Experiment Progress: 46.0% -- 239/519
+2018-05-29 15:41:43,052:INFO: Amino Acid Metabolism, Inborn Errors Recall-at-100: 0.00%
+2018-05-29 15:41:43,053:INFO: Experiment Progress: 46.0% -- 240/519
+2018-05-29 15:42:21,771:INFO: Thyroid Neoplasm Recall-at-100: 9.17%
+2018-05-29 15:42:21,773:INFO: Experiment Progress: 46.0% -- 241/519
+2018-05-29 15:43:01,829:INFO: Neoplasm Invasiveness Recall-at-100: 8.85%
+2018-05-29 15:43:01,830:INFO: Experiment Progress: 46.0% -- 242/519
+2018-05-29 15:43:41,815:INFO: Neoplasm Metastasis Recall-at-100: 7.97%
+2018-05-29 15:43:41,816:INFO: Experiment Progress: 46.0% -- 243/519
+2018-05-29 15:44:21,256:INFO: Albuminuria Recall-at-100: 5.00%
+2018-05-29 15:44:21,257:INFO: Experiment Progress: 47.0% -- 244/519
+2018-05-29 15:44:59,462:INFO: Pre-Eclampsia Recall-at-100: 10.00%
+2018-05-29 15:44:59,463:INFO: Experiment Progress: 47.0% -- 245/519
+2018-05-29 15:45:37,834:INFO: Nerve Degeneration Recall-at-100: 12.14%
+2018-05-29 15:45:37,835:INFO: Experiment Progress: 47.0% -- 246/519
+2018-05-29 15:46:15,063:INFO: Thromboembolism Recall-at-100: 5.00%
+2018-05-29 15:46:15,064:INFO: Experiment Progress: 47.0% -- 247/519
+2018-05-29 15:46:53,744:INFO: Polycystic Ovary Syndrome Recall-at-100: 1.38%
+2018-05-29 15:46:53,744:INFO: Experiment Progress: 47.0% -- 248/519
+2018-05-29 15:47:36,137:INFO: Transient Ischemic Attack Recall-at-100: 20.00%
+2018-05-29 15:47:36,137:INFO: Experiment Progress: 47.0% -- 249/519
+2018-05-29 15:48:14,677:INFO: Brain Ischemia Recall-at-100: 16.67%
+2018-05-29 15:48:14,678:INFO: Experiment Progress: 48.0% -- 250/519
+2018-05-29 15:48:55,033:INFO: Cerebral Infarction Recall-at-100: 10.00%
+2018-05-29 15:48:55,034:INFO: Experiment Progress: 48.0% -- 251/519
+2018-05-29 15:49:32,938:INFO: Malignant neoplasm of esophagus Recall-at-100: 25.00%
+2018-05-29 15:49:32,939:INFO: Experiment Progress: 48.0% -- 252/519
+2018-05-29 15:50:12,304:INFO: Degenerative polyarthritis Recall-at-100: 5.44%
+2018-05-29 15:50:12,305:INFO: Experiment Progress: 48.0% -- 253/519
+2018-05-29 15:50:45,660:INFO: Osteitis Deformans Recall-at-100: 12.50%
+2018-05-29 15:50:45,661:INFO: Experiment Progress: 48.0% -- 254/519
+2018-05-29 15:51:24,693:INFO: Diabetic Cardiomyopathies Recall-at-100: 0.00%
+2018-05-29 15:51:24,694:INFO: Experiment Progress: 49.0% -- 255/519
+2018-05-29 15:52:05,108:INFO: Nuclear cataract Recall-at-100: 5.00%
+2018-05-29 15:52:05,108:INFO: Experiment Progress: 49.0% -- 256/519
+2018-05-29 15:52:44,359:INFO: Anorexia Recall-at-100: 30.00%
+2018-05-29 15:52:44,360:INFO: Experiment Progress: 49.0% -- 257/519
+2018-05-29 15:53:24,551:INFO: Cocaine-Related Disorders Recall-at-100: 10.69%
+2018-05-29 15:53:24,551:INFO: Experiment Progress: 49.0% -- 258/519
+2018-05-29 15:54:07,753:INFO: MELAS Syndrome Recall-at-100: 80.00%
+2018-05-29 15:54:07,753:INFO: Experiment Progress: 49.0% -- 259/519
+2018-05-29 15:54:31,530:INFO: Mitochondrial Myopathies Recall-at-100: 0.00%
+2018-05-29 15:54:31,531:INFO: Experiment Progress: 50.0% -- 260/519
+2018-05-29 15:55:10,626:INFO: Amphetamine-Related Disorders Recall-at-100: 0.00%
+2018-05-29 15:55:10,627:INFO: Experiment Progress: 50.0% -- 261/519
+2018-05-29 15:55:50,831:INFO: Birth Weight Recall-at-100: 0.00%
+2018-05-29 15:55:50,833:INFO: Experiment Progress: 50.0% -- 262/519
+2018-05-29 15:56:30,409:INFO: Brain Diseases Recall-at-100: 5.00%
+2018-05-29 15:56:30,410:INFO: Experiment Progress: 50.0% -- 263/519
+2018-05-29 15:57:09,686:INFO: Dyslipidemias Recall-at-100: 20.00%
+2018-05-29 15:57:09,687:INFO: Experiment Progress: 50.0% -- 264/519
+2018-05-29 15:57:46,049:INFO: Berylliosis Recall-at-100: 0.00%
+2018-05-29 15:57:46,050:INFO: Experiment Progress: 51.0% -- 265/519
+2018-05-29 15:58:25,371:INFO: Mental Retardation, X-Linked Recall-at-100: 10.00%
+2018-05-29 15:58:25,372:INFO: Experiment Progress: 51.0% -- 266/519
+2018-05-29 15:58:55,779:INFO: Sarcoidosis Recall-at-100: 0.00%
+2018-05-29 15:58:55,779:INFO: Experiment Progress: 51.0% -- 267/519
+2018-05-29 15:59:34,957:INFO: Liver neoplasms Recall-at-100: 9.55%
+2018-05-29 15:59:34,958:INFO: Experiment Progress: 51.0% -- 268/519
+2018-05-29 16:00:14,631:INFO: Myocardial Reperfusion Injury Recall-at-100: 10.83%
+2018-05-29 16:00:14,632:INFO: Experiment Progress: 51.0% -- 269/519
+2018-05-29 16:00:53,461:INFO: Microsatellite Instability Recall-at-100: 10.00%
+2018-05-29 16:00:53,461:INFO: Experiment Progress: 52.0% -- 270/519
+2018-05-29 16:01:33,373:INFO: Night blindness, congenital stationary Recall-at-100: 0.00%
+2018-05-29 16:01:33,374:INFO: Experiment Progress: 52.0% -- 271/519
+2018-05-29 16:02:11,858:INFO: Stevens-Johnson Syndrome Recall-at-100: 20.00%
+2018-05-29 16:02:11,859:INFO: Experiment Progress: 52.0% -- 272/519
+2018-05-29 16:02:51,385:INFO: Leukemia, Lymphocytic, Acute, L1 Recall-at-100: 0.00%
+2018-05-29 16:02:51,385:INFO: Experiment Progress: 52.0% -- 273/519
+2018-05-29 16:03:33,293:INFO: Systemic arterial pressure Recall-at-100: 0.00%
+2018-05-29 16:03:33,294:INFO: Experiment Progress: 52.0% -- 274/519
+2018-05-29 16:04:12,074:INFO: Learning Disorders Recall-at-100: 13.33%
+2018-05-29 16:04:12,074:INFO: Experiment Progress: 52.0% -- 275/519
+2018-05-29 16:04:51,701:INFO: Walker-Warburg congenital muscular dystrophy Recall-at-100: 10.00%
+2018-05-29 16:04:51,702:INFO: Experiment Progress: 53.0% -- 276/519
+2018-05-29 16:05:33,254:INFO: Marfan Syndrome Recall-at-100: 30.00%
+2018-05-29 16:05:33,254:INFO: Experiment Progress: 53.0% -- 277/519
+2018-05-29 16:06:10,991:INFO: Congenital ocular coloboma (disorder) Recall-at-100: 5.00%
+2018-05-29 16:06:10,992:INFO: Experiment Progress: 53.0% -- 278/519
+2018-05-29 16:06:52,822:INFO: Lung Neoplasms Recall-at-100: 11.01%
+2018-05-29 16:06:52,823:INFO: Experiment Progress: 53.0% -- 279/519
+2018-05-29 16:07:20,413:INFO: Myoclonic Epilepsy, Juvenile Recall-at-100: 0.00%
+2018-05-29 16:07:20,414:INFO: Experiment Progress: 53.0% -- 280/519
+2018-05-29 16:07:59,323:INFO: Inflammatory Bowel Diseases Recall-at-100: 2.50%
+2018-05-29 16:07:59,324:INFO: Experiment Progress: 54.0% -- 281/519
+2018-05-29 16:08:40,695:INFO: Mammary Neoplasms Recall-at-100: 5.65%
+2018-05-29 16:08:40,696:INFO: Experiment Progress: 54.0% -- 282/519
+2018-05-29 16:09:04,072:INFO: Idiopathic generalized epilepsy Recall-at-100: 0.00%
+2018-05-29 16:09:04,073:INFO: Experiment Progress: 54.0% -- 283/519
+2018-05-29 16:09:46,055:INFO: Neuralgia Recall-at-100: 0.00%
+2018-05-29 16:09:46,056:INFO: Experiment Progress: 54.0% -- 284/519
+2018-05-29 16:10:24,291:INFO: Neural Tube Defects Recall-at-100: 5.00%
+2018-05-29 16:10:24,292:INFO: Experiment Progress: 54.0% -- 285/519
+2018-05-29 16:11:04,550:INFO: Dermatitis, Allergic Contact Recall-at-100: 4.52%
+2018-05-29 16:11:04,551:INFO: Experiment Progress: 55.0% -- 286/519
+2018-05-29 16:11:42,674:INFO: Inborn Errors of Metabolism Recall-at-100: 0.00%
+2018-05-29 16:11:42,675:INFO: Experiment Progress: 55.0% -- 287/519
+2018-05-29 16:12:21,892:INFO: Platelet mean volume finding Recall-at-100: 3.33%
+2018-05-29 16:12:21,892:INFO: Experiment Progress: 55.0% -- 288/519
+2018-05-29 16:13:02,461:INFO: Intestinal Neoplasms Recall-at-100: 35.00%
+2018-05-29 16:13:02,461:INFO: Experiment Progress: 55.0% -- 289/519
+2018-05-29 16:13:40,346:INFO: Allergic rhinitis (disorder) Recall-at-100: 0.00%
+2018-05-29 16:13:40,346:INFO: Experiment Progress: 55.0% -- 290/519
+2018-05-29 16:14:20,834:INFO: Blood pressure finding Recall-at-100: 2.00%
+2018-05-29 16:14:20,835:INFO: Experiment Progress: 56.0% -- 291/519
+2018-05-29 16:14:59,723:INFO: Age related macular degeneration Recall-at-100: 2.50%
+2018-05-29 16:14:59,724:INFO: Experiment Progress: 56.0% -- 292/519
+2018-05-29 16:15:39,754:INFO: Hyperplasia Recall-at-100: 13.33%
+2018-05-29 16:15:39,755:INFO: Experiment Progress: 56.0% -- 293/519
+2018-05-29 16:16:19,462:INFO: Pulmonary function (finding) Recall-at-100: 0.00%
+2018-05-29 16:16:19,463:INFO: Experiment Progress: 56.0% -- 294/519
+2018-05-29 16:16:58,297:INFO: Spina Bifida Recall-at-100: 0.00%
+2018-05-29 16:16:58,299:INFO: Experiment Progress: 56.0% -- 295/519
+2018-05-29 16:17:38,478:INFO: Hypertrophic Cardiomyopathy Recall-at-100: 18.33%
+2018-05-29 16:17:38,479:INFO: Experiment Progress: 57.0% -- 296/519
+2018-05-29 16:18:20,272:INFO: Bardet-Biedl Syndrome Recall-at-100: 50.00%
+2018-05-29 16:18:20,272:INFO: Experiment Progress: 57.0% -- 297/519
+2018-05-29 16:18:58,659:INFO: Keloid Recall-at-100: 6.67%
+2018-05-29 16:18:58,660:INFO: Experiment Progress: 57.0% -- 298/519
+2018-05-29 16:19:40,537:INFO: melanoma Recall-at-100: 3.66%
+2018-05-29 16:19:40,538:INFO: Experiment Progress: 57.0% -- 299/519
+2018-05-29 16:20:19,851:INFO: LEUKEMIA, ACUTE LYMPHOBLASTIC, SUSCEPTIBILITY TO, 3 Recall-at-100: 10.00%
+2018-05-29 16:20:19,852:INFO: Experiment Progress: 57.0% -- 300/519
+2018-05-29 16:21:00,834:INFO: Pneumonia Recall-at-100: 9.00%
+2018-05-29 16:21:00,835:INFO: Experiment Progress: 57.0% -- 301/519
+2018-05-29 16:21:39,332:INFO: Disease Progression Recall-at-100: 5.71%
+2018-05-29 16:21:39,333:INFO: Experiment Progress: 58.0% -- 302/519
+2018-05-29 16:22:20,540:INFO: Nephroblastoma Recall-at-100: 0.00%
+2018-05-29 16:22:20,541:INFO: Experiment Progress: 58.0% -- 303/519
+2018-05-29 16:23:00,768:INFO: Severe Combined Immunodeficiency Recall-at-100: 20.00%
+2018-05-29 16:23:00,769:INFO: Experiment Progress: 58.0% -- 304/519
+2018-05-29 16:23:40,544:INFO: Malignant neoplasm of ovary Recall-at-100: 15.00%
+2018-05-29 16:23:40,545:INFO: Experiment Progress: 58.0% -- 305/519
+2018-05-29 16:24:20,394:INFO: Pheochromocytoma Recall-at-100: 10.00%
+2018-05-29 16:24:20,395:INFO: Experiment Progress: 58.0% -- 306/519
+2018-05-29 16:24:59,854:INFO: Testicular Germ Cell Tumor Recall-at-100: 0.00%
+2018-05-29 16:24:59,855:INFO: Experiment Progress: 59.0% -- 307/519
+2018-05-29 16:25:39,333:INFO: Hypogonadism Recall-at-100: 10.00%
+2018-05-29 16:25:39,334:INFO: Experiment Progress: 59.0% -- 308/519
+2018-05-29 16:26:21,919:INFO: Movement Disorders Recall-at-100: 0.00%
+2018-05-29 16:26:21,920:INFO: Experiment Progress: 59.0% -- 309/519
+2018-05-29 16:26:59,525:INFO: Sarcoma Recall-at-100: 10.00%
+2018-05-29 16:26:59,526:INFO: Experiment Progress: 59.0% -- 310/519
+2018-05-29 16:27:40,861:INFO: Lymphatic Metastasis Recall-at-100: 5.00%
+2018-05-29 16:27:40,862:INFO: Experiment Progress: 59.0% -- 311/519
+2018-05-29 16:28:20,180:INFO: Hypoglycemia Recall-at-100: 0.00%
+2018-05-29 16:28:20,181:INFO: Experiment Progress: 60.0% -- 312/519
+2018-05-29 16:29:01,009:INFO: Anemia, Sickle Cell Recall-at-100: 0.00%
+2018-05-29 16:29:01,010:INFO: Experiment Progress: 60.0% -- 313/519
+2018-05-29 16:29:41,301:INFO: Muscular Dystrophy, Facioscapulohumeral Recall-at-100: 0.00%
+2018-05-29 16:29:41,302:INFO: Experiment Progress: 60.0% -- 314/519
+2018-05-29 16:30:18,420:INFO: Colorectal Cancer Recall-at-100: 10.00%
+2018-05-29 16:30:18,420:INFO: Experiment Progress: 60.0% -- 315/519
+2018-05-29 16:30:59,308:INFO: Atherosclerosis Recall-at-100: 5.33%
+2018-05-29 16:30:59,309:INFO: Experiment Progress: 60.0% -- 316/519
+2018-05-29 16:31:39,273:INFO: Asthma Recall-at-100: 3.82%
+2018-05-29 16:31:39,274:INFO: Experiment Progress: 61.0% -- 317/519
+2018-05-29 16:32:18,893:INFO: Cardiomyopathy, Hypertrophic, Familial Recall-at-100: 23.33%
+2018-05-29 16:32:18,894:INFO: Experiment Progress: 61.0% -- 318/519
+2018-05-29 16:32:59,000:INFO: Skin Neoplasms Recall-at-100: 14.50%
+2018-05-29 16:32:59,001:INFO: Experiment Progress: 61.0% -- 319/519
+2018-05-29 16:33:37,281:INFO: Seizures Recall-at-100: 2.22%
+2018-05-29 16:33:37,282:INFO: Experiment Progress: 61.0% -- 320/519
+2018-05-29 16:34:17,510:INFO: Alzheimer's Disease Recall-at-100: 5.52%
+2018-05-29 16:34:17,511:INFO: Experiment Progress: 61.0% -- 321/519
+2018-05-29 16:34:57,517:INFO: Menopause present (finding) Recall-at-100: 0.00%
+2018-05-29 16:34:57,518:INFO: Experiment Progress: 62.0% -- 322/519
+2018-05-29 16:35:38,721:INFO: Neoplastic Syndromes, Hereditary Recall-at-100: 8.00%
+2018-05-29 16:35:38,721:INFO: Experiment Progress: 62.0% -- 323/519
+2018-05-29 16:36:19,406:INFO: Gastrointestinal Diseases Recall-at-100: 0.00%
+2018-05-29 16:36:19,407:INFO: Experiment Progress: 62.0% -- 324/519
+2018-05-29 16:36:58,143:INFO: Cytochrome-c Oxidase Deficiency Recall-at-100: 25.00%
+2018-05-29 16:36:58,144:INFO: Experiment Progress: 62.0% -- 325/519
+2018-05-29 16:37:34,631:INFO: Retinal Degeneration Recall-at-100: 0.00%
+2018-05-29 16:37:34,632:INFO: Experiment Progress: 62.0% -- 326/519
+2018-05-29 16:38:15,500:INFO: Retinal Diseases Recall-at-100: 0.00%
+2018-05-29 16:38:15,501:INFO: Experiment Progress: 63.0% -- 327/519
+2018-05-29 16:38:53,558:INFO: Methylmalonic acidemia Recall-at-100: 20.00%
+2018-05-29 16:38:53,560:INFO: Experiment Progress: 63.0% -- 328/519
+2018-05-29 16:39:33,361:INFO: Contact Dermatitis Recall-at-100: 5.71%
+2018-05-29 16:39:33,362:INFO: Experiment Progress: 63.0% -- 329/519
+2018-05-29 16:40:13,117:INFO: Dermatitis, Atopic Recall-at-100: 2.50%
+2018-05-29 16:40:13,118:INFO: Experiment Progress: 63.0% -- 330/519
+2018-05-29 16:40:52,199:INFO: Coronary heart disease Recall-at-100: 5.33%
+2018-05-29 16:40:52,200:INFO: Experiment Progress: 63.0% -- 331/519
+2018-05-29 16:41:30,796:INFO: Osteoporosis Recall-at-100: 9.29%
+2018-05-29 16:41:30,797:INFO: Experiment Progress: 63.0% -- 332/519
+2018-05-29 16:42:09,412:INFO: Cardiomegaly Recall-at-100: 13.81%
+2018-05-29 16:42:09,413:INFO: Experiment Progress: 64.0% -- 333/519
+2018-05-29 16:42:50,960:INFO: Heart failure Recall-at-100: 5.00%
+2018-05-29 16:42:50,962:INFO: Experiment Progress: 64.0% -- 334/519
+2018-05-29 16:43:30,230:INFO: Hereditary Breast and Ovarian Cancer Syndrome Recall-at-100: 35.00%
+2018-05-29 16:43:30,231:INFO: Experiment Progress: 64.0% -- 335/519
+2018-05-29 16:44:09,158:INFO: Major Depressive Disorder Recall-at-100: 6.67%
+2018-05-29 16:44:09,159:INFO: Experiment Progress: 64.0% -- 336/519
+2018-05-29 16:44:49,538:INFO: Dermatologic disorders Recall-at-100: 0.00%
+2018-05-29 16:44:49,539:INFO: Experiment Progress: 64.0% -- 337/519
+2018-05-29 16:45:27,349:INFO: Inflammation Recall-at-100: 3.64%
+2018-05-29 16:45:27,350:INFO: Experiment Progress: 65.0% -- 338/519
+2018-05-29 16:46:08,585:INFO: Diabetic Neuropathies Recall-at-100: 0.00%
+2018-05-29 16:46:08,586:INFO: Experiment Progress: 65.0% -- 339/519
+2018-05-29 16:46:48,070:INFO: Male infertility Recall-at-100: 10.00%
+2018-05-29 16:46:48,071:INFO: Experiment Progress: 65.0% -- 340/519
+2018-05-29 16:47:28,748:INFO: Vascular Diseases Recall-at-100: 0.00%
+2018-05-29 16:47:28,749:INFO: Experiment Progress: 65.0% -- 341/519
+2018-05-29 16:48:09,515:INFO: Female infertility Recall-at-100: 31.67%
+2018-05-29 16:48:09,515:INFO: Experiment Progress: 65.0% -- 342/519
+2018-05-29 16:48:48,185:INFO: leukemia Recall-at-100: 10.00%
+2018-05-29 16:48:48,186:INFO: Experiment Progress: 66.0% -- 343/519
+2018-05-29 16:49:28,806:INFO: Ulcerative Colitis Recall-at-100: 6.25%
+2018-05-29 16:49:28,807:INFO: Experiment Progress: 66.0% -- 344/519
+2018-05-29 16:50:08,607:INFO: Influenza Recall-at-100: 12.00%
+2018-05-29 16:50:08,608:INFO: Experiment Progress: 66.0% -- 345/519
+2018-05-29 16:50:46,323:INFO: Nephritis, Interstitial Recall-at-100: 50.00%
+2018-05-29 16:50:46,324:INFO: Experiment Progress: 66.0% -- 346/519
+2018-05-29 16:51:25,928:INFO: Sjogren's Syndrome Recall-at-100: 5.00%
+2018-05-29 16:51:25,929:INFO: Experiment Progress: 66.0% -- 347/519
+2018-05-29 16:52:05,411:INFO: Infant length Recall-at-100: 0.00%
+2018-05-29 16:52:05,412:INFO: Experiment Progress: 67.0% -- 348/519
+2018-05-29 16:52:45,103:INFO: Child Development Disorders, Pervasive Recall-at-100: 2.00%
+2018-05-29 16:52:45,104:INFO: Experiment Progress: 67.0% -- 349/519
+2018-05-29 16:53:26,057:INFO: Substance Withdrawal Syndrome Recall-at-100: 13.67%
+2018-05-29 16:53:26,058:INFO: Experiment Progress: 67.0% -- 350/519
+2018-05-29 16:54:05,694:INFO: Malformations of Cortical Development Recall-at-100: 10.00%
+2018-05-29 16:54:05,695:INFO: Experiment Progress: 67.0% -- 351/519
+2018-05-29 16:54:46,571:INFO: Amyotrophic Lateral Sclerosis Recall-at-100: 6.43%
+2018-05-29 16:54:46,571:INFO: Experiment Progress: 67.0% -- 352/519
+2018-05-29 16:55:25,304:INFO: Developmental Disabilities Recall-at-100: 5.00%
+2018-05-29 16:55:25,305:INFO: Experiment Progress: 68.0% -- 353/519
+2018-05-29 16:56:04,916:INFO: Febrile Convulsions Recall-at-100: 0.00%
+2018-05-29 16:56:04,917:INFO: Experiment Progress: 68.0% -- 354/519
+2018-05-29 16:56:43,313:INFO: Cholestasis Recall-at-100: 10.83%
+2018-05-29 16:56:43,314:INFO: Experiment Progress: 68.0% -- 355/519
+2018-05-29 16:57:22,633:INFO: Pulmonary Hypertension Recall-at-100: 0.00%
+2018-05-29 16:57:22,633:INFO: Experiment Progress: 68.0% -- 356/519
+2018-05-29 16:58:01,644:INFO: Papillary thyroid carcinoma Recall-at-100: 3.33%
+2018-05-29 16:58:01,646:INFO: Experiment Progress: 68.0% -- 357/519
+2018-05-29 16:58:41,735:INFO: Salivary Gland Neoplasms Recall-at-100: 2.50%
+2018-05-29 16:58:41,738:INFO: Experiment Progress: 68.0% -- 358/519
+2018-05-29 16:59:21,441:INFO: Non-alcoholic Fatty Liver Disease Recall-at-100: 2.50%
+2018-05-29 16:59:21,442:INFO: Experiment Progress: 69.0% -- 359/519
+2018-05-29 17:00:02,895:INFO: Hay fever Recall-at-100: 0.00%
+2018-05-29 17:00:02,896:INFO: Experiment Progress: 69.0% -- 360/519
+2018-05-29 17:00:40,916:INFO: Hypercholesterolemia, Familial Recall-at-100: 0.00%
+2018-05-29 17:00:40,917:INFO: Experiment Progress: 69.0% -- 361/519
+2018-05-29 17:01:20,395:INFO: Down Syndrome Recall-at-100: 2.22%
+2018-05-29 17:01:20,396:INFO: Experiment Progress: 69.0% -- 362/519
+2018-05-29 17:02:00,417:INFO: Arrhythmogenic Right Ventricular Dysplasia Recall-at-100: 0.00%
+2018-05-29 17:02:00,418:INFO: Experiment Progress: 69.0% -- 363/519
+2018-05-29 17:02:38,886:INFO: Semilobar Holoprosencephaly Recall-at-100: 10.00%
+2018-05-29 17:02:38,886:INFO: Experiment Progress: 70.0% -- 364/519
+2018-05-29 17:03:20,170:INFO: Hypertriglyceridemia Recall-at-100: 0.00%
+2018-05-29 17:03:20,171:INFO: Experiment Progress: 70.0% -- 365/519
+2018-05-29 17:03:55,625:INFO: Sensorineural Hearing Loss (disorder) Recall-at-100: 0.00%
+2018-05-29 17:03:55,626:INFO: Experiment Progress: 70.0% -- 366/519
+2018-05-29 17:04:34,764:INFO: Metabolic Syndrome X Recall-at-100: 0.00%
+2018-05-29 17:04:34,765:INFO: Experiment Progress: 70.0% -- 367/519
+2018-05-29 17:05:14,641:INFO: Malignant neoplasm of lung Recall-at-100: 5.00%
+2018-05-29 17:05:14,642:INFO: Experiment Progress: 70.0% -- 368/519
+2018-05-29 17:05:53,753:INFO: Leukemia, Myelocytic, Acute Recall-at-100: 3.48%
+2018-05-29 17:05:53,754:INFO: Experiment Progress: 71.0% -- 369/519
+2018-05-29 17:06:32,201:INFO: Malignant neoplasm of prostate Recall-at-100: 3.10%
+2018-05-29 17:06:32,201:INFO: Experiment Progress: 71.0% -- 370/519
+2018-05-29 17:07:13,763:INFO: Renal Insufficiency Recall-at-100: 0.00%
+2018-05-29 17:07:13,764:INFO: Experiment Progress: 71.0% -- 371/519
+2018-05-29 17:07:49,422:INFO: Jeune thoracic dystrophy Recall-at-100: 0.00%
+2018-05-29 17:07:49,423:INFO: Experiment Progress: 71.0% -- 372/519
+2018-05-29 17:08:29,779:INFO: Renal Cell Carcinoma Recall-at-100: 2.44%
+2018-05-29 17:08:29,780:INFO: Experiment Progress: 71.0% -- 373/519
+2018-05-29 17:09:10,782:INFO: Squamous cell carcinoma Recall-at-100: 15.97%
+2018-05-29 17:09:10,783:INFO: Experiment Progress: 72.0% -- 374/519
+2018-05-29 17:09:48,496:INFO: Non-Small Cell Lung Carcinoma Recall-at-100: 8.03%
+2018-05-29 17:09:48,497:INFO: Experiment Progress: 72.0% -- 375/519
+2018-05-29 17:10:28,341:INFO: Manganese Poisoning Recall-at-100: 10.00%
+2018-05-29 17:10:28,342:INFO: Experiment Progress: 72.0% -- 376/519
+2018-05-29 17:11:08,345:INFO: Ventricular Dysfunction, Left Recall-at-100: 10.00%
+2018-05-29 17:11:08,346:INFO: Experiment Progress: 72.0% -- 377/519
+2018-05-29 17:11:47,191:INFO: Carcinoma, Transitional Cell Recall-at-100: 12.50%
+2018-05-29 17:11:47,192:INFO: Experiment Progress: 72.0% -- 378/519
+2018-05-29 17:12:26,223:INFO: Mucocutaneous Lymph Node Syndrome Recall-at-100: 0.00%
+2018-05-29 17:12:26,224:INFO: Experiment Progress: 73.0% -- 379/519
+2018-05-29 17:13:06,112:INFO: Tobacco Use Disorder Recall-at-100: 0.00%
+2018-05-29 17:13:06,113:INFO: Experiment Progress: 73.0% -- 380/519
+2018-05-29 17:13:44,941:INFO: Proteinuria Recall-at-100: 7.50%
+2018-05-29 17:13:44,941:INFO: Experiment Progress: 73.0% -- 381/519
+2018-05-29 17:14:24,100:INFO: Diabetic Nephropathy Recall-at-100: 5.83%
+2018-05-29 17:14:24,101:INFO: Experiment Progress: 73.0% -- 382/519
+2018-05-29 17:15:03,751:INFO: Williams Syndrome Recall-at-100: 0.00%
+2018-05-29 17:15:03,752:INFO: Experiment Progress: 73.0% -- 383/519
+2018-05-29 17:15:45,923:INFO: Oral Submucous Fibrosis Recall-at-100: 40.00%
+2018-05-29 17:15:45,924:INFO: Experiment Progress: 73.0% -- 384/519
+2018-05-29 17:16:24,528:INFO: Adenoma Recall-at-100: 9.17%
+2018-05-29 17:16:24,529:INFO: Experiment Progress: 74.0% -- 385/519
+2018-05-29 17:17:04,538:INFO: Neutropenia Recall-at-100: 0.00%
+2018-05-29 17:17:04,539:INFO: Experiment Progress: 74.0% -- 386/519
+2018-05-29 17:17:48,151:INFO: Poor school performance Recall-at-100: 0.00%
+2018-05-29 17:17:48,152:INFO: Experiment Progress: 74.0% -- 387/519
+2018-05-29 17:18:27,194:INFO: Pneumoconiosis Recall-at-100: 0.00%
+2018-05-29 17:18:27,194:INFO: Experiment Progress: 74.0% -- 388/519
+2018-05-29 17:19:09,350:INFO: Cardiovascular Diseases Recall-at-100: 2.00%
+2018-05-29 17:19:09,350:INFO: Experiment Progress: 74.0% -- 389/519
+2018-05-29 17:19:47,780:INFO: Fibrinogen Adverse Event Recall-at-100: 5.00%
+2018-05-29 17:19:47,780:INFO: Experiment Progress: 75.0% -- 390/519
+2018-05-29 17:20:28,925:INFO: Diabetes Mellitus, Non-Insulin-Dependent Recall-at-100: 9.13%
+2018-05-29 17:20:28,925:INFO: Experiment Progress: 75.0% -- 391/519
+2018-05-29 17:21:07,413:INFO: Thrombocytopenia Recall-at-100: 5.00%
+2018-05-29 17:21:07,413:INFO: Experiment Progress: 75.0% -- 392/519
+2018-05-29 17:21:49,091:INFO: Sezary Syndrome Recall-at-100: 20.00%
+2018-05-29 17:21:49,091:INFO: Experiment Progress: 75.0% -- 393/519
+2018-05-29 17:22:27,979:INFO: Nuclear non-senile cataract Recall-at-100: 10.00%
+2018-05-29 17:22:27,980:INFO: Experiment Progress: 75.0% -- 394/519
+2018-05-29 17:23:09,540:INFO: Diabetic Retinopathy Recall-at-100: 0.00%
+2018-05-29 17:23:09,541:INFO: Experiment Progress: 76.0% -- 395/519
+2018-05-29 17:23:47,957:INFO: hearing impairment Recall-at-100: 0.00%
+2018-05-29 17:23:47,958:INFO: Experiment Progress: 76.0% -- 396/519
+2018-05-29 17:24:29,522:INFO: Psychotic Disorders Recall-at-100: 0.00%
+2018-05-29 17:24:29,523:INFO: Experiment Progress: 76.0% -- 397/519
+2018-05-29 17:25:08,577:INFO: Anxiety Disorders Recall-at-100: 0.00%
+2018-05-29 17:25:08,577:INFO: Experiment Progress: 76.0% -- 398/519
+2018-05-29 17:25:48,350:INFO: Finding of Mean Corpuscular Hemoglobin Recall-at-100: 0.00%
+2018-05-29 17:25:48,351:INFO: Experiment Progress: 76.0% -- 399/519
+2018-05-29 17:26:29,852:INFO: Motion Sickness Recall-at-100: 0.00%
+2018-05-29 17:26:29,853:INFO: Experiment Progress: 77.0% -- 400/519
+2018-05-29 17:27:09,662:INFO: Lymphoma, Non-Hodgkin Recall-at-100: 0.00%
+2018-05-29 17:27:09,663:INFO: Experiment Progress: 77.0% -- 401/519
+2018-05-29 17:27:50,179:INFO: Lymphoma, Follicular Recall-at-100: 5.00%
+2018-05-29 17:27:50,180:INFO: Experiment Progress: 77.0% -- 402/519
+2018-05-29 17:28:29,002:INFO: Thrombocythemia, Essential Recall-at-100: 0.00%
+2018-05-29 17:28:29,003:INFO: Experiment Progress: 77.0% -- 403/519
+2018-05-29 17:29:03,745:INFO: Arthritis Recall-at-100: 0.00%
+2018-05-29 17:29:03,746:INFO: Experiment Progress: 77.0% -- 404/519
+2018-05-29 17:29:44,698:INFO: Hypotension Recall-at-100: 3.33%
+2018-05-29 17:29:44,699:INFO: Experiment Progress: 78.0% -- 405/519
+2018-05-29 17:30:23,686:INFO: Reperfusion Injury Recall-at-100: 11.67%
+2018-05-29 17:30:23,687:INFO: Experiment Progress: 78.0% -- 406/519
+2018-05-29 17:31:03,955:INFO: Heat Stroke Recall-at-100: 70.00%
+2018-05-29 17:31:03,956:INFO: Experiment Progress: 78.0% -- 407/519
+2018-05-29 17:31:45,835:INFO: Hemangiosarcoma Recall-at-100: 20.00%
+2018-05-29 17:31:45,836:INFO: Experiment Progress: 78.0% -- 408/519
+2018-05-29 17:32:25,603:INFO: Drug Allergy Recall-at-100: 10.00%
+2018-05-29 17:32:25,603:INFO: Experiment Progress: 78.0% -- 409/519
+2018-05-29 17:33:05,009:INFO: SOLITARY MEDIAN MAXILLARY CENTRAL INCISOR Recall-at-100: 0.00%
+2018-05-29 17:33:05,010:INFO: Experiment Progress: 78.0% -- 410/519
+2018-05-29 17:33:47,713:INFO: Medulloblastoma Recall-at-100: 7.00%
+2018-05-29 17:33:47,715:INFO: Experiment Progress: 79.0% -- 411/519
+2018-05-29 17:34:27,012:INFO: Cleft Lip Recall-at-100: 0.00%
+2018-05-29 17:34:27,013:INFO: Experiment Progress: 79.0% -- 412/519
+2018-05-29 17:35:07,163:INFO: Cleft Palate Recall-at-100: 7.50%
+2018-05-29 17:35:07,164:INFO: Experiment Progress: 79.0% -- 413/519
+2018-05-29 17:35:45,985:INFO: Muscle Weakness Recall-at-100: 0.00%
+2018-05-29 17:35:45,986:INFO: Experiment Progress: 79.0% -- 414/519
+2018-05-29 17:36:26,353:INFO: Mental disorders Recall-at-100: 25.00%
+2018-05-29 17:36:26,354:INFO: Experiment Progress: 79.0% -- 415/519
+2018-05-29 17:37:05,676:INFO: Astrocytoma Recall-at-100: 15.00%
+2018-05-29 17:37:05,677:INFO: Experiment Progress: 80.0% -- 416/519
+2018-05-29 17:37:44,975:INFO: Anemia, Diamond-Blackfan Recall-at-100: 65.00%
+2018-05-29 17:37:44,976:INFO: Experiment Progress: 80.0% -- 417/519
+2018-05-29 17:38:23,595:INFO: Asthma, Aspirin-Induced Recall-at-100: 5.00%
+2018-05-29 17:38:23,597:INFO: Experiment Progress: 80.0% -- 418/519
+2018-05-29 17:39:03,301:INFO: Leber Congenital Amaurosis Recall-at-100: 13.33%
+2018-05-29 17:39:03,302:INFO: Experiment Progress: 80.0% -- 419/519
+2018-05-29 17:39:43,331:INFO: Cachexia Recall-at-100: 0.00%
+2018-05-29 17:39:43,332:INFO: Experiment Progress: 80.0% -- 420/519
+2018-05-29 17:40:23,010:INFO: Respiratory Insufficiency Recall-at-100: 0.00%
+2018-05-29 17:40:23,011:INFO: Experiment Progress: 81.0% -- 421/519
+2018-05-29 17:41:02,119:INFO: Respiratory Hypersensitivity Recall-at-100: 0.00%
+2018-05-29 17:41:02,120:INFO: Experiment Progress: 81.0% -- 422/519
+2018-05-29 17:41:42,371:INFO: Nasopharyngeal carcinoma Recall-at-100: 10.00%
+2018-05-29 17:41:42,371:INFO: Experiment Progress: 81.0% -- 423/519
+2018-05-29 17:42:23,454:INFO: Hyperalgesia Recall-at-100: 14.29%
+2018-05-29 17:42:23,455:INFO: Experiment Progress: 81.0% -- 424/519
+2018-05-29 17:43:01,757:INFO: Meningioma Recall-at-100: 15.00%
+2018-05-29 17:43:01,758:INFO: Experiment Progress: 81.0% -- 425/519
+2018-05-29 17:43:40,242:INFO: Sudden Cardiac Arrest Recall-at-100: 0.00%
+2018-05-29 17:43:40,243:INFO: Experiment Progress: 82.0% -- 426/519
+2018-05-29 17:44:18,927:INFO: Intellectual Disability Recall-at-100: 1.54%
+2018-05-29 17:44:18,928:INFO: Experiment Progress: 82.0% -- 427/519
+2018-05-29 17:44:58,210:INFO: Graves Disease Recall-at-100: 0.00%
+2018-05-29 17:44:58,211:INFO: Experiment Progress: 82.0% -- 428/519
+2018-05-29 17:45:38,625:INFO: Neurotoxicity Syndromes Recall-at-100: 0.00%
+2018-05-29 17:45:38,625:INFO: Experiment Progress: 82.0% -- 429/519
+2018-05-29 17:46:17,582:INFO: Cardiomyopathy, Familial Hypertrophic, 1 (disorder) Recall-at-100: 0.00%
+2018-05-29 17:46:17,582:INFO: Experiment Progress: 82.0% -- 430/519
+2018-05-29 17:46:58,390:INFO: Atrial Fibrillation Recall-at-100: 0.00%
+2018-05-29 17:46:58,391:INFO: Experiment Progress: 83.0% -- 431/519
+2018-05-29 17:47:37,127:INFO: Hepatitis, Chronic Recall-at-100: 10.00%
+2018-05-29 17:47:37,127:INFO: Experiment Progress: 83.0% -- 432/519
+2018-05-29 17:48:16,112:INFO: Behcet Syndrome Recall-at-100: 0.00%
+2018-05-29 17:48:16,113:INFO: Experiment Progress: 83.0% -- 433/519
+2018-05-29 17:48:54,299:INFO: Diabetes Mellitus, Insulin-Dependent Recall-at-100: 4.29%
+2018-05-29 17:48:54,300:INFO: Experiment Progress: 83.0% -- 434/519
+2018-05-29 17:49:34,570:INFO: Diabetes Mellitus, Experimental Recall-at-100: 5.82%
+2018-05-29 17:49:34,571:INFO: Experiment Progress: 83.0% -- 435/519
+2018-05-29 17:50:15,742:INFO: Parkinsonian Disorders Recall-at-100: 10.00%
+2018-05-29 17:50:15,743:INFO: Experiment Progress: 84.0% -- 436/519
+2018-05-29 17:50:57,740:INFO: Necrosis Recall-at-100: 4.00%
+2018-05-29 17:50:57,741:INFO: Experiment Progress: 84.0% -- 437/519
+2018-05-29 17:51:35,859:INFO: Gestational Diabetes Recall-at-100: 0.00%
+2018-05-29 17:51:35,860:INFO: Experiment Progress: 84.0% -- 438/519
+2018-05-29 17:52:15,849:INFO: Idiopathic Membranous Glomerulonephritis Recall-at-100: 0.00%
+2018-05-29 17:52:15,849:INFO: Experiment Progress: 84.0% -- 439/519
+2018-05-29 17:52:54,656:INFO: Hypersensitivity Recall-at-100: 7.86%
+2018-05-29 17:52:54,657:INFO: Experiment Progress: 84.0% -- 440/519
+2018-05-29 17:53:33,334:INFO: Myopia Recall-at-100: 0.00%
+2018-05-29 17:53:33,335:INFO: Experiment Progress: 84.0% -- 441/519
+2018-05-29 17:54:11,472:INFO: Hyperemia Recall-at-100: 0.00%
+2018-05-29 17:54:11,473:INFO: Experiment Progress: 85.0% -- 442/519
+2018-05-29 17:54:51,358:INFO: Tooth Abnormalities Recall-at-100: 10.00%
+2018-05-29 17:54:51,359:INFO: Experiment Progress: 85.0% -- 443/519
+2018-05-29 17:55:29,464:INFO: Hyperglycemia Recall-at-100: 15.00%
+2018-05-29 17:55:29,464:INFO: Experiment Progress: 85.0% -- 444/519
+2018-05-29 17:56:08,480:INFO: Noonan Syndrome Recall-at-100: 35.00%
+2018-05-29 17:56:08,480:INFO: Experiment Progress: 85.0% -- 445/519
+2018-05-29 17:56:45,885:INFO: Hyperinsulinism Recall-at-100: 15.00%
+2018-05-29 17:56:45,885:INFO: Experiment Progress: 85.0% -- 446/519
+2018-05-29 17:57:25,201:INFO: Edema Recall-at-100: 6.67%
+2018-05-29 17:57:25,202:INFO: Experiment Progress: 86.0% -- 447/519
+2018-05-29 17:58:06,067:INFO: Hodgkin Disease Recall-at-100: 10.00%
+2018-05-29 17:58:06,068:INFO: Experiment Progress: 86.0% -- 448/519
+2018-05-29 17:58:46,105:INFO: Metabolic Bone Disorder Recall-at-100: 0.00%
+2018-05-29 17:58:46,106:INFO: Experiment Progress: 86.0% -- 449/519
+2018-05-29 17:59:25,111:INFO: Bone Diseases, Developmental Recall-at-100: 0.00%
+2018-05-29 17:59:25,111:INFO: Experiment Progress: 86.0% -- 450/519
+2018-05-29 18:00:07,047:INFO: Tachycardia, Ventricular Recall-at-100: 0.00%
+2018-05-29 18:00:07,048:INFO: Experiment Progress: 86.0% -- 451/519
+2018-05-29 18:00:46,774:INFO: Dystonia Recall-at-100: 0.00%
+2018-05-29 18:00:46,774:INFO: Experiment Progress: 87.0% -- 452/519
+2018-05-29 18:01:24,975:INFO: Squamous cell carcinoma of the head and neck Recall-at-100: 10.00%
+2018-05-29 18:01:24,976:INFO: Experiment Progress: 87.0% -- 453/519
+2018-05-29 18:02:04,303:INFO: Pulmonary Embolism Recall-at-100: 10.00%
+2018-05-29 18:02:04,304:INFO: Experiment Progress: 87.0% -- 454/519
+2018-05-29 18:02:45,236:INFO: Pulmonary Fibrosis Recall-at-100: 19.00%
+2018-05-29 18:02:45,237:INFO: Experiment Progress: 87.0% -- 455/519
+2018-05-29 18:03:25,272:INFO: West Syndrome Recall-at-100: 0.00%
+2018-05-29 18:03:25,273:INFO: Experiment Progress: 87.0% -- 456/519
+2018-05-29 18:04:03,854:INFO: Cerebral Hemorrhage Recall-at-100: 25.00%
+2018-05-29 18:04:03,855:INFO: Experiment Progress: 88.0% -- 457/519
+2018-05-29 18:04:41,599:INFO: Romano-Ward Syndrome Recall-at-100: 15.00%
+2018-05-29 18:04:41,600:INFO: Experiment Progress: 88.0% -- 458/519
+2018-05-29 18:05:19,722:INFO: Mouth Neoplasms Recall-at-100: 15.00%
+2018-05-29 18:05:19,722:INFO: Experiment Progress: 88.0% -- 459/519
+2018-05-29 18:06:01,340:INFO: Liver Cirrhosis Recall-at-100: 8.00%
+2018-05-29 18:06:01,341:INFO: Experiment Progress: 88.0% -- 460/519
+2018-05-29 18:06:41,083:INFO: Neoplasm Recurrence, Local Recall-at-100: 13.33%
+2018-05-29 18:06:41,085:INFO: Experiment Progress: 88.0% -- 461/519
+2018-05-29 18:07:21,816:INFO: Obesity Recall-at-100: 4.29%
+2018-05-29 18:07:21,818:INFO: Experiment Progress: 89.0% -- 462/519
+2018-05-29 18:08:01,317:INFO: Biliary cirrhosis Recall-at-100: 3.33%
+2018-05-29 18:08:01,319:INFO: Experiment Progress: 89.0% -- 463/519
+2018-05-29 18:08:40,981:INFO: Precursor Cell Lymphoblastic Leukemia Lymphoma Recall-at-100: 14.00%
+2018-05-29 18:08:40,982:INFO: Experiment Progress: 89.0% -- 464/519
+2018-05-29 18:09:21,786:INFO: Cardiomyopathies Recall-at-100: 6.67%
+2018-05-29 18:09:21,787:INFO: Experiment Progress: 89.0% -- 465/519
+2018-05-29 18:10:01,242:INFO: Peroxisome biogenesis disorders Recall-at-100: 20.00%
+2018-05-29 18:10:01,243:INFO: Experiment Progress: 89.0% -- 466/519
+2018-05-29 18:10:39,691:INFO: Dyskeratosis Congenita Recall-at-100: 20.00%
+2018-05-29 18:10:39,692:INFO: Experiment Progress: 89.0% -- 467/519
+2018-05-29 18:11:18,893:INFO: Uremia Recall-at-100: 0.00%
+2018-05-29 18:11:18,894:INFO: Experiment Progress: 90.0% -- 468/519
+2018-05-29 18:11:57,378:INFO: Depressive disorder Recall-at-100: 10.00%
+2018-05-29 18:11:57,379:INFO: Experiment Progress: 90.0% -- 469/519
+2018-05-29 18:12:39,720:INFO: Thrombosis Recall-at-100: 20.00%
+2018-05-29 18:12:39,721:INFO: Experiment Progress: 90.0% -- 470/519
+2018-05-29 18:13:18,113:INFO: nervous system disorder Recall-at-100: 4.00%
+2018-05-29 18:13:18,114:INFO: Experiment Progress: 90.0% -- 471/519
+2018-05-29 18:13:56,668:INFO: Lymphoma Recall-at-100: 0.00%
+2018-05-29 18:13:56,668:INFO: Experiment Progress: 90.0% -- 472/519
+2018-05-29 18:14:38,975:INFO: IGA Glomerulonephritis Recall-at-100: 1.86%
+2018-05-29 18:14:38,976:INFO: Experiment Progress: 91.0% -- 473/519
+2018-05-29 18:15:18,088:INFO: Kidney Neoplasm Recall-at-100: 13.33%
+2018-05-29 18:15:18,089:INFO: Experiment Progress: 91.0% -- 474/519
+2018-05-29 18:15:56,491:INFO: Hypothermia, natural Recall-at-100: 0.00%
+2018-05-29 18:15:56,492:INFO: Experiment Progress: 91.0% -- 475/519
+2018-05-29 18:16:36,766:INFO: Focal glomerulosclerosis Recall-at-100: 10.00%
+2018-05-29 18:16:36,767:INFO: Experiment Progress: 91.0% -- 476/519
+2018-05-29 18:17:15,984:INFO: Hepatitis B, Chronic Recall-at-100: 0.00%
+2018-05-29 18:17:15,985:INFO: Experiment Progress: 91.0% -- 477/519
+2018-05-29 18:17:55,922:INFO: Drug Eruptions Recall-at-100: 0.00%
+2018-05-29 18:17:55,923:INFO: Experiment Progress: 92.0% -- 478/519
+2018-05-29 18:18:36,333:INFO: Malignant neoplasm of pancreas Recall-at-100: 0.00%
+2018-05-29 18:18:36,334:INFO: Experiment Progress: 92.0% -- 479/519
+2018-05-29 18:19:17,439:INFO: Stomach Neoplasms Recall-at-100: 3.52%
+2018-05-29 18:19:17,440:INFO: Experiment Progress: 92.0% -- 480/519
+2018-05-29 18:19:56,295:INFO: Osteosarcoma Recall-at-100: 17.50%
+2018-05-29 18:19:56,296:INFO: Experiment Progress: 92.0% -- 481/519
+2018-05-29 18:20:35,279:INFO: Vitiligo Recall-at-100: 0.00%
+2018-05-29 18:20:35,280:INFO: Experiment Progress: 92.0% -- 482/519
+2018-05-29 18:21:16,387:INFO: Gastric ulcer Recall-at-100: 0.00%
+2018-05-29 18:21:16,388:INFO: Experiment Progress: 93.0% -- 483/519
+2018-05-29 18:21:55,990:INFO: Malignant neoplasm of breast Recall-at-100: 8.10%
+2018-05-29 18:21:55,990:INFO: Experiment Progress: 93.0% -- 484/519
+2018-05-29 18:22:33,863:INFO: Drug-Induced Liver Injury Recall-at-100: 6.82%
+2018-05-29 18:22:33,864:INFO: Experiment Progress: 93.0% -- 485/519
+2018-05-29 18:23:15,260:INFO: Colitis Recall-at-100: 3.33%
+2018-05-29 18:23:15,261:INFO: Experiment Progress: 93.0% -- 486/519
+2018-05-29 18:23:55,932:INFO: Lymphoma, T-Cell, Cutaneous Recall-at-100: 5.00%
+2018-05-29 18:23:55,933:INFO: Experiment Progress: 93.0% -- 487/519
+2018-05-29 18:24:34,835:INFO: T-Cell Lymphoma Recall-at-100: 20.00%
+2018-05-29 18:24:34,836:INFO: Experiment Progress: 94.0% -- 488/519
+2018-05-29 18:25:17,017:INFO: Hyperactive behavior Recall-at-100: 10.00%
+2018-05-29 18:25:17,018:INFO: Experiment Progress: 94.0% -- 489/519
+2018-05-29 18:25:55,218:INFO: Skin Abnormalities Recall-at-100: 10.00%
+2018-05-29 18:25:55,219:INFO: Experiment Progress: 94.0% -- 490/519
+2018-05-29 18:26:36,182:INFO: Epithelial ovarian cancer Recall-at-100: 0.00%
+2018-05-29 18:26:36,183:INFO: Experiment Progress: 94.0% -- 491/519
+2018-05-29 18:27:15,804:INFO: Infantile Refsum Disease (disorder) Recall-at-100: 35.00%
+2018-05-29 18:27:15,804:INFO: Experiment Progress: 94.0% -- 492/519
+2018-05-29 18:27:54,457:INFO: Adrenoleukodystrophy, Neonatal Recall-at-100: 30.00%
+2018-05-29 18:27:54,458:INFO: Experiment Progress: 94.0% -- 493/519
+2018-05-29 18:28:35,312:INFO: Hirschsprung Disease Recall-at-100: 10.00%
+2018-05-29 18:28:35,313:INFO: Experiment Progress: 95.0% -- 494/519
+2018-05-29 18:29:15,236:INFO: Female Urogenital Diseases Recall-at-100: 0.00%
+2018-05-29 18:29:15,237:INFO: Experiment Progress: 95.0% -- 495/519
+2018-05-29 18:29:55,452:INFO: ovarian neoplasm Recall-at-100: 10.56%
+2018-05-29 18:29:55,453:INFO: Experiment Progress: 95.0% -- 496/519
+2018-05-29 18:30:35,552:INFO: Aortic Aneurysm, Abdominal Recall-at-100: 0.00%
+2018-05-29 18:30:35,553:INFO: Experiment Progress: 95.0% -- 497/519
+2018-05-29 18:31:13,740:INFO: Venous Thrombosis Recall-at-100: 35.00%
+2018-05-29 18:31:13,741:INFO: Experiment Progress: 95.0% -- 498/519
+2018-05-29 18:31:53,983:INFO: Amnesia Recall-at-100: 10.00%
+2018-05-29 18:31:53,984:INFO: Experiment Progress: 96.0% -- 499/519
+2018-05-29 18:32:33,816:INFO: Bladder Neoplasm Recall-at-100: 8.55%
+2018-05-29 18:32:33,817:INFO: Experiment Progress: 96.0% -- 500/519
+2018-05-29 18:33:13,588:INFO: Hemorrhage Recall-at-100: 10.00%
+2018-05-29 18:33:13,589:INFO: Experiment Progress: 96.0% -- 501/519
+2018-05-29 18:33:55,136:INFO: Status Epilepticus Recall-at-100: 8.57%
+2018-05-29 18:33:55,136:INFO: Experiment Progress: 96.0% -- 502/519
+2018-05-29 18:34:34,447:INFO: Chronic Kidney Diseases Recall-at-100: 0.00%
+2018-05-29 18:34:34,448:INFO: Experiment Progress: 96.0% -- 503/519
+2018-05-29 18:35:13,851:INFO: Myeloid Leukemia, Chronic Recall-at-100: 16.67%
+2018-05-29 18:35:13,852:INFO: Experiment Progress: 97.0% -- 504/519
+2018-05-29 18:35:54,328:INFO: Myeloid Leukemia Recall-at-100: 20.00%
+2018-05-29 18:35:54,328:INFO: Experiment Progress: 97.0% -- 505/519
+2018-05-29 18:36:33,236:INFO: Calcinosis Recall-at-100: 13.33%
+2018-05-29 18:36:33,237:INFO: Experiment Progress: 97.0% -- 506/519
+2018-05-29 18:37:14,051:INFO: Creutzfeldt-Jakob disease Recall-at-100: 0.00%
+2018-05-29 18:37:14,052:INFO: Experiment Progress: 97.0% -- 507/519
+2018-05-29 18:37:53,240:INFO: Left ventricular noncompaction Recall-at-100: 10.00%
+2018-05-29 18:37:53,241:INFO: Experiment Progress: 97.0% -- 508/519
+2018-05-29 18:38:32,467:INFO: Parkinson Disease Recall-at-100: 6.22%
+2018-05-29 18:38:32,468:INFO: Experiment Progress: 98.0% -- 509/519
+2018-05-29 18:39:11,162:INFO: Endometrial Neoplasms Recall-at-100: 8.00%
+2018-05-29 18:39:11,163:INFO: Experiment Progress: 98.0% -- 510/519
+2018-05-29 18:39:50,115:INFO: Sepsis Recall-at-100: 15.00%
+2018-05-29 18:39:50,115:INFO: Experiment Progress: 98.0% -- 511/519
+2018-05-29 18:40:30,400:INFO: Endometriosis Recall-at-100: 10.58%
+2018-05-29 18:40:30,401:INFO: Experiment Progress: 98.0% -- 512/519
+2018-05-29 18:41:08,723:INFO: Esophageal Neoplasms Recall-at-100: 10.71%
+2018-05-29 18:41:08,724:INFO: Experiment Progress: 98.0% -- 513/519
+2018-05-29 18:41:46,619:INFO: Eosinophilic esophagitis Recall-at-100: 0.00%
+2018-05-29 18:41:46,620:INFO: Experiment Progress: 99.0% -- 514/519
+2018-05-29 18:42:27,204:INFO: Malignant neoplasm of urinary bladder Recall-at-100: 15.00%
+2018-05-29 18:42:27,205:INFO: Experiment Progress: 99.0% -- 515/519
+2018-05-29 18:43:08,257:INFO: Lewy Body Disease Recall-at-100: 10.00%
+2018-05-29 18:43:08,259:INFO: Experiment Progress: 99.0% -- 516/519
+2018-05-29 18:43:46,800:INFO: PARKINSON DISEASE, LATE-ONSET Recall-at-100: 5.00%
+2018-05-29 18:43:46,801:INFO: Experiment Progress: 99.0% -- 517/519
+2018-05-29 18:44:24,408:INFO: Neoplastic Cell Transformation Recall-at-100: 13.19%
+2018-05-29 18:44:24,409:INFO: Experiment Progress: 99.0% -- 518/519
+2018-05-29 18:45:04,980:INFO: Arsenic Poisoning Recall-at-100: 1.67%
