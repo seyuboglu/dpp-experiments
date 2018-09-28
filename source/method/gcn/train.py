@@ -53,8 +53,7 @@ def perform_train(adj, features, y_train, y_val, train_mask, val_mask, train_pos
         'dropout': tf.placeholder_with_default(0., shape=()),
         'num_features_nonzero': tf.placeholder(tf.int32)  # helper variable for sparse dropout
     }
-    device_lib.list_local_devices()
-    print(params.device)
+    print(device_lib.list_local_devices())
     # Create model
     with tf.device(params.device):
         model = model_func(placeholders, input_dim=features[2][1], params=params, logging=True)
