@@ -21,7 +21,9 @@
 
     "epochs": 45,
     "early_stopping": 100, 
-    "shuffle_negatives": true
+    "shuffle_negatives": true,
+
+    "saliency_map": false
 }
 
 
