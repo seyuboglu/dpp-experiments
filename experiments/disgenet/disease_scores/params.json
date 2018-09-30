@@ -4,7 +4,7 @@
     "disease_subset": [],
 
     "ppi_matrices": {"Complementarity": "data/ppi_matrices/comp_sqrt_rnorm_cnorm.npy",
-                     "Direct Neighbor Norm.": "data/ppi_matrices/dn_sqrt_rnorm_cnorm.npy"},
+                     "Direct Neighbor": "data/ppi_matrices/dn_id_rnorm.npy"},
     
     "plot_palette": ["#E03C3F", "#6178A8"],
     "plot_font": "AppleGothic"

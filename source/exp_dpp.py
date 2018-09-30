@@ -18,6 +18,7 @@ from method.random_walk import compute_random_walk_scores
 from method.diamond import compute_diamond_scores
 from method.graph_cn import GCN
 from method.lr import compute_lr_scores, build_embedding_feature_matrix
+from method.dns import compute_dns_scores
 from data import load_diseases, load_network
 from output import ExperimentResults, write_dict_to_csv
 from analysis import positive_rankings, recall_at, recall, auroc, average_precision
@@ -103,7 +104,10 @@ def compute_node_scores(train_nodes, val_nodes):
     scores = None
     if params.method == 'ppi_matrix':
         scores = compute_matrix_scores(ppi_matrix, train_nodes, params)
-    
+
+    elif params.method == 'direct_neighbor':
+        scores = compute_dns_scores(ppi_network_adj, train_nodes, params)
+
     elif params.method == 'random_walk':
         scores = compute_random_walk_scores(ppi_networkx, train_nodes, params)
     
