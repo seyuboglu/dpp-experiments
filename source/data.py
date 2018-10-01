@@ -221,12 +221,33 @@ def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
         for interaction in interactions: 
             file.write(' '.join(interaction) + '\n')
 
-def build_string_network(biogrid_path, name = 'biogrid-network.txt'):
+def build_string_network(string_path, name = 'biogrid-network.txt'):
     """ Converts a biogrid PPI network into a list of entrez_ids. 
     Args:
         biogrid+path (string)
     """
-    pass 
+    _, name_to_protein = load_gene_names('data/protein_data/protein_names.txt')
+
+    interactions = []
+
+    with open(string_path, 'r') as csvfile:
+        reader = csv.DictReader(csvfile, delimiter='\t')
+        for row in reader:
+
+            # only include interactions between two human proteins
+            if int(row['ORGANISM_A_ID']) != HOMO_SAPIENS_ID or int(row['ORGANISM_B_ID']) != HOMO_SAPIENS_ID:
+                continue
+
+            # only include interactions for which we have an entrez id
+            if row['OFFICIAL_SYMBOL_A'] not in name_to_protein or row['OFFICIAL_SYMBOL_B'] not in name_to_protein:
+                continue 
+            
+            interactions.append((str(name_to_protein[row['OFFICIAL_SYMBOL_A']]), 
+                                 str(name_to_protein[row['OFFICIAL_SYMBOL_B']])))
+    
+    with open(os.path.join("data", "networks", name), 'w') as file:
+        for interaction in interactions: 
+            file.write(' '.join(interaction) + '\n') 
 
 def build_disgenet_associations(disgenet_path, name = 'disgenet-associations.csv'):
     """ Converts a disgenet file of associations into the accepted format for
