@@ -12,11 +12,8 @@ from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from scipy.sparse import csr_matrix
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 3f113d621fc0bbe03228e78fa454e41f1d5675c6
 #from utils import get_negatives
 
 def softmax(x):
@@ -58,7 +55,6 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         scores = np.dot(ppi_matrix[:, training_ids], weights) 
 
     elif params.weighting == "mle":
-<<<<<<< HEAD
         #train_pos = training_ids
         #X = ppi_matrix[:, train_pos]
         #N, D = X.shape
@@ -81,30 +77,6 @@ def compute_matrix_scores(ppi_matrix, training_ids, params):
         #weights /= np.sum(weights)
         #scores = np.dot(ppi_matrix[:, training_ids], weights) 
         pass
-=======
-        train_pos = training_ids
-        X = ppi_matrix[:, train_pos]
-        N, D = X.shape
-
-        Y = np.zeros(N)
-        Y[train_pos] = 1
-
-        train_neg = get_negatives(Y, params.neg_examples*len(train_pos))
-        train_nodes = np.concatenate((train_pos, train_neg))
-        Y_train = Y[train_nodes]
-        X_train = X[train_nodes, :]
-        model = LogisticRegression(C = 1.0 / params.reg_L2, 
-                                   fit_intercept = False, 
-                                   class_weight = 'balanced')
-        model.fit(X_train, Y_train)
-        weights = np.array(model.coef_).reshape(-1)
-        
-        #Apply ReLU to Weights
-        weights += np.ones(len(training_ids))
-        weights /= np.sum(weights)
-        scores = np.dot(ppi_matrix[:, training_ids], weights) 
-
->>>>>>> 3f113d621fc0bbe03228e78fa454e41f1d5675c6
     elif params.weighting == "pca":
         logging.error("Not Implemented")
     
@@ -205,36 +177,5 @@ def build_ppi_dn_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = Fal
     else: 
         file_path = os.path.join('data', 'ppi_matrices', network_name, name + ".npy")
     print(file_path)
-<<<<<<< HEAD
     np.save(file_path, dn_matrix)
     return dn_matrix 
-=======
-    np.save(file_path, ppi_adj)
-    return dn_matrix 
-
-# Functions for building other ppi matrices
-def build_dn_normalized():
-    ppi_sqrt_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -(0.5))
-    dn_norm = (ppi_adj*ppi_sqrt_inv_deg).T * ppi_sqrt_inv_deg
-    np.save("data/ppi_matrices/dn_norm.npy", dn_norm)
-    return dn_norm
-
-def build_dn_query_normalized():
-    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    dn_query_norm = ppi_adj*ppi_inv_deg
-    np.save("data/ppi_matrices/dn_query_norm.npy", dn_query_norm)
-    return dn_query_norm
-
-def build_l3():
-    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    ppi_l3 = np.dot((np.dot((ppi_inv_deg*ppi_adj).T, ppi_adj) * ppi_inv_deg).T, ppi_adj)
-    np.save("data/ppi_matrices/ppi_l3.npy", ppi_l3)
-    return ppi_l3
-
-def build_l3_query_normalized():
-    l3 = np.load("data/ppi_matrices/ppi_l3.npy")
-    ppi_inv_deg = np.power(np.sum(ppi_adj, axis = 1, keepdims=True), -1)
-    l3_qnorm = l3 *ppi_inv_deg
-    np.save("data/ppi_matrices/ppi_l3_qnorm.npy", l3_qnorm)
-    return l3_qnorm    
->>>>>>> 3f113d621fc0bbe03228e78fa454e41f1d5675c6
