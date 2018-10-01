@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240735,Personality change,23,339,0.1225296442687747,0.10822758902988129,0.11265294723429509,0.972651080723423,0.8514155979904016,0.854179846362404,0.906378729247285,0.11401821213287161

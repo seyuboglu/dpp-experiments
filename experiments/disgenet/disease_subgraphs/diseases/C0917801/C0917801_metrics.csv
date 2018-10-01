@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0917801,Sleeplessness,16,82,0.041666666666666664,0.19713864927414265,0.2273411623005119,0.9897119341563786,0.9483262559973529,0.9572165240550802,0.9567213114754098,0.13490853658536586

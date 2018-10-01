@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027092,Myopia,29,198,0.034482758620689655,0.1586322869955157,0.18709942060195867,0.9825109306683323,0.8731104278759928,0.8810935870698644,0.9362041467304625,0.075235109717868343

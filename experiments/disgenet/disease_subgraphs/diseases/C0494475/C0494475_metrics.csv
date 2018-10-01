@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0494475,Tonic - clonic seizures,43,240,0.035437430786267994,0.09023822892436031,0.10394002789400279,0.9620853080568721,0.8585142952963863,0.8716109998492582,0.7131652661064426,0.06627906976744184

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085576,Iron-Refractory Iron Deficiency Anemia,15,92,0.12380952380952381,0.09803921568627451,0.09675107501194458,0.9668367346938775,0.9553729232944503,0.9633085703931872,0.8963466440101954,0.14492753623188404

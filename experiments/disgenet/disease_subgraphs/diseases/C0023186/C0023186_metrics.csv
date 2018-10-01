@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023186,Learning Disorders,28,348,0.07142857142857142,0.07017829641037791,0.07573950776772997,0.9844110854503464,0.8658609074697841,0.86977631597682,0.9114012184508268,0.0823070607553366

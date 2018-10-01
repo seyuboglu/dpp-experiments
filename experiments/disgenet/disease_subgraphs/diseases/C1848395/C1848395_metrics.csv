@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1848395,Large for gestational age,11,40,0.14545454545454545,0.19060283687943264,0.21794871794871795,0.966804979253112,0.9541284403669725,0.9625962596259626,0.8883632923368022,0.19318181818181818

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0234132,Pyramidal sign,27,213,0.03418803418803419,0.14183748813332864,0.156214013641598,0.9855595667870036,0.8833142906729532,0.8955040367380194,0.9395715896279594,0.08728916710137367

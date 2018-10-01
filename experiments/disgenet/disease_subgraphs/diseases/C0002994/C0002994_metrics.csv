@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002994,Angioedema,9,11,0.1388888888888889,0.25735294117647056,0.5454545454545454,0.9706744868035191,0.9824605362064646,0.9846232701178883,0.9320754716981132,0.23232323232323235

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0856863,Broad-based gait,19,221,0.06432748538011696,0.17122291954756585,0.18272315919374743,0.9878183831672204,0.869412369182509,0.8774755889005351,0.9436619718309859,0.12145748987854248

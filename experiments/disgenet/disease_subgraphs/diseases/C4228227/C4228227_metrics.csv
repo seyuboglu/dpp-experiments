@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4228227,Small thymus,13,42,0.0641025641025641,0.22931785195936139,0.29849012775842043,0.9855072463768116,0.9723715846994535,0.9771586010754122,0.9761904761904762,0.16483516483516486

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003123,Anorexia,42,276,0.036004645760743324,0.09315114852574136,0.10769433465085639,0.966304347826087,0.8534198701947079,0.8624067870789638,0.7188505747126437,0.06314699792960662

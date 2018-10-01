@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022578,Keratoconus,60,542,0.030508474576271188,0.13226987478633237,0.15056169045978815,0.9668610003068426,0.6619886488161365,0.6642303567761612,0.8985584623598505,0.05713407134071341

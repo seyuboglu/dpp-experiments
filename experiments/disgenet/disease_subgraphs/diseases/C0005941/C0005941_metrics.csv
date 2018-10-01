@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005941,"Bone Diseases, Developmental",25,71,0.02,0.12521929824561404,0.1641851106639839,0.9875904860392968,0.9602644398051496,0.9706189464587909,0.9597156398104265,0.08845070422535212

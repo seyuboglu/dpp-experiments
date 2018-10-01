@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1298695,Hypoplasia of optic disc,12,7,0.12121212121212122,0.15833333333333333,0.6190476190476191,0.9139784946236559,0.9632495164410058,0.9708520179372198,0.8992248062015504,0.17857142857142858

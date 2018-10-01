@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005745,Blepharoptosis,229,2761,0.01827166168696851,0.02387570486137421,0.025107475237390358,0.9345993007472407,0.46936030171274834,0.469165212523301,0.7558900025029109,0.01774877465129557

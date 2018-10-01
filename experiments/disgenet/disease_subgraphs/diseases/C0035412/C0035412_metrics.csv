@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035412,Rhabdomyosarcoma,15,162,0.1523809523809524,0.14399724802201583,0.15136876006441224,0.9755351681957186,0.9042149100727656,0.9083310114237949,0.9086366880799429,0.16502057613168722

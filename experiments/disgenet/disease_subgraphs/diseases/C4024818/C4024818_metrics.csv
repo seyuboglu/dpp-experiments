@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024818,"Night blindness, progressive",48,444,0.03723404255319149,0.17053060007192794,0.1955036300408761,0.9685393258426966,0.6585584319786434,0.6607887935216958,0.901652559451834,0.07516891891891891

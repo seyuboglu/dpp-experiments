@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034013,Precocious Puberty,27,285,0.05982905982905983,0.09681063122923587,0.10365702989869038,0.9793510324483776,0.8780957161981259,0.8819490368786144,0.9223449969306323,0.08914879792072775

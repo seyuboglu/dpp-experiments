@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007621,Neoplastic Cell Transformation,82,2434,0.06775067750677506,0.03001544284773127,0.030423230836204868,0.9621530698065601,0.442655787261757,0.4449815008209877,0.7939148273560889,0.044266188347996879

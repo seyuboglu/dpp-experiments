@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1840379,Cerebellar vermis hypoplasia,24,261,0.028985507246376812,0.10635791795103125,0.1095195991747716,0.9911894273127754,0.8748285676365192,0.8876221005836634,0.914182223460574,0.09339080459770112

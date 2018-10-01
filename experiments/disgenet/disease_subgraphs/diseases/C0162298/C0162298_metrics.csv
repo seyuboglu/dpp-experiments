@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162298,Joint stiffness,84,901,0.022375215146299483,0.06205304787182449,0.06705882352941177,0.9682086814754433,0.6918706796052739,0.6992350621408304,0.8787392447951495,0.03340204006130754

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036508,Seborrheic dermatitis,13,21,0.01282051282051282,0.23707664884135474,0.4095238095238095,0.9964726631393298,0.9835984708348748,0.9890102868826273,0.9964726631393298,0.16849816849816848

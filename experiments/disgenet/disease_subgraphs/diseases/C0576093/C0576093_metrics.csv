@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0576093,Knee joint valgus deformity,55,345,0.018855218855218854,0.07562345957119762,0.08596225143242332,0.9751332149200711,0.8714465918817859,0.8829965364589306,0.8833746898263027,0.04532279314888011

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151480,Anti-nuclear factor positive,18,92,0.12418300653594772,0.17564356435643563,0.19015766841853798,0.9547619047619048,0.9187617346705134,0.9257081525036166,0.886744966442953,0.14673913043478262

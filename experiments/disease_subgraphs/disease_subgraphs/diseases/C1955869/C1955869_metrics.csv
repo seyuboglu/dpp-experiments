@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1955869,Malformations of Cortical Development,11,112,0.09090909090909091,0.22176308539944903,0.22876447876447875,0.9903567984570878,0.925121503150943,0.9326082320324163,0.9571511291256514,0.2061688311688312

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1720887,Female Urogenital Diseases,18,93,0.05228758169934641,0.145429833503228,0.17461430575035064,0.9868312757201646,0.9322704434861732,0.9399445270732002,0.9336158192090396,0.11708482676224612

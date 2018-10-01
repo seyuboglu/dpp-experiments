@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003962,Ascites,21,107,0.06666666666666667,0.13901106224176996,0.16187621230823487,0.9711934156378601,0.9312843825147412,0.9380921873419429,0.8466057441253264,0.10947930574098798

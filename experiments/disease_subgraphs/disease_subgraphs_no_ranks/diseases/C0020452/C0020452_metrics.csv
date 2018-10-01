@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020452,Hyperemia,13,33,0.10256410256410256,0.17124735729386892,0.20454545454545456,0.9692307692307692,0.9739088420035432,0.9819563946203325,0.9157245632065776,0.1631701631701632

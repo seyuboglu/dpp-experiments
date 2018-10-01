@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837081,Tibial bowing,19,139,0.06432748538011696,0.12572373862696443,0.1358565321655719,0.9775510204081632,0.9270668394030996,0.9362399686827167,0.9116179615110478,0.11359333585762967

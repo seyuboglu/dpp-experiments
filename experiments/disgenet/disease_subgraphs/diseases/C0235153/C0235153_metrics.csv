@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0235153,"Hallucinations, Sensory",32,197,0.03225806451612903,0.12034904860016968,0.13778100072516317,0.9815242494226328,0.8552020803460763,0.8673845847043573,0.7029157802527843,0.08581852791878172

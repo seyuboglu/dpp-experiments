@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0857973,Increased serum parathyroid hormone,13,128,0.1282051282051282,0.17206955775010735,0.18245570866141733,0.980411361410382,0.9230492283320932,0.9281440027133755,0.9278162595698141,0.17728365384615383

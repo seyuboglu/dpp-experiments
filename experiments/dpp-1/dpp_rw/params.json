@@ -1,0 +1,11 @@
+{
+    "ppi_network": "data/bio-pathways-network.txt",
+    "diseases_path": "data/bio-pathways-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": -1,
+
+    "method": "random_walk",
+
+    "rw_alpha": 0.25
+}

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003706,Arachnodactyly,49,632,0.041666666666666664,0.06237326443475368,0.06592910589981744,0.9738247863247863,0.7884356790676826,0.7945632554832358,0.8889346917142689,0.05347455437871352

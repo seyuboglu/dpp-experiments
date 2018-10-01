@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020541,"Hypertension, Portal",22,88,0.05627705627705628,0.12028383523710627,0.13218390804597702,0.9779847586790855,0.94848608383056,0.9608192341941229,0.9187898089171974,0.1012396694214876

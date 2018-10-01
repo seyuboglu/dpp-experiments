@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0154835,Retinal telangiectasia,11,82,0.2909090909090909,0.4558139534883721,0.48148148148148145,0.9450171821305842,0.6505139500734214,0.6579679144385027,0.5298363811357074,0.44013303769401335

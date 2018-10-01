@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1856786,Hypoplastic fingernails,11,44,0.09090909090909091,0.2124388539482879,0.22938689217758984,0.9871794871794872,0.9674274081217187,0.9757758428220585,0.9538714991762768,0.18388429752066118

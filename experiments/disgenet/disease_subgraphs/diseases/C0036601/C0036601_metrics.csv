@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036601,Self Mutilation,14,581,0.15384615384615385,0.06941316424702308,0.06987951807228916,0.9921765856384465,0.7774856994761102,0.7809875463871502,0.8990689675621183,0.15404475043029256

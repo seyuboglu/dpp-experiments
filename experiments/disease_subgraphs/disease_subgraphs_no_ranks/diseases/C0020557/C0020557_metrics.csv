@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020557,Hypertriglyceridemia,14,20,0.0989010989010989,0.20362903225806453,0.33157894736842103,0.9543147208121827,0.9689469638739431,0.979515525930743,0.9186440677966101,0.16071428571428573

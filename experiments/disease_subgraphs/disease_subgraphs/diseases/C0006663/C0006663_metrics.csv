@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0006663,Calcinosis,37,267,0.05555555555555555,0.08741200334089011,0.09658978907944017,0.9596290234588107,0.8690850607576841,0.8757651490456011,0.8582597730138714,0.068529203360664051

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021254,Cutaneous finger syndactyly,11,8,0.09090909090909091,0.22807017543859648,0.6071428571428571,0.966996699669967,0.9853576121644453,0.9932324840764332,0.963254593175853,0.19318181818181818

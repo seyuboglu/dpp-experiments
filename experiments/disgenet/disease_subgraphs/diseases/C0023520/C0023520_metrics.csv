@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023520,Leukodystrophy,32,343,0.12701612903225806,0.12964962521321377,0.13624196545786235,0.9470588235294117,0.7986927786956944,0.8035547470377108,0.698679834727401,0.12099125364431487

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038587,Substance Withdrawal Syndrome,52,481,0.03544494720965309,0.047567317693285566,0.05205301455301455,0.9593601383484652,0.8285547672271357,0.8323264736658528,0.8533763788001076,0.046777546777546773

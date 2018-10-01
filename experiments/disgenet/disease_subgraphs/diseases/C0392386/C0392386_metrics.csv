@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0392386,Decreased platelet count,112,1215,0.021879021879021878,0.04726922637995547,0.05086202805404709,0.956234915526951,0.6420658778969819,0.6506981660047398,0.8546653639472399,0.027380952380952377

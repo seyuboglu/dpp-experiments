@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021551,Absence of secondary sex characteristics,22,83,0.05627705627705628,0.1414141414141414,0.1692624155157214,0.9774891774891775,0.9364785406731793,0.9442373783823031,0.9278267842822775,0.09802847754654986

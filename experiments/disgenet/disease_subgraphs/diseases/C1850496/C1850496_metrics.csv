@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1850496,Neuronal loss,25,225,0.06333333333333334,0.12005577662143319,0.1328968253968254,0.9801462904911181,0.8940766968733121,0.8984166464450376,0.9333459572050748,0.0920888888888889

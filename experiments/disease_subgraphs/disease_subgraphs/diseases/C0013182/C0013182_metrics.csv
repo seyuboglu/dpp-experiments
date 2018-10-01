@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013182,Drug Allergy,35,238,0.03361344537815126,0.10296020927991188,0.11871077544942027,0.9767711962833914,0.880933046731948,0.8910670419235712,0.9174166225516146,0.064105642256902767

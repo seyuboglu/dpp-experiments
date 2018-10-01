@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042571,Vertigo,28,319,0.06878306878306878,0.07730936034976209,0.08347627215551744,0.9758476544356711,0.872031853983201,0.8759848862071996,0.8858424725822532,0.0930362740707568

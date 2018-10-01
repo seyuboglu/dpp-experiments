@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0086437,Joint laxity,55,991,0.039057239057239054,0.05268073304816643,0.05528952491616467,0.9766505636070854,0.6834670764327585,0.6885374858606216,0.849943081858636,0.0496835152738281

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002895,"Anemia, Sickle Cell",10,71,0.15555555555555556,0.2468354430379747,0.2571428571428571,0.9846827133479212,0.942044061373853,0.9509310808216548,0.947936507936508,0.20704225352112671

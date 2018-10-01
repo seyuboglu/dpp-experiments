@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0030293,Pancreatic Insufficiency,11,24,0.10909090909090909,0.17424242424242425,0.2391304347826087,0.9851116625310173,0.9723100075244545,0.9791830941491878,0.9622964867180805,0.1818181818181818

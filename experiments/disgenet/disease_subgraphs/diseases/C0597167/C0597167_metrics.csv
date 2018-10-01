@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0597167,Islets of Langerhans hyperplasia,11,41,0.10909090909090909,0.17551020408163265,0.20365853658536584,0.973741794310722,0.9626800902621073,0.9703163881976538,0.9171597633136095,0.19733924611973394

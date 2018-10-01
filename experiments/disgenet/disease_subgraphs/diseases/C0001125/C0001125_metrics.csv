@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001125,"Acidosis, Lactic",93,801,0.07106124357176251,0.07235654690958625,0.07834269662921348,0.880362062180244,0.657735418484462,0.6612116263218631,0.7214367421642645,0.050434268991717345

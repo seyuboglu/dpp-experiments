@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2930812,Generalized elastolysis,24,77,0.021739130434782608,0.10606060606060606,0.12166780587833219,0.9875518672199171,0.9612689044632977,0.9727932747420711,0.9334582942830365,0.09415584415584416

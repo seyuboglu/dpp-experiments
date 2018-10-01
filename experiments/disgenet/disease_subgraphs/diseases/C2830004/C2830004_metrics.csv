@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2830004,Somnolence,15,80,0.05714285714285714,0.2053751399776036,0.23196202531645568,0.9869565217391304,0.9421359835936267,0.9523639317627944,0.9568764568764568,0.14833333333333332

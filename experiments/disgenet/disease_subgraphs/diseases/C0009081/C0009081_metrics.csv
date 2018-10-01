@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009081,Congenital clubfoot,110,1132,0.011009174311926606,0.05800151925445893,0.06513514104594889,0.9767523775977457,0.6081562707940241,0.6153682948203496,0.8850156466050506,0.025281079344683585

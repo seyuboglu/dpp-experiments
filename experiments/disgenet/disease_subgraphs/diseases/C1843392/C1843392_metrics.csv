@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1843392,Death in childhood,14,32,0.08791208791208792,0.17940199335548174,0.23790322580645162,0.9699812382739212,0.977818853974122,0.9834826427771557,0.9358841778697001,0.15848214285714285

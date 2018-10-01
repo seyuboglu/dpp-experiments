@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0795690,Congenital omphalocele,20,167,0.06842105263157895,0.1398354876615746,0.15114349614024963,0.9804364183596689,0.9078572949534447,0.917118328915615,0.9377606673083093,0.1119760479041916

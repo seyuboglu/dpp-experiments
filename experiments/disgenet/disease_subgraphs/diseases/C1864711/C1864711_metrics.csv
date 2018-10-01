@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1864711,Muscle biopsy shows dystrophic changes,39,657,0.0620782726045884,0.12142803603158717,0.12700931803838586,0.9724468403713686,0.6499745805795628,0.6512309495896834,0.9013810048292807,0.06681497092455997

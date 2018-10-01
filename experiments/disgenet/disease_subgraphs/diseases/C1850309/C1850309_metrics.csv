@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1850309,Mildly increased creatine kinase,20,243,0.04736842105263158,0.13156498673740052,0.13991769547325103,0.9911547911547911,0.8811169256581313,0.8888453588749443,0.938973063973064,0.1189300411522634

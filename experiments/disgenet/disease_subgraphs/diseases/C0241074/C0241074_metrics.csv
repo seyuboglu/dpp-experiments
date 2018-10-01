@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0241074,Skin hyperelastic,32,262,0.06653225806451613,0.09260294865277072,0.1020736451112866,0.9582278481012658,0.8782684243062169,0.8823866412792559,0.867249473854622,0.08015267175572519

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1858025,Spinal rigidity,13,97,0.07692307692307693,0.12504247366632687,0.12328178694158076,0.9904686258935663,0.9463439527593497,0.9565694397155071,0.9313921021140805,0.16415543219666928

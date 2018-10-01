@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025860,Hearing abnormality,11,57,0.12727272727272726,0.14925373134328357,0.13471177944862156,0.9858870967741935,0.9556048834628191,0.9699825479930192,0.9453883495145631,0.18819776714513559

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019080,Hemorrhage,16,52,0.10833333333333334,0.1259600614439324,0.14479638009049775,0.9670468948035488,0.9524775427412344,0.960927960927961,0.8817584638706417,0.13942307692307693

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035222,"Respiratory Distress Syndrome, Adult",40,232,0.03717948717948718,0.08990091024311557,0.1041573369159576,0.9684095860566448,0.8956117466051241,0.9049516414657404,0.9079889002482839,0.05851293103448277

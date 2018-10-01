@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0158734,Polydactyly of toes,12,80,0.06060606060606061,0.08962148962148962,0.07721518987341772,0.9908256880733946,0.9409635647068286,0.9587663709336713,0.9084106554923675,0.17395833333333335

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0031090,Periodontal Diseases,20,93,0.11052631578947368,0.12655677655677655,0.13721365123889667,0.9535398230088495,0.9401705701545522,0.9478454020435362,0.8983620327593448,0.12258064516129033

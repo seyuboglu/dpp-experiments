@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017181,Gastrointestinal Hemorrhage,51,533,0.05725490196078432,0.06351587896974244,0.06675224646983312,0.9527355131110392,0.810824230387289,0.8172108429662678,0.873287911779167,0.05187065445315086

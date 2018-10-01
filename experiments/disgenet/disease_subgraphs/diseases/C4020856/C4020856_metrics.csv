@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020856,Terminal tremor,20,205,0.04736842105263158,0.15144103379397497,0.165662362505978,0.98851308232291,0.8830639449786745,0.8894667985577076,0.9256110520722636,0.11073170731707319

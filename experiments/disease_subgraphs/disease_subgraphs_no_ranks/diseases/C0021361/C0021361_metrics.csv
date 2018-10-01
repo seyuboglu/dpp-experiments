@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0021361,Female infertility,27,775,0.1111111111111111,0.05885462442839492,0.06097857797782779,0.9784351672656898,0.7193062389891258,0.7214887234074954,0.847595519018614,0.099784946236559133

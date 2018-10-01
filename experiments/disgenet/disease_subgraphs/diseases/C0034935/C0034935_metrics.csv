@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034935,Babinski Reflex,99,1188,0.024737167594310452,0.04877120667683106,0.05206657986775931,0.9625760174645251,0.6433383915022762,0.6529298315275965,0.8112507613088976,0.032964323368363774

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003872,"Arthritis, Psoriatic",15,90,0.11428571428571428,0.172781984080761,0.1937578027465668,0.9782016348773842,0.9280633688975105,0.9358465608465608,0.934075723830735,0.1474074074074074

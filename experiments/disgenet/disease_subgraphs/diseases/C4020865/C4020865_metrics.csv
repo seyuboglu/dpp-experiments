@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020865,Fibular polydactyly,11,42,0.07272727272727272,0.16591251885369532,0.16260162601626016,0.9891304347826086,0.957508450024143,0.9710354815351194,0.9440459110473458,0.19047619047619047

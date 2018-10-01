@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021727,EMG: neuropathic changes,16,258,0.10833333333333334,0.12067913221994118,0.12541851416161434,0.9875657580105213,0.8739276605610944,0.8784441553505913,0.9356957649092481,0.14583333333333334

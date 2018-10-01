@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0751466,Phonophobia,11,324,0.09090909090909091,0.10116140236622165,0.10331384015594541,0.9933993399339934,0.8308376440693348,0.8350471424648338,0.8910939012584704,0.1997755331088665

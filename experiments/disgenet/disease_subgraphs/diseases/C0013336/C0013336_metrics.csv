@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013336,Dwarfism,37,244,0.03003003003003003,0.09378129117259552,0.10500573433178169,0.9794976934905176,0.8942975942975943,0.9053410974107917,0.8925588458618071,0.06369073992024812

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1167713,Corneal diameter decreased,45,318,0.03838383838383838,0.07131315486998384,0.07892387357895364,0.9651056014692379,0.884626268342968,0.8911851193325583,0.8819695872556119,0.05604472396925227

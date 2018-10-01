@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0006142,Malignant neoplasm of breast,14,226,0.26373626373626374,0.12177677395068699,0.12491642084562439,0.9711538461538461,0.8726352880962224,0.8745630837891744,0.8891210027318014,0.1896333754740834

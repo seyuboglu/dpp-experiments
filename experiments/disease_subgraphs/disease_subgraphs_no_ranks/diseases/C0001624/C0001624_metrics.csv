@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0001624,Adrenal Gland Neoplasms,11,434,0.34545454545454546,0.10020657873828064,0.10062685582316068,0.9862617498192335,0.8098941846793887,0.8099612083693446,0.914778947368421,0.21470465018852114

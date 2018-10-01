@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022661,"Kidney Failure, Chronic",44,486,0.0507399577167019,0.07394355430528375,0.08010691103474608,0.9647706422018348,0.8121145609758467,0.8155153883732291,0.8783544790465205,0.05705200149644594

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008031,Chest Pain,36,602,0.07777777777777778,0.06917562724014337,0.07245399417360877,0.9733405875952121,0.7840550686330947,0.7866456139208569,0.8952837190472978,0.06953672942045036

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0149931,Migraine Disorders,26,188,0.043076923076923075,0.10460795243403939,0.11355102969621117,0.9848730415991356,0.9161000689231228,0.9237484002826963,0.9295859171834366,0.084697217675941058

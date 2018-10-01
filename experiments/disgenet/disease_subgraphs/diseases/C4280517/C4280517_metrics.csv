@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280517,Enlargement of craniofacial bones,10,66,0.15555555555555556,0.2606544901065449,0.30116550116550117,0.9829683698296837,0.9443044149930888,0.947083879423329,0.9563636363636364,0.21060606060606057

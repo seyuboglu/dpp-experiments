@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0344482,Hypoplasia of corpus callosum,90,1108,0.014731585518102372,0.051331233772685836,0.05578383702007898,0.9793994413407822,0.6602700036693051,0.6696536340900532,0.871899117971334,0.031237464901724833

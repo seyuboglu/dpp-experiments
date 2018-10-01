@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018671,Head and Neck Neoplasms,26,529,0.08923076923076922,0.05573110979728582,0.0576344732771954,0.9804186360567184,0.8128843104372726,0.8152627955014918,0.8728404397649933,0.09284571760942271

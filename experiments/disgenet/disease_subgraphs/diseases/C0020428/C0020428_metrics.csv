@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020428,Hyperaldosteronism,19,38,0.05263157894736842,0.13574660633484162,0.2034139402560455,0.9564164648910412,0.9651500484027106,0.9714,0.910271546635183,0.12465373961218838

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0747078,Generalized osteopenia,98,1024,0.01830422890805807,0.04203165937944921,0.04586693548387097,0.9681260304084998,0.7128369239269948,0.7202233647961709,0.8597819405351192,0.028529575892857144

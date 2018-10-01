@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839829,Short distal phalanges,50,498,0.031020408163265307,0.07113233364837986,0.07889101678343151,0.9733333333333334,0.8114547986950466,0.8159226962055149,0.866823017003099,0.0561847389558233

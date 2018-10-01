@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2609414,Acute kidney injury,70,1030,0.032712215320910974,0.05110022370665792,0.054635002405955445,0.971830985915493,0.6777656786083645,0.681520184798152,0.8728085740648733,0.04070735090152566

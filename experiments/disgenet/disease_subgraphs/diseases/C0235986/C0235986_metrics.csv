@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0235986,Growth hormone excess,14,237,0.13186813186813187,0.13308798929407828,0.13459200457698633,0.9856545128511656,0.8757496251874063,0.8812281089268247,0.9213825821755337,0.17028330319469556

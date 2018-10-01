@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003862,Arthralgia,91,862,0.02148962148962149,0.06152008326631026,0.0682177686874648,0.9620034542314335,0.6981773659136672,0.7036720551569139,0.8637621640924917,0.030838071441319694

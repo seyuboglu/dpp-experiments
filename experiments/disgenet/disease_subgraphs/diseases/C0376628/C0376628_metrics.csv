@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0376628,Chromosome Breakage,32,575,0.1975806451612903,0.09026070862289497,0.09185880927132253,0.941908713692946,0.7492549533322417,0.7509876553349815,0.8594633273703041,0.0963586956521739

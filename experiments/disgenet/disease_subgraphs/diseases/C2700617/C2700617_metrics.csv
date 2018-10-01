@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2700617,Irritation - emotion,67,1139,0.04477611940298507,0.04891673230810003,0.050766018969558284,0.9669724770642202,0.6584774161715425,0.6603907967671012,0.864984493089639,0.040700798029169344

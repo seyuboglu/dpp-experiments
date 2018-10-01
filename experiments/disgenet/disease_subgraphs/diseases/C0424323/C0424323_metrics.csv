@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0424323,Physical aggression,76,1051,0.023859649122807018,0.06001132414450405,0.06398260160391464,0.9758779709116708,0.652271797955502,0.6574887944583503,0.8825373678454247,0.03752065701837848

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1866134,Wide anterior fontanel,44,595,0.06025369978858351,0.05724844261429627,0.058766941119882295,0.9637980311209908,0.801600878196039,0.8077083314045531,0.8797609281612563,0.05466004583651642

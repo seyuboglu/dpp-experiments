@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1853743,Axial hypotonia,46,288,0.03188405797101449,0.07374608150470219,0.07996999612853271,0.9688385269121813,0.8921258150032242,0.9031743009067339,0.9017388904223019,0.05230978260869565

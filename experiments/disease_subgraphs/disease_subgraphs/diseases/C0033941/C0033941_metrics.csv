@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0033941,"Psychoses, Substance-Induced",17,395,0.11764705882352941,0.1331743745536849,0.1373642613891923,0.988476773496579,0.7837694431616079,0.7882800352569499,0.9298606351382225,0.13313477289650039

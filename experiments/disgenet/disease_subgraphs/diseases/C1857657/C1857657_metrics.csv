@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857657,Decreased subcutaneous adipose tissue,13,98,0.1282051282051282,0.2186563216363957,0.23143277929728592,0.9829205807002562,0.939012394255361,0.9450192432648573,0.9482001755926251,0.1648351648351648

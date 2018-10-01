@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1844820,Range of joint movement increased,33,492,0.043560606060606064,0.09331564032207278,0.09958935638236219,0.9853222718570517,0.7878780132416473,0.7930565829992946,0.9196404969600845,0.07495688593249568

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004763,Barrett Esophagus,14,105,0.10989010989010989,0.20954907161803712,0.24175824175824176,0.9791883454734651,0.916744730679157,0.921858813082729,0.9370314842578711,0.16122448979591836

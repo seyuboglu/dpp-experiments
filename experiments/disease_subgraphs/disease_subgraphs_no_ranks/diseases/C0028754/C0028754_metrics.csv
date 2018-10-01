@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0028754,Obesity,258,2460,0.008445691189334298,0.024243731574784547,0.02667023742217902,0.952562473528166,0.4905613833848279,0.4976553596672043,0.766975014909843,0.013184596962248692

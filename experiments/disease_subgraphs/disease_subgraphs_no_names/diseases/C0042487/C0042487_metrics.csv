@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042487,Venous Thrombosis,20,74,0.1631578947368421,0.10388437217705511,0.11625323954091077,0.8870673952641166,0.933698472182185,0.9384434424622623,0.7708333333333334,0.13378378378378378

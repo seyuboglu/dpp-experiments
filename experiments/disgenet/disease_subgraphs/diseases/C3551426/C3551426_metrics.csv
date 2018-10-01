@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3551426,Dystrophic fingernails,17,115,0.125,0.18360204974378203,0.20137299771167047,0.9695885509838998,0.9308184986342658,0.9366207327027416,0.934945054945055,0.13861892583120206

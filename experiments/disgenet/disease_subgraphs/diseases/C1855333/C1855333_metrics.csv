@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1855333,Small genitalia,13,34,0.10256410256410256,0.16492450638792103,0.23172905525846701,0.9461279461279462,0.9518888700660681,0.9548218940052129,0.7878787878787878,0.21266968325791857

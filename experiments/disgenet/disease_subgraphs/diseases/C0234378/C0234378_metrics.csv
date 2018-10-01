@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0234378,Static Tremor,21,219,0.11428571428571428,0.17383191521122557,0.18072137740354405,0.9684625492772667,0.8316831683168316,0.841411634960022,0.6602772043644942,0.15177212437486412

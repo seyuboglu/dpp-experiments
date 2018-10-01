@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0554970,Pallor of optic disc,39,404,0.09041835357624832,0.17893151257270398,0.1973933125322458,0.9454175152749491,0.6671473129825638,0.6687794370755135,0.6722927189848467,0.09012439705509012

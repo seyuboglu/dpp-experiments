@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0235942,Skull malformation,38,329,0.03982930298719772,0.07955808021532636,0.08610719845800281,0.9762005949851253,0.8729079432535467,0.8818337890252432,0.8994030229899657,0.06534954407294832

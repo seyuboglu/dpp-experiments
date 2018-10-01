@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0232940,Secondary physiologic amenorrhea,23,108,0.08695652173913043,0.13204825596643063,0.1557632398753894,0.9522776572668112,0.9344208915372342,0.9402985074626866,0.8906560636182903,0.11594202898550722

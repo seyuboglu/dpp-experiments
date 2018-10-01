@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4023786,Elevated levels of phytanic acid,15,42,0.34285714285714286,0.1800232288037166,0.1800232288037166,0.8389261744966443,0.9651802763113557,0.9651802763113557,0.8371134020618557,0.1952380952380952

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0542519,Congenital absence of kidney,30,306,0.04827586206896552,0.1749685746984109,0.18892103289403192,0.9774678111587983,0.7889305073045978,0.7971421339653466,0.890513999164229,0.08235294117647057

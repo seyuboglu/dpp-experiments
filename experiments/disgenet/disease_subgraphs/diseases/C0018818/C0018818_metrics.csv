@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018818,Ventricular Septal Defects,117,1718,0.016357206012378427,0.04593808844240564,0.04883575394449669,0.9729235272594219,0.48715874902823436,0.4927784232949544,0.8480875029899754,0.027218092992248984

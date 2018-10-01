@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1847514,Postnatal microcephaly,24,283,0.04710144927536232,0.2009485716783599,0.22276520562363733,0.9853273137697517,0.7973215761917883,0.8020333396434417,0.9381341252165306,0.0973203769140165

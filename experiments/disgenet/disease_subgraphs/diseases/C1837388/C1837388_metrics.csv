@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837388,Abnormal respiratory patterns,19,185,0.1871345029239766,0.169743091537133,0.18072855464159812,0.9532163742690059,0.854687427805757,0.8570665179712367,0.6369388369990961,0.19118065433854906

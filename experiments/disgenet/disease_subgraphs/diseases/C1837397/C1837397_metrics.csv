@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837397,"Global developmental delay, severe",45,233,0.049494949494949494,0.0765963765963766,0.08332100044398402,0.9483938915218536,0.9087741638810775,0.9185945633314054,0.8982941744448021,0.05541249403910347

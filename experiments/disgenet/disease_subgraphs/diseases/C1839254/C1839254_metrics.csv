@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839254,Small capital femoral epiphyses,10,11,0.08888888888888889,0.24285714285714285,0.45454545454545453,0.9717314487632509,0.9864649681528662,0.9931063008410312,0.9517426273458445,0.2

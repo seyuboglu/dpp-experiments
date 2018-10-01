@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0040411,Tongue Neoplasms,9,67,0.2222222222222222,0.18770825620140688,0.1994572591587517,0.9838056680161943,0.9579497387409803,0.9627470856563609,0.9368051492100644,0.2321724709784411

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0264886,Conduction disorder of the heart,79,1185,0.04868549172346641,0.06660896548698333,0.07057104572927357,0.9576031656302996,0.5437283134340591,0.5465686050026103,0.8301827347195967,0.056497356192917805

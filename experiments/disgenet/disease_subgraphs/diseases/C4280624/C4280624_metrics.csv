@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280624,Blind spot located at fixation point,19,90,0.10526315789473684,0.33954571927781013,0.4149812734082397,0.9393939393939394,0.7768705747273075,0.7852851882953298,0.5364020666979803,0.243859649122807

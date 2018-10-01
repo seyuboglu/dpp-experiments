@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1970705,Fragile hair,25,165,0.05,0.10626039439296744,0.11574279379157427,0.9744463373083475,0.9199570479407619,0.9287193609322014,0.8709809543313537,0.0976969696969697

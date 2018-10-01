@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266623,Congenital anomaly of neck,19,136,0.04093567251461988,0.1735232509426058,0.19128540305010894,0.9891135303265941,0.9201957535355092,0.9306148253516675,0.9432950191570881,0.11919504643962847

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265529,Plagiocephaly,20,157,0.05789473684210526,0.0993103448275862,0.0972562469377756,0.9851851851851852,0.934798076715755,0.9470690191547042,0.9127061105722599,0.11496815286624203

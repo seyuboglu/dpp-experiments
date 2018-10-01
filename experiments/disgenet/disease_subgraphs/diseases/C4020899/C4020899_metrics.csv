@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020899,Autosomal recessive predisposition,1410,8366,0.0047727627360081345,0.006798694739349184,0.007331070928797131,0.8524569756947686,0.810433198336132,0.8103453730556288,0.49687181125735663,0.0050878852769484055

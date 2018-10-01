@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0033805,Pseudohypoaldosteronism,9,42,0.2222222222222222,0.18647342995169083,0.19396051103368175,0.9657387580299786,0.9639049934542734,0.9682811016144349,0.900972590627763,0.26984126984126983

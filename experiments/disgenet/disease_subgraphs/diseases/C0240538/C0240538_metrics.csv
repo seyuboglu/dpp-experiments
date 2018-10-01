@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240538,Convex nasal ridge,38,614,0.06116642958748222,0.061716028525722486,0.06438671349852013,0.9712278353964536,0.7770155300472653,0.780548763922847,0.8762988011066708,0.06844676838676496

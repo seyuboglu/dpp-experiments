@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849134,Decreased lower limb vibratory sense,12,117,0.10606060606060606,0.22993548387096774,0.2568523430592396,0.9885807504078303,0.923133330457663,0.9244669786791472,0.9560131024801123,0.17236467236467237

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0685891,Congenital hypoplasia of thymus,15,51,0.05714285714285714,0.21081349206349206,0.27215686274509804,0.9850374064837906,0.96694793327371,0.9724963341655768,0.9691040164778579,0.1477124183006536

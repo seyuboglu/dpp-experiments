@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1561955,Fibrinogen Adverse Event,18,30,0.026143790849673203,0.11748381128584644,0.18850574712643678,0.9809069212410502,0.9660609299839658,0.9769371396428069,0.9050772626931567,0.12037037037037036

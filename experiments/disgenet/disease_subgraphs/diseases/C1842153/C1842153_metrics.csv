@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1842153,Irregular vertebral endplates,15,19,0.0761904761904762,0.18064516129032257,0.32748538011695905,0.9440559440559441,0.9827568510725649,0.988236529776284,0.8969555035128806,0.15438596491228068

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020179,Huntington Disease,12,66,0.12121212121212122,0.18666666666666668,0.22377622377622378,0.9703153988868275,0.9262493934983018,0.931350114416476,0.6593673965936739,0.16919191919191914

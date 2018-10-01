@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857949,Prominent metopic ridge,15,56,0.09523809523809523,0.17296037296037295,0.19415584415584416,0.975,0.9573195283290192,0.9643687064291248,0.9084435401831129,0.15833333333333335

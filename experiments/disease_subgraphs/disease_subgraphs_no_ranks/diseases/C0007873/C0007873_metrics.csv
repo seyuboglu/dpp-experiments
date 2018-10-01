@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007873,Uterine Cervical Neoplasm,21,437,0.10476190476190476,0.08461263124403436,0.08778577876682132,0.9846315054139015,0.8168513935220059,0.8193092570786565,0.9048701582582845,0.11833932657731284

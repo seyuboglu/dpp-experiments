@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0235032,Neurotoxicity Syndromes,26,196,0.055384615384615386,0.13297109324059986,0.15259026687598115,0.9774153074027604,0.8948237033471437,0.8988149973107552,0.9228499156829679,0.09183673469387753

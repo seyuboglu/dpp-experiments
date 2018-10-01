@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1854912,Short tubular bones,23,67,0.04743083003952569,0.11442006269592477,0.1383989145183175,0.9741657696447793,0.9612492258692382,0.971856893221742,0.9144620811287478,0.09733939000648931

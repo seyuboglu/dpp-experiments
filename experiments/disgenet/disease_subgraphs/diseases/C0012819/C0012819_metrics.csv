@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0012819,Diverticular disease of colon,15,269,0.13333333333333333,0.13310312352848847,0.13560450535426954,0.9835584263065179,0.8616112712832509,0.8661262050832603,0.9119153294639809,0.15662949194547704

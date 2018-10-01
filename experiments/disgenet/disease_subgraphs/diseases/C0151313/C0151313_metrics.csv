@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151313,Sensory neuropathy,20,190,0.05263157894736842,0.13075994054254925,0.14280144806460596,0.9883381924198251,0.9074317658664913,0.9143506146445751,0.9384615384615385,0.11157894736842106

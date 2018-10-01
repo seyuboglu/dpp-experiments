@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0233315,Premature birth of newborn,66,720,0.035431235431235435,0.07509723536213603,0.08079508576726936,0.9609254498714653,0.7252677524179437,0.7299614562686827,0.8782363496539349,0.04221380471380472

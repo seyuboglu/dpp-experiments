@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839364,Progressive visual loss,36,185,0.025396825396825397,0.08922171018945213,0.09900117508813161,0.9797340088663711,0.9150828460038987,0.9295774647887324,0.9182795698924732,0.06816816816816818

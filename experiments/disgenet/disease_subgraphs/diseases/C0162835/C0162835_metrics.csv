@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162835,Hypopigmentation disorder,24,91,0.04710144927536232,0.10358504958047292,0.10915750915750916,0.9747081712062257,0.9505065966907209,0.9661491859144263,0.9137577002053389,0.1002747252747253

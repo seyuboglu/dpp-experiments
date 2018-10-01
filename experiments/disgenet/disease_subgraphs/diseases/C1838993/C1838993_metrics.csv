@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1838993,Episodic vomiting,10,80,0.26666666666666666,0.4664371772805508,0.5053797468354431,0.9435294117647058,0.5756784968684759,0.5791276848069574,0.5492692126355493,0.3499999999999999

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0037299,Skin Ulcer,49,1019,0.05187074829931973,0.052750904945316826,0.05453360608169726,0.9769941542523101,0.6890947249684105,0.6919231250987077,0.8831314936139236,0.05193166569866416

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3277418,Gastrointestinal hamartomatous polyps,10,149,0.26666666666666666,0.1396628826969384,0.1436604389624524,0.9815100154083205,0.917649146826906,0.9193462155350187,0.9148471615720524,0.22214765100671138

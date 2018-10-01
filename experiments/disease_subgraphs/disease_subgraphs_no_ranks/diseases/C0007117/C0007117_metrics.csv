@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007117,Basal cell carcinoma,22,178,0.03463203463203463,0.12362200687073784,0.12988002285278993,0.9908727895037079,0.9033260490386736,0.9151635775593979,0.9377162629757786,0.09780388151174671

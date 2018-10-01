@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023532,"Leukoplakia, Oral",21,154,0.10476190476190476,0.1354930420469849,0.1430269077327901,0.9565646594274433,0.9082201500101358,0.9137754579879235,0.8524492234169654,0.14564007421150274

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265783,Congenital hypoplasia of lung,47,367,0.02127659574468085,0.09935202582261406,0.11165706287875404,0.9804670912951168,0.8394995670827212,0.8513076755299109,0.9282647832710151,0.053626297176647915

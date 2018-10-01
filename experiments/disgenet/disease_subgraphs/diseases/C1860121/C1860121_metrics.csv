@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1860121,Decreased testosterone in males,28,131,0.05026455026455026,0.13192052980132452,0.1620669406928949,0.9726027397260274,0.9257621307361673,0.9304417954081504,0.9404540379605508,0.07906215921483095

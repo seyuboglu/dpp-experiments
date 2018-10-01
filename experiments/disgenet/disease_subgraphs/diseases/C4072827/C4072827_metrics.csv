@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4072827,Cone/cone-rod dystrophy,20,38,0.031578947368421054,0.08709273182957393,0.08250355618776671,0.9725400457665904,0.9656238407320391,0.9848997656860192,0.8809182209469153,0.10526315789473684

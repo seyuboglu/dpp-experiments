@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1854838,Progressive neurologic deterioration,18,79,0.0915032679738562,0.1629240324892499,0.18500486854917234,0.9704016913319239,0.9535200708784843,0.9602635156331695,0.9258046917621385,0.12165963431786216

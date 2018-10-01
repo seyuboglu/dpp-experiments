@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0031900,Pierre Robin Syndrome,11,225,0.09090909090909091,0.4658301509365339,0.49734126984126986,0.9917965545529123,0.6322076728692856,0.6360917537746806,0.966702470461869,0.19151515151515153

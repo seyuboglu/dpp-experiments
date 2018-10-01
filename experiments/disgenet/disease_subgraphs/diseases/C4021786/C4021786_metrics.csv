@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021786,Atypical scarring of skin,59,602,0.029807130333138514,0.11880451687064711,0.13348737707364802,0.971954907891119,0.6574643337069968,0.6613682417035359,0.8963634681225132,0.057998761191508534

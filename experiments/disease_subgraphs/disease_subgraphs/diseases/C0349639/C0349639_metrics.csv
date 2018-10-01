@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0349639,Juvenile Myelomonocytic Leukemia,19,217,0.07602339181286549,0.11143998816042623,0.11563406724697048,0.9824086603518268,0.8869157124084851,0.8968149713480686,0.8813949915501613,0.12733446519524616

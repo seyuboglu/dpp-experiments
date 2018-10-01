@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018843,Heat Stroke,12,416,0.45454545454545453,0.0884196823149216,0.08931881371640407,0.973568281938326,0.8065531585324722,0.8072355426657,0.8559957645813112,0.24459134615384615

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0039685,Tetralogy of Fallot,43,433,0.026578073089700997,0.14834094789791868,0.1644534257120862,0.9774647887323944,0.70155517385451,0.7103798898460669,0.894462003572901,0.05553466888662119

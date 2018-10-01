@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002878,"Anemia, Hemolytic",56,505,0.03831168831168831,0.08118590080156814,0.08822096495363822,0.9571220930232558,0.791713064406049,0.79668414237724,0.8807317652649085,0.04565063649222064

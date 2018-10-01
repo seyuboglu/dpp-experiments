@@ -149,7 +149,6 @@ def run_dpp(disease):
 
     # Perform k-fold cross validation
     n_folds = disease_nodes.size if params.n_folds < 0 or params.n_folds > len(disease_nodes) else params.n_folds
-
     kf = KFold(n_splits = n_folds, shuffle=False)
 
     for train_indices, test_indices in kf.split(disease_nodes):

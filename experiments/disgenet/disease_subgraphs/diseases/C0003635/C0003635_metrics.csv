@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003635,Apraxias,27,335,0.06552706552706553,0.10328638497652583,0.10756993475735097,0.9802235597592434,0.8497772119669,0.858546446032343,0.9145024803034725,0.09032614704256495

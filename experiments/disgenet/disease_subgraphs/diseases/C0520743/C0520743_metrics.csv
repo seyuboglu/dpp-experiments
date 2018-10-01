@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0520743,Mediastinal lymphadenopathy,11,86,0.21818181818181817,0.16865742952699475,0.16990424076607388,0.9805668016194332,0.9448200398608777,0.950602553394583,0.9509759418974126,0.2008456659619451

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025202,melanoma,203,3147,0.015217285275325561,0.0228656947791618,0.024235232658839558,0.9604286892003298,0.47652433825815704,0.4753340321360808,0.7627280841392383,0.018777755341313408

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280370,Depressed cheekbone,22,325,0.0735930735930736,0.21296199895887558,0.22571699905033238,0.9819052687599787,0.7468936573897442,0.7521274820624061,0.9038425839985149,0.11524475524475523

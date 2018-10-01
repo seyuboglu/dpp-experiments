@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2364082,Sense of smell impaired,20,35,0.03684210526315789,0.15583508036338226,0.2773109243697479,0.9740740740740741,0.9651752947606778,0.973270694961931,0.9285120532003325,0.10571428571428573
