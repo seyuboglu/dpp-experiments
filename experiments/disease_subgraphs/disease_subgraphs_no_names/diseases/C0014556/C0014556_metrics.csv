@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014556,"Epilepsy, Temporal Lobe",23,54,0.05138339920948617,0.13217326915957053,0.16771488469601678,0.9516728624535316,0.9519127155172413,0.9667128987517337,0.8866995073891626,0.10950080515297909

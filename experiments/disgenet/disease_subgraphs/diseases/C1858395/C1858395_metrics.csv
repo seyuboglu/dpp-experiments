@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1858395,Tubular atrophy,10,14,0.15555555555555556,0.2683982683982684,0.4175824175824176,0.9531772575250836,0.9625377643504531,0.9755469755469756,0.9454545454545454,0.20714285714285716

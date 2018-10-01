@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085631,Agitation,16,102,0.08333333333333333,0.14299021891010713,0.1527858668219763,0.9806201550387597,0.9505516630426029,0.9569321695351192,0.9323542501112595,0.13541666666666666

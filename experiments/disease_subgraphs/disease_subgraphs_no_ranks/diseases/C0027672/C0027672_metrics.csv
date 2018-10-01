@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027672,"Neoplastic Syndromes, Hereditary",48,1264,0.12145390070921985,0.04888512901081636,0.049373853693737035,0.9577290959580377,0.6265761076910759,0.628096365986921,0.8480223559759243,0.066867747890295356

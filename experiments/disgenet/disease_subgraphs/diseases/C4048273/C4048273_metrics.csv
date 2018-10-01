@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4048273,Chorioretinal atrophy,10,2,0.1111111111111111,0.15151515151515152,1.0,0.9630996309963099,0.9689922480620154,0.9946524064171123,0.9448275862068966,0.2

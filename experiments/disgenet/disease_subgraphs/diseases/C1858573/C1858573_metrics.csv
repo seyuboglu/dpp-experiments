@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1858573,Sparse pubic hair,31,184,0.05161290322580645,0.12648507678933643,0.14641244951294843,0.9691119691119691,0.8909386191388357,0.896079258010118,0.9272097053726169,0.07713884992987376

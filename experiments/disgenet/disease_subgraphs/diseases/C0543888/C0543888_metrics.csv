@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0543888,Epileptic encephalopathy,26,192,0.033846153846153845,0.21429801894918174,0.2488547120418848,0.9850238257317904,0.8339534495703679,0.8442050634207966,0.9270743611828883,0.08874198717948717

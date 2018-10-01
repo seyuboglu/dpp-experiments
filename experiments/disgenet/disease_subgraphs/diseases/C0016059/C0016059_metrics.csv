@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0016059,Fibrosis,41,493,0.06585365853658537,0.05991328038064541,0.06253401276406273,0.963302752293578,0.823347060686971,0.8275599413376382,0.8733379986004198,0.059417206748132396

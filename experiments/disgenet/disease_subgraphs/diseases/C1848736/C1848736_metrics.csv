@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1848736,Distal amyotrophy,51,723,0.034509803921568626,0.06553996910667981,0.06968119140393023,0.9788359788359788,0.7560883617185925,0.7615804618419931,0.9047306893914564,0.05236894204431426

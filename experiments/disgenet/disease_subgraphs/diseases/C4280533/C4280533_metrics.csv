@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280533,Decreased calcification of skull,10,47,0.08888888888888889,0.21298701298701297,0.24051803885291398,0.9877862595419847,0.9642954335165732,0.9710741503031651,0.9688412852969815,0.2127659574468084

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240340,Microdontia (disorder),59,416,0.01928696668614845,0.08061684939941734,0.09178637627432808,0.9746251441753172,0.8342184340332244,0.8474071934132601,0.9083552695719996,0.042902542372881367

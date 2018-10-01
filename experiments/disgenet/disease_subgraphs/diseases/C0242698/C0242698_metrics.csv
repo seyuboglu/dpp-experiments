@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0242698,"Ventricular Dysfunction, Left",19,169,0.10526315789473684,0.141720123544785,0.15645252183713723,0.9741007194244604,0.9006929848292511,0.9060629771395944,0.931321540062435,0.1155403301152289

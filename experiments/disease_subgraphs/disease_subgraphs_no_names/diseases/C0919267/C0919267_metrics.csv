@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0919267,ovarian neoplasm,97,2163,0.04639175257731959,0.029917093485351286,0.03083650136450941,0.9587155963302753,0.5043662678911114,0.5062301615835807,0.7975237704357343,0.035417590116819421

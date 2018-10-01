@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003850,Arteriosclerosis,10,69,0.2222222222222222,0.2602739726027397,0.2907075873827792,0.9602385685884692,0.919422316465127,0.9210465385505904,0.8096947935368043,0.22173913043478258

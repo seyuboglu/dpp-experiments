@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026848,Myopathy,96,1230,0.021052631578947368,0.05962086958610296,0.06452069565447485,0.969844510758599,0.5716294922127788,0.5762928338082992,0.8292266563597127,0.03308773712737128

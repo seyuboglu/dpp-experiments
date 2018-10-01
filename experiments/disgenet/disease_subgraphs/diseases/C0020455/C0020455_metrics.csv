@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020455,Hypergammaglobulinemia,10,16,0.13333333333333333,0.2246153846153846,0.2916666666666667,0.9755600814663951,0.9757636122177955,0.9873486354599674,0.9476744186046512,0.2

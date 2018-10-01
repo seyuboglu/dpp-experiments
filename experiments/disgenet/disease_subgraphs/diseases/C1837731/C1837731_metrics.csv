@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1837731,Overfolded helix,24,175,0.025362318840579712,0.1647674298145654,0.18463054187192118,0.9907529722589168,0.9013184426865208,0.9108863809282273,0.9332048811817598,0.09500000000000001

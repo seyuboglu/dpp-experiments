@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0231687,Spastic gait,22,234,0.05194805194805195,0.14519698981850376,0.15890833058215031,0.9868995633187773,0.8758767958265194,0.8815924341610747,0.94229112833764,0.10567210567210567

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1860614,ULNAR HYPOPLASIA,24,587,0.06884057971014493,0.10367321752257538,0.10787192353088243,0.9842650103519669,0.7003566992579382,0.7027691666866924,0.9076849489795918,0.09412265758091994

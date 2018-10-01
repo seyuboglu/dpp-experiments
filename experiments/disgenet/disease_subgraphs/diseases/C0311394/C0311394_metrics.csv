@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0311394,Difficulty walking,27,225,0.037037037037037035,0.12109834138696618,0.13043650793650793,0.9855635757912271,0.8917949091969951,0.9021099810890898,0.927793465106898,0.08592592592592592

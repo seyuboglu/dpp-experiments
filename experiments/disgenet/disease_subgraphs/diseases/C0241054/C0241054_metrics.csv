@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0241054,Skin bulla,56,480,0.03636363636363636,0.07282748287671233,0.07922755741127349,0.9642172523961662,0.8235512010816217,0.8294860994102781,0.888828535216368,0.05171130952380952

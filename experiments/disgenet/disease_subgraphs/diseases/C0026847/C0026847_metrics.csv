@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026847,Spinal Muscular Atrophy,14,132,0.12087912087912088,0.14183000098493057,0.15151515151515152,0.9809688581314879,0.9281902957163517,0.9334332681216494,0.9334306569343066,0.15584415584415579

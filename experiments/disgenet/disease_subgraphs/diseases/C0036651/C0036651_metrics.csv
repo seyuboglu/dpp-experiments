@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036651,Senile lentigo,10,142,0.4,0.15593869731800766,0.15792628109080012,0.9631901840490797,0.9131177286796883,0.9152755821119477,0.9004796163069544,0.25070422535211273

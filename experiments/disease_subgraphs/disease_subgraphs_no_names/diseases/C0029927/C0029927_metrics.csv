@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029927,Ovarian Cysts,31,191,0.017204301075268817,0.17088581794464147,0.20755028933590522,0.9900062460961899,0.8722360220051508,0.8823492658544205,0.9309923664122137,0.070596183077182892

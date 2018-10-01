@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1865186,Bell-shaped thorax,10,14,0.1111111111111111,0.27898550724637683,0.4835164835164835,0.9823321554770318,0.9790333560245065,0.9870187343265968,0.9749652294853964,0.20000000000000004

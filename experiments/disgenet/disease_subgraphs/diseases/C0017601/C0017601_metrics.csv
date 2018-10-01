@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017601,Glaucoma,117,1364,0.018125552608311227,0.04704361260208226,0.05122390448876142,0.9637221648724377,0.5880850341579327,0.5931508253870604,0.851234987536823,0.027220091736220767

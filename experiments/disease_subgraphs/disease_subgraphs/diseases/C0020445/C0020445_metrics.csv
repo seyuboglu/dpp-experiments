@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020445,"Hypercholesterolemia, Familial",16,49,0.13333333333333333,0.14458560193587416,0.1641156462585034,0.9382239382239382,0.9554727526781556,0.9631433209204622,0.8705234159779615,0.15561224489795919

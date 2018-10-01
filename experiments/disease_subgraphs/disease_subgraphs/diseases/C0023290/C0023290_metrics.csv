@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023290,"Leishmaniasis, Visceral",12,25,0.19696969696969696,0.21401515151515152,0.27,0.93048128342246,0.9720918745369227,0.9794910748195974,0.9173290937996821,0.19

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020860,Supratentorial atrophy,93,739,0.009817671809256662,0.04732523093610249,0.05274468170933401,0.9799235181644359,0.7798320718037804,0.7968273251214827,0.8739567194762357,0.0272091026816244

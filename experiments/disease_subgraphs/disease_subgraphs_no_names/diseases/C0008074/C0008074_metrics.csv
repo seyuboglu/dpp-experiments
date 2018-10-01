@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0008074,"Child Development Disorders, Pervasive",52,226,0.024132730015082957,0.0856034295637074,0.10698131760078662,0.9600997506234414,0.9014801398950787,0.9132307201531222,0.8851007722734978,0.045013614703880177

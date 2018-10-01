@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0948187,Tracheomalacia,11,31,0.09090909090909091,0.19744483159117304,0.21505376344086022,0.987012987012987,0.9766547651744026,0.9855009424387415,0.9664902998236331,0.19061583577712604

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0424711,Orbital separation diminished,23,90,0.039525691699604744,0.12022932022932023,0.13632958801498127,0.9794026776519053,0.9560400071869198,0.9664392402729117,0.9402847955902618,0.09420289855072463

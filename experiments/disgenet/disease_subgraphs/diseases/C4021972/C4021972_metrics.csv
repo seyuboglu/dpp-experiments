@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021972,Urogenital sinus anomaly,15,56,0.09523809523809523,0.21466198419666374,0.2571428571428571,0.9768518518518519,0.9563918491104473,0.9634686346863469,0.9474130619168787,0.15119047619047618

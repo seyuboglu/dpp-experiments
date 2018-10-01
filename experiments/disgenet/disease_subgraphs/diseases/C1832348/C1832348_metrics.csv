@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1832348,Slow-growing hair,19,256,0.09941520467836257,0.11895578288333612,0.1256127450980392,0.9763724808895066,0.8663757240859641,0.8702428989635256,0.8636854279105628,0.1482319078947368

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0015644,Muscular fasciculation,22,505,0.12554112554112554,0.09416342412451362,0.09636963696369637,0.9813204508856683,0.7922954494321165,0.7948769412177927,0.9096297568937377,0.11494149414941494

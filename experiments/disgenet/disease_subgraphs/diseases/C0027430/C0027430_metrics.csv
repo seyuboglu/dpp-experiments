@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027430,Nasal Polyps,10,20,0.15555555555555556,0.31339031339031337,0.5526315789473685,0.9453125,0.9616724738675958,0.9623992837958818,0.8828696925329429,0.24499999999999997

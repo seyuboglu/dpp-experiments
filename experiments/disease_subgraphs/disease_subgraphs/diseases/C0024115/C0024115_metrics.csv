@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0024115,Lung diseases,45,363,0.03232323232323232,0.0723309039764736,0.0795854070590384,0.9733666250520183,0.8578321731044709,0.8666547661549446,0.8935035244808535,0.05607591062136516

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0584837,Choanal stenosis,11,32,0.09090909090909091,0.1461794019933555,0.125,0.9770642201834863,0.9701863354037267,0.9852714099061646,0.8875816993464052,0.1846590909090909

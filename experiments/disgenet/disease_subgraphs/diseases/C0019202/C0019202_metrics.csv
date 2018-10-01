@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019202,Hepatolenticular Degeneration,24,168,0.07246376811594203,0.09355671650753618,0.1020815511833476,0.9736147757255936,0.9212693920865127,0.9267294310274253,0.8950630949745406,0.09325396825396826

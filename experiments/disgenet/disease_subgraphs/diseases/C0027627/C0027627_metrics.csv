@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027627,Neoplasm Metastasis,150,3138,0.036957494407158835,0.02184480317057137,0.022417117757930642,0.9484330128605319,0.4595652901591873,0.45924477037447015,0.7402482105535724,0.02650732950924155

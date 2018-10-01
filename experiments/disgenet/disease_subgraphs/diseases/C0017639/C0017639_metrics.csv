@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017639,Gliosis,55,935,0.05117845117845118,0.05378463739265694,0.055931019478065704,0.9676733304976606,0.7044057922966717,0.7088199350204178,0.8034238488783944,0.054195430238210995

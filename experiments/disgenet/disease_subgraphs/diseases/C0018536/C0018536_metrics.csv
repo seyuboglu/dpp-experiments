@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018536,Hallux Valgus,25,256,0.056666666666666664,0.10320200910375138,0.10735294117647058,0.9800703399765534,0.88002372154555,0.8910667930921922,0.8848839403661068,0.09187500000000001

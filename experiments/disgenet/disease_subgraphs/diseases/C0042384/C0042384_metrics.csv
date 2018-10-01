@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042384,Vasculitis,23,131,0.09881422924901186,0.11771561771561771,0.13352906635349385,0.96066089693155,0.9202762703502714,0.9245120169964148,0.9105504587155964,0.10421506803849985

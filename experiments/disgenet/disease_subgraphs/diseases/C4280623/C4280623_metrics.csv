@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280623,Rotting teeth,74,741,0.023694927804516847,0.06030372279217517,0.06472626472626472,0.9686965028124236,0.7547409843845784,0.7633282876442856,0.8785263856621308,0.0377138271875114

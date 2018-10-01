@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152025,Polyneuropathy,37,172,0.042042042042042045,0.12570809319737944,0.15395076839385285,0.9590643274853801,0.8709089989377308,0.8826973394471646,0.6685165741712914,0.09349465744814583

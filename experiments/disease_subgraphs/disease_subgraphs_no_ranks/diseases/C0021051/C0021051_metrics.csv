@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0021051,Immunologic Deficiency Syndromes,17,42,0.08823529411764706,0.13556953179594688,0.16376306620209058,0.9418886198547215,0.9619831471683323,0.9716155007549069,0.8597502401536984,0.12885154061624648

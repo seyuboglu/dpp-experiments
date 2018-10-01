@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025846,Abnormality of vision,38,197,0.044096728307254626,0.08681775946349937,0.10426810318035844,0.9543782192788816,0.9164560898806515,0.9209534281002121,0.8844778254649499,0.0645204381512156

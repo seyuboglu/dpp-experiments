@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4280581,Aplasia of eyebrows,13,40,0.10256410256410256,0.2211764705882353,0.28205128205128205,0.9773371104815864,0.9538650306748466,0.9621993127147767,0.9553903345724907,0.1634615384615385

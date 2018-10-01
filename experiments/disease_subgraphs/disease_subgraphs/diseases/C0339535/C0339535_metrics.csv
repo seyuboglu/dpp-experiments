@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0339535,"Night blindness, congenital stationary",11,7,0.14545454545454545,0.18095238095238095,0.6190476190476191,0.8415841584158416,0.9599578503688093,0.9708520179372198,0.8497109826589595,0.19480519480519481

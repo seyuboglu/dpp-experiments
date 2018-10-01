@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004782,Basal Ganglia Diseases,14,20,0.04395604395604396,0.15524193548387097,0.2631578947368421,0.9771428571428571,0.9749878187428943,0.9831791421362489,0.9333333333333333,0.1464285714285714

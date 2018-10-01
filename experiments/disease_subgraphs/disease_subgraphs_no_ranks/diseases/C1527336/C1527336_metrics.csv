@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1527336,Sjogren's Syndrome,12,49,0.13636363636363635,0.19111630625365283,0.2227891156462585,0.9724770642201835,0.9653986561557589,0.9716127634216372,0.9430449069003286,0.1768707482993197

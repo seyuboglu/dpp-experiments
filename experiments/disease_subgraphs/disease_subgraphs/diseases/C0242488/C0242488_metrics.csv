@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0242488,Acute Lung Injury,16,118,0.10833333333333334,0.15232477446217904,0.16181370418658556,0.9788617886178862,0.9281877913792633,0.9373843825326532,0.925894011202068,0.13877118644067796

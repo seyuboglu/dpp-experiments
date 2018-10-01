@@ -1,0 +1,10 @@
+{
+    "ppi_network": "data/bio-pathways-network.txt",
+    "diseases_path": "data/bio-pathways-associations.csv",
+    "disease_subset": [],
+
+    "comp_matrix": "data/ppi_matrices/ppi_comp_sqrt_qnorm.npy", 
+
+    "k": 0.2,
+    "n_buckets": 100
+}

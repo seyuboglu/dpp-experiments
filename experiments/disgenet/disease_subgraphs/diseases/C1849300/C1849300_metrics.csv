@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849300,Widely patent fontanels and sutures,11,38,0.16363636363636364,0.20966183574879227,0.24324324324324326,0.9697986577181208,0.9638363469710858,0.9707692307692307,0.9474940334128878,0.19377990430622008

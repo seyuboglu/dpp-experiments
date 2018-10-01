@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017658,Glomerulonephritis,32,260,0.07459677419354839,0.0897677504976775,0.09691119691119691,0.9622448979591837,0.8798941704991388,0.8834080717488789,0.8965311004784688,0.07536057692307692

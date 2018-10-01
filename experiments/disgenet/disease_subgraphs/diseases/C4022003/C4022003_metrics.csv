@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4022003,Erectile abnormalities,16,38,0.06666666666666667,0.1937590711175617,0.27311522048364156,0.9700374531835206,0.9490506631046656,0.9616995810891682,0.9397849462365592,0.13322368421052633

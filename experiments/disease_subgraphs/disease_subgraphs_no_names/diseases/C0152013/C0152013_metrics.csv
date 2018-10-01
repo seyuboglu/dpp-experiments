@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152013,Adenocarcinoma of lung (disorder),46,1069,0.057004830917874394,0.051274779884405555,0.05234511584560459,0.9778070340417528,0.6648516845130718,0.668860888549043,0.8575046112483197,0.061231545125472811

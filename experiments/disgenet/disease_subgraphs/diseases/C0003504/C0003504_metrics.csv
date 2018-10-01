@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003504,Aortic Valve Insufficiency,29,467,0.11822660098522167,0.0822581913155895,0.08458703623714514,0.9676113360323887,0.8105822127907796,0.8140549713627686,0.8736669401148482,0.09000959905486228

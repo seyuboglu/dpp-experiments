@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266371,Streak ovary,15,77,0.10476190476190476,0.16981613891726252,0.18045112781954886,0.9787234042553191,0.9475903377073728,0.9568274734260016,0.9485420240137221,0.15064935064935062

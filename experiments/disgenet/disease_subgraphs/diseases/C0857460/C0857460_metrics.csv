@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0857460,Increased number of platelets,14,194,0.16483516483516483,0.1759876364338839,0.181240318359062,0.9803793328973185,0.8847655941181121,0.8911592994161801,0.9129266326256382,0.17562592047128128

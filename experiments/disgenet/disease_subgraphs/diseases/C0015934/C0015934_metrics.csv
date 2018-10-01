@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0015934,Fetal Growth Retardation,184,2832,0.01728439059158945,0.025679861594589914,0.02689053996611367,0.9582166702562998,0.46531951814500916,0.4648734394614073,0.7752316152085071,0.020606884057971012

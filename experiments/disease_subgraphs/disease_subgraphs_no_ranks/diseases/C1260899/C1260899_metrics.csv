@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1260899,"Anemia, Diamond-Blackfan",15,453,0.780952380952381,0.26920656436074936,0.2713961984020004,0.9498470948012232,0.5478677995040449,0.5477223339057681,0.9135248354278875,0.42384105960264906

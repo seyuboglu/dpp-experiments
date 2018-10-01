@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3714796,Isolated somatotropin deficiency,29,276,0.04187192118226601,0.08659541450833826,0.08940711462450593,0.9835430784123911,0.8890957186244735,0.9026468689477082,0.9280012521521365,0.0792103948025987

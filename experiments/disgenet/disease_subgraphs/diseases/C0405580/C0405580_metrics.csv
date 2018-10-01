@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0405580,Adrenal cortical hypofunction,16,50,0.3,0.15372549019607842,0.15918367346938775,0.8588235294117647,0.9627411842980705,0.962874821513565,0.8371040723981901,0.17875

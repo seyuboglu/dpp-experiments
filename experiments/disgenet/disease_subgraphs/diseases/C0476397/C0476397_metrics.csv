@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0476397,Electroretinogram abnormal,90,731,0.020973782771535582,0.09208650726591373,0.10535389689485224,0.9583436647656831,0.6376694815782962,0.6409182070181265,0.8747910863509749,0.037771697826417386

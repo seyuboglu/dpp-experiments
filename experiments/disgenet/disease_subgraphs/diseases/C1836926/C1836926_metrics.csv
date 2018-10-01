@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836926,Fundus with peripheral 'bony spicules',10,14,0.08888888888888889,0.286231884057971,0.5054945054945055,0.9835390946502057,0.9749802058590658,0.9842168468004804,0.9752212389380531,0.2071428571428572

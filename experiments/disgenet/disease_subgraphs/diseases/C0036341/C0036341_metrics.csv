@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0036341,Schizophrenia,961,7832,0.007555064169268123,0.007363156791381481,0.007826794037317182,0.871062027119522,0.7597315907813378,0.7598300960438861,0.5152471463624717,0.006590268691427362

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003126,Anosmia,21,13,0.04285714285714286,0.09879032258064516,0.2948717948717949,0.9497206703910615,0.9636093575937617,0.9811320754716981,0.9198542805100182,0.10256410256410257

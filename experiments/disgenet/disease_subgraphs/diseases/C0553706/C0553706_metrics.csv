@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0553706,SERUM PHOSPHATE ELEVATED,14,68,0.08791208791208792,0.15679012345679014,0.16856892010535557,0.979565772669221,0.9589544701652325,0.9680904105035733,0.9345238095238095,0.15231092436974786

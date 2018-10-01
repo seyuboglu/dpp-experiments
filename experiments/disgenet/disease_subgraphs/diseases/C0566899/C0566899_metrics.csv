@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0566899,Small labia majora,16,170,0.11666666666666667,0.12952731737262124,0.1377654020187957,0.9752650176678446,0.9090869921151278,0.9138141276892257,0.8563428293158023,0.15514705882352942

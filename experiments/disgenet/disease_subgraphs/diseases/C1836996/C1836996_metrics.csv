@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836996,Marfanoid body habitus,11,86,0.23636363636363636,0.17045177045177046,0.1838577291381669,0.9741035856573705,0.94924190088354,0.9508106723273433,0.9322916666666666,0.19556025369978866

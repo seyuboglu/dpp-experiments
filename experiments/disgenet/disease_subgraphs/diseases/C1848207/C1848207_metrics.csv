@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1848207,Poor speech,37,473,0.03453453453453453,0.0815249500998004,0.08773784355179703,0.9847732538894406,0.8215484096469766,0.8269427854542885,0.9075450739126719,0.06685332266727617

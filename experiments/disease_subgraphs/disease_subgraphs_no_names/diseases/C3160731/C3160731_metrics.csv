@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3160731,Pulmonary function (finding),30,58,0.027586206896551724,0.10932905640203154,0.17422867513611615,0.9738276990185387,0.9645642003119044,0.97411933860532,0.9586104951958611,0.070114942528735624

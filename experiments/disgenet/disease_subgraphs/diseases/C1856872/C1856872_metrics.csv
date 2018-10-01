@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1856872,Sloping shoulders,20,214,0.05263157894736842,0.2155467720685112,0.23382036768900005,0.9876619370758791,0.8545630032257245,0.8624969359187729,0.9432530517980865,0.11542056074766356

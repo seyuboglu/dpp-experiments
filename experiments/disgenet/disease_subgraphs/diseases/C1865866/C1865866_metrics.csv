@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1865866,Congenital sensorineural hearing loss,11,23,0.09090909090909091,0.23484848484848486,0.30434782608695654,0.9766355140186916,0.9785039438328855,0.9861796643632774,0.9657387580299786,0.19367588932806318

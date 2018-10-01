@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0149754,Cellulitis of periorbital region,13,85,0.08974358974358974,0.21219931271477663,0.22492997198879552,0.9839449541284404,0.9450332415366213,0.9542371915427138,0.9492107069320521,0.16651583710407236

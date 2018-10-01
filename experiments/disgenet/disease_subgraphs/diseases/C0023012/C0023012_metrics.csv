@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023012,Language Delay,112,1769,0.016891891891891893,0.03982625273588037,0.04212633872960412,0.9745423687719723,0.5192938101257687,0.5255937549509585,0.8353949358253518,0.027330816441896142

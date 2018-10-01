@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0423250,Corneal stromal opacities,32,289,0.046370967741935484,0.08241173097403129,0.09015763168012303,0.9846717760746417,0.8842480727189046,0.8909983585840245,0.907196315486471,0.07309688581314878

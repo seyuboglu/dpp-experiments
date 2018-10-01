@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1843687,"ATRIAL FIBRILLATION, FAMILIAL, 1 (disorder)",20,50,0.04736842105263158,0.09462915601023018,0.0963265306122449,0.9612068965517241,0.9585279282645246,0.9770361000291914,0.9097643097643098,0.10599999999999998

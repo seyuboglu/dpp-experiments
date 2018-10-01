@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0154676,Organic writer's cramp,10,12,0.13333333333333333,0.19480519480519481,0.22727272727272727,0.9658119658119658,0.9816924328722538,0.9934282584884995,0.9520697167755992,0.20000000000000004

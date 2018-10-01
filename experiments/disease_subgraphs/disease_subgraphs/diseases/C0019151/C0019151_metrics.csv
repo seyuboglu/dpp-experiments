@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0019151,Hepatic Encephalopathy,13,98,0.14102564102564102,0.14339622641509434,0.1493793393646118,0.9733656174334141,0.9224452111375674,0.9290992610345516,0.7368604246432301,0.17032967032967031

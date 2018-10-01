@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221356,Brachycephaly,87,897,0.016305800588078054,0.05613232294426388,0.06169871794871795,0.9741853575962759,0.7111603992337937,0.7188283190256405,0.8820330658246722,0.032124963159445914

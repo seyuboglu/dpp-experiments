@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0028960,Oligospermia,16,144,0.09166666666666666,0.33732718894009217,0.38374125874125875,0.9837278106508875,0.8127311207758681,0.8149067741028764,0.9577092511013215,0.13151041666666666

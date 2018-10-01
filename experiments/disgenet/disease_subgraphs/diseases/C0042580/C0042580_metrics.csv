@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042580,Vesico-Ureteral Reflux,33,318,0.03977272727272727,0.09651680220960565,0.10543023232744082,0.9778830963665087,0.8544767486697,0.8617118172118563,0.8795364828727875,0.07385172479512102

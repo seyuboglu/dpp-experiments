@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0013581,Ectopia Lentis,17,54,0.08088235294117647,0.11759384893713253,0.13696715583508037,0.9693593314763231,0.9553418069391961,0.9645280970047959,0.8839747271682941,0.13507625272331156

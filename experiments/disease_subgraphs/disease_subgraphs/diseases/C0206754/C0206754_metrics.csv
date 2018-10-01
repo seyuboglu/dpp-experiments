@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206754,Neuroendocrine Tumors,10,63,0.1111111111111111,0.20774647887323944,0.21710189452124937,0.984375,0.9527159394479074,0.961521009165986,0.9433139534883721,0.21428571428571422

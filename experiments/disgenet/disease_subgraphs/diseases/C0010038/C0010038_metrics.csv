@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0010038,Corneal Opacity,53,319,0.04426705370101597,0.06593260148923057,0.07282979436525305,0.9486099410278012,0.8854513356293231,0.8917493296605078,0.8342554726966562,0.0467853551783285

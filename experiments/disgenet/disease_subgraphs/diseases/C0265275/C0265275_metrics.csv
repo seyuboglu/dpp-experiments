@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265275,Jeune thoracic dystrophy,10,13,0.022222222222222223,0.1422924901185771,0.10256410256410256,0.989247311827957,0.9511864406779661,0.9875872769588828,0.9202898550724637,0.20769230769230773

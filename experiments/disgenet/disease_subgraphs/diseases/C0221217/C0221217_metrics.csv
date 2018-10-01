@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0221217,Neck webbing,34,401,0.08377896613190731,0.08614724052483128,0.09123441396508729,0.9633385335413417,0.8368176852943403,0.8402611011657861,0.8809630358900922,0.07774680944697082

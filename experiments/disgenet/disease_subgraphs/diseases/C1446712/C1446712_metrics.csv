@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1446712,Overlapping fingers,10,65,0.13333333333333333,0.2439117199391172,0.26009615384615387,0.9808306709265175,0.9372522147716705,0.9456881839172774,0.9308176100628931,0.21384615384615382

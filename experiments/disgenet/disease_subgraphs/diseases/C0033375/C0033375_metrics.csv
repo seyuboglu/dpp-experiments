@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0033375,Prolactinoma,10,88,0.1111111111111111,0.2106958762886598,0.22648902821316613,0.9868938401048493,0.9357732093754092,0.9423862843472771,0.931656383483626,0.21477272727272725

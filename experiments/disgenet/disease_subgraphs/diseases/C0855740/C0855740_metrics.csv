@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0855740,Abnormal platelet function,12,130,0.18181818181818182,0.17854030501089324,0.1883124627310674,0.9746568109820486,0.9026375193061661,0.9053811121764141,0.9026606099935107,0.19679487179487182

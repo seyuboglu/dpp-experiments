@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035305,Retinal Detachment,33,336,0.05113636363636364,0.10195444752231456,0.1085820895522388,0.9762845849802372,0.8453349519662888,0.8545259775040172,0.9102040816326531,0.07043650793650794

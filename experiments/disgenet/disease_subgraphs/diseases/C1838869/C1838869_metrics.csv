@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1838869,Proximal neurogenic muscle weakness,48,821,0.04521276595744681,0.08460336068776866,0.08989037758830694,0.976508521418701,0.6539470277693356,0.6575832333703008,0.9010194015126604,0.05493808363784003

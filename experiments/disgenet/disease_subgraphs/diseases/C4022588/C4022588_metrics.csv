@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4022588,Fatigable weakness of swallowing muscles,27,762,0.10541310541310542,0.09994013967409378,0.10278987794068449,0.9826005172819187,0.6470885273238642,0.648624112806244,0.9121307353865493,0.10192475940507435

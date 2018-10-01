@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0005283,beta Thalassemia,10,30,0.15555555555555556,0.1906116642958748,0.2206896551724138,0.9700854700854701,0.9804906457013904,0.9856212087171422,0.9164556962025316,0.21000000000000002

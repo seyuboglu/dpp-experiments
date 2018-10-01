@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029124,Optic Atrophy,210,2032,0.0126680337206653,0.03245250067905921,0.0353094941788111,0.9465281784958646,0.5073986342507706,0.5142340924849326,0.7897929235284527,0.01732283464566929

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009319,Colitis,31,301,0.06881720430107527,0.11884796238244515,0.1313842746400886,0.9694218824653608,0.8522559824636181,0.8547538013270978,0.9246320556364225,0.07705497803022182

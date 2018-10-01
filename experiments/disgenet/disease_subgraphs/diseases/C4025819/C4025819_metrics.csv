@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025819,Abnormality of the hypothalamus-pituitary axis,12,36,0.10606060606060606,0.11497584541062802,0.11587301587301588,0.978978978978979,0.9746511875599105,0.9839824465167306,0.9446450060168472,0.1689814814814815

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035410,Rhabdomyolysis,15,117,0.08571428571428572,0.1391486220472441,0.14338343648688476,0.9741750358680057,0.9227353463587922,0.9326853229098204,0.8278801209788287,0.15099715099715097

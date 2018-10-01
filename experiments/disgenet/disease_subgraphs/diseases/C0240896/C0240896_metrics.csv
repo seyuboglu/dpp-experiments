@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240896,Fundus coloboma,18,109,0.032679738562091505,0.15445161290322582,0.16938498131158683,0.9927007299270073,0.9359636217734385,0.9448363626303704,0.941712204007286,0.11773700305810399

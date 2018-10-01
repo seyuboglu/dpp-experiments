@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0235659,Reduced fetal movement,52,565,0.02865761689291101,0.06935662784248475,0.07520868637419192,0.9771703214178432,0.8074628359392442,0.8137391290831514,0.9106266243141785,0.049387338325391425

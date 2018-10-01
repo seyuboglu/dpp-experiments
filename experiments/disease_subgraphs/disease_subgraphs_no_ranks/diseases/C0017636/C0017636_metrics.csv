@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017636,Glioblastoma,61,1523,0.04972677595628415,0.04309627439138674,0.043934312508250625,0.9741109530583215,0.5751317037517605,0.5794932778383378,0.8525526518910574,0.048286922919604319

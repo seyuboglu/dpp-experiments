@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0400966,Non-alcoholic Fatty Liver Disease,40,317,0.03461538461538462,0.10083842083842084,0.11651958631154415,0.9747899159663865,0.852543119353418,0.859281942468594,0.9153570443893024,0.059542586750788641

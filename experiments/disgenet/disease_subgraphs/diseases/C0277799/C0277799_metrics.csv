@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0277799,Intermittent fever,15,196,0.11428571428571428,0.11744289667464003,0.12108843537414966,0.9906940674680108,0.8937362077745714,0.9008080245193647,0.9475630252100841,0.14149659863945574

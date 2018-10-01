@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0700208,Acquired scoliosis,281,3730,0.012963904422979155,0.018204026516246852,0.019127093852472864,0.9460773947980545,0.5493961488128623,0.5488062031563293,0.7274366839825506,0.014401839466478395

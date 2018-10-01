@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027051,Myocardial Infarction,104,1873,0.0330470500373413,0.035102028396133064,0.03647594471139586,0.9609357757669389,0.5253842536809005,0.5283274940070072,0.8211382113821138,0.031448930140868206

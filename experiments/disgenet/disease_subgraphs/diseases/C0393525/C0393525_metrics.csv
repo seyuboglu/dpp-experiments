@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0393525,Progressive cerebellar ataxia,11,70,0.12727272727272726,0.15443037974683543,0.14699792960662525,0.9862475442043221,0.9584698523467087,0.9688405161063811,0.949685534591195,0.19480519480519481

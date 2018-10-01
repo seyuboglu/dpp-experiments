@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020459,Hyperinsulinism,16,93,0.11666666666666667,0.16813186813186815,0.19471715755025712,0.9614855570839065,0.9336801040312094,0.9389027431421446,0.8972727272727272,0.14381720430107528

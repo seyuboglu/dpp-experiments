@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0079744,Diffuse Large B-Cell Lymphoma,34,552,0.08199643493761141,0.07905604719764012,0.0797693258633841,0.9704939063502245,0.7900229214419671,0.7959701969490556,0.880937478266917,0.07869778346121056

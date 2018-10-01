@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1959629,Seizure Adverse Event,19,26,0.017543859649122806,0.1595959595959596,0.30153846153846153,0.9896193771626297,0.9792610093850496,0.986629374445733,0.9771754636233951,0.11538461538461536

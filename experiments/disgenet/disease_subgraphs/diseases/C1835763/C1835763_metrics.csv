@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1835763,Vertebral body fusion,25,172,0.056666666666666664,0.10200777202072539,0.110703114375085,0.979530403371463,0.9137931034482759,0.9238433830752678,0.9186268277177368,0.09

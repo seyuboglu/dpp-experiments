@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0575071,Gowers sign present,24,112,0.05434782608695652,0.15596007046388727,0.1895109395109395,0.971830985915493,0.9327901209575383,0.939395498392283,0.9329747621017791,0.10416666666666664

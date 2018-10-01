@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1843921,Postural instability,17,164,0.11029411764705882,0.15559934318555008,0.16826275624719436,0.9800796812749004,0.9064357511009301,0.9104358734393979,0.9264156366772061,0.13307030129124822

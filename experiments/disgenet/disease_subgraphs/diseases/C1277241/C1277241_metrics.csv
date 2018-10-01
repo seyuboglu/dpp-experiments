@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1277241,Delayed myelination,22,67,0.017316017316017316,0.1478549540347293,0.19222071460877432,0.9924385633270322,0.9657183457177536,0.9740227988142172,0.9595774000918695,0.10176390773405701

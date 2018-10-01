@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0426848,Sacral dimples,18,143,0.0392156862745098,0.21809006211180124,0.24327784891165172,0.9897084048027445,0.9017402710975077,0.9117998893035048,0.9512843224092117,0.12937062937062935

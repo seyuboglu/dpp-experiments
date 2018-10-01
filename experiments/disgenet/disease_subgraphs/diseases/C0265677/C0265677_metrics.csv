@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0265677,Congenital hemivertebra,25,226,0.043333333333333335,0.09421169803683464,0.09950835791543756,0.9863301787592008,0.9064948108470037,0.9141208418194161,0.9221886658376266,0.08743362831858406

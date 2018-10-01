@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846460,Malformed pinnae,37,191,0.06456456456456457,0.10011392116655275,0.10724717553044916,0.9489311163895487,0.9130434782608695,0.9213880304591084,0.9070222657205774,0.06749681618791568

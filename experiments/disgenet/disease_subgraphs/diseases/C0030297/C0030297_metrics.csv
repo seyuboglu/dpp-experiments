@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0030297,Pancreatic Neoplasm,86,1742,0.05225718194254446,0.03425314003525096,0.03531958024572494,0.9569528961009691,0.5678419745171889,0.5696845285201805,0.819513338985191,0.03972311964328625

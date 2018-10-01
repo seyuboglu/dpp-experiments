@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0263498,Premature canities,25,178,0.07333333333333333,0.14331499385716576,0.15730337078651685,0.97052913596785,0.9084253460074748,0.9142590221791633,0.9345904537418974,0.10022471910112361

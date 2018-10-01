@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846347,Renal salt wasting,18,31,0.0457516339869281,0.1383838383838384,0.23440860215053763,0.9477611940298507,0.9692893969961892,0.9750229147571036,0.8896746817538896,0.1379928315412186

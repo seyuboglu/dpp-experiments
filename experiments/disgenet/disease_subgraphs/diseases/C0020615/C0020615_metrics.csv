@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020615,Hypoglycemia,98,955,0.041868293709236275,0.04635855333003044,0.04923661189590262,0.9298554811420514,0.7118545006630175,0.7158332171952008,0.7483674965953138,0.03807030665669409

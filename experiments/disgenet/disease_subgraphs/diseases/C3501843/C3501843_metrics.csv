@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3501843,Nonmedullary Thyroid Carcinoma,10,77,0.17777777777777778,0.16750700280112044,0.1599453178400547,0.983640081799591,0.9540494851698171,0.9628807106598984,0.9441723800195886,0.21948051948051947

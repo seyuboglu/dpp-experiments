@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023487,Acute Promyelocytic Leukemia,29,434,0.09359605911330049,0.10008376447400838,0.10518193718670513,0.9725631768953069,0.8125680538894527,0.8167082409888816,0.9068174743177337,0.092245351978388665

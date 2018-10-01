@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0423798,Increased tendency to bruise,67,667,0.034373586612392586,0.05619358478401031,0.06030768399583992,0.9592711682743837,0.7770030942919508,0.7839202464873933,0.8569918201546937,0.04173286491082817

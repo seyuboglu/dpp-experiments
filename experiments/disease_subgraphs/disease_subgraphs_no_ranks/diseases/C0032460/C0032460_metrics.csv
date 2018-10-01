@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0032460,Polycystic Ovary Syndrome,145,1148,0.007375478927203065,0.04435140363009511,0.05082642494129512,0.974169741697417,0.6718801410650317,0.6846296662802642,0.8673409842443105,0.019554247266610595

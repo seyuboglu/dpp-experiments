@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839839,MAJOR AFFECTIVE DISORDER 2,22,70,0.03463203463203463,0.12732919254658384,0.15486542443064183,0.9808383233532935,0.9446406314914831,0.9593941696976277,0.8499573742540495,0.09805194805194807

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009363,Congenital ocular coloboma (disorder),12,119,0.07575757575757576,0.13844476744186046,0.15197265346816693,0.9911894273127754,0.9347192872237136,0.9382094046791754,0.9305145853818421,0.17436974789915968

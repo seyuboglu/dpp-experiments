@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0455988,"Hydrops Fetalis, Non-Immune",12,40,0.10606060606060606,0.15901360544217688,0.18717948717948718,0.9444444444444444,0.9468372423596304,0.9575889615105302,0.7592997811816192,0.18541666666666665

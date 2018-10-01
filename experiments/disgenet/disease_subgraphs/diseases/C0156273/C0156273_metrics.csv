@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0156273,Bladder Diverticulum,10,25,0.08888888888888889,0.14789915966386555,0.10666666666666667,0.9814814814814815,0.9777186985694392,0.9914289540645507,0.9123343527013251,0.20800000000000002

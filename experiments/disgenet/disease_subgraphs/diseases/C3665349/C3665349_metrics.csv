@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3665349,Secondary hypothyroidism,14,107,0.0989010989010989,0.11346890657235485,0.1170869335214248,0.9855305466237942,0.9343199556446453,0.9424210891432535,0.9319125380570163,0.15487316421895858

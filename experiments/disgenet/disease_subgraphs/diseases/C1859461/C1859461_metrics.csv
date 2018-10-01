@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1859461,Femoral bowing,19,97,0.06432748538011696,0.1527713088029809,0.17461340206185566,0.9796484736355227,0.9426606841093177,0.9512429158295601,0.9282700421940928,0.11502984264785673

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027404,Narcolepsy,18,11,0.026143790849673203,0.09401709401709402,0.36363636363636365,0.9607843137254902,0.9830725827135163,0.9893645307099176,0.9344262295081968,0.11111111111111112

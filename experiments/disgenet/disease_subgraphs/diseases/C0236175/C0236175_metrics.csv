@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0236175,Elevated IgE,10,98,0.13333333333333333,0.15956873315363881,0.16284451925099938,0.9835616438356164,0.9402543228150441,0.9473451477941427,0.9186813186813186,0.21632653061224488

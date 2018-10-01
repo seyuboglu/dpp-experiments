@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0035229,Respiratory Insufficiency,11,17,0.07272727272727272,0.25132275132275134,0.40441176470588236,0.9806763285024155,0.9820805432424785,0.9892040435764059,0.9806763285024155,0.19251336898395721

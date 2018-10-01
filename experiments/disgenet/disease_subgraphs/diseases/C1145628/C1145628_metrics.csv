@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1145628,Autonomic nervous system disorders,17,323,0.1323529411764706,0.13941486396576216,0.14701074937984346,0.9887605369965657,0.8167334444326254,0.8186218104603851,0.9364599092284418,0.12839191404115827

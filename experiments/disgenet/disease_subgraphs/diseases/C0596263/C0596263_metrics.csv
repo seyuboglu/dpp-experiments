@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0596263,Carcinogenesis,9,103,0.19444444444444445,0.21201000834028358,0.22425280791928423,0.9866412213740458,0.9290221701010778,0.9333635026586719,0.9242310577644411,0.23948220064724918

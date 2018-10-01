@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266435,Congenital hypoplasia of penis,172,2018,0.013531891744866041,0.035826147923927916,0.038555823567073336,0.9604923565614453,0.4808120676853335,0.4858618057443888,0.8248121869782972,0.020567796805494733

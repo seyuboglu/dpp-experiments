@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0694563,Excessive daytime somnolence,13,7,0.038461538461538464,0.1,0.09523809523809523,0.9719626168224299,0.9720588235294118,0.9965095986038395,0.9347826086956522,0.15384615384615388

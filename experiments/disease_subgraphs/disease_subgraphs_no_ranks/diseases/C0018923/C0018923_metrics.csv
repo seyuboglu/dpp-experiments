@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018923,Hemangiosarcoma,18,566,0.1895424836601307,0.08197206548885394,0.08286688139091279,0.9820043437790879,0.7733426544809712,0.7738657018269944,0.8879692011549567,0.13937966234786023

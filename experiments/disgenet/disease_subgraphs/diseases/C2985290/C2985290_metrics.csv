@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2985290,Fetal Alcohol Spectrum Disorders,13,52,0.07692307692307693,0.18653846153846154,0.20512820512820512,0.9821693907875185,0.9556191020875036,0.9676421603616464,0.9435684647302904,0.16272189349112423

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038454,Cerebrovascular accident,56,971,0.04220779220779221,0.049104588026743716,0.05105375476445794,0.978394548778461,0.7053953822227539,0.7103724093069199,0.8563518917256229,0.04584743269089303

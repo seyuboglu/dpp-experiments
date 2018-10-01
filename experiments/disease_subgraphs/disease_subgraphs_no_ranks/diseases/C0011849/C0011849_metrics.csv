@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011849,Diabetes Mellitus,28,391,0.06349206349206349,0.09123160266551608,0.09695061971276805,0.9815950920245399,0.8339713179562681,0.837859179644659,0.8957805907172995,0.085586408476434034

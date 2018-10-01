@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1843300,Sparse eyelashes,32,287,0.046370967741935484,0.14937340258883666,0.16580979995614142,0.9767324228629236,0.8352299209913033,0.842795264221773,0.9319094946077395,0.07393292682926829

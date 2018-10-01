@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1846434,Hypoplastic scapulae,13,149,0.10256410256410256,0.1929245283018868,0.20379103936150916,0.9871071716357775,0.898845836768343,0.9059340659340659,0.9444076770350761,0.16881775942178623

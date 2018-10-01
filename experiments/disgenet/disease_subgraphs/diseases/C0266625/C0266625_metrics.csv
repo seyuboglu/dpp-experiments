@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266625,Preauricular sinus,26,97,0.04,0.13498379015620396,0.17031786941580757,0.9665809768637532,0.9322259627834708,0.9402816477144363,0.8999509563511525,0.09040444091990482

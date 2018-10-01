@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014170,Endometrial Neoplasms,50,963,0.05142857142857143,0.0652688714560073,0.06810404941246062,0.9718624385886556,0.6519031292044616,0.655915620466618,0.856125528062764,0.056116303219106961

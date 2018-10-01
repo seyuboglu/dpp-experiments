@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2751582,Mitochondrial respiratory chain defects,15,84,0.1523809523809524,0.40062111801242234,0.4609868043602983,0.9444444444444444,0.6962781852757403,0.7041877588587206,0.5291566265060241,0.3182539682539682

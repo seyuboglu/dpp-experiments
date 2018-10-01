@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1864156,"Conjunctivitis, recurrent",37,257,0.057057057057057055,0.0960006188597509,0.10530155642023346,0.962,0.8877295618346853,0.8938579154601585,0.9039259495691031,0.06751498580292353

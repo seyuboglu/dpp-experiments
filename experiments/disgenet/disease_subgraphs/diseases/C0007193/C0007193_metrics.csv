@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0007193,"Cardiomyopathy, Dilated",82,1342,0.03944595001505571,0.03718405481813118,0.03856365392287936,0.9620619750941211,0.6584895006346433,0.6630348229718969,0.8318776770117968,0.03756679146523209

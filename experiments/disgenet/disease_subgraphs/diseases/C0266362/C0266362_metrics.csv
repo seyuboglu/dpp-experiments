@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266362,Ambiguous Genitalia,24,138,0.06159420289855073,0.15376449452882573,0.17222045911350894,0.9749816041206769,0.9156324208073838,0.9250805338242062,0.8709677419354839,0.09480676328502416

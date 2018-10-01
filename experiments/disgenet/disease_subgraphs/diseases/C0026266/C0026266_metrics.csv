@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026266,Mitral Valve Insufficiency,33,458,0.04924242424242424,0.09492882485846585,0.10046534738612367,0.9809663250366032,0.8025251758062066,0.8101137800252844,0.9080018289894833,0.07588990340082041

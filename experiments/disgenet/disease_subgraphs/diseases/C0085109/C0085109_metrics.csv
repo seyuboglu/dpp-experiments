@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085109,Corneal Neovascularization,13,27,0.07692307692307693,0.18634423897581792,0.2535612535612536,0.9724770642201835,0.9789760873054084,0.9852868242684741,0.9440745672436751,0.15954415954415957

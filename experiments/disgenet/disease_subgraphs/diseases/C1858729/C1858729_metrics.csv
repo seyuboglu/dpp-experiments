@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1858729,Decreased motor NCV,22,217,0.03463203463203463,0.13966959879854107,0.1442225635774023,0.9910664433277498,0.8923714919471502,0.9046113901902127,0.9466666666666667,0.11416003351487221

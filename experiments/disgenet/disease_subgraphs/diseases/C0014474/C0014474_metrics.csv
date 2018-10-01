@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014474,Ependymoma,14,197,0.15384615384615385,0.12412976556950035,0.12498705065782659,0.9807427785419532,0.8967256393080894,0.9032788199454866,0.9049394221808015,0.17077592458303117

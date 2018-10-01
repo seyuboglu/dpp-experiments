@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027960,Nevus,19,343,0.12280701754385964,0.0946527744434308,0.09745452065537995,0.9808306709265175,0.8527812006024171,0.8566520376175548,0.9062055897678826,0.1268988798526929

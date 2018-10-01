@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014457,Eosinophilia,28,337,0.09259259259259259,0.09067539909946787,0.09564434082238236,0.9696048632218845,0.8459591393961309,0.8484297150534624,0.8852065321805955,0.09092835947435352

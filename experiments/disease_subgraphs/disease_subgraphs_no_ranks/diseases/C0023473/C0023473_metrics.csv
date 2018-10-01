@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0023473,"Myeloid Leukemia, Chronic",22,366,0.1341991341991342,0.12158865248226951,0.12602739726027398,0.9732758620689655,0.8298581820707998,0.8322740042638825,0.9130549682875264,0.11872826626924987

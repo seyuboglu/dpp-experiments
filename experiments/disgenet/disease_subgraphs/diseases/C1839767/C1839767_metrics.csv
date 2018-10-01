@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1839767,Inverted V-shaped upper lip,19,89,0.03508771929824561,0.16303219106957426,0.18922369765066394,0.9885931558935361,0.9469504983949991,0.9569961116592188,0.9636741048261547,0.11531638083973976

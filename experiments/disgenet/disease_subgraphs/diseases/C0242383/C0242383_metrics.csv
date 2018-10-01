@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0242383,Age related macular degeneration,18,58,0.09803921568627451,0.14037267080745341,0.16878402903811252,0.9560761346998536,0.9640203778391,0.9698817941382847,0.9156626506024096,0.11877394636015326

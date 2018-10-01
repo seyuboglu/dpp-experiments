@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1389113,Generalized amyotrophy,20,122,0.05263157894736842,0.12281603288797534,0.13331526893374882,0.9854439592430859,0.9406432385446417,0.9500418856141954,0.9272727272727272,0.1073770491803279

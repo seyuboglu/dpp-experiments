@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3279222,Cerebellar hypoplasia and atrophy,41,529,0.042682926829268296,0.07393671585260002,0.07658102766798419,0.9763113367174281,0.7893257637503162,0.79678890366711,0.7759118005256074,0.06865231223200702

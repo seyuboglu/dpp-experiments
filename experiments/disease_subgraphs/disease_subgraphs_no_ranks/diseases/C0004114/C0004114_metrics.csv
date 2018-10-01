@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0004114,Astrocytoma,24,799,0.15217391304347827,0.06517538370937466,0.06593454851145385,0.9786802030456853,0.7194147707015621,0.7214104424696659,0.8759427709466563,0.11112849395077179
