@@ -231,15 +231,15 @@ def build_string_network(string_path, name = 'biogrid-network.txt'):
     interactions = []
 
     with open(string_path, 'r') as csvfile:
-        reader = csv.DictReader(csvfile, delimiter='\t')
+        reader = csv.DictReader(csvfile, delimiter=' ')
         for row in reader:
 
-            # only include interactions between two human proteins
+            # only include interactions with nonzero experimental 
             if int(row['ORGANISM_A_ID']) != HOMO_SAPIENS_ID or int(row['ORGANISM_B_ID']) != HOMO_SAPIENS_ID:
                 continue
 
             # only include interactions for which we have an entrez id
-            if row['OFFICIAL_SYMBOL_A'] not in name_to_protein or row['OFFICIAL_SYMBOL_B'] not in name_to_protein:
+            if row['protein1'] not in name_to_protein or row['protein2'] not in name_to_protein:
                 continue 
             
             interactions.append((str(name_to_protein[row['OFFICIAL_SYMBOL_A']]), 
