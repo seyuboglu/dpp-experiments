@@ -1,9 +1,14 @@
 """
 Provides base class for all experiments 
 """
+import argparse
 import os
 import pickle
 from util import Params, parse_id_rank_pair
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--dir', default='experiments/base_model',
+                    help="Directory containing params.json")
 
 class Experiment(object):
     """ 
@@ -39,3 +44,16 @@ class Experiment(object):
 
     def output_results(self):
         pass
+
+
+if __name__ == '__main__':
+    # Load the parameters from the experiment params.json file in model_dir
+    args = parser.parse_args()
+    json_path = os.path.join(args.dir, 'params.json')
+    assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+    params = Params(json_path)
+    params.update(json_path)  
+
+    assert(hasattr(params, "source"))
+    
+    os.system(params.source + '--experiment_dir ' + args.dir)

@@ -136,6 +136,9 @@ def run_dpp(disease):
         os.makedirs(disease_directory)
 
     disease_nodes = disease.to_node_array(protein_to_node)
+    # Ensure that there are at least 2 proteins
+    if disease_nodes.size <= 1:
+        return disease, None, None 
     labels = np.zeros((len(protein_to_node), 1))
     labels[disease_nodes, 0] = 1 
     metrics = {}
@@ -146,6 +149,7 @@ def run_dpp(disease):
 
     # Perform k-fold cross validation
     n_folds = disease_nodes.size if params.n_folds < 0 or params.n_folds > len(disease_nodes) else params.n_folds
+
     kf = KFold(n_splits = n_folds, shuffle=False)
 
     for train_indices, test_indices in kf.split(disease_nodes):
@@ -232,19 +236,25 @@ if __name__ == '__main__':
         p = Pool(params.n_processes)
         with tqdm(total=len(diseases_dict)) as t:
             for n_finished, (disease, metrics, ranks) in enumerate(p.imap(run_dpp, diseases_dict.values()), 1):
+                if metrics != None or ranks != None:
+                    disease_to_ranks[disease] = ranks 
+                    disease_to_metrics[disease] = metrics
+                    t.set_postfix(str="{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics["Recall-at-100"]))
+                else:
+                    t.set_postfix(str="{} Not Recorded".format(disease.id))
 
-                disease_to_metrics[disease] = metrics
-                disease_to_ranks[disease] = ranks 
-                t.set_postfix(str="{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics["Recall-at-100"]))
                 t.update()
             
     else: 
         with tqdm(total=len(diseases_dict)) as t:
             for n_finished, disease in enumerate(diseases_dict.values()): 
                 disease, metrics, ranks = run_dpp(disease)
-                disease_to_metrics[disease] = metrics
-                disease_to_ranks[disease] = ranks 
-                t.set_postfix(str="{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics["Recall-at-100"]))
+                if metrics != None or ranks != None:
+                    disease_to_metrics[disease] = metrics
+                    disease_to_ranks[disease] = ranks 
+                    t.set_postfix(str="{} Recall-at-100: {:.2f}%".format(disease.id, 100 * metrics["Recall-at-100"]))
+                else:
+                    t.set_postfix(str="{} Not Recorded".format(disease.id))
                 t.update()
         
     write_metrics(args.experiment_dir, disease_to_metrics)

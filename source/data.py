@@ -221,6 +221,13 @@ def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
         for interaction in interactions: 
             file.write(' '.join(interaction) + '\n')
 
+def build_string_network(biogrid_path, name = 'biogrid-network.txt'):
+    """ Converts a biogrid PPI network into a list of entrez_ids. 
+    Args:
+        biogrid+path (string)
+    """
+    pass 
+
 def build_disgenet_associations(disgenet_path, name = 'disgenet-associations.csv'):
     """ Converts a disgenet file of associations into the accepted format for
     gene-disease associations.
@@ -282,7 +289,7 @@ if __name__ == '__main__':
         _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'id', row_norm = True, col_norm = False)
+        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'id', row_norm = True, col_norm = False, network_name = "bio-pathways")
 
     else:
         print ("Job not recognized.")
