@@ -2,6 +2,7 @@
 
 import json
 import logging
+import smtplib
 
 import numpy as np
 
@@ -86,3 +87,15 @@ def prepare_sns(sns, params):
             font= getattr(params, "plot_font", "Times New Roman"))
     sns.set_style(getattr(params, "plot_style", "ticks"),  
                   {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})
+
+def send_email():
+    server = smtplib.SMTP('smtp.gmail.com',587)
+    server.starttls()
+    server.login("sabriexperiments","experiments")
+    msg = "\Hello!" # The /n separates the message from the headers
+    problems = server.sendmail("sabriexperiments@gmail.com", 
+                               "eyuboglu@stanford.edu",
+                               msg)
+    server.quit()
+
+send_email()

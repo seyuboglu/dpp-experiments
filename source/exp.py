@@ -4,6 +4,7 @@ Provides base class for all experiments
 import argparse
 import os
 import pickle
+import smtplib
 from util import Params, parse_id_rank_pair
 
 parser = argparse.ArgumentParser()
@@ -28,8 +29,16 @@ class Experiment(object):
         params.update(json_path)  
         self.params = params
 
-    def run(self): 
+    def _run(self): 
         pass
+    
+    def run(self):
+        try:
+            self._run()
+        except:
+            print("Exception")
+    
+
 
     def __call__(self): 
         return self.run()
