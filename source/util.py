@@ -3,6 +3,8 @@
 import json
 import logging
 import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 import numpy as np
 
@@ -88,14 +90,24 @@ def prepare_sns(sns, params):
     sns.set_style(getattr(params, "plot_style", "ticks"),  
                   {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})
 
-def send_email():
+def send_email(subject, message, to_addr = "eyuboglu@stanford.edu"):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
     server.login("sabriexperiments","experiments")
-    msg = "\Hello!" # The /n separates the message from the headers
-    problems = server.sendmail("sabriexperiments@gmail.com", 
-                               "eyuboglu@stanford.edu",
-                               msg)
-    server.quit()
 
-send_email()
+    msg = MIMEMultipart()       # create a message
+
+    # add in the actual person name to the message template
+
+    # setup the parameters of the message
+    msg['From'] = "sabriexperiments@gmail.com"
+    msg['To'] = to_addr
+    msg['Subject']= subject
+
+    # add in the message body
+    msg.attach(MIMEText(message, 'plain'))
+
+    problems = server.sendmail("sabriexperiments@gmail.com", 
+                               to_addr, 
+                               msg.as_string())
+    server.quit()

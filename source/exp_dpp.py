@@ -78,13 +78,12 @@ class DPPExperiment(Experiment):
             self.method = GCN(self.params, self.ppi_network_adj)
     
     def _run(self):
-        """ Run the disease protein prediction ezperiment
+        """ Run the disease protein prediction experiment
         Args: 
             dir (string) The directory where the experiment should be run
         """
         logging.info("Running Experiment...")
         disease_to_metrics, disease_to_ranks = {}, {}
-
         if self.params.n_processes > 1: 
             p = Pool(self.params.n_processes)
             with tqdm(total=len(self.diseases_dict)) as t:
@@ -279,5 +278,5 @@ if __name__ == "__main__":
     # Load the parameters from the experiment params.json file in model_dir
     args = parser.parse_args()
     exp = DPPExperiment(args.experiment_dir)
-    exp.run()
-    exp.output_results()
+    if exp.run():
+        exp.output_results()

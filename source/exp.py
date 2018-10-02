@@ -5,7 +5,11 @@ import argparse
 import os
 import pickle
 import smtplib
-from util import Params, parse_id_rank_pair
+import socket
+import traceback
+
+from util import Params, parse_id_rank_pair, send_email
+ 
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dir', default='experiments/base_model',
@@ -33,12 +37,48 @@ class Experiment(object):
         pass
     
     def run(self):
-        try:
-            self._run()
-        except:
-            print("Exception")
-    
+        if hasattr(self.params, "notify") and self.params.notify:
+            try:
+                self._run()
+            except:
+                tb = traceback.format_exc()
+                self.notify_user(error = tb)
+                return False 
+            else:
+                self.notify_user()
+                return True 
+        
 
+    def notify_user(self, error=None):
+        # read params 
+        with open (os.path.join(self.dir, 'params.json'), "r") as file:
+            params_string=file.readlines()
+        if error == None:
+            subject = "Experiment Completed: " + self.dir
+            message = ("Yo!\n",
+                       "Good news, your experiment just finished.",
+                       "You were running the experiment on: {}".format(socket.gethostname()),
+                       "---------------------------------------------",
+                       "See the results here: {}".format(self.dir),
+                       "---------------------------------------------", 
+                       "The parameters you fed to this experiment were: {}".format(params_string),
+                       "---------------------------------------------", 
+                       "Thanks!")
+        else: 
+            subject = "Experiment Error: " + self.dir
+            message = ("Uh Oh!\n",
+                       "Your experiment encountered an error.",
+                       "You were running the experiment found at: {}".format(self.dir),
+                       "You were running the experiment on: {}".format(socket.gethostname()),
+                       "---------------------------------------------",
+                       "Check out the error message: \n{}".format(error),
+                       "---------------------------------------------", 
+                       "The parameters you fed to this experiment were: {}".format(params_string),
+                       "---------------------------------------------", 
+                       "Thanks!")
+
+        message = "\n".join(message)
+        send_email(subject, message)
 
     def __call__(self): 
         return self.run()
