@@ -6,8 +6,10 @@
 /env/
 /env3/
 /env2/
+/data/raw/
 /.vscode/
 **.DS_Store
 **.icloud
 **.pdf
 **_raw.txt
+**raw.txt
