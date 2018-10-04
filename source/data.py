@@ -9,6 +9,7 @@ import numpy as np
 import networkx as nx
 
 from method.ppi_matrix import build_ppi_comp_matrix, build_ppi_dn_matrix
+from util import print_title
 
 NETWORK_PATH = "data/networks/bio-pathways-network.txt"
 ASSOCIATIONS_PATH = "data/bio-pathways-associations.csv"
@@ -170,7 +171,7 @@ def load_network(network_path = NETWORK_PATH):
             adj[n2,n1] = 1
     return nx.from_numpy_matrix(adj), adj, protein_to_node
 
-def load_gene_names(file_path):
+def load_gene_names(file_path, a_converter=lambda x: x, b_converter=lambda x: x):
     """ Load a mapping between entrez_id and gene_names.
     Args:
         file_path (string)
@@ -178,17 +179,19 @@ def load_gene_names(file_path):
         protein_to_name (dict)
         name_to_protein (dict)
     """
-    protein_to_name = {}
-    name_to_protein = {}
+    a_to_b = {}
+    b_to_a = {}
     with open(file_path) as file:
         for line in file:
             if line[0] == '#': continue
             line_elems = line.split()
             if (len(line_elems) != 2): continue
-            name, protein = line.split()
-            protein_to_name[int(protein)] = name
-            name_to_protein[name] = protein 
-    return protein_to_name, name_to_protein
+            a, b = line.split()
+            a = a_converter(a)
+            b = b_converter(b)
+            a_to_b[a] = b
+            b_to_a[b] = a 
+    return a_to_b, b_to_a
 
 """ Biogrid Homo-Sapiens ID """
 HOMO_SAPIENS_ID = 9606
@@ -198,7 +201,7 @@ def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
     Args:
         biogrid+path (string)
     """
-    _, name_to_protein = load_gene_names('data/protein_data/protein_names.txt')
+    name_to_protein, _ = load_gene_names('data/protein_data/symbol_to_entrez.txt', b_converter=int)
 
     interactions = []
 
@@ -221,12 +224,12 @@ def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
         for interaction in interactions: 
             file.write(' '.join(interaction) + '\n')
 
-def build_string_network(string_path, name = 'biogrid-network.txt'):
+def build_string_network(string_path, name = 'string-network.txt'):
     """ Converts a biogrid PPI network into a list of entrez_ids. 
     Args:
         biogrid+path (string)
     """
-    _, name_to_protein = load_gene_names('data/protein_data/protein_names.txt')
+    _, name_to_protein = load_gene_names('data/protein_data/entrez_to_string.tsv', a_converter=int)
 
     interactions = []
 
@@ -235,15 +238,15 @@ def build_string_network(string_path, name = 'biogrid-network.txt'):
         for row in reader:
 
             # only include interactions with nonzero experimental 
-            if int(row['ORGANISM_A_ID']) != HOMO_SAPIENS_ID or int(row['ORGANISM_B_ID']) != HOMO_SAPIENS_ID:
+            if int(row['experimental']) < 1:
                 continue
 
             # only include interactions for which we have an entrez id
             if row['protein1'] not in name_to_protein or row['protein2'] not in name_to_protein:
                 continue 
             
-            interactions.append((str(name_to_protein[row['OFFICIAL_SYMBOL_A']]), 
-                                 str(name_to_protein[row['OFFICIAL_SYMBOL_B']])))
+            interactions.append((str(name_to_protein[row['protein1']]), 
+                                 str(name_to_protein[row['protein2']])))
     
     with open(os.path.join("data", "networks", name), 'w') as file:
         for interaction in interactions: 
@@ -277,9 +280,7 @@ if __name__ == '__main__':
 
     # Log Title 
     if(args.job == split_diseases):
-        print("Disease Set Splitting")
-        print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
-        print("====================================================")
+        print_title("Disease Set Splitting")
 
         print("Splitting diseases...")
         split_fractions = {'val': 0.40,
@@ -288,23 +289,21 @@ if __name__ == '__main__':
         print("Done.")
     
     elif(args.job == "build_biogrid"):
-        print("Building Biogrid Network")
-        print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
-        print("====================================================")
+        print_title("Building Biogrid Network")
 
         build_biogrid_network('data/networks/biogrid-raw.txt')
     
+    elif (args.job == "build_string"):
+        print_title("Building String Network")
+        build_string_network('data/raw/string_raw.txt')
+    
     elif(args.job == "build_disgenet"):
-        print("Building Disgenet Associations")
-        print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
-        print("====================================================")
+        print_title("Building Disgenet Associations")
 
         build_disgenet_associations("data/associations/disgenet_raw.tsv")
     
     elif(args.job == "build_ppi_matrix"):
-        print("Build PPI Matrices with PPI Network")
-        print("Sabri Eyuboglu  -- Stanford University")
-        print("======================================")
+        print_title("Build PPI Matrices with PPI Network")
 
         print("Loading PPI Network...")
         _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")

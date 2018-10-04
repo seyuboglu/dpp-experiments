@@ -111,3 +111,9 @@ def send_email(subject, message, to_addr = "eyuboglu@stanford.edu"):
                                to_addr, 
                                msg.as_string())
     server.quit()
+
+def print_title(title = "Experiment", subtitle = None):
+    print(title)
+    if subtitle != None: print(subtitle)
+    print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
+    print("====================================================")
