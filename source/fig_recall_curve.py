@@ -83,11 +83,7 @@ if __name__ == '__main__':
         for name, recall_curve in recall_curves.items():
             recalls_at_k.append(recall_curve[k])
         recalls_at_k.sort(reverse=True)
-<<<<<<< HEAD
         plt.plot([k, k], [recalls_at_k[0] - params.offset, recalls_at_k[1] + params.offset], linestyle = '--', color = 'green', alpha = 0.5)
-=======
-        plt.plot([k, k], [recalls_at_k[0] - params.offset, recalls_at_k[1] + params.offset], color = 'green', alpha = 0.5)
->>>>>>> 3f113d621fc0bbe03228e78fa454e41f1d5675c6
         percent_increase = round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
         plt.text(x = k + (2/100)*params.length, y = recalls_at_k[1] + (recalls_at_k[0] - recalls_at_k[1]) / 2 - 0.001, 
                  s = '+' + str(percent_increase) + '%',
@@ -97,12 +93,7 @@ if __name__ == '__main__':
     if(params.title):
         plt.title("Recall-at-K (%) across DPP Methods")
 
-<<<<<<< HEAD
     plt.ylabel("Recall at K")
     plt.xlabel("Threshold (K)")
-=======
-    plt.ylabel("Recall-at-K")
-    plt.xlabel("Positive Threshold (K)")
->>>>>>> 3f113d621fc0bbe03228e78fa454e41f1d5675c6
     plt.legend()
     plt.savefig(os.path.join(args.experiment_dir, 'recall_curve_' + str(params.length) + '.pdf'))
