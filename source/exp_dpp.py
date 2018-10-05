@@ -51,7 +51,6 @@ class DPPExperiment(Experiment):
         # Load data from params file
         logging.info("Loading PPI Network...")
         self.ppi_networkx, self.ppi_network_adj, self.protein_to_node = load_network(self.params.ppi_network)
-        print(self.ppi_network_adj.size)
         self.node_to_protein = {node: protein for protein, node in self.protein_to_node.items()}
         logging.info("Loading Disease Associations...")
         self.diseases_dict = load_diseases(self.params.diseases_path, self.params.disease_subset)
