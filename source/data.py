@@ -238,7 +238,7 @@ def build_string_network(string_path, name = 'string-network.txt'):
         for row in reader:
 
             # only include interactions with nonzero experimental 
-            if int(row['experimental']) < 1:
+            if int(row['experiments']) < 1:
                 continue
 
             # only include interactions for which we have an entrez id
@@ -295,7 +295,7 @@ if __name__ == '__main__':
     
     elif (args.job == "build_string"):
         print_title("Building String Network")
-        build_string_network('data/raw/string_raw.txt')
+        build_string_network('data/raw/string-raw.txt')
     
     elif(args.job == "build_disgenet"):
         print_title("Building Disgenet Associations")
@@ -306,10 +306,10 @@ if __name__ == '__main__':
         print_title("Build PPI Matrices with PPI Network")
 
         print("Loading PPI Network...")
-        _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
+        _, ppi_network_adj, _ = load_network("data/networks/string-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'id', row_norm = True, col_norm = False, network_name = "bio-pathways")
+        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, network_name = "string")
 
     else:
         print ("Job not recognized.")

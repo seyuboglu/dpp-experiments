@@ -47,6 +47,8 @@ class Experiment(object):
             else:
                 self.notify_user()
                 return True 
+        self._run()
+        return True
         
 
     def notify_user(self, error=None):
