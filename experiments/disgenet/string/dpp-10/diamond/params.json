@@ -4,7 +4,7 @@
 
     "ppi_network": "data/networks/string-network.txt",
     "diseases_path": "data/associations/disgenet-associations.csv",
-    "disease_subset": ["C0000731"],
+    "disease_subset": [],
     
     "n_folds": 10,
 
