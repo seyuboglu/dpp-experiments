@@ -7,6 +7,7 @@ import logging
 import os
 from collections import defaultdict
 import datetime
+import pickle
 
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -60,7 +61,7 @@ class CodiseaseProbExp(Experiment):
             logging.info("Building Codisease Matrix...")
             self.codisease_matrix  = self.build_codisease_matrix()
 
-    def run(self):
+    def _run(self):
         """
         Run the experiment.
         """
@@ -99,7 +100,15 @@ class CodiseaseProbExp(Experiment):
         np.save(os.path.join("data","disease_data","codisease_"+str(n_nodes)+".npy"), codisease_matrix)
         return codisease_matrix
     
-    def output_results(self):
+    def load_results(self):
+        with open(os.path.join(self.dir, "results.p"), "rb" ) as file: 
+            self.results = pickle.load(file)
+
+    def save_results(self): 
+        with open(os.path.join(self.dir, "results.p"), "wb" ) as file:
+            pickle.dump(self.results, file)
+    
+    def plot_results(self):
         """
         Outputs the results as a plot
         """
@@ -136,4 +145,4 @@ if __name__ == "__main__":
     #exp.run()
     exp.load_results()
     exp.save_results()
-    exp.output_results()
+    exp.plot_results()

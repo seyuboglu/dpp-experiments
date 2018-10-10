@@ -196,7 +196,7 @@ class DPPExperiment(Experiment):
         proteins_to_ranks = {protein: ranks for protein, ranks in zip(proteins, ranks)}
         return disease, avg_metrics, proteins_to_ranks 
 
-    def output_results(self):
+    def save_results(self):
         write_metrics(self.dir, self.results["metrics"])
         write_ranks(self.dir, self.results["ranks"])
 
@@ -279,4 +279,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     exp = DPPExperiment(args.experiment_dir)
     if exp.run():
-        exp.output_results()
+        exp.save_results()

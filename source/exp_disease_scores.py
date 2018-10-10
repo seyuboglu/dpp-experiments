@@ -16,7 +16,6 @@ from analysis import compute_ranking
 
 from util import Params, set_logger, prepare_sns
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
                     help="Directory containing params.json")
@@ -69,7 +68,7 @@ if __name__ == '__main__':
         for i, disease in enumerate(diseases_dict.values()): 
             for name, ppi_matrix in ppi_matrices.items():
                 disease_nodes = disease.to_node_array(protein_to_node)
-                disease_scores = ppi_matrix[disease_nodes, :][:,disease_nodes]
+                disease_scores = ppi_matrix[disease_nodes, :][:, disease_nodes]
                 mean_disease_score = disease_scores.mean() 
                 std_from_mean = (mean_disease_score - means[name]) / stds[name] 
                 metrics[name].append(std_from_mean)

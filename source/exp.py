@@ -86,14 +86,12 @@ class Experiment(object):
         return self.run()
 
     def load_results(self):
-        with open(os.path.join(self.dir, "results.p"), "rb" ) as file: 
-            self.results = pickle.load(file)
+        pass
 
     def save_results(self): 
-        with open(os.path.join(self.dir, "results.p"), "wb" ) as file:
-            pickle.dump(self.results, file)
-
-    def output_results(self):
+        pass
+    
+    def plot_results(self):
         pass
 
 
