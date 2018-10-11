@@ -32,11 +32,21 @@ class Experiment(object):
         params = Params(json_path)
         params.update(json_path)  
         self.params = params
+    
+    def is_completed(self):
+        """
+        Checks if the experiment has already been run. 
+        """
+        return os.path.isfile(os.path.join(self.dir, 'results.csv'))
 
     def _run(self): 
         pass
     
     def run(self):
+        if os.path.isfile(os.path.join(self.dir, 'results.csv')):
+            print("Experiment already run.")
+            return False 
+
         if hasattr(self.params, "notify") and self.params.notify:
             try:
                 self._run()

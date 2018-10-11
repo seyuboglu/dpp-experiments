@@ -51,6 +51,7 @@ class CodiseaseProbExp(Experiment):
         self.ppi_matrices = {name: np.load(file) for name, file in self.params.ppi_matrices.items()}
         self.top_k = self.params.top_k
         self.n_buckets = self.params.n_buckets 
+        self.window_length = self.params.window_length
         self.smooth = self.params.smooth
         self.plots = self.params.plots
 
@@ -70,6 +71,7 @@ class CodiseaseProbExp(Experiment):
 
         codisease_flat = self.codisease_matrix.flatten()
         for name, matrix in self.ppi_matrices.items(): 
+            np.fill_diagonal(matrix, 0)  
             scores_flat = matrix.flatten() 
             ranked_flat = np.argsort(scores_flat)
             if self.top_k: 
@@ -92,9 +94,7 @@ class CodiseaseProbExp(Experiment):
         n_nodes = len(self.protein_to_node.keys())
         codisease_matrix = np.zeros((n_nodes, n_nodes))
         for disease in self.diseases.values():
-            disease_nodes = np.array([self.protein_to_node[protein] 
-                                      for protein in disease.proteins 
-                                      if protein in self.protein_to_node])
+            disease_nodes = disease.to_node_array(self.protein_to_node)
             codisease_matrix[np.ix_(disease_nodes, disease_nodes)] += 1
         
         np.save(os.path.join("data","disease_data","codisease_"+str(n_nodes)+".npy"), codisease_matrix)
@@ -118,7 +118,7 @@ class CodiseaseProbExp(Experiment):
         for name in self.plots:
             _, codisease_probs = self.results[name]
             if self.smooth: 
-                codisease_probs = np.maximum(0, savgol_filter(codisease_probs, window_length=80000-1, polyorder=3))
+                codisease_probs = np.maximum(0, savgol_filter(codisease_probs, window_length=self.window_length-1, polyorder=3))
             bucket_size = self.top_k / self.n_buckets
             plt.plot(np.arange(1, len(codisease_probs) * bucket_size + 1, bucket_size), 
                      codisease_probs[::-1], 
@@ -142,7 +142,7 @@ if __name__ == "__main__":
      # Load the parameters from the experiment params.json file in model_dir
     args = parser.parse_args()
     exp = CodiseaseProbExp(args.experiment_dir)
-    #exp.run()
-    exp.load_results()
+    exp.run()
+    #exp.load_results()
     exp.save_results()
     exp.plot_results()

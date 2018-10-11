@@ -78,18 +78,6 @@ class SignficanceExp(Experiment):
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
          
-        logging.info("Loading Network...")
-        self.ppi_networkx, self.ppi_adj, self.protein_to_node = load_network(self.params.ppi_network) 
-
-        logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params.diseases_path, self.params.disease_subset)
-
-        logging.info("Loading PPI Matrices...")
-        self.ppi_matrices = {name: np.load(file) for name, file in self.params.ppi_matrices.items()}
-
-        logging.info("Sorting Nodes by Degree...")
-        self.nodes_sorted_by_deg, self.nodes_ranked_by_deg = sort_by_degree(self.ppi_networkx)
-    
     def get_null_pathways(self, pathway, quantity = 1, stdev = 25):
         """
         Given a reference pathway, generate quantity 
@@ -104,20 +92,12 @@ class SignficanceExp(Experiment):
                 while True:
                     sample_rank = int(rank_dist.rvs())
                     sample_node = self.nodes_sorted_by_deg[sample_rank]
-                    print("Node:", node)
-                    print("Node Degree:", self.ppi_networkx.degree(node))
-                    print("Node_Rank:", node_rank)
-                    print("Sample_Rank:", sample_rank)
-                    print("Sample_Node:", sample_node)
-                    print("Sample Node Degree:", self.ppi_networkx.degree(sample_node))
-                    print("________")
+                
                     # guarantee that the same node is not added twice 
                     if sample_node not in null_pathway:
                         null_pathway.add(sample_node)
                         break
-        print("Pathway:", np.mean([self.ppi_networkx.degree(node) for node in pathway]))
-        for null_pathway in null_pathways:
-            print("Null Pathway:", np.mean([self.ppi_networkx.degree(node) for node in null_pathway]))
+        
         return map(list, null_pathways) 
 
     def process_disease(self, disease):
@@ -140,14 +120,26 @@ class SignficanceExp(Experiment):
             null_means_std = null_means.std()
             disease_zscore = 1.0 * (disease_mean - null_means_mean) / null_means_std
             results.update({"disease_zscore_" + name: disease_zscore,
-                            "disease_median_" + name: disease_mean,
-                            "null_medians+" + name: null_means}) 
+                            "disease_mean_" + name: disease_mean,
+                            "null_means+" + name: null_means}) 
         return results
     
     def _run(self):
         """
         Run the experiment.
         """
+        logging.info("Loading Network...")
+        self.ppi_networkx, self.ppi_adj, self.protein_to_node = load_network(self.params.ppi_network) 
+
+        logging.info("Loading Disease Associations...")
+        self.diseases = load_diseases(self.params.diseases_path, self.params.disease_subset)
+
+        logging.info("Loading PPI Matrices...")
+        self.ppi_matrices = {name: np.load(file) for name, file in self.params.ppi_matrices.items()}
+
+        logging.info("Sorting Nodes by Degree...")
+        self.nodes_sorted_by_deg, self.nodes_ranked_by_deg = sort_by_degree(self.ppi_networkx)
+
         logging.info("Running Experiment...")
         self.results = []
 
@@ -163,22 +155,67 @@ class SignficanceExp(Experiment):
                     results  = self.process_disease(disease)
                     self.results.append(results)
                     t.update()
+        self.results = pd.DataFrame(self.results)
     
-    def save_results(self):
-        results_df = pd.DataFrame(self.results)
-        summary_df =  results_df.describe()
-        results_df.to_csv(os.path.join(self.dir, 'results.csv'))
+    def save_results(self, summary = True):
+        """
+        Saves the results to a csv using a pandas Data Fram
+        """
+        print("Saving Results...")
+        summary_df =  self.results.describe()
+        self.results.to_csv(os.path.join(self.dir, 'results.csv'))
         summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
     
     def load_results(self):
-        self.results.read_csv(os.path.join(self.dir, 'results.csv'))
+        """
+        Loads the results from a csv to a pandas Data Frame.
+        """
+        print("Loading Results...")
+        self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'))
+    
+    def plot_results(self):
+        """
+        Plots the results 
+        """
+        print("Plotting Results...")
+        prepare_sns(sns, self.params)
+
+        for name in self.ppi_matrices.keys(): 
+            series = self.results["disease_zscore_" + name]
+            series = np.array(series)
+            #sns.distplot(np.array(series), bins = 20, hist = False, 
+            #             kde = True, kde_kws = {"shade": True}, 
+            #             label = name)
+            sns.kdeplot(series, shade=True, kernel="gau", bw = 0.3, label = name)
+        
+        time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+
+        figures_dir = os.path.join(self.dir, 'figures')
+        if not os.path.exists(figures_dir):
+            os.makedirs(figures_dir)
+
+        plot_path = os.path.join(figures_dir, 'zscore_dist_' + time_string + '.pdf')
+        plt.xlim(xmax = 30, xmin = -4)
+
+        plt.ylabel('Density (estimated with KDE)')
+        plt.xlabel('Average z-score')
+        plt.legend()
+        sns.despine(left = True)
+
+        plt.tight_layout()
+        plt.savefig(plot_path)
+        plt.close()
+        plt.clf()
+
     
 def process_disease_wrapper(disease):
     return exp.run_disease(disease)
 
 if __name__ == "__main__":
-    np.seterr(all='raise')
     args = parser.parse_args()
     exp = SignficanceExp(args.experiment_dir)
-    if exp.run():
+    if exp.is_completed():
+        exp.load_results()
+    elif exp.run():
         exp.save_results()
+    exp.plot_results()

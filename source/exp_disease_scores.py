@@ -78,9 +78,6 @@ if __name__ == '__main__':
     prepare_sns(sns, params)
 
     for name, results in metrics.items(): 
-        #sorted_std_from_mean = np.sort(metrics[name])
-        #plt.semilogy(sorted_std_from_mean, label=name)
-        #plt.plot(sorted_std_from_mean, label=name)
         sns.distplot(results, hist = False, kde_kws = {"shade": True}, label = name)
 
     time_string = datetime.datetime.now().strftime("%m-%d_%H%M")

@@ -171,6 +171,23 @@ def load_network(network_path = NETWORK_PATH):
             adj[n2,n1] = 1
     return nx.from_numpy_matrix(adj), adj, protein_to_node
 
+def build_random_network(model_path, name = "random-network.txt"):
+    """
+    Generates a random network with degree sequence matching the network
+    at model_path.
+    Args:
+        model_path (string) 
+    """
+    model_networkx, _, protein_to_node = load_network(model_path)
+    node_to_protein = {node: protein for protein, node in protein_to_node.items()}
+    deg_sequence =  np.array(model_networkx.degree())[:, 1]
+    random_network = nx.configuration_model(deg_sequence, create_using=nx.Graph)
+    with open(os.path.join("data/networks/", name), 'w') as file:
+        for edge in random_network.edges():
+            node_1, node_2 = edge[0], edge[1]
+            protein_1, protein_2 = node_to_protein[node_1], node_to_protein[node_2]
+            file.write(str(protein_1) + " " + str(protein_2) + '\n')
+
 def load_gene_names(file_path, a_converter=lambda x: x, b_converter=lambda x: x):
     """ Load a mapping between entrez_id and gene_names.
     Args:
@@ -306,10 +323,14 @@ if __name__ == '__main__':
         print_title("Build PPI Matrices with PPI Network")
 
         print("Loading PPI Network...")
-        _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
+        _, ppi_network_adj, _ = load_network("data/networks/random-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, network_name = "bio-pathways")
+        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, network_name = "random")
+
+    elif(args.job == "generate_random_network"):
+        print_title("Generating Random Network")
+        build_random_network("data/networks/bio-pathways-network.txt")
 
     else:
         print ("Job not recognized.")
