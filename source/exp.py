@@ -42,8 +42,8 @@ class Experiment(object):
     def _run(self): 
         pass
     
-    def run(self):
-        if os.path.isfile(os.path.join(self.dir, 'results.csv')):
+    def run(self, overwrite = False):
+        if os.path.isfile(os.path.join(self.dir, 'results.csv')) and not overwrite:
             print("Experiment already run.")
             return False 
 

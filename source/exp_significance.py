@@ -16,7 +16,7 @@ from tqdm import tqdm
 from data import load_diseases, load_network
 from exp import Experiment
 
-from util import Params, set_logger, prepare_sns
+from util import Params, set_logger, prepare_sns, string_to_list, fraction_nonzero
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--experiment_dir', default='experiments/base_model',
@@ -77,6 +77,8 @@ class SignficanceExp(Experiment):
         logging.info("Metric Significance of Diseases in the PPI Network")
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
+        logging.info("Loading Disease Associations...")
+        self.diseases = load_diseases(self.params.diseases_path, self.params.disease_subset)
          
     def get_null_pathways(self, pathway, quantity = 1, stdev = 25):
         """
@@ -111,17 +113,43 @@ class SignficanceExp(Experiment):
                                                self.params.n_random_pathways, 
                                                self.params.sd_sample)
         results = {"disease_id": disease.id,
-                   "disease_name": disease.name}
+                   "disease_name": disease.name,
+                   "disease_size": len(disease_pathway)}
         for name, ppi_matrix in self.ppi_matrices.items():
-            disease_mean = np.mean(get_pathway_scores(ppi_matrix, disease_pathway))
-            null_means = np.array([np.mean(get_pathway_scores(ppi_matrix, null_pathway)) 
-                                     for null_pathway in null_pathways])
-            null_means_mean = null_means.mean()
-            null_means_std = null_means.std()
-            disease_zscore = 1.0 * (disease_mean - null_means_mean) / null_means_std
-            results.update({"disease_zscore_" + name: disease_zscore,
-                            "disease_mean_" + name: disease_mean,
-                            "null_means+" + name: null_means}) 
+            # compute zscores
+            if self.params.zscore:
+                disease_mean = np.mean(get_pathway_scores(ppi_matrix, disease_pathway))
+                null_means = np.array([np.mean(get_pathway_scores(ppi_matrix, null_pathway)) 
+                                       for null_pathway in null_pathways])
+                null_means_mean = null_means.mean()
+                null_means_std = null_means.std()
+                disease_zscore = 1.0 * (disease_mean - null_means_mean) / null_means_std
+                
+                results.update({"zscore_" + name: disease_zscore,
+                                "mean_" + name: disease_mean,
+                                "null_means_" + name: null_means}) 
+            
+            # compute pvalues 
+            if self.params.pvalue:
+                disease_median = np.median(get_pathway_scores(ppi_matrix, disease_pathway))
+                null_medians = np.array([np.median(get_pathway_scores(ppi_matrix, null_pathway)) 
+                                       for null_pathway in null_pathways])
+
+                disease_pvalue = (null_medians > disease_median).mean()
+                results.update({"pvalue_" + name: disease_pvalue,
+                                "median_" + name: disease_median,
+                                "null_medians_" + name: null_medians})
+            
+            # compute pvalues for fraction 
+            if self.params.fraction:
+                disease_fraction = fraction_nonzero(get_pathway_scores(ppi_matrix, disease_pathway))
+                null_fractions = np.array([fraction_nonzero(get_pathway_scores(ppi_matrix, null_pathway)) 
+                                       for null_pathway in null_pathways])
+                disease_pvalue_frac = (null_fractions > disease_fraction).mean()
+                results.update({"pvalue_frac_" + name: disease_pvalue_frac,
+                                "fraction_" + name: disease_fraction,
+                                "null_fractions_" + name: null_fractions})
+
         return results
     
     def _run(self):
@@ -130,9 +158,6 @@ class SignficanceExp(Experiment):
         """
         logging.info("Loading Network...")
         self.ppi_networkx, self.ppi_adj, self.protein_to_node = load_network(self.params.ppi_network) 
-
-        logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params.diseases_path, self.params.disease_subset)
 
         logging.info("Loading PPI Matrices...")
         self.ppi_matrices = {name: np.load(file) for name, file in self.params.ppi_matrices.items()}
@@ -146,7 +171,7 @@ class SignficanceExp(Experiment):
         if self.params.n_processes > 1:
             with tqdm(total=len(self.diseases)) as t: 
                 p = Pool(self.params.n_processes)
-                for results in p.imap(self.diseases.values()):
+                for results in p.imap(process_disease_wrapper, self.diseases.values()):
                     self.results.append(results)
                     t.update()
         else:
@@ -173,20 +198,46 @@ class SignficanceExp(Experiment):
         print("Loading Results...")
         self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'))
     
-    def plot_results(self):
+    def plot_disease(self, disease):
         """
-        Plots the results 
+        Plots one disease 
         """
-        print("Plotting Results...")
-        prepare_sns(sns, self.params)
+        row = self.results.loc[self.results['disease_id'] == disease.id]
+        disease_dir = os.path.join(self.dir, 'figures', 'diseases', disease.id)
 
+        if not os.path.exists(disease_dir):
+            os.makedirs(disease_dir)
+
+        for name in self.ppi_matrices.keys():
+            null_means = row["null_medians_" + name].values[0]
+
+            if type(null_means) == str:
+                null_means = string_to_list(null_means, float)
+
+            sns.kdeplot(null_means, shade=True, kernel="gau",  color = "grey", label = "Random Pathways")
+
+            disease_mean = row["median_" + name]
+            sns.scatterplot(disease_mean, 0, label = disease.name)
+
+            plt.ylabel('Density (estimated with KDE)')
+            plt.xlabel('Median ' + name)
+            sns.despine(left = True)
+
+            plt.tight_layout()
+            plt.savefig(os.path.join(disease_dir, name + "_median.pdf"))
+            plt.close()
+            plt.clf()
+
+    
+    def plot_all_diseases(self):
+        """
+        Estimates the distribution of z-scores for each metric across all diseases
+        then plots the estimated distributions on the same plot. 
+        """
         for name in self.ppi_matrices.keys(): 
-            series = self.results["disease_zscore_" + name]
+            series = self.results["pvalue_" + name]
             series = np.array(series)
-            #sns.distplot(np.array(series), bins = 20, hist = False, 
-            #             kde = True, kde_kws = {"shade": True}, 
-            #             label = name)
-            sns.kdeplot(series, shade=True, kernel="gau", bw = 0.3, label = name)
+            sns.kdeplot(series, shade=True, kernel="gau", clip=(-50,50), label = name)
         
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
 
@@ -194,11 +245,11 @@ class SignficanceExp(Experiment):
         if not os.path.exists(figures_dir):
             os.makedirs(figures_dir)
 
-        plot_path = os.path.join(figures_dir, 'zscore_dist_' + time_string + '.pdf')
-        plt.xlim(xmax = 30, xmin = -4)
+        plot_path = os.path.join(figures_dir, 'pvalue_dist_' + time_string + '.pdf')
+        #plt.xlim(xmax = 30, xmin = -10)
 
         plt.ylabel('Density (estimated with KDE)')
-        plt.xlabel('Average z-score')
+        plt.xlabel('p-value')
         plt.legend()
         sns.despine(left = True)
 
@@ -207,9 +258,19 @@ class SignficanceExp(Experiment):
         plt.close()
         plt.clf()
 
+    def plot_results(self):
+        """
+        Plots the results 
+        """
+        print("Plotting Results...")
+        prepare_sns(sns, self.params)
+        self.plot_all_diseases()
+
+        for disease_id in tqdm(self.params.disease_plots):
+            self.plot_disease(self.diseases[disease_id])
     
 def process_disease_wrapper(disease):
-    return exp.run_disease(disease)
+    return exp.process_disease(disease)
 
 if __name__ == "__main__":
     args = parser.parse_args()

@@ -3,6 +3,7 @@
 import json
 import logging
 import smtplib
+from re import sub
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -111,6 +112,21 @@ def send_email(subject, message, to_addr = "eyuboglu@stanford.edu"):
                                to_addr, 
                                msg.as_string())
     server.quit()
+
+def string_to_list(string, type=str, delimiter = " "):
+    """
+    Converts a string to a list. 
+    """
+    string = string.strip("[] ")
+    string = string.replace("\n", "")
+    string = sub(" +", " ", string)
+    return map(type, string.split(delimiter))
+
+def fraction_nonzero(array):
+    """
+    Computes fraction of elements in array that are nonzero
+    """
+    return 1 - np.mean(np.isclose(0, array))
 
 def print_title(title = "Experiment", subtitle = None):
     print(title)

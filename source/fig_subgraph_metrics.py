@@ -37,25 +37,15 @@ if __name__ == '__main__':
      
     experiment_reader = ExperimentReader(os.path.join(params.exp_dir, 'subgraph_metrics.csv'))
     for metric in params.metrics:
-<<<<<<< HEAD
-        header = metric
-        col = experiment_reader.get_col(header)
-        plt.hist(col, params.n_bins, range=params.range,  label = header, alpha=params.alpha)
-
-        plt.ylabel(params.y_label)
-        plt.xlabel(params.x_label)
-        if params.legend:
-            plt.legend()
-=======
         for subgraph in params.subgraphs:
             header = metric + " of " + subgraph + " Nodes"  
             col = experiment_reader.get_col(header)
             plt.hist(col, params.n_bins, range=params.range,  label = header, alpha=params.alpha)
+            #sns.kdeplot(col, shade=True, kernel="gau", clip=(0,1), label = header)
 
         plt.title("Subgraph " + metric )
         plt.ylabel("# of Diseases")
         plt.xlabel(metric)
         plt.legend()
->>>>>>> 3f113d621fc0bbe03228e78fa454e41f1d5675c6
         print(metric.lower())
         plt.savefig(os.path.join(args.experiment_dir, metric.lower() + ".pdf"))

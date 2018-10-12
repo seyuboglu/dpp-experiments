@@ -45,7 +45,9 @@ if __name__ == '__main__':
         method_to_scores[method_name]  = {} 
         with open(os.path.join(method_exp_dir, 'metrics.csv'), 'r') as metrics_file:
             metrics_reader = csv.DictReader(metrics_file)
+            print(method_exp_dir)
             for i, row in enumerate(metrics_reader):
+                if row[params.metric] == params.metric: continue 
                 method_to_scores[method_name][row["Disease ID"]] = float(row[params.metric])
     
     ref_name = params.reference_exp
@@ -65,9 +67,12 @@ if __name__ == '__main__':
 
         # Split into positive and negative 
         diffs = diffs * 100
-        mid = np.where(diffs > 0.0)[0][0]
-        plt.bar(np.arange(mid, len(diffs)), diffs[mid:], 1.5, label = ref_name, alpha = 0.75)
-        plt.bar(np.arange(mid), diffs[:mid], 1.5, label = method_name,  alpha = 0.75)
+        ref_start = np.where(diffs > 0.0)[0][0]
+        method_end = np.where(diffs < 0.0)[-1][-1]
+        plt.plot(np.arange(ref_start, len(diffs)), diffs[ref_start:],label = ref_name, alpha = 0.6)
+        plt.fill_between(np.arange(ref_start, len(diffs)), 0, diffs[ref_start:], alpha = 0.6)
+        plt.plot(np.arange(method_end), diffs[:method_end], label = method_name,  alpha = 0.6)
+        plt.fill_between(np.arange(method_end), 0, diffs[:method_end], alpha = 0.6)
         plt.title(ref_name + " " + params.metric + " Gain over " + method_name )
         plt.ylabel(params.metric + " Difference")
         plt.xlabel("Diseases Sorted by Difference")
