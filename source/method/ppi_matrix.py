@@ -22,6 +22,21 @@ def softmax(x):
     exp_x = np.exp(x - np.max(x, axis = 0))
     return exp_x / np.sum(exp_x, axis = 0)
 
+def load_ppi_matrices(name_to_matrix):
+    """
+    Loads a set of ppi_matrices stored in numpy files (.npy).
+    Also zeroes out the diagonal
+    args:
+        name_to_matrix    (dict) name to matrix file path
+
+    """
+    ppi_matrices = {}
+    for name, file in name_to_matrix.items():
+        matrix = np.load(file)
+        np.fill_diagonal(matrix, 0) 
+        ppi_matrices[name] = matrix
+    return ppi_matrices
+
 def compute_matrix_scores(ppi_matrix, training_ids, params):
     """ Compute scores across all proteins using ppi_matrix and training_ids. 
     Score for some protein k is given by some weighted sum of the ppi_matrix

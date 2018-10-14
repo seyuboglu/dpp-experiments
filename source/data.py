@@ -326,7 +326,7 @@ if __name__ == '__main__':
         _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_dn_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = True, col_norm = True, network_name = "bio-pathways")
+        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = False, col_norm = False, network_name = "bio-pathways")
 
     elif(args.job == "generate_random_network"):
         print_title("Generating Random Network")
