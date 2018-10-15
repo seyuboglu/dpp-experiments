@@ -8,6 +8,8 @@ import smtplib
 import socket
 import traceback
 
+import pandas 
+
 from util import Params, parse_id_rank_pair, send_email
  
 
@@ -94,8 +96,18 @@ class Experiment(object):
 
     def __call__(self): 
         return self.run()
+    
+    def summarize_results(self):
+        """
+        Returns the summary of the dataframe 
+        return:
+            summary_df (DataFrame) 
+        """
+        return self.results.describe()
 
     def load_results(self):
+        """
+        """
         pass
 
     def save_results(self): 

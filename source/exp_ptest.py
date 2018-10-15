@@ -160,8 +160,8 @@ class PermutationTest(Experiment):
         return map(np.array, (map(list, null_pathways)))
 
     def compute_pvalue(self, disease_result, null_results):
-        return ((null_results > disease_result) or 
-                (np.is_close(null_results, disease_result))).mean()
+        return np.logical_or((null_results > disease_result),
+                             (np.isclose(null_results, disease_result))).mean()
 
     def process_disease(self, disease):
         """
@@ -219,14 +219,34 @@ class PermutationTest(Experiment):
                     t.update()
         self.results = pd.DataFrame(self.results)
     
+    def summarize_results(self):
+        """
+        Creates a dataframe summarizing the results across
+        diseases. 
+        return:
+            summary_df (DataFrame)
+        """
+        summary_df =  self.results.describe()
+
+        frac_significant = {} 
+        for name in self.ppi_matrices.keys():
+            col_name = "pvalue_" + name
+            col = self.results[col_name]
+            frac_significant[col_name] = np.mean(np.array(col) < 0.05)
+        summary_df = summary_df.append(pd.Series(frac_significant, name="< 0.05"))
+
+        return summary_df
+    
     def save_results(self, summary = True):
         """
         Saves the results to a csv using a pandas Data Fram
         """
         print("Saving Results...")
-        summary_df =  self.results.describe()
-        self.results.to_csv(os.path.join(self.dir, 'results.csv'))
-        summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
+        self.results.to_csv(os.path.join(self.dir, 'results.csv'), index=False)
+
+        if summary:
+            summary_df = self.summarize_results()
+            summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
     
     def load_results(self):
         """
@@ -246,12 +266,15 @@ class PermutationTest(Experiment):
             os.makedirs(disease_dir)
 
         for name in self.ppi_matrices.keys():
-            null_means = row["null_" + self.metric_fn.__name__ + "s_" + name].values[0]
+            null_results = row["null_" + self.metric_fn.__name__ + "s_" + name].values[0]
 
-            if type(null_means) == str:
-                null_means = string_to_list(null_means, float)
+            if type(null_results) == str:
+                null_results = string_to_list(null_results, float)
+            
+            if np.allclose(null_results, 0):
+                return
 
-            sns.kdeplot(null_means, shade=True, kernel="gau",  color = "grey", clip=(0,1), label = "Random Pathways")
+            sns.kdeplot(null_results, shade=True, kernel="gau",  color = "grey", clip=(0,1), label = "Random Pathways")
 
             disease_mean = row[self.metric_fn.__name__ + "_" + name]
             sns.scatterplot(disease_mean, 0, label = disease.name)
