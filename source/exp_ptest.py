@@ -159,6 +159,10 @@ class PermutationTest(Experiment):
         
         return map(np.array, (map(list, null_pathways)))
 
+    def compute_pvalue(self, disease_result, null_results):
+        return ((null_results > disease_result) or 
+                (np.is_close(null_results, disease_result))).mean()
+
     def process_disease(self, disease):
         """
         Generates null model for disease and computes 
@@ -178,7 +182,7 @@ class PermutationTest(Experiment):
             null_results = np.array([self.metric_fn(ppi_matrix, null_pathway) 
                                      for null_pathway in null_pathways])
 
-            disease_pvalue = (null_results > disease_result).mean()
+            disease_pvalue = self.compute_pvalue(disease_result, null_results)
             results.update({"pvalue_" + name: disease_pvalue,
                             self.metric_fn.__name__ + "_" + name: disease_result,
                             "null_" + self.metric_fn.__name__ + "s_" + name: null_results})
@@ -242,14 +246,14 @@ class PermutationTest(Experiment):
             os.makedirs(disease_dir)
 
         for name in self.ppi_matrices.keys():
-            null_means = row["null_means_" + name].values[0]
+            null_means = row["null_" + self.metric_fn.__name__ + "s_" + name].values[0]
 
             if type(null_means) == str:
                 null_means = string_to_list(null_means, float)
 
             sns.kdeplot(null_means, shade=True, kernel="gau",  color = "grey", clip=(0,1), label = "Random Pathways")
 
-            disease_mean = row["mean_" + name]
+            disease_mean = row[self.metric_fn.__name__ + "_" + name]
             sns.scatterplot(disease_mean, 0, label = disease.name)
 
             plt.ylabel('Density (estimated with KDE)')
