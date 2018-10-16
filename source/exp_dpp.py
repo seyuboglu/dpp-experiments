@@ -63,7 +63,7 @@ class DPPExperiment(Experiment):
             # normalize columns of ppi_matrix
             if(self.params.normalize):
                 self.ppi_matrix = (self.ppi_matrix - np.mean(self.ppi_matrix, axis = 0)) / np.std(self.ppi_matrix, axis=0)
-            
+         
             # zero out the diagonal
             np.fill_diagonal(self.ppi_matrix, 0)  
 
@@ -72,11 +72,12 @@ class DPPExperiment(Experiment):
             self.feature_matrices = []
             for features_filename in self.params.features:
                 self.feature_matrices.append(
-                    build_embedding_feature_matrix(self.protein_to_node, features_filename))
-        
+                    build_embedding_feature_matrix(self.protein_to_node, 
+                                                   features_filename))
+     
         elif (self.params.method == 'gcn'):
             self.method = GCN(self.params, self.ppi_network_adj)
-    
+  
     def _run(self):
         """ Run the disease protein prediction experiment
         Args: 
@@ -107,12 +108,11 @@ class DPPExperiment(Experiment):
                     else:
                         t.set_postfix(str="{} Not Recorded".format(disease.id))
                     t.update()
-        
+     
         self.results = {"metrics": disease_to_metrics,
                         "ranks": disease_to_ranks}
-    
-    
-
+   
+  
     def compute_node_scores(self, train_nodes, val_nodes):
         """ Get score 
         Args:
@@ -127,7 +127,7 @@ class DPPExperiment(Experiment):
 
         elif self.params.method == 'random_walk':
             scores = compute_random_walk_scores(self.ppi_networkx, train_nodes, self.params)
-        
+
         elif self.params.method == 'diamond':
             scores = compute_diamond_scores(self.ppi_networkx, train_nodes, self.params)
 
@@ -137,10 +137,10 @@ class DPPExperiment(Experiment):
         elif self.params.method == 'lr':
             scores = compute_lr_scores(self.feature_matrices, train_nodes, self.params)
 
-        else: 
+        else:
             logging.error("No method" + self.params.method)
-        
-        return scores 
+        return scores
+
 
     def run_dpp(self, disease):
         """ Perform k-fold cross validation on disease protein prediction on disease
@@ -217,13 +217,6 @@ def compute_metrics(metrics, labels, scores, train_nodes, test_nodes):
     metrics.setdefault("Ranks", []).extend(positive_rankings(labels, scores, train_nodes))
     metrics.setdefault("Nodes", []).extend(test_nodes)
 
-    # Sample down to one-folds-worth of negative examples 
-    #out_of_fold = np.random.choice(np.arange(len(scores)), int(len(scores) * (1- 1.0/params.n_folds)), replace=False)
-    #fold_scores = scores.copy()
-    #fold_scores[out_of_fold] = 0.0
-    #fold_scores[test_nodes] = scores[test_nodes]
-    #for k in [100]: 
-    #    metrics.setdefault("Fold Recall-at-{}".format(k), []).append(recall_at(labels, fold_scores, k, train_nodes))
 
 def run_dpp_wrapper(disease):
     return exp.run_dpp(disease)
@@ -236,13 +229,13 @@ def write_metrics(directory, disease_to_metrics):
         disease_to_metrics: (dict)
     """
     # Output metrics to csv
-
     output_results = ExperimentResults()
     for disease, metrics in disease_to_metrics.items():  
         output_results.add_disease_row(disease.id, disease.name)
         output_results.add_data_row_multiple(disease.id, metrics)
     output_results.add_statistics()
     output_results.output_to_csv(os.path.join(directory, 'metrics.csv'))
+
 
 def write_ranks(directory, disease_to_ranks):
     """Write out the ranks for the proteins for one . 
@@ -266,7 +259,8 @@ def load_ranks(directory):
     with open(os.path.join(directory, 'ranks.csv'),'r') as file: 
         ranks_reader = csv.reader(file)
         for i, row in enumerate(ranks_reader):
-            if (i == 0): continue 
+            if (i == 0): 
+                continue 
             disease_id = row[0]
             protein_to_ranks = {id: rank for id, rank in map(parse_id_rank_pair, row[2:])}
             disease_to_ranks[disease_id] = protein_to_ranks

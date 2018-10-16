@@ -42,6 +42,7 @@ class Disease:
         proteins = self.validation_proteins if validation else self.proteins
         return np.array([protein_to_node[protein] for protein in proteins if protein in protein_to_node])
 
+
 def is_disease_id(str):
     """ Returns bool indicating whether or not the passed in string is 
     a valid disease id. 
@@ -49,6 +50,7 @@ def is_disease_id(str):
         str (string)
     """
     return len(str) == 8 and str[0] == 'C' and str[1:].isdigit()
+
 
 def split_diseases(split_fractions, path):
     """ Splits a set of disease assocation into data sets i.e. train, test, and dev sets 
@@ -68,7 +70,7 @@ def split_diseases(split_fractions, path):
     curr_start = 0
     N = len(disease_rows)
     for name, fraction in split_fractions.items():
-        curr_end = curr_start + int(N*fraction)
+        curr_end = curr_start + int(N * fraction)
         split_rows[name] = disease_rows[curr_start : curr_end]
         curr_start = curr_end
     
@@ -81,9 +83,10 @@ def split_diseases(split_fractions, path):
             for row in rows:
                 writer.writerow(row)
     
-def load_diseases(associations_path = ASSOCIATIONS_PATH, 
-                  diseases_subset = [], 
-                  gene_names_path = GENE_NAMES_PATH): 
+
+def load_diseases(associations_path=ASSOCIATIONS_PATH, 
+                  diseases_subset=[], 
+                  gene_names_path=GENE_NAMES_PATH): 
     """ Load a set of disease-protein associations
     Args:
         assoications_path (string)
@@ -128,7 +131,8 @@ def load_diseases(associations_path = ASSOCIATIONS_PATH,
             diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins, validation_proteins)
     return diseases 
 
-def write_diseases(diseases, associations_path, threshold = 10): 
+
+def write_diseases(diseases, associations_path, threshold=10): 
     """ Write a set of disease-protein associations to a csv
     Args:
         diseases
@@ -141,14 +145,15 @@ def write_diseases(diseases, associations_path, threshold = 10):
                     for _, disease in diseases.items() if len(disease.proteins) >= threshold] 
 
     with open(associations_path, 'w') as associations_file:
-        writer = csv.DictWriter(associations_file, fieldnames = ["Disease ID", 
-                                                                 "Disease Name", 
-                                                                 "Associated Gene IDs"])
+        writer = csv.DictWriter(associations_file, fieldnames=["Disease ID", 
+                                                               "Disease Name", 
+                                                               "Associated Gene IDs"])
         writer.writeheader()
         for disease in disease_list:
             writer.writerow(disease)
 
-def load_network(network_path = NETWORK_PATH):
+
+def load_network(network_path=NETWORK_PATH):
     """ Load a network. Returns numpy adjacency matrix, networkx network and 
     dictionary mapping entrez protein_id to node index in network and adjacency
     matrix.
@@ -171,6 +176,7 @@ def load_network(network_path = NETWORK_PATH):
             adj[n2,n1] = 1
     return nx.from_numpy_matrix(adj), adj, protein_to_node
 
+
 def build_random_network(model_path, name = "random-network.txt"):
     """
     Generates a random network with degree sequence matching the network
@@ -187,6 +193,7 @@ def build_random_network(model_path, name = "random-network.txt"):
             node_1, node_2 = edge[0], edge[1]
             protein_1, protein_2 = node_to_protein[node_1], node_to_protein[node_2]
             file.write(str(protein_1) + " " + str(protein_2) + '\n')
+
 
 def load_gene_names(file_path, a_converter=lambda x: x, b_converter=lambda x: x):
     """ Load a mapping between entrez_id and gene_names.
@@ -289,7 +296,7 @@ def build_disgenet_associations(disgenet_path, name = 'disgenet-associations.csv
             disease = diseases.setdefault(disease_id, Disease(disease_id, disease_name, []))
             disease.proteins.append(int(gene_id))
     
-    write_diseases(diseases, os.path.join("data", "associations", name))
+    write_diseases(diseases, os.path.join("data", "associations", name))  
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
