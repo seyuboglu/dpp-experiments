@@ -14,5 +14,6 @@
     
     "plot_palette": ["#E03C3F", "#6178A8"],
     "plot_font": "AppleGothic",
-    "disease_plots": ["C0023470", "C0162671", "C0018818"]
+    "disease_plots": ["C0023470", "C0162671", "C0018818"],
+    "exclude": ["DNS"]
 }

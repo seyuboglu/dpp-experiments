@@ -21,12 +21,14 @@ if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
     args = parser.parse_args()
     json_path = os.path.join(args.experiment_dir, 'params.json')
-    assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+    assert (os.path.isfile(json_path), 
+            "No json configuration file found at {}".format(json_path))
     params = Params(json_path)
     params.update(json_path)  
 
     # Set the logger
-    set_logger(os.path.join(args.experiment_dir, 'experiment.log'), level=logging.INFO, console=True)
+    set_logger(os.path.join(args.experiment_dir, 'experiment.log'), 
+               level=logging.INFO, console=True)
 
     # Log Title 
     logging.info(" Generator")
@@ -35,17 +37,20 @@ if __name__ == '__main__':
 
     prepare_sns(sns, params)
      
-    experiment_reader = ExperimentReader(os.path.join(params.exp_dir, 'subgraph_metrics.csv'))
+    experiment_reader = ExperimentReader(os.path.join(params.exp_dir, 
+                                         'subgraph_metrics.csv'))
     for metric in params.metrics:
         for subgraph in params.subgraphs:
             header = metric + " of " + subgraph + " Nodes"  
+            label = metric + " of " + ("Pathway" if subgraph == "Disease" 
+                    else "Common Neighbors")
             col = experiment_reader.get_col(header)
-            plt.hist(col, params.n_bins, range=params.range,  label = header, alpha=params.alpha)
-            #sns.kdeplot(col, shade=True, kernel="gau", clip=(0,1), label = header)
+            plt.hist(col, params.n_bins, range=params.range, 
+                     label=label, alpha=params.alpha)
+            # sns.kdeplot(col, shade=True, kernel="gau", clip=(0,1), label = header)
 
-        plt.title("Subgraph " + metric )
-        plt.ylabel("# of Diseases")
+        plt.ylabel("Disease Pathways")
         plt.xlabel(metric)
+        sns.despine()
         plt.legend()
-        print(metric.lower())
         plt.savefig(os.path.join(args.experiment_dir, metric.lower() + ".pdf"))

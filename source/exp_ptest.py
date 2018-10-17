@@ -23,6 +23,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--dir', default='experiments/base_model',
                     help="Directory containing params.json")
 
+
 def sort_by_degree(network):
     """
     Sort and argsort nodes by degree. Note: assumes that node numbers match index.  
@@ -39,6 +40,7 @@ def sort_by_degree(network):
 
     return nodes_sorted_by_deg, nodes_ranked_by_deg
 
+
 def get_pairwise_scores(ppi_matrix, pathway):
     """
     Gets the scores between nodes in a disease pathway.
@@ -53,6 +55,7 @@ def get_pairwise_scores(ppi_matrix, pathway):
     below_diag = inter_pathway[np.tril_indices(len(pathway))]
     pathway_scores = np.concatenate((above_diag, below_diag))
     return pathway_scores
+
 
 def get_loo_scores(ppi_matrix,  pathway):
     """
@@ -71,6 +74,7 @@ def get_loo_scores(ppi_matrix,  pathway):
         scores.append(node_score)
     return np.array(scores)
     
+
 def loo_median(ppi_matrix, pathway):
     """
     Computes the median score for each node w.r.t
@@ -81,6 +85,7 @@ def loo_median(ppi_matrix, pathway):
     """
     return np.median(get_loo_scores(ppi_matrix, pathway))
 
+
 def pairwise_mean(ppi_matrix, pathway):
     """
     Computes average score between nodes in a pathway. 
@@ -89,6 +94,7 @@ def pairwise_mean(ppi_matrix, pathway):
         disease_pathway (ndarray)
     """
     return np.mean(get_pairwise_scores(ppi_matrix, pathway))
+
 
 def pairwise_median(ppi_matrix, pathway):
     """
@@ -99,6 +105,7 @@ def pairwise_median(ppi_matrix, pathway):
     """
     return np.median(get_pairwise_scores(ppi_matrix, pathway))
 
+
 def pairwise_nonzero(ppi_matrix, pathway):
     """
     Computes fraction nonzero score between nodes in a pathway. 
@@ -107,6 +114,7 @@ def pairwise_nonzero(ppi_matrix, pathway):
         disease_pathway (ndarray)
     """
     return fraction_nonzero(get_pairwise_scores(ppi_matrix, pathway))
+
 
 class PermutationTest(Experiment):
     """
@@ -127,6 +135,7 @@ class PermutationTest(Experiment):
 
         # unpack parameters 
         self.ppi_matrices = {name: np.load(file) for name, file in self.params.ppi_matrices.items()}
+        self.exclude = set(self.params.exclude) if hasattr(self.params, "exclude") else set()
 
         # Log title 
         logging.info("Metric Significance of Diseases in the PPI Network")
@@ -194,13 +203,15 @@ class PermutationTest(Experiment):
         Run the experiment.
         """
         logging.info("Loading Network...")
-        self.ppi_networkx, self.ppi_adj, self.protein_to_node = load_network(self.params.ppi_network) 
+        self.ppi_networkx, self.ppi_adj, self.protein_to_node = load_network(
+            self.params.ppi_network) 
 
         logging.info("Loading PPI Matrices...")
         self.ppi_matrices = load_ppi_matrices(self.params.ppi_matrices)
 
         logging.info("Sorting Nodes by Degree...")
-        self.nodes_sorted_by_deg, self.nodes_ranked_by_deg = sort_by_degree(self.ppi_networkx)
+        self.nodes_sorted_by_deg, self.nodes_ranked_by_deg = sort_by_degree(
+            self.ppi_networkx)
 
         logging.info("Running Experiment...")
         self.results = []
@@ -214,7 +225,7 @@ class PermutationTest(Experiment):
         else:
             with tqdm(total=len(self.diseases)) as t: 
                 for disease in self.diseases.values():
-                    results  = self.process_disease(disease)
+                    results = self.process_disease(disease)
                     self.results.append(results)
                     t.update()
         self.results = pd.DataFrame(self.results)
@@ -237,7 +248,7 @@ class PermutationTest(Experiment):
 
         return summary_df
     
-    def save_results(self, summary = True):
+    def save_results(self, summary=True):
         """
         Saves the results to a csv using a pandas Data Fram
         """
@@ -274,30 +285,35 @@ class PermutationTest(Experiment):
             if np.allclose(null_results, 0):
                 return
 
-            sns.kdeplot(null_results, shade=True, kernel="gau",  color = "grey", clip=(0,1), label = "Random Pathways")
+            sns.kdeplot(null_results, shade=True, kernel="gau", 
+                        color="grey", clip=(0, 1), label="Random Pathways")
 
             disease_mean = row[self.metric_fn.__name__ + "_" + name]
-            sns.scatterplot(disease_mean, 0, label = disease.name)
+            sns.scatterplot(disease_mean, 0, label=disease.name)
 
-            plt.ylabel('Density (estimated with KDE)')
-            plt.xlabel('mean ' + name)
-            sns.despine(left = True)
+            plt.ylabel('Density [KDE]')
+            plt.xlabel("Median complementarity within pathway [value]")
+            plt.yticks([])
+            sns.despine()
 
             plt.tight_layout()
             plt.savefig(os.path.join(disease_dir, name + "_mean.pdf"))
             plt.close()
             plt.clf()
-
     
     def plot_all_diseases(self):
         """
         Estimates the distribution of z-scores for each metric across all diseases
         then plots the estimated distributions on the same plot. 
         """
+        plt.rc("xtick", labelsize=8)
+
         for name in self.ppi_matrices.keys(): 
+            if name in self.exclude:
+                continue 
             series = self.results["pvalue_" + name]
             series = np.array(series)
-            sns.kdeplot(series, shade=True, kernel="gau", clip=(0,1), label = name)
+            sns.kdeplot(series, shade=True, kernel="gau", clip=(0, 1), label=name)
         
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
 
@@ -306,12 +322,12 @@ class PermutationTest(Experiment):
             os.makedirs(figures_dir)
 
         plot_path = os.path.join(figures_dir, 'pvalue_dist_' + time_string + '.pdf')
-        #plt.xlim(xmax = 30, xmin = -10)
 
-        plt.ylabel('Density (estimated with KDE)')
-        plt.xlabel('p-value')
-        plt.legend()
-        sns.despine(left = True)
+        plt.ylabel('Density [KDE]')
+        plt.xlabel('Median complementarity within pathway [p-value]')
+        sns.despine()
+        plt.xticks(np.arange(0.0, 1.0, 0.05))
+        plt.yticks([])
 
         plt.tight_layout()
         plt.savefig(plot_path)
@@ -328,9 +344,11 @@ class PermutationTest(Experiment):
 
         for disease_id in tqdm(self.params.disease_plots):
             self.plot_disease(self.diseases[disease_id])
-    
+
+
 def process_disease_wrapper(disease):
     return exp.process_disease(disease)
+
 
 if __name__ == "__main__":
     args = parser.parse_args()

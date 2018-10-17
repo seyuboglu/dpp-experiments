@@ -39,6 +39,7 @@ class Aggregate(Experiment):
 
         # Unpack parameters
         self.experiments = self.params.experiments
+        self.plots = self.params.plots
 
         # Log title 
         logging.info("Aggregating Experiments")
@@ -56,28 +57,20 @@ class Aggregate(Experiment):
         """
         df = pd.read_csv(exp_dict["path"],
                          index_col=0)
+        print(df.shape)
         return df[exp_dict["cols"]]
-         
-    def initalize_dataframe(self):
-        """
-        Initializes the dataframe with diseases.
-        """
-        df = pd.DataFrame()
-        for disease_id, disease in self.diseases.items(): 
-            df = df.append(pd.Series({"name": disease.name}, name=disease_id))
-        return df
         
     def _run(self):
         """
         Run the aggregation.
         """
         print("Running Experiment...")
-        df = self.initalize_dataframe() 
-        self.results = pd.concat([df] + [self.process_experiment(exp)
-                                         for exp in self.experiments],
+        self.results = pd.concat([self.process_experiment(exp)
+                                  for exp in self.experiments],
                                  axis=1,
-                                 keys=[exp["name"] <- ISSUE HERE 
-                                       for exp in self.experiments])
+                                 keys=([(col, exp["name"])
+                                        for col in exp["cols"]
+                                        for exp in self.experiments]))
     
     def save_results(self, summary=True):
         """
@@ -89,6 +82,31 @@ class Aggregate(Experiment):
         if summary:
             summary_df = self.summarize_results()
             summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
+    
+    def plot_results(self):
+        """
+        Plot the results 
+        """
+        figures_dir = os.path.join(self.dir, 'figures')
+        if not os.path.exists(figures_dir):
+            os.makedirs(figures_dir)
+        print(self.results.columns.values)
+        for plot in self.plots:
+            if plot["type"] == "scatter":
+                prepare_sns(sns, self.params)
+                series_a = self.results[tuple(plot["cols"][0])]
+                series_b = self.results[tuple(plot["cols"][1])]
+                sns.scatterplot(x=series_a, y=series_b)
+
+            plt.ylabel()
+            plt.xlabel(plot[]) TODO
+            sns.despine(left=True)
+
+            plt.tight_layout()
+            plt.savefig(os.path.join(figures_dir, plot["name"] + ".pdf"))
+            plt.close()
+            plt.clf()
+
 
 if __name__ == "__main__":
     args = parser.parse_args()

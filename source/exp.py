@@ -17,6 +17,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--dir', default='experiments/base_model',
                     help="Directory containing params.json")
 
+
 class Experiment(object):
     """ 
     Base class for all disease protein prediction methods.
@@ -30,7 +31,8 @@ class Experiment(object):
 
         # load experiment params
         json_path = os.path.join(dir, 'params.json')
-        assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+        assert (os.path.isfile(json_path), 
+                "No json configuration file found at {}".format(json_path))
         params = Params(json_path)
         params.update(json_path)  
         self.params = params
@@ -44,7 +46,7 @@ class Experiment(object):
     def _run(self): 
         pass
     
-    def run(self, overwrite = False):
+    def run(self, overwrite=False):
         if os.path.isfile(os.path.join(self.dir, 'results.csv')) and not overwrite:
             print("Experiment already run.")
             return False 
@@ -54,7 +56,7 @@ class Experiment(object):
                 self._run()
             except:
                 tb = traceback.format_exc()
-                self.notify_user(error = tb)
+                self.notify_user(error=tb)
                 return False 
             else:
                 self.notify_user()
@@ -62,20 +64,21 @@ class Experiment(object):
         self._run()
         return True
         
-
     def notify_user(self, error=None):
         # read params 
-        with open (os.path.join(self.dir, 'params.json'), "r") as file:
-            params_string=file.readlines()
-        if error == None:
+        with open(os.path.join(self.dir, 'params.json'), "r") as file:
+            params_string = file.readlines()
+        if error is None:
             subject = "Experiment Completed: " + self.dir
             message = ("Yo!\n",
                        "Good news, your experiment just finished.",
-                       "You were running the experiment on: {}".format(socket.gethostname()),
+                       "You were running the experiment on: {}".format(
+                           socket.gethostname()),
                        "---------------------------------------------",
                        "See the results here: {}".format(self.dir),
                        "---------------------------------------------", 
-                       "The parameters you fed to this experiment were: {}".format(params_string),
+                       "The parameters you fed to this experiment were: {}".format(
+                           params_string),
                        "---------------------------------------------", 
                        "Thanks!")
         else: 
@@ -83,11 +86,13 @@ class Experiment(object):
             message = ("Uh Oh!\n",
                        "Your experiment encountered an error.",
                        "You were running the experiment found at: {}".format(self.dir),
-                       "You were running the experiment on: {}".format(socket.gethostname()),
+                       "You were running the experiment on: {}".format(
+                           socket.gethostname()),
                        "---------------------------------------------",
                        "Check out the error message: \n{}".format(error),
                        "---------------------------------------------", 
-                       "The parameters you fed to this experiment were: {}".format(params_string),
+                       "The parameters you fed to this experiment were: {}".format(
+                           params_string),
                        "---------------------------------------------", 
                        "Thanks!")
 
@@ -121,7 +126,8 @@ if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
     args = parser.parse_args()
     json_path = os.path.join(args.dir, 'params.json')
-    assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+    assert (os.path.isfile(json_path), 
+            "No json configuration file found at {}".format(json_path))
     params = Params(json_path)
     params.update(json_path)  
 

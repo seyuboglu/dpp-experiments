@@ -9,6 +9,7 @@ from email.mime.text import MIMEText
 
 import numpy as np
 
+
 class Params():
     """Class that loads hyperparameters from a json file.
 
@@ -69,6 +70,7 @@ def set_logger(log_path, level=logging.INFO, console=True):
             stream_handler.setFormatter(logging.Formatter('%(message)s'))
             logger.addHandler(stream_handler)
 
+
 def parse_id_rank_pair(str):
     """ Parses a rank entry. Since protein labels are sometimes not included
     return -1 for protein id.  
@@ -79,6 +81,7 @@ def parse_id_rank_pair(str):
     id, rank = str.split("=")
     return int(id), float(rank)
 
+
 def prepare_sns(sns, params):
     """ Prepares seaborn for plotting according to the plot settings specified in
     params. 
@@ -86,15 +89,19 @@ def prepare_sns(sns, params):
         params (object) dictionary containing settings for each of the seaborn plots
     """
     sns.set_context('paper', font_scale=1) 
-    sns.set(palette = tuple(getattr(params, "plot_palette", ["#E03C3F", "#FF9300", "#F8BA00", "#CB297B", "#6178A8", "#56C1FF"])),
-            font= getattr(params, "plot_font", "Times New Roman"))
+    sns.set(palette=tuple(getattr(params, "plot_palette", ["#E03C3F", "#FF9300", 
+                                                           "#F8BA00", "#CB297B", 
+                                                           "#6178A8", "#56C1FF"])),
+            font=getattr(params, "plot_font", "Times New Roman"))
     sns.set_style(getattr(params, "plot_style", "ticks"),  
-                  {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})
+                  {'xtick.major.size': 5.0, 'xtick.minor.size': 5.0, 
+                   'ytick.major.size': 5.0, 'ytick.minor.size': 5.0})
 
-def send_email(subject, message, to_addr = "eyuboglu@stanford.edu"):
-    server = smtplib.SMTP('smtp.gmail.com',587)
+
+def send_email(subject, message, to_addr="eyuboglu@stanford.edu"):
+    server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("sabriexperiments","experiments")
+    server.login("sabriexperiments", "experiments")
 
     msg = MIMEMultipart()       # create a message
 
@@ -103,7 +110,7 @@ def send_email(subject, message, to_addr = "eyuboglu@stanford.edu"):
     # setup the parameters of the message
     msg['From'] = "sabriexperiments@gmail.com"
     msg['To'] = to_addr
-    msg['Subject']= subject
+    msg['Subject'] = subject
 
     # add in the message body
     msg.attach(MIMEText(message, 'plain'))
@@ -113,7 +120,8 @@ def send_email(subject, message, to_addr = "eyuboglu@stanford.edu"):
                                msg.as_string())
     server.quit()
 
-def string_to_list(string, type=str, delimiter = " "):
+
+def string_to_list(string, type=str, delimiter=" "):
     """
     Converts a string to a list. 
     """
@@ -122,14 +130,17 @@ def string_to_list(string, type=str, delimiter = " "):
     string = sub(" +", " ", string)
     return map(type, string.split(delimiter))
 
+
 def fraction_nonzero(array):
     """
     Computes fraction of elements in array that are nonzero
     """
     return 1 - np.mean(np.isclose(0, array))
 
-def print_title(title = "Experiment", subtitle = None):
+
+def print_title(title="Experiment", subtitle=None):
     print(title)
-    if subtitle != None: print(subtitle)
+    if subtitle is not None: 
+        print(subtitle)
     print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
     print("====================================================")

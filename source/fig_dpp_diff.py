@@ -57,10 +57,12 @@ if __name__ == '__main__':
 
     for method_name, method_scores in method_to_scores.items():
         # Skip comparing reference to itself
-        if method_name == ref_name: continue
+        if method_name == ref_name: 
+            continue
 
         # Compute differences in scores
-        disease_to_diffs = {key: ref_scores[key] - method_scores[key] for key in ref_scores.keys()}
+        disease_to_diffs = {key: ref_scores[key] - method_scores[key] 
+                            for key in ref_scores.keys()}
         diffs = np.sort(np.array(list(disease_to_diffs.values())))
 
         mean_abs_diffs[method_name] = np.mean(np.abs(diffs))
@@ -69,14 +71,21 @@ if __name__ == '__main__':
         diffs = diffs * 100
         ref_start = np.where(diffs > 0.0)[0][0]
         method_end = np.where(diffs < 0.0)[-1][-1]
-        plt.plot(np.arange(ref_start, len(diffs)), diffs[ref_start:],label = ref_name, alpha = 0.6)
-        plt.fill_between(np.arange(ref_start, len(diffs)), 0, diffs[ref_start:], alpha = 0.6)
-        plt.plot(np.arange(method_end), diffs[:method_end], label = method_name,  alpha = 0.6)
-        plt.fill_between(np.arange(method_end), 0, diffs[:method_end], alpha = 0.6)
-        plt.title(ref_name + " " + params.metric + " Gain over " + method_name )
+
+        plt.plot(np.arange(ref_start, len(diffs)), diffs[ref_start:],
+                 label=ref_name, alpha=0.6)
+        plt.fill_between(np.arange(ref_start, len(diffs)), 
+                         0, diffs[ref_start:], alpha=0.6)
+        plt.plot(np.arange(method_end), diffs[:method_end], 
+                 label=method_name, alpha=0.6)
+        plt.fill_between(np.arange(method_end), 0, diffs[:method_end], alpha=0.6)
+
         plt.ylabel(params.metric + " Difference")
-        plt.xlabel("Diseases Sorted by Difference")
+        plt.xlabel("Disease Patheways Sorted by Difference")
         plt.legend()
+
+        sns.despine()
+
         plt.savefig(os.path.join(args.experiment_dir, ref_name + "-" + method_name + ".pdf"))
         plt.clf()
     
