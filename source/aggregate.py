@@ -57,7 +57,6 @@ class Aggregate(Experiment):
         """
         df = pd.read_csv(exp_dict["path"],
                          index_col=0)
-        print(df.shape)
         return df[exp_dict["cols"]]
         
     def _run(self):
@@ -68,9 +67,8 @@ class Aggregate(Experiment):
         self.results = pd.concat([self.process_experiment(exp)
                                   for exp in self.experiments],
                                  axis=1,
-                                 keys=([(col, exp["name"])
-                                        for col in exp["cols"]
-                                        for exp in self.experiments]))
+                                 keys=[exp["name"]
+                                       for exp in self.experiments])
     
     def save_results(self, summary=True):
         """
@@ -87,19 +85,27 @@ class Aggregate(Experiment):
         """
         Plot the results 
         """
+        logging.info("Plotting results...")
+
         figures_dir = os.path.join(self.dir, 'figures')
         if not os.path.exists(figures_dir):
             os.makedirs(figures_dir)
-        print(self.results.columns.values)
+
+        prepare_sns(sns, self.params)
         for plot in self.plots:
+            
             if plot["type"] == "scatter":
-                prepare_sns(sns, self.params)
                 series_a = self.results[tuple(plot["cols"][0])]
                 series_b = self.results[tuple(plot["cols"][1])]
                 sns.scatterplot(x=series_a, y=series_b)
+            
+            elif plot["type"] == "regplot":
+                series_a = self.results[tuple(plot["cols"][0])]
+                series_b = self.results[tuple(plot["cols"][1])]
+                sns.regplot(x=series_a, y=series_b)
 
-            plt.ylabel()
-            plt.xlabel(plot[]) TODO
+            plt.ylabel(plot["y_label"])
+            plt.xlabel(plot["x_label"])
             sns.despine(left=True)
 
             plt.tight_layout()

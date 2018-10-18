@@ -6,7 +6,9 @@ import random
 import os
 
 import numpy as np 
+import pandas as pd 
 import networkx as nx
+from goatools.obo_parser import GODag
 
 from method.ppi_matrix import build_ppi_comp_matrix, build_ppi_dn_matrix
 from util import print_title
@@ -19,8 +21,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--job', default='split_diseases',
                     help="which job should be performed")
 
+
 class Disease: 
-    def __init__(self, id, name, proteins, validation_proteins = None):
+    def __init__(self, id, name, proteins, validation_proteins=None):
         """ Initialize a disease. 
         Args:
             id (string) 
@@ -32,6 +35,9 @@ class Disease:
         self.name = name
         self.proteins = proteins
         self.validation_proteins = validation_proteins
+
+        self.doids = []
+        self.classes = []
     
     def to_node_array(self, protein_to_node, validation=False):
         """ Translates the diseases protein list to an array of node ids using
@@ -52,10 +58,76 @@ def is_disease_id(str):
     return len(str) == 8 and str[0] == 'C' and str[1:].isdigit()
 
 
+def load_doid(diseases,
+              hdo_path='data/raw/disease_ontology.obo'):
+    """
+    Adds a doids attribute to disease objects.
+    Allows for mapping between mesh ID (e.g. C003548), like those
+    used in the association files, and DOID (e.g. 0001816). 
+    args:
+        hdo_path    (string)
+        diseases    (dict)  meshID to disease object 
+    """
+    with open(hdo_path) as hdo_file:
+        for line in hdo_file:
+            if line.startswith('id:'):
+                doid = line.strip().split('id:')[1].strip()
+            elif line.startswith('xref: UMLS_CUI:'):
+                mesh_id = line.strip().split('xref: UMLS_CUI:')[1].strip()
+                if mesh_id in diseases:
+                    diseases[mesh_id].doids.append(doid)
+
+
+def load_disease_classes(diseases, 
+                         hdo_path='data/raw/disease_ontology.obo', 
+                         level=2):
+    """
+    Adds a classes attribute to disease objects.
+    """
+    obo = GODag(hdo_path)
+    load_doid(diseases, hdo_path)
+
+    num_unclassified = 0
+
+    for disease in diseases.values():
+        if not disease.doids: 
+            num_unclassified += 1 
+        for doid in disease.doids:
+            if obo[doid].level <= level:
+                disease.classes.append(obo[doid].name)
+            else:
+                for parent in obo[doid].get_all_parents():
+                    if obo[parent].level == level:
+                        disease.classes.append(obo[parent].name)
+    
+    print("Could not classify {:.2f}% ({}/{}) of diseases".format(
+          100.0 * num_unclassified / len(diseases),
+          num_unclassified,
+          len(diseases)))
+    
+
+def output_diseases(diseases, output_path):
+    """
+    Output disease objects to csv. 
+    args:
+        diseases    (dict)
+        output_path (string)
+    """
+    df = pd.DataFrame([{"name": disease.name,
+                        "class": "None" if not disease.classes else disease.classes[0],
+                        "size": len(disease.proteins)} 
+                       for disease in diseases.values()],
+                      index=[disease.id for disease in diseases.values()],
+                      columns=["name", "class", "size"])
+    df.index.name = "id"
+    df.to_csv(output_path)                
+
+
 def split_diseases(split_fractions, path):
     """ Splits a set of disease assocation into data sets i.e. train, test, and dev sets 
     Args: 
-        split_fractions (dictionary) dictionary mapping split name to fraction. fractions should sum to 1.0
+        split_fractions (dictionary) dictionary mapping split name to fraction. fractions 
+                                     should sum to 1.0
         path (string) 
     """
     with open(path) as file:
@@ -121,18 +193,19 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
             validation_proteins = None 
             if "Validation Gene IDs" in row:
                 validation_proteins = set([int(a.strip()) 
-                                        for a in row["Validation Gene IDs"].split(",")])
+                                          for a in row["Validation Gene IDs"].split(",")])
 
             elif "Validation Gene Names" in row: 
                 validation_proteins = set([int(name_to_protein[a.strip()]) 
                                            for a in row["Validation Gene Names"].split(",")
                                            if a.strip() in name_to_protein])
 
-            diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins, validation_proteins)
+            diseases[disease_id] = Disease(disease_id, disease_name, 
+                                           disease_proteins, validation_proteins)
     return diseases 
 
 
-def write_diseases(diseases, associations_path, threshold=10): 
+def write_associations(diseases, associations_path, threshold=10): 
     """ Write a set of disease-protein associations to a csv
     Args:
         diseases
@@ -177,7 +250,7 @@ def load_network(network_path=NETWORK_PATH):
     return nx.from_numpy_matrix(adj), adj, protein_to_node
 
 
-def build_random_network(model_path, name = "random-network.txt"):
+def build_random_network(model_path, name="random-network.txt"):
     """
     Generates a random network with degree sequence matching the network
     at model_path.
@@ -186,7 +259,7 @@ def build_random_network(model_path, name = "random-network.txt"):
     """
     model_networkx, _, protein_to_node = load_network(model_path)
     node_to_protein = {node: protein for protein, node in protein_to_node.items()}
-    deg_sequence =  np.array(model_networkx.degree())[:, 1]
+    deg_sequence = np.array(model_networkx.degree())[:, 1]
     random_network = nx.configuration_model(deg_sequence, create_using=nx.Graph)
     with open(os.path.join("data/networks/", name), 'w') as file:
         for edge in random_network.edges():
@@ -220,7 +293,7 @@ def load_gene_names(file_path, a_converter=lambda x: x, b_converter=lambda x: x)
 """ Biogrid Homo-Sapiens ID """
 HOMO_SAPIENS_ID = 9606
 
-def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
+def build_biogrid_network(biogrid_path, name='biogrid-network.txt'):
     """ Converts a biogrid PPI network into a list of entrez_ids. 
     Args:
         biogrid+path (string)
@@ -248,12 +321,14 @@ def build_biogrid_network(biogrid_path, name = 'biogrid-network.txt'):
         for interaction in interactions: 
             file.write(' '.join(interaction) + '\n')
 
-def build_string_network(string_path, name = 'string-network.txt'):
+
+def build_string_network(string_path, name='string-network.txt'):
     """ Converts a biogrid PPI network into a list of entrez_ids. 
     Args:
         biogrid+path (string)
     """
-    _, name_to_protein = load_gene_names('data/protein_data/entrez_to_string.tsv', a_converter=int)
+    _, name_to_protein = load_gene_names('data/protein_data/entrez_to_string.tsv', 
+                                         a_converter=int)
 
     interactions = []
 
@@ -266,7 +341,8 @@ def build_string_network(string_path, name = 'string-network.txt'):
                 continue
 
             # only include interactions for which we have an entrez id
-            if row['protein1'] not in name_to_protein or row['protein2'] not in name_to_protein:
+            if (row['protein1'] not in name_to_protein or 
+                row['protein2'] not in name_to_protein):
                 continue 
             
             interactions.append((str(name_to_protein[row['protein1']]), 
@@ -276,15 +352,14 @@ def build_string_network(string_path, name = 'string-network.txt'):
         for interaction in interactions: 
             file.write(' '.join(interaction) + '\n') 
 
-def build_disgenet_associations(disgenet_path, name = 'disgenet-associations.csv'):
+
+def build_disgenet_associations(disgenet_path, name='disgenet-associations.csv'):
     """ Converts a disgenet file of associations into the accepted format for
     gene-disease associations.
     Args: 
         disgenet_path
     """
     with open(disgenet_path, 'rb') as csvfile:
-        #for x in csvfile:
-        #    x.replace('\0', '')
         reader = csv.DictReader(csvfile, dialect='excel-tab')
         
         diseases = {}
@@ -296,7 +371,8 @@ def build_disgenet_associations(disgenet_path, name = 'disgenet-associations.csv
             disease = diseases.setdefault(disease_id, Disease(disease_id, disease_name, []))
             disease.proteins.append(int(gene_id))
     
-    write_diseases(diseases, os.path.join("data", "associations", name))  
+    write_associations(diseases, os.path.join("data", "associations", name))  
+
 
 if __name__ == '__main__':
     # Load the parameters from the experiment params.json file in model_dir
@@ -333,7 +409,14 @@ if __name__ == '__main__':
         _, ppi_network_adj, _ = load_network("data/networks/bio-pathways-network.txt")
 
         print("Building PPI Matrix...")
-        build_ppi_comp_matrix(ppi_network_adj, deg_fn = 'sqrt', row_norm = False, col_norm = False, network_name = "bio-pathways")
+        build_ppi_comp_matrix(ppi_network_adj, deg_fns='sqrt', row_norm=False, col_norm=False, network_name="bio-pathways")
+    
+    elif(args.job == "build_disease_classes"):
+        print_title("Build Disease Classes")
+
+        diseases = load_diseases('data/associations/disgenet-associations.csv')
+        load_disease_classes(diseases, hdo_path='data/raw/disease_ontology.obo')
+        output_diseases(diseases, 'data/disease_data/disgenet-classes.csv')
 
     elif(args.job == "generate_random_network"):
         print_title("Generating Random Network")
