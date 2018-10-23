@@ -1,0 +1,20 @@
+{
+    "n_processes": 5,
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+
+    "ppi_matrices": {"COMP": "data/ppi_matrices/bio-pathways/comp_sqrt_rnorm_cnorm.npy",
+                     "DNS": "data/ppi_matrices/bio-pathways/dn_id.npy"},
+
+    "n_random_pathways": 100,
+    "sd_sample": 50, 
+
+    "zscore": false,
+    "pvalue": true,
+    "fraction": false, 
+    
+    "plot_palette": ["#E03C3F", "#6178A8"],
+    "plot_font": "AppleGothic",
+    "disease_plots": ["C0023470", "C0162671", "C0018818"]
+}

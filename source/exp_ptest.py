@@ -285,19 +285,32 @@ class PermutationTest(Experiment):
             if np.allclose(null_results, 0):
                 return
 
-            sns.kdeplot(null_results, shade=True, kernel="gau", 
-                        color="grey", clip=(0, 1), label="Random Pathways")
+            if self.params.plot_type == "bar":
+                sns.distplot(null_results, kde=False, bins=20, 
+                             color="grey", label="Random Pathways")
+                plt.ylabel("Pathways [count]")
+ 
+            elif self.params.plot_type == "kde":
+                sns.kdeplot(null_results, shade=True, kernel="gau", 
+                            color="grey", label="Random Pathways")
+                plt.ylabel("Pathways [KDE]")
+                plt.yticks([])
+
+            elif self.params.plot_type == "bar_kde":
+                sns.distplot(null_results, kde=True, bins=20, 
+                            color="grey", label="Random Pathways") 
+                plt.ylabel("Pathways [count]")
 
             disease_mean = row[self.metric_fn.__name__ + "_" + name]
             sns.scatterplot(disease_mean, 0, label=disease.name)
 
-            plt.ylabel('Density [KDE]')
-            plt.xlabel("Median complementarity within pathway [value]")
-            plt.yticks([])
+            plt.xlabel(self.params.xlabel_disease.format(name))
             sns.despine()
 
             plt.tight_layout()
-            plt.savefig(os.path.join(disease_dir, name + "_mean.pdf"))
+            plt.savefig(os.path.join(disease_dir, 
+                                     name + "_{}_{}.pdf".format(self.params.metric_fn,
+                                                                self.params.plot_type)))
             plt.close()
             plt.clf()
     
@@ -306,30 +319,44 @@ class PermutationTest(Experiment):
         Estimates the distribution of z-scores for each metric across all diseases
         then plots the estimated distributions on the same plot. 
         """
-        plt.rc("xtick", labelsize=8)
+        plt.rc("xtick", labelsize=6)
+
+        figures_dir = os.path.join(self.dir, 'figures')
+        if not os.path.exists(figures_dir):
+            os.makedirs(figures_dir)
 
         for name in self.ppi_matrices.keys(): 
             if name in self.exclude:
                 continue 
             series = self.results["pvalue_" + name]
             series = np.array(series)
-            sns.kdeplot(series, shade=True, kernel="gau", clip=(0, 1), label=name)
-        
-        time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+            #sns.barplot(series, label=name)
+            if self.params.plot_type == "bar":
+                sns.distplot(series, bins=40, kde=False, 
+                             kde_kws={'clip': (0.0, 1.0)}, label=name)
+                plt.ylabel("Pathways [count]")
 
-        figures_dir = os.path.join(self.dir, 'figures')
-        if not os.path.exists(figures_dir):
-            os.makedirs(figures_dir)
+            elif self.params.plot_type == "kde":
+                sns.kdeplot(series, shade=True, kernel="gau", clip=(0, 1), label=name)
+                plt.ylabel("Pathways [KDE]")
+                plt.yticks([])
 
-        plot_path = os.path.join(figures_dir, 'pvalue_dist_' + time_string + '.pdf')
+            elif self.params.plot_type == "bar_kde":
+                sns.distplot(series, bins=40, kde=True, 
+                             kde_kws={'clip': (0.0, 1.0)}, label=name)
+                plt.ylabel("Pathways [count]")
 
-        plt.ylabel('Density [KDE]')
-        plt.xlabel('Median complementarity within pathway [p-value]')
+        plt.xlabel(self.params.xlabel_all)
         sns.despine()
         plt.xticks(np.arange(0.0, 1.0, 0.05))
-        plt.yticks([])
+        plt.legend()
 
         plt.tight_layout()
+        plt.xlim(xmin=0, xmax=1)
+
+        time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+        plot_path = os.path.join(figures_dir, 
+                                 'pvalue_dist_{}_'.format(self.params.plot_type) + time_string + '.pdf')
         plt.savefig(plot_path)
         plt.close()
         plt.clf()

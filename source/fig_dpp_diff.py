@@ -68,7 +68,7 @@ if __name__ == '__main__':
         mean_abs_diffs[method_name] = np.mean(np.abs(diffs))
 
         # Split into positive and negative 
-        #diffs = diffs * 100
+        # diffs = diffs * 100
         ref_start = np.where(diffs > 0.0)[0][0]
         method_end = np.where(diffs < 0.0)[-1][-1]
 
