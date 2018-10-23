@@ -68,7 +68,7 @@ if __name__ == '__main__':
         mean_abs_diffs[method_name] = np.mean(np.abs(diffs))
 
         # Split into positive and negative 
-        diffs = diffs * 100
+        #diffs = diffs * 100
         ref_start = np.where(diffs > 0.0)[0][0]
         method_end = np.where(diffs < 0.0)[-1][-1]
 
@@ -78,10 +78,11 @@ if __name__ == '__main__':
                          0, diffs[ref_start:], alpha=0.6)
         plt.plot(np.arange(method_end), diffs[:method_end], 
                  label=method_name, alpha=0.6)
+        plt.plot(np.arange(len(diffs)), np.zeros(len(diffs)), color='k', linewidth=0.8)
         plt.fill_between(np.arange(method_end), 0, diffs[:method_end], alpha=0.6)
 
         plt.ylabel(params.metric + " Difference")
-        plt.xlabel("Disease Patheways Sorted by Difference")
+        plt.xlabel("Disease Pathways Sorted by Difference")
         plt.legend()
 
         sns.despine()

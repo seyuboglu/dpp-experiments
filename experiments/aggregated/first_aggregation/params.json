@@ -38,8 +38,13 @@
                        ],
                "y_label": "Recall-at-100",
                "x_label": "Conductance of intermediate nodes"
-              }
-           
-
-    ]
+              },
+              {"name": "recall-v-auroc", 
+                "type": "regplot", 
+                "cols": [["comp_dpp[DP]", "Recall-at-100"],
+                         ["comp_dpp[DP]", "AUROC"]
+                        ],
+                "y_label": "AUROC",
+                "x_label": "Recall-at-100"
+               }]
 }

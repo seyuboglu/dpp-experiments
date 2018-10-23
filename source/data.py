@@ -167,6 +167,7 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
         diseases (dict)
     """
     diseases = {} 
+    total = 0
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
 
@@ -199,9 +200,10 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
                 validation_proteins = set([int(name_to_protein[a.strip()]) 
                                            for a in row["Validation Gene Names"].split(",")
                                            if a.strip() in name_to_protein])
-
+            total += len(disease_proteins)
             diseases[disease_id] = Disease(disease_id, disease_name, 
                                            disease_proteins, validation_proteins)
+    print(total)
     return diseases 
 
 
@@ -245,8 +247,8 @@ def load_network(network_path=NETWORK_PATH):
         for line in network_file:
             p1, p2 = [int(a) for a in line.split()]
             n1, n2 = protein_to_node[p1], protein_to_node[p2]
-            adj[n1,n2] = 1
-            adj[n2,n1] = 1
+            adj[n1, n2] = 1
+            adj[n2, n1] = 1
     return nx.from_numpy_matrix(adj), adj, protein_to_node
 
 
@@ -421,6 +423,16 @@ if __name__ == '__main__':
     elif(args.job == "generate_random_network"):
         print_title("Generating Random Network")
         build_random_network("data/networks/bio-pathways-network.txt")
+    
+    elif(args.job == "print_data"):
+        
+        diseases = load_diseases('data/associations/disgenet-associations.csv')
+
+        ppi_networkx, _, _ = load_network("data/networks/string-network.txt")
+        print("Nodes: {}".format(len(ppi_networkx)))
+        print("Edges: {}".format(ppi_networkx.number_of_edges()))
+
+
 
     else:
         print ("Job not recognized.")
