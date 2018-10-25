@@ -37,7 +37,9 @@ class Disease:
         self.validation_proteins = validation_proteins
 
         self.doids = []
-        self.classes = []
+        self.parents = []
+        self.class_doid = None 
+        self.class_name = None
     
     def to_node_array(self, protein_to_node, validation=False):
         """ Translates the diseases protein list to an array of node ids using
@@ -78,33 +80,75 @@ def load_doid(diseases,
                     diseases[mesh_id].doids.append(doid)
 
 
+def assign_classes(class_doid, class_diseases, class_doid_to_disease, diseases, min, max):
+    """
+    """
+    if len(class_diseases) < min:
+        for disease in class_diseases:
+            disease.class_id = None
+    elif len(class_diseases) > max:
+        for disease_id in class_diseases:
+            disease = diseases[disease_id]
+            level = disease.parents.index(class_doid) + 1
+            if level >= len(disease.parents):
+                disease.class_id = None 
+                continue
+            disease.class_doid = disease.parents[level]
+            class_doid_to_diseases.setdefault(class_doid, set()).add(disease.id)
+            assign_classes(class_doid, class_diseases, )
+
+
 def load_disease_classes(diseases, 
-                         hdo_path='data/raw/disease_ontology.obo', 
-                         level=2):
+                         hdo_path='data/raw/disease_ontology.obo',
+                         min_level=2, 
+                         min=10,
+                         max=100):
     """
     Adds a classes attribute to disease objects.
     """
     obo = GODag(hdo_path)
     load_doid(diseases, hdo_path)
 
-    num_unclassified = 0
-
+    class_doid_to_diseases = {}
     for disease in diseases.values():
         if not disease.doids: 
-            num_unclassified += 1 
-        for doid in disease.doids:
-            if obo[doid].level <= level:
-                disease.classes.append(obo[doid].name)
+            continue
+        doid = disease.doids[0]
+        disease.parents = [parent for parent in obo[doid].get_all_parents()]
+        if len(disease.parents) >= min_level:
+            disease.class_doid = disease.parents[min_level-1]
+        class_doid_to_diseases.setdefault(disease.class_doid, set()).add(disease.id)
+
+    num_classified = 0
+    while len(class_doid_to_diseases) > 0:
+        for class_doid, class_diseases in class_doid_to_diseases.items():
+            if len(class_diseases) < min:
+                for disease_id in class_diseases:
+                    disease = diseases[disease_id]
+                    disease.class_id = None
+                del class_doid_to_diseases[class_doid]
+            elif len(class_diseases) > max:
+                for disease_id in class_diseases:
+                    disease = diseases[disease_id]
+                    level = disease.parents.index(class_doid) + 1
+                    if level >= len(disease.parents):
+                        disease.class_id = None 
+                        continue
+                    disease.class_doid = disease.parents[level]
+                    class_doid_to_diseases.setdefault(disease.class_doid, set()).add(disease.id)
+                del class_doid_to_diseases[class_doid]
             else:
-                for parent in obo[doid].get_all_parents():
-                    if obo[parent].level == level:
-                        disease.classes.append(obo[parent].name)
+                num_classified += len(class_doid_to_diseases[class_doid])
+                for disease_id in class_diseases:
+                    print(obo[class_doid].name)
+                    diseases[disease_id].class_name = obo[class_doid].name
+                del class_doid_to_diseases[class_doid]
     
-    print("Could not classify {:.2f}% ({}/{}) of diseases".format(
-          100.0 * num_unclassified / len(diseases),
-          num_unclassified,
+    print("Classified {:.2f}% ({}/{}) of diseases".format(
+          100.0 * num_classified / len(diseases),
+          num_classified,
           len(diseases)))
-    
+
 
 def output_diseases(diseases, output_path):
     """
@@ -114,7 +158,8 @@ def output_diseases(diseases, output_path):
         output_path (string)
     """
     df = pd.DataFrame([{"name": disease.name,
-                        "class": "None" if not disease.classes else disease.classes[0],
+                        "class": "None" if  disease.class_name is None 
+                                 else disease.class_name,
                         "size": len(disease.proteins)} 
                        for disease in diseases.values()],
                       index=[disease.id for disease in diseases.values()],
@@ -294,6 +339,7 @@ def load_gene_names(file_path, a_converter=lambda x: x, b_converter=lambda x: x)
 
 """ Biogrid Homo-Sapiens ID """
 HOMO_SAPIENS_ID = 9606
+
 
 def build_biogrid_network(biogrid_path, name='biogrid-network.txt'):
     """ Converts a biogrid PPI network into a list of entrez_ids. 

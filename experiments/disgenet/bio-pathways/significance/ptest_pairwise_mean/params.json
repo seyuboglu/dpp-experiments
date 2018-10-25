@@ -12,10 +12,11 @@
 
     "metric_fn": "pairwise_mean",
     
-    "plot_type": "kde",
+    "plot_type": "bar",
     "plot_palette": ["#E03C3F", "#6178A8"],
     "plot_font": "AppleGothic",
     "disease_plots": ["C0023470", "C0162671", "C0018818"],
     "xlabel_all": "Mean score between protein pairs within pathway [p-value]",
-    "xlabel_disease": "Mean {} between protein pairs within pathway [value]"
+    "xlabel_disease": "Mean {} between protein pairs within pathway [value]",
+    "yscale": "log"
 }

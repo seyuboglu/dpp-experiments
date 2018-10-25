@@ -40,6 +40,7 @@ class Aggregate(Experiment):
         # Unpack parameters
         self.experiments = self.params.experiments
         self.plots = self.params.plots
+        self.groups_columns = self.params.groups_columns
 
         # Log title 
         logging.info("Aggregating Experiments")
@@ -48,7 +49,7 @@ class Aggregate(Experiment):
         logging.info("Loading Disease Associations...")
         self.diseases = load_diseases(self.params.diseases_path, 
                                       self.params.disease_subset)
-    
+            
     def process_experiment(self, exp_dict):
         """
         Dictionary of experiment info. 
@@ -70,6 +71,15 @@ class Aggregate(Experiment):
                                  keys=[exp["name"]
                                        for exp in self.experiments])
     
+    def summarize_results_by_group(self, column):
+        """
+        Group the results by column. 
+        args:
+            column  (string) The column used to form the groups
+        """
+        groups = self.results.groupby(column)
+        return groups.describe()
+
     def save_results(self, summary=True):
         """
         Saves the results to a csv using a pandas Data Fram
@@ -80,6 +90,11 @@ class Aggregate(Experiment):
         if summary:
             summary_df = self.summarize_results()
             summary_df.to_csv(os.path.join(self.dir, 'summary.csv'))
+        
+        for column in self.groups_columns:
+            summary_df = self.summarize_results_by_group(tuple(column))
+            summary_df.to_csv(os.path.join(self.dir, 'summary_{}.csv'.format(column[-1])))
+
     
     def plot_results(self):
         """
@@ -103,6 +118,12 @@ class Aggregate(Experiment):
                 series_a = self.results[tuple(plot["cols"][0])]
                 series_b = self.results[tuple(plot["cols"][1])]
                 sns.regplot(x=series_a, y=series_b)
+            
+            elif plot["type"] == "box":
+                #self.results.groupby(plot["group"])
+                sns.boxplot(x=tuple(plot["group"]), 
+                            y=tuple(plot["cols"][0]), 
+                            data=self.results)
 
             plt.ylabel(plot["y_label"])
             plt.xlabel(plot["x_label"])
@@ -110,6 +131,7 @@ class Aggregate(Experiment):
 
             plt.tight_layout()
             plt.savefig(os.path.join(figures_dir, plot["name"] + ".pdf"))
+            plt.show()
             plt.close()
             plt.clf()
 

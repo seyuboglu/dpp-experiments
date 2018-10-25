@@ -12,13 +12,14 @@
     "n_random_pathways": 100,
     "sd_sample": 50, 
     
-    "plot_type": "kde",
+    "plot_type": "bar",
     "plot_palette": ["#E03C3F", "#6178A8"],
     "plot_font": "AppleGothic",
     "disease_plots": ["C0023470", "C0162671", "C0018818"],
 
     "xlabel_all": "Median score between proteins within pathway [p-value]",
     "xlabel_disease": "Median {} beween proteins within pathway [value]",
+    "yscale": "log",
 
     "exclude": ["DNS"]
 }

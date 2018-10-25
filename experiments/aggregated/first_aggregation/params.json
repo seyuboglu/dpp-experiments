@@ -2,11 +2,13 @@
     "diseases_path": "data/associations/disgenet-associations.csv",
     "disease_subset": [],
 
+    "groups_columns": [["data", "class"]],
+
     "experiments": [{"name": "data",
                      "path": "data/disease_data/disgenet-classes.csv",
                      "cols": ["name", "class"]},
                     {"name": "loo_ptest[DP]", 
-                     "path": "experiments/disgenet/bio-pathways/significance/ptest_loo/results.csv",
+                     "path": "experiments/disgenet/bio-pathways/significance/ptest_loo_median/results.csv",
                      "cols": ["disease_size", "pvalue_COMP", "pvalue_DNS"]},
 
                     {"name": "comp_dpp[DP]", 
@@ -46,5 +48,14 @@
                         ],
                 "y_label": "AUROC",
                 "x_label": "Recall-at-100"
-               }]
+               },
+               {"name": "class-v-recall",
+                "type": "box",
+                "cols": [["comp_dpp[DP]", "Recall-at-100"]],
+                "group": ["data", "class"],
+                "threshold": 10,
+                "y_label": "Recall-at-100",
+                "x_label": "Disease Class"
+               }
+        ]
 }
