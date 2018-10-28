@@ -29,10 +29,10 @@
 
                      {"name": "subgraph_metrics[DP]", 
                       "path": "experiments/disgenet/bio-pathways/disease_subgraphs/subgraph_metrics.csv",
-                      "cols": ["Conductance of Disease Nodes", "Conductance of Intermediate Nodes"]}
+                      "cols": ["Conductance of Disease Nodes", "Conductance of Intermediate Nodes", "Density of Disease Subgraph"]}
                    ],
     
-    "plots": [{"name": "recalldiff-intercond", 
+    "plots": [{"name": "recall-intercond", 
                "type": "regplot", 
                "cols": [["subgraph_metrics[DP]", "Conductance of Intermediate Nodes"],
                         ["comp_dpp[DP]", "Recall-at-100"],
@@ -41,7 +41,23 @@
                "y_label": "Recall-at-100",
                "x_label": "Conductance of intermediate nodes"
               },
-              {"name": "recall-v-auroc", 
+              {"name": "comp_recall-density", 
+                "type": "regplot", 
+                "cols": [["subgraph_metrics[DP]", "Density of Disease Subgraph"],
+                         ["comp_dpp[DP]", "Recall-at-100"]                                  
+                        ],
+                "y_label": "Recall-at-100",
+                "x_label": "Density of pathway"
+               },
+               {"name": "rw_recall-density", 
+                "type": "regplot", 
+                "cols": [["subgraph_metrics[DP]", "Density of Disease Subgraph"],
+                         ["rw_dpp[DP]", "Recall-at-100"]                                  
+                        ],
+                "y_label": "Recall-at-100",
+                "x_label": "Density of pathway"
+               },
+               {"name": "recall-v-auroc", 
                 "type": "regplot", 
                 "cols": [["comp_dpp[DP]", "Recall-at-100"],
                          ["comp_dpp[DP]", "AUROC"]

@@ -335,22 +335,25 @@ class PermutationTest(Experiment):
                 sns.distplot(series, bins=40, kde=False, 
                              kde_kws={'clip': (0.0, 1.0)}, label=name)
                 plt.ylabel("Pathways [count{}]".format(r' $\log_{10}$' 
-                                                      if self.params.yscale == "log" 
-                                                      else ""))
+                                                       if self.params.yscale == "log" 
+                                                       else ""))
 
             elif self.params.plot_type == "kde":
                 sns.kdeplot(series, shade=True, kernel="gau", clip=(0, 1), label=name)
                 plt.ylabel("Pathways [KDE{}]".format(r' $\log_{10}$' 
-                                                      if self.params.yscale == "log" 
-                                                      else ""))
+                                                     if self.params.yscale == "log" 
+                                                     else ""))
                 plt.yticks([])
 
             elif self.params.plot_type == "bar_kde":
                 sns.distplot(series, bins=40, kde=True, 
                              kde_kws={'clip': (0.0, 1.0)}, label=name)
                 plt.ylabel("Pathways [count{}]".format(r' $\log_{10}$' 
-                                                        if self.params.yscale == "log" 
-                                                        else ""))
+                                                       if self.params.yscale == "log" 
+                                                       else ""))
+            
+            elif self.params.plot_type == "":
+                pass
 
         plt.xlabel(self.params.xlabel_all)
         sns.despine()

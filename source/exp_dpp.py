@@ -15,9 +15,10 @@ from tqdm import tqdm
 
 from exp import Experiment
 from method.ppi_matrix import compute_matrix_scores
-from method.random_walk import compute_random_walk_scores
+from method.random_walk import compute_random_walk_scores, L2RandomWalk
 from method.diamond import compute_diamond_scores
 from method.graph_cn import GCN
+from method.pathway_expansion import PathwayExpansion
 from method.lr import compute_lr_scores, build_embedding_feature_matrix
 from method.dns import compute_dns_scores
 from data import load_diseases, load_network
@@ -26,7 +27,7 @@ from analysis import positive_rankings, recall_at, recall, auroc, average_precis
 from util import Params, set_logger, parse_id_rank_pair
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--experiment_dir', default='experiments/base_model',
+parser.add_argument('--dir', default='experiments/base_model',
                     help="Directory containing params.json")
 
 class DPPExperiment(Experiment):
@@ -41,7 +42,7 @@ class DPPExperiment(Experiment):
         super(DPPExperiment, self).__init__(dir)
 
         # Set the logger
-        set_logger(os.path.join(args.experiment_dir, 'experiment.log'), level=logging.INFO, console=True)
+        set_logger(os.path.join(args.dir, 'experiment.log'), level=logging.INFO, console=True)
 
         # Log Title 
         logging.info("Disease Protein Prediction in the PPI Network")
@@ -62,7 +63,14 @@ class DPPExperiment(Experiment):
             self.ppi_matrix = np.load(self.params.ppi_matrix)
             # normalize columns of ppi_matrix
             if(self.params.normalize):
-                self.ppi_matrix = (self.ppi_matrix - np.mean(self.ppi_matrix, axis = 0)) / np.std(self.ppi_matrix, axis=0)
+                if hasattr(self.params, "norm_type"):
+                    if self.params.norm_type == "frac":
+                        self.ppi_matrix = self.ppi_matrix / np.sum(self.ppi_matrix, 
+                                                                   axis=0)
+                    elif self.params.norm_type == "zscore":
+                        self.ppi_matrix = (self.ppi_matrix - np.mean(self.ppi_matrix, axis=0)) / np.std(self.ppi_matrix, axis=0)
+                else:
+                    self.ppi_matrix = (self.ppi_matrix - np.mean(self.ppi_matrix, axis=0)) / np.std(self.ppi_matrix, axis=0)
          
             # zero out the diagonal
             np.fill_diagonal(self.ppi_matrix, 0)  
@@ -74,7 +82,12 @@ class DPPExperiment(Experiment):
                 self.feature_matrices.append(
                     build_embedding_feature_matrix(self.protein_to_node, 
                                                    features_filename))
-     
+        elif (self.params.method == 'l2_rw'):
+            self.method = L2RandomWalk(self.params)
+
+        elif (self.params.method == 'pathway_expansion'):
+            self.method = PathwayExpansion(self.params, self.ppi_network_adj)
+
         elif (self.params.method == 'gcn'):
             self.method = GCN(self.params, self.ppi_network_adj)
   
@@ -112,7 +125,6 @@ class DPPExperiment(Experiment):
         self.results = {"metrics": disease_to_metrics,
                         "ranks": disease_to_ranks}
    
-  
     def compute_node_scores(self, train_nodes, val_nodes):
         """ Get score 
         Args:
@@ -137,6 +149,12 @@ class DPPExperiment(Experiment):
         elif self.params.method == 'lr':
             scores = compute_lr_scores(self.feature_matrices, train_nodes, self.params)
 
+        elif self.params.method == 'l2_rw':
+            scores = self.method(train_nodes, val_nodes)
+
+        elif self.params.method == 'pathway_expansion':
+            scores = self.method(train_nodes, val_nodes)
+
         else:
             logging.error("No method" + self.params.method)
         return scores
@@ -148,7 +166,7 @@ class DPPExperiment(Experiment):
             disease: (Disease) A disease object
         """
         # create directory for disease 
-        disease_directory = os.path.join(args.experiment_dir, 'diseases', disease.id)
+        disease_directory = os.path.join(args.dir, 'diseases', disease.id)
         if not os.path.exists(disease_directory):
             os.makedirs(disease_directory)
 
@@ -271,6 +289,6 @@ def load_ranks(directory):
 if __name__ == "__main__":
     # Load the parameters from the experiment params.json file in model_dir
     args = parser.parse_args()
-    exp = DPPExperiment(args.experiment_dir)
+    exp = DPPExperiment(args.dir)
     if exp.run():
         exp.save_results()

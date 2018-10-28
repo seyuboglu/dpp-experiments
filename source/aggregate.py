@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 from tqdm import tqdm
+from scipy.stats import pearsonr
 
 from data import load_diseases, load_network
 from exp import Experiment
@@ -95,7 +96,6 @@ class Aggregate(Experiment):
             summary_df = self.summarize_results_by_group(tuple(column))
             summary_df.to_csv(os.path.join(self.dir, 'summary_{}.csv'.format(column[-1])))
 
-    
     def plot_results(self):
         """
         Plot the results 
@@ -112,18 +112,23 @@ class Aggregate(Experiment):
             if plot["type"] == "scatter":
                 series_a = self.results[tuple(plot["cols"][0])]
                 series_b = self.results[tuple(plot["cols"][1])]
-                sns.scatterplot(x=series_a, y=series_b)
+                ax = sns.scatterplot(x=series_a, y=series_b)
             
             elif plot["type"] == "regplot":
                 series_a = self.results[tuple(plot["cols"][0])]
                 series_b = self.results[tuple(plot["cols"][1])]
-                sns.regplot(x=series_a, y=series_b)
+                def r(x,y): return pearsonr(x, y)[0]
+                ax = sns.jointplot(x=series_a, 
+                                   y=series_b, 
+                                   kind="reg",
+                                   stat_func=r)
             
             elif plot["type"] == "box":
+                plt.rc("xtick", labelsize=6)
                 #self.results.groupby(plot["group"])
-                sns.boxplot(x=tuple(plot["group"]), 
-                            y=tuple(plot["cols"][0]), 
-                            data=self.results)
+                ax = sns.boxplot(x=tuple(plot["group"]), 
+                                 y=tuple(plot["cols"][0]), 
+                                 data=self.results)
 
             plt.ylabel(plot["y_label"])
             plt.xlabel(plot["x_label"])

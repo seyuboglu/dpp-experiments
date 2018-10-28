@@ -1,6 +1,7 @@
 """ Defines DPPMethod
 """
 
+
 class DPPMethod(object):
     """ 
     Base class for all disease protein prediction methods.
