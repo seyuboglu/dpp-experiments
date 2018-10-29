@@ -17,7 +17,7 @@ from exp import Experiment
 from method.ppi_matrix import compute_matrix_scores
 from method.random_walk import compute_random_walk_scores, L2RandomWalk
 from method.diamond import compute_diamond_scores
-from method.graph_cn import GCN
+#from method.graph_cn import GCN
 from method.pathway_expansion import PathwayExpansion
 from method.lr import compute_lr_scores, build_embedding_feature_matrix
 from method.dns import compute_dns_scores
