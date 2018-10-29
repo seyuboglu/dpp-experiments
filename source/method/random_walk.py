@@ -38,22 +38,17 @@ class L2RandomWalk(DPPMethod):
         ranked = np.argsort(np.sum(self.ppi_matrix[:, train_nodes], axis=1))
         l2_nodes = ranked[int((1 - self.percentile) * len(ranked)):]
         l2_train_nodes = np.union1d(train_nodes, l2_nodes)
-        print("Size: {}".format(len(l2_train_nodes)))
         l2_matrix = self.ppi_matrix[l2_train_nodes, :][:, l2_train_nodes]
-        print("Loading Network...")
         l2_networkx = nx.from_numpy_matrix(l2_matrix)
-        print("Done.")
         train_nodes = set(train_nodes)
         training_personalization = {i: (1.0 / len(train_nodes) 
                                     if node in train_nodes else 0) 
                                     for i, node in enumerate(l2_train_nodes)}
 
-        print("Running PageRank...")
         page_rank = nx.pagerank(l2_networkx, 
                                 alpha=self.alpha, 
                                 personalization=training_personalization,
                                 weight="weight")
-        print("Done.")
         l2_scores = np.array([page_rank.get(node, 0) for node in l2_networkx.nodes()])   
 
         scores = np.zeros(self.ppi_matrix.shape[0])
