@@ -13,7 +13,9 @@ class PathwayExpansion(DPPMethod):
         super(PathwayExpansion, self).__init__(params)
         self.ppi_network_adj = ppi_network_adj
         self.ppi_networkx = ppi_networkx
-        self.ppi_matrix = np.load(self.params.ppi_matrix)
+
+        if self.params.sub_method == "ppi_matrix":
+            self.ppi_matrix = np.load(self.params.ppi_matrix)
 
     def compute_scores(self, train_nodes, val_nodes):
         """
