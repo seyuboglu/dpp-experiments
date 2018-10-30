@@ -86,7 +86,9 @@ class DPPExperiment(Experiment):
             self.method = L2RandomWalk(self.params)
 
         elif (self.params.method == 'pathway_expansion'):
-            self.method = PathwayExpansion(self.params, self.ppi_network_adj)
+            self.method = PathwayExpansion(self.params, 
+                                           self.ppi_networkx, 
+                                           self.ppi_network_adj)
 
         elif (self.params.method == 'gcn'):
             self.method = GCN(self.params, self.ppi_network_adj)

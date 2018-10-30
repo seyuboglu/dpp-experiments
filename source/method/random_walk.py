@@ -35,11 +35,14 @@ class L2RandomWalk(DPPMethod):
     def compute_scores(self, train_nodes, val_nodes):
         """
         """
-        ranked = np.argsort(np.sum(self.ppi_matrix[:, train_nodes], axis=1))
-        l2_nodes = ranked[int((1 - self.percentile) * len(ranked)):]
+        #ranked = np.argsort(np.sum(self.ppi_matrix[:, train_nodes], axis=1))
+        #l2_nodes = ranked[int((1 - self.percentile) * len(ranked)):]
+
+        l2_nodes = np.nonzero(np.sum(self.ppi_matrix[:, train_nodes], axis=1))
         l2_train_nodes = np.union1d(train_nodes, l2_nodes)
         l2_matrix = self.ppi_matrix[l2_train_nodes, :][:, l2_train_nodes]
         l2_networkx = nx.from_numpy_matrix(l2_matrix)
+        print("Density: {}".format(nx.density(l2_networkx)))
         train_nodes = set(train_nodes)
         training_personalization = {i: (1.0 / len(train_nodes) 
                                     if node in train_nodes else 0) 
