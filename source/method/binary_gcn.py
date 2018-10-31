@@ -15,6 +15,7 @@ from gcn.train import perform_train
 from gcn.utils import format_data, sample_mask, inverse_sample_mask, get_negatives
 from method import DPPMethod
 
+
 class GCN(DPPMethod):
     """ GCN method class
     """

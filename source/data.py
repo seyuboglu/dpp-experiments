@@ -23,7 +23,7 @@ parser.add_argument('--job', default='split_diseases',
 
 
 class Disease: 
-    def __init__(self, id, name, proteins, validation_proteins=None):
+    def __init__(self, id, name, proteins, split="test"):
         """ Initialize a disease. 
         Args:
             id (string) 
@@ -34,7 +34,7 @@ class Disease:
         self.id = id
         self.name = name
         self.proteins = proteins
-        self.validation_proteins = validation_proteins
+        self.split = split
 
         self.doids = []
         self.parents = []
@@ -130,7 +130,7 @@ def output_diseases(diseases, output_path):
                       index=[disease.id for disease in diseases.values()],
                       columns=["name", "class", "size"])
     df.index.name = "id"
-    df.to_csv(output_path)                
+    df.to_csv(output_path, index=False)                
 
 
 def split_diseases(split_fractions, path):
@@ -140,31 +140,21 @@ def split_diseases(split_fractions, path):
                                      should sum to 1.0
         path (string) 
     """
-    with open(path) as file:
-        reader = csv.DictReader(file)
-        disease_rows = [row for row in reader if is_disease_id(row["Disease ID"])]
-        header = reader.fieldnames
-    
-    random.seed(360)
-    random.shuffle(disease_rows)
+    df = pd.read_csv(path)
 
-    split_rows = {}
+    # randomly shuffle
+    df = df.sample(frac=1).reset_index(drop=True)
+    num_diseases = len(df)
+    splits = np.empty(num_diseases, dtype=object)
     curr_start = 0
-    N = len(disease_rows)
     for name, fraction in split_fractions.items():
-        curr_end = curr_start + int(N * fraction)
-        split_rows[name] = disease_rows[curr_start : curr_end]
+        curr_end = curr_start + int(num_diseases * fraction)
+        splits[curr_start : curr_end] = name
         curr_start = curr_end
     
-    for name, rows in split_rows.items():
-        directory, filename = os.path.split(path)
-        split_path = os.path.join(directory, name + '_' + filename)
-        with open(split_path, 'w') as file:
-            writer = csv.DictWriter(file, header)
-            writer.writeheader()
-            for row in rows:
-                writer.writerow(row)
-    
+    df['splits'] = splits
+    df.to_csv(path, index=False)
+
 
 def load_diseases(associations_path=ASSOCIATIONS_PATH, 
                   diseases_subset=[], 
@@ -182,7 +172,7 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
         reader = csv.DictReader(associations_file)
 
         has_ids = "Associated Gene IDs" in reader.fieldnames
-        assert(has_ids or gene_names_path != None)
+        assert(has_ids or gene_names_path is not None)
 
         if not has_ids:
             _, name_to_protein = load_gene_names(gene_names_path)
@@ -200,19 +190,12 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
                 disease_proteins = set([int(name_to_protein[a.strip()]) 
                                         for a in row["Associated Genes Names"].split(",")
                                         if a.strip() in name_to_protein])
+            
+            split = row["splits"]
 
-            validation_proteins = None 
-            if "Validation Gene IDs" in row:
-                validation_proteins = set([int(a.strip()) 
-                                          for a in row["Validation Gene IDs"].split(",")])
-
-            elif "Validation Gene Names" in row: 
-                validation_proteins = set([int(name_to_protein[a.strip()]) 
-                                           for a in row["Validation Gene Names"].split(",")
-                                           if a.strip() in name_to_protein])
             total += len(disease_proteins)
-            diseases[disease_id] = Disease(disease_id, disease_name, 
-                                           disease_proteins, validation_proteins)
+            diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins, split)
+
     return diseases 
 
 
@@ -391,13 +374,15 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Log Title 
-    if(args.job == split_diseases):
+    if(args.job == "split_diseases"):
         print_title("Disease Set Splitting")
 
         print("Splitting diseases...")
-        split_fractions = {'val': 0.40,
-                        'test': 0.60}
-        split_diseases(split_fractions, 'experiments/associations/bio-pathways-associations.csv')
+        split_fractions = {'train': 0.35,
+                           'dev': 0.05,
+                           'test': 0.6
+                          }
+        split_diseases(split_fractions, 'data/associations/disgenet-associations.csv')
         print("Done.")
     
     elif(args.job == "build_biogrid"):

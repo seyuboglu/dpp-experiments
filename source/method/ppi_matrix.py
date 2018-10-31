@@ -133,7 +133,7 @@ def build_ppi_comp_matrix(ppi_adj, deg_fn = 'id', row_norm = False, col_norm = F
     inv_deg_vector = np.power(deg_vector, -1)
 
     # Build the complementarity matrix with sparse 
-    comp_matrix = (csr_matrix((inv_deg_vector*ppi_adj).T) * csr_matrix(ppi_adj)).toarray()
+    comp_matrix = (csr_matrix((inv_deg_vector * ppi_adj).T) * csr_matrix(ppi_adj)).toarray()
 
     if(row_norm):
         # Normalize by the degree of the query node. (row normalize)

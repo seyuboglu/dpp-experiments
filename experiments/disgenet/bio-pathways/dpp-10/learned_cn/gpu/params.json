@@ -1,0 +1,21 @@
+{
+    "n_processes": 1, 
+    "cuda": false,
+    "num_workers": 1,
+
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "learned_cn",
+
+    "learning_rate": 1e-1,
+    "weight_decay": 0,
+    "num_epochs": 50,
+    "batch_size": 2000,
+    "save_summary_steps": 40,
+
+    "primary_metric": "recall_at_100"
+}
