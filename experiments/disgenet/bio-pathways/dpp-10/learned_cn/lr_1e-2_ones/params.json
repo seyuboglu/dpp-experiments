@@ -1,6 +1,7 @@
 {
     "n_processes": 1, 
     "cuda": true,
+    "cuda_gpu": 0,
     "num_workers": 1,
 
     "ppi_network": "data/networks/bio-pathways-network.txt",
@@ -11,10 +12,11 @@
 
     "method": "learned_cn",
 
-    "learning_rate": 1e-1,
+    "initialization": "ones",
+    "learning_rate": 1e-2,
     "weight_decay": 0,
     "num_epochs": 50,
-    "batch_size": 2000,
+    "batch_size": 200,
     "save_summary_steps": 40,
 
     "primary_metric": "recall_at_100"

@@ -13,7 +13,7 @@ from torch.autograd import Variable
 from torch.optim import Adam
 from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
-from scipy.sparse import coo_matrix
+from scipy.sparse import coo_matrix, csr_matrix
 
 from method import DPPMethod
 from learned_cn.metrics import metrics
@@ -76,6 +76,7 @@ class LearnedCN(DPPMethod):
         """
         # Adjacency: Get sparse representation of ppi_adj
 
+
         return scores
     
 
@@ -85,30 +86,39 @@ class CNModule(nn.Module):
         super(CNModule, self).__init__()
 
         # build degree vector
-        D = np.sum(adjacency, axis=1)
+        D = np.sum(adjacency, axis=1, keepdims=True)
         D = np.power(D, -0.5)
-        self.D = torch.tensor(D, dtype=torch.double)
+        D = torch.tensor(D, dtype=torch.float)
+        self.register_buffer("D", D)
 
         # convert adjacency to sparse matrix
-        self.A = torch.tensor(adjacency, dtype=torch.double)
-        self.A = torch.mul(torch.mul(self.D, self.A), self.D.view(-1, 1))
+        A = torch.tensor(adjacency, dtype=torch.float)
+        A = torch.mul(torch.mul(D, A), D.view(-1, 1))
+        self.register_buffer("A", A)
         N, _ = self.A.shape
 
         coo = coo_matrix(self.A)
         i = torch.LongTensor(np.vstack((coo.row, coo.col)))
-        v = torch.DoubleTensor(coo.data)
-        self.A_sparse = torch.sparse.DoubleTensor(i, v, torch.Size(coo.shape))
+        v = torch.FloatTensor(coo.data)
+        A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
+        self.register_buffer("A_sparse", A_sparse)
 
-        self.W = nn.Parameter(Variable(torch.ones(1, N, dtype=torch.double), 
-                              requires_grad=True))
+        if params.initialization == "ones":
+            self.W = nn.Parameter(torch.ones(1, N, 
+                                              dtype=torch.float,
+                                              requires_grad=True))
+        elif params.initialization == "zeros":
+            self.W = nn.Parameter(torch.zeros(1, N, 
+                                              dtype=torch.float,
+                                              requires_grad=True))
+        else:
+            logging.error("Initialization not recognized.")
 
     def forward(self, input):
         """
         """
         X = input 
-        WA = torch.mul(self.W, self.A)
-        AWA = torch.matmul(self.A_sparse, WA)
-        X = torch.matmul(X, AWA)
+        X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W, self.A)))
         return X 
 
 
@@ -136,9 +146,9 @@ class DiseaseDataset(Dataset):
         split = int(self.frac_known * len(nodes))
         known_nodes = nodes[:split]
         hidden_nodes = nodes[split:]
-        X = torch.zeros(self.n, dtype=torch.double)
+        X = torch.zeros(self.n, dtype=torch.float)
         X[known_nodes] = 1
-        Y = torch.zeros(self.n, dtype=torch.double) 
+        Y = torch.zeros(self.n, dtype=torch.float) 
         Y[hidden_nodes] = 1
         return X, Y
 
@@ -176,8 +186,8 @@ def fetch_dataloader(splits, diseases, protein_to_node, params):
 def bce_loss(outputs, labels, params):
     """
     """
-    num_pos = 1.0 * labels.data.cpu().sum()
-    num_neg = labels.data.cpu().nelement() - num_pos
+    num_pos = 1.0 * labels.data.sum()
+    num_neg = labels.data.nelement() - num_pos
     bce_loss = nn.BCEWithLogitsLoss(pos_weight=num_neg / num_pos)
     return bce_loss(outputs, labels)
 
@@ -224,6 +234,7 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
             # compute model output and loss
             if params.cuda:
                 model.cuda(params.cuda_gpu)
+            
             output_batch = model(data_batch)
             loss = loss_fn(output_batch, labels_batch, getattr(params, 'loss_params', None))
 
@@ -375,8 +386,12 @@ def train_and_evaluate(model, train_dataloader,
         is_best = val_primary_metric >= best_val_primary_metric
 
         # Save weights
+        # can't save sparse tensor
+        state_dict = model.state_dict()
+        del state_dict["A_sparse"]
+        del state_dict["A"]
         save_checkpoint({'epoch': epoch + 1,
-                         'state_dict': model.state_dict(),
+                         'state_dict': state_dict,
                          'optim_dict' : optimizer.state_dict()},
                         is_best=is_best,
                         checkpoint=model_dir)
