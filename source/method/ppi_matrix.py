@@ -14,13 +14,15 @@ from scipy.sparse import csr_matrix
 
 #from utils import get_negatives
 
+
 def softmax(x):
     """softmax for a vector x. Numerically stable implementation
     Args:
         x (np.array)
     """
-    exp_x = np.exp(x - np.max(x, axis = 0))
-    return exp_x / np.sum(exp_x, axis = 0)
+    exp_x = np.exp(x - np.max(x, axis=0))
+    return exp_x / np.sum(exp_x, axis=0)
+
 
 def load_ppi_matrices(name_to_matrix):
     """

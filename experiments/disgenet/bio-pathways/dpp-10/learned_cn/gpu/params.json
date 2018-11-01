@@ -1,6 +1,6 @@
 {
     "n_processes": 1, 
-    "cuda": false,
+    "cuda": true,
     "num_workers": 1,
 
     "ppi_network": "data/networks/bio-pathways-network.txt",
