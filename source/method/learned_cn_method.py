@@ -76,7 +76,6 @@ class LearnedCN(DPPMethod):
         """
         # Adjacency: Get sparse representation of ppi_adj
 
-
         return scores
     
 
@@ -100,13 +99,12 @@ class CNModule(nn.Module):
         v = torch.DoubleTensor(coo.data)
         self.A_sparse = torch.sparse.DoubleTensor(i, v, torch.Size(coo.shape))
 
-        self.W = nn.Parameter(Variable(torch.zeros(1, N, dtype=torch.double), 
+        self.W = nn.Parameter(Variable(torch.ones(1, N, dtype=torch.double), 
                               requires_grad=True))
 
     def forward(self, input):
         """
         """
-        print(self.W)
         X = input 
         WA = torch.mul(self.W, self.A)
         AWA = torch.matmul(self.A_sparse, WA)
@@ -138,7 +136,7 @@ class DiseaseDataset(Dataset):
         split = int(self.frac_known * len(nodes))
         known_nodes = nodes[:split]
         hidden_nodes = nodes[split:]
-        X = torch.ones(self.n, dtype=torch.double)
+        X = torch.zeros(self.n, dtype=torch.double)
         X[known_nodes] = 1
         Y = torch.zeros(self.n, dtype=torch.double) 
         Y[hidden_nodes] = 1
