@@ -193,7 +193,7 @@ class DPPExperiment(Experiment):
 
         # Perform k-fold cross validation
         n_folds = disease_nodes.size if self.params.n_folds < 0 or self.params.n_folds > len(disease_nodes) else self.params.n_folds
-        kf = KFold(n_splits = n_folds, shuffle=False)
+        kf = KFold(n_splits=n_folds, shuffle=False)
 
         for train_indices, test_indices in kf.split(disease_nodes):
             train_nodes = disease_nodes[train_indices]
