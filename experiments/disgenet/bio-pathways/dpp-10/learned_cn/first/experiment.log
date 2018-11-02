@@ -653,3 +653,193 @@
 2018-10-31 16:21:32,806:INFO: Train
 2018-10-31 16:22:33,262:INFO: - Train metrics: recall_at_100: 0.068 ; loss: 1.094
 2018-10-31 16:22:33,309:INFO: Evaluate
+2018-11-01 11:30:35,110:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 11:30:35,110:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 11:30:35,110:INFO: ======================================
+2018-11-01 11:30:35,110:INFO: Loading PPI Network...
+2018-11-01 11:30:43,651:INFO: Loading Disease Associations...
+2018-11-01 11:31:31,514:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 11:31:31,514:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 11:31:31,515:INFO: ======================================
+2018-11-01 11:31:31,515:INFO: Loading PPI Network...
+2018-11-01 11:31:38,921:INFO: Loading Disease Associations...
+2018-11-01 11:31:53,003:INFO: Starting training for 50 epoch(s)
+2018-11-01 11:31:53,004:INFO: Epoch 1/50
+2018-11-01 11:31:53,004:INFO: Train
+2018-11-01 11:32:47,939:INFO: - Train metrics: recall_at_100: 0.027 ; loss: 1.435
+2018-11-01 11:32:47,985:INFO: Evaluate
+2018-11-01 11:33:04,828:INFO: - Evaluate metrics: recall_at_100: 0.020 ; loss: 1.433
+2018-11-01 11:33:05,248:INFO: - Found new best recall_at_100
+2018-11-01 11:33:05,259:INFO: Epoch 2/50
+2018-11-01 11:33:05,260:INFO: Train
+2018-11-01 13:21:44,598:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:21:44,598:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:21:44,598:INFO: ======================================
+2018-11-01 13:21:44,598:INFO: Loading PPI Network...
+2018-11-01 13:21:53,568:INFO: Loading Disease Associations...
+2018-11-01 13:22:22,350:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:22:22,362:INFO: Epoch 1/50
+2018-11-01 13:22:22,362:INFO: Train
+2018-11-01 13:22:47,479:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:22:47,479:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:22:47,479:INFO: ======================================
+2018-11-01 13:22:47,479:INFO: Loading PPI Network...
+2018-11-01 13:22:58,075:INFO: Loading Disease Associations...
+2018-11-01 13:23:26,569:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:23:26,600:INFO: Epoch 1/50
+2018-11-01 13:23:26,603:INFO: Train
+2018-11-01 13:23:45,475:INFO: - Train metrics: recall_at_100: 0.012 ; loss: 7.981
+2018-11-01 13:23:45,527:INFO: Evaluate
+2018-11-01 13:23:47,158:INFO: - Evaluate metrics: recall_at_100: 0.012 ; loss: 7.979
+2018-11-01 13:23:47,178:INFO: - Found new best recall_at_100
+2018-11-01 13:23:47,183:INFO: Epoch 2/50
+2018-11-01 13:23:47,183:INFO: Train
+2018-11-01 13:26:06,042:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:26:06,042:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:26:06,042:INFO: ======================================
+2018-11-01 13:26:06,042:INFO: Loading PPI Network...
+2018-11-01 13:26:13,856:INFO: Loading Disease Associations...
+2018-11-01 13:26:48,765:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:26:48,765:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:26:48,765:INFO: ======================================
+2018-11-01 13:26:48,765:INFO: Loading PPI Network...
+2018-11-01 13:26:56,636:INFO: Loading Disease Associations...
+2018-11-01 13:27:17,554:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:27:17,558:INFO: Epoch 1/50
+2018-11-01 13:27:17,558:INFO: Train
+2018-11-01 13:27:31,993:INFO: - Train metrics: recall_at_100: 0.017 ; loss: 1.806
+2018-11-01 13:27:32,043:INFO: Evaluate
+2018-11-01 13:27:33,468:INFO: - Evaluate metrics: recall_at_100: 0.015 ; loss: 1.799
+2018-11-01 13:27:33,482:INFO: - Found new best recall_at_100
+2018-11-01 13:27:33,484:INFO: Epoch 2/50
+2018-11-01 13:27:33,484:INFO: Train
+2018-11-01 13:27:46,360:INFO: - Train metrics: recall_at_100: 0.017 ; loss: 1.801
+2018-11-01 13:27:46,408:INFO: Evaluate
+2018-11-01 13:27:47,870:INFO: - Evaluate metrics: recall_at_100: 0.013 ; loss: 1.801
+2018-11-01 13:27:47,882:INFO: Epoch 3/50
+2018-11-01 13:27:47,882:INFO: Train
+2018-11-01 13:28:00,675:INFO: - Train metrics: recall_at_100: 0.017 ; loss: 1.806
+2018-11-01 13:28:00,716:INFO: Evaluate
+2018-11-01 13:28:02,146:INFO: - Evaluate metrics: recall_at_100: 0.013 ; loss: 1.802
+2018-11-01 13:28:02,162:INFO: Epoch 4/50
+2018-11-01 13:28:02,162:INFO: Train
+2018-11-01 13:28:14,855:INFO: - Train metrics: recall_at_100: 0.018 ; loss: 1.807
+2018-11-01 13:28:14,897:INFO: Evaluate
+2018-11-01 13:28:16,415:INFO: - Evaluate metrics: recall_at_100: 0.025 ; loss: 1.794
+2018-11-01 13:28:16,431:INFO: - Found new best recall_at_100
+2018-11-01 13:28:16,431:INFO: Epoch 5/50
+2018-11-01 13:28:16,431:INFO: Train
+2018-11-01 13:29:36,911:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:29:36,912:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:29:36,912:INFO: ======================================
+2018-11-01 13:29:36,912:INFO: Loading PPI Network...
+2018-11-01 13:29:45,412:INFO: Loading Disease Associations...
+2018-11-01 13:30:10,036:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:30:10,040:INFO: Epoch 1/50
+2018-11-01 13:30:10,040:INFO: Train
+2018-11-01 13:30:24,828:INFO: - Train metrics: recall_at_100: 0.017 ; loss: 7.979
+2018-11-01 13:30:24,879:INFO: Evaluate
+2018-11-01 13:30:26,360:INFO: - Evaluate metrics: recall_at_100: 0.013 ; loss: 7.979
+2018-11-01 13:30:26,378:INFO: - Found new best recall_at_100
+2018-11-01 13:30:26,380:INFO: Epoch 2/50
+2018-11-01 13:30:26,380:INFO: Train
+2018-11-01 13:30:39,406:INFO: - Train metrics: recall_at_100: 0.023 ; loss: 7.978
+2018-11-01 13:30:39,454:INFO: Evaluate
+2018-11-01 13:30:40,926:INFO: - Evaluate metrics: recall_at_100: 0.002 ; loss: 7.978
+2018-11-01 13:30:40,940:INFO: Epoch 3/50
+2018-11-01 13:30:40,940:INFO: Train
+2018-11-01 13:31:06,372:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:31:06,373:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:31:06,373:INFO: ======================================
+2018-11-01 13:31:06,373:INFO: Loading PPI Network...
+2018-11-01 13:31:14,196:INFO: Loading Disease Associations...
+2018-11-01 13:31:36,304:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:31:36,315:INFO: Epoch 1/50
+2018-11-01 13:31:36,315:INFO: Train
+2018-11-01 13:31:50,784:INFO: - Train metrics: recall_at_100: 0.018 ; loss: 7.978
+2018-11-01 13:31:50,836:INFO: Evaluate
+2018-11-01 13:31:52,390:INFO: - Evaluate metrics: recall_at_100: 0.018 ; loss: 7.978
+2018-11-01 13:31:52,407:INFO: - Found new best recall_at_100
+2018-11-01 13:31:52,409:INFO: Epoch 2/50
+2018-11-01 13:31:52,409:INFO: Train
+2018-11-01 13:32:26,138:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:32:26,138:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:32:26,138:INFO: ======================================
+2018-11-01 13:32:26,138:INFO: Loading PPI Network...
+2018-11-01 13:32:33,976:INFO: Loading Disease Associations...
+2018-11-01 13:32:56,689:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:32:56,699:INFO: Epoch 1/50
+2018-11-01 13:32:56,699:INFO: Train
+2018-11-01 13:33:11,882:INFO: - Train metrics: recall_at_100: 0.156 ; loss: 1.326
+2018-11-01 13:33:11,934:INFO: Evaluate
+2018-11-01 13:33:13,385:INFO: - Evaluate metrics: recall_at_100: 0.135 ; loss: 1.340
+2018-11-01 13:33:13,401:INFO: - Found new best recall_at_100
+2018-11-01 13:33:13,403:INFO: Epoch 2/50
+2018-11-01 13:33:13,403:INFO: Train
+2018-11-01 13:34:31,708:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 13:34:31,708:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 13:34:31,708:INFO: ======================================
+2018-11-01 13:34:31,708:INFO: Loading PPI Network...
+2018-11-01 13:34:39,622:INFO: Loading Disease Associations...
+2018-11-01 13:34:56,259:INFO: Starting training for 50 epoch(s)
+2018-11-01 13:34:56,263:INFO: Epoch 1/50
+2018-11-01 13:34:56,263:INFO: Train
+2018-11-01 13:35:55,803:INFO: - Train metrics: recall_at_100: 0.175 ; loss: 1.377
+2018-11-01 13:35:55,837:INFO: Evaluate
+2018-11-01 20:00:21,456:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 20:00:21,456:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 20:00:21,456:INFO: ======================================
+2018-11-01 20:00:21,456:INFO: Loading PPI Network...
+2018-11-01 20:00:30,464:INFO: Loading Disease Associations...
+2018-11-01 20:01:03,757:INFO: Disease Protein Prediction in the PPI Network
+2018-11-01 20:01:03,757:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-01 20:01:03,757:INFO: ======================================
+2018-11-01 20:01:03,757:INFO: Loading PPI Network...
+2018-11-01 20:01:11,229:INFO: Loading Disease Associations...
+2018-11-01 20:01:18,876:INFO: Starting training for 50 epoch(s)
+2018-11-01 20:01:18,876:INFO: Epoch 1/50
+2018-11-01 20:01:18,877:INFO: Train
+2018-11-02 12:18:29,085:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:18:29,085:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:18:29,086:INFO: ======================================
+2018-11-02 12:18:29,086:INFO: Loading PPI Network...
+2018-11-02 12:18:38,469:INFO: Loading Disease Associations...
+2018-11-02 12:20:44,826:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:20:44,826:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:20:44,826:INFO: ======================================
+2018-11-02 12:20:44,826:INFO: Loading PPI Network...
+2018-11-02 12:20:52,953:INFO: Loading Disease Associations...
+2018-11-02 12:52:00,956:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:52:00,956:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:52:00,956:INFO: ======================================
+2018-11-02 12:52:00,956:INFO: Loading PPI Network...
+2018-11-02 12:52:10,056:INFO: Loading Disease Associations...
+2018-11-02 12:52:26,141:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:52:26,141:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:52:26,141:INFO: ======================================
+2018-11-02 12:52:26,141:INFO: Loading PPI Network...
+2018-11-02 12:52:34,474:INFO: Loading Disease Associations...
+2018-11-02 12:57:09,393:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:57:09,393:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:57:09,393:INFO: ======================================
+2018-11-02 12:57:09,393:INFO: Loading PPI Network...
+2018-11-02 12:57:17,454:INFO: Loading Disease Associations...
+2018-11-02 12:57:27,030:INFO: Starting training for 50 epoch(s)
+2018-11-02 12:57:27,032:INFO: Epoch 1/50
+2018-11-02 12:57:27,032:INFO: Train
+2018-11-02 12:58:43,863:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:58:43,864:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:58:43,864:INFO: ======================================
+2018-11-02 12:58:43,864:INFO: Loading PPI Network...
+2018-11-02 12:58:51,971:INFO: Loading Disease Associations...
+2018-11-02 12:59:01,136:INFO: Starting training for 50 epoch(s)
+2018-11-02 12:59:01,137:INFO: Epoch 1/50
+2018-11-02 12:59:01,137:INFO: Train
+2018-11-02 12:59:27,357:INFO: Disease Protein Prediction in the PPI Network
+2018-11-02 12:59:27,358:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-02 12:59:27,358:INFO: ======================================
+2018-11-02 12:59:27,358:INFO: Loading PPI Network...
+2018-11-02 12:59:35,288:INFO: Loading Disease Associations...
+2018-11-02 12:59:43,313:INFO: Starting training for 50 epoch(s)
+2018-11-02 12:59:43,313:INFO: Epoch 1/50
+2018-11-02 12:59:43,313:INFO: Train

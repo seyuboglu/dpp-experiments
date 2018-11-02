@@ -39,7 +39,7 @@ if __name__ == '__main__':
     
     if hasattr(params, "diseases_path"):
         diseases_dict = load_diseases(params.diseases_path)
-
+    count = 0
     recall_curves = {}
     for name, method_exp_dir in params.method_exp_dirs.items():
         if(params.by_disease):
@@ -49,10 +49,13 @@ if __name__ == '__main__':
                 for i, row in enumerate(rank_reader):
                     if i == 0: 
                         continue
-                    if  (hasattr(params, "associations_threshold") and 
+                    if (hasattr(params, "associations_threshold") and 
                         params.associations_threshold > len(row) - 2):
                         continue
-                        
+                    if (hasattr(params, "splits") and 
+                        diseases_dict[row[0]].split not in params.splits):
+                        continue 
+                    count += 1
                     ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
                     ranks = np.array(ranks).astype(int)
                     rank_bin_count = np.bincount(ranks)
@@ -62,9 +65,11 @@ if __name__ == '__main__':
                                               (0, params.length - len(recall_curve)), 
                                               'edge')
                     recall_curve_sum += recall_curve[:params.length]
-            recall_curve = (recall_curve_sum/(i+1))
+            recall_curve = (recall_curve_sum/(count))
             recall_curves[name] = recall_curve
             plt.plot(recall_curve, label = name, linewidth = 2.0 if name == params.primary else 1.3 )
+            print(count)
+            count = 0
         else: 
             ranks = []
             with open(os.path.join(method_exp_dir, 'ranks.csv'), 'r') as ranks_file:

@@ -68,12 +68,12 @@ class LearnedCN(DPPMethod):
         self.model = model
         self.model.eval()
 
-
     def compute_scores(self, train_pos, val_pos):
         """ Compute the scores predicted by GCN.
         Args: 
             
         """
+        val_pos = None
         # Adjacency: Get sparse representation of ppi_adj
         N, _ = self.adjacency.shape
         X = torch.zeros(1, N)
@@ -144,6 +144,65 @@ class CNModule(nn.Module):
         return X 
 
 
+class VecCNModule(nn.Module):
+
+    def __init__(self, params, adjacency):
+        super(VecCNModule, self).__init__()
+
+        # build degree vector
+        D = np.sum(adjacency, axis=1, keepdims=True)
+        D = np.power(D, -0.5)
+        D = torch.tensor(D, dtype=torch.float)
+        self.register_buffer("D", D)
+
+        # convert adjacency to sparse matrix
+        A = torch.tensor(adjacency, dtype=torch.float)
+        A = torch.mul(torch.mul(D, A), D.view(-1, 1))
+        self.register_buffer("A", A)
+        N, _ = self.A.shape
+
+        coo = coo_matrix(self.A)
+        i = torch.LongTensor(np.vstack((coo.row, coo.col)))
+        v = torch.FloatTensor(coo.data)
+        A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
+        self.register_buffer("A_sparse", A_sparse)
+        
+
+        if params.initialization == "ones":
+            self.W = nn.Parameter(torch.ones(1, N, 
+                                              dtype=torch.float,
+                                              requires_grad=True))
+        elif params.initialization == "zeros":
+            self.W = nn.Parameter(torch.zeros(1, N, 
+                                              dtype=torch.float,
+                                              requires_grad=True))
+        else:
+            logging.error("Initialization not recognized.")
+    
+    def eval(self):
+        """
+        """
+        super(CNModule, self).eval()
+
+        self.AWA = torch.matmul(self.A_sparse, torch.mul(self.W, self.A))
+    
+    def train(self, mode=True):
+        super(CNModule, self).train(mode)
+
+        if hasattr(self, "AWA"):
+            del self.AWA
+
+    def forward(self, input):
+        """
+        """
+        X = input 
+        if self.training:
+            X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W, self.A)))
+        else:
+            X = torch.matmul(X, self.AWA)
+        return X 
+
+
 class DiseaseDataset(Dataset):
     """
     """
@@ -151,7 +210,8 @@ class DiseaseDataset(Dataset):
         """
         """
         self.n = len(protein_to_node)
-        self.examples = [disease.to_node_array(protein_to_node) 
+        self.examples = [{"id": disease.id, 
+                          "nodes": disease.to_node_array(protein_to_node)}
                          for disease 
                          in diseases]
         self.frac_known = frac_known
@@ -162,16 +222,29 @@ class DiseaseDataset(Dataset):
         """
         return len(self.examples)
     
+    def get_ids(self):
+        """
+        Returns a set of all the disease ids in
+        dataset.
+        """
+        return set([disease["id"] for disease in self.examples])
+
     def __getitem__(self, idx):
-        nodes = self.examples[idx]
+        nodes = self.examples[idx]["nodes"]
         np.random.shuffle(nodes)
         split = int(self.frac_known * len(nodes))
+
         known_nodes = nodes[:split]
         hidden_nodes = nodes[split:]
+
         X = torch.zeros(self.n, dtype=torch.float)
         X[known_nodes] = 1
         Y = torch.zeros(self.n, dtype=torch.float) 
         Y[hidden_nodes] = 1
+
+        # ensure no data leakage
+        assert(torch.dot(X, Y) == 0)
+
         return X, Y
 
 
@@ -196,12 +269,16 @@ def fetch_dataloader(splits, diseases, protein_to_node, params):
                 for split, diseases 
                 in datasets.items()}
 
+    # ensure no data leakage
+    assert(not set.intersection(*[dataset.get_ids() for dataset in datasets.values()]))
+
     for split in splits:
         dataloaders[split] = DataLoader(datasets[split], 
                                         batch_size=params.batch_size, 
                                         shuffle=True,
                                         num_workers=params.num_workers,
                                         pin_memory=params.cuda)
+
     return dataloaders
 
 
@@ -242,16 +319,13 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
     # Use tqdm for progress bar
     with tqdm(total=len(dataloader)) as t:
         for i, (data_batch, labels_batch) in enumerate(dataloader):
+            # ensure no data leakage
+            assert(torch.dot(data_batch.view(-1), labels_batch.view(-1)) == 0)
+
             # move to GPU if available
-        
             if params.cuda:
                 labels_batch = labels_batch.cuda(params.cuda_gpu, async=True)
-                if isinstance(data_batch, list):
-                    data_batch = tuple(x.cuda(params.cuda_gpu, async=True) 
-                                       for x 
-                                       in data_batch)
-                else:
-                    data_batch = data_batch.cuda(params.cuda_gpu, async=True)
+                data_batch = data_batch.cuda(params.cuda_gpu, async=True)
 
             # compute model output and loss
             if params.cuda:
@@ -282,15 +356,11 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
             t.set_postfix(loss='{:05.3f}'.format(loss_avg()))
             t.update()
 
-    # log output sample of the final batch
-    #logging.info('Train output sample:')
-    #logging.info('labels[{}]: {}'.format(rand_idx, labels_batch[rand_idx]))
-    #logging.info('output[{}]: {}'.format(rand_idx, output_batch[rand_idx]))
-
     # compute mean of all metrics in summary
     outputs, labels = zip(*outputs_labels)
     outputs = torch.cat(outputs, dim=0)
     labels = torch.cat(labels, dim=0)
+    assert()
     summary = {metric : metrics[metric](outputs, labels)
                for metric in metrics}
     summary['loss'] = np.mean(losses)
@@ -321,13 +391,12 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
     # compute metrics over the dataset
     with tqdm(total=len(dataloader)) as t:
         for data_batch, labels_batch in dataloader:
+            # ensure no data leakage
+            assert(torch.dot(data_batch.view(-1), labels_batch.view(-1)) == 0)
             # move to GPU if available
             if params.cuda:
                 labels_batch = labels_batch.cuda(params.cuda_gpu, async=True)
-                if isinstance(data_batch, list):
-                    data_batch = tuple(x.cuda(params.cuda_gpu, async=True) for x in data_batch)
-                else:
-                    data_batch = data_batch.cuda(params.cuda_gpu, async=True)
+                data_batch = data_batch.cuda(params.cuda_gpu, async=True)
 
             output_batch = model(data_batch)
             if params.cuda:
@@ -344,12 +413,6 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
             outputs_labels.append((output_batch.data.cpu(), labels_batch.data.cpu()))
 
             t.update()
-
-
-    # log output sample of the final batch
-    #logging.info('Validation output sample:')
-    #logging.info('labels[{}]: {}'.format(rand_idx, labels_batch[rand_idx]))
-    #logging.info('output[{}]: {}'.format(rand_idx, output_batch[rand_idx]))
 
     # compute mean of all metrics in summary
     outputs, labels = zip(*outputs_labels)

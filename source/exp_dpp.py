@@ -191,10 +191,6 @@ class DPPExperiment(Experiment):
         labels[disease_nodes, 0] = 1 
         metrics = {}
 
-        if getattr(self.params, 'saliency_map', False): 
-            rank_corrs = []
-            p_values = []
-
         # Perform k-fold cross validation
         n_folds = disease_nodes.size if self.params.n_folds < 0 or self.params.n_folds > len(disease_nodes) else self.params.n_folds
         kf = KFold(n_splits = n_folds, shuffle=False)
@@ -202,27 +198,16 @@ class DPPExperiment(Experiment):
         for train_indices, test_indices in kf.split(disease_nodes):
             train_nodes = disease_nodes[train_indices]
             val_nodes = disease_nodes[test_indices]
-
+            
             # compute node scores 
             scores = self.compute_node_scores(train_nodes, val_nodes)
 
             # compute the metrics of target node
             compute_metrics(metrics, labels, scores, train_nodes, val_nodes)
 
-            # compute saliency maps
-            if getattr(self.params, 'saliency_map', False): 
-                rank_corr, p_value = self.method.analyze_saliency_maps(disease_directory, self.node_to_protein)
-                rank_corrs.extend(rank_corr)
-                p_values.extend(p_value)
-
         avg_metrics = {name: np.mean(values) for name, values in metrics.items()}
         proteins = [self.node_to_protein[node] for node in metrics["Nodes"]]
         ranks = metrics["Ranks"]
-
-        if getattr(self.params, 'saliency_map', False):
-            avg_metrics["GCN-Comp Rank Correlation"] = np.mean(rank_corrs)
-            print(avg_metrics["GCN-Comp Rank Correlation"])
-            avg_metrics["GCN-Comp P-Value"] = stats.combine_pvalues(p_values)[1]
 
         proteins_to_ranks = {protein: ranks for protein, ranks in zip(proteins, ranks)}
         return disease, avg_metrics, proteins_to_ranks 
