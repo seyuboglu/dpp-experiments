@@ -45,7 +45,12 @@ class LearnedCN(DPPMethod):
         train_dl = dataloaders['train']
         dev_dl = dataloaders['dev']
 
-        model = CNModule(self.params, self.adjacency)
+        if params.model == "scalar_cn":
+            model = CNModule(self.params, self.adjacency)
+        elif params.model == "vec_cn":
+            model = VecCNModule(self.params, self.adjacency)
+        else:
+            logging.error("Model not recognized.")
 
         if self.params.cuda:
             model = model.cuda()
@@ -111,8 +116,8 @@ class CNModule(nn.Module):
 
         if params.initialization == "ones":
             self.W = nn.Parameter(torch.ones(1, N, 
-                                              dtype=torch.float,
-                                              requires_grad=True))
+                                             dtype=torch.float,
+                                             requires_grad=True))
         elif params.initialization == "zeros":
             self.W = nn.Parameter(torch.zeros(1, N, 
                                               dtype=torch.float,
