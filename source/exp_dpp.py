@@ -164,9 +164,12 @@ class DPPExperiment(Experiment):
 
         elif self.params.method == 'pathway_expansion':
             scores = self.method(train_nodes, val_nodes)
-
+        
+        elif self.params.method == 'learned_cn':
+            scores = self.method(train_nodes, val_nodes)
+            
         else:
-            logging.error("No method" + self.params.method)
+            logging.error("No method " + self.params.method)
         return scores
 
 

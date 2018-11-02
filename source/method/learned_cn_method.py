@@ -54,6 +54,7 @@ class LearnedCN(DPPMethod):
                          weight_decay=self.params.weight_decay)
         
         logging.info("Starting training for {} epoch(s)".format(self.params.num_epochs))
+        model.train()
         train_and_evaluate(
             model,
             train_dl,
@@ -64,19 +65,23 @@ class LearnedCN(DPPMethod):
             self.params,
             self.experiment_dir
         )
+        self.model = model
+        self.model.eval()
+
 
     def compute_scores(self, train_pos, val_pos):
         """ Compute the scores predicted by GCN.
         Args: 
-            ppi_adj_sparse (sp.coo)
-            features_sparse (sp.lil)
-            train_pos (np.array)
-            val_pos (np.array)
-            params (dict)
+            
         """
         # Adjacency: Get sparse representation of ppi_adj
-
-
+        N, _ = self.adjacency.shape
+        X = torch.zeros(1, N)
+        X[0, train_pos] = 1
+        if self.params.cuda:
+            X = X.cuda()
+        Y = self.model(X)
+        scores = Y.cpu().detach().numpy().squeeze()
         return scores
     
 
@@ -102,6 +107,7 @@ class CNModule(nn.Module):
         v = torch.FloatTensor(coo.data)
         A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
         self.register_buffer("A_sparse", A_sparse)
+        
 
         if params.initialization == "ones":
             self.W = nn.Parameter(torch.ones(1, N, 
@@ -113,12 +119,28 @@ class CNModule(nn.Module):
                                               requires_grad=True))
         else:
             logging.error("Initialization not recognized.")
+    
+    def eval(self):
+        """
+        """
+        super(CNModule, self).eval()
+
+        self.AWA = torch.matmul(self.A_sparse, torch.mul(self.W, self.A))
+    
+    def train(self, mode=True):
+        super(CNModule, self).train(mode)
+
+        if hasattr(self, "AWA"):
+            del self.AWA
 
     def forward(self, input):
         """
         """
         X = input 
-        X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W, self.A)))
+        if self.training:
+            X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W, self.A)))
+        else:
+            X = torch.matmul(X, self.AWA)
         return X 
 
 
