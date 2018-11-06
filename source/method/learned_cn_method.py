@@ -45,9 +45,9 @@ class LearnedCN(DPPMethod):
         train_dl = dataloaders['train']
         dev_dl = dataloaders['dev']
 
-        if params.model == "scalar_cn":
+        if self.params.model == "scalar_cn":
             model = CNModule(self.params, self.adjacency)
-        elif params.model == "vec_cn":
+        elif self.params.model == "vec_cn":
             model = VecCNModule(self.params, self.adjacency)
         else:
             logging.error("Model not recognized.")
@@ -162,10 +162,10 @@ class VecCNModule(nn.Module):
         # convert adjacency to sparse matrix
         A = torch.tensor(adjacency, dtype=torch.float)
         A = torch.mul(torch.mul(D, A), D.view(-1, 1))
-        #self.register_buffer("A", A)
+        self.register_buffer("A", A)
         
         n, _ = A.shape
-        self.d = self.params.d
+        self.d = params.d
 
         coo = coo_matrix(A)
         i = torch.LongTensor(np.vstack((coo.row, coo.col)))
@@ -184,17 +184,18 @@ class VecCNModule(nn.Module):
         else:
             logging.error("Initialization not recognized.")
         
-        self.linear = nn.Linear(self.params.d, 1)
+        
+        self.linear = nn.Linear(self.d, 1)
     
     def eval(self):
         """
         """
-        super(CNModule, self).eval()
+        super(VecCNModule, self).eval()
 
         #self.AWA = torch.matmul(self.A_sparse, torch.mul(self.E, self.A))
     
     def train(self, mode=True):
-        super(CNModule, self).train(mode)
+        super(VecCNModule, self).train(mode)
 
         if hasattr(self, "AWA"):
             del self.AWA
@@ -207,14 +208,15 @@ class VecCNModule(nn.Module):
         """
         m, n = input.shape
         X = input  # m x n
-        XA = torch.matmul(X, self.A_sparse)  # m x n
+        XA = torch.matmul(X, self.A)  # m x n
         XAE = torch.mul(XA, self.E)  # d x m x n
-        XAEA = torch.matmul(XAE, self.A_sparse)  # d x m x n
-        X = XAEA.view(self.params.d, -1)
-        X = self.linear(X)
-        X = X.view(m, n)
+        XAEA = torch.matmul(XAE, self.A)  # d x m x n
+        X = XAEA.squeeze()
+        #X = XAEA.view(-1, self.d)
+        #X = self.linear(X)
+        #X = X.view(m, n)
 
-        return X 
+        return X
 
 
 class DiseaseDataset(Dataset):
@@ -374,7 +376,6 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
     outputs, labels = zip(*outputs_labels)
     outputs = torch.cat(outputs, dim=0)
     labels = torch.cat(labels, dim=0)
-    assert()
     summary = {metric : metrics[metric](outputs, labels)
                for metric in metrics}
     summary['loss'] = np.mean(losses)
