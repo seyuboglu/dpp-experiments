@@ -89,7 +89,7 @@ class LearnedCN(DPPMethod):
         scores = Y.cpu().detach().numpy().squeeze()
         return scores
 
-class DepCNModule(nn.Module):
+class QueryModule(nn.Module):
     
     def __init__(self, params, adjacency):
         super(CNModule, self).__init__()
@@ -234,11 +234,11 @@ class VecCNModule(nn.Module):
         self.register_buffer("A_sparse", A_sparse)
         
         if params.initialization == "ones":
-            self.E = nn.Parameter(torch.ones(self.d, 1, N, 
+            self.E = nn.Parameter(torch.ones(self.d, N, 1, 
                                              dtype=torch.float,
                                              requires_grad=True))
         elif params.initialization == "zeros":
-            self.E = nn.Parameter(torch.zeros(self.d, 1, N, 
+            self.E = nn.Parameter(torch.zeros(self.d, N, 1, 
                                               dtype=torch.float,
                                               requires_grad=True))
         else:
@@ -269,16 +269,11 @@ class VecCNModule(nn.Module):
         m, n = input.shape
         X = input  # m x n
 
-        #H = torch.matmul(X, self.A)
-        H = torch.matmul(self.A_sparse, torch.mul(self.E.view(1, -1), self.A))  # d x m x n
-        X = torch.matmul(X, H)
-        #X = XAEA.squeeze()
-        
-        
-        #X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.E.squeeze(), self.A)))
-        #X = XAEA.view(-1, self.d)
-        #X = self.linear(X)
-        #X = X.view(m, n)
+        X = torch.matmul(X, self.A)
+        X = torch.matmul(X, torch.mul(self.E, self.A))
+        X = X.view(-1, self.d)        )
+        X = self.linear(X)
+        X = X.view(m, n)
 
         return X
 
