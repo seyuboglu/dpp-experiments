@@ -208,10 +208,17 @@ class VecCNModule(nn.Module):
         """
         m, n = input.shape
         X = input  # m x n
-        XA = torch.matmul(X, self.A)  # m x n
-        XAE = torch.mul(XA, self.E)  # d x m x n
-        XAEA = torch.matmul(XAE, self.A)  # d x m x n
-        X = XAEA.squeeze()
+        #XA = torch.matmul(X, self.A)  # m x n
+        #XAE = torch.mul(XA, self.E)  # d x m x n
+        #XAEA = torch.matmul(XAE, self.A)  # d x m x n
+
+        #XA = torch.matmul(X, self.A)  # m x n
+        #EA = torch.mul(self.E, self.A)  # d x m x n
+        #XAEA = torch.matmul(XA, EA)  # d x m x n
+
+        #X = XAEA.squeeze()
+        print("HI")
+        X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W, self.A)))
         #X = XAEA.view(-1, self.d)
         #X = self.linear(X)
         #X = X.view(m, n)
