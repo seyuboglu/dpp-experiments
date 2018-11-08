@@ -271,7 +271,7 @@ class VecCNModule(nn.Module):
         X = torch.matmul(X, self.A)
         X = torch.mul(X, self.E).squeeze()
         X = torch.matmul(X, self.A)
-        X = self.linear(X.view(m * n, self.d)).squeeze()
+        X = self.linear(X.view(self.d, m * n).t())
         X = X.view(m, n)
 
         return X
