@@ -1,0 +1,392 @@
+2018-11-08 14:01:03,582:INFO: Disease Protein Prediction in the PPI Network
+2018-11-08 14:01:03,583:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-11-08 14:01:03,583:INFO: ======================================
+2018-11-08 14:01:03,583:INFO: Loading PPI Network...
+2018-11-08 14:01:10,758:INFO: Loading Disease Associations...
+2018-11-08 14:01:22,374:INFO: Starting training for 75 epoch(s)
+2018-11-08 14:01:22,375:INFO: Epoch 1/75
+2018-11-08 14:01:22,375:INFO: Train
+2018-11-08 14:01:26,372:INFO: - Train metrics: recall_at_100: 0.099 ; loss: 1.362
+2018-11-08 14:01:26,375:INFO: Evaluate
+2018-11-08 14:01:27,497:INFO: - Evaluate metrics: recall_at_100: 0.130 ; loss: 1.356
+2018-11-08 14:01:27,697:INFO: - Found new best recall_at_100
+2018-11-08 14:01:27,764:INFO: Epoch 2/75
+2018-11-08 14:01:27,764:INFO: Train
+2018-11-08 14:01:31,947:INFO: - Train metrics: recall_at_100: 0.128 ; loss: 1.336
+2018-11-08 14:01:31,952:INFO: Evaluate
+2018-11-08 14:01:32,985:INFO: - Evaluate metrics: recall_at_100: 0.133 ; loss: 1.331
+2018-11-08 14:01:33,095:INFO: - Found new best recall_at_100
+2018-11-08 14:01:33,188:INFO: Epoch 3/75
+2018-11-08 14:01:33,188:INFO: Train
+2018-11-08 14:01:37,109:INFO: - Train metrics: recall_at_100: 0.145 ; loss: 1.305
+2018-11-08 14:01:37,115:INFO: Evaluate
+2018-11-08 14:01:38,172:INFO: - Evaluate metrics: recall_at_100: 0.140 ; loss: 1.315
+2018-11-08 14:01:38,281:INFO: - Found new best recall_at_100
+2018-11-08 14:01:38,360:INFO: Epoch 4/75
+2018-11-08 14:01:38,360:INFO: Train
+2018-11-08 14:01:42,558:INFO: - Train metrics: recall_at_100: 0.148 ; loss: 1.314
+2018-11-08 14:01:42,563:INFO: Evaluate
+2018-11-08 14:01:43,602:INFO: - Evaluate metrics: recall_at_100: 0.154 ; loss: 1.304
+2018-11-08 14:01:43,703:INFO: - Found new best recall_at_100
+2018-11-08 14:01:43,803:INFO: Epoch 5/75
+2018-11-08 14:01:43,803:INFO: Train
+2018-11-08 14:01:48,060:INFO: - Train metrics: recall_at_100: 0.139 ; loss: 1.305
+2018-11-08 14:01:48,065:INFO: Evaluate
+2018-11-08 14:01:49,179:INFO: - Evaluate metrics: recall_at_100: 0.124 ; loss: 1.294
+2018-11-08 14:01:49,269:INFO: Epoch 6/75
+2018-11-08 14:01:49,269:INFO: Train
+2018-11-08 14:01:53,528:INFO: - Train metrics: recall_at_100: 0.152 ; loss: 1.262
+2018-11-08 14:01:53,541:INFO: Evaluate
+2018-11-08 14:01:54,649:INFO: - Evaluate metrics: recall_at_100: 0.150 ; loss: 1.279
+2018-11-08 14:01:54,730:INFO: Epoch 7/75
+2018-11-08 14:01:54,730:INFO: Train
+2018-11-08 14:01:59,003:INFO: - Train metrics: recall_at_100: 0.154 ; loss: 1.274
+2018-11-08 14:01:59,010:INFO: Evaluate
+2018-11-08 14:02:00,062:INFO: - Evaluate metrics: recall_at_100: 0.129 ; loss: 1.278
+2018-11-08 14:02:00,176:INFO: Epoch 8/75
+2018-11-08 14:02:00,176:INFO: Train
+2018-11-08 14:02:04,325:INFO: - Train metrics: recall_at_100: 0.167 ; loss: 1.258
+2018-11-08 14:02:04,330:INFO: Evaluate
+2018-11-08 14:02:05,434:INFO: - Evaluate metrics: recall_at_100: 0.120 ; loss: 1.274
+2018-11-08 14:02:05,530:INFO: Epoch 9/75
+2018-11-08 14:02:05,530:INFO: Train
+2018-11-08 14:02:09,706:INFO: - Train metrics: recall_at_100: 0.135 ; loss: 1.233
+2018-11-08 14:02:09,711:INFO: Evaluate
+2018-11-08 14:02:10,793:INFO: - Evaluate metrics: recall_at_100: 0.158 ; loss: 1.259
+2018-11-08 14:02:10,920:INFO: - Found new best recall_at_100
+2018-11-08 14:02:11,072:INFO: Epoch 10/75
+2018-11-08 14:02:11,072:INFO: Train
+2018-11-08 14:02:15,253:INFO: - Train metrics: recall_at_100: 0.147 ; loss: 1.258
+2018-11-08 14:02:15,259:INFO: Evaluate
+2018-11-08 14:02:16,373:INFO: - Evaluate metrics: recall_at_100: 0.112 ; loss: 1.259
+2018-11-08 14:02:16,460:INFO: Epoch 11/75
+2018-11-08 14:02:16,461:INFO: Train
+2018-11-08 14:02:20,618:INFO: - Train metrics: recall_at_100: 0.135 ; loss: 1.225
+2018-11-08 14:02:20,623:INFO: Evaluate
+2018-11-08 14:02:21,721:INFO: - Evaluate metrics: recall_at_100: 0.162 ; loss: 1.243
+2018-11-08 14:02:21,873:INFO: - Found new best recall_at_100
+2018-11-08 14:02:22,017:INFO: Epoch 12/75
+2018-11-08 14:02:22,017:INFO: Train
+2018-11-08 14:02:26,158:INFO: - Train metrics: recall_at_100: 0.162 ; loss: 1.254
+2018-11-08 14:02:26,163:INFO: Evaluate
+2018-11-08 14:02:27,267:INFO: - Evaluate metrics: recall_at_100: 0.174 ; loss: 1.243
+2018-11-08 14:02:27,402:INFO: - Found new best recall_at_100
+2018-11-08 14:02:27,535:INFO: Epoch 13/75
+2018-11-08 14:02:27,536:INFO: Train
+2018-11-08 14:02:31,879:INFO: - Train metrics: recall_at_100: 0.140 ; loss: 1.222
+2018-11-08 14:02:31,885:INFO: Evaluate
+2018-11-08 14:02:32,900:INFO: - Evaluate metrics: recall_at_100: 0.170 ; loss: 1.240
+2018-11-08 14:02:33,005:INFO: Epoch 14/75
+2018-11-08 14:02:33,005:INFO: Train
+2018-11-08 14:02:36,980:INFO: - Train metrics: recall_at_100: 0.152 ; loss: 1.229
+2018-11-08 14:02:36,985:INFO: Evaluate
+2018-11-08 14:02:37,919:INFO: - Evaluate metrics: recall_at_100: 0.137 ; loss: 1.251
+2018-11-08 14:02:38,003:INFO: Epoch 15/75
+2018-11-08 14:02:38,003:INFO: Train
+2018-11-08 14:02:42,236:INFO: - Train metrics: recall_at_100: 0.155 ; loss: 1.239
+2018-11-08 14:02:42,239:INFO: Evaluate
+2018-11-08 14:02:43,266:INFO: - Evaluate metrics: recall_at_100: 0.149 ; loss: 1.230
+2018-11-08 14:02:43,415:INFO: Epoch 16/75
+2018-11-08 14:02:43,415:INFO: Train
+2018-11-08 14:02:47,514:INFO: - Train metrics: recall_at_100: 0.195 ; loss: 1.221
+2018-11-08 14:02:47,519:INFO: Evaluate
+2018-11-08 14:02:48,597:INFO: - Evaluate metrics: recall_at_100: 0.175 ; loss: 1.222
+2018-11-08 14:02:48,710:INFO: - Found new best recall_at_100
+2018-11-08 14:02:48,819:INFO: Epoch 17/75
+2018-11-08 14:02:48,819:INFO: Train
+2018-11-08 14:02:53,001:INFO: - Train metrics: recall_at_100: 0.130 ; loss: 1.221
+2018-11-08 14:02:53,007:INFO: Evaluate
+2018-11-08 14:02:54,057:INFO: - Evaluate metrics: recall_at_100: 0.157 ; loss: 1.223
+2018-11-08 14:02:54,140:INFO: Epoch 18/75
+2018-11-08 14:02:54,141:INFO: Train
+2018-11-08 14:02:58,263:INFO: - Train metrics: recall_at_100: 0.158 ; loss: 1.228
+2018-11-08 14:02:58,267:INFO: Evaluate
+2018-11-08 14:02:59,315:INFO: - Evaluate metrics: recall_at_100: 0.166 ; loss: 1.234
+2018-11-08 14:02:59,404:INFO: Epoch 19/75
+2018-11-08 14:02:59,405:INFO: Train
+2018-11-08 14:03:03,343:INFO: - Train metrics: recall_at_100: 0.166 ; loss: 1.205
+2018-11-08 14:03:03,347:INFO: Evaluate
+2018-11-08 14:03:04,401:INFO: - Evaluate metrics: recall_at_100: 0.126 ; loss: 1.231
+2018-11-08 14:03:04,461:INFO: Epoch 20/75
+2018-11-08 14:03:04,461:INFO: Train
+2018-11-08 14:03:08,447:INFO: - Train metrics: recall_at_100: 0.139 ; loss: 1.215
+2018-11-08 14:03:08,451:INFO: Evaluate
+2018-11-08 14:03:09,552:INFO: - Evaluate metrics: recall_at_100: 0.165 ; loss: 1.211
+2018-11-08 14:03:09,661:INFO: Epoch 21/75
+2018-11-08 14:03:09,661:INFO: Train
+2018-11-08 14:03:13,861:INFO: - Train metrics: recall_at_100: 0.136 ; loss: 1.232
+2018-11-08 14:03:13,864:INFO: Evaluate
+2018-11-08 14:03:14,932:INFO: - Evaluate metrics: recall_at_100: 0.169 ; loss: 1.220
+2018-11-08 14:03:15,024:INFO: Epoch 22/75
+2018-11-08 14:03:15,024:INFO: Train
+2018-11-08 14:03:18,907:INFO: - Train metrics: recall_at_100: 0.170 ; loss: 1.189
+2018-11-08 14:03:18,912:INFO: Evaluate
+2018-11-08 14:03:20,060:INFO: - Evaluate metrics: recall_at_100: 0.155 ; loss: 1.206
+2018-11-08 14:03:20,144:INFO: Epoch 23/75
+2018-11-08 14:03:20,145:INFO: Train
+2018-11-08 14:03:24,451:INFO: - Train metrics: recall_at_100: 0.184 ; loss: 1.196
+2018-11-08 14:03:24,456:INFO: Evaluate
+2018-11-08 14:03:25,320:INFO: - Evaluate metrics: recall_at_100: 0.143 ; loss: 1.224
+2018-11-08 14:03:25,412:INFO: Epoch 24/75
+2018-11-08 14:03:25,412:INFO: Train
+2018-11-08 14:03:29,413:INFO: - Train metrics: recall_at_100: 0.167 ; loss: 1.210
+2018-11-08 14:03:29,418:INFO: Evaluate
+2018-11-08 14:03:30,468:INFO: - Evaluate metrics: recall_at_100: 0.160 ; loss: 1.196
+2018-11-08 14:03:30,559:INFO: Epoch 25/75
+2018-11-08 14:03:30,559:INFO: Train
+2018-11-08 14:03:34,466:INFO: - Train metrics: recall_at_100: 0.162 ; loss: 1.198
+2018-11-08 14:03:34,470:INFO: Evaluate
+2018-11-08 14:03:35,500:INFO: - Evaluate metrics: recall_at_100: 0.170 ; loss: 1.212
+2018-11-08 14:03:35,581:INFO: Epoch 26/75
+2018-11-08 14:03:35,581:INFO: Train
+2018-11-08 14:03:39,749:INFO: - Train metrics: recall_at_100: 0.142 ; loss: 1.229
+2018-11-08 14:03:39,754:INFO: Evaluate
+2018-11-08 14:03:40,814:INFO: - Evaluate metrics: recall_at_100: 0.179 ; loss: 1.210
+2018-11-08 14:03:40,942:INFO: - Found new best recall_at_100
+2018-11-08 14:03:41,051:INFO: Epoch 27/75
+2018-11-08 14:03:41,052:INFO: Train
+2018-11-08 14:03:45,239:INFO: - Train metrics: recall_at_100: 0.164 ; loss: 1.197
+2018-11-08 14:03:45,244:INFO: Evaluate
+2018-11-08 14:03:46,351:INFO: - Evaluate metrics: recall_at_100: 0.132 ; loss: 1.212
+2018-11-08 14:03:46,440:INFO: Epoch 28/75
+2018-11-08 14:03:46,440:INFO: Train
+2018-11-08 14:03:50,519:INFO: - Train metrics: recall_at_100: 0.169 ; loss: 1.191
+2018-11-08 14:03:50,525:INFO: Evaluate
+2018-11-08 14:03:51,605:INFO: - Evaluate metrics: recall_at_100: 0.161 ; loss: 1.206
+2018-11-08 14:03:51,706:INFO: Epoch 29/75
+2018-11-08 14:03:51,707:INFO: Train
+2018-11-08 14:03:56,067:INFO: - Train metrics: recall_at_100: 0.154 ; loss: 1.164
+2018-11-08 14:03:56,073:INFO: Evaluate
+2018-11-08 14:03:57,141:INFO: - Evaluate metrics: recall_at_100: 0.122 ; loss: 1.209
+2018-11-08 14:03:57,224:INFO: Epoch 30/75
+2018-11-08 14:03:57,224:INFO: Train
+2018-11-08 14:04:01,352:INFO: - Train metrics: recall_at_100: 0.164 ; loss: 1.197
+2018-11-08 14:04:01,357:INFO: Evaluate
+2018-11-08 14:04:02,462:INFO: - Evaluate metrics: recall_at_100: 0.141 ; loss: 1.210
+2018-11-08 14:04:02,566:INFO: Epoch 31/75
+2018-11-08 14:04:02,566:INFO: Train
+2018-11-08 14:04:06,760:INFO: - Train metrics: recall_at_100: 0.195 ; loss: 1.185
+2018-11-08 14:04:06,765:INFO: Evaluate
+2018-11-08 14:04:07,868:INFO: - Evaluate metrics: recall_at_100: 0.146 ; loss: 1.217
+2018-11-08 14:04:07,982:INFO: Epoch 32/75
+2018-11-08 14:04:07,982:INFO: Train
+2018-11-08 14:04:11,933:INFO: - Train metrics: recall_at_100: 0.156 ; loss: 1.200
+2018-11-08 14:04:11,938:INFO: Evaluate
+2018-11-08 14:04:12,967:INFO: - Evaluate metrics: recall_at_100: 0.202 ; loss: 1.190
+2018-11-08 14:04:13,095:INFO: - Found new best recall_at_100
+2018-11-08 14:04:13,203:INFO: Epoch 33/75
+2018-11-08 14:04:13,203:INFO: Train
+2018-11-08 14:04:17,383:INFO: - Train metrics: recall_at_100: 0.196 ; loss: 1.188
+2018-11-08 14:04:17,388:INFO: Evaluate
+2018-11-08 14:04:18,469:INFO: - Evaluate metrics: recall_at_100: 0.160 ; loss: 1.202
+2018-11-08 14:04:18,565:INFO: Epoch 34/75
+2018-11-08 14:04:18,566:INFO: Train
+2018-11-08 14:04:22,716:INFO: - Train metrics: recall_at_100: 0.177 ; loss: 1.211
+2018-11-08 14:04:22,721:INFO: Evaluate
+2018-11-08 14:04:23,774:INFO: - Evaluate metrics: recall_at_100: 0.154 ; loss: 1.201
+2018-11-08 14:04:23,854:INFO: Epoch 35/75
+2018-11-08 14:04:23,854:INFO: Train
+2018-11-08 14:04:28,021:INFO: - Train metrics: recall_at_100: 0.172 ; loss: 1.159
+2018-11-08 14:04:28,026:INFO: Evaluate
+2018-11-08 14:04:29,115:INFO: - Evaluate metrics: recall_at_100: 0.170 ; loss: 1.185
+2018-11-08 14:04:29,297:INFO: Epoch 36/75
+2018-11-08 14:04:29,298:INFO: Train
+2018-11-08 14:04:33,249:INFO: - Train metrics: recall_at_100: 0.167 ; loss: 1.196
+2018-11-08 14:04:33,254:INFO: Evaluate
+2018-11-08 14:04:34,364:INFO: - Evaluate metrics: recall_at_100: 0.158 ; loss: 1.207
+2018-11-08 14:04:34,455:INFO: Epoch 37/75
+2018-11-08 14:04:34,455:INFO: Train
+2018-11-08 14:04:38,608:INFO: - Train metrics: recall_at_100: 0.174 ; loss: 1.180
+2018-11-08 14:04:38,614:INFO: Evaluate
+2018-11-08 14:04:39,664:INFO: - Evaluate metrics: recall_at_100: 0.137 ; loss: 1.192
+2018-11-08 14:04:39,745:INFO: Epoch 38/75
+2018-11-08 14:04:39,745:INFO: Train
+2018-11-08 14:04:43,905:INFO: - Train metrics: recall_at_100: 0.176 ; loss: 1.185
+2018-11-08 14:04:43,911:INFO: Evaluate
+2018-11-08 14:04:45,002:INFO: - Evaluate metrics: recall_at_100: 0.185 ; loss: 1.201
+2018-11-08 14:04:45,081:INFO: Epoch 39/75
+2018-11-08 14:04:45,081:INFO: Train
+2018-11-08 14:04:49,298:INFO: - Train metrics: recall_at_100: 0.183 ; loss: 1.177
+2018-11-08 14:04:49,304:INFO: Evaluate
+2018-11-08 14:04:50,335:INFO: - Evaluate metrics: recall_at_100: 0.177 ; loss: 1.189
+2018-11-08 14:04:50,431:INFO: Epoch 40/75
+2018-11-08 14:04:50,432:INFO: Train
+2018-11-08 14:04:54,503:INFO: - Train metrics: recall_at_100: 0.200 ; loss: 1.217
+2018-11-08 14:04:54,508:INFO: Evaluate
+2018-11-08 14:04:55,596:INFO: - Evaluate metrics: recall_at_100: 0.153 ; loss: 1.211
+2018-11-08 14:04:55,690:INFO: Epoch 41/75
+2018-11-08 14:04:55,690:INFO: Train
+2018-11-08 14:04:59,908:INFO: - Train metrics: recall_at_100: 0.176 ; loss: 1.194
+2018-11-08 14:04:59,913:INFO: Evaluate
+2018-11-08 14:05:00,946:INFO: - Evaluate metrics: recall_at_100: 0.176 ; loss: 1.189
+2018-11-08 14:05:01,037:INFO: Epoch 42/75
+2018-11-08 14:05:01,037:INFO: Train
+2018-11-08 14:05:05,240:INFO: - Train metrics: recall_at_100: 0.169 ; loss: 1.175
+2018-11-08 14:05:05,246:INFO: Evaluate
+2018-11-08 14:05:06,390:INFO: - Evaluate metrics: recall_at_100: 0.164 ; loss: 1.198
+2018-11-08 14:05:06,472:INFO: Epoch 43/75
+2018-11-08 14:05:06,472:INFO: Train
+2018-11-08 14:05:10,687:INFO: - Train metrics: recall_at_100: 0.170 ; loss: 1.179
+2018-11-08 14:05:10,692:INFO: Evaluate
+2018-11-08 14:05:11,817:INFO: - Evaluate metrics: recall_at_100: 0.133 ; loss: 1.190
+2018-11-08 14:05:11,892:INFO: Epoch 44/75
+2018-11-08 14:05:11,892:INFO: Train
+2018-11-08 14:05:16,244:INFO: - Train metrics: recall_at_100: 0.174 ; loss: 1.180
+2018-11-08 14:05:16,250:INFO: Evaluate
+2018-11-08 14:05:17,298:INFO: - Evaluate metrics: recall_at_100: 0.161 ; loss: 1.178
+2018-11-08 14:05:17,387:INFO: Epoch 45/75
+2018-11-08 14:05:17,387:INFO: Train
+2018-11-08 14:05:21,638:INFO: - Train metrics: recall_at_100: 0.157 ; loss: 1.174
+2018-11-08 14:05:21,643:INFO: Evaluate
+2018-11-08 14:05:22,746:INFO: - Evaluate metrics: recall_at_100: 0.150 ; loss: 1.200
+2018-11-08 14:05:22,839:INFO: Epoch 46/75
+2018-11-08 14:05:22,839:INFO: Train
+2018-11-08 14:05:27,138:INFO: - Train metrics: recall_at_100: 0.175 ; loss: 1.148
+2018-11-08 14:05:27,144:INFO: Evaluate
+2018-11-08 14:05:28,250:INFO: - Evaluate metrics: recall_at_100: 0.145 ; loss: 1.189
+2018-11-08 14:05:28,334:INFO: Epoch 47/75
+2018-11-08 14:05:28,334:INFO: Train
+2018-11-08 14:05:32,573:INFO: - Train metrics: recall_at_100: 0.203 ; loss: 1.170
+2018-11-08 14:05:32,578:INFO: Evaluate
+2018-11-08 14:05:33,599:INFO: - Evaluate metrics: recall_at_100: 0.142 ; loss: 1.193
+2018-11-08 14:05:33,684:INFO: Epoch 48/75
+2018-11-08 14:05:33,685:INFO: Train
+2018-11-08 14:05:37,809:INFO: - Train metrics: recall_at_100: 0.189 ; loss: 1.178
+2018-11-08 14:05:37,814:INFO: Evaluate
+2018-11-08 14:05:38,896:INFO: - Evaluate metrics: recall_at_100: 0.151 ; loss: 1.194
+2018-11-08 14:05:38,977:INFO: Epoch 49/75
+2018-11-08 14:05:38,977:INFO: Train
+2018-11-08 14:05:43,010:INFO: - Train metrics: recall_at_100: 0.153 ; loss: 1.178
+2018-11-08 14:05:43,018:INFO: Evaluate
+2018-11-08 14:05:44,026:INFO: - Evaluate metrics: recall_at_100: 0.192 ; loss: 1.179
+2018-11-08 14:05:44,110:INFO: Epoch 50/75
+2018-11-08 14:05:44,110:INFO: Train
+2018-11-08 14:05:48,256:INFO: - Train metrics: recall_at_100: 0.198 ; loss: 1.174
+2018-11-08 14:05:48,256:INFO: Evaluate
+2018-11-08 14:05:49,111:INFO: - Evaluate metrics: recall_at_100: 0.168 ; loss: 1.188
+2018-11-08 14:05:49,194:INFO: Epoch 51/75
+2018-11-08 14:05:49,194:INFO: Train
+2018-11-08 14:05:53,451:INFO: - Train metrics: recall_at_100: 0.165 ; loss: 1.166
+2018-11-08 14:05:53,455:INFO: Evaluate
+2018-11-08 14:05:54,538:INFO: - Evaluate metrics: recall_at_100: 0.145 ; loss: 1.195
+2018-11-08 14:05:54,627:INFO: Epoch 52/75
+2018-11-08 14:05:54,627:INFO: Train
+2018-11-08 14:05:58,920:INFO: - Train metrics: recall_at_100: 0.151 ; loss: 1.151
+2018-11-08 14:05:59,712:INFO: Evaluate
+2018-11-08 14:06:00,759:INFO: - Evaluate metrics: recall_at_100: 0.152 ; loss: 1.180
+2018-11-08 14:06:00,835:INFO: Epoch 53/75
+2018-11-08 14:06:00,836:INFO: Train
+2018-11-08 14:06:04,997:INFO: - Train metrics: recall_at_100: 0.196 ; loss: 1.151
+2018-11-08 14:06:05,002:INFO: Evaluate
+2018-11-08 14:06:06,054:INFO: - Evaluate metrics: recall_at_100: 0.145 ; loss: 1.189
+2018-11-08 14:06:06,128:INFO: Epoch 54/75
+2018-11-08 14:06:06,128:INFO: Train
+2018-11-08 14:06:10,278:INFO: - Train metrics: recall_at_100: 0.178 ; loss: 1.161
+2018-11-08 14:06:10,279:INFO: Evaluate
+2018-11-08 14:06:11,359:INFO: - Evaluate metrics: recall_at_100: 0.179 ; loss: 1.177
+2018-11-08 14:06:11,450:INFO: Epoch 55/75
+2018-11-08 14:06:11,450:INFO: Train
+2018-11-08 14:06:15,452:INFO: - Train metrics: recall_at_100: 0.172 ; loss: 1.176
+2018-11-08 14:06:15,458:INFO: Evaluate
+2018-11-08 14:06:16,482:INFO: - Evaluate metrics: recall_at_100: 0.138 ; loss: 1.186
+2018-11-08 14:06:16,573:INFO: Epoch 56/75
+2018-11-08 14:06:16,573:INFO: Train
+2018-11-08 14:06:20,775:INFO: - Train metrics: recall_at_100: 0.166 ; loss: 1.175
+2018-11-08 14:06:20,780:INFO: Evaluate
+2018-11-08 14:06:21,879:INFO: - Evaluate metrics: recall_at_100: 0.122 ; loss: 1.201
+2018-11-08 14:06:21,951:INFO: Epoch 57/75
+2018-11-08 14:06:21,952:INFO: Train
+2018-11-08 14:06:26,109:INFO: - Train metrics: recall_at_100: 0.178 ; loss: 1.158
+2018-11-08 14:06:26,113:INFO: Evaluate
+2018-11-08 14:06:27,197:INFO: - Evaluate metrics: recall_at_100: 0.198 ; loss: 1.177
+2018-11-08 14:06:27,290:INFO: Epoch 58/75
+2018-11-08 14:06:27,291:INFO: Train
+2018-11-08 14:06:31,437:INFO: - Train metrics: recall_at_100: 0.186 ; loss: 1.187
+2018-11-08 14:06:31,442:INFO: Evaluate
+2018-11-08 14:06:32,546:INFO: - Evaluate metrics: recall_at_100: 0.136 ; loss: 1.193
+2018-11-08 14:06:32,653:INFO: Epoch 59/75
+2018-11-08 14:06:32,654:INFO: Train
+2018-11-08 14:06:36,833:INFO: - Train metrics: recall_at_100: 0.192 ; loss: 1.161
+2018-11-08 14:06:36,839:INFO: Evaluate
+2018-11-08 14:06:37,843:INFO: - Evaluate metrics: recall_at_100: 0.156 ; loss: 1.175
+2018-11-08 14:06:37,964:INFO: Epoch 60/75
+2018-11-08 14:06:37,964:INFO: Train
+2018-11-08 14:06:42,000:INFO: - Train metrics: recall_at_100: 0.185 ; loss: 1.156
+2018-11-08 14:06:42,005:INFO: Evaluate
+2018-11-08 14:06:43,149:INFO: - Evaluate metrics: recall_at_100: 0.178 ; loss: 1.180
+2018-11-08 14:06:43,254:INFO: Epoch 61/75
+2018-11-08 14:06:43,254:INFO: Train
+2018-11-08 14:06:47,580:INFO: - Train metrics: recall_at_100: 0.207 ; loss: 1.176
+2018-11-08 14:06:47,586:INFO: Evaluate
+2018-11-08 14:06:48,684:INFO: - Evaluate metrics: recall_at_100: 0.135 ; loss: 1.188
+2018-11-08 14:06:48,789:INFO: Epoch 62/75
+2018-11-08 14:06:48,789:INFO: Train
+2018-11-08 14:06:52,801:INFO: - Train metrics: recall_at_100: 0.189 ; loss: 1.144
+2018-11-08 14:06:52,806:INFO: Evaluate
+2018-11-08 14:06:53,949:INFO: - Evaluate metrics: recall_at_100: 0.175 ; loss: 1.180
+2018-11-08 14:06:54,045:INFO: Epoch 63/75
+2018-11-08 14:06:54,046:INFO: Train
+2018-11-08 14:06:58,208:INFO: - Train metrics: recall_at_100: 0.167 ; loss: 1.166
+2018-11-08 14:06:58,213:INFO: Evaluate
+2018-11-08 14:06:59,240:INFO: - Evaluate metrics: recall_at_100: 0.182 ; loss: 1.173
+2018-11-08 14:06:59,333:INFO: Epoch 64/75
+2018-11-08 14:06:59,333:INFO: Train
+2018-11-08 14:07:03,503:INFO: - Train metrics: recall_at_100: 0.163 ; loss: 1.160
+2018-11-08 14:07:03,508:INFO: Evaluate
+2018-11-08 14:07:04,623:INFO: - Evaluate metrics: recall_at_100: 0.169 ; loss: 1.166
+2018-11-08 14:07:04,714:INFO: Epoch 65/75
+2018-11-08 14:07:04,714:INFO: Train
+2018-11-08 14:07:08,963:INFO: - Train metrics: recall_at_100: 0.184 ; loss: 1.144
+2018-11-08 14:07:08,969:INFO: Evaluate
+2018-11-08 14:07:10,105:INFO: - Evaluate metrics: recall_at_100: 0.149 ; loss: 1.172
+2018-11-08 14:07:10,192:INFO: Epoch 66/75
+2018-11-08 14:07:10,193:INFO: Train
+2018-11-08 14:07:14,309:INFO: - Train metrics: recall_at_100: 0.157 ; loss: 1.156
+2018-11-08 14:07:14,313:INFO: Evaluate
+2018-11-08 14:07:15,347:INFO: - Evaluate metrics: recall_at_100: 0.165 ; loss: 1.179
+2018-11-08 14:07:15,462:INFO: Epoch 67/75
+2018-11-08 14:07:15,463:INFO: Train
+2018-11-08 14:07:19,646:INFO: - Train metrics: recall_at_100: 0.207 ; loss: 1.154
+2018-11-08 14:07:19,651:INFO: Evaluate
+2018-11-08 14:07:20,763:INFO: - Evaluate metrics: recall_at_100: 0.175 ; loss: 1.177
+2018-11-08 14:07:20,879:INFO: Epoch 68/75
+2018-11-08 14:07:20,879:INFO: Train
+2018-11-08 14:07:25,088:INFO: - Train metrics: recall_at_100: 0.197 ; loss: 1.173
+2018-11-08 14:07:25,093:INFO: Evaluate
+2018-11-08 14:07:26,126:INFO: - Evaluate metrics: recall_at_100: 0.194 ; loss: 1.161
+2018-11-08 14:07:26,220:INFO: Epoch 69/75
+2018-11-08 14:07:26,220:INFO: Train
+2018-11-08 14:07:30,357:INFO: - Train metrics: recall_at_100: 0.190 ; loss: 1.178
+2018-11-08 14:07:30,362:INFO: Evaluate
+2018-11-08 14:07:31,409:INFO: - Evaluate metrics: recall_at_100: 0.157 ; loss: 1.176
+2018-11-08 14:07:31,510:INFO: Epoch 70/75
+2018-11-08 14:07:31,511:INFO: Train
+2018-11-08 14:07:35,833:INFO: - Train metrics: recall_at_100: 0.213 ; loss: 1.181
+2018-11-08 14:07:35,839:INFO: Evaluate
+2018-11-08 14:07:36,946:INFO: - Evaluate metrics: recall_at_100: 0.177 ; loss: 1.162
+2018-11-08 14:07:37,039:INFO: Epoch 71/75
+2018-11-08 14:07:37,039:INFO: Train
+2018-11-08 14:07:41,053:INFO: - Train metrics: recall_at_100: 0.153 ; loss: 1.164
+2018-11-08 14:07:41,057:INFO: Evaluate
+2018-11-08 14:07:42,107:INFO: - Evaluate metrics: recall_at_100: 0.185 ; loss: 1.166
+2018-11-08 14:07:42,200:INFO: Epoch 72/75
+2018-11-08 14:07:42,200:INFO: Train
+2018-11-08 14:07:46,382:INFO: - Train metrics: recall_at_100: 0.173 ; loss: 1.142
+2018-11-08 14:07:46,387:INFO: Evaluate
+2018-11-08 14:07:47,241:INFO: - Evaluate metrics: recall_at_100: 0.181 ; loss: 1.178
+2018-11-08 14:07:47,321:INFO: Epoch 73/75
+2018-11-08 14:07:47,321:INFO: Train
+2018-11-08 14:07:51,500:INFO: - Train metrics: recall_at_100: 0.215 ; loss: 1.177
+2018-11-08 14:07:51,504:INFO: Evaluate
+2018-11-08 14:07:52,595:INFO: - Evaluate metrics: recall_at_100: 0.162 ; loss: 1.173
+2018-11-08 14:07:52,703:INFO: Epoch 74/75
+2018-11-08 14:07:52,703:INFO: Train
+2018-11-08 14:07:56,575:INFO: - Train metrics: recall_at_100: 0.189 ; loss: 1.165
+2018-11-08 14:07:56,580:INFO: Evaluate
+2018-11-08 14:07:57,619:INFO: - Evaluate metrics: recall_at_100: 0.175 ; loss: 1.191
+2018-11-08 14:07:57,727:INFO: Epoch 75/75
+2018-11-08 14:07:57,728:INFO: Train
+2018-11-08 14:08:01,979:INFO: - Train metrics: recall_at_100: 0.173 ; loss: 1.146
+2018-11-08 14:08:01,985:INFO: Evaluate
+2018-11-08 14:08:03,002:INFO: - Evaluate metrics: recall_at_100: 0.166 ; loss: 1.173
+2018-11-08 14:08:03,221:INFO: Running Experiment...
