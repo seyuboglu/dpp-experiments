@@ -89,6 +89,7 @@ class LearnedCN(DPPMethod):
         scores = Y.cpu().detach().numpy().squeeze()
         return scores
 
+
 class QueryModule(nn.Module):
     
     def __init__(self, params, adjacency):
@@ -215,7 +216,7 @@ class VecCNModule(nn.Module):
         super(VecCNModule, self).__init__()
 
         # build degree vector
-        D = np.sum(adjacency, axis=1, keepdims=True)
+        D = np.sum(adjacency, axis=1, keepdims=True, dtype=np.float)
         D = np.power(D, -0.5)
         D = torch.tensor(D, dtype=torch.float)
 
@@ -234,16 +235,15 @@ class VecCNModule(nn.Module):
         self.register_buffer("A_sparse", A_sparse)
         
         if params.initialization == "ones":
-            self.E = nn.Parameter(torch.ones(self.d, N, 1, 
+            self.E = nn.Parameter(torch.ones(self.d, 1, N, 
                                              dtype=torch.float,
                                              requires_grad=True))
         elif params.initialization == "zeros":
-            self.E = nn.Parameter(torch.zeros(self.d, N, 1, 
+            self.E = nn.Parameter(torch.zeros(self.d, 1, N, 
                                               dtype=torch.float,
                                               requires_grad=True))
         else:
             logging.error("Initialization not recognized.")
-        
         
         self.linear = nn.Linear(self.d, 1)
     
@@ -268,14 +268,13 @@ class VecCNModule(nn.Module):
         """
         m, n = input.shape
         X = input  # m x n
-
         X = torch.matmul(X, self.A)
-        X = torch.matmul(X, torch.mul(self.E, self.A))
-        X = X.view(-1, self.d)        )
-        X = self.linear(X)
-        X = X.view(m, n)
+        X = torch.mul(X, self.E).squeeze()
+        X = torch.matmul(X, self.A)
+        X = self.linear(X.t()).squeeze()
 
         return X
+
 
 class DiseaseDataset(Dataset):
     """
