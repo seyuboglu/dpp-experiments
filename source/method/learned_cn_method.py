@@ -172,22 +172,10 @@ class CNModule(nn.Module):
         self.register_buffer("A_sparse", A_sparse)
         
         if params.initialization == "ones":
-            #self.W_row = nn.Parameter(torch.ones(1, N, 
-            #                                 dtype=torch.float,
-            #                                 requires_grad=True))
-            #self.W_col =  nn.Parameter(torch.ones(1, N, 
-            #                                 dtype=torch.float,
-            #                                 requires_grad=True))
             self.W_intermediate = nn.Parameter(torch.ones(N, 1, 
                                              dtype=torch.float,
                                              requires_grad=True))                              
         elif params.initialization == "zeros":
-            self.W_row = nn.Parameter(torch.zeros(1, N, 
-                                             dtype=torch.float,
-                                             requires_grad=True))
-            self.W_col =  nn.Parameter(torch.zeros(1, N, 
-                                             dtype=torch.float,
-                                             requires_grad=True))
             self.W_intermediate = nn.Parameter(torch.zeros(N, 1, 
                                              dtype=torch.float,
                                              requires_grad=True))      
