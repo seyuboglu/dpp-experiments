@@ -88,9 +88,8 @@ class LearnedCN(DPPMethod):
         Y = self.model(X)
         scores = Y.cpu().detach().numpy().squeeze()
         return scores
-    
 
-class CNModule(nn.Module):
+class DepCNModule(nn.Module):
     
     def __init__(self, params, adjacency):
         super(CNModule, self).__init__()
@@ -147,6 +146,76 @@ class CNModule(nn.Module):
         else:
             X = torch.matmul(X, self.AWA)
         return X 
+    
+
+class CNModule(nn.Module):
+    
+    def __init__(self, params, adjacency):
+        super(CNModule, self).__init__()
+
+        # build degree vector
+        D = np.sum(adjacency, axis=1, keepdims=True)
+        D = np.power(D, -0.5)
+        D = torch.tensor(D, dtype=torch.float)
+        self.register_buffer("D", D)
+
+        # convert adjacency to sparse matrix
+        A = torch.tensor(adjacency, dtype=torch.float)
+        A = torch.mul(torch.mul(D, A), D.view(-1, 1))
+        self.register_buffer("A", A)
+        N, _ = self.A.shape
+
+        coo = coo_matrix(self.A)
+        i = torch.LongTensor(np.vstack((coo.row, coo.col)))
+        v = torch.FloatTensor(coo.data)
+        A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
+        self.register_buffer("A_sparse", A_sparse)
+        
+        if params.initialization == "ones":
+            self.W_row = nn.Parameter(torch.ones(1, N, 
+                                             dtype=torch.float,
+                                             requires_grad=True))
+            self.W_col =  nn.Parameter(torch.ones(1, N, 
+                                             dtype=torch.float,
+                                             requires_grad=True))
+            self.W_intermediate = nn.Parameter(torch.ones(1, N, 
+                                             dtype=torch.float,
+                                             requires_grad=True))                              
+        elif params.initialization == "zeros":
+            self.W_row = nn.Parameter(torch.zeros(1, N, 
+                                             dtype=torch.float,
+                                             requires_grad=True))
+            self.W_col =  nn.Parameter(torch.zeros(1, N, 
+                                             dtype=torch.float,
+                                             requires_grad=True))
+            self.W_intermediate = nn.Parameter(torch.zeros(N, 1, 
+                                             dtype=torch.float,
+                                             requires_grad=True))      
+        else:
+            logging.error("Initialization not recognized.")
+    
+    def eval(self):
+        """
+        """
+        super(CNModule, self).eval()
+
+        self.AWA = torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col)
+    
+    def train(self, mode=True):
+        super(CNModule, self).train(mode)
+
+        if hasattr(self, "AWA"):
+            del self.AWA
+
+    def forward(self, input):
+        """
+        """
+        X = input 
+        if self.training:
+            X = torch.matmul(X, torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col))
+        else:
+            X = torch.matmul(X, self.AWA)
+        return X 
 
 
 class VecCNModule(nn.Module):
@@ -164,7 +233,7 @@ class VecCNModule(nn.Module):
         A = torch.mul(torch.mul(D, A), D.view(-1, 1))
         self.register_buffer("A", A)
         
-        n, _ = A.shape
+        N, _ = A.shape
         self.d = params.d
 
         coo = coo_matrix(A)
@@ -174,11 +243,11 @@ class VecCNModule(nn.Module):
         self.register_buffer("A_sparse", A_sparse)
         
         if params.initialization == "ones":
-            self.E = nn.Parameter(torch.ones(self.d, 1, n, 
+            self.E = nn.Parameter(torch.ones(self.d, 1, N, 
                                              dtype=torch.float,
                                              requires_grad=True))
         elif params.initialization == "zeros":
-            self.E = nn.Parameter(torch.zeros(self.d, 1, n, 
+            self.E = nn.Parameter(torch.zeros(self.d, 1, N, 
                                               dtype=torch.float,
                                               requires_grad=True))
         else:
@@ -208,16 +277,18 @@ class VecCNModule(nn.Module):
         """
         m, n = input.shape
         X = input  # m x n
-        XA = torch.matmul(X, self.A)  # m x n
-        XAE = torch.mul(XA, self.E)  # d x m x n
-        XAEA = torch.matmul(XAE, self.A)  # d x m x n
-        X = XAEA.squeeze()
+        #H = torch.matmul(X, self.A)
+        H = torch.matmul(self.A_sparse, torch.mul(self.E.view(1, -1), self.A))  # d x m x n
+        X = torch.matmul(X, H)
+        #X = XAEA.squeeze()
+        
+        
+        #X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.E.squeeze(), self.A)))
         #X = XAEA.view(-1, self.d)
         #X = self.linear(X)
         #X = X.view(m, n)
 
         return X
-
 
 class DiseaseDataset(Dataset):
     """
