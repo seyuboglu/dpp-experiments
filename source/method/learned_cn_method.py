@@ -172,13 +172,13 @@ class CNModule(nn.Module):
         self.register_buffer("A_sparse", A_sparse)
         
         if params.initialization == "ones":
-            self.W_row = nn.Parameter(torch.ones(1, N, 
-                                             dtype=torch.float,
-                                             requires_grad=True))
-            self.W_col =  nn.Parameter(torch.ones(1, N, 
-                                             dtype=torch.float,
-                                             requires_grad=True))
-            self.W_intermediate = nn.Parameter(torch.ones(1, N, 
+            #self.W_row = nn.Parameter(torch.ones(1, N, 
+            #                                 dtype=torch.float,
+            #                                 requires_grad=True))
+            #self.W_col =  nn.Parameter(torch.ones(1, N, 
+            #                                 dtype=torch.float,
+            #                                 requires_grad=True))
+            self.W_intermediate = nn.Parameter(torch.ones(N, 1, 
                                              dtype=torch.float,
                                              requires_grad=True))                              
         elif params.initialization == "zeros":
@@ -199,8 +199,9 @@ class CNModule(nn.Module):
         """
         super(CNModule, self).eval()
 
-        self.AWA = torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col)
-    
+        #self.AWA = torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col)
+        self.AWA =  torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))
+
     def train(self, mode=True):
         super(CNModule, self).train(mode)
 
@@ -212,7 +213,9 @@ class CNModule(nn.Module):
         """
         X = input 
         if self.training:
-            X = torch.matmul(X, torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col))
+            #X = torch.matmul(X, torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col))
+            X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A)))
+
         else:
             X = torch.matmul(X, self.AWA)
         return X 
