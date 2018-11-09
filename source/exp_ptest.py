@@ -286,7 +286,7 @@ class PermutationTest(Experiment):
                 return
 
             if self.params.plot_type == "bar":
-                sns.distplot(null_results, kde=False, bins=20, 
+                sns.distplot(null_results, kde=False, bins=40, 
                              color="grey", label="Random Pathways")
                 plt.ylabel("Pathways [count]")
  
@@ -304,7 +304,7 @@ class PermutationTest(Experiment):
             disease_mean = row[self.metric_fn.__name__ + "_" + name]
             sns.scatterplot(disease_mean, 0, label=disease.name)
 
-            plt.xlabel(self.params.xlabel_disease.format(name))
+            plt.xlabel(self.params.xlabel_disease.format(self.params.labels[name] if hasattr(self.params, "labels") else name))
             sns.despine()
 
             plt.tight_layout()
@@ -333,13 +333,19 @@ class PermutationTest(Experiment):
             #sns.barplot(series, label=name)
             if self.params.plot_type == "bar":
                 sns.distplot(series, bins=40, kde=False, 
-                             kde_kws={'clip': (0.0, 1.0)}, label=name)
+                             hist_kws={'range': (0.0, 1.0)}, 
+                             label=self.params.labels[name] 
+                                   if hasattr(self.params, "labels") 
+                                   else name)
                 plt.ylabel("Pathways [count{}]".format(r' $\log_{10}$' 
                                                        if self.params.yscale == "log" 
                                                        else ""))
 
             elif self.params.plot_type == "kde":
-                sns.kdeplot(series, shade=True, kernel="gau", clip=(0, 1), label=name)
+                sns.kdeplot(series, shade=True, kernel="gau", clip=(0, 1), 
+                            label=self.params.labels[name] 
+                                  if hasattr(self.params, "labels") 
+                                  else name)
                 plt.ylabel("Pathways [KDE{}]".format(r' $\log_{10}$' 
                                                      if self.params.yscale == "log" 
                                                      else ""))
@@ -358,8 +364,10 @@ class PermutationTest(Experiment):
         plt.xlabel(self.params.xlabel_all)
         sns.despine()
         plt.xticks(np.arange(0.0, 1.0, 0.05))
+        if self.params.plot_type == "kde": 
+            plt.yticks()
         plt.legend()
-        plt.tight_layout()
+        #plt.tight_layout()
         plt.xlim(xmin=0, xmax=1)
         plt.yscale(self.params.yscale)
 

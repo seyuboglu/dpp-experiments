@@ -57,8 +57,10 @@ class Aggregate(Experiment):
         args:
             exp_dict
         """
+        print(exp_dict["path"])
         df = pd.read_csv(exp_dict["path"],
-                         index_col=0)
+                         index_col=0,
+                         engine='python')
         return df[exp_dict["cols"]]
         
     def _run(self):

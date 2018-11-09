@@ -10,8 +10,14 @@
                     {"name": "loo_ptest[DP]", 
                      "path": "experiments/disgenet/bio-pathways/significance/ptest_loo_median/results.csv",
                      "cols": ["disease_size", "pvalue_COMP", "pvalue_DNS"]},
-
-                    {"name": "comp_dpp[DP]", 
+                    
+                    {"name": "lci_dpp[d=1][DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/learned_cn/cn_weighting/lr_1e-0_ones/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "lci_dpp[d=8][DP]", 
+                     "path": "experiments/disgenet/bio-pathways/dpp-10/learned_cn/cn_weighting/vec_lr_1e-0_ones/metrics.csv",
+                     "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
+                    {"name": "ci_dpp[DP]", 
                      "path": "experiments/disgenet/bio-pathways/dpp-10/comp/comp_sqrt_rnorm_cnorm_zscore/metrics.csv",
                      "cols": ["Recall-at-100", "Recall-at-25", "AUROC", "Mean Average Precision"]},
                     {"name": "rw_dpp[DP]", 

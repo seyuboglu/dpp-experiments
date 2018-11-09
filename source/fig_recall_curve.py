@@ -105,6 +105,6 @@ if __name__ == '__main__':
 
     plt.tight_layout()
 
-    plt.legend()
+    plt.legend(loc='lower right')
     plt.savefig(os.path.join(args.experiment_dir, 
                              'recall_curve_' + str(params.length) + '.pdf'))

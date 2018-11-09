@@ -12,7 +12,7 @@ from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt 
 import seaborn as sns
 
-#from disease import load_diseases, load_network
+from data import load_diseases, is_disease_id
 
 from scipy.stats import rankdata
 
@@ -40,6 +40,8 @@ if __name__ == '__main__':
 
     prepare_sns(sns, params)
 
+    diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
+
     method_to_scores = {}
     for method_name, method_exp_dir in params.method_exp_dirs.items():
         method_to_scores[method_name]  = {} 
@@ -47,7 +49,11 @@ if __name__ == '__main__':
             metrics_reader = csv.DictReader(metrics_file)
             print(method_exp_dir)
             for i, row in enumerate(metrics_reader):
-                if row[params.metric] == params.metric: continue 
+                if row[params.metric] == params.metric: continue
+                if not is_disease_id(row["Disease ID"]): continue 
+                if (hasattr(params, "splits") and 
+                    diseases_dict[row["Disease ID"]].split not in params.splits):
+                        continue 
                 method_to_scores[method_name][row["Disease ID"]] = float(row[params.metric])
     
     ref_name = params.reference_exp
