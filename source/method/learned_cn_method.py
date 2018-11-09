@@ -244,7 +244,7 @@ class VecCNModule(nn.Module):
                                               requires_grad=True))
         else:
             logging.error("Initialization not recognized.")
-        
+        self.relu = nn.ReLU()
         self.linear = nn.Linear(self.d, 1)
     
     def eval(self):
@@ -271,7 +271,7 @@ class VecCNModule(nn.Module):
         X = torch.matmul(X, self.A)
         X = torch.mul(X, self.E).squeeze()
         X = torch.matmul(X, self.A)
-        X = nn.ReLU(X)
+        X = self.relu(X)
         X = self.linear(X.view(self.d, m * n).t())
         X = X.view(m, n)
 
