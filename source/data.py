@@ -190,8 +190,10 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
                 disease_proteins = set([int(name_to_protein[a.strip()]) 
                                         for a in row["Associated Genes Names"].split(",")
                                         if a.strip() in name_to_protein])
-            
-            split = row["splits"]
+            if "splits" in row:
+                split = row["splits"]
+            else:
+                split = None
 
             total += len(disease_proteins)
             diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins, split)

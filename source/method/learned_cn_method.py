@@ -189,7 +189,7 @@ class CNModule(nn.Module):
         super(CNModule, self).eval()
 
         #self.AWA = torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col)
-        self.AWA =  torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))
+        self.AWA = torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))
 
     def train(self, mode=True):
         super(CNModule, self).train(mode)
@@ -210,29 +210,31 @@ class CNModule(nn.Module):
         return X 
 
 
-class VecCNModule(nn.Module):
+class LCIModule(nn.Module):
 
     def __init__(self, params, adjacency):
-        super(VecCNModule, self).__init__()
+        super(LCIModule, self).__init__()
 
         # build degree vector
-        D = np.sum(adjacency, axis=1, keepdims=True, dtype=np.float)
+        D = np.sum(adjacency, axis=1, dtype=np.float)
         D = np.power(D, -0.5)
         D = torch.tensor(D, dtype=torch.float)
 
         # convert adjacency to sparse matrix
         A = torch.tensor(adjacency, dtype=torch.float)
-        A = torch.mul(torch.mul(D, A), D.view(-1, 1))
-        self.register_buffer("A", A)
+        A_left = torch.mul(torch.mul(D.view(1, -1), A), D.view(-1, 1))
+        A_right = torch.mul(D.view(1, -1), A)
+        self.register_buffer("A_right", A_right)
+        self.register_buffer("A_left", A_left)
         
         N, _ = A.shape
         self.d = params.d
 
-        coo = coo_matrix(A)
-        i = torch.LongTensor(np.vstack((coo.row, coo.col)))
-        v = torch.FloatTensor(coo.data)
-        A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
-        self.register_buffer("A_sparse", A_sparse)
+        # coo = coo_matrix(A)
+        # i = torch.LongTensor(np.vstack((coo.row, coo.col)))
+        # v = torch.FloatTensor(coo.data)
+        # A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
+        # self.register_buffer("A_sparse", A_sparse)
         
         if params.initialization == "ones":
             self.E = nn.Parameter(torch.ones(self.d, 1, N, 
@@ -246,35 +248,21 @@ class VecCNModule(nn.Module):
             logging.error("Initialization not recognized.")
         self.relu = nn.ReLU()
         self.linear = nn.Linear(self.d, 1)
-    
-    def eval(self):
-        """
-        """
-        super(VecCNModule, self).eval()
 
-        #self.AWA = torch.matmul(self.A_sparse, torch.mul(self.E, self.A))
-    
-    def train(self, mode=True):
-        super(VecCNModule, self).train(mode)
-
-        if hasattr(self, "AWA"):
-            del self.AWA
-
-    def forward(self, input):
+    def forward(self, input, test=False):
         """
         Forward pass through the model. 
         Note: m is the # of diseases in the batch, n is the number of nodes 
         in the network, d is the depth of the embedding. 
         """
         m, n = input.shape
-        X = input  # m x n
-        X = torch.matmul(X, self.A)
-        X = torch.mul(X, self.E).squeeze()
-        X = torch.matmul(X, self.A)
-        X = self.relu(X)
-        X = self.linear(X.view(self.d, m * n).t())
-        X = X.view(m, n)
-
+        X = input  # (m, n)
+        X = torch.matmul(X, self.A_left)  # (m, n)
+        X = torch.mul(X, self.E)  # (d, m, n)
+        X = torch.matmul(X, self.A_right)  # (d, m, n)
+        X = self.relu(X)  # (d, m, n)
+        X = self.linear(X.view(self.d, m * n).t())  # (1, m*n)
+        X = X.view(m, n)  # (m, n)
         return X
 
 

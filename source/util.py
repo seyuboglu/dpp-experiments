@@ -8,6 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 import numpy as np
+import torch 
 
 
 class Params():
@@ -69,7 +70,6 @@ def set_logger(log_path, level=logging.INFO, console=True):
             stream_handler = logging.StreamHandler()
             stream_handler.setFormatter(logging.Formatter('%(message)s'))
             logger.addHandler(stream_handler)
-
 
 def parse_id_rank_pair(str):
     """ Parses a rank entry. Since protein labels are sometimes not included
@@ -144,3 +144,9 @@ def print_title(title="Experiment", subtitle=None):
         print(subtitle)
     print("Sabri Eyuboglu  -- SNAP Group -- Stanford University")
     print("====================================================")
+
+def torch_all_close(a, b, tolerance=1e-12):
+    """
+    Check if all elements in two tensors are equal within a tolerance.
+    """
+    return torch.all(torch.lt(torch.abs(a - b), tolerance))

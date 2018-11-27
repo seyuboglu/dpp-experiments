@@ -1,0 +1,6 @@
+{   
+    "model": "vec_cn",
+    "d": 1,
+    "initialization": "ones",
+    "activation": "ReLU"
+}
