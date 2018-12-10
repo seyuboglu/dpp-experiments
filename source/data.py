@@ -133,7 +133,7 @@ def output_diseases(diseases, output_path):
     df.to_csv(output_path, index=False)                
 
 
-def split_diseases(split_fractions, path):
+def split_diseases_random(split_fractions, path):
     """ Splits a set of disease assocation into data sets i.e. train, test, and dev sets 
     Args: 
         split_fractions (dictionary) dictionary mapping split name to fraction. fractions 
@@ -154,6 +154,36 @@ def split_diseases(split_fractions, path):
     
     df['splits'] = splits
     df.to_csv(path, index=False)
+
+def split_diseases_cc(split_fractions, path, threshold=0.3):
+    """
+    """
+    diseases_dict = load_diseases(path)
+
+    # build disease matrix
+    diseases = np.zeros((m, n), dtype=int)
+    index_to_disease = []
+    for i, disease in enumerate(diseases_dict.values()):
+        disease_nodes = disease.to_node_array(protein_to_node)
+        diseases[i, disease_nodes] = 1
+        index_to_disease.append(disease)
+
+    # compute jaccard similarity
+    intersection_size = np.matmul(diseases, diseases.T)
+    np.fill_diagonal(intersection_size, 0)
+    N = np.sum(diseases, axis=1, keepdims=True)
+    union_size = np.add(N, N.T)
+    jaccard_sim = 1.0*intersection_size / (union_size - intersection_size)
+
+    # get target sizes
+    splits = {key: set() for key in split_fractions.keys()}
+
+    # build splits
+    jaccard_network = nx.from_numpy_matrix(jaccard_sim > threshold)
+    connected_components = sorted(list(nx.connected_components), key=len, reversed=True)
+    for cc in connected_components:
+        pass
+        
 
 
 def load_diseases(associations_path=ASSOCIATIONS_PATH, 
