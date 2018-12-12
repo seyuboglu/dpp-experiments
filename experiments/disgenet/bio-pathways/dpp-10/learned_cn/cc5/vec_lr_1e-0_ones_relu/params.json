@@ -1,0 +1,26 @@
+{
+    "n_processes": 1, 
+    "cuda": true,
+    "cuda_gpu": 0,
+    "num_workers": 1,
+
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations-cc5.csv",
+    "disease_subset": [],
+    
+    "n_folds": 10,
+
+    "method": "learned_cn",
+
+    "model": "vec_cn",
+    "d": 8,
+    "initialization": "ones",
+    "learning_rate": 1e-0,
+    "activation": "ReLU", 
+    "weight_decay": 1e-5,
+    "num_epochs": 25,
+    "batch_size": 200,
+    "save_summary_steps": 40,
+
+    "primary_metric": "recall_at_100"
+}
