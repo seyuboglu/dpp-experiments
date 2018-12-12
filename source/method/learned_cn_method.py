@@ -247,7 +247,16 @@ class LCIModule(nn.Module):
         else:
             logging.error("Initialization not recognized.")
         self.relu = nn.ReLU()
-        self.linear = nn.Linear(self.d, 1)
+
+        units = getattr(params, "linear_layer_units", [])
+        units.insert(0, self.d)
+        self.linear_layers = []
+        for i in range(len(units) - 1):
+            layer = nn.Sequential(nn.Linear(units[i], units[i+1],
+                                  nn.ReLU(),
+                                  nn.Dropout(params.dropout)))
+            self.linear_layers.append(nn.Sequential(nn.Linear(units[i], units[i+1])))
+        self.linear_layers.append(self.nn.Linear(units[-1], 1))
 
     def forward(self, input, test=False):
         """
@@ -260,8 +269,11 @@ class LCIModule(nn.Module):
         X = torch.matmul(X, self.A_left)  # (m, n)
         X = torch.mul(X, self.E)  # (d, m, n)
         X = torch.matmul(X, self.A_right)  # (d, m, n)
-        X = self.relu(X)  # (d, m, n)
-        X = self.linear(X.view(self.d, m * n).t())  # (1, m*n)
+
+        X = X.view(self.d, m * n).t()
+        for linear_layer in self.linear_layers:
+            X = linear_layer(X)  # (1, m*n)
+ 
         X = X.view(m, n)  # (m, n)
         return X
 

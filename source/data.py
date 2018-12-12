@@ -454,7 +454,7 @@ if __name__ == '__main__':
                        'test': 1000
                       }
         split_diseases_cc(split_sizes, 'data/associations/disgenet-associations.csv', 
-                          "data/networks/bio-pathways-network.txt", threshold=0.3)
+                          "data/networks/bio-pathways-network.txt", threshold=0.5)
     
     elif(args.job == "build_biogrid"):
         print_title("Building Biogrid Network")
