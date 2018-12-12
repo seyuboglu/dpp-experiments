@@ -37,18 +37,18 @@ class LearnedCN(DPPMethod):
     def train_method(self):
         """ Trains the underlying model
         """
-        dataloaders = fetch_dataloader(['train', 'dev'], 
+        dataloaders = fetch_dataloader(['train', 'test'], 
                                        self.diseases, 
                                        self.protein_to_node, 
                                        self.params)
 
         train_dl = dataloaders['train']
-        dev_dl = dataloaders['dev']
+        dev_dl = dataloaders['test']
 
         if self.params.model == "scalar_cn":
             model = CNModule(self.params, self.adjacency)
         elif self.params.model == "vec_cn":
-            model = VecCNModule(self.params, self.adjacency)
+            model = LCIModule(self.params, self.adjacency)
         else:
             logging.error("Model not recognized.")
 
@@ -535,13 +535,12 @@ def train_and_evaluate(model, train_dataloader,
         # Save weights
         # can't save sparse tensor
         state_dict = model.state_dict()
-        del state_dict["A_sparse"]
-        del state_dict["A"]
-        save_checkpoint({'epoch': epoch + 1,
-                         'state_dict': state_dict,
-                         'optim_dict' : optimizer.state_dict()},
-                        is_best=is_best,
-                        checkpoint=model_dir)
+        #del state_dict["A_sparse"]
+        #save_checkpoint({'epoch': epoch + 1,
+        #                 'state_dict': state_dict,
+        #                 'optim_dict' : optimizer.state_dict()},
+        #                is_best=is_best,
+        #                checkpoint=model_dir)
 
         # If best_eval, best_save_path
         if is_best:
