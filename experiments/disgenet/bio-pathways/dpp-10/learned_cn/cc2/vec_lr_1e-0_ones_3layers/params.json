@@ -5,7 +5,7 @@
     "num_workers": 1,
 
     "ppi_network": "data/networks/bio-pathways-network.txt",
-    "diseases_path": "data/associations/disgenet-associations-cc5.csv",
+    "diseases_path": "data/associations/disgenet-associations-cc2.csv",
     "disease_subset": [],
     
     "n_folds": 10,
@@ -15,7 +15,7 @@
     "model": "vec_cn",
     "d": 8,
     "linear_layer_units": [16],
-    "dropout": 0.2,
+    "dropout": 0.5,
     "initialization": "ones",
     "learning_rate": 1e-0,
     "activation": "ReLU", 
