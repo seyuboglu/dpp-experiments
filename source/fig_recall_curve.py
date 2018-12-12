@@ -59,7 +59,7 @@ if __name__ == '__main__':
                     ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
                     ranks = np.array(ranks).astype(int)
                     rank_bin_count = np.bincount(ranks)
-                    recall_curve = np.cumsum(rank_bin_count) / len(ranks)
+                    recall_curve = 1.0 * np.cumsum(rank_bin_count) / len(ranks)
                     if len(recall_curve) < params.length:
                         recall_curve = np.pad(recall_curve, 
                                               (0, params.length - len(recall_curve)), 
@@ -79,7 +79,7 @@ if __name__ == '__main__':
                     ranks.extend(map(float, row[2:]))
             ranks = np.array(ranks).astype(int)
             rank_bin_count = np.bincount(ranks)
-            recall_curve = (np.cumsum(rank_bin_count) / len(ranks))
+            recall_curve = 1.0 * (np.cumsum(rank_bin_count) / len(ranks))
             plt.plot(recall_curve[:params.length], label = name)
         
     # plot percent differences
@@ -89,7 +89,7 @@ if __name__ == '__main__':
             recalls_at_k.append(recall_curve[k])
         recalls_at_k.sort(reverse=True)
         plt.plot([k, k], [recalls_at_k[0] - params.offset, recalls_at_k[1] + params.offset], linestyle = '--', color = 'green', alpha = 0.5)
-        percent_increase = round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
+        percent_increase = 1.0 * round(100 * (recalls_at_k[0] - recalls_at_k[1]) / recalls_at_k[1], 1)
         plt.text(x = k + (2/100)*params.length, y=recalls_at_k[1] + (recalls_at_k[0] - recalls_at_k[1]) / 2 - 0.001, 
                  s = '+' + str(percent_increase) + '%',
                  fontsize = 9, weight = 'bold', alpha = .75, color='green')

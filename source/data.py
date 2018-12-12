@@ -155,12 +155,17 @@ def split_diseases_random(split_fractions, path):
     df['splits'] = splits
     df.to_csv(path, index=False)
 
-def split_diseases_cc(split_fractions, path, threshold=0.3):
+
+def split_diseases_cc(split_sizes, disease_path, network_path, threshold=0.3):
     """
     """
-    diseases_dict = load_diseases(path)
+    ppi_networkx, ppi_network_adj, protein_to_node = load_network(network_path)
+    diseases_dict = load_diseases(disease_path)
+    m = len(diseases_dict)
+    n = ppi_network_adj.shape[0]
 
     # build disease matrix
+    print("Building disease matrix...")
     diseases = np.zeros((m, n), dtype=int)
     index_to_disease = []
     for i, disease in enumerate(diseases_dict.values()):
@@ -169,23 +174,49 @@ def split_diseases_cc(split_fractions, path, threshold=0.3):
         index_to_disease.append(disease)
 
     # compute jaccard similarity
+    print("Computing jaccard similarity...")
     intersection_size = np.matmul(diseases, diseases.T)
     np.fill_diagonal(intersection_size, 0)
     N = np.sum(diseases, axis=1, keepdims=True)
     union_size = np.add(N, N.T)
     jaccard_sim = 1.0*intersection_size / (union_size - intersection_size)
 
-    # get target sizes
-    splits = {key: set() for key in split_fractions.keys()}
+    splits = {key: set() for key in split_sizes.keys()}
 
     # build splits
+    print("Splitting dataset...")
     jaccard_network = nx.from_numpy_matrix(jaccard_sim > threshold)
-    connected_components = sorted(list(nx.connected_components), key=len, reversed=True)
-    for cc in connected_components:
-        pass
+    connected_components = list(nx.connected_components(jaccard_network))
+    splits = {}
+    for split, total_size in split_sizes.items():
+        if total_size == -1:
+            overflow_split = split
+            continue 
+        splits[split] = []
+        while len(splits[split]) < total_size:
+            idx = random.randint(0, len(connected_components)-1)
+            cc = connected_components[idx]
+            if total_size >= len(splits[split]) + len(cc):
+                connected_components.pop(idx)
+                splits[split].extend(cc)
+
+
+    #splits[overflow_split] = [idx for idx in cc for cc in connected_components]
+
+    df = pd.read_csv(disease_path)
+    row_splits = [overflow_split] * m
+    for split, idxs in splits.items():
+        for idx in idxs:
+            disease = index_to_disease[idx]
+            row = df.index[df["Disease ID"] == disease.id][0]
+            row_splits[row] = split
+
+    df['splits'] = row_splits
+    directory, filename = os.path.split(disease_path)
+    df.to_csv(os.path.join(directory, filename + "_ccsplit.csv"), index=False)
+    return df 
+
         
-
-
 def load_diseases(associations_path=ASSOCIATIONS_PATH, 
                   diseases_subset=[], 
                   gene_names_path=GENE_NAMES_PATH): 
@@ -416,6 +447,14 @@ if __name__ == '__main__':
                           }
         split_diseases(split_fractions, 'data/associations/disgenet-associations.csv')
         print("Done.")
+    
+    elif(args.job == "split_diseases_cc"):
+        split_sizes = {'train': -1,
+                       'dev': 100,
+                       'test': 1000
+                      }
+        split_diseases_cc(split_sizes, 'data/associations/disgenet-associations.csv', 
+                          "data/networks/bio-pathways-network.txt", threshold=0.5)
     
     elif(args.job == "build_biogrid"):
         print_title("Building Biogrid Network")
