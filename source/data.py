@@ -34,6 +34,7 @@ class Disease:
         self.id = id
         self.name = name
         self.proteins = proteins
+        self.size = len(proteins)
         self.split = split
 
         self.doids = []
@@ -130,7 +131,58 @@ def output_diseases(diseases, output_path):
                       index=[disease.id for disease in diseases.values()],
                       columns=["name", "class", "size"])
     df.index.name = "id"
-    df.to_csv(output_path, index=False)                
+    df.to_csv(output_path, index=False)   
+
+
+def build_disease_matrix(id_to_disease, protein_to_idx):
+    """
+    """
+    n = len(protein_to_idx)
+    m = len(id_to_disease)
+    diseases = np.zeros((m, n), dtype=int)
+    index_to_disease = []
+    for i, disease in enumerate(id_to_disease.values()):
+        disease_nodes = disease.to_node_array(protein_to_idx)
+        diseases[i, disease_nodes] = 1
+        index_to_disease.append(disease)
+    return diseases, index_to_disease 
+
+
+def remove_duplicate_diseases(diseases_path, network_path, threshold=0.9):
+    """
+    """
+    print("Loading diseases and network...")
+    id_to_disease = load_diseases(diseases_path)
+    _, _, protein_to_node = load_network(network_path)
+
+    print("Building disease matrix...")
+    disease_matrix, idx_to_disease = build_disease_matrix(id_to_disease, protein_to_node)
+
+    # compute common associations
+    common_associations = np.matmul(disease_matrix, disease_matrix.T)
+    np.fill_diagonal(common_associations, 0)
+
+    # compute jaccard similarity 
+    disease_sizes = np.sum(disease_matrix, axis=1, keepdims=True)
+    intersection_size = common_associations
+    union_size = np.add(disease_sizes, disease_sizes.T)
+    jaccard_sim = 1.0*common_associations / (union_size - common_associations)
+
+    dupicates = np.where(jaccard_sim >= threshold)
+
+    to_remove = set()
+    df = pd.read_csv(diseases_path, index_col="Disease ID")
+    for a, b in zip(*dupicates):
+        if a in to_remove or b in to_remove:
+            continue
+        idx_remove = a if idx_to_disease[a].size < idx_to_disease[a].size else b
+        df['splits'][idx_to_disease[idx_remove].id] = 'none'
+        to_remove.add(idx_remove)
+        print("Found duplicate {}-{}".format(idx_to_disease[a].name, 
+                                             idx_to_disease[b].name))
+        print("Removing {}".format(idx_to_disease[idx_remove].name))
+    print("Removed {} duplicates.".format(len(to_remove)))
+    df.to_csv(diseases_path[:-4] + "_nodup.csv", index=True)        
 
 
 def split_diseases_random(split_fractions, path):
@@ -161,6 +213,8 @@ def split_diseases_cc(split_sizes, disease_path, network_path, threshold=0.3):
     """
     ppi_networkx, ppi_network_adj, protein_to_node = load_network(network_path)
     diseases_dict = load_diseases(disease_path)
+    diseases_dict = {did : disease for did, disease in diseases_dict.items() 
+                     if disease.split != "none"}
     m = len(diseases_dict)
     n = ppi_network_adj.shape[0]
 
@@ -200,13 +254,14 @@ def split_diseases_cc(split_sizes, disease_path, network_path, threshold=0.3):
                 connected_components.pop(idx)
                 splits[split].extend(cc)
 
-
-    #splits[overflow_split] = [idx for idx in cc for cc in connected_components]
+    splits[overflow_split] = [idx for cc in connected_components for idx in cc]
+    print(splits)
 
     df = pd.read_csv(disease_path)
-    row_splits = [overflow_split] * m
+    row_splits = ["none"] * len(df)
     for split, idxs in splits.items():
         for idx in idxs:
+            #print(split)
             disease = index_to_disease[idx]
             row = df.index[df["Disease ID"] == disease.id][0]
             row_splits[row] = split
@@ -448,13 +503,18 @@ if __name__ == '__main__':
         split_diseases(split_fractions, 'data/associations/disgenet-associations.csv')
         print("Done.")
     
+    elif(args.job == "remove_duplicates"):
+        diseases_path = 'data/associations/disgenet-associations.csv'
+        network_path = "data/networks/bio-pathways-network.txt"
+        remove_duplicate_diseases(diseases_path, network_path, threshold=0.8)
+    
     elif(args.job == "split_diseases_cc"):
         split_sizes = {'train': -1,
                        'dev': 100,
-                       'test': 1000
+                       'test': 800
                       }
-        split_diseases_cc(split_sizes, 'data/associations/disgenet-associations.csv', 
-                          "data/networks/bio-pathways-network.txt", threshold=0.5)
+        split_diseases_cc(split_sizes, 'data/associations/disgenet-associations-nodup8.csv', 
+                          "data/networks/bio-pathways-network.txt", threshold=0.3)
     
     elif(args.job == "build_biogrid"):
         print_title("Building Biogrid Network")
