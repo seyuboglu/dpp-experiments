@@ -1,0 +1,137 @@
+2018-12-17 09:44:44,500:INFO: Disease Protein Prediction in the PPI Network
+2018-12-17 09:44:44,500:INFO: Sabri Eyuboglu  -- SNAP Group
+2018-12-17 09:44:44,500:INFO: ======================================
+2018-12-17 09:44:44,500:INFO: Loading PPI Network...
+2018-12-17 09:44:52,637:INFO: Loading Disease Associations...
+2018-12-17 09:45:04,154:INFO: Starting training for 25 epoch(s)
+2018-12-17 09:45:04,155:INFO: Epoch 1/25
+2018-12-17 09:45:04,155:INFO: Train
+2018-12-17 09:45:05,947:INFO: - Train metrics: recall_at_100: 0.112 ; loss: 1.374
+2018-12-17 09:45:05,948:INFO: Evaluate
+2018-12-17 09:45:10,528:INFO: - Evaluate metrics: recall_at_100: 0.142 ; loss: 1.183
+2018-12-17 09:45:10,530:INFO: - Found new best recall_at_100
+2018-12-17 09:45:10,664:INFO: Epoch 2/25
+2018-12-17 09:45:10,665:INFO: Train
+2018-12-17 09:45:12,336:INFO: - Train metrics: recall_at_100: 0.149 ; loss: 1.111
+2018-12-17 09:45:12,336:INFO: Evaluate
+2018-12-17 09:45:16,961:INFO: - Evaluate metrics: recall_at_100: 0.175 ; loss: 1.066
+2018-12-17 09:45:16,964:INFO: - Found new best recall_at_100
+2018-12-17 09:45:17,094:INFO: Epoch 3/25
+2018-12-17 09:45:17,094:INFO: Train
+2018-12-17 09:45:19,006:INFO: - Train metrics: recall_at_100: 0.154 ; loss: 1.047
+2018-12-17 09:45:19,007:INFO: Evaluate
+2018-12-17 09:45:23,463:INFO: - Evaluate metrics: recall_at_100: 0.149 ; loss: 1.059
+2018-12-17 09:45:23,507:INFO: Epoch 4/25
+2018-12-17 09:45:23,507:INFO: Train
+2018-12-17 09:45:25,202:INFO: - Train metrics: recall_at_100: 0.165 ; loss: 1.046
+2018-12-17 09:45:25,202:INFO: Evaluate
+2018-12-17 09:45:30,062:INFO: - Evaluate metrics: recall_at_100: 0.168 ; loss: 1.047
+2018-12-17 09:45:30,094:INFO: Epoch 5/25
+2018-12-17 09:45:30,094:INFO: Train
+2018-12-17 09:45:31,814:INFO: - Train metrics: recall_at_100: 0.173 ; loss: 1.023
+2018-12-17 09:45:31,814:INFO: Evaluate
+2018-12-17 09:45:36,307:INFO: - Evaluate metrics: recall_at_100: 0.186 ; loss: 1.041
+2018-12-17 09:45:36,310:INFO: - Found new best recall_at_100
+2018-12-17 09:45:36,421:INFO: Epoch 6/25
+2018-12-17 09:45:36,423:INFO: Train
+2018-12-17 09:45:38,254:INFO: - Train metrics: recall_at_100: 0.201 ; loss: 1.014
+2018-12-17 09:45:38,254:INFO: Evaluate
+2018-12-17 09:45:42,773:INFO: - Evaluate metrics: recall_at_100: 0.177 ; loss: 1.032
+2018-12-17 09:45:42,810:INFO: Epoch 7/25
+2018-12-17 09:45:42,811:INFO: Train
+2018-12-17 09:45:44,775:INFO: - Train metrics: recall_at_100: 0.218 ; loss: 0.996
+2018-12-17 09:45:44,776:INFO: Evaluate
+2018-12-17 09:45:49,252:INFO: - Evaluate metrics: recall_at_100: 0.190 ; loss: 1.024
+2018-12-17 09:45:49,255:INFO: - Found new best recall_at_100
+2018-12-17 09:45:49,358:INFO: Epoch 8/25
+2018-12-17 09:45:49,359:INFO: Train
+2018-12-17 09:45:51,292:INFO: - Train metrics: recall_at_100: 0.174 ; loss: 1.008
+2018-12-17 09:45:51,292:INFO: Evaluate
+2018-12-17 09:45:55,888:INFO: - Evaluate metrics: recall_at_100: 0.183 ; loss: 1.041
+2018-12-17 09:45:55,929:INFO: Epoch 9/25
+2018-12-17 09:45:55,930:INFO: Train
+2018-12-17 09:45:57,655:INFO: - Train metrics: recall_at_100: 0.174 ; loss: 1.007
+2018-12-17 09:45:57,655:INFO: Evaluate
+2018-12-17 09:46:02,175:INFO: - Evaluate metrics: recall_at_100: 0.178 ; loss: 1.026
+2018-12-17 09:46:02,212:INFO: Epoch 10/25
+2018-12-17 09:46:02,213:INFO: Train
+2018-12-17 09:46:03,985:INFO: - Train metrics: recall_at_100: 0.223 ; loss: 0.999
+2018-12-17 09:46:03,986:INFO: Evaluate
+2018-12-17 09:46:08,699:INFO: - Evaluate metrics: recall_at_100: 0.190 ; loss: 1.044
+2018-12-17 09:46:08,735:INFO: Epoch 11/25
+2018-12-17 09:46:08,735:INFO: Train
+2018-12-17 09:46:10,507:INFO: - Train metrics: recall_at_100: 0.198 ; loss: 0.995
+2018-12-17 09:46:10,508:INFO: Evaluate
+2018-12-17 09:46:14,977:INFO: - Evaluate metrics: recall_at_100: 0.173 ; loss: 1.022
+2018-12-17 09:46:15,018:INFO: Epoch 12/25
+2018-12-17 09:46:15,019:INFO: Train
+2018-12-17 09:46:16,812:INFO: - Train metrics: recall_at_100: 0.162 ; loss: 0.997
+2018-12-17 09:46:16,812:INFO: Evaluate
+2018-12-17 09:46:21,248:INFO: - Evaluate metrics: recall_at_100: 0.199 ; loss: 1.020
+2018-12-17 09:46:21,251:INFO: - Found new best recall_at_100
+2018-12-17 09:46:21,352:INFO: Epoch 13/25
+2018-12-17 09:46:21,353:INFO: Train
+2018-12-17 09:46:23,118:INFO: - Train metrics: recall_at_100: 0.202 ; loss: 0.990
+2018-12-17 09:46:23,118:INFO: Evaluate
+2018-12-17 09:46:27,658:INFO: - Evaluate metrics: recall_at_100: 0.174 ; loss: 1.023
+2018-12-17 09:46:27,700:INFO: Epoch 14/25
+2018-12-17 09:46:27,700:INFO: Train
+2018-12-17 09:46:29,458:INFO: - Train metrics: recall_at_100: 0.219 ; loss: 0.992
+2018-12-17 09:46:29,459:INFO: Evaluate
+2018-12-17 09:46:33,853:INFO: - Evaluate metrics: recall_at_100: 0.177 ; loss: 1.019
+2018-12-17 09:46:33,900:INFO: Epoch 15/25
+2018-12-17 09:46:33,900:INFO: Train
+2018-12-17 09:46:35,619:INFO: - Train metrics: recall_at_100: 0.209 ; loss: 0.996
+2018-12-17 09:46:35,619:INFO: Evaluate
+2018-12-17 09:46:40,030:INFO: - Evaluate metrics: recall_at_100: 0.184 ; loss: 1.017
+2018-12-17 09:46:40,066:INFO: Epoch 16/25
+2018-12-17 09:46:40,066:INFO: Train
+2018-12-17 09:46:41,872:INFO: - Train metrics: recall_at_100: 0.174 ; loss: 0.989
+2018-12-17 09:46:41,873:INFO: Evaluate
+2018-12-17 09:46:46,296:INFO: - Evaluate metrics: recall_at_100: 0.173 ; loss: 1.025
+2018-12-17 09:46:46,341:INFO: Epoch 17/25
+2018-12-17 09:46:46,341:INFO: Train
+2018-12-17 09:46:48,181:INFO: - Train metrics: recall_at_100: 0.194 ; loss: 0.983
+2018-12-17 09:46:48,181:INFO: Evaluate
+2018-12-17 09:46:52,504:INFO: - Evaluate metrics: recall_at_100: 0.177 ; loss: 1.014
+2018-12-17 09:46:52,535:INFO: Epoch 18/25
+2018-12-17 09:46:52,535:INFO: Train
+2018-12-17 09:46:54,470:INFO: - Train metrics: recall_at_100: 0.184 ; loss: 0.983
+2018-12-17 09:46:54,470:INFO: Evaluate
+2018-12-17 09:46:58,927:INFO: - Evaluate metrics: recall_at_100: 0.168 ; loss: 1.015
+2018-12-17 09:46:58,961:INFO: Epoch 19/25
+2018-12-17 09:46:58,962:INFO: Train
+2018-12-17 09:47:00,833:INFO: - Train metrics: recall_at_100: 0.198 ; loss: 0.996
+2018-12-17 09:47:00,833:INFO: Evaluate
+2018-12-17 09:47:05,633:INFO: - Evaluate metrics: recall_at_100: 0.184 ; loss: 1.015
+2018-12-17 09:47:05,671:INFO: Epoch 20/25
+2018-12-17 09:47:05,672:INFO: Train
+2018-12-17 09:47:07,404:INFO: - Train metrics: recall_at_100: 0.193 ; loss: 0.993
+2018-12-17 09:47:07,404:INFO: Evaluate
+2018-12-17 09:47:12,172:INFO: - Evaluate metrics: recall_at_100: 0.197 ; loss: 1.011
+2018-12-17 09:47:12,217:INFO: Epoch 21/25
+2018-12-17 09:47:12,217:INFO: Train
+2018-12-17 09:47:13,947:INFO: - Train metrics: recall_at_100: 0.179 ; loss: 0.993
+2018-12-17 09:47:13,947:INFO: Evaluate
+2018-12-17 09:47:18,282:INFO: - Evaluate metrics: recall_at_100: 0.187 ; loss: 1.017
+2018-12-17 09:47:18,322:INFO: Epoch 22/25
+2018-12-17 09:47:18,322:INFO: Train
+2018-12-17 09:47:20,062:INFO: - Train metrics: recall_at_100: 0.187 ; loss: 1.007
+2018-12-17 09:47:20,063:INFO: Evaluate
+2018-12-17 09:47:24,805:INFO: - Evaluate metrics: recall_at_100: 0.199 ; loss: 1.010
+2018-12-17 09:47:24,839:INFO: Epoch 23/25
+2018-12-17 09:47:24,839:INFO: Train
+2018-12-17 09:47:26,700:INFO: - Train metrics: recall_at_100: 0.199 ; loss: 1.003
+2018-12-17 09:47:26,701:INFO: Evaluate
+2018-12-17 09:47:31,243:INFO: - Evaluate metrics: recall_at_100: 0.188 ; loss: 1.018
+2018-12-17 09:47:31,271:INFO: Epoch 24/25
+2018-12-17 09:47:31,271:INFO: Train
+2018-12-17 09:47:33,036:INFO: - Train metrics: recall_at_100: 0.183 ; loss: 0.999
+2018-12-17 09:47:33,036:INFO: Evaluate
+2018-12-17 09:47:37,755:INFO: - Evaluate metrics: recall_at_100: 0.188 ; loss: 1.044
+2018-12-17 09:47:37,794:INFO: Epoch 25/25
+2018-12-17 09:47:37,794:INFO: Train
+2018-12-17 09:47:39,490:INFO: - Train metrics: recall_at_100: 0.164 ; loss: 0.997
+2018-12-17 09:47:39,490:INFO: Evaluate
+2018-12-17 09:47:44,036:INFO: - Evaluate metrics: recall_at_100: 0.188 ; loss: 1.009
+2018-12-17 09:47:44,089:INFO: Running Experiment...
