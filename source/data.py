@@ -253,6 +253,7 @@ def split_diseases_cc(split_sizes, disease_path, network_path, threshold=0.3):
             if total_size >= len(splits[split]) + len(cc):
                 connected_components.pop(idx)
                 splits[split].extend(cc)
+                print(total_size)
 
     splits[overflow_split] = [idx for cc in connected_components for idx in cc]
     print(splits)
@@ -506,14 +507,20 @@ if __name__ == '__main__':
     elif(args.job == "remove_duplicates"):
         diseases_path = 'data/associations/disgenet-associations.csv'
         network_path = "data/networks/bio-pathways-network.txt"
-        remove_duplicate_diseases(diseases_path, network_path, threshold=0.8)
+        remove_duplicate_diseases(diseases_path, network_path, threshold=0.7)
     
     elif(args.job == "split_diseases_cc"):
-        split_sizes = {'train': -1,
-                       'dev': 100,
-                       'test': 800
-                      }
-        split_diseases_cc(split_sizes, 'data/associations/disgenet-associations-nodup8.csv', 
+        split_sizes = {'0': 179,
+                       '1': 179, 
+                       '2': 179, 
+                       '3': 179,
+                       '4': 179,
+                       '5': 179,
+                       '6': 179,
+                       '7': 179,
+                       '8': 179,
+                       '9': -1}
+        split_diseases_cc(split_sizes, 'data/associations/disgenet-associations-nodup7.csv', 
                           "data/networks/bio-pathways-network.txt", threshold=0.3)
     
     elif(args.job == "build_biogrid"):

@@ -5,6 +5,7 @@ import os
 import json
 import logging
 from shutil import copyfile
+from collections import defaultdict
 
 import numpy as np
 import torch 
@@ -32,18 +33,46 @@ class LearnedCN(DPPMethod):
         self.diseases = diseases
         self.protein_to_node = protein_to_node
 
-        self.train_method()
+        folds_to_diseases = defaultdict()
+        for disease in diseases.values():
+            folds_to_diseases[int(disease.split)].add(disease)
+        
+        self.folds_to_models = {}
+        for test_fold in folds_to_diseases.keys(): 
+            val_fold = (test_fold - 1) % len(folds_to_diseases)
+            test_dataset = DiseaseDataset([disease 
+                                           for disease in folds_to_diseases[test_fold]],
+                                           protein_to_node)
+            val_dataset = DiseaseDataset([disease 
+                                          for disease in folds_to_diseases[val_fold]],
+                                          protein_to_node) 
+            train_dataset = DiseaseDataset([disease 
+                                             for disease in diseases 
+                                             for fold, diseases in folds_to_diseases.items()
+                                             if fold != val_fold and fold != test_fold], 
+                                            protein_to_node)
+            assert(not set.intersection(*[test_dataset.get_ids(), 
+                                          val_dataset.get_ids(),
+                                          train_dataset.get_ids()]))
+
+            model = self.train_method(train_dataset, val_dataset)
+            self.folds_to_models[test_fold] = model
+
     
-    def train_method(self):
+    def train_method(self, train_dataset, val_dataset):
         """ Trains the underlying model
         """
-        dataloaders = fetch_dataloader(['train', 'test'], 
-                                       self.diseases, 
-                                       self.protein_to_node, 
-                                       self.params)
-
-        train_dl = dataloaders['train']
-        dev_dl = dataloaders['test']
+        train_dl = DataLoader(train_dataset, 
+                              batch_size=self.params.batch_size, 
+                              shuffle=True,
+                              num_workers=self.params.num_workers,
+                              pin_memory=params.cuda)
+    
+        dev_dl = DataLoader(val_dataset, 
+                            batch_size=self.params.batch_size, 
+                            shuffle=True,
+                            num_workers=self.params.num_workers,
+                            pin_memory=self.params.cuda)
 
         if self.params.model == "scalar_cn":
             model = CNModule(self.params, self.adjacency)
@@ -70,10 +99,11 @@ class LearnedCN(DPPMethod):
             self.params,
             self.experiment_dir
         )
-        self.model = model
-        self.model.eval()
+        model.eval()
+        return model.cpu()
 
-    def compute_scores(self, train_pos, val_pos):
+
+    def compute_scores(self, train_pos, val_pos, disease):
         """ Compute the scores predicted by GCN.
         Args: 
             
@@ -85,130 +115,10 @@ class LearnedCN(DPPMethod):
         X[0, train_pos] = 1
         if self.params.cuda:
             X = X.cuda()
-        Y = self.model(X)
+        model = self.folds_to_models[int(disease.split)]
+        Y = model(X)
         scores = Y.cpu().detach().numpy().squeeze()
         return scores
-
-
-class QueryModule(nn.Module):
-    
-    def __init__(self, params, adjacency):
-        super(CNModule, self).__init__()
-
-        # build degree vector
-        D = np.sum(adjacency, axis=1, keepdims=True)
-        D = np.power(D, -0.5)
-        D = torch.tensor(D, dtype=torch.float)
-        self.register_buffer("D", D)
-
-        # convert adjacency to sparse matrix
-        A = torch.tensor(adjacency, dtype=torch.float)
-        A = torch.mul(torch.mul(D, A), D.view(-1, 1))
-        self.register_buffer("A", A)
-        N, _ = self.A.shape
-
-        coo = coo_matrix(self.A)
-        i = torch.LongTensor(np.vstack((coo.row, coo.col)))
-        v = torch.FloatTensor(coo.data)
-        A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
-        self.register_buffer("A_sparse", A_sparse)
-        
-
-        if params.initialization == "ones":
-            self.W = nn.Parameter(torch.ones(1, N, 
-                                             dtype=torch.float,
-                                             requires_grad=True))
-        elif params.initialization == "zeros":
-            self.W = nn.Parameter(torch.zeros(1, N, 
-                                              dtype=torch.float,
-                                              requires_grad=True))
-        else:
-            logging.error("Initialization not recognized.")
-    
-    def eval(self):
-        """
-        """
-        super(CNModule, self).eval()
-
-        self.AWA = torch.matmul(self.A_sparse, torch.mul(self.W, self.A))
-    
-    def train(self, mode=True):
-        super(CNModule, self).train(mode)
-
-        if hasattr(self, "AWA"):
-            del self.AWA
-
-    def forward(self, input):
-        """
-        """
-        X = input 
-        if self.training:
-            X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W, self.A)))
-        else:
-            X = torch.matmul(X, self.AWA)
-        return X 
-    
-
-class CNModule(nn.Module):
-    
-    def __init__(self, params, adjacency):
-        super(CNModule, self).__init__()
-
-        # build degree vector
-        D = np.sum(adjacency, axis=1, keepdims=True)
-        D = np.power(D, -0.5)
-        D = torch.tensor(D, dtype=torch.float)
-        self.register_buffer("D", D)
-
-        # convert adjacency to sparse matrix
-        A = torch.tensor(adjacency, dtype=torch.float)
-        A = torch.mul(torch.mul(D, A), D.view(-1, 1))
-        self.register_buffer("A", A)
-        N, _ = self.A.shape
-
-        coo = coo_matrix(self.A)
-        i = torch.LongTensor(np.vstack((coo.row, coo.col)))
-        v = torch.FloatTensor(coo.data)
-        A_sparse = torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
-        self.register_buffer("A_sparse", A_sparse)
-        
-        if params.initialization == "ones":
-            self.W_intermediate = nn.Parameter(torch.ones(N, 1, 
-                                             dtype=torch.float,
-                                             requires_grad=True))                              
-        elif params.initialization == "zeros":
-            self.W_intermediate = nn.Parameter(torch.zeros(N, 1, 
-                                             dtype=torch.float,
-                                             requires_grad=True))      
-        else:
-            logging.error("Initialization not recognized.")
-    
-    def eval(self):
-        """
-        """
-        super(CNModule, self).eval()
-
-        #self.AWA = torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col)
-        self.AWA = torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))
-
-    def train(self, mode=True):
-        super(CNModule, self).train(mode)
-
-        if hasattr(self, "AWA"):
-            del self.AWA
-
-    def forward(self, input):
-        """
-        """
-        X = input 
-        if self.training:
-            #X = torch.matmul(X, torch.mul(torch.mul(self.W_row, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A))), self.W_col))
-            X = torch.matmul(X, torch.matmul(self.A_sparse, torch.mul(self.W_intermediate, self.A)))
-
-        else:
-            X = torch.matmul(X, self.AWA)
-        return X 
-
 
 class LCIModule(nn.Module):
 
@@ -323,7 +233,7 @@ class DiseaseDataset(Dataset):
         return X, Y
 
 
-def fetch_dataloader(splits, diseases, protein_to_node, params):
+def fetch_dataloader(diseases, protein_to_node, params):
     """
     Fetches the DataLoader object for each type in types from data_dir.
 
@@ -337,24 +247,19 @@ def fetch_dataloader(splits, diseases, protein_to_node, params):
     """
     dataloaders = {}
     datasets = {} 
-    for id, disease in diseases.items():
-        datasets.setdefault(disease.split, []).append(disease)
 
-    datasets = {split: DiseaseDataset(diseases, protein_to_node) 
-                for split, diseases 
-                in datasets.items()}
+    dataset = DiseaseDataset(diseases, protein_to_node) 
 
     # ensure no data leakage
     assert(not set.intersection(*[dataset.get_ids() for dataset in datasets.values()]))
 
-    for split in splits:
-        dataloaders[split] = DataLoader(datasets[split], 
-                                        batch_size=params.batch_size, 
-                                        shuffle=True,
-                                        num_workers=params.num_workers,
-                                        pin_memory=params.cuda)
+    dataloader = DataLoader(dataset, 
+                            batch_size=params.batch_size, 
+                            shuffle=True,
+                            num_workers=params.num_workers,
+                            pin_memory=params.cuda)
 
-    return dataloaders
+    return dataloader
 
 
 def bce_loss(outputs, labels, params):
