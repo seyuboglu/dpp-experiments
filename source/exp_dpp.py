@@ -135,7 +135,7 @@ class DPPExperiment(Experiment):
         self.results = {"metrics": disease_to_metrics,
                         "ranks": disease_to_ranks}
    
-    def compute_node_scores(self, train_nodes, val_nodes):
+    def compute_node_scores(self, train_nodes, val_nodes, disease):
         """ Get score 
         Args:
             disease: (Disease) A disease object
@@ -166,7 +166,7 @@ class DPPExperiment(Experiment):
             scores = self.method(train_nodes, val_nodes)
         
         elif self.params.method == 'learned_cn':
-            scores = self.method(train_nodes, val_nodes)
+            scores = self.method(train_nodes, val_nodes, disease)
             
         else:
             logging.error("No method " + self.params.method)
@@ -200,7 +200,7 @@ class DPPExperiment(Experiment):
             val_nodes = disease_nodes[test_indices]
             
             # compute node scores 
-            scores = self.compute_node_scores(train_nodes, val_nodes)
+            scores = self.compute_node_scores(train_nodes, val_nodes, disease)
 
             # compute the metrics of target node
             compute_metrics(metrics, labels, scores, train_nodes, val_nodes)

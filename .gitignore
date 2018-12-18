@@ -7,6 +7,7 @@
 /env3/
 /env2/
 /data/raw/
+/data/go/
 /.vscode/
 **.DS_Store
 **.icloud
@@ -14,3 +15,4 @@
 **_raw.txt
 **raw.txt
 **.tar
+**.pkl
