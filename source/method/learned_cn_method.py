@@ -250,13 +250,13 @@ class LCIModule(nn.Module):
 
         units = getattr(params, "linear_layer_units", [])
         units.insert(0, self.d)
-        self.linear_layers = []
+        linear_layers = []
         for i in range(len(units) - 1):
-            layer = nn.Sequential(nn.Linear(units[i], units[i+1],
-                                  nn.ReLU(),
-                                  nn.Dropout(params.dropout)))
-            self.linear_layers.append(nn.Sequential(nn.Linear(units[i], units[i+1])))
-        self.linear_layers.append(self.nn.Linear(units[-1], 1))
+            linear_layers.append(nn.Linear(units[i], units[i+1]))
+            linear_layers.append(nn.ReLU())
+            linear_layers.append(nn.Dropout(params.dropout))
+        linear_layers.append(nn.Linear(units[-1], 1))
+        self.linear_layers = nn.Sequential(*linear_layers)
 
     def forward(self, input, test=False):
         """
