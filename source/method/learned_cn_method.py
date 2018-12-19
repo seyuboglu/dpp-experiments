@@ -33,30 +33,39 @@ class LearnedCN(DPPMethod):
         self.diseases = diseases
         self.protein_to_node = protein_to_node
 
-        folds_to_diseases = defaultdict()
+        folds_to_diseases = defaultdict(set)
         for disease in diseases.values():
-            folds_to_diseases[int(disease.split)].add(disease)
+            if disease.split == "none":
+                continue
+            folds_to_diseases[disease.split].add(disease)
         
         self.folds_to_models = {}
+        if not(os.path.exists(os.path.join(experiment_dir, "models"))):
+            os.mkdir(os.path.join(experiment_dir, "models"))
+        
         for test_fold in folds_to_diseases.keys(): 
-            val_fold = (test_fold - 1) % len(folds_to_diseases)
+            logging.info("Training model for test {}".format(test_fold))
+            val_fold = str((int(test_fold) - 1) % len(folds_to_diseases))
             test_dataset = DiseaseDataset([disease 
                                            for disease in folds_to_diseases[test_fold]],
                                            protein_to_node)
             val_dataset = DiseaseDataset([disease 
                                           for disease in folds_to_diseases[val_fold]],
                                           protein_to_node) 
-            train_dataset = DiseaseDataset([disease 
-                                             for disease in diseases 
+            train_dataset = DiseaseDataset([disease  
                                              for fold, diseases in folds_to_diseases.items()
-                                             if fold != val_fold and fold != test_fold], 
+                                             if fold != val_fold and fold != test_fold
+                                             for disease in diseases], 
                                             protein_to_node)
             assert(not set.intersection(*[test_dataset.get_ids(), 
                                           val_dataset.get_ids(),
                                           train_dataset.get_ids()]))
 
             model = self.train_method(train_dataset, val_dataset)
-            self.folds_to_models[test_fold] = model
+            path = os.path.join(experiment_dir, "models/model_{}.tar".format(test_fold))
+            torch.save(model.state_dict(), path)
+            self.folds_to_models[test_fold] = path
+        self.curr_fold = None
 
     
     def train_method(self, train_dataset, val_dataset):
@@ -66,7 +75,7 @@ class LearnedCN(DPPMethod):
                               batch_size=self.params.batch_size, 
                               shuffle=True,
                               num_workers=self.params.num_workers,
-                              pin_memory=params.cuda)
+                              pin_memory=self.params.cuda)
     
         dev_dl = DataLoader(val_dataset, 
                             batch_size=self.params.batch_size, 
@@ -83,7 +92,7 @@ class LearnedCN(DPPMethod):
 
         if self.params.cuda:
             model = model.cuda()
-        
+        print(list(model.parameters()))
         optimizer = Adam(model.parameters(), lr=self.params.learning_rate, 
                          weight_decay=self.params.weight_decay)
         
@@ -115,8 +124,15 @@ class LearnedCN(DPPMethod):
         X[0, train_pos] = 1
         if self.params.cuda:
             X = X.cuda()
-        model = self.folds_to_models[int(disease.split)]
-        Y = model(X)
+            
+        if disease.split != self.curr_fold:
+            model = LCIModule(self.params, self.adjacency)
+            model.load_state_dict(torch.load(self.folds_to_models[disease.split]))          
+            model.eval()
+            model.cuda()  
+            self.curr_model = model 
+            self.curr_fold = disease.split
+        Y = self.curr_model(X)
         scores = Y.cpu().detach().numpy().squeeze()
         return scores
 
@@ -124,7 +140,6 @@ class LCIModule(nn.Module):
 
     def __init__(self, params, adjacency):
         super(LCIModule, self).__init__()
-
         # build degree vector
         D = np.sum(adjacency, axis=1, dtype=np.float)
         D = np.power(D, -0.5)
@@ -159,14 +174,11 @@ class LCIModule(nn.Module):
         self.relu = nn.ReLU()
 
         units = getattr(params, "linear_layer_units", [])
-        units.insert(0, self.d)
-        linear_layers = []
-        for i in range(len(units) - 1):
-            linear_layers.append(nn.Linear(units[i], units[i+1]))
-            linear_layers.append(nn.ReLU())
-            linear_layers.append(nn.Dropout(params.dropout))
-        linear_layers.append(nn.Linear(units[-1], 1))
-        self.linear_layers = nn.Sequential(*linear_layers)
+
+        self.b = nn.Parameter(torch.ones(1, 
+                                         dtype=torch.float,
+                                         requires_grad=True))
+        self.linear_layer = nn.Linear(self.d, 1)
 
     def forward(self, input, test=False):
         """
@@ -181,9 +193,7 @@ class LCIModule(nn.Module):
         X = torch.matmul(X, self.A_right)  # (d, m, n)
 
         X = X.view(self.d, m * n).t()
-        for linear_layer in self.linear_layers:
-            X = linear_layer(X)  # (1, m*n)
- 
+        X = self.linear_layer(X) + self.b
         X = X.view(m, n)  # (m, n)
         return X
 

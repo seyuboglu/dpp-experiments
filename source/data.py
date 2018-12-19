@@ -274,7 +274,8 @@ def split_diseases_cc(split_sizes, disease_path, network_path, threshold=0.3):
 
         
 def load_diseases(associations_path=ASSOCIATIONS_PATH, 
-                  diseases_subset=[], 
+                  diseases_subset=[],
+                  exlcude_splits=[],
                   gene_names_path=GENE_NAMES_PATH): 
     """ Load a set of disease-protein associations
     Args:
@@ -283,7 +284,7 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
     Returns:
         diseases (dict)
     """
-    diseases = {} 
+    diseases = {}
     total = 0
     with open(associations_path) as associations_file:
         reader = csv.DictReader(associations_file)
@@ -311,6 +312,9 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
                 split = row["splits"]
             else:
                 split = None
+            
+            if split in exlcude_splits:
+                continue
 
             total += len(disease_proteins)
             diseases[disease_id] = Disease(disease_id, disease_name, disease_proteins, split)

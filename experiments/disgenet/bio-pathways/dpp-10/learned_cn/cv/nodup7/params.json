@@ -5,7 +5,7 @@
     "num_workers": 1,
 
     "ppi_network": "data/networks/bio-pathways-network.txt",
-    "diseases_path": "data/associations/disgenet-associations-nodup7.csv",
+    "diseases_path": "data/associations/disgenet-associations-nodup7-cv.csv",
     "disease_subset": [],
     
     "n_folds": 10,
@@ -17,10 +17,10 @@
     "linear_layer_units": [],
     "dropout": 0.5,
     "initialization": "ones",
-    "learning_rate": 1e-0,
+    "learning_rate": 1e0,
     "activation": "ReLU", 
     "weight_decay": 1e-5,
-    "num_epochs":  1,
+    "num_epochs":  5,
     "batch_size": 200,
     "save_summary_steps": 40,
 

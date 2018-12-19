@@ -55,7 +55,7 @@ class DPPExperiment(Experiment):
         self.ppi_networkx, self.ppi_network_adj, self.protein_to_node = load_network(self.params.ppi_network)
         self.node_to_protein = {node: protein for protein, node in self.protein_to_node.items()}
         logging.info("Loading Disease Associations...")
-        self.diseases_dict = load_diseases(self.params.diseases_path, self.params.disease_subset)
+        self.diseases_dict = load_diseases(self.params.diseases_path, self.params.disease_subset, ['none'])
 
         # Load method specific data 
         # TODO: Build class for each method 
@@ -108,10 +108,12 @@ class DPPExperiment(Experiment):
         """
         logging.info("Running Experiment...")
         disease_to_metrics, disease_to_ranks = {}, {}
+        diseases = list(self.diseases_dict.values())
+        diseases.sort(key=lambda x: x.split)
         if self.params.n_processes > 1: 
             p = Pool(self.params.n_processes)
             with tqdm(total=len(self.diseases_dict)) as t:
-                for n_finished, (disease, metrics, ranks) in enumerate(p.imap(run_dpp_wrapper, self.diseases_dict.values()), 1):
+                for n_finished, (disease, metrics, ranks) in enumerate(p.imap(run_dpp_wrapper, diseases), 1):
                     if metrics != None or ranks != None:
                         disease_to_ranks[disease] = ranks 
                         disease_to_metrics[disease] = metrics
@@ -122,7 +124,7 @@ class DPPExperiment(Experiment):
                 
         else: 
             with tqdm(total=len(self.diseases_dict)) as t:
-                for n_finished, disease in enumerate(self.diseases_dict.values()): 
+                for n_finished, disease in enumerate(diseases): 
                     disease, metrics, ranks = self.run_dpp(disease)
                     if metrics != None or ranks != None:
                         disease_to_metrics[disease] = metrics
@@ -166,7 +168,7 @@ class DPPExperiment(Experiment):
             scores = self.method(train_nodes, val_nodes)
         
         elif self.params.method == 'learned_cn':
-            scores = self.method(train_nodes, val_nodes, disease)
+            scores = self.method.compute_scores(train_nodes, val_nodes, disease)
             
         else:
             logging.error("No method " + self.params.method)
