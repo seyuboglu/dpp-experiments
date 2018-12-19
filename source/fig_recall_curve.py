@@ -55,6 +55,8 @@ if __name__ == '__main__':
                     if (hasattr(params, "splits") and 
                         diseases_dict[row[0]].split not in params.splits):
                         continue 
+                    if diseases_dict[row[0]].split == "none":
+                        continue 
                     count += 1
                     ranks = [parse_id_rank_pair(rank_str)[1] for rank_str in row[2:]]
                     ranks = np.array(ranks).astype(int)
