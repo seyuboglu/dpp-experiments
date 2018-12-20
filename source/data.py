@@ -269,13 +269,14 @@ def split_diseases_cc(split_sizes, disease_path, network_path, threshold=0.3):
 
     df['splits'] = row_splits
     directory, filename = os.path.split(disease_path)
-    df.to_csv(os.path.join(directory, filename + "_ccsplit.csv"), index=False)
+    print(threshold)
+    df.to_csv(os.path.join(directory, filename[:-4] + "_cc.csv"), index=False)
     return df 
 
         
 def load_diseases(associations_path=ASSOCIATIONS_PATH, 
                   diseases_subset=[],
-                  exlcude_splits=[],
+                  exclude_splits=[],
                   gene_names_path=GENE_NAMES_PATH): 
     """ Load a set of disease-protein associations
     Args:
@@ -313,7 +314,7 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
             else:
                 split = None
             
-            if split in exlcude_splits:
+            if split in exclude_splits:
                 continue
 
             total += len(disease_proteins)
@@ -525,7 +526,7 @@ if __name__ == '__main__':
                        '8': 179,
                        '9': -1}
         split_diseases_cc(split_sizes, 'data/associations/disgenet-associations-nodup7.csv', 
-                          "data/networks/bio-pathways-network.txt", threshold=0.3)
+                          "data/networks/bio-pathways-network.txt", threshold=0.7)
     
     elif(args.job == "build_biogrid"):
         print_title("Building Biogrid Network")

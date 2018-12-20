@@ -54,11 +54,14 @@ class LearnedCN(DPPMethod):
                                           protein_to_node) 
             train_dataset = DiseaseDataset([disease  
                                              for fold, diseases in folds_to_diseases.items()
-                                             if fold != val_fold and fold != test_fold
+                                             if fold != test_fold and fold != val_fold
                                              for disease in diseases], 
                                             protein_to_node)
+            
+            # ensure no data leakage
             assert(not set.intersection(*[test_dataset.get_ids(), 
-                                          val_dataset.get_ids(),
+                                          train_dataset.get_ids()]))
+            assert(not set.intersection(*[val_dataset.get_ids(),
                                           train_dataset.get_ids()]))
 
             model = self.train_method(train_dataset, val_dataset)
@@ -92,7 +95,6 @@ class LearnedCN(DPPMethod):
 
         if self.params.cuda:
             model = model.cuda()
-        print(list(model.parameters()))
         optimizer = Adam(model.parameters(), lr=self.params.learning_rate, 
                          weight_decay=self.params.weight_decay)
         
