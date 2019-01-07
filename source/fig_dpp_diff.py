@@ -34,7 +34,7 @@ if __name__ == '__main__':
     set_logger(os.path.join(args.experiment_dir, 'experiment.log'), level=logging.INFO, console=True)
 
     # Log Title 
-    logging.info("Recall-Curve Generator")
+    logging.info("DPP-Diff Generator")
     logging.info("Sabri Eyuboglu  -- SNAP Group")
     logging.info("======================================")
 
@@ -51,8 +51,7 @@ if __name__ == '__main__':
             for i, row in enumerate(metrics_reader):
                 if row[params.metric] == params.metric: continue
                 if not is_disease_id(row["Disease ID"]): continue 
-                if (hasattr(params, "splits") and 
-                    diseases_dict[row["Disease ID"]].split not in params.splits):
+                if (diseases_dict[row["Disease ID"]].split == "none"):
                         continue 
                 method_to_scores[method_name][row["Disease ID"]] = float(row[params.metric])
     
@@ -87,8 +86,8 @@ if __name__ == '__main__':
         plt.plot(np.arange(len(diffs)), np.zeros(len(diffs)), color='k', linewidth=0.8)
         plt.fill_between(np.arange(method_end), 0, diffs[:method_end], alpha=0.6)
 
-        plt.ylabel(params.metric + " Difference")
-        plt.xlabel("Disease Pathways Sorted by Difference")
+        plt.ylabel("Difference in recall-at-100") 
+        plt.xlabel("Diseases sorted by difference")
         plt.legend()
 
         sns.despine()

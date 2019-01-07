@@ -57,7 +57,22 @@ def get_pairwise_scores(ppi_matrix, pathway):
     return pathway_scores
 
 
-def get_loo_scores(ppi_matrix,  pathway):
+def density(name, ppi_matrix, adj, pathway):
+    """
+    """
+    if name == "CI":
+        interactors = np.sum(adj[pathway, :], axis=0, keepdims=False)
+        common_interactors = np.where(interactors > 1)[0]
+        subgraph = np.concatenate((pathway, common_interactors))
+    else:
+        subgraph = pathway 
+    
+    subgraph = adj[subgraph, :][:, subgraph]
+    density = subgraph[np.triu_indices(len(subgraph), k=1)].mean()
+    return density
+
+
+def get_loo_scores(ppi_matrix, pathway):
     """
     Gets the scores between nodes in a disease pathway.
     args:
@@ -75,7 +90,7 @@ def get_loo_scores(ppi_matrix,  pathway):
     return np.array(scores)
     
 
-def loo_median(ppi_matrix, pathway):
+def loo_median(name, ppi_matrix, adj, pathway):
     """
     Computes the median score for each node w.r.t
     the rest of the pathway. 
@@ -86,7 +101,7 @@ def loo_median(ppi_matrix, pathway):
     return np.median(get_loo_scores(ppi_matrix, pathway))
 
 
-def pairwise_mean(ppi_matrix, pathway):
+def pairwise_mean(name, ppi_matrix, adj, pathway):
     """
     Computes average score between nodes in a pathway. 
     args:
@@ -96,7 +111,7 @@ def pairwise_mean(ppi_matrix, pathway):
     return np.mean(get_pairwise_scores(ppi_matrix, pathway))
 
 
-def pairwise_median(ppi_matrix, pathway):
+def pairwise_median(name, ppi_matrix, adj, pathway):
     """
     Computes median score between nodes in a pathway. 
     args:
@@ -106,7 +121,7 @@ def pairwise_median(ppi_matrix, pathway):
     return np.median(get_pairwise_scores(ppi_matrix, pathway))
 
 
-def pairwise_nonzero(ppi_matrix, pathway):
+def pairwise_nonzero(name, ppi_matrix, adj, pathway):
     """
     Computes fraction nonzero score between nodes in a pathway. 
     args:
@@ -146,16 +161,16 @@ class PermutationTest(Experiment):
 
         self.metric_fn = globals()[self.params.metric_fn]
 
-    def get_null_pathways(self, pathway, quantity = 1, stdev = 25):
+    def get_null_pathways(self, pathway, quantity=1, stdev=25):
         """
         Given a reference pathway, generate quantity 
         """
         null_pathways = [set() for _ in range(quantity)] 
         for node in pathway:
             node_rank = self.nodes_ranked_by_deg[node]
-            a = (0 - node_rank ) / stdev
+            a = (0 - node_rank) / stdev
             b = (len(self.nodes_sorted_by_deg) - node_rank) / stdev
-            rank_dist = truncnorm(a, b, loc = node_rank, scale = stdev)
+            rank_dist = truncnorm(a, b, loc=node_rank, scale=stdev)
             for null_pathway in null_pathways:
                 while True:
                     sample_rank = int(rank_dist.rvs())
@@ -187,8 +202,10 @@ class PermutationTest(Experiment):
                    "disease_size": len(disease_pathway)}
         for name, ppi_matrix in self.ppi_matrices.items():
             
-            disease_result = self.metric_fn(ppi_matrix, disease_pathway)
-            null_results = np.array([self.metric_fn(ppi_matrix, null_pathway) 
+            disease_result = self.metric_fn(name, ppi_matrix, 
+                                            self.ppi_adj, disease_pathway)
+            null_results = np.array([self.metric_fn(name, ppi_matrix, 
+                                                    self.ppi_adj, disease_pathway) 
                                      for null_pathway in null_pathways])
 
             disease_pvalue = self.compute_pvalue(disease_result, null_results)

@@ -322,6 +322,19 @@ def load_diseases(associations_path=ASSOCIATIONS_PATH,
 
     return diseases 
 
+def build_disease_matrix(diseases_dict, protein_to_node, exclude_splits=[]):
+    """
+    """
+    split_diseases = [disease for disease in diseases_dict.values() if disease.split not in exclude_splits]
+    m = len(split_diseases)
+    n = len(protein_to_node)
+    diseases = np.zeros((m, n), dtype=int)
+    idx_to_disease = []
+    for i, disease in enumerate(split_diseases):
+        disease_nodes = disease.to_node_array(protein_to_node)
+        diseases[i, disease_nodes] = 1
+        idx_to_disease.append(disease)
+    return diseases, idx_to_disease
 
 def write_associations(diseases, associations_path, threshold=10): 
     """ Write a set of disease-protein associations to a csv

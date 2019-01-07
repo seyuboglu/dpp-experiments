@@ -6,6 +6,7 @@ import smtplib
 from re import sub
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from collections import OrderedDict
 
 import numpy as np
 import torch 
@@ -33,7 +34,7 @@ class Params():
     def update(self, json_path):
         """Loads parameters from json file"""
         with open(json_path) as f:
-            params = json.load(f)
+            params = json.load(f,  object_pairs_hook=OrderedDict)
             self.__dict__.update(params)
 
     @property

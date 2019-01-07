@@ -49,7 +49,9 @@ class Aggregate(Experiment):
         logging.info("======================================")
         logging.info("Loading Disease Associations...")
         self.diseases = load_diseases(self.params.diseases_path, 
-                                      self.params.disease_subset)
+                                      self.params.disease_subset,
+                                      exclude_splits=['none'])
+        print(len(self.diseases))
             
     def process_experiment(self, exp_dict):
         """
@@ -57,10 +59,10 @@ class Aggregate(Experiment):
         args:
             exp_dict
         """
-        print(exp_dict["path"])
         df = pd.read_csv(exp_dict["path"],
                          index_col=0,
                          engine='python')
+        df = df.loc[self.diseases.keys()]
         return df[exp_dict["cols"]]
         
     def _run(self):
@@ -150,4 +152,4 @@ if __name__ == "__main__":
         exp.load_results()
     elif exp.run():
         exp.save_results()
-    exp.plot_results()
+    #exp.plot_results()
