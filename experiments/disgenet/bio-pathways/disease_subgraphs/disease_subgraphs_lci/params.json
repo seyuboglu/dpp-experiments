@@ -1,0 +1,17 @@
+{
+    "ppi_network": "data/networks/bio-pathways-network.txt",
+    "diseases_path": "data/associations/disgenet-associations-cv-cc7.csv",
+    "protein_names_path": "data/protein_data/protein_names.txt",
+    "disease_subset": [], 
+
+    "method_exp_dirs": {"LCI": "experiments/disgenet/bio-pathways/dpp-10/learned_cn/cv/nodup7-cc7"
+                       },
+    
+    "node_data": {
+        ""
+    }
+
+    "ppi_matrix": "data/ppi_matrices/comp_sqrt_rnorm.npy", 
+
+    "degree_cutoff": 100
+}
