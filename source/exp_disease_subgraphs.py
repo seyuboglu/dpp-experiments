@@ -177,10 +177,11 @@ def write_disease_subgraph(disease, subgraph, directory):
                         'Protein Name': protein_to_name.get(protein, ""),
                         'Disease Node': 1 if node in disease_nodes else 0,
                         'Degree': ppi_networkx.degree(node)}
-            for  method_name, _ in params.method_exp_dirs.items():
+            for method_name, _ in params.method_exp_dirs.items():
                 protein_to_rank = method_to_ranks[method_name][disease.id]
                 if protein in protein_to_rank:
                     row_dict[method_name] = protein_to_rank[protein]
+
             node_data_writer.writerow(row_dict)
 
 if __name__ == '__main__':
@@ -205,7 +206,9 @@ if __name__ == '__main__':
     node_to_protein = {node: protein for protein, node in protein_to_node.items()}
     ppi_networkx = nx.from_numpy_matrix(ppi_network_adj)
     logging.info("Loading Disease Associations...")
-    diseases_dict = load_diseases(params.diseases_path, params.disease_subset)
+    diseases_dict = load_diseases(params.diseases_path, 
+                                  params.disease_subset, 
+                                  exclude_splits='none')
 
     logging.info("Loading Protein Names...")
     protein_to_name, _ = load_gene_names(params.protein_names_path)
@@ -218,7 +221,7 @@ if __name__ == '__main__':
     for method_name, method_dir in params.method_exp_dirs.items(): 
         disease_to_ranks = load_ranks(method_dir)
         method_to_ranks[method_name] = disease_to_ranks
-
+    
     #Run Experiment
     logging.info("Running Experiment...")
     all_metrics = []

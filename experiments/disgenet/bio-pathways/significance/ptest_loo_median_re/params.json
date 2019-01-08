@@ -1,16 +1,17 @@
 {
     "n_processes": 5,
     "ppi_network": "data/networks/bio-pathways-network.txt",
-    "diseases_path": "data/associations/disgenet-associations.csv",
+    "diseases_path": "data/associations/disgenet-associations-nodup7-cv-cc7.csv",
     "disease_subset": [],
 
-    "ppi_matrices": {"COMP": "data/ppi_matrices/bio-pathways/comp_sqrt_rnorm_cnorm.npy",
-                     "DNS": "data/ppi_matrices/bio-pathways/dn_id_rnorm.npy"},
+    "ppi_matrices": {"CI": "data/ppi_matrices/bio-pathways/comp_sqrt_rnorm_cnorm.npy",
+                     "DI": "data/ppi_matrices/bio-pathways/dn_id_rnorm.npy"},
 
     "metric_fn": "loo_median",
 
     "n_random_pathways": 100,
     "sd_sample": 50, 
+    "random_equal": true,
     
     "plot_type": "bar",
     "plot_palette": ["#E03C3F", "#6178A8"],
@@ -19,6 +20,7 @@
 
     "xlabel_all": "Median score between proteins within pathway [p-value]",
     "xlabel_disease": "Median {} beween proteins within pathway [value]",
-    "yscale": "linear" 
+    "yscale": "log",
 
+    "exclude": ["DNS"]
 }

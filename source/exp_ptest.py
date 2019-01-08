@@ -157,7 +157,9 @@ class PermutationTest(Experiment):
         logging.info("Sabri Eyuboglu  -- SNAP Group")
         logging.info("======================================")
         logging.info("Loading Disease Associations...")
-        self.diseases = load_diseases(self.params.diseases_path, self.params.disease_subset)
+        self.diseases = load_diseases(self.params.diseases_path, 
+                                      self.params.disease_subset,
+                                      exclude_splits=['none'])
 
         self.metric_fn = globals()[self.params.metric_fn]
 
@@ -183,9 +185,17 @@ class PermutationTest(Experiment):
         
         return map(np.array, (map(list, null_pathways)))
 
-    def compute_pvalue(self, disease_result, null_results):
-        return np.logical_or((null_results > disease_result),
-                             (np.isclose(null_results, disease_result))).mean()
+    def compute_pvalue(self, disease_result, null_results, random_equal=False):
+        # if equal, randomly 
+        if random_equal:
+            equal = np.logical_and(np.isclose(null_results, disease_result),
+                                   np.random.choice(a=[False, True], 
+                                                    size=len(null_results)))
+        else:
+            equal = np.isclose(null_results, disease_result)
+
+        return np.logical_or((null_results > disease_result), equal).mean()
+
 
     def process_disease(self, disease):
         """
@@ -205,10 +215,12 @@ class PermutationTest(Experiment):
             disease_result = self.metric_fn(name, ppi_matrix, 
                                             self.ppi_adj, disease_pathway)
             null_results = np.array([self.metric_fn(name, ppi_matrix, 
-                                                    self.ppi_adj, disease_pathway) 
+                                                    self.ppi_adj, null_pathway) 
                                      for null_pathway in null_pathways])
 
-            disease_pvalue = self.compute_pvalue(disease_result, null_results)
+            disease_pvalue = self.compute_pvalue(disease_result, 
+                                                 null_results, 
+                                                 random_equal=self.params.random_equal)
             results.update({"pvalue_" + name: disease_pvalue,
                             self.metric_fn.__name__ + "_" + name: disease_result,
                             "null_" + self.metric_fn.__name__ + "s_" + name: null_results})
@@ -350,7 +362,7 @@ class PermutationTest(Experiment):
             #sns.barplot(series, label=name)
             if self.params.plot_type == "bar":
                 sns.distplot(series, bins=40, kde=False, 
-                             hist_kws={'range': (0.0, 1.0)}, 
+                             hist_kws={'range': (0.0, 0.25)}, 
                              label=self.params.labels[name] 
                                    if hasattr(self.params, "labels") 
                                    else name)
@@ -385,7 +397,7 @@ class PermutationTest(Experiment):
             plt.yticks()
         plt.legend()
         #plt.tight_layout()
-        plt.xlim(xmin=0, xmax=1)
+        plt.xlim(xmin=0, xmax=0.25)
         plt.yscale(self.params.yscale)
 
         time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
