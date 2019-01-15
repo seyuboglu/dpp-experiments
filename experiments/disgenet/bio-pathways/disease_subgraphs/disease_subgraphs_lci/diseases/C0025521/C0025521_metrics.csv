@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025521,Inborn Errors of Metabolism,16,54,0.075,0.1900790166812994,0.273235499650594,0.9664804469273743,0.9531106177919757,0.9569880644629009,0.9268443893366398,0.13194444444444445

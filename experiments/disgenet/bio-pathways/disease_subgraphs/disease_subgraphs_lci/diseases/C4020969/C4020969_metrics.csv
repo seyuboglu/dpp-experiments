@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020969,Inflammatory abnormality of the eye,10,49,0.2,0.15789473684210525,0.18197278911564627,0.9752407152682255,0.9557351132970314,0.9614275414563807,0.9053384700055036,0.21020408163265303

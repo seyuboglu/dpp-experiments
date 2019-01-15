@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0034067,Pulmonary Emphysema,23,161,0.09486166007905138,0.07694805194805195,0.07577639751552795,0.961038961038961,0.937347996193296,0.9472631977089749,0.8701426463354648,0.10261949770456386

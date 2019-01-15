@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1842083,Abnormality of the ribs,32,144,0.024193548387096774,0.09540323677410581,0.11227661227661227,0.9826338639652678,0.9348789714312238,0.9448170513401914,0.9252842447211694,0.06640625

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1858574,Sparse axillary hair,28,173,0.05555555555555555,0.13476221640488656,0.1561365774969754,0.9725130890052356,0.8939712508045484,0.8990438939591482,0.9316897791474062,0.08567299752270849

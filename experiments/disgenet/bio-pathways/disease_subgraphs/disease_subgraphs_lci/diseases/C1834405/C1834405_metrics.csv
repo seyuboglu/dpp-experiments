@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1834405,Nail dysplasia,52,879,0.03996983408748114,0.058003602558058004,0.060738932468818105,0.9792075323656336,0.7186946682144909,0.7234454277286135,0.892387086450374,0.05064758904349347

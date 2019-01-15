@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1704375,Hypophosphatemic Rickets,10,30,0.13333333333333333,0.16538461538461538,0.12183908045977011,0.9689119170984456,0.9624672679662496,0.9836621454993835,0.9012145748987854,0.23333333333333334

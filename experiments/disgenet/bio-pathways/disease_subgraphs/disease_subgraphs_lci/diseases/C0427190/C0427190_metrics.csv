@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0427190,"Ataxia, Truncal",21,185,0.05714285714285714,0.25592039800995026,0.29665099882491186,0.9838274932614556,0.8366647085906616,0.8386359641413254,0.9537037037037037,0.10476190476190475

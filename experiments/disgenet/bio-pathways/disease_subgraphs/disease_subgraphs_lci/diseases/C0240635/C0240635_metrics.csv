@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240635,Byzanthine arch palate,193,2838,0.015705958549222798,0.024950019861281616,0.02611941318075377,0.957926697028844,0.47048870185253405,0.4702803216958765,0.7816228591555496,0.018675123326286118

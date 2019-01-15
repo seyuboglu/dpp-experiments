@@ -1,0 +1,1830 @@
+2019-01-14 19:32:12,734:INFO: Subgraphs in Disease Pathways
+2019-01-14 19:32:12,734:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-14 19:32:12,735:INFO: ======================================
+2019-01-14 19:32:12,735:INFO: Loading PPI Network...
+2019-01-14 19:32:27,706:INFO: Loading Disease Associations...
+2019-01-14 19:32:52,456:INFO: Subgraphs in Disease Pathways
+2019-01-14 19:32:52,456:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-14 19:32:52,456:INFO: ======================================
+2019-01-14 19:32:52,456:INFO: Loading PPI Network...
+2019-01-14 19:33:04,936:INFO: Loading Disease Associations...
+2019-01-14 19:33:05,022:INFO: Loading Protein Names...
+2019-01-14 19:33:33,607:INFO: Subgraphs in Disease Pathways
+2019-01-14 19:33:33,607:INFO: Sabri Eyuboglu  -- SNAP Group
+2019-01-14 19:33:33,607:INFO: ======================================
+2019-01-14 19:33:33,607:INFO: Loading PPI Network...
+2019-01-14 19:33:46,121:INFO: Loading Disease Associations...
+2019-01-14 19:33:46,207:INFO: Loading Protein Names...
+2019-01-14 19:33:46,251:INFO: Loading Protein Ranks
+2019-01-14 19:33:46,344:INFO: Running Experiment...
+2019-01-14 19:33:46,345:INFO: 1: Choreatic disease
+2019-01-14 19:33:46,576:INFO: 2: Pyramidal tract disease
+2019-01-14 19:33:46,658:INFO: 3: Abnormal eyelashes
+2019-01-14 19:33:46,755:INFO: 4: Arnold Chiari Malformation
+2019-01-14 19:33:46,819:INFO: 5: Metaphyseal cupping
+2019-01-14 19:33:46,892:INFO: 6: Cortical white matter abnormalities seen on MRI
+2019-01-14 19:33:47,088:INFO: 7: Psychoses, Substance-Induced
+2019-01-14 19:33:47,439:INFO: 8: Neuro-degenerative disease
+2019-01-14 19:33:48,240:INFO: 9: Macular pigmentary changes
+2019-01-14 19:33:48,289:INFO: 10: Short metacarpal
+2019-01-14 19:33:48,835:INFO: 11: Oligohydramnios
+2019-01-14 19:33:48,985:INFO: 12: Apnea
+2019-01-14 19:33:49,357:INFO: 13: Elfin facies
+2019-01-14 19:33:49,482:INFO: 14: Rhizomelia
+2019-01-14 19:33:49,621:INFO: 15: Hypoplasia of the maxilla
+2019-01-14 19:33:50,450:INFO: 16: Speech Delay
+2019-01-14 19:33:51,477:INFO: 17: Nephrosis
+2019-01-14 19:33:51,652:INFO: 18: Mouth Diseases
+2019-01-14 19:33:51,793:INFO: 19: Non-obstructive azoospermia
+2019-01-14 19:33:51,876:INFO: 20: Mouth Abnormalities
+2019-01-14 19:33:51,982:INFO: 21: menstrual periods stopped for over 6 months
+2019-01-14 19:33:52,055:INFO: 22: High, narrow palate
+2019-01-14 19:33:52,271:INFO: 23: Flat occiput
+2019-01-14 19:33:52,410:INFO: 24: nonverbal
+2019-01-14 19:33:52,738:INFO: 25: Xerostomia
+2019-01-14 19:33:53,398:INFO: 26: Cholangiocarcinoma
+2019-01-14 19:33:53,900:INFO: 27: Tachypnea
+2019-01-14 19:33:54,004:INFO: 28: ATRIOVENTRICULAR CANAL DEFECT
+2019-01-14 19:33:54,145:INFO: 29: Cognitive delay
+2019-01-14 19:33:57,546:INFO: 30: Congenital malrotation of intestine
+2019-01-14 19:33:57,753:INFO: 31: Hyperhomocysteinemia
+2019-01-14 19:33:57,823:INFO: 32: Respiratory function loss
+2019-01-14 19:33:58,540:INFO: 33: Brachycephaly
+2019-01-14 19:33:59,157:INFO: 34: Terminal tremor
+2019-01-14 19:33:59,386:INFO: 35: Global developmental delay, severe
+2019-01-14 19:33:59,591:INFO: 36: Recurrent bronchitis
+2019-01-14 19:33:59,863:INFO: 37: Aortic Aneurysm
+2019-01-14 19:34:00,002:INFO: 38: Neoplasms, Germ Cell and Embryonal
+2019-01-14 19:34:00,077:INFO: 39: Erectile abnormalities
+2019-01-14 19:34:00,150:INFO: 40: Alopecia Areata
+2019-01-14 19:34:00,202:INFO: 41: Alopecia
+2019-01-14 19:34:01,014:INFO: 42: Clouding of corneal stroma
+2019-01-14 19:34:01,263:INFO: 43: Bradycardia
+2019-01-14 19:34:01,397:INFO: 44: Common Variable Immunodeficiency
+2019-01-14 19:34:01,570:INFO: 45: Glomerulonephritis
+2019-01-14 19:34:01,783:INFO: 46: Malformations of Cortical Development, Group II
+2019-01-14 19:34:01,935:INFO: 47: Tubulointerstitial fibrosis
+2019-01-14 19:34:02,003:INFO: 48: Urine phosphorous concentration above normal
+2019-01-14 19:34:02,089:INFO: 49: Cerebrovascular accident
+2019-01-14 19:34:02,708:INFO: 50: Restless Legs Syndrome
+2019-01-14 19:34:02,752:INFO: 51: Periorbital edema
+2019-01-14 19:34:02,889:INFO: 52: Macular dystrophy
+2019-01-14 19:34:02,913:INFO: 53: Cone dystrophy
+2019-01-14 19:34:02,981:INFO: 54: Pathological accumulation of air in tissues
+2019-01-14 19:34:03,157:INFO: 55: Electroretinogram abnormal
+2019-01-14 19:34:03,738:INFO: 56: Recurrent pulmonary infections
+2019-01-14 19:34:04,030:INFO: 57: Chronic Lymphocytic Leukemia
+2019-01-14 19:34:04,619:INFO: 58: Mild global developmental delay
+2019-01-14 19:34:04,749:INFO: 59: Short distal phalanges
+2019-01-14 19:34:05,123:INFO: 60: Growth retardation
+2019-01-14 19:34:05,805:INFO: 61: Increased serum parathyroid hormone
+2019-01-14 19:34:05,956:INFO: 62: Brain Edema
+2019-01-14 19:34:06,170:INFO: 63: Convex nasal ridge
+2019-01-14 19:34:06,562:INFO: 64: Ulnar polydactyly of fingers
+2019-01-14 19:34:06,809:INFO: 65: Nephrotic Syndrome
+2019-01-14 19:34:07,230:INFO: 66: Adrenal cortical hypofunction
+2019-01-14 19:34:07,310:INFO: 67: Kallmann Syndrome 2 (disorder)
+2019-01-14 19:34:07,361:INFO: 68: Diabetes Mellitus
+2019-01-14 19:34:08,073:INFO: 69: Diabetes Insipidus
+2019-01-14 19:34:08,123:INFO: 70: Short middle phalanx of the 5th finger
+2019-01-14 19:34:08,213:INFO: 71: Posteriorly rotated ear
+2019-01-14 19:34:08,895:INFO: 72: Scapular weakness
+2019-01-14 19:34:09,488:INFO: 73: Substance Withdrawal Syndrome
+2019-01-14 19:34:09,753:INFO: 74: Prominent lower lip
+2019-01-14 19:34:10,464:INFO: 75: Fissured tongue
+2019-01-14 19:34:10,606:INFO: 76: Anhidrosis
+2019-01-14 19:34:10,813:INFO: 77: Tongue Neoplasms
+2019-01-14 19:34:10,925:INFO: 78: Myoglobinuria
+2019-01-14 19:34:11,039:INFO: 79: Carotid Artery Diseases
+2019-01-14 19:34:11,157:INFO: 80: Malar flattening
+2019-01-14 19:34:12,447:INFO: 81: Small thymus
+2019-01-14 19:34:12,552:INFO: 82: Nuclear non-senile cataract
+2019-01-14 19:34:12,618:INFO: 83: Optic Neuropathy
+2019-01-14 19:34:12,695:INFO: 84: Coronary Artery Disease
+2019-01-14 19:34:13,276:INFO: 85: Aplasia/Hypoplasia of the iris
+2019-01-14 19:34:13,356:INFO: 86: Substance-Related Disorders
+2019-01-14 19:34:13,794:INFO: 87: Uterine Cervical Neoplasm
+2019-01-14 19:34:14,236:INFO: 88: Paresthesia
+2019-01-14 19:34:14,572:INFO: 89: Sparse scalp hair
+2019-01-14 19:34:14,948:INFO: 90: Male Pseudohermaphroditism
+2019-01-14 19:34:15,070:INFO: 91: Stroke-like episodes
+2019-01-14 19:34:15,142:INFO: 92: Thin dental enamel
+2019-01-14 19:34:15,549:INFO: 93: Liver Cirrhosis, Alcoholic
+2019-01-14 19:34:15,721:INFO: 94: Acute Lung Injury
+2019-01-14 19:34:15,881:INFO: 95: Liver Cirrhosis, Experimental
+2019-01-14 19:34:19,201:INFO: 96: Biliary cirrhosis
+2019-01-14 19:34:19,522:INFO: 97: Liver diseases
+2019-01-14 19:34:20,081:INFO: 98: Hereditary nonpolyposis colorectal carcinoma
+2019-01-14 19:34:20,559:INFO: 99: Static Tremor
+2019-01-14 19:34:20,776:INFO: 100: Congenital hypoplasia of lung
+2019-01-14 19:34:21,110:INFO: 101: Recurrent lower respiratory tract infection
+2019-01-14 19:34:21,199:INFO: 102: LEFT VENTRICULAR NONCOMPACTION 8
+2019-01-14 19:34:21,512:INFO: 103: Biparietal narrowing
+2019-01-14 19:34:21,744:INFO: 104: Hip Dislocation, Congenital
+2019-01-14 19:34:22,185:INFO: 105: Duodenal villous atrophy
+2019-01-14 19:34:22,298:INFO: 106: Pancytopenia
+2019-01-14 19:34:22,560:INFO: 107: Memory Loss
+2019-01-14 19:34:23,265:INFO: 108: Abnormality of pulmonary valve
+2019-01-14 19:34:23,477:INFO: 109: Familial primary pulmonary hypertension
+2019-01-14 19:34:23,656:INFO: 110: Delirium
+2019-01-14 19:34:23,715:INFO: 111: Abnormality of female internal genitalia
+2019-01-14 19:34:23,843:INFO: 112: Lung Injury
+2019-01-14 19:34:24,138:INFO: 113: Hypernasal voice
+2019-01-14 19:34:24,592:INFO: 114: Hypoalphalipoproteinemias
+2019-01-14 19:34:24,721:INFO: 115: Slowed saccades
+2019-01-14 19:34:24,823:INFO: 116: Animal Mammary Neoplasms
+2019-01-14 19:34:26,391:INFO: 117: Osteochondrodysplasias
+2019-01-14 19:34:26,904:INFO: 118: Abnormality of the rib cage
+2019-01-14 19:34:27,026:INFO: 119: Moderate mental retardation (I.Q. 35-49)
+2019-01-14 19:34:27,418:INFO: 120: Myoclonic Epilepsies, Progressive
+2019-01-14 19:34:27,586:INFO: 121: Neuroendocrine Tumors
+2019-01-14 19:34:27,708:INFO: 122: Hepatitis
+2019-01-14 19:34:27,862:INFO: 123: Optic disc abnormalities
+2019-01-14 19:34:27,930:INFO: 124: Hepatic Encephalopathy
+2019-01-14 19:34:28,057:INFO: 125: Overlapping fingers
+2019-01-14 19:34:28,156:INFO: 126: Congenital Nonbullous Ichthyosiform Erythroderma
+2019-01-14 19:34:28,239:INFO: 127: Adenocarcinoma of lung (disorder)
+2019-01-14 19:34:29,213:INFO: 128: Tented upper lip
+2019-01-14 19:34:29,355:INFO: 129: Angina Pectoris
+2019-01-14 19:34:29,437:INFO: 130: cocaine use
+2019-01-14 19:34:29,517:INFO: 131: Hepatitis, Autoimmune
+2019-01-14 19:34:29,582:INFO: 132: Prostatic Neoplasms
+2019-01-14 19:34:32,398:INFO: 133: Choanal Atresia
+2019-01-14 19:34:32,744:INFO: 134: Talipes foot deformities
+2019-01-14 19:34:33,019:INFO: 135: Psychomotor retardation, profound
+2019-01-14 19:34:33,130:INFO: 136: Posterior displacement of the tongue
+2019-01-14 19:34:33,312:INFO: 137: Increased calcium level in kidney
+2019-01-14 19:34:33,421:INFO: 138: Increased bilirubin level (finding)
+2019-01-14 19:34:33,598:INFO: 139: Thick, flared eyebrows
+2019-01-14 19:34:34,196:INFO: 140: Patella aplasia-hypoplasia
+2019-01-14 19:34:34,374:INFO: 141: Autistic Disorder
+2019-01-14 19:34:36,087:INFO: 142: Poor school performance
+2019-01-14 19:34:39,700:INFO: 143: Fundus with peripheral 'bony spicules'
+2019-01-14 19:34:39,803:INFO: 144: Aplasia Cutis Congenita
+2019-01-14 19:34:39,940:INFO: 145: Acquired cubitus valgus
+2019-01-14 19:34:40,133:INFO: 146: Intestinal Diseases
+2019-01-14 19:34:40,195:INFO: 147: Frequent fractures
+2019-01-14 19:34:40,556:INFO: 148: Narcolepsy
+2019-01-14 19:34:40,610:INFO: 149: Fever
+2019-01-14 19:34:41,423:INFO: 150: Adenocarcinoma
+2019-01-14 19:34:42,748:INFO: 151: Autism Spectrum Disorders
+2019-01-14 19:34:43,110:INFO: 152: Stretched skin
+2019-01-14 19:34:43,199:INFO: 153: Carcinoma, Pancreatic Ductal
+2019-01-14 19:34:43,450:INFO: 154: Decreased pain sensation
+2019-01-14 19:34:43,691:INFO: 155: Pruritus
+2019-01-14 19:34:43,974:INFO: 156: Concave bridge of nose
+2019-01-14 19:34:45,202:INFO: 157: Urticaria
+2019-01-14 19:34:45,494:INFO: 158: Hyperopia
+2019-01-14 19:34:45,792:INFO: 159: Hearing Loss, Partial
+2019-01-14 19:34:47,156:INFO: 160: ULNAR HYPOPLASIA
+2019-01-14 19:34:47,604:INFO: 161: Cardiac Arrhythmia
+2019-01-14 19:34:48,436:INFO: 162: Hemochromatosis
+2019-01-14 19:34:48,490:INFO: 163: Easy fatigability
+2019-01-14 19:34:48,594:INFO: 164: Hemiplegia
+2019-01-14 19:34:48,680:INFO: 165: Abnormal urinary amino-acid findings
+2019-01-14 19:34:48,865:INFO: 166: Transaminases increased
+2019-01-14 19:34:49,474:INFO: 167: Abnormal vertebral bodies
+2019-01-14 19:34:49,541:INFO: 168: Abnormality of pelvic girdle bone morphology
+2019-01-14 19:34:49,842:INFO: 169: Prone to bacterial infection
+2019-01-14 19:34:50,144:INFO: 170: Bullet vertebral body
+2019-01-14 19:34:50,221:INFO: 171: Streak ovary
+2019-01-14 19:34:50,338:INFO: 172: Dysdiadochokinesis
+2019-01-14 19:34:50,538:INFO: 173: Diabetes Mellitus, Non-Insulin-Dependent
+2019-01-14 19:34:51,546:INFO: 174: Abnormality of the abdominal wall
+2019-01-14 19:34:51,681:INFO: 175: Pleural Diseases
+2019-01-14 19:34:51,732:INFO: 176: Sebaceous adenoma
+2019-01-14 19:34:51,995:INFO: 177: Ascites
+2019-01-14 19:34:52,123:INFO: 178: Cerebellar degeneration
+2019-01-14 19:34:53,189:INFO: 179: Pulmonary arterial hypertension
+2019-01-14 19:34:53,515:INFO: 180: Muscle biopsy shows dystrophic changes
+2019-01-14 19:34:54,067:INFO: 181: Conjunctivitis
+2019-01-14 19:34:54,301:INFO: 182: Submucous cleft of hard palate
+2019-01-14 19:34:54,461:INFO: 183: Isoelectric focusing of serum transferrin consistent with CDG type I
+2019-01-14 19:34:54,559:INFO: 184: Adrenocortical carcinoma
+2019-01-14 19:34:55,095:INFO: 185: Arachnodactyly
+2019-01-14 19:34:55,550:INFO: 186: Abnormal respiratory patterns
+2019-01-14 19:34:55,725:INFO: 187: Uranostaphyloschisis
+2019-01-14 19:34:57,079:INFO: 188: Aortic coarctation
+2019-01-14 19:34:57,355:INFO: 189: Skeletal muscle hypertrophy
+2019-01-14 19:34:57,500:INFO: 190: Cleft palate with cleft lip
+2019-01-14 19:34:57,792:INFO: 191: Uveal melanoma
+2019-01-14 19:34:57,906:INFO: 192: Dizziness
+2019-01-14 19:34:58,151:INFO: 193: Primary physiologic amenorrhea
+2019-01-14 19:34:58,559:INFO: 194: Retinitis Pigmentosa
+2019-01-14 19:34:59,429:INFO: 195: Axial hypotonia
+2019-01-14 19:34:59,709:INFO: 196: Intracranial Hypertension
+2019-01-14 19:34:59,947:INFO: 197: Renal tubular disorder
+2019-01-14 19:35:00,015:INFO: 198: Myocardial Ischemia
+2019-01-14 19:35:01,574:INFO: 199: MAJOR AFFECTIVE DISORDER 2
+2019-01-14 19:35:01,670:INFO: 200: Bowing of the long bones
+2019-01-14 19:35:01,910:INFO: 201: Osteomalacia
+2019-01-14 19:35:01,979:INFO: 202: Osteomyelitis
+2019-01-14 19:35:02,189:INFO: 203: Apraxias
+2019-01-14 19:35:02,501:INFO: 204: Disorder of face
+2019-01-14 19:35:02,586:INFO: 205: Intracranial Hemorrhages
+2019-01-14 19:35:02,670:INFO: 206: Skin bulla
+2019-01-14 19:35:03,150:INFO: 207: Thickened calvaria
+2019-01-14 19:35:03,298:INFO: 208: Microretrognathia
+2019-01-14 19:35:03,425:INFO: 209: Highly variable phenotype and severity
+2019-01-14 19:35:04,667:INFO: 210: Bronchiectasis
+2019-01-14 19:35:05,082:INFO: 211: Nappy hair texture
+2019-01-14 19:35:05,198:INFO: 212: Acro-Osteolysis
+2019-01-14 19:35:05,331:INFO: 213: Tetralogy of Fallot
+2019-01-14 19:35:05,716:INFO: 214: Orchitis
+2019-01-14 19:35:05,808:INFO: 215: Delayed closure of the soft spot on the skull
+2019-01-14 19:35:05,936:INFO: 216: Necrotizing Enterocolitis
+2019-01-14 19:35:06,167:INFO: 217: Small cell carcinoma of lung
+2019-01-14 19:35:06,874:INFO: 218: Carpal synostosis
+2019-01-14 19:35:06,956:INFO: 219: Papule
+2019-01-14 19:35:07,601:INFO: 220: Gowers sign
+2019-01-14 19:35:07,798:INFO: 221: Abnormality of the retinal vasculature
+2019-01-14 19:35:08,549:INFO: 222: Low to undetectable plasma cortisol
+2019-01-14 19:35:08,618:INFO: 223: Sensorineural hearing loss, bilateral
+2019-01-14 19:35:08,764:INFO: 224: Mask-like facies
+2019-01-14 19:35:08,964:INFO: 225: Left Ventricular Hypertrophy
+2019-01-14 19:35:09,475:INFO: 226: Holoprosencephaly
+2019-01-14 19:35:09,554:INFO: 227: Congenital Heart Defects
+2019-01-14 19:35:09,880:INFO: 228: Open Bite
+2019-01-14 19:35:10,259:INFO: 229: Oculomotor apraxia
+2019-01-14 19:35:10,418:INFO: 230: Huntington Disease
+2019-01-14 19:35:10,512:INFO: 231: Aplasia/Hypoplasia of the lungs
+2019-01-14 19:35:10,591:INFO: 232: Diabetic Angiopathies
+2019-01-14 19:35:10,742:INFO: 233: Congenital diaphragmatic hernia
+2019-01-14 19:35:11,048:INFO: 234: Congenital total cataract
+2019-01-14 19:35:11,119:INFO: 235: Systemic Scleroderma
+2019-01-14 19:35:11,250:INFO: 236: blue iris (physical finding)
+2019-01-14 19:35:11,384:INFO: 237: Pancreatitis
+2019-01-14 19:35:11,631:INFO: 238: Recurrent skin infections
+2019-01-14 19:35:11,860:INFO: 239: Recurrent erosion of cornea
+2019-01-14 19:35:11,971:INFO: 240: Marijuana Abuse
+2019-01-14 19:35:12,600:INFO: 241: Delayed myelination
+2019-01-14 19:35:12,734:INFO: 242: Autoimmune thrombocytopenia
+2019-01-14 19:35:12,988:INFO: 243: Abdomen distended
+2019-01-14 19:35:13,391:INFO: 244: Abdominal Pain
+2019-01-14 19:35:14,207:INFO: 245: Absent eyelashes
+2019-01-14 19:35:14,461:INFO: 246: Small head
+2019-01-14 19:35:16,761:INFO: 247: Auricular malformation
+2019-01-14 19:35:17,274:INFO: 248: Schizoaffective Disorder
+2019-01-14 19:35:17,414:INFO: 249: Diabetic Cardiomyopathies
+2019-01-14 19:35:17,498:INFO: 250: High forehead
+2019-01-14 19:35:18,275:INFO: 251: Chronic progressive external ophthalmoplegia
+2019-01-14 19:35:18,373:INFO: 252: Drug-induced depressive state
+2019-01-14 19:35:18,455:INFO: 253: Hypoplasia of the brainstem
+2019-01-14 19:35:18,608:INFO: 254: Mitochondrial Myopathies
+2019-01-14 19:35:18,739:INFO: 255: MERRF Syndrome
+2019-01-14 19:35:18,788:INFO: 256: Cafe au lait spots, multiple
+2019-01-14 19:35:19,035:INFO: 257: Hypoplastic lobules
+2019-01-14 19:35:19,120:INFO: 258: Broad forehead
+2019-01-14 19:35:20,073:INFO: 259: alcohol use disorder
+2019-01-14 19:35:20,200:INFO: 260: Astigmatism
+2019-01-14 19:35:20,292:INFO: 261: Corneal erosion
+2019-01-14 19:35:20,386:INFO: 262: Mental deterioration
+2019-01-14 19:35:20,720:INFO: 263: Absence of pubertal development
+2019-01-14 19:35:20,871:INFO: 264: Poor speech
+2019-01-14 19:35:21,330:INFO: 265: Mental Retardation, X-Linked
+2019-01-14 19:35:21,415:INFO: 266: Sarcoidosis
+2019-01-14 19:35:21,481:INFO: 267: Poor temperature regulation
+2019-01-14 19:35:21,550:INFO: 268: Microsatellite Instability
+2019-01-14 19:35:21,747:INFO: 269: Coarse hair
+2019-01-14 19:35:22,122:INFO: 270: Night blindness, congenital stationary
+2019-01-14 19:35:22,178:INFO: 271: Stevens-Johnson Syndrome
+2019-01-14 19:35:23,281:INFO: 272: Urinary Incontinence
+2019-01-14 19:35:23,578:INFO: 273: Blepharitis
+2019-01-14 19:35:23,892:INFO: 274: Lung Neoplasms
+2019-01-14 19:35:25,893:INFO: 275: Wedge shaped head
+2019-01-14 19:35:26,104:INFO: 276: Big calvaria
+2019-01-14 19:35:27,543:INFO: 277: Wide spaced nipples
+2019-01-14 19:35:27,968:INFO: 278: Blepharophimosis
+2019-01-14 19:35:28,680:INFO: 279: Blepharospasm
+2019-01-14 19:35:28,761:INFO: 280: Mitochondrial respiratory chain defects
+2019-01-14 19:35:28,859:INFO: 281: Peroxisome biogenesis disorders
+2019-01-14 19:35:28,922:INFO: 282: Ketonemia
+2019-01-14 19:35:28,996:INFO: 283: Slender, gracile long tubular bones
+2019-01-14 19:35:29,479:INFO: 284: Decreased visual acuity, progressive
+2019-01-14 19:35:29,710:INFO: 285: Inborn Errors of Metabolism
+2019-01-14 19:35:29,822:INFO: 286: Decreased antibody level in blood
+2019-01-14 19:35:30,314:INFO: 287: Flattening of cranial vault
+2019-01-14 19:35:30,520:INFO: 288: Congenital absence of spleen
+2019-01-14 19:35:30,605:INFO: 289: Intestinal Neoplasms
+2019-01-14 19:35:31,038:INFO: 290: Protruding ears
+2019-01-14 19:35:32,124:INFO: 291: Abnormally small eyeball
+2019-01-14 19:35:33,054:INFO: 292: Decreased liver function
+2019-01-14 19:35:33,188:INFO: 293: Gonadal Dysgenesis
+2019-01-14 19:35:33,419:INFO: 294: Short phalanx of finger
+2019-01-14 19:35:33,677:INFO: 295: Epileptic encephalopathy
+2019-01-14 19:35:33,965:INFO: 296: Keloid
+2019-01-14 19:35:34,632:INFO: 297: hypopigmented skin patch
+2019-01-14 19:35:35,199:INFO: 298: Nonprogressive
+2019-01-14 19:35:35,254:INFO: 299: Renal salt wasting
+2019-01-14 19:35:35,335:INFO: 300: Diffusely thickened skin
+2019-01-14 19:35:35,465:INFO: 301: No development of motor milestones
+2019-01-14 19:35:36,729:INFO: 302: Joint stiffness
+2019-01-14 19:35:37,767:INFO: 303: Variable expressivity
+2019-01-14 19:35:39,533:INFO: 304: Short thorax
+2019-01-14 19:35:40,027:INFO: 305: Nephroblastoma
+2019-01-14 19:35:40,530:INFO: 306: Nephritis, Interstitial
+2019-01-14 19:35:40,620:INFO: 307: Laryngomalacia
+2019-01-14 19:35:41,023:INFO: 308: Obsessive compulsive behavior
+2019-01-14 19:35:41,476:INFO: 309: Movement Disorders
+2019-01-14 19:35:41,815:INFO: 310: Increased appetite (finding)
+2019-01-14 19:35:42,006:INFO: 311: Choreoathetoid movements
+2019-01-14 19:35:42,397:INFO: 312: Narrow face
+2019-01-14 19:35:43,066:INFO: 313: Cervical Dystonia
+2019-01-14 19:35:43,173:INFO: 314: Recurrent aphthous ulcer
+2019-01-14 19:35:43,318:INFO: 315: Dental abnormalities
+2019-01-14 19:35:44,118:INFO: 316: Compression fracture of vertebral column
+2019-01-14 19:35:44,255:INFO: 317: Acute necrotizing encephalopathy
+2019-01-14 19:35:44,415:INFO: 318: Conjugated hyperbilirubinemia
+2019-01-14 19:35:44,491:INFO: 319: Bulbous nasal tip
+2019-01-14 19:35:45,362:INFO: 320: Thumb aplasia
+2019-01-14 19:35:45,887:INFO: 321: Gastrointestinal Hemorrhage
+2019-01-14 19:35:46,488:INFO: 322: Alzheimer's Disease
+2019-01-14 19:35:47,725:INFO: 323: Muscle weakness, progressive
+2019-01-14 19:35:47,901:INFO: 324: Hematologic Neoplasms
+2019-01-14 19:35:48,398:INFO: 325: Large pinnae
+2019-01-14 19:35:49,762:INFO: 326: Increased ferritin
+2019-01-14 19:35:49,879:INFO: 327: Comatose
+2019-01-14 19:35:50,392:INFO: 328: Hemiparesis
+2019-01-14 19:35:50,679:INFO: 329: Prominent forehead
+2019-01-14 19:35:51,645:INFO: 330: Cytochrome-c Oxidase Deficiency
+2019-01-14 19:35:51,724:INFO: 331: Retinal Degeneration
+2019-01-14 19:35:52,238:INFO: 332: Retinal Detachment
+2019-01-14 19:35:52,634:INFO: 333: Retinal Diseases
+2019-01-14 19:35:53,151:INFO: 334: Elevated gonadotropins
+2019-01-14 19:35:53,434:INFO: 335: Osteopenia
+2019-01-14 19:35:54,272:INFO: 336: Hypertrophy
+2019-01-14 19:35:54,604:INFO: 337: Pendular Nystagmus
+2019-01-14 19:35:54,694:INFO: 338: Lethargy
+2019-01-14 19:35:55,162:INFO: 339: Osteopetrosis
+2019-01-14 19:35:55,266:INFO: 340: Horizontal Nystagmus
+2019-01-14 19:35:55,365:INFO: 341: Major Depressive Disorder
+2019-01-14 19:35:57,288:INFO: 342: Sleep Apnea, Obstructive
+2019-01-14 19:35:57,534:INFO: 343: Infantile onset
+2019-01-14 19:35:59,760:INFO: 344: leukemia
+2019-01-14 19:36:00,647:INFO: 345: Ulnar deviation of the fingers
+2019-01-14 19:36:00,838:INFO: 346: Diabetic Nephropathy
+2019-01-14 19:36:01,367:INFO: 347: Sjogren's Syndrome
+2019-01-14 19:36:01,484:INFO: 348: Renal cyst
+2019-01-14 19:36:01,871:INFO: 349: Congenital clubfoot
+2019-01-14 19:36:02,953:INFO: 350: Cataplexy
+2019-01-14 19:36:03,007:INFO: 351: Profound intellectual disabilities
+2019-01-14 19:36:03,377:INFO: 352: Hyperinsulinaemic hypoglycaemia
+2019-01-14 19:36:03,590:INFO: 353: Febrile Convulsions
+2019-01-14 19:36:03,710:INFO: 354: Loss of speech
+2019-01-14 19:36:04,001:INFO: 355: Pulmonary Hypertension
+2019-01-14 19:36:04,543:INFO: 356: Hypertension, Portal
+2019-01-14 19:36:04,688:INFO: 357: Blindness, Cortical
+2019-01-14 19:36:04,849:INFO: 358: Hypertension, Renovascular
+2019-01-14 19:36:05,036:INFO: 359: Coxa valga deformity
+2019-01-14 19:36:05,249:INFO: 360: Restrictive ventilatory defect
+2019-01-14 19:36:05,379:INFO: 361: Claw hand
+2019-01-14 19:36:05,640:INFO: 362: Hypercholesterolemia, Familial
+2019-01-14 19:36:05,730:INFO: 363: Myoclonus
+2019-01-14 19:36:06,573:INFO: 364: Bunion
+2019-01-14 19:36:06,885:INFO: 365: Migraine Disorders
+2019-01-14 19:36:08,066:INFO: 366: Macule
+2019-01-14 19:36:08,299:INFO: 367: Underdeveloped supraorbital ridges
+2019-01-14 19:36:08,550:INFO: 368: Jeune thoracic dystrophy
+2019-01-14 19:36:08,605:INFO: 369: Amino Acid Metabolism, Inborn Errors
+2019-01-14 19:36:08,677:INFO: 370: Class III malocclusion
+2019-01-14 19:36:09,738:INFO: 371: Respiratory Failure
+2019-01-14 19:36:10,831:INFO: 372: Increased tendency to bruise
+2019-01-14 19:36:11,339:INFO: 373: Abnormal behavior
+2019-01-14 19:36:11,892:INFO: 374: Gait Ataxia
+2019-01-14 19:36:12,584:INFO: 375: Hernia, Inguinal
+2019-01-14 19:36:13,454:INFO: 376: Sezary Syndrome
+2019-01-14 19:36:14,142:INFO: 377: Disturbance of consciousness
+2019-01-14 19:36:14,236:INFO: 378: Short hands
+2019-01-14 19:36:14,758:INFO: 379: Telangiectasis
+2019-01-14 19:36:14,934:INFO: 380: Irregular epiphyses
+2019-01-14 19:36:14,990:INFO: 381: Feeding difficulties in infancy
+2019-01-14 19:36:16,585:INFO: 382: Exostoses
+2019-01-14 19:36:16,692:INFO: 383: Abnormal hair quantity
+2019-01-14 19:36:16,852:INFO: 384: Congenital hypoplasia of penis
+2019-01-14 19:36:18,164:INFO: 385: Congenital muscular dystrophy (disorder)
+2019-01-14 19:36:18,227:INFO: 386: Difficulty walking up stairs
+2019-01-14 19:36:18,473:INFO: 387: Erythema
+2019-01-14 19:36:19,002:INFO: 388: Adrenal hypoplasia
+2019-01-14 19:36:19,087:INFO: 389: Mineralocorticoid insufficiency
+2019-01-14 19:36:19,182:INFO: 390: Splenomegaly
+2019-01-14 19:36:20,747:INFO: 391: Cleft Lip
+2019-01-14 19:36:21,555:INFO: 392: Mental disorders
+2019-01-14 19:36:21,625:INFO: 393: Paraparesis, Spastic
+2019-01-14 19:36:21,716:INFO: 394: Polycythemia
+2019-01-14 19:36:21,831:INFO: 395: Lordosis
+2019-01-14 19:36:22,496:INFO: 396: Deformity of neck
+2019-01-14 19:36:22,695:INFO: 397: Abnormality of the metaphyses
+2019-01-14 19:36:23,289:INFO: 398: Low anterior hairline
+2019-01-14 19:36:23,819:INFO: 399: Abnormality of the hypothalamus-pituitary axis
+2019-01-14 19:36:23,892:INFO: 400: Astrocytoma
+2019-01-14 19:36:24,401:INFO: 401: Congenital hemivertebra
+2019-01-14 19:36:24,638:INFO: 402: Weight less than 3rd percentile
+2019-01-14 19:36:24,748:INFO: 403: Meningioma
+2019-01-14 19:36:25,010:INFO: 404: Exophthalmos
+2019-01-14 19:36:25,779:INFO: 405: Lower limb hyperreflexia
+2019-01-14 19:36:25,893:INFO: 406: Nail abnormality
+2019-01-14 19:36:26,090:INFO: 407: Fragile hair
+2019-01-14 19:36:26,281:INFO: 408: Sparse eyebrow
+2019-01-14 19:36:26,797:INFO: 409: Phrynoderma
+2019-01-14 19:36:26,879:INFO: 410: Leber Congenital Amaurosis
+2019-01-14 19:36:26,973:INFO: 411: Vesico-Ureteral Reflux
+2019-01-14 19:36:27,274:INFO: 412: Adult onset
+2019-01-14 19:36:28,288:INFO: 413: Corneal dystrophy
+2019-01-14 19:36:28,344:INFO: 414: Photosensitivity of skin
+2019-01-14 19:36:28,769:INFO: 415: Meningitis
+2019-01-14 19:36:28,907:INFO: 416: Prominent back of the head
+2019-01-14 19:36:29,135:INFO: 417: Structure of wormian bone
+2019-01-14 19:36:29,361:INFO: 418: Narrow cranium shape
+2019-01-14 19:36:30,432:INFO: 419: Varicosity
+2019-01-14 19:36:30,532:INFO: 420: Linear atrophy
+2019-01-14 19:36:30,767:INFO: 421: Attenuation of retinal blood vessels
+2019-01-14 19:36:30,871:INFO: 422: Hypoplasia of the zygomatic bone
+2019-01-14 19:36:31,249:INFO: 423: Cone-shaped epiphyses of phalanges
+2019-01-14 19:36:31,385:INFO: 424: Muscle weakness of limb
+2019-01-14 19:36:31,758:INFO: 425: Respiratory insufficiency due to muscle weakness
+2019-01-14 19:36:32,185:INFO: 426: Soft skin
+2019-01-14 19:36:32,262:INFO: 427: Sclerocystic Ovaries
+2019-01-14 19:36:32,420:INFO: 428: Immunoglobulin A deficiency (disorder)
+2019-01-14 19:36:32,597:INFO: 429: IgG Deficiency
+2019-01-14 19:36:32,785:INFO: 430: Hoarseness
+2019-01-14 19:36:33,205:INFO: 431: Depressed philtrum
+2019-01-14 19:36:33,474:INFO: 432: Supratentorial atrophy
+2019-01-14 19:36:34,021:INFO: 433: Fibular polydactyly
+2019-01-14 19:36:34,100:INFO: 434: Persistant truncus arteriosus
+2019-01-14 19:36:34,260:INFO: 435: Abnormality of the abdomen
+2019-01-14 19:36:34,406:INFO: 436: Elevated heart rate
+2019-01-14 19:36:34,596:INFO: 437: Small testicle
+2019-01-14 19:36:35,258:INFO: 438: Spastic gait
+2019-01-14 19:36:35,537:INFO: 439: Gait, Unsteady
+2019-01-14 19:36:36,022:INFO: 440: Delayed eruption of primary teeth
+2019-01-14 19:36:36,105:INFO: 441: Tall stature
+2019-01-14 19:36:36,300:INFO: 442: Ectopic kidney
+2019-01-14 19:36:36,403:INFO: 443: Cerebral Hemorrhage
+2019-01-14 19:36:36,811:INFO: 444: Haemorrhage subcutaneous
+2019-01-14 19:36:36,929:INFO: 445: Mouth Neoplasms
+2019-01-14 19:36:37,867:INFO: 446: Mesothelioma
+2019-01-14 19:36:38,500:INFO: 447: Agammaglobulinemia
+2019-01-14 19:36:38,662:INFO: 448: Abnormality of the antihelix
+2019-01-14 19:36:38,768:INFO: 449: Pectus excavatum
+2019-01-14 19:36:39,870:INFO: 450: Asbestosis
+2019-01-14 19:36:40,132:INFO: 451: Platybasia
+2019-01-14 19:36:40,228:INFO: 452: Onion bulb formation
+2019-01-14 19:36:40,367:INFO: 453: Bilateral fifth finger clinodactyly
+2019-01-14 19:36:41,841:INFO: 454: Hepatocellular necrosis
+2019-01-14 19:36:41,974:INFO: 455: Defect of vertebral segmentation
+2019-01-14 19:36:42,077:INFO: 456: Congenital sensorineural hearing loss
+2019-01-14 19:36:42,161:INFO: 457: Retrognathia
+2019-01-14 19:36:43,092:INFO: 458: Diverticular disease of colon
+2019-01-14 19:36:43,424:INFO: 459: Dry skin
+2019-01-14 19:36:44,390:INFO: 460: Elevated luteinizing hormone
+2019-01-14 19:36:44,611:INFO: 461: Mandibular hypoplasia
+2019-01-14 19:36:47,013:INFO: 462: Congenital hypoplasia of clavicle
+2019-01-14 19:36:47,210:INFO: 463: IGA Glomerulonephritis
+2019-01-14 19:36:47,383:INFO: 464: X-linked dominant
+2019-01-14 19:36:48,055:INFO: 465: Retinal Dysplasia
+2019-01-14 19:36:48,104:INFO: 466: Neonatal onset
+2019-01-14 19:36:48,274:INFO: 467: Hypoplastic toenails
+2019-01-14 19:36:48,492:INFO: 468: Focal glomerulosclerosis
+2019-01-14 19:36:49,022:INFO: 469: Decreased muscle mass
+2019-01-14 19:36:49,329:INFO: 470: Radial bowing
+2019-01-14 19:36:49,448:INFO: 471: Peritoneal Neoplasms
+2019-01-14 19:36:49,680:INFO: 472: Genu varum
+2019-01-14 19:36:49,804:INFO: 473: Hypoplastic ilia
+2019-01-14 19:36:49,941:INFO: 474: Osteosclerosis
+2019-01-14 19:36:50,060:INFO: 475: Osteosarcoma
+2019-01-14 19:36:51,026:INFO: 476: Vitiligo
+2019-01-14 19:36:51,150:INFO: 477: Renal failure in adulthood
+2019-01-14 19:36:51,701:INFO: 478: Stippled epiphyses
+2019-01-14 19:36:51,849:INFO: 479: Distal sensory impairment
+2019-01-14 19:36:52,514:INFO: 480: Sparse eyelashes
+2019-01-14 19:36:52,922:INFO: 481: Lymphoma, T-Cell, Cutaneous
+2019-01-14 19:36:53,492:INFO: 482: T-Cell Lymphoma
+2019-01-14 19:36:54,068:INFO: 483: Fibrosis
+2019-01-14 19:36:54,494:INFO: 484: Esophageal Stenosis
+2019-01-14 19:36:54,645:INFO: 485: Abnormality of mitochondrial metabolism
+2019-01-14 19:36:54,756:INFO: 486: Abnormality of the hip bone
+2019-01-14 19:36:54,880:INFO: 487: ANONYCHIA
+2019-01-14 19:36:55,086:INFO: 488: Tracheomalacia
+2019-01-14 19:36:55,204:INFO: 489: Congenital hypoplasia of radius
+2019-01-14 19:36:55,858:INFO: 490: Sudden death
+2019-01-14 19:36:56,040:INFO: 491: Bicuspid aortic valve
+2019-01-14 19:36:56,498:INFO: 492: Flexion contracture - elbow
+2019-01-14 19:36:56,896:INFO: 493: Synophrys
+2019-01-14 19:36:57,292:INFO: 494: Hypertrichosis
+2019-01-14 19:36:57,477:INFO: 495: Hypertriglyceridemia
+2019-01-14 19:36:57,549:INFO: 496: Hyperthyroidism
+2019-01-14 19:36:57,756:INFO: 497: Otitis Media
+2019-01-14 19:36:57,897:INFO: 498: Neonatal Death
+2019-01-14 19:36:58,026:INFO: 499: Chronic Kidney Diseases
+2019-01-14 19:36:58,113:INFO: 500: Cerebellar Dysmetria
+2019-01-14 19:36:58,736:INFO: 501: Partial thromboplastin time increased (finding)
+2019-01-14 19:36:58,802:INFO: 502: Areflexia of lower limbs
+2019-01-14 19:36:58,963:INFO: 503: Calcinosis
+2019-01-14 19:36:59,326:INFO: 504: Trigeminal Neuralgia
+2019-01-14 19:36:59,622:INFO: 505: Parkinson Disease
+2019-01-14 19:37:00,653:INFO: 506: Cryptorchidism
+2019-01-14 19:37:02,893:INFO: 507: Atretic auditory canal
+2019-01-14 19:37:03,439:INFO: 508: Dyschezia
+2019-01-14 19:37:04,775:INFO: 509: Metabolic acidosis
+2019-01-14 19:37:05,404:INFO: 510: Ophthalmoplegia
+2019-01-14 19:37:06,166:INFO: 511: Malformed pinnae
+2019-01-14 19:37:06,424:INFO: 512: Opisthotonus
+2019-01-14 19:37:06,555:INFO: 513: Monoparesis - leg
+2019-01-14 19:37:06,855:INFO: 514: VALVULAR ABNORMALITY
+2019-01-14 19:37:06,957:INFO: 515: Sloping forehead
+2019-01-14 19:37:07,478:INFO: 516: Pyloric Stenosis
+2019-01-14 19:37:07,751:INFO: 517: Distal muscle weakness
+2019-01-14 19:37:08,558:INFO: 518: Situs ambiguus
+2019-01-14 19:37:08,636:INFO: 519: Neoplastic Cell Transformation
+2019-01-14 19:37:10,456:INFO: 520: Shoulder girdle weakness
+2019-01-14 19:37:10,848:INFO: 521: Lymphadenopathy
+2019-01-14 19:37:11,553:INFO: 522: Cerebellar Ataxia
+2019-01-14 19:37:13,205:INFO: 523: Pimples
+2019-01-14 19:37:13,299:INFO: 524: Delusions
+2019-01-14 19:37:13,440:INFO: 525: Congenital Hypothyroidism
+2019-01-14 19:37:13,556:INFO: 526: Uveitis
+2019-01-14 19:37:13,736:INFO: 527: Neonatal hypoglycemia
+2019-01-14 19:37:13,845:INFO: 528: Broad hallux
+2019-01-14 19:37:14,275:INFO: 529: HIV Infections
+2019-01-14 19:37:16,154:INFO: 530: Ankylosing spondylitis
+2019-01-14 19:37:16,237:INFO: 531: Neutrophil abnormality
+2019-01-14 19:37:16,448:INFO: 532: Decreased platelet count
+2019-01-14 19:37:17,426:INFO: 533: Low Birth Weights
+2019-01-14 19:37:18,230:INFO: 534: Alcoholic Intoxication, Chronic
+2019-01-14 19:37:20,018:INFO: 535: Widely spaced teeth
+2019-01-14 19:37:20,462:INFO: 536: Acanthosis Nigricans
+2019-01-14 19:37:20,984:INFO: 537: Exotropia
+2019-01-14 19:37:21,162:INFO: 538: Rib fusion
+2019-01-14 19:37:21,298:INFO: 539: Myocardial Infarction
+2019-01-14 19:37:23,005:INFO: 540: Head and Neck Neoplasms
+2019-01-14 19:37:23,416:INFO: 541: Long philtrum
+2019-01-14 19:37:24,925:INFO: 542: Slow-growing hair
+2019-01-14 19:37:25,215:INFO: 543: Chromosome Aberrations
+2019-01-14 19:37:25,364:INFO: 544: Decreased testosterone in males
+2019-01-14 19:37:25,560:INFO: 545: Chronic kidney disease stage 5
+2019-01-14 19:37:25,926:INFO: 546: Squamous cell carcinoma of the head and neck
+2019-01-14 19:37:26,509:INFO: 547: Hepatosplenomegaly
+2019-01-14 19:37:26,680:INFO: 548: Hyperplasia of cheeks
+2019-01-14 19:37:27,059:INFO: 549: Short ribs
+2019-01-14 19:37:27,432:INFO: 550: Endocrine System Diseases
+2019-01-14 19:37:27,528:INFO: 551: Contracture of tendo achilles
+2019-01-14 19:37:27,670:INFO: 552: Tinnitus
+2019-01-14 19:37:27,820:INFO: 553: Thin rib
+2019-01-14 19:37:28,380:INFO: 554: Nystagmus
+2019-01-14 19:37:30,480:INFO: 555: Cutaneous finger syndactyly
+2019-01-14 19:37:30,554:INFO: 556: Growth Disorders
+2019-01-14 19:37:30,759:INFO: 557: Absence Epilepsy
+2019-01-14 19:37:30,848:INFO: 558: MITOCHONDRIAL COMPLEX I DEFICIENCY
+2019-01-14 19:37:30,977:INFO: 559: Epilepsy, Temporal Lobe
+2019-01-14 19:37:31,091:INFO: 560: Downturned corners of mouth
+2019-01-14 19:37:31,593:INFO: 561: Keratitis
+2019-01-14 19:37:32,036:INFO: 562: Gout
+2019-01-14 19:37:32,115:INFO: 563: Increased gastric cancer
+2019-01-14 19:37:32,746:INFO: 564: Precancerous Conditions
+2019-01-14 19:37:33,484:INFO: 565: Anemia, Diamond-Blackfan
+2019-01-14 19:37:33,994:INFO: 566: Cerebrospinal fluid protein increased above normal
+2019-01-14 19:37:34,073:INFO: 567: Small tongue
+2019-01-14 19:37:34,139:INFO: 568: Ataxia, Spinocerebellar
+2019-01-14 19:37:34,314:INFO: 569: Neutrophil count decreased
+2019-01-14 19:37:34,770:INFO: 570: Chloracne
+2019-01-14 19:37:35,151:INFO: 571: Walker-Warburg congenital muscular dystrophy
+2019-01-14 19:37:35,212:INFO: 572: Dwarfism
+2019-01-14 19:37:35,542:INFO: 573: Gynecomastia
+2019-01-14 19:37:36,103:INFO: 574: Tachycardia
+2019-01-14 19:37:36,373:INFO: 575: Elevated creatine kinase
+2019-01-14 19:37:37,632:INFO: 576: Psychomotor regression in infants
+2019-01-14 19:37:38,198:INFO: 577: Adenomatous Polyposis Coli
+2019-01-14 19:37:38,422:INFO: 578: Color vision defect
+2019-01-14 19:37:38,524:INFO: 579: Colorectal Neoplasms
+2019-01-14 19:37:39,870:INFO: 580: Congenital adrenal hyperplasia
+2019-01-14 19:37:39,928:INFO: 581: Adrenal Gland Neoplasms
+2019-01-14 19:37:40,290:INFO: 582: Progressive microcephaly
+2019-01-14 19:37:40,586:INFO: 583: Manic
+2019-01-14 19:37:40,667:INFO: 584: Abnormality of the palate
+2019-01-14 19:37:40,749:INFO: 585: Milium Cyst
+2019-01-14 19:37:40,894:INFO: 586: Limb Deformities, Congenital
+2019-01-14 19:37:40,993:INFO: 587: Rhinitis
+2019-01-14 19:37:41,056:INFO: 588: Anti-nuclear factor positive
+2019-01-14 19:37:41,171:INFO: 589: Diffuse Large B-Cell Lymphoma
+2019-01-14 19:37:41,610:INFO: 590: Achromasia
+2019-01-14 19:37:41,670:INFO: 591: Hypoplastic feet
+2019-01-14 19:37:42,223:INFO: 592: Bell-shaped thorax
+2019-01-14 19:37:42,288:INFO: 593: Radioulnar Synostosis
+2019-01-14 19:37:42,512:INFO: 594: Decreased activity of cytochrome C oxidase in muscle tissue
+2019-01-14 19:37:42,567:INFO: 595: EMG: neuropathic changes
+2019-01-14 19:37:42,842:INFO: 596: EMG: myopathic abnormalities
+2019-01-14 19:37:43,119:INFO: 597: Osteogenesis imperfecta type III (disorder)
+2019-01-14 19:37:43,222:INFO: 598: Osteogenesis imperfecta type IV (disorder)
+2019-01-14 19:37:43,288:INFO: 599: NADH:Q(1) Oxidoreductase deficiency
+2019-01-14 19:37:43,427:INFO: 600: Hypoplasia of corpus callosum
+2019-01-14 19:37:44,432:INFO: 601: Chronic diarrhea
+2019-01-14 19:37:44,627:INFO: 602: Adducted thumb
+2019-01-14 19:37:44,771:INFO: 603: Leishmaniasis, Visceral
+2019-01-14 19:37:44,842:INFO: 604: Early infantile epileptic encephalopathy with suppression bursts
+2019-01-14 19:37:44,912:INFO: 605: Hallucinations, Sensory
+2019-01-14 19:37:45,092:INFO: 606: Erectile dysfunction
+2019-01-14 19:37:45,282:INFO: 607: Mutism
+2019-01-14 19:37:45,451:INFO: 608: Meckel-Gruber syndrome
+2019-01-14 19:37:45,565:INFO: 609: Colonic Neoplasms
+2019-01-14 19:37:47,040:INFO: 610: Sparse body hair
+2019-01-14 19:37:47,378:INFO: 611: Cortical Dysplasia
+2019-01-14 19:37:47,541:INFO: 612: Liver Neoplasms, Experimental
+2019-01-14 19:37:48,130:INFO: 613: Bleeding tendency
+2019-01-14 19:37:48,381:INFO: 614: Microcytic hypochromic anemia (disorder)
+2019-01-14 19:37:48,447:INFO: 615: Cloudy cornea
+2019-01-14 19:37:48,703:INFO: 616: Abnormal helices
+2019-01-14 19:37:48,775:INFO: 617: 22q11 Deletion Syndrome
+2019-01-14 19:37:48,849:INFO: 618: Hypoplasia of thumb
+2019-01-14 19:37:49,203:INFO: 619: Aortic Valve Insufficiency
+2019-01-14 19:37:49,558:INFO: 620: Muscular stiffness
+2019-01-14 19:37:49,639:INFO: 621: Infarction, Middle Cerebral Artery
+2019-01-14 19:37:49,910:INFO: 622: Methylmalonic acidemia
+2019-01-14 19:37:50,002:INFO: 623: Hyperuricemia
+2019-01-14 19:37:50,134:INFO: 624: Diabetic Neuropathies
+2019-01-14 19:37:50,266:INFO: 625: Decreased nerve conduction velocity
+2019-01-14 19:37:50,523:INFO: 626: Severe postnatal growth retardation
+2019-01-14 19:37:50,798:INFO: 627: Diabetic Retinopathy
+2019-01-14 19:37:50,909:INFO: 628: X- linked recessive
+2019-01-14 19:37:51,935:INFO: 629: Seizures, Focal
+2019-01-14 19:37:52,061:INFO: 630: Unilateral agenesis of kidney
+2019-01-14 19:37:52,207:INFO: 631: Congenital hypoplasia of kidney
+2019-01-14 19:37:52,434:INFO: 632: Congenital anomaly of the kidney
+2019-01-14 19:37:52,634:INFO: 633: Cardiomyopathy, Dilated
+2019-01-14 19:37:53,610:INFO: 634: Thin skin
+2019-01-14 19:37:54,057:INFO: 635: Papilloma
+2019-01-14 19:37:54,490:INFO: 636: Pain
+2019-01-14 19:37:55,308:INFO: 637: Congenital Abnormality
+2019-01-14 19:37:55,388:INFO: 638: MYCOBACTERIUM TUBERCULOSIS, SUSCEPTIBILITY TO (finding)
+2019-01-14 19:37:55,438:INFO: 639: Decreased amplitudes on flash visual electroretinogram
+2019-01-14 19:37:55,493:INFO: 640: Limited elbow extension
+2019-01-14 19:37:55,720:INFO: 641: Paranoid Schizophrenia
+2019-01-14 19:37:56,005:INFO: 642: Hypoplastic labia minora
+2019-01-14 19:37:56,080:INFO: 643: Ambiguous Genitalia
+2019-01-14 19:37:56,259:INFO: 644: Schizophrenia
+2019-01-14 19:38:00,887:INFO: 645: Skin tag
+2019-01-14 19:38:01,110:INFO: 646: Severe visual impairment
+2019-01-14 19:38:01,166:INFO: 647: Skin Ulcer
+2019-01-14 19:38:01,836:INFO: 648: Alcoholic Intoxication
+2019-01-14 19:38:02,266:INFO: 649: Abnormality of the pharynx
+2019-01-14 19:38:02,411:INFO: 650: Malnutrition
+2019-01-14 19:38:02,488:INFO: 651: Lobar Holoprosencephaly
+2019-01-14 19:38:02,588:INFO: 652: Gingival Overgrowth
+2019-01-14 19:38:02,748:INFO: 653: Immunologic Deficiency Syndromes
+2019-01-14 19:38:03,625:INFO: 654: Ataxia
+2019-01-14 19:38:03,691:INFO: 655: Premature birth of newborn
+2019-01-14 19:38:04,235:INFO: 656: Brachydactyly
+2019-01-14 19:38:05,021:INFO: 657: Frontal bossing
+2019-01-14 19:38:06,353:INFO: 658: Infant, Small for Gestational Age
+2019-01-14 19:38:08,011:INFO: 659: Syndactyly of fingers
+2019-01-14 19:38:08,528:INFO: 660: Horseshoe Kidney
+2019-01-14 19:38:08,717:INFO: 661: Range of joint movement increased
+2019-01-14 19:38:09,125:INFO: 662: CNS hypomyelination
+2019-01-14 19:38:09,346:INFO: 663: Agenesis of eyebrows
+2019-01-14 19:38:09,427:INFO: 664: Atrioventricular Block
+2019-01-14 19:38:09,511:INFO: 665: Sloping shoulders
+2019-01-14 19:38:09,784:INFO: 666: Strabismus
+2019-01-14 19:38:11,431:INFO: 667: Isolated cases
+2019-01-14 19:38:12,505:INFO: 668: Preauricular sinus
+2019-01-14 19:38:12,625:INFO: 669: Sclerocornea
+2019-01-14 19:38:12,695:INFO: 670: Elevated IgE
+2019-01-14 19:38:12,824:INFO: 671: Hepatomegaly
+2019-01-14 19:38:13,994:INFO: 672: Enophthalmos
+2019-01-14 19:38:14,705:INFO: 673: Hepatolenticular Degeneration
+2019-01-14 19:38:14,855:INFO: 674: Arthropathy
+2019-01-14 19:38:14,946:INFO: 675: Lung diseases
+2019-01-14 19:38:15,260:INFO: 676: Chronic Obstructive Airway Disease
+2019-01-14 19:38:15,666:INFO: 677: Sprengel deformity
+2019-01-14 19:38:15,806:INFO: 678: ear infection chronic
+2019-01-14 19:38:16,463:INFO: 679: Abnormal upper motor neuron morphology
+2019-01-14 19:38:16,704:INFO: 680: Pyridoxine-responsive sideroblastic anemia
+2019-01-14 19:38:16,883:INFO: 681: Thrombosis
+2019-01-14 19:38:17,074:INFO: 682: Renal dysplasia and retinal aplasia (disorder)
+2019-01-14 19:38:17,203:INFO: 683: Bipolar I disorder
+2019-01-14 19:38:17,352:INFO: 684: Abnormality of retinal pigmentation
+2019-01-14 19:38:18,109:INFO: 685: Oligodontia
+2019-01-14 19:38:18,391:INFO: 686: Coloboma of iris
+2019-01-14 19:38:19,100:INFO: 687: Fatty Liver
+2019-01-14 19:38:19,646:INFO: 688: ODONTOID HYPOPLASIA
+2019-01-14 19:38:19,733:INFO: 689: Short middle phalanges
+2019-01-14 19:38:19,842:INFO: 690: hair abnormalities (non-specific)
+2019-01-14 19:38:20,173:INFO: 691: Epilepsy
+2019-01-14 19:38:23,139:INFO: 692: Lens Opacities
+2019-01-14 19:38:24,630:INFO: 693: Liver Failure, Acute
+2019-01-14 19:38:24,833:INFO: 694: Cardiac Arrest
+2019-01-14 19:38:24,924:INFO: 695: Tonic-Clonic Epilepsy
+2019-01-14 19:38:24,985:INFO: 696: Heart Diseases
+2019-01-14 19:38:25,373:INFO: 697: Neonatal Jaundice
+2019-01-14 19:38:25,452:INFO: 698: beta Thalassemia
+2019-01-14 19:38:25,548:INFO: 699: Pre-Eclampsia
+2019-01-14 19:38:25,682:INFO: 700: Sweating
+2019-01-14 19:38:26,606:INFO: 701: Hypotonic seizures
+2019-01-14 19:38:26,674:INFO: 702: Anteverted nostril
+2019-01-14 19:38:28,125:INFO: 703: Narrow thorax
+2019-01-14 19:38:28,499:INFO: 704: Radially deviated fingers
+2019-01-14 19:38:28,917:INFO: 705: Short femoral neck
+2019-01-14 19:38:28,989:INFO: 706: Enamel abnormalities
+2019-01-14 19:38:29,607:INFO: 707: Impaired smooth pursuit
+2019-01-14 19:38:29,727:INFO: 708: Depression, Bipolar
+2019-01-14 19:38:29,787:INFO: 709: Giant Cell Glioblastoma
+2019-01-14 19:38:30,146:INFO: 710: Delayed Puberty
+2019-01-14 19:38:31,018:INFO: 711: Cataract, Pulverulent
+2019-01-14 19:38:31,082:INFO: 712: Feeding difficulties
+2019-01-14 19:38:32,112:INFO: 713: Body Weight
+2019-01-14 19:38:32,175:INFO: 714: Flared iliac wings
+2019-01-14 19:38:32,389:INFO: 715: Acute kidney injury
+2019-01-14 19:38:33,315:INFO: 716: Ulnar bowing
+2019-01-14 19:38:33,391:INFO: 717: Infantile muscular hypotonia
+2019-01-14 19:38:33,460:INFO: 718: Purpura
+2019-01-14 19:38:33,732:INFO: 719: Molar tooth sign on MRI
+2019-01-14 19:38:33,867:INFO: 720: Amelogenesis Imperfecta
+2019-01-14 19:38:33,922:INFO: 721: Neck muscle weakness
+2019-01-14 19:38:34,180:INFO: 722: Neoplasm Invasiveness
+2019-01-14 19:38:35,742:INFO: 723: Neoplasm Metastasis
+2019-01-14 19:38:37,452:INFO: 724: Toeing-in
+2019-01-14 19:38:37,663:INFO: 725: Bilateral single transverse palmar creases
+2019-01-14 19:38:37,956:INFO: 726: Lymphatic obstruction
+2019-01-14 19:38:38,288:INFO: 727: Thromboembolism
+2019-01-14 19:38:38,372:INFO: 728: Short hallux
+2019-01-14 19:38:38,489:INFO: 729: Polycystic Ovary Syndrome
+2019-01-14 19:38:39,639:INFO: 730: Abnormality of the urinary system
+2019-01-14 19:38:40,204:INFO: 731: Hereditary Melanoma
+2019-01-14 19:38:40,383:INFO: 732: Malignant mesothelioma
+2019-01-14 19:38:41,777:INFO: 733: Arteriosclerosis
+2019-01-14 19:38:41,885:INFO: 734: Pituitary hypoplasia
+2019-01-14 19:38:41,975:INFO: 735: Degenerative polyarthritis
+2019-01-14 19:38:43,210:INFO: 736: Micromelia
+2019-01-14 19:38:43,970:INFO: 737: Osteitis Deformans
+2019-01-14 19:38:44,102:INFO: 738: Vomiting
+2019-01-14 19:38:44,923:INFO: 739: Hematological Disease
+2019-01-14 19:38:45,007:INFO: 740: Delayed epiphyseal ossification
+2019-01-14 19:38:45,141:INFO: 741: Visual field constriction
+2019-01-14 19:38:45,288:INFO: 742: Low serum estradiol levels
+2019-01-14 19:38:45,466:INFO: 743: Aplasia/Hypoplasia of the earlobes
+2019-01-14 19:38:45,551:INFO: 744: Aplasia/Hypoplasia of the breasts
+2019-01-14 19:38:45,627:INFO: 745: Subcutaneous nodule
+2019-01-14 19:38:46,328:INFO: 746: Abnormality of the immune system
+2019-01-14 19:38:46,421:INFO: 747: Flexion contractures of joints
+2019-01-14 19:38:47,207:INFO: 748: Ketoacidosis
+2019-01-14 19:38:47,265:INFO: 749: Premature tooth loss
+2019-01-14 19:38:47,488:INFO: 750: Chronic schizophrenia
+2019-01-14 19:38:47,649:INFO: 751: Patent ductus arteriosus
+2019-01-14 19:38:48,840:INFO: 752: Decreased fertility in females
+2019-01-14 19:38:48,993:INFO: 753: ESR raised
+2019-01-14 19:38:49,157:INFO: 754: Rectal Neoplasms
+2019-01-14 19:38:49,514:INFO: 755: Hyperacusis
+2019-01-14 19:38:49,668:INFO: 756: Hemiplegia and hemiparesis
+2019-01-14 19:38:50,032:INFO: 757: Brugada Syndrome (disorder)
+2019-01-14 19:38:50,098:INFO: 758: Impaired T cell function
+2019-01-14 19:38:50,186:INFO: 759: Myocardial Reperfusion Injury
+2019-01-14 19:38:50,743:INFO: 760: High pitched voice
+2019-01-14 19:38:51,063:INFO: 761: gallbladder neoplasm
+2019-01-14 19:38:51,400:INFO: 762: Hypogonadism, Isolated Hypogonadotropic
+2019-01-14 19:38:52,002:INFO: 763: Dysgraphia
+2019-01-14 19:38:52,347:INFO: 764: Absent reflex
+2019-01-14 19:38:53,183:INFO: 765: Congenital omphalocele
+2019-01-14 19:38:53,415:INFO: 766: Pierre Robin Syndrome
+2019-01-14 19:38:53,740:INFO: 767: Congenital ocular coloboma (disorder)
+2019-01-14 19:38:54,269:INFO: 768: Nystagmus, End-Position
+2019-01-14 19:38:54,428:INFO: 769: Mammary Neoplasms
+2019-01-14 19:38:57,817:INFO: 770: Small capital femoral epiphyses
+2019-01-14 19:38:57,917:INFO: 771: Polyhydramnios
+2019-01-14 19:38:58,855:INFO: 772: Familial aplasia of the vermis
+2019-01-14 19:38:58,988:INFO: 773: Poor eye contact
+2019-01-14 19:38:59,095:INFO: 774: Hyporeflexia of lower limbs
+2019-01-14 19:38:59,224:INFO: 775: Liver Failure
+2019-01-14 19:38:59,644:INFO: 776: Urgency of micturition
+2019-01-14 19:38:59,837:INFO: 777: Ataxia, Truncal
+2019-01-14 19:39:00,116:INFO: 778: Polydipsia
+2019-01-14 19:39:00,185:INFO: 779: Age related macular degeneration
+2019-01-14 19:39:00,298:INFO: 780: Wide anterior fontanel
+2019-01-14 19:39:00,771:INFO: 781: Multicystic Dysplastic Kidney
+2019-01-14 19:39:01,230:INFO: 782: Spina Bifida
+2019-01-14 19:39:01,416:INFO: 783: Hypertrophic Cardiomyopathy
+2019-01-14 19:39:02,574:INFO: 784: Spina Bifida Occulta
+2019-01-14 19:39:02,875:INFO: 785: Congenital neurologic anomalies
+2019-01-14 19:39:03,117:INFO: 786: Decreased subcutaneous adipose tissue
+2019-01-14 19:39:03,322:INFO: 787: Precociously senile appearance
+2019-01-14 19:39:03,540:INFO: 788: Hypoplastic fingernails
+2019-01-14 19:39:03,659:INFO: 789: Rimmed vacuoles on biopsy
+2019-01-14 19:39:04,193:INFO: 790: Short-trunked dwarfism
+2019-01-14 19:39:04,261:INFO: 791: Hypoplastic scapulae
+2019-01-14 19:39:04,476:INFO: 792: Sinusitis
+2019-01-14 19:39:04,832:INFO: 793: Severe Combined Immunodeficiency
+2019-01-14 19:39:05,056:INFO: 794: Flatfoot
+2019-01-14 19:39:06,148:INFO: 795: Penile hypospadias
+2019-01-14 19:39:07,471:INFO: 796: Sarcoma
+2019-01-14 19:39:08,019:INFO: 797: Diastasis recti
+2019-01-14 19:39:08,086:INFO: 798: Death in early childhood
+2019-01-14 19:39:08,936:INFO: 799: Fetal overgrowth
+2019-01-14 19:39:09,105:INFO: 800: Lymphatic Metastasis
+2019-01-14 19:39:09,289:INFO: 801: Abnormality of the ribs
+2019-01-14 19:39:09,483:INFO: 802: Hypocalcemia
+2019-01-14 19:39:09,737:INFO: 803: Skull malformation
+2019-01-14 19:39:10,070:INFO: 804: Decreased IgM
+2019-01-14 19:39:10,149:INFO: 805: Cerebral atrophy
+2019-01-14 19:39:11,488:INFO: 806: Asthma
+2019-01-14 19:39:12,207:INFO: 807: Hypoalbuminemia
+2019-01-14 19:39:12,527:INFO: 808: Porencephaly
+2019-01-14 19:39:12,700:INFO: 809: Skin Neoplasms
+2019-01-14 19:39:13,696:INFO: 810: BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 1
+2019-01-14 19:39:13,959:INFO: 811: Pallor
+2019-01-14 19:39:14,580:INFO: 812: Chorioretinal abnormality
+2019-01-14 19:39:14,688:INFO: 813: Abnormality of vision
+2019-01-14 19:39:14,917:INFO: 814: Abnormality of the ulna
+2019-01-14 19:39:15,034:INFO: 815: Cranial defect
+2019-01-14 19:39:15,159:INFO: 816: Curly hair (finding)
+2019-01-14 19:39:15,355:INFO: 817: Decreased circulating ACTH level
+2019-01-14 19:39:15,483:INFO: 818: ovarian neoplasm
+2019-01-14 19:39:17,000:INFO: 819: Malignant Squamous Cell Neoplasm
+2019-01-14 19:39:17,196:INFO: 820: Infiltrate of lung
+2019-01-14 19:39:17,364:INFO: 821: Juvenile Myelomonocytic Leukemia
+2019-01-14 19:39:17,629:INFO: 822: Depressive Symptoms
+2019-01-14 19:39:17,853:INFO: 823: Vascular Diseases
+2019-01-14 19:39:17,941:INFO: 824: Polydactyly
+2019-01-14 19:39:18,337:INFO: 825: Congenital small ears
+2019-01-14 19:39:19,104:INFO: 826: Desquamation of skin soon after birth
+2019-01-14 19:39:19,183:INFO: 827: Gastrointestinal hamartomatous polyps
+2019-01-14 19:39:19,363:INFO: 828: Amyotrophic Lateral Sclerosis
+2019-01-14 19:39:20,336:INFO: 829: Intrahepatic Cholestasis
+2019-01-14 19:39:20,401:INFO: 830: Cholestasis
+2019-01-14 19:39:21,079:INFO: 831: Non-alcoholic Fatty Liver Disease
+2019-01-14 19:39:21,414:INFO: 832: Stomach Carcinoma
+2019-01-14 19:39:21,573:INFO: 833: Large for gestational age
+2019-01-14 19:39:21,654:INFO: 834: Broad-based gait
+2019-01-14 19:39:21,956:INFO: 835: Sensorineural Hearing Loss (disorder)
+2019-01-14 19:39:23,924:INFO: 836: Prenatal Exposure Delayed Effects
+2019-01-14 19:39:24,001:INFO: 837: Noise-induced hearing loss
+2019-01-14 19:39:24,048:INFO: 838: Absence of septum pellucidum
+2019-01-14 19:39:24,153:INFO: 839: Long face
+2019-01-14 19:39:24,804:INFO: 840: Recurrent fungal infections
+2019-01-14 19:39:24,946:INFO: 841: Occipital Encephalocele
+2019-01-14 19:39:25,009:INFO: 842: Congenital cerebral hernia
+2019-01-14 19:39:25,132:INFO: 843: Azoospermia
+2019-01-14 19:39:25,381:INFO: 844: Tobacco Use Disorder
+2019-01-14 19:39:25,453:INFO: 845: Hypoplastic finger
+2019-01-14 19:39:25,557:INFO: 846: Spinal rigidity
+2019-01-14 19:39:25,710:INFO: 847: Neonatal Hypotonia
+2019-01-14 19:39:26,185:INFO: 848: Epistaxis
+2019-01-14 19:39:26,476:INFO: 849: Scarring alopecia of scalp
+2019-01-14 19:39:26,563:INFO: 850: Basal cell nevi
+2019-01-14 19:39:26,871:INFO: 851: Hypoplastic toes
+2019-01-14 19:39:27,203:INFO: 852: Pneumoconiosis
+2019-01-14 19:39:27,284:INFO: 853: Weight Gain
+2019-01-14 19:39:28,372:INFO: 854: Low Vision
+2019-01-14 19:39:29,598:INFO: 855: Large hand
+2019-01-14 19:39:29,818:INFO: 856: Oral mucosal blistering
+2019-01-14 19:39:29,957:INFO: 857: Dilated ventricles (finding)
+2019-01-14 19:39:30,983:INFO: 858: Premature canities
+2019-01-14 19:39:31,224:INFO: 859: Night Blindness
+2019-01-14 19:39:32,005:INFO: 860: Flat acetabular roof
+2019-01-14 19:39:32,086:INFO: 861: Thoracic hypoplasia
+2019-01-14 19:39:32,177:INFO: 862: Anus, Imperforate
+2019-01-14 19:39:32,639:INFO: 863: Anxiety
+2019-01-14 19:39:33,917:INFO: 864: Abnormal pigmentation
+2019-01-14 19:39:34,290:INFO: 865: Lactic acidemia
+2019-01-14 19:39:34,956:INFO: 866: Anxiety Disorders
+2019-01-14 19:39:35,220:INFO: 867: Marfanoid body habitus
+2019-01-14 19:39:35,358:INFO: 868: Cocaine Abuse
+2019-01-14 19:39:35,422:INFO: 869: Myalgia
+2019-01-14 19:39:36,009:INFO: 870: Thrombocythemia, Essential
+2019-01-14 19:39:36,199:INFO: 871: Arthralgia
+2019-01-14 19:39:36,945:INFO: 872: Relative short stature
+2019-01-14 19:39:37,037:INFO: 873: Arthritis
+2019-01-14 19:39:37,435:INFO: 874: Wolff-Parkinson-White Syndrome
+2019-01-14 19:39:37,574:INFO: 875: Mildly increased creatine kinase
+2019-01-14 19:39:37,881:INFO: 876: Reperfusion Injury
+2019-01-14 19:39:38,976:INFO: 877: Large elongated pulp chamber
+2019-01-14 19:39:39,119:INFO: 878: Simple syndactyly of toes, first web space
+2019-01-14 19:39:39,293:INFO: 879: Irido-corneo-trabecular dysgenesis (disorder)
+2019-01-14 19:39:39,352:INFO: 880: Hemangiosarcoma
+2019-01-14 19:39:39,850:INFO: 881: Decreased width of tooth
+2019-01-14 19:39:40,282:INFO: 882: Hemangioma, Cavernous
+2019-01-14 19:39:40,591:INFO: 883: Broad ribs
+2019-01-14 19:39:40,667:INFO: 884: Arthrogryposis
+2019-01-14 19:39:41,038:INFO: 885: Hemarthrosis
+2019-01-14 19:39:41,101:INFO: 886: Pediatric failure to thrive
+2019-01-14 19:39:43,425:INFO: 887: Aplasia/Hypoplasia of the abdominal wall musculature
+2019-01-14 19:39:43,825:INFO: 888: Myotonia
+2019-01-14 19:39:43,903:INFO: 889: Postnatal growth retardation
+2019-01-14 19:39:44,872:INFO: 890: Ataxia, Appendicular
+2019-01-14 19:39:45,314:INFO: 891: Abnormality of the musculature
+2019-01-14 19:39:45,535:INFO: 892: Bone pain
+2019-01-14 19:39:45,767:INFO: 893: Abnormal cortical bone morphology
+2019-01-14 19:39:45,913:INFO: 894: Rapidly progressive
+2019-01-14 19:39:46,255:INFO: 895: Icterus
+2019-01-14 19:39:46,655:INFO: 896: Hyperammonemia
+2019-01-14 19:39:46,955:INFO: 897: Wide bregma sutures
+2019-01-14 19:39:47,330:INFO: 898: Accessory rib
+2019-01-14 19:39:47,489:INFO: 899: Progressive disorder
+2019-01-14 19:39:48,648:INFO: 900: Prenatal onset
+2019-01-14 19:39:49,605:INFO: 901: Coronal craniosynostosis
+2019-01-14 19:39:49,700:INFO: 902: Gingival Hemorrhage
+2019-01-14 19:39:49,804:INFO: 903: Cellular immunodeficiency
+2019-01-14 19:39:49,969:INFO: 904: Long nose
+2019-01-14 19:39:50,054:INFO: 905: Myeloproliferative disease
+2019-01-14 19:39:50,274:INFO: 906: Juvenile rheumatoid arthritis
+2019-01-14 19:39:50,366:INFO: 907: Leukoencephalopathies
+2019-01-14 19:39:50,525:INFO: 908: Sparse axillary hair
+2019-01-14 19:39:50,741:INFO: 909: Pyramidal sign
+2019-01-14 19:39:51,005:INFO: 910: Blindness, Legal
+2019-01-14 19:39:51,820:INFO: 911: Round, full face
+2019-01-14 19:39:52,231:INFO: 912: Maturity onset diabetes mellitus in young
+2019-01-14 19:39:52,300:INFO: 913: Agenesis of corpus callosum
+2019-01-14 19:39:53,364:INFO: 914: BILIARY TRACT ABNORMALITY
+2019-01-14 19:39:53,449:INFO: 915: Parkinsonian Disorders
+2019-01-14 19:39:54,176:INFO: 916: Epithelial ovarian cancer
+2019-01-14 19:39:54,265:INFO: 917: Ventricular arrhythmia
+2019-01-14 19:39:54,373:INFO: 918: Hyperemia
+2019-01-14 19:39:54,456:INFO: 919: Hypergammaglobulinemia
+2019-01-14 19:39:54,524:INFO: 920: Hyperglycemia
+2019-01-14 19:39:54,905:INFO: 921: Triangular face
+2019-01-14 19:39:55,672:INFO: 922: Hyperinsulinism
+2019-01-14 19:39:56,534:INFO: 923: Organic writer's cramp
+2019-01-14 19:39:56,603:INFO: 924: Extinguished electroretinogram
+2019-01-14 19:39:56,674:INFO: 925: Pena-Shokeir syndrome type I
+2019-01-14 19:39:56,755:INFO: 926: Facial Paresis
+2019-01-14 19:39:57,196:INFO: 927: Personality change
+2019-01-14 19:39:57,568:INFO: 928: Congenital anomaly of face
+2019-01-14 19:39:58,230:INFO: 929: Potter's facies
+2019-01-14 19:39:58,299:INFO: 930: Postural instability
+2019-01-14 19:39:58,525:INFO: 931: Globe of eye large
+2019-01-14 19:39:58,677:INFO: 932: Slow decrease in visual acuity
+2019-01-14 19:39:58,806:INFO: 933: Frontotemporal dementia
+2019-01-14 19:39:59,127:INFO: 934: Corneal Neovascularization
+2019-01-14 19:39:59,221:INFO: 935: Hodgkin Disease
+2019-01-14 19:39:59,446:INFO: 936: West Syndrome
+2019-01-14 19:39:59,579:INFO: 937: Sudden Cardiac Death
+2019-01-14 19:39:59,826:INFO: 938: Exocrine pancreatic insufficiency
+2019-01-14 19:39:59,910:INFO: 939: Insulin resistant diabetes
+2019-01-14 19:40:00,128:INFO: 940: Optic Atrophy
+2019-01-14 19:40:01,477:INFO: 941: Recurrent infections
+2019-01-14 19:40:02,317:INFO: 942: Bicornuate uterus
+2019-01-14 19:40:02,398:INFO: 943: Pigmentary iris degeneration
+2019-01-14 19:40:02,464:INFO: 944: Female infertility
+2019-01-14 19:40:03,113:INFO: 945: Respiratory Distress Syndrome
+2019-01-14 19:40:03,334:INFO: 946: Fused vertebrae
+2019-01-14 19:40:03,520:INFO: 947: Sternal anomalies
+2019-01-14 19:40:03,697:INFO: 948: Malignant hyperpyrexia due to anesthesia
+2019-01-14 19:40:03,757:INFO: 949: Uremia
+2019-01-14 19:40:04,012:INFO: 950: Kidney damage
+2019-01-14 19:40:04,183:INFO: 951: Hypotrichosis
+2019-01-14 19:40:04,529:INFO: 952: Micronodular cirrhosis
+2019-01-14 19:40:04,844:INFO: 953: Adult Fanconi syndrome
+2019-01-14 19:40:04,915:INFO: 954: Glycinuria
+2019-01-14 19:40:04,995:INFO: 955: Intermittent fever
+2019-01-14 19:40:05,281:INFO: 956: Redundant skin
+2019-01-14 19:40:05,588:INFO: 957: Influenza
+2019-01-14 19:40:05,850:INFO: 958: Hypothermia, natural
+2019-01-14 19:40:05,944:INFO: 959: Hypothyroidism
+2019-01-14 19:40:06,457:INFO: 960: Proximal muscle weakness
+2019-01-14 19:40:07,148:INFO: 961: Mitral Valve Prolapse Syndrome
+2019-01-14 19:40:07,619:INFO: 962: Mitral Valve Insufficiency
+2019-01-14 19:40:08,041:INFO: 963: Stomach Neoplasms
+2019-01-14 19:40:10,574:INFO: 964: Difficulty walking
+2019-01-14 19:40:10,830:INFO: 965: Gastric ulcer
+2019-01-14 19:40:10,940:INFO: 966: Slow progression
+2019-01-14 19:40:11,878:INFO: 967: Social disinhibition
+2019-01-14 19:40:12,225:INFO: 968: Hyperactive behavior
+2019-01-14 19:40:13,168:INFO: 969: Curvature of digit
+2019-01-14 19:40:13,929:INFO: 970: Renal tubular acidosis
+2019-01-14 19:40:14,001:INFO: 971: Decreased fertility
+2019-01-14 19:40:14,243:INFO: 972: Hypertrophy of clitoris
+2019-01-14 19:40:14,505:INFO: 973: Polycystic Kidney Diseases
+2019-01-14 19:40:14,662:INFO: 974: Hemorrhage
+2019-01-14 19:40:14,743:INFO: 975: Hemorrhagic Disorders
+2019-01-14 19:40:15,007:INFO: 976: Status Epilepticus
+2019-01-14 19:40:15,639:INFO: 977: Dysphasia
+2019-01-14 19:40:15,901:INFO: 978: Tortuous retinal vessels
+2019-01-14 19:40:16,004:INFO: 979: Creutzfeldt-Jakob disease
+2019-01-14 19:40:16,075:INFO: 980: Aortic Valve Stenosis
+2019-01-14 19:40:16,356:INFO: 981: Spinal canal stenosis
+2019-01-14 19:40:16,472:INFO: 982: Short philtrum
+2019-01-14 19:40:16,803:INFO: 983: Poor head control
+2019-01-14 19:40:16,895:INFO: 984: Foot dorsiflexor weakness
+2019-01-14 19:40:17,221:INFO: 985: Esophageal Atresia
+2019-01-14 19:40:17,414:INFO: 986: Esophageal Neoplasms
+2019-01-14 19:40:18,625:INFO: 987: Lewy Body Disease
+2019-01-14 19:40:18,884:INFO: 988: Increased intramyocellular lipid droplets
+2019-01-14 19:40:18,952:INFO: 989: Depressed nasal ridge
+2019-01-14 19:40:19,360:INFO: 990: Late tooth eruption
+2019-01-14 19:40:20,181:INFO: 991: Eosinophilia
+2019-01-14 19:40:20,448:INFO: 992: Bone Cysts
+2019-01-14 19:40:20,593:INFO: 993: Arsenic Poisoning
+2019-01-14 19:40:21,160:INFO: 994: Thrombophilia
+2019-01-14 19:40:21,215:INFO: 995: Headache
+2019-01-14 19:40:21,766:INFO: 996: Muscle atrophy, proximal
+2019-01-14 19:40:21,971:INFO: 997: Psoriasis
+2019-01-14 19:40:22,564:INFO: 998: POLYDACTYLY, POSTAXIAL
+2019-01-14 19:40:22,701:INFO: 999: Agenesis of teeth
+2019-01-14 19:40:23,057:INFO: 1000: Increased chromosomal breakage
+2019-01-14 19:40:23,300:INFO: 1001: Ectopia Lentis
+2019-01-14 19:40:23,419:INFO: 1002: Weak cry
+2019-01-14 19:40:23,596:INFO: 1003: Pulmonary artery stenosis
+2019-01-14 19:40:23,833:INFO: 1004: Anemia, Hemolytic
+2019-01-14 19:40:24,333:INFO: 1005: Rheumatoid Arthritis
+2019-01-14 19:40:25,239:INFO: 1006: Arthritis, Psoriatic
+2019-01-14 19:40:25,336:INFO: 1007: Anemia
+2019-01-14 19:40:26,521:INFO: 1008: Aplastic Anemia
+2019-01-14 19:40:26,603:INFO: 1009: Persistent cavum septum pellucidum
+2019-01-14 19:40:26,673:INFO: 1010: Short limb dwarfism recognizable at birth
+2019-01-14 19:40:26,728:INFO: 1011: Poor suck
+2019-01-14 19:40:26,839:INFO: 1012: Nonmedullary Thyroid Carcinoma
+2019-01-14 19:40:26,961:INFO: 1013: Hemangioma
+2019-01-14 19:40:27,248:INFO: 1014: Juvenile arthritis
+2019-01-14 19:40:28,004:INFO: 1015: Occupational Diseases
+2019-01-14 19:40:28,080:INFO: 1016: Abnormality of the voice
+2019-01-14 19:40:28,468:INFO: 1017: Glycosuria
+2019-01-14 19:40:28,608:INFO: 1018: Preauricular skin tag
+2019-01-14 19:40:28,879:INFO: 1019: Electroencephalogram abnormal
+2019-01-14 19:40:29,607:INFO: 1020: Hypoplastic myelodysplasia
+2019-01-14 19:40:30,035:INFO: 1021: Somatic mutation
+2019-01-14 19:40:31,017:INFO: 1022: Gingivitis
+2019-01-14 19:40:31,099:INFO: 1023: Freckles
+2019-01-14 19:40:31,498:INFO: 1024: Malabsorption
+2019-01-14 19:40:32,049:INFO: 1025: Brain Neoplasms
+2019-01-14 19:40:32,397:INFO: 1026: Brain Diseases
+2019-01-14 19:40:32,562:INFO: 1027: Tonic - clonic seizures
+2019-01-14 19:40:32,763:INFO: 1028: Cocaine Dependence
+2019-01-14 19:40:32,975:INFO: 1029: Testicular hypogonadism
+2019-01-14 19:40:33,042:INFO: 1030: Hypomagnesemia
+2019-01-14 19:40:33,102:INFO: 1031: Lipoma
+2019-01-14 19:40:33,278:INFO: 1032: Akinesia
+2019-01-14 19:40:33,366:INFO: 1033: Lipoidosis
+2019-01-14 19:40:33,483:INFO: 1034: Bronchitis, Chronic
+2019-01-14 19:40:33,548:INFO: 1035: Hypercholesterolemia
+2019-01-14 19:40:33,886:INFO: 1036: Microcephaly
+2019-01-14 19:40:34,189:INFO: 1037: Abnormality of immune system physiology
+2019-01-14 19:40:34,302:INFO: 1038: Tremor
+2019-01-14 19:40:35,374:INFO: 1039: Catalepsy
+2019-01-14 19:40:35,441:INFO: 1040: Short limb dwarfism, disproportionate
+2019-01-14 19:40:35,579:INFO: 1041: Acute Promyelocytic Leukemia
+2019-01-14 19:40:36,048:INFO: 1042: Precursor B-Cell Lymphoblastic Leukemia-Lymphoma
+2019-01-14 19:40:36,158:INFO: 1043: Death in childhood
+2019-01-14 19:40:36,244:INFO: 1044: Abnormality of cardiovascular system morphology
+2019-01-14 19:40:36,557:INFO: 1045: Crohn Disease
+2019-01-14 19:40:36,910:INFO: 1046: Progressive mental retardation
+2019-01-14 19:40:37,147:INFO: 1047: Spastic Paraplegia
+2019-01-14 19:40:37,575:INFO: 1048: Stillbirth
+2019-01-14 19:40:37,795:INFO: 1049: Hypoplastic-absent toenails
+2019-01-14 19:40:37,878:INFO: 1050: Absence of eyebrows
+2019-01-14 19:40:38,259:INFO: 1051: Transitional cell carcinoma of bladder
+2019-01-14 19:40:38,839:INFO: 1052: Progressive cerebellar ataxia
+2019-01-14 19:40:38,952:INFO: 1053: Skin hyperelastic
+2019-01-14 19:40:39,190:INFO: 1054: Aplasia/Hypoplasia of the skin
+2019-01-14 19:40:39,315:INFO: 1055: Weight decreased
+2019-01-14 19:40:39,966:INFO: 1056: Bulbar weakness
+2019-01-14 19:40:40,282:INFO: 1057: Leigh Disease
+2019-01-14 19:40:40,479:INFO: 1058: Shallow orbits
+2019-01-14 19:40:40,620:INFO: 1059: Celiac Disease
+2019-01-14 19:40:40,742:INFO: 1060: Prominent supraorbital ridges
+2019-01-14 19:40:41,050:INFO: 1061: Loss of retinal pigment epithelium
+2019-01-14 19:40:41,110:INFO: 1062: Infantile uterus
+2019-01-14 19:40:41,218:INFO: 1063: Palpitations
+2019-01-14 19:40:41,320:INFO: 1064: Pancreatitis, Chronic
+2019-01-14 19:40:41,376:INFO: 1065: Deglutition Disorders
+2019-01-14 19:40:42,680:INFO: 1066: Hearing abnormality
+2019-01-14 19:40:42,768:INFO: 1067: Urethral Stricture
+2019-01-14 19:40:42,906:INFO: 1068: Neuroblastoma
+2019-01-14 19:40:43,709:INFO: 1069: Recurrent sinusitis
+2019-01-14 19:40:43,800:INFO: 1070: Generalized elastolysis
+2019-01-14 19:40:43,924:INFO: 1071: Lupus Erythematosus, Systemic
+2019-01-14 19:40:44,187:INFO: 1072: Rhabdomyosarcoma
+2019-01-14 19:40:44,362:INFO: 1073: Aggressive behavior
+2019-01-14 19:40:45,342:INFO: 1074: Megacolon
+2019-01-14 19:40:45,636:INFO: 1075: Short palpebral fissure
+2019-01-14 19:40:45,952:INFO: 1076: Cholelithiasis
+2019-01-14 19:40:46,086:INFO: 1077: Increased number of platelets
+2019-01-14 19:40:46,311:INFO: 1078: Steatorrhea
+2019-01-14 19:40:46,373:INFO: 1079: Late fontanel closure
+2019-01-14 19:40:46,811:INFO: 1080: Increased serum pyruvate
+2019-01-14 19:40:46,931:INFO: 1081: Self Mutilation
+2019-01-14 19:40:47,327:INFO: 1082: Kartagener Syndrome
+2019-01-14 19:40:47,423:INFO: 1083: Neuropathy
+2019-01-14 19:40:47,822:INFO: 1084: Growth hormone excess
+2019-01-14 19:40:48,060:INFO: 1085: Bipolar Disorder
+2019-01-14 19:40:50,779:INFO: 1086: Umbilical hernia
+2019-01-14 19:40:51,245:INFO: 1087: Platyspondyly
+2019-01-14 19:40:51,529:INFO: 1088: Birth Weight
+2019-01-14 19:40:51,586:INFO: 1089: Precursor T-Cell Lymphoblastic Leukemia-Lymphoma
+2019-01-14 19:40:51,964:INFO: 1090: Carcinogenesis
+2019-01-14 19:40:52,111:INFO: 1091: Clitoral hypoplasia
+2019-01-14 19:40:52,182:INFO: 1092: Increased incidence of hepatocellular carcinoma
+2019-01-14 19:40:52,527:INFO: 1093: Microstomia
+2019-01-14 19:40:53,347:INFO: 1094: Abnormality of epiphysis morphology
+2019-01-14 19:40:53,463:INFO: 1095: Increased susceptibility to fractures
+2019-01-14 19:40:53,643:INFO: 1096: Increased serum lactate
+2019-01-14 19:40:54,080:INFO: 1097: Bladder Diverticulum
+2019-01-14 19:40:54,145:INFO: 1098: Hypoglycaemic seizure
+2019-01-14 19:40:54,223:INFO: 1099: Stricture of anus
+2019-01-14 19:40:54,301:INFO: 1100: Enlarged thorax
+2019-01-14 19:40:54,752:INFO: 1101: Gait imbalance
+2019-01-14 19:40:54,983:INFO: 1102: Inflammatory abnormality of the eye
+2019-01-14 19:40:55,059:INFO: 1103: Gastroesophageal reflux disease
+2019-01-14 19:40:55,761:INFO: 1104: Small hand
+2019-01-14 19:40:56,151:INFO: 1105: Nasopharyngeal carcinoma
+2019-01-14 19:40:56,537:INFO: 1106: Nausea
+2019-01-14 19:40:56,677:INFO: 1107: Prominent nasal bridge
+2019-01-14 19:40:57,162:INFO: 1108: Nausea and vomiting
+2019-01-14 19:40:58,035:INFO: 1109: Eczema
+2019-01-14 19:40:58,403:INFO: 1110: Ectropion
+2019-01-14 19:40:58,563:INFO: 1111: Short nose
+2019-01-14 19:40:59,638:INFO: 1112: Kidney Diseases
+2019-01-14 19:41:00,337:INFO: 1113: Liver carcinoma
+2019-01-14 19:41:02,297:INFO: 1114: Acute Coronary Syndrome
+2019-01-14 19:41:02,898:INFO: 1115: Ovarian Cysts
+2019-01-14 19:41:03,276:INFO: 1116: Sparse hair
+2019-01-14 19:41:03,882:INFO: 1117: Lumbar lordosis
+2019-01-14 19:41:04,117:INFO: 1118: Clonus
+2019-01-14 19:41:04,258:INFO: 1119: Abnormality of metabolism/homeostasis
+2019-01-14 19:41:05,277:INFO: 1120: Spade-like hand
+2019-01-14 19:41:05,389:INFO: 1121: Narrowing of ear canal
+2019-01-14 19:41:05,488:INFO: 1122: Metaphyseal irregularity
+2019-01-14 19:41:05,573:INFO: 1123: Athetosis
+2019-01-14 19:41:05,664:INFO: 1124: Foot Deformities
+2019-01-14 19:41:05,848:INFO: 1125: Diarrhea
+2019-01-14 19:41:06,691:INFO: 1126: Encephalopathies
+2019-01-14 19:41:06,953:INFO: 1127: Essential Hypertension
+2019-01-14 19:41:07,044:INFO: 1128: Language Disorders
+2019-01-14 19:41:07,260:INFO: 1129: Language Development Disorders
+2019-01-14 19:41:07,336:INFO: 1130: Myopathy
+2019-01-14 19:41:08,181:INFO: 1131: Adverse reaction to drug
+2019-01-14 19:41:08,489:INFO: 1132: Spinal Muscular Atrophy
+2019-01-14 19:41:08,646:INFO: 1133: Muscular Atrophy
+2019-01-14 19:41:08,868:INFO: 1134: Hypoplasia of iris
+2019-01-14 19:41:08,928:INFO: 1135: Peripheral Neuropathy
+2019-01-14 19:41:09,837:INFO: 1136: Rhabdomyolysis
+2019-01-14 19:41:09,965:INFO: 1137: Congenital keratoglobus
+2019-01-14 19:41:10,040:INFO: 1138: Embryotoxon
+2019-01-14 19:41:10,183:INFO: 1139: Frequent vomiting
+2019-01-14 19:41:10,254:INFO: 1140: Hydrops Fetalis
+2019-01-14 19:41:10,372:INFO: 1141: Laterally sparse eyebrows
+2019-01-14 19:41:10,526:INFO: 1142: Lipodystrophy
+2019-01-14 19:41:10,755:INFO: 1143: Isolated somatotropin deficiency
+2019-01-14 19:41:11,010:INFO: 1144: Photophobia
+2019-01-14 19:41:11,759:INFO: 1145: Agitation
+2019-01-14 19:41:11,899:INFO: 1146: Mood swings
+2019-01-14 19:41:13,000:INFO: 1147: Apathy
+2019-01-14 19:41:13,246:INFO: 1148: Small face
+2019-01-14 19:41:13,334:INFO: 1149: Neurodegenerative Disorders
+2019-01-14 19:41:14,572:INFO: 1150: Myopia
+2019-01-14 19:41:15,180:INFO: 1151: Congenital Camptodactyly
+2019-01-14 19:41:15,595:INFO: 1152: Craniofacial Abnormalities
+2019-01-14 19:41:16,703:INFO: 1153: Hyperlipidemia
+2019-01-14 19:41:16,979:INFO: 1154: MYELODYSPLASTIC SYNDROME
+2019-01-14 19:41:17,689:INFO: 1155: Excessive daytime somnolence
+2019-01-14 19:41:17,738:INFO: 1156: Recurrent otitis media
+2019-01-14 19:41:17,983:INFO: 1157: Micronuclei, Chromosome-Defective
+2019-01-14 19:41:18,273:INFO: 1158: Visual field defects
+2019-01-14 19:41:18,342:INFO: 1159: Cognition Disorders
+2019-01-14 19:41:18,624:INFO: 1160: Adult T-Cell Lymphoma/Leukemia
+2019-01-14 19:41:19,050:INFO: 1161: Accessory nipple
+2019-01-14 19:41:19,211:INFO: 1162: Congenital hypoplasia of breast
+2019-01-14 19:41:19,447:INFO: 1163: Burkitt Lymphoma
+2019-01-14 19:41:19,691:INFO: 1164: Thin lips
+2019-01-14 19:41:20,149:INFO: 1165: Insulin Resistance
+2019-01-14 19:41:20,833:INFO: 1166: Central nervous system demyelination
+2019-01-14 19:41:21,251:INFO: 1167: Mental Depression
+2019-01-14 19:41:22,712:INFO: 1168: Bronchial Hyperreactivity
+2019-01-14 19:41:22,763:INFO: 1169: AMYOTROPHIC LATERAL SCLEROSIS 1
+2019-01-14 19:41:23,218:INFO: 1170: Carcinoid Tumor
+2019-01-14 19:41:23,262:INFO: 1171: Narrow forehead
+2019-01-14 19:41:23,565:INFO: 1172: Distal amyotrophy
+2019-01-14 19:41:24,086:INFO: 1173: Variation in muscle fiber size
+2019-01-14 19:41:24,205:INFO: 1174: Sense of smell impaired
+2019-01-14 19:41:24,287:INFO: 1175: Neoplasms, Experimental
+2019-01-14 19:41:24,753:INFO: 1176: Copper-Overload Cirrhosis
+2019-01-14 19:41:24,928:INFO: 1177: Spontaneous abortion
+2019-01-14 19:41:25,364:INFO: 1178: Rudimentary vagina
+2019-01-14 19:41:25,473:INFO: 1179: Atypical lymphocyte observed
+2019-01-14 19:41:25,551:INFO: 1180: Dementia
+2019-01-14 19:41:26,307:INFO: 1181: Cleft uvula
+2019-01-14 19:41:26,533:INFO: 1182: Alkaline phosphatase serum increased
+2019-01-14 19:41:26,863:INFO: 1183: Albuminuria
+2019-01-14 19:41:26,980:INFO: 1184: Generalized hyperpigmentation
+2019-01-14 19:41:27,177:INFO: 1185: Dehydration
+2019-01-14 19:41:27,323:INFO: 1186: Tracheoesophageal Fistula
+2019-01-14 19:41:27,592:INFO: 1187: Hydrophthalmos
+2019-01-14 19:41:27,673:INFO: 1188: Transient Ischemic Attack
+2019-01-14 19:41:27,773:INFO: 1189: Brain Ischemia
+2019-01-14 19:41:28,785:INFO: 1190: Cerebral Infarction
+2019-01-14 19:41:28,851:INFO: 1191: Cerebral Palsy
+2019-01-14 19:41:28,906:INFO: 1192: Hypotension, Orthostatic
+2019-01-14 19:41:29,040:INFO: 1193: Reticulocytosis
+2019-01-14 19:41:29,192:INFO: 1194: Edema of eyelid
+2019-01-14 19:41:29,255:INFO: 1195: Hyperkeratosis, generalized
+2019-01-14 19:41:29,428:INFO: 1196: Cocaine-Related Disorders
+2019-01-14 19:41:30,107:INFO: 1197: Amphetamine-Related Disorders
+2019-01-14 19:41:30,573:INFO: 1198: Impaired cognition
+2019-01-14 19:41:31,317:INFO: 1199: Steatohepatitis
+2019-01-14 19:41:31,642:INFO: 1200: Cafe-au-Lait Spots
+2019-01-14 19:41:32,208:INFO: 1201: Dystrophia unguium
+2019-01-14 19:41:32,926:INFO: 1202: Cholecystitis
+2019-01-14 19:41:33,038:INFO: 1203: Protruding lower lip
+2019-01-14 19:41:33,684:INFO: 1204: Abnormal sex determination
+2019-01-14 19:41:33,778:INFO: 1205: Sex reversal
+2019-01-14 19:41:33,843:INFO: 1206: Knee joint valgus deformity
+2019-01-14 19:41:34,361:INFO: 1207: Berylliosis
+2019-01-14 19:41:34,415:INFO: 1208: Delayed bone age
+2019-01-14 19:41:35,609:INFO: 1209: Abnormal nasal morphology
+2019-01-14 19:41:35,732:INFO: 1210: Phonophobia
+2019-01-14 19:41:35,976:INFO: 1211: Kyphosis deformity of spine
+2019-01-14 19:41:37,074:INFO: 1212: Fine hair
+2019-01-14 19:41:37,490:INFO: 1213: Overriding toe
+2019-01-14 19:41:37,795:INFO: 1214: Abnormality of lipid metabolism
+2019-01-14 19:41:37,859:INFO: 1215: Multiple lentigines
+2019-01-14 19:41:38,023:INFO: 1216: Neuralgia
+2019-01-14 19:41:38,169:INFO: 1217: Neural Tube Defects
+2019-01-14 19:41:38,291:INFO: 1218: Small midface
+2019-01-14 19:41:39,425:INFO: 1219: Chest Pain
+2019-01-14 19:41:39,876:INFO: 1220: Esotropia
+2019-01-14 19:41:39,955:INFO: 1221: Lower limb spasticity
+2019-01-14 19:41:40,092:INFO: 1222: Long palpebral fissure
+2019-01-14 19:41:40,400:INFO: 1223: Bardet-Biedl Syndrome
+2019-01-14 19:41:40,495:INFO: 1224: Ependymoma
+2019-01-14 19:41:40,717:INFO: 1225: melanoma
+2019-01-14 19:41:42,551:INFO: 1226: Sacral dimples
+2019-01-14 19:41:42,764:INFO: 1227: Abnormality of the tonsils
+2019-01-14 19:41:42,841:INFO: 1228: Visceral angiomatosis
+2019-01-14 19:41:43,041:INFO: 1229: Hypoplastic iliac wing
+2019-01-14 19:41:43,335:INFO: 1230: Pneumonia
+2019-01-14 19:41:43,961:INFO: 1231: Excess nuchal skin
+2019-01-14 19:41:44,367:INFO: 1232: Neuronal loss
+2019-01-14 19:41:44,612:INFO: 1233: Pseudohypoaldosteronism
+2019-01-14 19:41:44,745:INFO: 1234: Short neck
+2019-01-14 19:41:46,056:INFO: 1235: Amblyopia
+2019-01-14 19:41:46,151:INFO: 1236: Abnormal visual evoked potential
+2019-01-14 19:41:46,259:INFO: 1237: Sideroblastic anemia
+2019-01-14 19:41:46,350:INFO: 1238: Onychogryposis
+2019-01-14 19:41:46,542:INFO: 1239: Fragile nails
+2019-01-14 19:41:46,662:INFO: 1240: Thick vermilion border
+2019-01-14 19:41:46,775:INFO: 1241: Facial asymmetry
+2019-01-14 19:41:47,040:INFO: 1242: Strawberry nevus of skin
+2019-01-14 19:41:47,383:INFO: 1243: Defect of skull ossification
+2019-01-14 19:41:47,485:INFO: 1244: Renal glomerular disease
+2019-01-14 19:41:47,576:INFO: 1245: Abnormal platelet function
+2019-01-14 19:41:47,728:INFO: 1246: Polydactyly of toes
+2019-01-14 19:41:47,819:INFO: 1247: Congenital pectus carinatum
+2019-01-14 19:41:48,138:INFO: 1248: Hemianopsia
+2019-01-14 19:41:48,228:INFO: 1249: Hand polydactyly
+2019-01-14 19:41:48,327:INFO: 1250: Abnormality of the skeletal system
+2019-01-14 19:41:48,439:INFO: 1251: Abnormality of the clavicle
+2019-01-14 19:41:48,498:INFO: 1252: Abnormality of the thorax
+2019-01-14 19:41:48,656:INFO: 1253: Gastrointestinal Diseases
+2019-01-14 19:41:48,740:INFO: 1254: Slender build
+2019-01-14 19:41:48,896:INFO: 1255: Primary hypogonadism
+2019-01-14 19:41:49,198:INFO: 1256: Contact Dermatitis
+2019-01-14 19:41:49,986:INFO: 1257: Dermatitis, Atopic
+2019-01-14 19:41:50,105:INFO: 1258: Rickets
+2019-01-14 19:41:50,194:INFO: 1259: Congenital Bilateral Cataracts
+2019-01-14 19:41:50,581:INFO: 1260: Decreased to absent deep tendon reflexes
+2019-01-14 19:41:50,828:INFO: 1261: Heart failure
+2019-01-14 19:41:51,977:INFO: 1262: Congestive heart failure
+2019-01-14 19:41:52,664:INFO: 1263: Muscle Spasticity
+2019-01-14 19:41:54,168:INFO: 1264: Muscle Rigidity
+2019-01-14 19:41:54,874:INFO: 1265: Fragile skin
+2019-01-14 19:41:55,057:INFO: 1266: Ulcerative Colitis
+2019-01-14 19:41:55,593:INFO: 1267: Hypoketotic hypoglycemia
+2019-01-14 19:41:55,713:INFO: 1268: Female hypogonadism syndrome
+2019-01-14 19:41:55,813:INFO: 1269: Decreased motor NCV
+2019-01-14 19:41:56,082:INFO: 1270: Radial aplasia
+2019-01-14 19:41:56,331:INFO: 1271: Petechiae
+2019-01-14 19:41:56,446:INFO: 1272: Quadriplegia
+2019-01-14 19:41:56,524:INFO: 1273: Hyperkalemia
+2019-01-14 19:41:56,632:INFO: 1274: Proximally placed thumbs
+2019-01-14 19:41:56,989:INFO: 1275: Cerebellar hypoplasia and atrophy
+2019-01-14 19:41:57,399:INFO: 1276: Anorexia
+2019-01-14 19:41:57,638:INFO: 1277: Cortical gyral simplification
+2019-01-14 19:41:57,771:INFO: 1278: Anosmia
+2019-01-14 19:41:57,829:INFO: 1279: Abnormally-shaped vertebrae
+2019-01-14 19:41:58,189:INFO: 1280: Flexion contracture of hip
+2019-01-14 19:41:58,255:INFO: 1281: Leukemia, Myelocytic, Acute
+2019-01-14 19:41:59,408:INFO: 1282: Reactive airway disease
+2019-01-14 19:41:59,574:INFO: 1283: CSF lactate increased
+2019-01-14 19:41:59,789:INFO: 1284: Renal Cell Carcinoma
+2019-01-14 19:42:01,233:INFO: 1285: Decreased joint mobility
+2019-01-14 19:42:01,635:INFO: 1286: Squamous cell carcinoma
+2019-01-14 19:42:03,424:INFO: 1287: Non-Small Cell Lung Carcinoma
+2019-01-14 19:42:04,495:INFO: 1288: Manganese Poisoning
+2019-01-14 19:42:04,659:INFO: 1289: Ventricular Dysfunction, Left
+2019-01-14 19:42:04,837:INFO: 1290: Cardiovascular Abnormalities
+2019-01-14 19:42:05,139:INFO: 1291: Carcinoma, Transitional Cell
+2019-01-14 19:42:05,748:INFO: 1292: Congenital Myasthenic Syndromes, Postsynaptic
+2019-01-14 19:42:05,798:INFO: 1293: Self-Injurious Behavior
+2019-01-14 19:42:06,155:INFO: 1294: Seasonal Affective Disorder
+2019-01-14 19:42:06,260:INFO: 1295: Tetany
+2019-01-14 19:42:06,340:INFO: 1296: Oral Submucous Fibrosis
+2019-01-14 19:42:06,435:INFO: 1297: Neutropenia
+2019-01-14 19:42:06,495:INFO: 1298: Thickened facial skin with coarse facial features
+2019-01-14 19:42:07,374:INFO: 1299: Pachygyria
+2019-01-14 19:42:07,805:INFO: 1300: Warts
+2019-01-14 19:42:07,933:INFO: 1301: Abnormal ocular motility
+2019-01-14 19:42:08,075:INFO: 1302: Cardiovascular Diseases
+2019-01-14 19:42:08,627:INFO: 1303: Gingival Diseases
+2019-01-14 19:42:08,735:INFO: 1304: Hypoxia
+2019-01-14 19:42:09,255:INFO: 1305: Dandy-Walker Syndrome
+2019-01-14 19:42:09,550:INFO: 1306: Memory Disorders
+2019-01-14 19:42:09,925:INFO: 1307: Fibrosis, Liver
+2019-01-14 19:42:10,078:INFO: 1308: Speech Disorders
+2019-01-14 19:42:10,509:INFO: 1309: Small labia majora
+2019-01-14 19:42:10,692:INFO: 1310: Lymphoma, Non-Hodgkin
+2019-01-14 19:42:10,875:INFO: 1311: Lymphoma, Follicular
+2019-01-14 19:42:11,075:INFO: 1312: Leukocytosis
+2019-01-14 19:42:11,244:INFO: 1313: Hypotension
+2019-01-14 19:42:11,832:INFO: 1314: Multiple lipomata
+2019-01-14 19:42:11,949:INFO: 1315: Hyperkeratosis
+2019-01-14 19:42:12,372:INFO: 1316: Short tubular bones
+2019-01-14 19:42:12,487:INFO: 1317: Flat face
+2019-01-14 19:42:12,773:INFO: 1318: Orbital separation diminished
+2019-01-14 19:42:12,914:INFO: 1319: Decreased lower limb vibratory sense
+2019-01-14 19:42:13,107:INFO: 1320: Ophthalmoparesis
+2019-01-14 19:42:13,217:INFO: 1321: Medulloblastoma
+2019-01-14 19:42:13,843:INFO: 1322: Hypoplastic ovary
+2019-01-14 19:42:13,959:INFO: 1323: Brain hypomyelination
+2019-01-14 19:42:14,058:INFO: 1324: Specific learning disability
+2019-01-14 19:42:14,544:INFO: 1325: Hypoplasia or absence of the corpus callosum
+2019-01-14 19:42:14,658:INFO: 1326: Sphincter disturbances
+2019-01-14 19:42:14,838:INFO: 1327: Asthma, Aspirin-Induced
+2019-01-14 19:42:14,891:INFO: 1328: Narrow palate
+2019-01-14 19:42:15,163:INFO: 1329: Scotoma, Central
+2019-01-14 19:42:15,261:INFO: 1330: Abnormality of blood and blood-forming tissues
+2019-01-14 19:42:15,306:INFO: 1331: Bushy eyebrows
+2019-01-14 19:42:16,090:INFO: 1332: Graves Disease
+2019-01-14 19:42:16,148:INFO: 1333: Recurrent urinary tract infection
+2019-01-14 19:42:16,258:INFO: 1334: Situs Inversus
+2019-01-14 19:42:16,314:INFO: 1335: Brain hemorrhage
+2019-01-14 19:42:16,516:INFO: 1336: Menorrhagia
+2019-01-14 19:42:16,650:INFO: 1337: Premature Menopause
+2019-01-14 19:42:16,845:INFO: 1338: Atrial Fibrillation
+2019-01-14 19:42:17,121:INFO: 1339: Hepatitis, Chronic
+2019-01-14 19:42:17,361:INFO: 1340: Behcet Syndrome
+2019-01-14 19:42:17,515:INFO: 1341: Infertility
+2019-01-14 19:42:17,737:INFO: 1342: Pointed chin
+2019-01-14 19:42:18,500:INFO: 1343: Ragged-red fibers
+2019-01-14 19:42:18,626:INFO: 1344: Hypopigmentation disorder
+2019-01-14 19:42:18,750:INFO: 1345: Hyperpigmentation
+2019-01-14 19:42:19,115:INFO: 1346: Necrosis
+2019-01-14 19:42:19,746:INFO: 1347: Extrapyramidal sign
+2019-01-14 19:42:19,980:INFO: 1348: Edema
+2019-01-14 19:42:20,437:INFO: 1349: Metabolic Bone Disorder
+2019-01-14 19:42:20,558:INFO: 1350: Bone Diseases, Developmental
+2019-01-14 19:42:20,687:INFO: 1351: Tachycardia, Ventricular
+2019-01-14 19:42:20,959:INFO: 1352: Sandal gap
+2019-01-14 19:42:21,274:INFO: 1353: Ventricular Fibrillation
+2019-01-14 19:42:21,346:INFO: 1354: Thin upper lip vermilion
+2019-01-14 19:42:22,277:INFO: 1355: Dystonia
+2019-01-14 19:42:23,336:INFO: 1356: Paranoia
+2019-01-14 19:42:23,532:INFO: 1357: Paralysed
+2019-01-14 19:42:24,371:INFO: 1358: Broad thumbs
+2019-01-14 19:42:24,820:INFO: 1359: Endomyocardial Fibrosis
+2019-01-14 19:42:24,875:INFO: 1360: Low set ears
+2019-01-14 19:42:26,417:INFO: 1361: Micronychia (disorder)
+2019-01-14 19:42:26,528:INFO: 1362: Muscle hypotonia
+2019-01-14 19:42:29,463:INFO: 1363: Autoimmune hemolytic anemia
+2019-01-14 19:42:29,616:INFO: 1364: Anemia, Megaloblastic
+2019-01-14 19:42:29,694:INFO: 1365: Generalized muscle weakness
+2019-01-14 19:42:30,477:INFO: 1366: Facial diplegia
+2019-01-14 19:42:30,558:INFO: 1367: Hand deformities
+2019-01-14 19:42:31,258:INFO: 1368: Precursor Cell Lymphoblastic Leukemia Lymphoma
+2019-01-14 19:42:31,783:INFO: 1369: Cardiomyopathies
+2019-01-14 19:42:32,596:INFO: 1370: Hematuria
+2019-01-14 19:42:32,803:INFO: 1371: Cerebellar vermis hypoplasia
+2019-01-14 19:42:33,048:INFO: 1372: Dyskeratosis Congenita
+2019-01-14 19:42:33,137:INFO: 1373: Abnormality of the fingernails
+2019-01-14 19:42:33,529:INFO: 1374: Abnormality of the liver
+2019-01-14 19:42:33,638:INFO: 1375: Lipoatrophy
+2019-01-14 19:42:33,920:INFO: 1376: Abnormality of the metacarpal bones
+2019-01-14 19:42:34,120:INFO: 1377: Dilatation of ureter
+2019-01-14 19:42:34,245:INFO: 1378: Depressive disorder
+2019-01-14 19:42:36,530:INFO: 1379: nervous system disorder
+2019-01-14 19:42:36,823:INFO: 1380: Atrophic condition of skin
+2019-01-14 19:42:37,127:INFO: 1381: Kidney Neoplasm
+2019-01-14 19:42:37,569:INFO: 1382: Drooling
+2019-01-14 19:42:37,752:INFO: 1383: Hyperreflexia
+2019-01-14 19:42:39,361:INFO: 1384: Exfoliative dermatitis
+2019-01-14 19:42:39,523:INFO: 1385: Drug Eruptions
+2019-01-14 19:42:39,599:INFO: 1386: Hypoventilation
+2019-01-14 19:42:39,668:INFO: 1387: Ventricular Septal Defects
+2019-01-14 19:42:40,759:INFO: 1388: MELAS Syndrome
+2019-01-14 19:42:40,852:INFO: 1389: Atrial Septal Defects
+2019-01-14 19:42:41,705:INFO: 1390: Heart Septal Defects
+2019-01-14 19:42:41,969:INFO: 1391: MICROCEPHALY, PRIMARY AUTOSOMAL RECESSIVE, 1
+2019-01-14 19:42:42,099:INFO: 1392: Malignant neoplasm of breast
+2019-01-14 19:42:42,300:INFO: 1393: Colitis
+2019-01-14 19:42:42,585:INFO: 1394: Skin Erosion
+2019-01-14 19:42:42,747:INFO: 1395: Epiphyseal dysplasia
+2019-01-14 19:42:42,803:INFO: 1396: Muscle Hypertonia
+2019-01-14 19:42:43,336:INFO: 1397: Muscle Cramp
+2019-01-14 19:42:44,245:INFO: 1398: Hamartoma Syndrome, Multiple
+2019-01-14 19:42:44,364:INFO: 1399: Acquired scoliosis
+2019-01-14 19:42:46,345:INFO: 1400: Decreased tendon reflex
+2019-01-14 19:42:47,313:INFO: 1401: Secondary hypothyroidism
+2019-01-14 19:42:47,425:INFO: 1402: Female Urogenital Diseases
+2019-01-14 19:42:47,547:INFO: 1403: Gait, Drop Foot
+2019-01-14 19:42:47,898:INFO: 1404: Nail dysplasia
+2019-01-14 19:42:48,514:INFO: 1405: Abnormal dermatoglyphic pattern
+2019-01-14 19:42:48,738:INFO: 1406: Anophthalmos
+2019-01-14 19:42:48,816:INFO: 1407: Generalized amyotrophy
+2019-01-14 19:42:48,973:INFO: 1408: Hyperprolactinemia
+2019-01-14 19:42:49,071:INFO: 1409: Myeloid Leukemia, Chronic
+2019-01-14 19:42:49,430:INFO: 1410: Myeloid Leukemia
+2019-01-14 19:42:49,696:INFO: 1411: Congenital dislocation of radial head
+2019-01-14 19:42:49,962:INFO: 1412: Relative macrocephaly
+2019-01-14 19:42:50,100:INFO: 1413: Flexion contracture of proximal interphalangeal joint
+2019-01-14 19:42:50,868:INFO: 1414: Foramen Ovale, Patent
+2019-01-14 19:42:50,941:INFO: 1415: Enlarged kidney
+2019-01-14 19:42:50,989:INFO: 1416: Congenital absence of kidney
+2019-01-14 19:42:51,323:INFO: 1417: Bronchioloalveolar Adenocarcinoma
+2019-01-14 19:42:51,631:INFO: 1418: Sepsis
+2019-01-14 19:42:51,890:INFO: 1419: Blue sclera
+2019-01-14 19:42:52,083:INFO: 1420: PARKINSON DISEASE, LATE-ONSET
+2019-01-14 19:42:52,223:INFO: 1421: Reticulocytopenia
+2019-01-14 19:42:52,544:INFO: 1422: Noonan Syndrome
+2019-01-14 19:42:52,727:INFO: 1423: Hyperlipoproteinemia Type IIa
+2019-01-14 19:42:52,795:INFO: 1424: Compression of spinal cord
+2019-01-14 19:42:52,894:INFO: 1425: Metaphyseal widening
+2019-01-14 19:42:53,013:INFO: 1426: Hypoplasia of scrotum
+2019-01-14 19:42:53,140:INFO: 1427: Hammer Toe
+2019-01-14 19:42:53,405:INFO: 1428: Almond-shaped eyes
+2019-01-14 19:42:53,595:INFO: 1429: Acrocephaly
+2019-01-14 19:42:53,676:INFO: 1430: Excessive wrinkled skin
+2019-01-14 19:42:53,849:INFO: 1431: Lymphopenia
+2019-01-14 19:42:54,287:INFO: 1432: Pulmonary Stenosis
+2019-01-14 19:42:54,627:INFO: 1433: Recurrent upper respiratory tract infection
+2019-01-14 19:42:54,903:INFO: 1434: Low-set, posteriorly rotated ears
+2019-01-14 19:42:55,714:INFO: 1435: Congenital ear anomaly NOS (disorder)
+2019-01-14 19:42:55,927:INFO: 1436: Malaria
+2019-01-14 19:42:56,057:INFO: 1437: Downward slant of palpebral fissure
+2019-01-14 19:42:57,583:INFO: 1438: Decreased number of large and small myelinated fibers
+2019-01-14 19:42:57,788:INFO: 1439: Telecanthus
+2019-01-14 19:42:58,280:INFO: 1440: Protuberant abdomen
+2019-01-14 19:42:58,358:INFO: 1441: Scotoma
+2019-01-14 19:42:58,498:INFO: 1442: Adenoid Cystic Carcinoma
+2019-01-14 19:42:59,707:INFO: 1443: Short stature
+2019-01-14 19:43:02,782:INFO: 1444: Generalized hypopigmentation
+2019-01-14 19:43:02,905:INFO: 1445: Spastic tetraparesis
+2019-01-14 19:43:02,991:INFO: 1446: CATARACT 16, MULTIPLE TYPES
+2019-01-14 19:43:03,057:INFO: 1447: Byzanthine arch palate
+2019-01-14 19:43:04,571:INFO: 1448: Lytic lesion
+2019-01-14 19:43:04,872:INFO: 1449: Idiopathic Pulmonary Fibrosis
+2019-01-14 19:43:04,951:INFO: 1450: Severe mental retardation (I.Q. 20-34)
+2019-01-14 19:43:05,823:INFO: 1451: Vertical Talus
+2019-01-14 19:43:06,337:INFO: 1452: Pinched bridge of nose
+2019-01-14 19:43:06,427:INFO: 1453: Abnormal coordination
+2019-01-14 19:43:06,628:INFO: 1454: Calcium pyrophosphate deposition disease
+2019-01-14 19:43:06,728:INFO: 1455: Diaphragmatic Hernia
+2019-01-14 19:43:07,015:INFO: 1456: Prostatic Intraepithelial Neoplasias
+2019-01-14 19:43:07,343:INFO: 1457: Frequent falls
+2019-01-14 19:43:07,467:INFO: 1458: Generalized hirsutism
+2019-01-14 19:43:07,871:INFO: 1459: Conductive hearing loss
+2019-01-14 19:43:08,813:INFO: 1460: Somnolence
+2019-01-14 19:43:08,940:INFO: 1461: Alcohol withdrawal syndrome
+2019-01-14 19:43:09,018:INFO: 1462: Hepatitis C
+2019-01-14 19:43:09,088:INFO: 1463: Anhedonia
+2019-01-14 19:43:09,220:INFO: 1464: Fatigue
+2019-01-14 19:43:10,964:INFO: 1465: Rough bone trabeculation
+2019-01-14 19:43:11,055:INFO: 1466: Broad nasal tip
+2019-01-14 19:43:11,239:INFO: 1467: Kallmann Syndrome
+2019-01-14 19:43:11,304:INFO: 1468: Muscular Dystrophy, Facioscapulohumeral
+2019-01-14 19:43:11,458:INFO: 1469: Wide nose
+2019-01-14 19:43:11,792:INFO: 1470: Peripheral axonal neuropathy
+2019-01-14 19:43:11,928:INFO: 1471: Hydrocephalus
+2019-01-14 19:43:12,910:INFO: 1472: Pulmonary Embolism
+2019-01-14 19:43:13,057:INFO: 1473: Nasal bridge wide
+2019-01-14 19:43:14,849:INFO: 1474: Short upper arms
+2019-01-14 19:43:14,986:INFO: 1475: Small epiphyses
+2019-01-14 19:43:15,034:INFO: 1476: Hip joint varus deformity - observation
+2019-01-14 19:43:15,116:INFO: 1477: Nephronophthisis
+2019-01-14 19:43:15,212:INFO: 1478: Hereditary Nonpolyposis Colorectal Cancer
+2019-01-14 19:43:15,340:INFO: 1479: Dyskinesia, Drug-Induced
+2019-01-14 19:43:15,410:INFO: 1480: Dyskinetic syndrome
+2019-01-14 19:43:15,476:INFO: 1481: Generalized hypotonia
+2019-01-14 19:43:15,795:INFO: 1482: Limb-girdle muscle weakness
+2019-01-14 19:43:15,885:INFO: 1483: Tapering fingers (finding)
+2019-01-14 19:43:16,170:INFO: 1484: Discordant ventriculoarterial connection
+2019-01-14 19:43:16,219:INFO: 1485: Fetal Alcohol Syndrome
+2019-01-14 19:43:16,321:INFO: 1486: Aortic root dilatation
+2019-01-14 19:43:16,382:INFO: 1487: Optic Atrophy, Hereditary, Leber
+2019-01-14 19:43:16,471:INFO: 1488: Absence of secondary sex characteristics
+2019-01-14 19:43:16,578:INFO: 1489: Joint hyperflexibility
+2019-01-14 19:43:17,414:INFO: 1490: Femoral bowing
+2019-01-14 19:43:17,556:INFO: 1491: Ectopic Tissue
+2019-01-14 19:43:17,743:INFO: 1492: Cerebral Ischemia
+2019-01-14 19:43:18,016:INFO: 1493: Kidney Failure, Chronic
+2019-01-14 19:43:18,383:INFO: 1494: Malignant lymphoma, lymphocytic, intermediate differentiation, diffuse
+2019-01-14 19:43:18,594:INFO: 1495: Encephalitis
+2019-01-14 19:43:18,683:INFO: 1496: Recurrent respiratory infections
+2019-01-14 19:43:19,736:INFO: 1497: Smooth philtrum
+2019-01-14 19:43:20,140:INFO: 1498: Glaucoma
+2019-01-14 19:43:21,005:INFO: 1499: Pigmentary retinal degeneration
+2019-01-14 19:43:21,059:INFO: 1500: Peripheral demyelination
+2019-01-14 19:43:21,127:INFO: 1501: Hypsarrhythmia
+2019-01-14 19:43:21,306:INFO: 1502: Ischemia
+2019-01-14 19:43:21,701:INFO: 1503: Dystrophic toenail changes
+2019-01-14 19:43:21,792:INFO: 1504: Mediastinal lymphadenopathy
+2019-01-14 19:43:21,939:INFO: 1505: Thyroid Diseases
+2019-01-14 19:43:22,077:INFO: 1506: Basal ganglia calcification
+2019-01-14 19:43:22,206:INFO: 1507: Hair hypopigmentation
+2019-01-14 19:43:22,270:INFO: 1508: Obesity
+2019-01-14 19:43:24,139:INFO: 1509: Prominent metopic ridge
+2019-01-14 19:43:24,243:INFO: 1510: Pfaundler-Hurler Syndrome
+2019-01-14 19:43:24,297:INFO: 1511: Barrel chest
+2019-01-14 19:43:24,362:INFO: 1512: Lymphangioma, Cystic
+2019-01-14 19:43:24,558:INFO: 1513: Prolonged QT interval
+2019-01-14 19:43:24,707:INFO: 1514: Skeletal muscle atrophy
+2019-01-14 19:43:26,001:INFO: 1515: Prostate cancer, familial
+2019-01-14 19:43:26,150:INFO: 1516: Retinal depigmentation
+2019-01-14 19:43:26,217:INFO: 1517: Heart valve disease
+2019-01-14 19:43:26,487:INFO: 1518: Low posterior hairline
+2019-01-14 19:43:27,114:INFO: 1519: Breech Presentation
+2019-01-14 19:43:27,178:INFO: 1520: Multiple Myeloma
+2019-01-14 19:43:27,719:INFO: 1521: Electromyogram abnormal
+2019-01-14 19:43:28,055:INFO: 1522: Multiple Sclerosis
+2019-01-14 19:43:28,382:INFO: 1523: Neurogenic Inflammation
+2019-01-14 19:43:28,503:INFO: 1524: Dermatitis, Allergic Contact
+2019-01-14 19:43:28,834:INFO: 1525: Ceroid lipofuscinosis, neuronal 1, infantile
+2019-01-14 19:43:29,009:INFO: 1526: Waddling gait
+2019-01-14 19:43:29,271:INFO: 1527: Splayed metaphyses
+2019-01-14 19:43:29,413:INFO: 1528: Choanal stenosis
+2019-01-14 19:43:29,492:INFO: 1529: Hypertriglyceridemia result
+2019-01-14 19:43:29,788:INFO: 1530: Transient Cerebral Ischemia
+2019-01-14 19:43:29,950:INFO: 1531: Sleeplessness
+2019-01-14 19:43:30,128:INFO: 1532: Impaired glucose tolerance
+2019-01-14 19:43:30,561:INFO: 1533: Fatigable weakness of swallowing muscles
+2019-01-14 19:43:31,244:INFO: 1534: Islets of Langerhans hyperplasia
+2019-01-14 19:43:31,330:INFO: 1535: Liver Cirrhosis
+2019-01-14 19:43:32,273:INFO: 1536: Mood Disorders
+2019-01-14 19:43:33,724:INFO: 1537: Hypoplasia of optic disc
+2019-01-14 19:43:33,781:INFO: 1538: Reduced visual acuity
+2019-01-14 19:43:33,979:INFO: 1539: High-grade hypermetropia
+2019-01-14 19:43:34,221:INFO: 1540: Corneal diameter decreased
+2019-01-14 19:43:34,601:INFO: 1541: Intestinal Obstruction
+2019-01-14 19:43:34,773:INFO: 1542: Acne
+2019-01-14 19:43:35,205:INFO: 1543: Thin hypoplastic alae nasi
+2019-01-14 19:43:35,961:INFO: 1544: Respiratory distress
+2019-01-14 19:43:36,455:INFO: 1545: Irregular hyperpigmentation
+2019-01-14 19:43:36,880:INFO: 1546: Nevus
+2019-01-14 19:43:37,229:INFO: 1547: Melanocytic nevus
+2019-01-14 19:43:38,313:INFO: 1548: Hypertensive disease
+2019-01-14 19:43:40,695:INFO: 1549: Reduced fetal movement
+2019-01-14 19:43:41,279:INFO: 1550: Cerebral calcification
+2019-01-14 19:43:41,949:INFO: 1551: Pancreatic Neoplasm
+2019-01-14 19:43:43,169:INFO: 1552: Short metatarsal
+2019-01-14 19:43:43,469:INFO: 1553: Eyebrow abnormalities
+2019-01-14 19:43:43,601:INFO: 1554: Autonomic nervous system disorders
+2019-01-14 19:43:44,010:INFO: 1555: Radial aplasia/hypoplasia
+2019-01-14 19:43:44,273:INFO: 1556: Cone-shaped epiphyses
+2019-01-14 19:43:44,535:INFO: 1557: Serum cholesterol raised
+2019-01-14 19:43:44,719:INFO: 1558: Hypoparathyroidism
+2019-01-14 19:43:44,861:INFO: 1559: Hyponatremia
+2019-01-14 19:43:44,982:INFO: 1560: PARKINSON DISEASE 19, JUVENILE-ONSET
+2019-01-14 19:43:45,173:INFO: 1561: Impaired exercise tolerance
+2019-01-14 19:43:45,529:INFO: 1562: Hypokalemia
+2019-01-14 19:43:45,788:INFO: 1563: Hypohidrosis
+2019-01-14 19:43:46,009:INFO: 1564: Pallor of optic disc
+2019-01-14 19:43:46,591:INFO: 1565: Leukoplakia, Oral
+2019-01-14 19:43:46,814:INFO: 1566: Basal cell carcinoma
+2019-01-14 19:43:47,647:INFO: 1567: Malignant neoplasm of skin
+2019-01-14 19:43:48,091:INFO: 1568: Upward slant of palpebral fissure
+2019-01-14 19:43:48,829:INFO: 1569: Atresia of vagina
+2019-01-14 19:43:48,916:INFO: 1570: Single transverse palmar crease
+2019-01-14 19:43:49,549:INFO: 1571: Diaphyseal thickening
+2019-01-14 19:43:49,609:INFO: 1572: Poor coordination
+2019-01-14 19:43:49,884:INFO: 1573: Neck webbing
+2019-01-14 19:43:50,309:INFO: 1574: Macular degeneration
+2019-01-14 19:43:50,401:INFO: 1575: Adenocarcinoma Of Esophagus
+2019-01-14 19:43:50,730:INFO: 1576: ATRIAL FIBRILLATION, FAMILIAL, 1 (disorder)
+2019-01-14 19:43:50,833:INFO: 1577: Macrostomia
+2019-01-14 19:43:51,862:INFO: 1578: Arthritis, Experimental
+2019-01-14 19:43:52,246:INFO: 1579: Ichthyoses
+2019-01-14 19:43:52,527:INFO: 1580: Squamous cell carcinoma of esophagus
+2019-01-14 19:43:54,037:INFO: 1581: Rotting teeth
+2019-01-14 19:43:54,803:INFO: 1582: Squamous cell carcinoma of skin
+2019-01-14 19:43:54,988:INFO: 1583: Irregular vertebral endplates
+2019-01-14 19:43:55,077:INFO: 1584: Hyperplasia of nose
+2019-01-14 19:43:55,911:INFO: 1585: Stereotyped Behavior
+2019-01-14 19:43:56,746:INFO: 1586: Atrophic scar
+2019-01-14 19:43:56,959:INFO: 1587: Disorder of eye
+2019-01-14 19:43:57,192:INFO: 1588: Eye Abnormalities
+2019-01-14 19:43:57,570:INFO: 1589: Basal Ganglia Diseases
+2019-01-14 19:43:57,651:INFO: 1590: Hepatitis B
+2019-01-14 19:43:57,716:INFO: 1591: Polyarthritis
+2019-01-14 19:43:57,822:INFO: 1592: Attention deficit hyperactivity disorder
+2019-01-14 19:43:58,972:INFO: 1593: Barrett Esophagus
+2019-01-14 19:43:59,167:INFO: 1594: Conjunctival telangiectasis
+2019-01-14 19:43:59,478:INFO: 1595: Recurrent viral infections
+2019-01-14 19:43:59,665:INFO: 1596: Cholangitis
+2019-01-14 19:43:59,734:INFO: 1597: Primary biliary cirrhosis
+2019-01-14 19:43:59,846:INFO: 1598: Oligospermia
+2019-01-14 19:44:00,100:INFO: 1599: Nephritis
+2019-01-14 19:44:00,328:INFO: 1600: TOBACCO ADDICTION, SUSCEPTIBILITY TO (finding)
+2019-01-14 19:44:00,392:INFO: 1601: Chorioretinal atrophy
+2019-01-14 19:44:00,451:INFO: 1602: Mild Mental Retardation
+2019-01-14 19:44:01,546:INFO: 1603: Autosomal recessive predisposition
+2019-01-14 19:44:10,170:INFO: 1604: Capuchin ears
+2019-01-14 19:44:10,553:INFO: 1605: Polyuria
+2019-01-14 19:44:10,660:INFO: 1606: abnormal growth
+2019-01-14 19:44:10,826:INFO: 1607: Glioblastoma
+2019-01-14 19:44:12,204:INFO: 1608: Ectodermal Dysplasia
+2019-01-14 19:44:12,337:INFO: 1609: Overfolded helix
+2019-01-14 19:44:12,628:INFO: 1610: Thickened helices
+2019-01-14 19:44:12,871:INFO: 1611: Postnatal microcephaly
+2019-01-14 19:44:13,295:INFO: 1612: Advanced bone age
+2019-01-14 19:44:13,716:INFO: 1613: Glioma
+2019-01-14 19:44:15,123:INFO: 1614: Gliosis
+2019-01-14 19:44:15,907:INFO: 1615: Open mouth
+2019-01-14 19:44:16,536:INFO: 1616: Down Syndrome
+2019-01-14 19:44:16,666:INFO: 1617: Depressed nasal tip
+2019-01-14 19:44:16,781:INFO: 1618: Thyroid Neoplasm
+2019-01-14 19:44:17,363:INFO: 1619: Nerve Degeneration
+2019-01-14 19:44:19,159:INFO: 1620: Childhood onset
+2019-01-14 19:44:19,622:INFO: 1621: Abnormality of nail of toe
+2019-01-14 19:44:19,718:INFO: 1622: Dyspnea
+2019-01-14 19:44:20,748:INFO: 1623: Cranial nerve palsies
+2019-01-14 19:44:20,867:INFO: 1624: Sensory neuropathy
+2019-01-14 19:44:21,137:INFO: 1625: Bone marrow hypocellularity
+2019-01-14 19:44:21,328:INFO: 1626: Increased IgM levels
+2019-01-14 19:44:21,500:INFO: 1627: Mucosal telangiectasiae
+2019-01-14 19:44:21,759:INFO: 1628: White forelock
+2019-01-14 19:44:21,908:INFO: 1629: Depressed mood
+2019-01-14 19:44:21,989:INFO: 1630: Secondary physiologic amenorrhea
+2019-01-14 19:44:22,148:INFO: 1631: Dyslipidemias
+2019-01-14 19:44:22,313:INFO: 1632: Hypoplasia of nipple
+2019-01-14 19:44:22,608:INFO: 1633: Hypercalcemia
+2019-01-14 19:44:23,009:INFO: 1634: Contracture of joint of hand
+2019-01-14 19:44:23,280:INFO: 1635: Abnormal vision
+2019-01-14 19:44:23,688:INFO: 1636: Liver neoplasms
+2019-01-14 19:44:24,951:INFO: 1637: Hypercalciuria
+2019-01-14 19:44:25,165:INFO: 1638: Restlessness
+2019-01-14 19:44:25,421:INFO: 1639: Nephrolithiasis
+2019-01-14 19:44:25,692:INFO: 1640: Breast Carcinoma
+2019-01-14 19:44:26,522:INFO: 1641: Learning Disorders
+2019-01-14 19:44:26,843:INFO: 1642: Severe myopia
+2019-01-14 19:44:26,907:INFO: 1643: Myoclonic Epilepsy, Juvenile
+2019-01-14 19:44:26,959:INFO: 1644: Idiopathic generalized epilepsy
+2019-01-14 19:44:27,009:INFO: 1645: Adrenal hyperplasia
+2019-01-14 19:44:27,170:INFO: 1646: Alcohol abuse
+2019-01-14 19:44:27,624:INFO: 1647: Hyperplasia
+2019-01-14 19:44:28,025:INFO: 1648: Tooth Crowding
+2019-01-14 19:44:28,677:INFO: 1649: Hyperparathyroidism
+2019-01-14 19:44:28,887:INFO: 1650: Syncope
+2019-01-14 19:44:29,094:INFO: 1651: Peripheral sensorimotor neuropathy
+2019-01-14 19:44:29,228:INFO: 1652: Syndactyly
+2019-01-14 19:44:29,744:INFO: 1653: Dystrophic fingernails
+2019-01-14 19:44:29,936:INFO: 1654: RENAL ADYSPLASIA
+2019-01-14 19:44:30,060:INFO: 1655: Hydronephrosis
+2019-01-14 19:44:30,591:INFO: 1656: Seborrheic dermatitis
+2019-01-14 19:44:30,695:INFO: 1657: Cerebellar Hypoplasia
+2019-01-14 19:44:31,220:INFO: 1658: Genu recurvatum
+2019-01-14 19:44:31,365:INFO: 1659: Precocious Puberty
+2019-01-14 19:44:31,671:INFO: 1660: Tarsal Coalition
+2019-01-14 19:44:31,764:INFO: 1661: Hypoplasia of the optic nerve
+2019-01-14 19:44:31,863:INFO: 1662: Septo-Optic Dysplasia
+2019-01-14 19:44:31,955:INFO: 1663: Pheochromocytoma
+2019-01-14 19:44:32,137:INFO: 1664: Testicular Germ Cell Tumor
+2019-01-14 19:44:32,245:INFO: 1665: Hypogonadism
+2019-01-14 19:44:33,554:INFO: 1666: Peripheral pulmonary artery stenosis
+2019-01-14 19:44:33,701:INFO: 1667: Hypoglycemic coma
+2019-01-14 19:44:33,808:INFO: 1668: Hypoglycemia
+2019-01-14 19:44:34,508:INFO: 1669: Leukodystrophy
+2019-01-14 19:44:34,852:INFO: 1670: Poikiloderma
+2019-01-14 19:44:34,996:INFO: 1671: Protrusion of tongue
+2019-01-14 19:44:35,111:INFO: 1672: Irritation - emotion
+2019-01-14 19:44:35,941:INFO: 1673: Precocious exfoliation of primary tooth
+2019-01-14 19:44:36,011:INFO: 1674: Malignant tumor of colon
+2019-01-14 19:44:36,401:INFO: 1675: Atherosclerosis
+2019-01-14 19:44:37,181:INFO: 1676: Craniofacial hyperostosis
+2019-01-14 19:44:37,307:INFO: 1677: Bifid scrotum
+2019-01-14 19:44:37,413:INFO: 1678: Hirsutism
+2019-01-14 19:44:38,088:INFO: 1679: Macroglossia
+2019-01-14 19:44:38,770:INFO: 1680: Orbital separation excessive
+2019-01-14 19:44:40,726:INFO: 1681: Vasculitis
+2019-01-14 19:44:40,876:INFO: 1682: Angle class 2 malocclusion
+2019-01-14 19:44:41,589:INFO: 1683: Exanthema
+2019-01-14 19:44:42,029:INFO: 1684: Type 1 muscle fiber predominance
+2019-01-14 19:44:42,111:INFO: 1685: Blood Coagulation Disorders
+2019-01-14 19:44:42,459:INFO: 1686: Tubular atrophy
+2019-01-14 19:44:42,516:INFO: 1687: Coronary heart disease
+2019-01-14 19:44:42,603:INFO: 1688: Hereditary Breast and Ovarian Cancer Syndrome
+2019-01-14 19:44:43,035:INFO: 1689: Dermatologic disorders
+2019-01-14 19:44:43,656:INFO: 1690: Ridged nails
+2019-01-14 19:44:43,846:INFO: 1691: Inflammation
+2019-01-14 19:44:44,463:INFO: 1692: Male infertility
+2019-01-14 19:44:45,316:INFO: 1693: Iron deficiency anemia
+2019-01-14 19:44:45,413:INFO: 1694: Leprosy
+2019-01-14 19:44:45,487:INFO: 1695: Joint swelling
+2019-01-14 19:44:45,624:INFO: 1696: Palmoplantar Keratosis
+2019-01-14 19:44:46,123:INFO: 1697: Malformations of Cortical Development
+2019-01-14 19:44:46,314:INFO: 1698: Developmental Disabilities
+2019-01-14 19:44:46,497:INFO: 1699: Papillary thyroid carcinoma
+2019-01-14 19:44:47,160:INFO: 1700: Salivary Gland Neoplasms
+2019-01-14 19:44:47,503:INFO: 1701: Widely patent fontanels and sutures
+2019-01-14 19:44:47,587:INFO: 1702: Metabolic Syndrome X
+2019-01-14 19:44:47,732:INFO: 1703: Left ventricular noncompaction
+2019-01-14 19:44:47,867:INFO: 1704: Malignant neoplasm of prostate
+2019-01-14 19:44:48,067:INFO: 1705: Dysarthria
+2019-01-14 19:44:50,029:INFO: 1706: Prolactinoma
+2019-01-14 19:44:50,172:INFO: 1707: Proteinuria
+2019-01-14 19:44:51,268:INFO: 1708: Hypoplastic ischia
+2019-01-14 19:44:51,688:INFO: 1709: Adenoma
+2019-01-14 19:44:52,250:INFO: 1710: Failure to thrive in infancy
+2019-01-14 19:44:52,580:INFO: 1711: Congenital pes cavus
+2019-01-14 19:44:53,571:INFO: 1712: Spastic Quadriplegia
+2019-01-14 19:44:53,852:INFO: 1713: Goiter
+2019-01-14 19:44:54,013:INFO: 1714: Bleeding time prolonged
+2019-01-14 19:44:54,388:INFO: 1715: Loeys-Dietz Aortic Aneurysm Syndrome
+2019-01-14 19:44:54,557:INFO: 1716: Psychotic Disorders
+2019-01-14 19:44:55,977:INFO: 1717: Myopathic facies
+2019-01-14 19:44:56,086:INFO: 1718: Hypophosphatemic Rickets
+2019-01-14 19:44:56,155:INFO: 1719: Cutis marmorata
+2019-01-14 19:44:56,562:INFO: 1720: Iron-Refractory Iron Deficiency Anemia
+2019-01-14 19:44:56,688:INFO: 1721: Gross motor development delay
+2019-01-14 19:44:56,896:INFO: 1722: Dyspnea on exertion
+2019-01-14 19:44:57,116:INFO: 1723: Pathological fracture
+2019-01-14 19:44:57,222:INFO: 1724: Heat Stroke
+2019-01-14 19:44:57,571:INFO: 1725: Drug Allergy
+2019-01-14 19:44:57,841:INFO: 1726: Death in early adulthood
+2019-01-14 19:44:58,110:INFO: 1727: Confusion
+2019-01-14 19:44:58,254:INFO: 1728: Babinski Reflex
+2019-01-14 19:44:59,207:INFO: 1729: Muscle Weakness
+2019-01-14 19:45:00,375:INFO: 1730: Telangiectasia of the skin
+2019-01-14 19:45:00,979:INFO: 1731: Neoplasm Recurrence, Local
+2019-01-14 19:45:01,785:INFO: 1732: Autistic behavior
+2019-01-14 19:45:01,924:INFO: 1733: Respiratory Distress Syndrome, Adult
+2019-01-14 19:45:02,173:INFO: 1734: Cachexia
+2019-01-14 19:45:02,737:INFO: 1735: Respiratory Hypersensitivity
+2019-01-14 19:45:02,864:INFO: 1736: Retinal Dystrophies
+2019-01-14 19:45:03,040:INFO: 1737: Abnormal lung lobation
+2019-01-14 19:45:03,176:INFO: 1738: Hyperalgesia
+2019-01-14 19:45:03,702:INFO: 1739: Hyperaldosteronism
+2019-01-14 19:45:03,785:INFO: 1740: Fetal Alcohol Spectrum Disorders
+2019-01-14 19:45:03,891:INFO: 1741: Neurotoxicity Syndromes
+2019-01-14 19:45:04,131:INFO: 1742: B-Cell Lymphomas
+2019-01-14 19:45:04,279:INFO: 1743: Congenital Epicanthus
+2019-01-14 19:45:05,994:INFO: 1744: Maternally Inherited Leigh Syndrome
+2019-01-14 19:45:06,067:INFO: 1745: Osteoporosis
+2019-01-14 19:45:07,372:INFO: 1746: Diabetes Mellitus, Insulin-Dependent
+2019-01-14 19:45:07,668:INFO: 1747: Diabetes Mellitus, Experimental
+2019-01-14 19:45:08,654:INFO: 1748: Small genitalia
+2019-01-14 19:45:08,726:INFO: 1749: Cyanosis
+2019-01-14 19:45:08,901:INFO: 1750: Cardiomegaly
+2019-01-14 19:45:10,024:INFO: 1751: Blurred vision
+2019-01-14 19:45:10,140:INFO: 1752: Gestational Diabetes
+2019-01-14 19:45:10,271:INFO: 1753: Dyslexia
+2019-01-14 19:45:10,459:INFO: 1754: Hypersensitivity
+2019-01-14 19:45:10,781:INFO: 1755: Decreased bone mineral density Z score
+2019-01-14 19:45:10,940:INFO: 1756: Increase in blood pressure
+2019-01-14 19:45:12,242:INFO: 1757: Hyperphosphatemia (disorder)
+2019-01-14 19:45:12,360:INFO: 1758: Hypophosphatemia
+2019-01-14 19:45:12,452:INFO: 1759: Lissencephaly
+2019-01-14 19:45:12,793:INFO: 1760: Polymicrogyria
+2019-01-14 19:45:13,273:INFO: 1761: Syndactyly of the toes
+2019-01-14 19:45:13,721:INFO: 1762: Nonorganic psychosis
+2019-01-14 19:45:14,298:INFO: 1763: Pulmonary Emphysema
+2019-01-14 19:45:14,460:INFO: 1764: Oral Ulcer
+2019-01-14 19:45:14,537:INFO: 1765: Pulmonary Fibrosis
+2019-01-14 19:45:15,058:INFO: 1766: Candidiasis, Chronic Mucocutaneous
+2019-01-14 19:45:15,142:INFO: 1767: Hearing Loss, Mixed Conductive-Sensorineural
+2019-01-14 19:45:15,216:INFO: 1768: Romano-Ward Syndrome
+2019-01-14 19:45:15,383:INFO: 1769: Hypodontia
+2019-01-14 19:45:16,183:INFO: 1770: Bradykinesia
+2019-01-14 19:45:16,573:INFO: 1771: Little's Disease
+2019-01-14 19:45:16,724:INFO: 1772: Leukopenia
+2019-01-14 19:45:17,002:INFO: 1773: Enlarged polycystic ovaries
+2019-01-14 19:45:17,161:INFO: 1774: Hypotonia, severe
+2019-01-14 19:45:17,347:INFO: 1775: Hearing loss, progressive sensorineural
+2019-01-14 19:45:17,540:INFO: 1776: Fundus coloboma
+2019-01-14 19:45:17,696:INFO: 1777: Long eyelashes
+2019-01-14 19:45:18,237:INFO: 1778: Gait abnormality
+2019-01-14 19:45:19,656:INFO: 1779: Blepharoptosis
+2019-01-14 19:45:21,150:INFO: 1780: Progressive neurologic deterioration
+2019-01-14 19:45:21,281:INFO: 1781: Lymphoma
+2019-01-14 19:45:21,914:INFO: 1782: Hyperpigmented macules
+2019-01-14 19:45:22,223:INFO: 1783: Tibial bowing
+2019-01-14 19:45:22,391:INFO: 1784: Autoimmune Diseases
+2019-01-14 19:45:22,976:INFO: 1785: Inflammatory Bowel Diseases
+2019-01-14 19:45:23,174:INFO: 1786: Skin Abnormalities
+2019-01-14 19:45:23,387:INFO: 1787: Kyphoscoliosis deformity of spine
+2019-01-14 19:45:24,034:INFO: 1788: Muscular fasciculation
+2019-01-14 19:45:24,669:INFO: 1789: Congenital heart disease
+2019-01-14 19:45:24,838:INFO: 1790: Polyneuropathy
+2019-01-14 19:45:25,014:INFO: 1791: Atrophic
+2019-01-14 19:45:25,148:INFO: 1792: Noncancerous mole
+2019-01-14 19:45:25,486:INFO: 1793: Angioedema
+2019-01-14 19:45:25,541:INFO: 1794: Venous Thrombosis
+2019-01-14 19:45:25,853:INFO: 1795: Amnesia
+2019-01-14 19:45:25,976:INFO: 1796: Chemical and Drug Induced Liver Injury
+2019-01-14 19:45:26,975:INFO: 1797: Bladder Neoplasm
+2019-01-14 19:45:28,250:INFO: 1798: Coughing
+2019-01-14 19:45:28,485:INFO: 1799: Short first metacarpals
+2019-01-14 19:45:28,616:INFO: 1800: Sleep disturbances
+2019-01-14 19:45:28,932:INFO: 1801: Sleep Apnea Syndromes
+2019-01-14 19:45:29,050:INFO: 1802: Broad feet
+2019-01-14 19:45:29,213:INFO: 1803: Centrally nucleated skeletal muscle fibers
+2019-01-14 19:45:29,414:INFO: 1804: Endometrial Neoplasms
+2019-01-14 19:45:30,181:INFO: 1805: Coloboma of eyelid
+2019-01-14 19:45:30,371:INFO: 1806: Endometriosis
+2019-01-14 19:45:31,743:INFO: 1807: Oligomenorrhea
+2019-01-14 19:45:31,888:INFO: 1808: Nasal Polyps
+2019-01-14 19:45:31,949:INFO: 1809: Joint laxity
+2019-01-14 19:45:32,617:INFO: 1810: Hypokinesia
+2019-01-14 19:45:32,767:INFO: 1811: Obesity, Abdominal

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0240278,Lymphatic obstruction,20,330,0.11578947368421053,0.10985920323781105,0.11513309385649811,0.9794103883949462,0.8375101461038961,0.8406608114826193,0.9073236889692586,0.12333333333333334

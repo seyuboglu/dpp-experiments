@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1458140,Bleeding tendency,37,323,0.05555555555555555,0.08870816497024875,0.09547526104263215,0.9645424053665549,0.8485893462540195,0.8536218638521182,0.8630256690333151,0.07497280562296042

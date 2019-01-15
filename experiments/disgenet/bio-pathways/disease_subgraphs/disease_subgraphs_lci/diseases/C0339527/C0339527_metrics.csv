@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0339527,Leber Congenital Amaurosis,19,71,0.023391812865497075,0.12059925093632959,0.12997987927565394,0.9902200488997555,0.9363552510212149,0.9550139275766016,0.9336600075386355,0.11564121571534468

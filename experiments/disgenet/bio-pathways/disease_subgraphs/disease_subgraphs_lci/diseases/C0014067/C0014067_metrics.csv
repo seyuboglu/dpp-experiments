@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014067,Occipital Encephalocele,10,27,0.044444444444444446,0.13963963963963963,0.10541310541310542,0.989100817438692,0.9547335118033585,0.980224478888295,0.9320214669051878,0.20000000000000004

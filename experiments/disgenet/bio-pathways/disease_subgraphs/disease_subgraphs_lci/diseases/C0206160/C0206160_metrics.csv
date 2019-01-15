@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0206160,Reticulocytosis,20,117,0.06842105263157895,0.12656641604010024,0.1286472148541114,0.973630831643002,0.9390163574486772,0.9509247287649671,0.9177888022678952,0.11666666666666667

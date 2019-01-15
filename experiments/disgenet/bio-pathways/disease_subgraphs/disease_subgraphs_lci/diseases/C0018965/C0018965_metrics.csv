@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018965,Hematuria,35,225,0.04201680672268908,0.08658008658008658,0.09642857142857143,0.9705882352941176,0.9063168256338888,0.9161563012162511,0.8997639368076993,0.07022222222222224

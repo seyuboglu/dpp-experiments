@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002896,Sideroblastic anemia,12,29,0.06060606060606061,0.18292682926829268,0.20935960591133004,0.9852125693160814,0.9780074774576644,0.9870229007633587,0.9810725552050473,0.17528735632183914

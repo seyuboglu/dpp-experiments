@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018991,Hemiplegia,13,43,0.08974358974358974,0.15443745632424877,0.17829457364341086,0.9762308998302207,0.9684105202973128,0.976119845743103,0.9158512720156555,0.16100178890876568

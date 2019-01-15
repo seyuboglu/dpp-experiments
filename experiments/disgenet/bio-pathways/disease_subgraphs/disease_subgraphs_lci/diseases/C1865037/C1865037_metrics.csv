@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1865037,Cone-shaped epiphyses,24,235,0.07971014492753623,0.08530955542907734,0.09070740134569921,0.9742388758782201,0.8854692872606869,0.8924652366066617,0.8863013698630137,0.09645390070921984

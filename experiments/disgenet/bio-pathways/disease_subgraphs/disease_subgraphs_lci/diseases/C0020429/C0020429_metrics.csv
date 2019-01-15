@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020429,Hyperalgesia,78,804,0.036297036297036296,0.043460827337328194,0.047341127488336646,0.9475835537388796,0.7402476367993609,0.7443156151182051,0.8209086546152615,0.04051856104094909

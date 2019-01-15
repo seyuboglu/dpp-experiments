@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0338503,Septo-Optic Dysplasia,11,62,0.10909090909090909,0.1111111111111111,0.08302485457429931,0.9886148007590133,0.9513657561625583,0.9713346722658389,0.9373406193078324,0.18914956011730208

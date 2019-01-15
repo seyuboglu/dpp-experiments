@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027643,"Neoplasm Recurrence, Local",31,985,0.09247311827956989,0.07195200009571268,0.07382072551689983,0.9817254568635784,0.6176975398893904,0.6198072202089333,0.874737925513666,0.08655641067627311

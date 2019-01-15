@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0032461,Polycythemia,11,113,0.2,0.12106537530266344,0.11962705436156763,0.9780876494023905,0.9258548499651081,0.9331213004682393,0.9130434782608695,0.19308125502815768

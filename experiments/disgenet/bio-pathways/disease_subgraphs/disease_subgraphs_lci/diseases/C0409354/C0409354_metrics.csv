@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0409354,Flexion contracture of hip,10,17,0.044444444444444446,0.21367521367521367,0.2867647058823529,0.9894736842105263,0.9730021598272138,0.9849304482225657,0.9124579124579124,0.2

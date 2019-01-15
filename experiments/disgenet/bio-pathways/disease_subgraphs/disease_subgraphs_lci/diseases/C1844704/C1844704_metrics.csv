@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1844704,Platyspondyly,56,340,0.026623376623376622,0.0697333885895842,0.07785875412111748,0.9649272882805817,0.8733138418681691,0.884938391906966,0.8708049457481706,0.044905462184873936

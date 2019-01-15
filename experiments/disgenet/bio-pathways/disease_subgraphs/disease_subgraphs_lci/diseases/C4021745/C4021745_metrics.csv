@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021745,Abnormality of the musculature,15,193,0.11428571428571428,0.11449067431850789,0.12003454231433507,0.9842622950819672,0.9036658484568025,0.9092985318107667,0.9206094627105053,0.15025906735751293

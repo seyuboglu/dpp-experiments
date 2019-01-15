@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4023101,Elevated luteinizing hormone,14,99,0.15384615384615385,0.1860342091341915,0.19645433931148218,0.9754601226993865,0.9307561039642951,0.9360166504414381,0.9364548494983278,0.1659451659451659

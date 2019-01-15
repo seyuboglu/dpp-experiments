@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3489733,Oculomotor apraxia,25,161,0.02666666666666667,0.09195064629847238,0.09549689440993789,0.9881481481481481,0.9182062874016776,0.933518903872659,0.9131531531531532,0.09167701863354036

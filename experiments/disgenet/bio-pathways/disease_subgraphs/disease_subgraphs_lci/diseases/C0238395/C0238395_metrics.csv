@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0238395,Male Pseudohermaphroditism,19,107,0.10526315789473684,0.1535514294134984,0.16875330629518603,0.9622245540398741,0.9297985582429428,0.9345909370514661,0.8311840562719812,0.12297097884899161

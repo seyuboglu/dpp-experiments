@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151514,Atrophic condition of skin,26,296,0.09538461538461539,0.13166800626084013,0.13705909299129637,0.9652271452607964,0.8511798034856201,0.8555827732258571,0.8778399736582153,0.10005197505197505

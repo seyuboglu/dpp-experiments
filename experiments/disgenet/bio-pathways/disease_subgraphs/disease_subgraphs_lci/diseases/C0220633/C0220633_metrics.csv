@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0220633,Uveal melanoma,8,77,0.17857142857142858,0.19835439318248604,0.2012987012987013,0.9898270600203459,0.9375491511310543,0.9438218322285278,0.9276999548124718,0.2597402597402597

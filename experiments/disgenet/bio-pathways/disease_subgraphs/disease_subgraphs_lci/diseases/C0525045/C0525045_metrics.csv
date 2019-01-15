@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0525045,Mood Disorders,179,2441,0.019270604481827883,0.02524361673363685,0.026725475315813863,0.9485158477276538,0.48375198565533817,0.4881160259193157,0.7707515846664654,0.019787659146928975

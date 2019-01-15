@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085623,Akinesia,13,42,0.08974358974358974,0.22292103424178897,0.25667828106852497,0.9756944444444444,0.9563133388112846,0.9685005701254276,0.9583333333333334,0.17032967032967034

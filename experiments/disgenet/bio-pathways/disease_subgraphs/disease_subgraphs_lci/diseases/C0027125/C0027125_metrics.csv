@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027125,Myotonia,10,23,0.08888888888888889,0.20075757575757575,0.21739130434782608,0.9828326180257511,0.9766699680862772,0.9872404593434636,0.958041958041958,0.20434782608695656

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020676,Hypothyroidism,48,506,0.02925531914893617,0.07490570284630757,0.08131334872617696,0.9791073124406457,0.8139243294532269,0.8214534299193111,0.9079564422541928,0.052947957839262184

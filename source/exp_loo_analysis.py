@@ -4,6 +4,7 @@ import argparse
 import logging
 import os
 import datetime
+import time
 from multiprocessing import Pool
 from collections import defaultdict
 
@@ -160,11 +161,10 @@ class LOOAnalysis(Experiment):
                 null_results = [getattr(self, metric_fn)(null_node, train_nodes)
                                 for null_node in null_nodes]
                 p_value = compute_pvalue(result, null_results)
-                metrics[ metric_fn] = result
+                metrics[metric_fn] = result
                 metrics["{}_pvalue".format(metric_fn)] = p_value
-         
+                
             results.append(metrics)
-        
         return indices, results
     
     def _run(self):
@@ -244,7 +244,60 @@ class LOOAnalysis(Experiment):
         Loads the results from a csv to a pandas Data Frame.
         """
         print("Loading Results...")
-        self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'))
+        self.results = pd.read_csv(os.path.join(self.dir, 'results.csv'), index_col=[0,1])
+
+    def plot_full_distribution(self, name, metrics, 
+                               plot_type="bar", xlabel="", ylabel="",
+                               yscale="linear", bins=100,
+                               xmin=0.0, xmax=1.0):
+        """
+        """
+        for metric_name in metrics:
+            metric = np.array(self.results[metric_name])
+            if plot_type == "bar":
+                sns.distplot(metric, bins=bins, kde=False, 
+                            hist_kws={'range': (xmin, xmax)}, 
+                            label=metric_name)
+                plt.ylabel("Associations [count{}]".format(r' $\log_{10}$' 
+                                                        if yscale == "log" 
+                                                        else ""))
+
+            elif plot_type == "kde":
+                sns.kdeplot(metric, shade=True, kernel="gau", clip=(0, 1), 
+                            label=metric_name)
+                plt.ylabel("Associations [KDE{}]".format(r' $\log_{10}$' 
+                                                        if yscale == "log" 
+                                                        else ""))
+                plt.yticks([])
+
+            elif plot_type == "bar_kde":
+                sns.distplot(metric, bins=40, kde=True, 
+                            kde_kws={'clip': (xmin, xmax)}, label=metric_name)
+                plt.ylabel("Associations [count{}]".format(r' $\log_{10}$' 
+                                                        if yscale == "log" 
+                                                        else ""))
+            
+            elif plot_type == "":
+                pass
+        
+        plt.xlabel(xlabel)
+        sns.despine()
+        plt.xticks(np.arange(0.0, 1.0, 0.05))
+        if plot_type == "kde": 
+            plt.yticks()
+        plt.legend()
+        # plt.tight_layout()
+        plt.xlim(xmin=xmin, xmax=xmax)
+        plt.yscale(yscale)
+
+        time_string = datetime.datetime.now().strftime("%m-%d_%H%M")
+        plot_path = os.path.join(self.figures_dir, 
+                                 '{}_{}_'.format(name, 
+                                                    yscale) + time_string + '.pdf')
+        plt.show()
+        plt.savefig(plot_path)
+        plt.close()
+        plt.clf()
 
     def plot_results(self):
         """
@@ -252,7 +305,15 @@ class LOOAnalysis(Experiment):
         """
         print("Plotting Results...")
         prepare_sns(sns, self.params)
+        self.figures_dir = os.path.join(self.dir, 'figures')
+        if not os.path.exists(self.figures_dir):
+            os.makedirs(self.figures_dir)
         
+        for plot_name, params in self.params.plots_to_params.items():
+            plot_fn = params["plot_fn"]
+            del params["plot_fn"]
+            getattr(self, plot_fn)(name=plot_name, **params)
+
 
 def process_disease_wrapper(disease):
     return exp.process_disease(disease)

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836940,Excess nuchal skin,30,496,0.08735632183908046,0.08224550094010206,0.08535353535353535,0.9767299448867116,0.8104376895932645,0.813349484297344,0.9004421156050434,0.09126344086021505

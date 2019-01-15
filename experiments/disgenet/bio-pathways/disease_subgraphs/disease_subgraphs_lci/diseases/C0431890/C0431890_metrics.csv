@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0431890,Hypoplasia of thumb,26,331,0.04923076923076923,0.18999590667212443,0.2012084592145015,0.9854413102820746,0.7701654832288541,0.7785034013605442,0.9079254079254079,0.09667673716012085

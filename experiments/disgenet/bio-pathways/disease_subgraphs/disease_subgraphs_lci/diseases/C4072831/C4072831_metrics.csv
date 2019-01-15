@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4072831,Delayed closure of the soft spot on the skull,11,65,0.12727272727272726,0.1811263318112633,0.19471153846153846,0.9859437751004017,0.9602472022715884,0.9654775604142692,0.9458850056369785,0.19440559440559443

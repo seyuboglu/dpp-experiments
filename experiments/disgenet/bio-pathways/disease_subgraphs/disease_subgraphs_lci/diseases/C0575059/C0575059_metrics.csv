@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0575059,Spastic tetraparesis,12,32,0.10606060606060606,0.1937984496124031,0.23790322580645162,0.9771615008156607,0.9765195223399973,0.9836451836451836,0.9427402862985685,0.171875

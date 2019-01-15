@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0003466,"Anus, Imperforate",46,440,0.024154589371980676,0.08860681114551083,0.09865396562435287,0.9799357945425361,0.8101582488391926,0.8172436942552987,0.903199675982179,0.053903162055335956

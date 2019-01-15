@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0234428,Disturbance of consciousness,12,88,0.13636363636363635,0.387458006718925,0.4179728317659352,0.9675675675675676,0.717435688035933,0.7315211007634869,0.5354200988467874,0.26420454545454547

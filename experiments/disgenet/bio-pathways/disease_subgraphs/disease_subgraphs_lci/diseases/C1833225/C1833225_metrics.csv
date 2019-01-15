@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1833225,Dystrophic toenail changes,11,49,0.14545454545454545,0.18935269207501512,0.18622448979591838,0.9784656796769852,0.9641301856520743,0.9738928294689158,0.9433551198257081,0.18923933209647498

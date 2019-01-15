@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0262431,Compression fracture of vertebral column,14,61,0.06593406593406594,0.15808959644576082,0.15846994535519127,0.9839786381842457,0.9598533283189169,0.971765164054133,0.9296969696969697,0.1592505854800936

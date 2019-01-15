@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0158465,Acquired cubitus valgus,18,203,0.12418300653594772,0.12908604273616778,0.14090620884748573,0.9696969696969697,0.8763085978557915,0.8779622354581168,0.8805264934188323,0.13711001642036125

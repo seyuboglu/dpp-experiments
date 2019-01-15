@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266617,Congenital anomaly of face,57,675,0.023809523809523808,0.07542497295626642,0.0813979558193208,0.9797008547008547,0.7398390234801844,0.7497296712802768,0.8747507477567298,0.045614035087719294

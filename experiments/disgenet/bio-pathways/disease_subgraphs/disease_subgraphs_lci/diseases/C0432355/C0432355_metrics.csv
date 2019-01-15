@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0432355,Hypoplasia of nipple,16,228,0.11666666666666667,0.13884239888423988,0.14390602055800295,0.9836734693877551,0.8818450217349376,0.8876350250437511,0.892516100377526,0.15405701754385964

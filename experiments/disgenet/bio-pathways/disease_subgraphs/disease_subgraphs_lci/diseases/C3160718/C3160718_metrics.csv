@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3160718,"PARKINSON DISEASE, LATE-ONSET",10,86,0.2,0.21482000935016363,0.23009575923392614,0.9832402234636871,0.9424077207495143,0.9464876558920845,0.9445818901533894,0.22093023255813946

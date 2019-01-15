@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0010346,Crohn Disease,40,387,0.03717948717948718,0.08367921047777163,0.09252788153860572,0.977029702970297,0.8392487347869901,0.8456418560500307,0.9040391676866585,0.060077519379844964

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4020844,Bullet vertebral body,16,47,0.1,0.14035087719298245,0.17391304347826086,0.9600665557404326,0.9606011717754946,0.9667697746354397,0.8313253012048193,0.13297872340425532

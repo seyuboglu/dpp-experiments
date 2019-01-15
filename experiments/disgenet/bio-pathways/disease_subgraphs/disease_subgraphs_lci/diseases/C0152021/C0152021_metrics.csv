@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0152021,Congenital heart disease,24,155,0.08695652173913043,0.11672302056917441,0.12886468370339338,0.9660537482319661,0.9196450220648853,0.9242252549637877,0.8849483384529461,0.09919354838709678

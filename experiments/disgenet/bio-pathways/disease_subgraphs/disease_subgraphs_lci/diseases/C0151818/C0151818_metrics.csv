@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151818,Opisthotonus,14,30,0.07692307692307693,0.2156448202959831,0.296551724137931,0.9766277128547579,0.9773723032555044,0.9851996328591097,0.9619289340101523,0.16190476190476194

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025252,Abnormal nasal morphology,15,80,0.05714285714285714,0.16654456654456654,0.18322784810126583,0.9850746268656716,0.9462399495506858,0.9531988845329993,0.9122486288848263,0.14750000000000002

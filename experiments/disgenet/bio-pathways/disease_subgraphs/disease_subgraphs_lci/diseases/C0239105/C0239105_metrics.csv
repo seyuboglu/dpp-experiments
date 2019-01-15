@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0239105,Conjunctival telangiectasis,14,226,0.25274725274725274,0.19251946079362064,0.19826941986234023,0.9616026711185309,0.8090035788284046,0.8096802204855212,0.8590785907859079,0.16719342604298354

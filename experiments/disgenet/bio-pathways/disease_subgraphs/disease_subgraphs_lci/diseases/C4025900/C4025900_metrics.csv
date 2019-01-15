@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4025900,Abnormality of female internal genitalia,14,90,0.17582417582417584,0.14583333333333334,0.1523096129837703,0.9570469798657718,0.9482430063267018,0.9529030265596047,0.9183111519045434,0.169047619047619

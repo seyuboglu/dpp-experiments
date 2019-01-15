@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162538,Immunoglobulin A deficiency (disorder),19,143,0.08771929824561403,0.1520244461420932,0.17058997340687482,0.9754701553556827,0.9116122982776489,0.9141064742492995,0.914817648559041,0.11630474788369523

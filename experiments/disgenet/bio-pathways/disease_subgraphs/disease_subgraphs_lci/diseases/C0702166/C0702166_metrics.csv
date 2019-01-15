@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0702166,Acne,34,395,0.035650623885918005,0.0823196448390677,0.09099787958619804,0.9854067858445823,0.8393771723712278,0.8450479233226837,0.9239119804400978,0.06872673119880864

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0345030,Peripheral pulmonary artery stenosis,14,65,0.04395604395604396,0.19474196689386564,0.22067307692307692,0.9889807162534435,0.9579817220490914,0.9670175690726835,0.9487179487179487,0.15054945054945051

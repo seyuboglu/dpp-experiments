@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1865060,Molar tooth sign on MRI,12,244,0.09090909090909091,0.05116381203337725,0.04455913108007826,0.9904761904761905,0.8574549903862961,0.8806415179579851,0.8704581358609794,0.18613387978142076

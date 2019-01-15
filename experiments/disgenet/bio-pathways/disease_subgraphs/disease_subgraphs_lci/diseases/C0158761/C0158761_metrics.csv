@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0158761,Radioulnar Synostosis,24,211,0.06521739130434782,0.12531880361697195,0.13893026404874745,0.9764551994767822,0.88672918740504,0.891227140206732,0.881969881969882,0.10821484992101105

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1843156,"Hearing loss, progressive sensorineural",23,202,0.08300395256916997,0.15370571614866332,0.1694990394561844,0.9670846394984326,0.8421816071946621,0.845466385233754,0.6892836342457775,0.12462333189840721

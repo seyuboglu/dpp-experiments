@@ -37,7 +37,6 @@ def compute_complementarity(query_node, node_to_node_to_common, disease_nodes):
 
     # Sanity check
     training_nodes = np.delete(disease_nodes, np.argwhere(disease_nodes == query_node))
-    matrix_comp = np.load(ppi_matrix, training_nodes)[query_node]
 
     logging.info('Comp - Matrix Comp Difference: ' + str(comp-matrix_comp))
     logging.info('Comp - Matrix Relative Difference: ' + str(comp / (matrix_comp)))
@@ -212,9 +211,6 @@ if __name__ == '__main__':
 
     logging.info("Loading Protein Names...")
     protein_to_name, _ = load_gene_names(params.protein_names_path)
-
-    logging.info("Loading PPI Matrix...")
-    ppi_matrix = np.load(params.ppi_matrix)
 
     logging.info("Loading Protein Ranks")
     method_to_ranks = {}

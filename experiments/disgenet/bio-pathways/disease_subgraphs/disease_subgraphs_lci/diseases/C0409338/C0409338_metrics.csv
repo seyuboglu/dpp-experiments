@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0409338,Flexion contracture - elbow,31,321,0.034408602150537634,0.11242505548378548,0.12427959501557632,0.9853143643873337,0.8516786662442233,0.8586221026169197,0.9346210995542348,0.07848457441463168

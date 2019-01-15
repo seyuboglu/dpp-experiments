@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029408,Degenerative polyarthritis,115,1816,0.02623951182303585,0.0392678169268228,0.041208844552857365,0.9619805481874447,0.5153855640316415,0.5191948941050701,0.7898262891032564,0.03007086764987551

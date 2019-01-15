@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0086132,Depressive Symptoms,28,182,0.05026455026455026,0.12003121494415452,0.13180741910023677,0.9761456371625863,0.9040826269122089,0.9134611551799737,0.8016650342801175,0.08791208791208788

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020437,Hypercalcemia,34,320,0.0338680926916221,0.12746747513784545,0.1375587774294671,0.9828519855595668,0.8369781735675405,0.8476576908889708,0.9178923549377728,0.0744485294117647

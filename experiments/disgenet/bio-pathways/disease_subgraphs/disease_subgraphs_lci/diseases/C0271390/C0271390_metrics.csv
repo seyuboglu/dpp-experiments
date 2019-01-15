@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0271390,"Nystagmus, End-Position",12,114,0.10606060606060606,0.1372784219645475,0.13957460021735754,0.9895833333333334,0.9321587353861354,0.9394877662975801,0.9331713244228432,0.1769005847953216

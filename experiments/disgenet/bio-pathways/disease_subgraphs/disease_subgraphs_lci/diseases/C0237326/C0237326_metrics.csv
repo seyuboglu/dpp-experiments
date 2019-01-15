@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0237326,Dyschezia,132,1744,0.01734906315058987,0.03636229483311168,0.0386085626911315,0.9643959173985284,0.5534080822411303,0.560445240110561,0.8351790539254862,0.024217229635807615

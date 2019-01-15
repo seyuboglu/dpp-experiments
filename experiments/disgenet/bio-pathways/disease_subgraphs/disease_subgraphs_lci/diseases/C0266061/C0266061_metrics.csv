@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266061,Open Bite,21,378,0.05714285714285714,0.19213133387582182,0.19871444009375044,0.9882926829268293,0.7186548391367669,0.7281793835609863,0.9039139929447337,0.12295288485764676

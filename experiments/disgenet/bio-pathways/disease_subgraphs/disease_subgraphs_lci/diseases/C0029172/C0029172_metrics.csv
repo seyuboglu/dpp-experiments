@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029172,Oral Submucous Fibrosis,16,78,0.15833333333333333,0.11545827633378933,0.1258741258741259,0.9437037037037037,0.9487210644632116,0.9534339390206344,0.8382084095063985,0.14903846153846154

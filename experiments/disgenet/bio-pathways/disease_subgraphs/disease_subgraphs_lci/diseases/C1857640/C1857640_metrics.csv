@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857640,Decreased nerve conduction velocity,34,263,0.03208556149732621,0.12361293401742035,0.13708530461788523,0.9774153074027604,0.8494907965656008,0.8602352593030999,0.687055872927407,0.07559830015656453

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0032617,Polyuria,21,43,0.06190476190476191,0.132486388384755,0.20487264673311184,0.962536023054755,0.9708291708291709,0.9751026175896642,0.9331619537275064,0.09966777408637871

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0085129,Bronchial Hyperreactivity,12,10,0.10606060606060606,0.17316017316017315,0.26666666666666666,0.9551282051282052,0.9724612736660929,0.9907443116081759,0.9195402298850575,0.175

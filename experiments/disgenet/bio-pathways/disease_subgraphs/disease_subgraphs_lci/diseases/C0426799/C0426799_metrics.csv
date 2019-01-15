@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0426799,Congenital hypoplasia of clavicle,18,116,0.058823529411764705,0.1530113297555158,0.16761619190404797,0.9847972972972973,0.9380522427695428,0.9450425207688148,0.9507475813544415,0.12404214559386974

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009447,Common Variable Immunodeficiency,11,165,0.21818181818181817,0.19944960440316478,0.20946045824094606,0.9765853658536585,0.8694996511287673,0.8715758468335788,0.8914319248826291,0.20275482093663919

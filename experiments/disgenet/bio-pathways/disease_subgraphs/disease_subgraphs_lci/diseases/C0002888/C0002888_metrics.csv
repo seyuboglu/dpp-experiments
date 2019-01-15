@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002888,"Anemia, Megaloblastic",16,22,0.058333333333333334,0.19365079365079366,0.3246753246753247,0.9629629629629629,0.9828904003926794,0.9892125134843581,0.9343365253077975,0.13920454545454544

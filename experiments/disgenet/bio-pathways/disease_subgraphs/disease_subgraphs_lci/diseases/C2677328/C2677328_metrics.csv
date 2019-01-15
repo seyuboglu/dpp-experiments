@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2677328,Brain hypomyelination,11,63,0.2727272727272727,0.20843989769820973,0.23553507424475167,0.9507389162561576,0.9472889942869462,0.9494977219081078,0.8895859473023839,0.27417027417027434

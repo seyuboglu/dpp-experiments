@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4024748,Aplasia/Hypoplasia of the iris,9,47,0.1388888888888889,0.13333333333333333,0.09805735430157261,0.9877450980392157,0.967984477322338,0.981736733287388,0.9355203619909502,0.226950354609929

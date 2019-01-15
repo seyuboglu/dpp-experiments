@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0041834,Erythema,57,660,0.03759398496240601,0.06646951488076512,0.07005104152296869,0.9674355495251018,0.7656731757451182,0.7722069785350609,0.8734459300961764,0.049654439128123326

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0162154,Atrophic scar,18,144,0.1568627450980392,0.11345909668057319,0.11655011655011654,0.9357429718875502,0.9324495801722509,0.9349963435443244,0.848613070051716,0.13117283950617284

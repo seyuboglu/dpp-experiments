@@ -1,5 +1,5 @@
 {
-    "n_processes": 3,
+    "n_processes": 4,
     "ppi_network": "data/networks/bio-pathways-network.txt",
     "diseases_path": "data/associations/disgenet-associations-nodup7-cv-cc7.csv",
     "disease_subset": [],
@@ -8,19 +8,36 @@
                      "DI": "data/ppi_matrices/bio-pathways/dn_id_rnorm.npy"},
 
     "metric_fns": ["frac_direct_interactions",
-                   "frac_common_interactions",
                    "common_interactor_score"],
 
     "n_random_nodes": 100,
     "min_bucket_len": 250,
-    
-    "plot_type": "bar",
-    "plot_palette": ["#E03C3F", "#6178A8"],
-    "plot_font": "AppleGothic",
-    "disease_plots": ["C0023470", "C0162671", "C0018818"],
 
-    "xlabel_all": "Median score between proteins within pathway [p-value]",
-    "xlabel_disease": "Median {} beween proteins within pathway [value]",
-    "yscale": "linear" 
+    "plots_to_params": {
+        "pvalue_comparison": {
+            "plot_fn": "plot_full_distribution",
+            "metrics": ["frac_direct_interactions_pvalue", 
+                        "common_interactor_score_pvalue"],
+            "plot_type": "bar",
+            "yscale": "linear",
+            "xlabel": "p-value",
+            "bins": 100,
+            "xmin": 0.0,
+            "xmax": 1.0
+        },
+        "direct_interactions": { 
+            "plot_fn": "plot_full_distribution",
+            "metrics": ["frac_direct_interactions"],
+            "plot_type": "bar",
+            "yscale": "linear",
+            "xlabel": "p-value",
+            "bins": 100,
+            "xmin": 0.0,
+            "xmax": 1.0
+        }
+    },
+    
+    "plot_palette": ["#E03C3F", "#6178A8"],
+    "plot_font": "AppleGothic"
 
 }

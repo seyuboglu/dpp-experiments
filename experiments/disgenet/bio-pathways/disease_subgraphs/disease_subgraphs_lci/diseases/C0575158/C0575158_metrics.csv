@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0575158,Kyphoscoliosis deformity of spine,60,867,0.02937853107344633,0.06333974056746335,0.06781367621087288,0.9781052631578947,0.6943833594848253,0.6998885987610296,0.8834478174163528,0.04479046520569011

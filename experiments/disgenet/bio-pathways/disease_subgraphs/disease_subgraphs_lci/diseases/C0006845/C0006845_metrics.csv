@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0006845,"Candidiasis, Chronic Mucocutaneous",11,43,0.2545454545454545,0.22163120567375885,0.24806201550387597,0.9457364341085271,0.9633215962441315,0.966785290628707,0.9318637274549099,0.21141649048625794

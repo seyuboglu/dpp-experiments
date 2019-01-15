@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1563720,Kallmann Syndrome 2 (disorder),18,12,0.06535947712418301,0.10826210826210826,0.25757575757575757,0.927007299270073,0.9692556634304207,0.9851593190746399,0.9067961165048544,0.11574074074074076

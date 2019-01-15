@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1838979,MITOCHONDRIAL COMPLEX I DEFICIENCY,20,117,0.3631578947368421,0.2988754911258637,0.3225758915414088,0.8681948424068768,0.7995456610631531,0.8008008008008008,0.5422310756972112,0.34487179487179487

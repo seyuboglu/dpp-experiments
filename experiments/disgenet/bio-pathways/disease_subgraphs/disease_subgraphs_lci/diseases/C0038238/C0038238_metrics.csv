@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0038238,Steatorrhea,15,15,0.02857142857142857,0.15862068965517243,0.3238095238095238,0.9823008849557522,0.9774509803921568,0.9882373291818024,0.9705882352941176,0.14222222222222222

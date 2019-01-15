@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0033687,Proteinuria,119,1712,0.018943170488534396,0.03493807922578528,0.03695917564740519,0.9667125516205731,0.5652054439607287,0.5713855874830751,0.8110348986206377,0.02495484174978403

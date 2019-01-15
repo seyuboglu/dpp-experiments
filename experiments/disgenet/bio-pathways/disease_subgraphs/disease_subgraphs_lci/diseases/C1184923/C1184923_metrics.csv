@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1184923,Lumbar lordosis,36,264,0.04285714285714286,0.08718165984088877,0.09877290010369859,0.9744318181818182,0.8894295352100062,0.8963280978367674,0.9151910531220876,0.06986531986531987

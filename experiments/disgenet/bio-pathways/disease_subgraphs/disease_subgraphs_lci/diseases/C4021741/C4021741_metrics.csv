@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021741,Abnormal cortical bone morphology,21,111,0.047619047619047616,0.1138938580799046,0.12481572481572481,0.979296066252588,0.9331957609037809,0.94512458591387,0.9000277700638711,0.10767910767910766

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1857287,Stroke-like episodes,10,78,0.28888888888888886,0.48900933453778983,0.5318015318015318,0.9447983014861996,0.5826802004368495,0.5831375619942574,0.5429809776065495,0.35384615384615375

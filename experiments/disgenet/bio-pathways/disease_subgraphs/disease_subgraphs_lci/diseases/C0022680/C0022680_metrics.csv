@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022680,Polycystic Kidney Diseases,20,157,0.07368421052631578,0.09893802930501411,0.0961946758125102,0.9811193526635199,0.9211885959041628,0.9350104821802935,0.9182481751824818,0.11496815286624204

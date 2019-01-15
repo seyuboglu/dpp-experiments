@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0234979,Dysdiadochokinesis,25,148,0.043333333333333335,0.15483319076133448,0.17926089354660782,0.9821673525377229,0.9122087265819203,0.9198174304570407,0.9524956970740103,0.08891891891891893

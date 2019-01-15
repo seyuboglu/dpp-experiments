@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0263523,Micronychia (disorder),24,70,0.018115942028985508,0.09929078014184398,0.11594202898550725,0.9895397489539749,0.9588039867109635,0.9721586954360147,0.9458110516934046,0.08869047619047617

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0028797,Occupational Diseases,12,31,0.13636363636363635,0.16097560975609757,0.16989247311827957,0.9749652294853964,0.9769713886950454,0.9856259097525473,0.9356357927786499,0.1720430107526882

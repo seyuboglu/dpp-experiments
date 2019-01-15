@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0027497,Nausea,17,95,0.0661764705882353,0.15446205170975813,0.16954087346024635,0.9889366933005531,0.9459696006068209,0.9538456848458983,0.9532595325953259,0.12755417956656342

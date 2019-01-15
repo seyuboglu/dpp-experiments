@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1854418,Biparietal narrowing,28,309,0.06084656084656084,0.07436413813679421,0.07485394864035641,0.9769192172604114,0.8707439998703551,0.8820295422931709,0.9040615454236904,0.08414239482200644

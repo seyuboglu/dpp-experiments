@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020625,Hyponatremia,23,54,0.05138339920948617,0.1388888888888889,0.1928721174004193,0.9500959692898272,0.9636828644501279,0.9711236660389203,0.8978494623655914,0.10547504025764898

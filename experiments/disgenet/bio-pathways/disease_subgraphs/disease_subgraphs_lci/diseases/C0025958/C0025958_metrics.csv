@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0025958,Microcephaly,24,287,0.057971014492753624,0.10912424503882658,0.11052362271874468,0.9854280510018215,0.8703701331146785,0.8811927867049071,0.9190418435415403,0.09872241579558652

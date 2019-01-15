@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1849075,Relative macrocephaly,12,62,0.030303030303030304,0.24620510921880784,0.2760444209413009,0.9956236323851203,0.9560882197569994,0.9644583645400695,0.9642857142857143,0.189516129032258

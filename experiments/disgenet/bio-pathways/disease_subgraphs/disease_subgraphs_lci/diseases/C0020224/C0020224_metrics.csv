@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020224,Polyhydramnios,84,1165,0.01721170395869191,0.051676670668267304,0.05510965591493002,0.9790099702641245,0.6386361410496173,0.6471093775823885,0.8621243257128178,0.033977110157367665

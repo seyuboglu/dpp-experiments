@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0009398,Color vision defect,31,79,0.021505376344086023,0.08168916580131533,0.10905550146056475,0.9777530589543938,0.9493317588964629,0.9627453154451713,0.8787470528797575,0.0698244181298489

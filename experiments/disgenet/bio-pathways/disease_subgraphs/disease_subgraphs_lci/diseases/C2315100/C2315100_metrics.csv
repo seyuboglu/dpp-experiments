@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C2315100,Pediatric failure to thrive,361,3711,0.01088027085257002,0.01781964702731145,0.018994596816777686,0.9305876000196358,0.5351364422428702,0.5350674506589089,0.7028293220650377,0.012406777484919806

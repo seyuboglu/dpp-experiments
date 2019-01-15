@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0011168,Deglutition Disorders,130,2359,0.020632081097197375,0.027595182198632235,0.0287268976194611,0.9697552447552448,0.4924942588432586,0.49728340375195446,0.8104460726214847,0.0236801773893762

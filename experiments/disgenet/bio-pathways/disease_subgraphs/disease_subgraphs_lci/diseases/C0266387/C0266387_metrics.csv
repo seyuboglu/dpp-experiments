@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0266387,Bicornuate uterus,11,27,0.07272727272727272,0.3129445234708393,0.4586894586894587,0.9865092748735245,0.9584317430325933,0.9677742193755005,0.9738751814223512,0.18518518518518515

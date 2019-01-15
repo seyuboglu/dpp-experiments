@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1842366,Low anterior hairline,30,684,0.08505747126436781,0.0822996774993798,0.08429443545417961,0.9762972453555413,0.7079986797227418,0.7101854577568443,0.8622864964589657,0.08698830409356724

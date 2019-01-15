@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0020545,"Hypertension, Renovascular",10,85,0.1111111111111111,0.2190275829827022,0.23109243697478993,0.9884393063583815,0.948720755233274,0.9542353136961225,0.9516129032258065,0.22117647058823522

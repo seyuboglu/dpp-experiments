@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0022346,Icterus,80,483,0.026265822784810128,0.048891562124076304,0.05481817478930955,0.9453767686739059,0.854517562082521,0.8623345522798614,0.8704926005697214,0.03273809523809524

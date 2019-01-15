@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C4021790,Abnormality of the skeletal system,11,45,0.12727272727272726,0.2961038961038961,0.35353535353535354,0.97953216374269,0.9614392626104604,0.9695214873514173,0.9706242350061199,0.2

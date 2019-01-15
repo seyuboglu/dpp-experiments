@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029454,Osteopetrosis,12,35,0.06060606060606061,0.16231884057971013,0.17142857142857143,0.9890260631001372,0.9711414583870136,0.981381765081683,0.9639278557114228,0.1761904761904762

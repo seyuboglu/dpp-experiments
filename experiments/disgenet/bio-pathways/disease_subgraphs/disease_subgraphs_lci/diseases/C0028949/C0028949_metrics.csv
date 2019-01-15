@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0028949,Oligomenorrhea,16,131,0.10833333333333334,0.13616938616938618,0.1482090428655314,0.978981406628941,0.9152511636341655,0.9217679695006664,0.9251336898395722,0.13788167938931298

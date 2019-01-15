@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C3808249,Optic disc abnormalities,12,41,0.045454545454545456,0.08925979680696662,0.046341463414634146,0.9900497512437811,0.96398243045388,0.9877950859161715,0.9312070043777361,0.16666666666666666

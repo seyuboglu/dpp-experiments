@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0018802,Congestive heart failure,66,962,0.031235431235431235,0.06003196803196803,0.06272485564889312,0.9731516730114206,0.66841768380162,0.6763376162355856,0.8001312766655727,0.04432054432054432

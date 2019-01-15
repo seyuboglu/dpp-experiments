@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0241442,Protrusion of tongue,11,58,0.03636363636363636,0.19011082693947143,0.19298245614035087,0.9952830188679245,0.9576247030878859,0.9684189684189685,0.9641485275288092,0.19592476489028213

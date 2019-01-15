@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1168401,Squamous cell carcinoma of the head and neck,29,618,0.06896551724137931,0.08132261826843108,0.08390111878648644,0.983659177122848,0.7527622552869978,0.7585636985215876,0.8978749615029258,0.09022430532306662

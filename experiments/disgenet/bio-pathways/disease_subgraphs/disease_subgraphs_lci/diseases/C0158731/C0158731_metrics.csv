@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0158731,Congenital pectus carinatum,53,383,0.03193033381712627,0.06903707802988379,0.07588205541809633,0.963302752293578,0.8584631384877207,0.8668840901188235,0.8818659127625202,0.049164983496723984

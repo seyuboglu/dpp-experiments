@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0014859,Esophageal Neoplasms,65,1707,0.05961538461538462,0.041235559148952064,0.04204946050020912,0.9705358203635499,0.5286465382811696,0.5313734194654502,0.8234988951868575,0.049876075886620706

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1260926,Abnormal pigmentation,25,323,0.07,0.11116998728274692,0.11658942753302694,0.9810469314079422,0.8541468727550807,0.8584568693825143,0.9080298129658276,0.0998142414860681

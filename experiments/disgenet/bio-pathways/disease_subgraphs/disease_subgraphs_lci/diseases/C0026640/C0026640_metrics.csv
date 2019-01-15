@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026640,Mouth Neoplasms,52,1329,0.07767722473604827,0.05218614513883237,0.05342589318900886,0.971152499649909,0.5828439302292868,0.584450154026504,0.856038571391138,0.0649418301788505

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026837,Muscle Rigidity,47,597,0.05087881591119334,0.07772564514137548,0.08248176003057794,0.9708840656431975,0.7772190723359704,0.7817716737431497,0.9065898912348048,0.05452795894365443

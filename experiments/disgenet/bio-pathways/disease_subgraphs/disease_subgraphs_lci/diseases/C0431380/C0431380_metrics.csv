@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0431380,Cortical Dysplasia,13,141,0.08974358974358974,0.13314743813175323,0.12664640324214793,0.9876106194690265,0.9256809338521401,0.9377830869543576,0.9265046296296297,0.1783960720130933

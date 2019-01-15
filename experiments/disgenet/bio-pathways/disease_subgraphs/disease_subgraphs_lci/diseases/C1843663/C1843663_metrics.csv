@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1843663,Sphincter disturbances,16,124,0.08333333333333333,0.19147360626256216,0.20561237870443222,0.984472049689441,0.9242091158428072,0.9329671034350084,0.9563981042654028,0.1376008064516129

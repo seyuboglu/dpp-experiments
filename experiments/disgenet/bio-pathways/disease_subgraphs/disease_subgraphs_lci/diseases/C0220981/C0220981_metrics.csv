@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0220981,Metabolic acidosis,43,640,0.059800664451827246,0.10028509679496023,0.10566803599374022,0.9679715302491103,0.6494406223879637,0.6514437812550411,0.7479467900520532,0.06228197674418604

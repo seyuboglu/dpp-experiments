@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0017565,Gingival Hemorrhage,18,80,0.1503267973856209,0.1233458177278402,0.14430379746835442,0.9304084720121029,0.9413266821070135,0.9450238109590693,0.8643042350907519,0.1416666666666667

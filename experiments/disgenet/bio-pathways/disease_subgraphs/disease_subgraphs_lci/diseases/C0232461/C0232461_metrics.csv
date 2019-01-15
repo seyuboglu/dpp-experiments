@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0232461,Increased appetite (finding),23,123,0.06324110671936758,0.10801793347930351,0.12301745968279355,0.9754224270353302,0.941168119480962,0.9466520243909488,0.9295180722891566,0.09508660303994343

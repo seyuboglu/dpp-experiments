@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0026821,Muscle Cramp,55,1223,0.044444444444444446,0.0609192654679107,0.06367321375758947,0.9789674952198852,0.5814254615608556,0.584445075219983,0.8821053994561698,0.05371292648479894

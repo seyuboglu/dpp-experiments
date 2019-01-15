@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0151311,Cranial nerve palsies,11,57,0.16363636363636364,0.16971153846153847,0.15100250626566417,0.9770992366412213,0.9622500267351085,0.9731819952150448,0.9050847457627119,0.19936204146730466

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0042345,Varicosity,12,48,0.10606060606060606,0.15141242937853108,0.13829787234042554,0.9823899371069182,0.9661423788768871,0.9792498004788508,0.9058103975535168,0.18229166666666666

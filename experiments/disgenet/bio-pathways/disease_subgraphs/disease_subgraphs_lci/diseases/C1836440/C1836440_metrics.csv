@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1836440,Increased serum lactate,58,604,0.07441016333938294,0.09637104054243817,0.10410969435383788,0.926303175554224,0.6774891956530861,0.680399858397532,0.6885255755244335,0.06825188399177895

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0031117,Peripheral Neuropathy,131,1545,0.016676453317674693,0.03806391299155428,0.040596441806261215,0.9639319278638557,0.5984351489617815,0.6073675845739678,0.8051266547174293,0.02443242174954915

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0002736,Amyotrophic Lateral Sclerosis,49,1201,0.05952380952380952,0.060983453740386856,0.06305856230918679,0.9773169151004537,0.5932097997761473,0.59521635525466,0.8781258056200052,0.06008598276946082

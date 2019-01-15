@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0338502,Hypoplasia of the optic nerve,17,37,0.04411764705882353,0.14102564102564102,0.2072072072072072,0.9855769230769231,0.9639656999710955,0.972548239506664,0.9633333333333334,0.12241653418124002

@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0677886,Epithelial ovarian cancer,9,48,0.08333333333333333,0.18653198653198652,0.22872340425531915,0.9953161592505855,0.9578226113437381,0.9603534383403765,0.9521575984990619,0.22453703703703706

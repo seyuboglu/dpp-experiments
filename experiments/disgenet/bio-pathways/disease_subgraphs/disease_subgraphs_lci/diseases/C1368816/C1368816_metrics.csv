@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1368816,Sebaceous adenoma,18,307,0.1503267973856209,0.09547800442369132,0.09723020587170808,0.9755449229133439,0.8682362251459096,0.8703385619987224,0.8936956262662377,0.1355410785378212

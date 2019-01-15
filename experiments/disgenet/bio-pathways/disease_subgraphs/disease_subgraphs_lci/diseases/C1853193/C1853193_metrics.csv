@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C1853193,Recurrent skin infections,21,237,0.09523809523809523,0.1079077967872535,0.11134949581634843,0.9740932642487047,0.894145154058036,0.8992575338477217,0.8910593538692713,0.11794253566405465

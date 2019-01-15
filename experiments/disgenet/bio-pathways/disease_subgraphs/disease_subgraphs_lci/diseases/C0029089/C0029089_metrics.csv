@@ -1,0 +1,2 @@
+Disease ID,Disease Name,# of Disease Nodes,# of Intermediate Nodes,Density of Disease Subgraph,Density of Disease-Intermediate Subgraph,Density of Intermediate Subgraph,Conductance of Disease Nodes,Conductance of Disease-Intermediate Nodes,Conductance of Intermediate Nodes,Conductance of Intermediate Nodes deg < 100,Mean Frac. of Intermediate-Disease Interactions
+C0029089,Ophthalmoplegia,86,692,0.03036935704514364,0.10021519495203705,0.11360765582259104,0.947255880256593,0.6375604318776918,0.6401025552692076,0.7685792523721582,0.047166957924452205
