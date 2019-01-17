@@ -173,7 +173,7 @@ def write_disease_subgraph(disease, subgraph, directory):
             protein = node_to_protein[node]
             row_dict = {'Node ID': node, 
                         'Protein ID': protein,
-                        'Protein Name': protein_to_name.get(protein, ""),
+                        'Protein Name': protein_to_name.get(str(protein), ""),
                         'Disease Node': 1 if node in disease_nodes else 0,
                         'Degree': ppi_networkx.degree(node)}
             for method_name, _ in params.method_exp_dirs.items():
@@ -210,7 +210,7 @@ if __name__ == '__main__':
                                   exclude_splits='none')
 
     logging.info("Loading Protein Names...")
-    protein_to_name, _ = load_gene_names(params.protein_names_path)
+    _, protein_to_name = load_gene_names(params.protein_names_path)
 
     logging.info("Loading Protein Ranks")
     method_to_ranks = {}
